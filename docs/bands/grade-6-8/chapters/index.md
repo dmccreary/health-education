@@ -1,0 +1,18 @@
+# Grade 6-8 Health Education — Chapters
+
+This section contains the chapter-by-chapter content for the Grade 6-8 band of the *Health Education* intelligent textbook. Chapters are sequenced so that each one builds on the concepts introduced earlier — start at Chapter 1 and move forward in order, or use the learning graph to jump to a specific concept and trace its prerequisites. Each chapter lists the concepts it covers and the earlier chapters it depends on, so you can review a prerequisite chapter if a topic feels unfamiliar.
+
+## Chapters
+
+1. [Health Foundations And Nutrition](01-health-foundations-and-nutrition/index.md) — Establishes what health means and builds skills for reading food labels, comparing dietary guidelines across cultures, and understanding food sovereignty and community food access.
+2. [Relationships, Boundaries, And Consent](02-relationships-boundaries-and-consent/index.md) — Explores relationship structures, healthy versus unhealthy relationship dynamics, personal boundary-setting, and the critical distinction between consent and coercion.
+3. [Healthcare Access And Sexual Health](03-healthcare-access-and-sexual-health/index.md) — Covers how adolescents access comprehensive health care and understand STIs, HIV, treatment options, and strategies for preventing infection and unintended pregnancy.
+4. [Emotional Well-Being And Mental Health](04-emotional-well-being-and-mental-health/index.md) — Introduces warning signs for suicide, self-harm, and emotional distress alongside empathy, communication, and healthy strategies for managing stress and resolving conflict.
+5. [Stigma, Bias, And Brain Health](05-stigma-bias-and-brain-health/index.md) — Examines how bias, exclusion, and bullying affect mental health, how media representation reduces stigma, and what keeps the brain healthy, including Alzheimer's and dementia.
+6. [Sleep, Fitness, And Emergency Response](06-sleep-fitness-and-emergency-response/index.md) — Builds skills in sleep habits, workout planning, emergency medication use and the Heimlich maneuver, and recognizing and responding to emergencies.
+7. [Digital Safety And School Safety](07-digital-safety-and-school-safety/index.md) — Addresses digital risks such as sharing explicit content, power dynamics, and peer pressure, plus the collective actions that keep schools safe.
+8. [Substances And The Developing Brain](08-substances-and-the-developing-brain/index.md) — Details how alcohol, tobacco, nicotine, cannabis, and other drugs affect the developing brain and body, and the cultural teachings that protect youth.
+9. [Substance Use Culture, Safety, And Risk](09-substance-use-culture-safety-and-risk/index.md) — Covers commercial tobacco addiction, safe medication storage and disposal, and the elevated injury, violence, and health risks tied to substance use.
+10. [Substance Use Disorder, Recovery, And Policy](10-substance-use-disorder-recovery-and-policy/index.md) — Explains substance use disorder, relapse, treatment, community recovery supports, impaired driving risk, and the industry advertising that shapes health disparities.
+11. [Health Influences And Information Literacy](11-health-influences-and-information-literacy/index.md) — Opens the cross-cutting Skill Standards strand: analyzing social, cultural, and media influences on health practices, and accessing and evaluating valid health information.
+12. [Advocacy, Goal Setting, And Health Messaging](12-advocacy-goal-setting-and-health-messaging/index.md) — Develops communication, conflict-resolution, self-advocacy, and refusal skills, then applies them to goal-setting, decision-making, and designing health messages for real audiences.

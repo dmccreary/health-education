@@ -49,6 +49,7 @@ nav:
       # - Concept Taxonomy: learning-graph/concept-taxonomy.md
       # - Graph Quality Analysis: learning-graph/quality-metrics.md
       # - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
+      - Mascot Test: learning-graph/mascot-test.md
 
   - MicroSims:
       - List of MicroSims: sims/index.md
@@ -57,6 +58,14 @@ nav:
   - Grade Bands:
       - Kindergarten:
           - Course Description: bands/kindergarten/course-description.md
+          - Chapters:
+              - List of Chapters: bands/kindergarten/chapters/index.md
+              - 1. Health And Food: bands/kindergarten/chapters/01-health-and-food/index.md
+              - 2. Family And Trusted Adults: bands/kindergarten/chapters/02-family/index.md
+              - 3. Feelings And Kindness: bands/kindergarten/chapters/03-feelings-and-kindness/index.md
+              - 4. Staying Healthy Every Day: bands/kindergarten/chapters/04-staying-healthy/index.md
+              - 5. Staying Safe: bands/kindergarten/chapters/05-staying-safe/index.md
+              - 6. Making Healthy Choices: bands/kindergarten/chapters/06-health-choices/index.md
           - Learning Graph:
               - Introduction: bands/kindergarten/learning-graph/index.md
               - Course Description Assessment: bands/kindergarten/learning-graph/course-description-assessment.md
@@ -66,6 +75,15 @@ nav:
               - Taxonomy Distribution: bands/kindergarten/learning-graph/taxonomy-distribution.md
       - Grade 1:
           - Course Description: bands/grade-1/course-description.md
+          - Chapters:
+              - List of Chapters: bands/grade-1/chapters/index.md
+              - 1. Foundations of Health and Safe Habits: bands/grade-1/chapters/01-foundations/index.md
+              - 2. Food, Drinks, and Staying Safe in the Kitchen: bands/grade-1/chapters/02-food-and-nutrition/index.md
+              - 3. Understanding and Talking About Feelings: bands/grade-1/chapters/03-feelings/index.md
+              - 4. Friendship, Uniqueness, and Belonging: bands/grade-1/chapters/04-friendship-and-belonging/index.md
+              - 5. Healthy Habits, Activity, and Germs: bands/grade-1/chapters/05-healthy-habits/index.md
+              - 6. Staying Safe at Home, School, and Online: bands/grade-1/chapters/06-personal-safety/index.md
+              - 7. Getting Help and Making Healthy Choices: bands/grade-1/chapters/07-help-and-decisions/index.md
           - Learning Graph:
               - Introduction: bands/grade-1/learning-graph/index.md
               - Course Description Assessment: bands/grade-1/learning-graph/course-description-assessment.md
@@ -75,6 +93,15 @@ nav:
               - Taxonomy Distribution: bands/grade-1/learning-graph/taxonomy-distribution.md
       - Grade 2:
           - Course Description: bands/grade-2/course-description.md
+          - Chapters:
+              - List of Chapters: bands/grade-2/chapters/index.md
+              - 1. Health Basics, Friendships, and Feelings: bands/grade-2/chapters/01-health-friendships-feelings/index.md
+              - 2. Food, Energy, and Safe Eating: bands/grade-2/chapters/02-food-energy-safe-eating/index.md
+              - 3. Handling Conflict and Kind Play: bands/grade-2/chapters/03-conflict-kind-play/index.md
+              - 4. Staying Healthy in Our Environment: bands/grade-2/chapters/04-staying-healthy-environment/index.md
+              - 5. Technology, Community, and Emergency Safety: bands/grade-2/chapters/05-technology-community-emergency-safety/index.md
+              - 6. Body Safety and Speaking Up: bands/grade-2/chapters/06-body-safety-speaking-up/index.md
+              - 7. Influences, Decisions, and Personal Goals: bands/grade-2/chapters/07-influences-decisions-goals/index.md
           - Learning Graph:
               - Introduction: bands/grade-2/learning-graph/index.md
               - Course Description Assessment: bands/grade-2/learning-graph/course-description-assessment.md
@@ -84,6 +111,16 @@ nav:
               - Taxonomy Distribution: bands/grade-2/learning-graph/taxonomy-distribution.md
       - Grade 3:
           - Course Description: bands/grade-3/course-description.md
+          - Chapters:
+              - List of Chapters: bands/grade-3/chapters/index.md
+              - 1. Foundations Of Health: bands/grade-3/chapters/01-foundations-of-health/index.md
+              - 2. Safety And Trusted Adults: bands/grade-3/chapters/02-safety-and-trusted-adults/index.md
+              - 3. Wellness And Activity: bands/grade-3/chapters/03-wellness-and-activity/index.md
+              - 4. Food And Nutrition: bands/grade-3/chapters/04-food-and-nutrition/index.md
+              - 5. Relationships And Respect: bands/grade-3/chapters/05-relationships-and-respect/index.md
+              - 6. Growth And Puberty: bands/grade-3/chapters/06-growth-and-puberty/index.md
+              - 7. Mental And Emotional Health: bands/grade-3/chapters/07-mental-and-emotional-health/index.md
+              - 8. Communication And Goals: bands/grade-3/chapters/08-communication-and-goals/index.md
           - Learning Graph:
               - Introduction: bands/grade-3/learning-graph/index.md
               - Course Description Assessment: bands/grade-3/learning-graph/course-description-assessment.md
@@ -93,6 +130,14 @@ nav:
               - Taxonomy Distribution: bands/grade-3/learning-graph/taxonomy-distribution.md
       - Grade 4:
           - Course Description: bands/grade-4/course-description.md
+          - Chapters:
+              - List of Chapters: bands/grade-4/chapters/index.md
+              - 1. Food and Nutrition: bands/grade-4/chapters/01-food-and-nutrition/index.md
+              - 2. Growth and Development Across Cultures: bands/grade-4/chapters/02-growth-and-development/index.md
+              - 3. Mental and Emotional Health: bands/grade-4/chapters/03-mental-emotional-health/index.md
+              - 4. Personal Safety and Refusal Skills: bands/grade-4/chapters/04-safety-and-refusal-skills/index.md
+              - 5. Wellness and Disease Prevention: bands/grade-4/chapters/05-wellness-and-disease-prevention/index.md
+              - 6. Health Literacy and Goal Setting: bands/grade-4/chapters/06-health-literacy-and-goals/index.md
           - Learning Graph:
               - Introduction: bands/grade-4/learning-graph/index.md
               - Course Description Assessment: bands/grade-4/learning-graph/course-description-assessment.md
@@ -102,6 +147,15 @@ nav:
               - Taxonomy Distribution: bands/grade-4/learning-graph/taxonomy-distribution.md
       - Grade 5:
           - Course Description: bands/grade-5/course-description.md
+          - Chapters:
+              - List of Chapters: bands/grade-5/chapters/index.md
+              - 1. Foundations And Trusted Adults: bands/grade-5/chapters/01-foundations-and-trusted-adults/index.md
+              - 2. Food And Nutrition: bands/grade-5/chapters/02-food-and-nutrition/index.md
+              - 3. Managing Emotions And Relationships: bands/grade-5/chapters/03-managing-emotions-and-relationships/index.md
+              - 4. Equity, Belonging, And Bystander Action: bands/grade-5/chapters/04-equity-belonging-and-bystander-action/index.md
+              - 5. Personal Health And Wellness: bands/grade-5/chapters/05-personal-health-and-wellness/index.md
+              - 6. Personal Safety And Violence Prevention: bands/grade-5/chapters/06-personal-safety-and-violence-prevention/index.md
+              - 7. Health Skills And Goal Setting: bands/grade-5/chapters/07-health-skills-and-goal-setting/index.md
           - Learning Graph:
               - Introduction: bands/grade-5/learning-graph/index.md
               - Course Description Assessment: bands/grade-5/learning-graph/course-description-assessment.md
@@ -111,6 +165,20 @@ nav:
               - Taxonomy Distribution: bands/grade-5/learning-graph/taxonomy-distribution.md
       - Grades 6-8:
           - Course Description: bands/grade-6-8/course-description.md
+          - Chapters:
+              - List of Chapters: bands/grade-6-8/chapters/index.md
+              - 1. Health Foundations And Nutrition: bands/grade-6-8/chapters/01-health-foundations-and-nutrition/index.md
+              - 2. Relationships, Boundaries, And Consent: bands/grade-6-8/chapters/02-relationships-boundaries-and-consent/index.md
+              - 3. Healthcare Access And Sexual Health: bands/grade-6-8/chapters/03-healthcare-access-and-sexual-health/index.md
+              - 4. Emotional Well-Being And Mental Health: bands/grade-6-8/chapters/04-emotional-well-being-and-mental-health/index.md
+              - 5. Stigma, Bias, And Brain Health: bands/grade-6-8/chapters/05-stigma-bias-and-brain-health/index.md
+              - 6. Sleep, Fitness, And Emergency Response: bands/grade-6-8/chapters/06-sleep-fitness-and-emergency-response/index.md
+              - 7. Digital Safety And School Safety: bands/grade-6-8/chapters/07-digital-safety-and-school-safety/index.md
+              - 8. Substances And The Developing Brain: bands/grade-6-8/chapters/08-substances-and-the-developing-brain/index.md
+              - 9. Substance Use Culture, Safety, And Risk: bands/grade-6-8/chapters/09-substance-use-culture-safety-and-risk/index.md
+              - 10. Substance Use Disorder, Recovery, And Policy: bands/grade-6-8/chapters/10-substance-use-disorder-recovery-and-policy/index.md
+              - 11. Health Influences And Information Literacy: bands/grade-6-8/chapters/11-health-influences-and-information-literacy/index.md
+              - 12. Advocacy, Goal Setting, And Health Messaging: bands/grade-6-8/chapters/12-advocacy-goal-setting-and-health-messaging/index.md
           - Learning Graph:
               - Introduction: bands/grade-6-8/learning-graph/index.md
               - Course Description Assessment: bands/grade-6-8/learning-graph/course-description-assessment.md
@@ -120,6 +188,23 @@ nav:
               - Taxonomy Distribution: bands/grade-6-8/learning-graph/taxonomy-distribution.md
       - Grades 9-12:
           - Course Description: bands/grade-9-12/course-description.md
+          - Chapters:
+              - List of Chapters: bands/grade-9-12/chapters/index.md
+              - 1. Food and Nutrition: bands/grade-9-12/chapters/01-food-and-nutrition/index.md
+              - 2. Relationships and Respect: bands/grade-9-12/chapters/02-relationships-and-respect/index.md
+              - 3. Consent and Boundaries: bands/grade-9-12/chapters/03-consent-and-boundaries/index.md
+              - 4. Healthcare Access and Sexual Health: bands/grade-9-12/chapters/04-healthcare-access-and-sexual-health/index.md
+              - 5. Mental Health and Crisis Support: bands/grade-9-12/chapters/05-mental-health-and-crisis-support/index.md
+              - 6. Conflict Resolution and Inclusion: bands/grade-9-12/chapters/06-conflict-resolution-and-inclusion/index.md
+              - 7. Brain Health, Sleep, and Emergency Care: bands/grade-9-12/chapters/07-brain-health-sleep-and-emergency-care/index.md
+              - 8. Health Equity and Disease Prevention: bands/grade-9-12/chapters/08-health-equity-and-disease-prevention/index.md
+              - 9. Digital and School Safety: bands/grade-9-12/chapters/09-digital-and-school-safety/index.md
+              - "10. Substances: Effects and Safer Choices": bands/grade-9-12/chapters/10-substances-effects-and-safer-choices/index.md
+              - 11. Substance Recovery and Resilience: bands/grade-9-12/chapters/11-substance-recovery-and-resilience/index.md
+              - 12. Substance Policy and Law: bands/grade-9-12/chapters/12-substance-policy-and-law/index.md
+              - 13. Influences on Health Behavior: bands/grade-9-12/chapters/13-influences-on-health-behavior/index.md
+              - 14. Health Decision-Making and Goal-Setting: bands/grade-9-12/chapters/14-health-decision-making-and-goal-setting/index.md
+              - 15. Health Promotion and Behavior Change: bands/grade-9-12/chapters/15-health-promotion-and-behavior-change/index.md
           - Learning Graph:
               - Introduction: bands/grade-9-12/learning-graph/index.md
               - Course Description Assessment: bands/grade-9-12/learning-graph/course-description-assessment.md
@@ -200,6 +285,7 @@ markdown_extensions:
 # Custom CSS — file is created by init-textbook
 extra_css:
   - css/extra.css
+  - css/mascot.css
 
 # Custom JavaScript — uncomment once a corresponding file exists
 # extra_javascript:
