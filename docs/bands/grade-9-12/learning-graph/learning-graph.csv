@@ -1,0 +1,137 @@
+ConceptID,ConceptLabel,Dependencies,TaxonomyID
+1,Health,,FOUND
+2,Personal Nutrition Needs Assessment,1,FOOD
+3,Nutrition Plan Design,2,FOOD
+4,Food Label Analysis,2,FOOD
+5,Nutrient Value Evaluation,4,FOOD
+6,Beverage Choice Evaluation,5,FOOD
+7,Hydration Sugar And Caffeine Evidence,6,FOOD
+8,Meal And Snack Evaluation,3|5,FOOD
+9,Cultural Food Traditions,1,FOOD
+10,Food Systems And Chronic Disease Risk,9,FOOD
+11,Community Nutrition Initiatives,10,FOOD
+12,Relationship Structures,1,GROW
+13,Healthy Relationship Characteristics,12,GROW
+14,Handling Relationship Conflict And Pressure,13,GROW
+15,Cultural And Historical Influences On Relationships,12,GROW
+16,Dignity And Compassion For All People,13,GROW
+17,Trusted Adult Guidance,1,GROW
+18,Culturally Safe Healthcare Providers,17,GROW
+19,Adolescent Healthcare Access Rights,18,GROW
+20,Youth-Friendly Provider Expectations,19,GROW
+21,Stereotypes And Bias Effects On Relationships,15,GROW
+22,Stigma Effects On Healthcare Access,18,GROW
+23,STI Prevention And Treatment,18,GROW
+24,Culturally Safe STI Care,23,GROW
+25,Healthcare Services Supporting Sexual Health,24,GROW
+26,Community-Based Sexual Health Programs,25,GROW
+27,Personal Boundary Communication,13|30,GROW
+28,Preventing Pregnancy And STIs Through Boundaries,27|23,GROW
+29,Mutual Respect In Health Decisions,16|27,GROW
+30,Consent,13,GROW
+31,Seeking Help For Suicide Or Self-Harm Risk,17,EMOT
+32,Depression Symptoms And Causes,31,EMOT
+33,Anxiety Symptoms And Causes,31,EMOT
+34,Mental Health Treatment Options,32|33,EMOT
+35,Supporting Peers In Mental Health Crisis,31,EMOT
+36,Maintaining Boundaries While Helping Others,35|30,EMOT
+37,Empathy In Relationships,13,EMOT
+38,Communication For Conflict Resolution,14|37,EMOT
+39,Nonviolent Conflict Resolution,38,EMOT
+40,Indigenous Restorative Justice Approaches,39,EMOT
+41,Emotion Management Strategies,37,EMOT
+42,Cultural Teachings For Wellbeing,41,EMOT
+43,Inclusive Environment Design,16,EMOT
+44,Addressing Exclusion And Bullying,43,EMOT
+45,Addressing Stereotyping And Discrimination,21|43,EMOT
+46,Mental Health Stigma Reduction,34,EMOT
+47,Mental Health Awareness Campaigns,46,EMOT
+48,Brain-Healthy Habits,1,EMOT
+49,Alzheimer's Disease And Other Dementias,48,EMOT
+50,Supporting An Elder With Cognitive Impairment,49,EMOT
+51,Sleep And Rest Influences On Health,1,EMOT
+52,Health Disparities From Social Conditions,10|22,WELL
+53,Physical Activity Access Across Communities,52,WELL
+54,Safe Physical Activity Participation,53,WELL
+55,Systemic Inequity In Health Opportunity,52,WELL
+56,CPR Techniques,1,WELL
+57,AED Use,56,WELL
+58,Behavioral And Environmental Factors In Disease Risk,52,WELL
+59,Chronic Disease Prevention Strategies,58|10,WELL
+60,Infectious Disease Prevention Strategies,58,WELL
+61,Digital Content Effects On Relationships,13,SAFE
+62,Social Media Effects On Boundaries,61|27,SAFE
+63,Responding To Online Threats And Harmful Content,62,SAFE
+64,Online Emergency Response,63,SAFE
+65,School Safety Practices Evaluation,17,SAFE
+66,School Shooting Preparedness,65,SAFE
+67,Communicating And Interpreting Consent,30,SAFE
+68,Withdrawing Consent,67,SAFE
+69,Power Dynamics And Consent,68|21,SAFE
+70,Law And Consent,69,SAFE
+71,Substance Use Effects On Mental Health And Brain Function,1,SUB
+72,Substance Use Effects On Physiology,71,SUB
+73,Indigenous Views Of Health And Substance Use,71,SUB
+74,Substance Use Effects On Relationships School And Work,71,SUB
+75,Substance Use Effects On Decision-Making,71,SUB
+76,Coping Strategies Without Substances,75,SUB
+77,Cultural Coping Practices,76|73,SUB
+78,Commercial Tobacco Addiction,72,SUB
+79,Traditional Tobacco And Plant Medicine Use,73,SUB
+80,Medication Interaction Risks,72,SUB
+81,Safe Medication Practices,80,SUB
+82,Traditional Medicine Use Considerations,79|81,SUB
+83,Supporting Yourself In Reducing Substance Use,76,SUB
+84,Supporting Others In Reducing Substance Use,83|35,SUB
+85,Cultural Resilience Strategies,77|91,SUB
+86,Alcohol Short- And Long-Term Effects,72,SUB
+87,Commercial Tobacco Short- And Long-Term Effects,78,SUB
+88,Nicotine Short- And Long-Term Effects,78,SUB
+89,Cannabis Short- And Long-Term Effects,72,SUB
+90,Other Substance Short- And Long-Term Effects,72,SUB
+91,Recognizing Overdose Signs,86|90,SUB
+92,Overdose Emergency Response,91,SUB
+93,Community Integration Of Cultural Recovery Practices,77,SUB
+94,Substance Use Disorder Treatment And Recovery,83|93,SUB
+95,Community Laws On Substance Use,74,SUB
+96,Financial And Social Costs Of Substance Use,95,SUB
+97,Tribal Sovereignty In Substance Use Lawmaking,95,SUB
+98,Substance Marketing And Availability Policy,96,SUB
+99,Substance-Related Health Disparities,98|52,SUB
+100,Public Health Policy Influence On Health Practices,55,SKIL
+101,School And Community Environment Influence,65|100,SKIL
+102,Cultural And Peer Influence On Health Practices,15|21,SKIL
+103,Social Norms And Health Practices,102,SKIL
+104,Individual And Interpersonal Factors In Health Practices,37|41,SKIL
+105,Community Societal And Environmental Factors In Health Practices,52|58,SKIL
+106,Evaluating Trusted Adults And Professionals,17,SKIL
+107,Accessibility Of Health Resources,106|22,SKIL
+108,Validity And Reliability Of Health Information,107,SKIL
+109,Verbal And Nonverbal Communication Analysis,38,SKIL
+110,Conflict-Resolution Skill Evaluation,39|109,SKIL
+111,Negotiation Skills,110,SKIL
+112,Evaluating Boundary And Consent Communication,27|68,SKIL
+113,Refusal Skills Evaluation,111|76,SKIL
+114,Health Decisions And Personal Wellbeing,104,SKIL
+115,Health Decisions And Community Wellbeing,105|100,SKIL
+116,Multiple Perspectives On Health Decisions,114|115,SKIL
+117,Evaluating Options In Health Decisions,116,SKIL
+118,Evaluating Consequences In Health Decisions,117,SKIL
+119,Choosing The Healthiest Option,118,SKIL
+120,Justifying Health Choices,119,SKIL
+121,Evaluating Health Decision Outcomes,120,SKIL
+122,Health Goal Focus Area Evaluation,114,SKIL
+123,Individual Goal-Setting Process,122,SKIL
+124,Supported Goal-Setting Process,123,SKIL
+125,Collaborative Goal-Setting Process,124,SKIL
+126,Formulating Goal Strategies,123|125,SKIL
+127,Evaluating Goal Strategy Outcomes,126,SKIL
+128,Evaluating Supports For Health Practices,103|108,SKIL
+129,Evaluating Barriers To Health Practices,128,SKIL
+130,Adapting Health Behaviors,129|113,SKIL
+131,Evaluating Impact Of Health Behaviors,130,SKIL
+132,Health Promotion Factors Across Levels,101|105,SKIL
+133,Formulating Health Messages,108|132,SKIL
+134,Justifying Health Messages With Facts,133,SKIL
+135,Tailoring Messages To Audiences,134,SKIL
+136,Evaluating Health Promotion Effectiveness,135|131,SKIL
