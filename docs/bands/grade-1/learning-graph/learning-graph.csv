@@ -1,0 +1,56 @@
+ConceptID,ConceptLabel,Dependencies,TaxonomyID
+1,Health,,FOUND
+2,Food Group,1,FOOD
+3,Variety Of Foods,2,FOOD
+4,Drink Types,1,FOOD
+5,Water As A Drink,4,FOOD
+6,Breakfast,3,FOOD
+7,Food Safety,1,FOOD
+8,Food Storage,7,FOOD
+9,Food Preparation Safety,7|8,FOOD
+10,Peer Relationship,1,GROW
+11,Healthy Peer Traits,10|21,GROW
+12,Feelings,1,EMOT
+13,Talking About Feelings,12,EMOT
+14,Cultural Support Practices,13|39,EMOT
+15,Signs Of Emotional Struggle,12|20,EMOT
+16,Uniqueness,1,EMOT
+17,Valuing Uniqueness,16,EMOT
+18,Belonging,17,EMOT
+19,Caring Relationships,17|10,EMOT
+20,Situational Feelings,12,EMOT
+21,Kindness,12,EMOT
+22,Unkindness,12,EMOT
+23,Kindness And Belonging,21|22|18,EMOT
+24,Hygiene,1,WELL
+25,Personal Care Practice,24,WELL
+26,Community Health Practice,25|24,WELL
+27,Physical Activity,1,WELL
+28,Benefits Of Physical Activity,27,WELL
+29,Daily Active Play,27|28,WELL
+30,Germs,1,WELL
+31,How Germs Spread,30,WELL
+32,Illness Prevention Action,31|24,WELL
+33,Permission,1,SAFE
+34,Healthy Technology Use,33,SAFE
+35,Sharing Information Safely,33|34,SAFE
+36,Safe Behavior,1,SAFE
+37,Unsafe Behavior,36,SAFE
+38,Asking A Trusted Adult,39|36,SAFE
+39,Trusted Adult,1,SKIL
+40,School Emergency,1,SAFE
+41,Safety Drill,40,SAFE
+42,Body Safety,1,SAFE
+43,Unsafe Touch,42,SAFE
+44,Saying No,43|38,SAFE
+45,Influence,1,SKIL
+46,Positive Influence,45,SKIL
+47,Negative Influence,45,SKIL
+48,Seeking Help,39|38,SKIL
+49,Communication,1,SKIL
+50,Communicating Feelings,49|12,SKIL
+51,Communicating Needs,49,SKIL
+52,Recognizing Need For Help,48,SKIL
+53,Health Decision,46|47,SKIL
+54,Tracking Health Behaviors,25|27,SKIL
+55,Asking For Help With Choices,52|53,SKIL

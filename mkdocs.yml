@@ -63,6 +63,15 @@ nav:
               - Concept Taxonomy: bands/kindergarten/learning-graph/concept-taxonomy.md
               - Graph Quality Analysis: bands/kindergarten/learning-graph/quality-metrics.md
               - Taxonomy Distribution: bands/kindergarten/learning-graph/taxonomy-distribution.md
+      - Grade 1:
+          - Course Description: bands/grade-1/course-description.md
+          - Learning Graph:
+              - Introduction: bands/grade-1/learning-graph/index.md
+              - Course Description Assessment: bands/grade-1/learning-graph/course-description-assessment.md
+              - Concept List: bands/grade-1/learning-graph/concept-list.md
+              - Concept Taxonomy: bands/grade-1/learning-graph/concept-taxonomy.md
+              - Graph Quality Analysis: bands/grade-1/learning-graph/quality-metrics.md
+              - Taxonomy Distribution: bands/grade-1/learning-graph/taxonomy-distribution.md
 
   - References: references.md
 

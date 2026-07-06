@@ -1,0 +1,631 @@
+{
+  "metadata": {
+    "title": "Grade 1 Health Education Learning Graph",
+    "description": "A learning graph of 55 concepts covering Grade 1 health education: food and nutrition, human growth and development, mental and emotional health, personal health and wellness, personal safety and violence prevention, and cross-cutting skill standards. Derived from the 2025 Minnesota K-12 Health Academic Standards.",
+    "creator": "Dan Mccreary",
+    "date": "2026-07-06",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "FOUND": {
+      "classifierName": "Foundations",
+      "color": "SteelBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "FOOD": {
+      "classifierName": "Food and Nutrition",
+      "color": "Gold",
+      "font": {
+        "color": "black"
+      }
+    },
+    "GROW": {
+      "classifierName": "Human Growth and Development",
+      "color": "DarkSlateBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "EMOT": {
+      "classifierName": "Mental and Emotional Health",
+      "color": "MediumPurple",
+      "font": {
+        "color": "white"
+      }
+    },
+    "WELL": {
+      "classifierName": "Personal Health and Wellness",
+      "color": "DarkGreen",
+      "font": {
+        "color": "white"
+      }
+    },
+    "SAFE": {
+      "classifierName": "Personal Safety and Violence Prevention",
+      "color": "Crimson",
+      "font": {
+        "color": "white"
+      }
+    },
+    "SKIL": {
+      "classifierName": "Skill Standards",
+      "color": "Teal",
+      "font": {
+        "color": "white"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Health",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 2,
+      "label": "Food Group",
+      "group": "FOOD"
+    },
+    {
+      "id": 3,
+      "label": "Variety Of Foods",
+      "group": "FOOD"
+    },
+    {
+      "id": 4,
+      "label": "Drink Types",
+      "group": "FOOD"
+    },
+    {
+      "id": 5,
+      "label": "Water As A Drink",
+      "group": "FOOD"
+    },
+    {
+      "id": 6,
+      "label": "Breakfast",
+      "group": "FOOD"
+    },
+    {
+      "id": 7,
+      "label": "Food Safety",
+      "group": "FOOD"
+    },
+    {
+      "id": 8,
+      "label": "Food Storage",
+      "group": "FOOD"
+    },
+    {
+      "id": 9,
+      "label": "Food Preparation Safety",
+      "group": "FOOD"
+    },
+    {
+      "id": 10,
+      "label": "Peer Relationship",
+      "group": "GROW"
+    },
+    {
+      "id": 11,
+      "label": "Healthy Peer Traits",
+      "group": "GROW"
+    },
+    {
+      "id": 12,
+      "label": "Feelings",
+      "group": "EMOT"
+    },
+    {
+      "id": 13,
+      "label": "Talking About Feelings",
+      "group": "EMOT"
+    },
+    {
+      "id": 14,
+      "label": "Cultural Support Practices",
+      "group": "EMOT"
+    },
+    {
+      "id": 15,
+      "label": "Signs Of Emotional Struggle",
+      "group": "EMOT"
+    },
+    {
+      "id": 16,
+      "label": "Uniqueness",
+      "group": "EMOT"
+    },
+    {
+      "id": 17,
+      "label": "Valuing Uniqueness",
+      "group": "EMOT"
+    },
+    {
+      "id": 18,
+      "label": "Belonging",
+      "group": "EMOT"
+    },
+    {
+      "id": 19,
+      "label": "Caring Relationships",
+      "group": "EMOT"
+    },
+    {
+      "id": 20,
+      "label": "Situational Feelings",
+      "group": "EMOT"
+    },
+    {
+      "id": 21,
+      "label": "Kindness",
+      "group": "EMOT"
+    },
+    {
+      "id": 22,
+      "label": "Unkindness",
+      "group": "EMOT"
+    },
+    {
+      "id": 23,
+      "label": "Kindness And Belonging",
+      "group": "EMOT"
+    },
+    {
+      "id": 24,
+      "label": "Hygiene",
+      "group": "WELL"
+    },
+    {
+      "id": 25,
+      "label": "Personal Care Practice",
+      "group": "WELL"
+    },
+    {
+      "id": 26,
+      "label": "Community Health Practice",
+      "group": "WELL"
+    },
+    {
+      "id": 27,
+      "label": "Physical Activity",
+      "group": "WELL"
+    },
+    {
+      "id": 28,
+      "label": "Benefits Of Physical Activity",
+      "group": "WELL"
+    },
+    {
+      "id": 29,
+      "label": "Daily Active Play",
+      "group": "WELL"
+    },
+    {
+      "id": 30,
+      "label": "Germs",
+      "group": "WELL"
+    },
+    {
+      "id": 31,
+      "label": "How Germs Spread",
+      "group": "WELL"
+    },
+    {
+      "id": 32,
+      "label": "Illness Prevention Action",
+      "group": "WELL"
+    },
+    {
+      "id": 33,
+      "label": "Permission",
+      "group": "SAFE"
+    },
+    {
+      "id": 34,
+      "label": "Healthy Technology Use",
+      "group": "SAFE"
+    },
+    {
+      "id": 35,
+      "label": "Sharing Information Safely",
+      "group": "SAFE"
+    },
+    {
+      "id": 36,
+      "label": "Safe Behavior",
+      "group": "SAFE"
+    },
+    {
+      "id": 37,
+      "label": "Unsafe Behavior",
+      "group": "SAFE"
+    },
+    {
+      "id": 38,
+      "label": "Asking A Trusted Adult",
+      "group": "SAFE"
+    },
+    {
+      "id": 39,
+      "label": "Trusted Adult",
+      "group": "SKIL"
+    },
+    {
+      "id": 40,
+      "label": "School Emergency",
+      "group": "SAFE"
+    },
+    {
+      "id": 41,
+      "label": "Safety Drill",
+      "group": "SAFE"
+    },
+    {
+      "id": 42,
+      "label": "Body Safety",
+      "group": "SAFE"
+    },
+    {
+      "id": 43,
+      "label": "Unsafe Touch",
+      "group": "SAFE"
+    },
+    {
+      "id": 44,
+      "label": "Saying No",
+      "group": "SAFE"
+    },
+    {
+      "id": 45,
+      "label": "Influence",
+      "group": "SKIL"
+    },
+    {
+      "id": 46,
+      "label": "Positive Influence",
+      "group": "SKIL"
+    },
+    {
+      "id": 47,
+      "label": "Negative Influence",
+      "group": "SKIL"
+    },
+    {
+      "id": 48,
+      "label": "Seeking Help",
+      "group": "SKIL"
+    },
+    {
+      "id": 49,
+      "label": "Communication",
+      "group": "SKIL"
+    },
+    {
+      "id": 50,
+      "label": "Communicating Feelings",
+      "group": "SKIL"
+    },
+    {
+      "id": 51,
+      "label": "Communicating Needs",
+      "group": "SKIL"
+    },
+    {
+      "id": 52,
+      "label": "Recognizing Need For Help",
+      "group": "SKIL"
+    },
+    {
+      "id": 53,
+      "label": "Health Decision",
+      "group": "SKIL"
+    },
+    {
+      "id": 54,
+      "label": "Tracking Health Behaviors",
+      "group": "SKIL"
+    },
+    {
+      "id": 55,
+      "label": "Asking For Help With Choices",
+      "group": "SKIL"
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 4,
+      "to": 1
+    },
+    {
+      "from": 5,
+      "to": 4
+    },
+    {
+      "from": 6,
+      "to": 3
+    },
+    {
+      "from": 7,
+      "to": 1
+    },
+    {
+      "from": 8,
+      "to": 7
+    },
+    {
+      "from": 9,
+      "to": 7
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 10,
+      "to": 1
+    },
+    {
+      "from": 11,
+      "to": 10
+    },
+    {
+      "from": 11,
+      "to": 21
+    },
+    {
+      "from": 12,
+      "to": 1
+    },
+    {
+      "from": 13,
+      "to": 12
+    },
+    {
+      "from": 14,
+      "to": 13
+    },
+    {
+      "from": 14,
+      "to": 39
+    },
+    {
+      "from": 15,
+      "to": 12
+    },
+    {
+      "from": 15,
+      "to": 20
+    },
+    {
+      "from": 16,
+      "to": 1
+    },
+    {
+      "from": 17,
+      "to": 16
+    },
+    {
+      "from": 18,
+      "to": 17
+    },
+    {
+      "from": 19,
+      "to": 17
+    },
+    {
+      "from": 19,
+      "to": 10
+    },
+    {
+      "from": 20,
+      "to": 12
+    },
+    {
+      "from": 21,
+      "to": 12
+    },
+    {
+      "from": 22,
+      "to": 12
+    },
+    {
+      "from": 23,
+      "to": 21
+    },
+    {
+      "from": 23,
+      "to": 22
+    },
+    {
+      "from": 23,
+      "to": 18
+    },
+    {
+      "from": 24,
+      "to": 1
+    },
+    {
+      "from": 25,
+      "to": 24
+    },
+    {
+      "from": 26,
+      "to": 25
+    },
+    {
+      "from": 26,
+      "to": 24
+    },
+    {
+      "from": 27,
+      "to": 1
+    },
+    {
+      "from": 28,
+      "to": 27
+    },
+    {
+      "from": 29,
+      "to": 27
+    },
+    {
+      "from": 29,
+      "to": 28
+    },
+    {
+      "from": 30,
+      "to": 1
+    },
+    {
+      "from": 31,
+      "to": 30
+    },
+    {
+      "from": 32,
+      "to": 31
+    },
+    {
+      "from": 32,
+      "to": 24
+    },
+    {
+      "from": 33,
+      "to": 1
+    },
+    {
+      "from": 34,
+      "to": 33
+    },
+    {
+      "from": 35,
+      "to": 33
+    },
+    {
+      "from": 35,
+      "to": 34
+    },
+    {
+      "from": 36,
+      "to": 1
+    },
+    {
+      "from": 37,
+      "to": 36
+    },
+    {
+      "from": 38,
+      "to": 39
+    },
+    {
+      "from": 38,
+      "to": 36
+    },
+    {
+      "from": 39,
+      "to": 1
+    },
+    {
+      "from": 40,
+      "to": 1
+    },
+    {
+      "from": 41,
+      "to": 40
+    },
+    {
+      "from": 42,
+      "to": 1
+    },
+    {
+      "from": 43,
+      "to": 42
+    },
+    {
+      "from": 44,
+      "to": 43
+    },
+    {
+      "from": 44,
+      "to": 38
+    },
+    {
+      "from": 45,
+      "to": 1
+    },
+    {
+      "from": 46,
+      "to": 45
+    },
+    {
+      "from": 47,
+      "to": 45
+    },
+    {
+      "from": 48,
+      "to": 39
+    },
+    {
+      "from": 48,
+      "to": 38
+    },
+    {
+      "from": 49,
+      "to": 1
+    },
+    {
+      "from": 50,
+      "to": 49
+    },
+    {
+      "from": 50,
+      "to": 12
+    },
+    {
+      "from": 51,
+      "to": 49
+    },
+    {
+      "from": 52,
+      "to": 48
+    },
+    {
+      "from": 53,
+      "to": 46
+    },
+    {
+      "from": 53,
+      "to": 47
+    },
+    {
+      "from": 54,
+      "to": 25
+    },
+    {
+      "from": 54,
+      "to": 27
+    },
+    {
+      "from": 55,
+      "to": 52
+    },
+    {
+      "from": 55,
+      "to": 53
+    }
+  ]
+}
