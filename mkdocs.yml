@@ -53,6 +53,17 @@ nav:
   - MicroSims:
       - List of MicroSims: sims/index.md
 
+  - Grade Bands:
+      - Kindergarten:
+          - Course Description: bands/kindergarten/course-description.md
+          - Learning Graph:
+              - Introduction: bands/kindergarten/learning-graph/index.md
+              - Course Description Assessment: bands/kindergarten/learning-graph/course-description-assessment.md
+              - Concept List: bands/kindergarten/learning-graph/concept-list.md
+              - Concept Taxonomy: bands/kindergarten/learning-graph/concept-taxonomy.md
+              - Graph Quality Analysis: bands/kindergarten/learning-graph/quality-metrics.md
+              - Taxonomy Distribution: bands/kindergarten/learning-graph/taxonomy-distribution.md
+
   - References: references.md
 
   - License: license.md
@@ -136,6 +147,7 @@ exclude_docs: |
   **/image-prompts*.md
   **/cover-prompt.md
   **/TODO.md
+  **/index-template.md
 
 # Rebuild on changes during `mkdocs serve`
 watch:

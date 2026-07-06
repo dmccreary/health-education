@@ -1,0 +1,46 @@
+ConceptID,ConceptLabel,Dependencies,TaxonomyID
+1,Health,,FOUND
+2,Food Group,1,FOOD
+3,Fruits Group,2,FOOD
+4,Vegetables Group,2,FOOD
+5,Grains Group,2,FOOD
+6,Protein Foods Group,2,FOOD
+7,Dairy Group,2,FOOD
+8,Cultural Food Tradition,2,FOOD
+9,Hydration,1,FOOD
+10,Hunger Signal,1,FOOD
+11,Unsafe Food,2,FOOD
+12,Family,1,GROW
+13,Family Structure,12,GROW
+14,Feelings,1,EMOT
+15,Naming Feelings,14,EMOT
+16,Strong Feelings,14,EMOT
+17,Asking For Help,16|18,EMOT
+18,Trusted Adult,1,SKIL
+19,Prolonged Sadness,15,EMOT
+20,Kindness,14,EMOT
+21,Kind Behavior,20,EMOT
+22,Unkind Behavior,20,EMOT
+23,Including Others,21|22,EMOT
+24,Germs,1,WELL
+25,Handwashing,24,WELL
+26,Covering Coughs,24,WELL
+27,Physical Activity,1,WELL
+28,Daily Movement,27,WELL
+29,Healthy Technology Use,1,SAFE
+30,Safety Rules,1,SAFE
+31,Injury Prevention,30,SAFE
+32,Community Safety Practice,30,SAFE
+33,School Emergency,43,SAFE
+34,Safe Place,33,SAFE
+35,Body Parts,1,SAFE
+36,Correct Body Part Names,35,SAFE
+37,Positive Health Influence,1,SKIL
+38,Negative Health Influence,1,SKIL
+39,Health Decision,37|38,SKIL
+40,Personal Health Goal,41|42,SKIL
+41,Personal Health Needs,1,SKIL
+42,Personal Health Wants,1,SKIL
+43,Emergency,1,SAFE
+44,Personal Care Practice,25|26,WELL
+45,Emotions Vocabulary,15|19,EMOT
