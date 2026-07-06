@@ -1,0 +1,678 @@
+{
+  "metadata": {
+    "title": "Grade 4 Health Education Learning Graph",
+    "description": "A learning graph of 58 concepts covering Grade 4 health education: food and nutrition, human growth and development (including puberty across cultures), mental and emotional health (required instruction begins this band), personal health and wellness, personal safety and violence prevention (including refusal skills and peer pressure), and cross-cutting skill standards. Derived from the 2025 Minnesota K-12 Health Academic Standards.",
+    "creator": "Dan Mccreary",
+    "date": "2026-07-06",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "FOUND": {
+      "classifierName": "Foundations",
+      "color": "SteelBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "FOOD": {
+      "classifierName": "Food and Nutrition",
+      "color": "Gold",
+      "font": {
+        "color": "black"
+      }
+    },
+    "GROW": {
+      "classifierName": "Human Growth and Development",
+      "color": "DarkSlateBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "EMOT": {
+      "classifierName": "Mental and Emotional Health",
+      "color": "MediumPurple",
+      "font": {
+        "color": "white"
+      }
+    },
+    "WELL": {
+      "classifierName": "Personal Health and Wellness",
+      "color": "DarkGreen",
+      "font": {
+        "color": "white"
+      }
+    },
+    "SAFE": {
+      "classifierName": "Personal Safety and Violence Prevention",
+      "color": "Crimson",
+      "font": {
+        "color": "white"
+      }
+    },
+    "SKIL": {
+      "classifierName": "Skill Standards",
+      "color": "Teal",
+      "font": {
+        "color": "white"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Health",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 2,
+      "label": "Macronutrient",
+      "group": "FOOD"
+    },
+    {
+      "id": 3,
+      "label": "Carbohydrates",
+      "group": "FOOD"
+    },
+    {
+      "id": 4,
+      "label": "Protein",
+      "group": "FOOD"
+    },
+    {
+      "id": 5,
+      "label": "Fats",
+      "group": "FOOD"
+    },
+    {
+      "id": 6,
+      "label": "Vitamins And Minerals",
+      "group": "FOOD"
+    },
+    {
+      "id": 7,
+      "label": "Water And Hydration",
+      "group": "FOOD"
+    },
+    {
+      "id": 8,
+      "label": "Nutrition Label",
+      "group": "FOOD"
+    },
+    {
+      "id": 9,
+      "label": "Balanced Meal Planning",
+      "group": "FOOD"
+    },
+    {
+      "id": 10,
+      "label": "Limiting Caffeinated Drinks",
+      "group": "FOOD"
+    },
+    {
+      "id": 11,
+      "label": "Limiting Sugary Drinks",
+      "group": "FOOD"
+    },
+    {
+      "id": 12,
+      "label": "Effects Of Sugary Foods",
+      "group": "FOOD"
+    },
+    {
+      "id": 13,
+      "label": "Effects Of Salty Foods",
+      "group": "FOOD"
+    },
+    {
+      "id": 14,
+      "label": "Food Temperature Safety",
+      "group": "FOOD"
+    },
+    {
+      "id": 15,
+      "label": "Conflict Management",
+      "group": "GROW"
+    },
+    {
+      "id": 16,
+      "label": "Respecting Cultural Differences",
+      "group": "GROW"
+    },
+    {
+      "id": 17,
+      "label": "Puberty As A Life Stage",
+      "group": "GROW"
+    },
+    {
+      "id": 18,
+      "label": "Puberty Across Cultures",
+      "group": "GROW"
+    },
+    {
+      "id": 19,
+      "label": "Self-Regulation",
+      "group": "EMOT"
+    },
+    {
+      "id": 20,
+      "label": "Cultural Self-Regulation Practices",
+      "group": "EMOT"
+    },
+    {
+      "id": 21,
+      "label": "Mental Health Benefits Of Culture",
+      "group": "EMOT"
+    },
+    {
+      "id": 22,
+      "label": "Emotions Influence Behavior",
+      "group": "EMOT"
+    },
+    {
+      "id": 23,
+      "label": "Managing Emotions",
+      "group": "EMOT"
+    },
+    {
+      "id": 24,
+      "label": "Responding To Teasing And Exclusion",
+      "group": "EMOT"
+    },
+    {
+      "id": 25,
+      "label": "Responding To Bullying",
+      "group": "EMOT"
+    },
+    {
+      "id": 26,
+      "label": "Bias",
+      "group": "EMOT"
+    },
+    {
+      "id": 27,
+      "label": "Prejudice",
+      "group": "EMOT"
+    },
+    {
+      "id": 28,
+      "label": "Mental Health Changes Over Time",
+      "group": "EMOT"
+    },
+    {
+      "id": 29,
+      "label": "Culturally Appropriate Help",
+      "group": "EMOT"
+    },
+    {
+      "id": 30,
+      "label": "Trusted Adult",
+      "group": "SAFE"
+    },
+    {
+      "id": 31,
+      "label": "Allergy",
+      "group": "WELL"
+    },
+    {
+      "id": 32,
+      "label": "Allergy Prevention And Management",
+      "group": "WELL"
+    },
+    {
+      "id": 33,
+      "label": "Cultural Physical Activity Traditions",
+      "group": "WELL"
+    },
+    {
+      "id": 34,
+      "label": "Benefits Of Physical Activity On Mood",
+      "group": "WELL"
+    },
+    {
+      "id": 35,
+      "label": "Infectious Disease",
+      "group": "WELL"
+    },
+    {
+      "id": 36,
+      "label": "Non-Infectious Disease",
+      "group": "WELL"
+    },
+    {
+      "id": 37,
+      "label": "How Germs Spread",
+      "group": "WELL"
+    },
+    {
+      "id": 38,
+      "label": "Disease Prevention Strategies",
+      "group": "WELL"
+    },
+    {
+      "id": 39,
+      "label": "Cultural Wellness Perspectives",
+      "group": "WELL"
+    },
+    {
+      "id": 40,
+      "label": "Harmful Technology Behavior",
+      "group": "SAFE"
+    },
+    {
+      "id": 41,
+      "label": "Situational Awareness",
+      "group": "SAFE"
+    },
+    {
+      "id": 42,
+      "label": "Exiting Unsafe Situations",
+      "group": "SAFE"
+    },
+    {
+      "id": 43,
+      "label": "Personal Boundaries",
+      "group": "SAFE"
+    },
+    {
+      "id": 44,
+      "label": "Setting Boundaries",
+      "group": "SAFE"
+    },
+    {
+      "id": 45,
+      "label": "Warning Sign",
+      "group": "SAFE"
+    },
+    {
+      "id": 46,
+      "label": "Peer Pressure",
+      "group": "SAFE"
+    },
+    {
+      "id": 47,
+      "label": "Refusal Skill",
+      "group": "SAFE"
+    },
+    {
+      "id": 48,
+      "label": "Demonstrating Refusal Skills",
+      "group": "SAFE"
+    },
+    {
+      "id": 49,
+      "label": "Influences On Health Behavior",
+      "group": "SKIL"
+    },
+    {
+      "id": 50,
+      "label": "Media And Technology Influence",
+      "group": "SKIL"
+    },
+    {
+      "id": 51,
+      "label": "Valid Health Information",
+      "group": "SKIL"
+    },
+    {
+      "id": 52,
+      "label": "Reliable Health Information",
+      "group": "SKIL"
+    },
+    {
+      "id": 53,
+      "label": "Evaluating Health Products And Services",
+      "group": "SKIL"
+    },
+    {
+      "id": 54,
+      "label": "Goal Plan Development",
+      "group": "SKIL"
+    },
+    {
+      "id": 55,
+      "label": "Identifying Supports And Barriers",
+      "group": "SKIL"
+    },
+    {
+      "id": 56,
+      "label": "Tracking Health Behaviors",
+      "group": "SKIL"
+    },
+    {
+      "id": 57,
+      "label": "Using Research For A Position",
+      "group": "SKIL"
+    },
+    {
+      "id": 58,
+      "label": "Constructing A Health Position",
+      "group": "SKIL"
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 5,
+      "to": 2
+    },
+    {
+      "from": 6,
+      "to": 1
+    },
+    {
+      "from": 7,
+      "to": 1
+    },
+    {
+      "from": 8,
+      "to": 3
+    },
+    {
+      "from": 8,
+      "to": 4
+    },
+    {
+      "from": 8,
+      "to": 5
+    },
+    {
+      "from": 8,
+      "to": 6
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 9,
+      "to": 7
+    },
+    {
+      "from": 10,
+      "to": 7
+    },
+    {
+      "from": 11,
+      "to": 7
+    },
+    {
+      "from": 12,
+      "to": 11
+    },
+    {
+      "from": 13,
+      "to": 1
+    },
+    {
+      "from": 14,
+      "to": 1
+    },
+    {
+      "from": 15,
+      "to": 1
+    },
+    {
+      "from": 16,
+      "to": 15
+    },
+    {
+      "from": 17,
+      "to": 1
+    },
+    {
+      "from": 18,
+      "to": 17
+    },
+    {
+      "from": 18,
+      "to": 16
+    },
+    {
+      "from": 19,
+      "to": 1
+    },
+    {
+      "from": 20,
+      "to": 19
+    },
+    {
+      "from": 20,
+      "to": 16
+    },
+    {
+      "from": 21,
+      "to": 20
+    },
+    {
+      "from": 22,
+      "to": 19
+    },
+    {
+      "from": 23,
+      "to": 22
+    },
+    {
+      "from": 24,
+      "to": 23
+    },
+    {
+      "from": 24,
+      "to": 26
+    },
+    {
+      "from": 24,
+      "to": 27
+    },
+    {
+      "from": 25,
+      "to": 23
+    },
+    {
+      "from": 25,
+      "to": 26
+    },
+    {
+      "from": 25,
+      "to": 27
+    },
+    {
+      "from": 26,
+      "to": 16
+    },
+    {
+      "from": 27,
+      "to": 16
+    },
+    {
+      "from": 27,
+      "to": 26
+    },
+    {
+      "from": 28,
+      "to": 21
+    },
+    {
+      "from": 28,
+      "to": 29
+    },
+    {
+      "from": 29,
+      "to": 30
+    },
+    {
+      "from": 29,
+      "to": 16
+    },
+    {
+      "from": 30,
+      "to": 1
+    },
+    {
+      "from": 31,
+      "to": 1
+    },
+    {
+      "from": 32,
+      "to": 31
+    },
+    {
+      "from": 33,
+      "to": 16
+    },
+    {
+      "from": 34,
+      "to": 33
+    },
+    {
+      "from": 35,
+      "to": 1
+    },
+    {
+      "from": 36,
+      "to": 1
+    },
+    {
+      "from": 37,
+      "to": 35
+    },
+    {
+      "from": 38,
+      "to": 37
+    },
+    {
+      "from": 38,
+      "to": 32
+    },
+    {
+      "from": 39,
+      "to": 16
+    },
+    {
+      "from": 39,
+      "to": 38
+    },
+    {
+      "from": 40,
+      "to": 1
+    },
+    {
+      "from": 41,
+      "to": 45
+    },
+    {
+      "from": 42,
+      "to": 41
+    },
+    {
+      "from": 43,
+      "to": 1
+    },
+    {
+      "from": 44,
+      "to": 43
+    },
+    {
+      "from": 44,
+      "to": 16
+    },
+    {
+      "from": 45,
+      "to": 1
+    },
+    {
+      "from": 46,
+      "to": 49
+    },
+    {
+      "from": 47,
+      "to": 46
+    },
+    {
+      "from": 48,
+      "to": 47
+    },
+    {
+      "from": 48,
+      "to": 42
+    },
+    {
+      "from": 49,
+      "to": 1
+    },
+    {
+      "from": 50,
+      "to": 49
+    },
+    {
+      "from": 50,
+      "to": 40
+    },
+    {
+      "from": 51,
+      "to": 49
+    },
+    {
+      "from": 52,
+      "to": 49
+    },
+    {
+      "from": 53,
+      "to": 51
+    },
+    {
+      "from": 53,
+      "to": 52
+    },
+    {
+      "from": 54,
+      "to": 9
+    },
+    {
+      "from": 54,
+      "to": 34
+    },
+    {
+      "from": 54,
+      "to": 38
+    },
+    {
+      "from": 55,
+      "to": 54
+    },
+    {
+      "from": 55,
+      "to": 30
+    },
+    {
+      "from": 56,
+      "to": 54
+    },
+    {
+      "from": 57,
+      "to": 53
+    },
+    {
+      "from": 58,
+      "to": 57
+    },
+    {
+      "from": 58,
+      "to": 55
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+ConceptID,ConceptLabel,Dependencies,TaxonomyID
+1,Health,,FOUND
+2,Macronutrient,1,FOOD
+3,Carbohydrates,2,FOOD
+4,Protein,2,FOOD
+5,Fats,2,FOOD
+6,Vitamins And Minerals,1,FOOD
+7,Water And Hydration,1,FOOD
+8,Nutrition Label,3|4|5|6,FOOD
+9,Balanced Meal Planning,8|7,FOOD
+10,Limiting Caffeinated Drinks,7,FOOD
+11,Limiting Sugary Drinks,7,FOOD
+12,Effects Of Sugary Foods,11,FOOD
+13,Effects Of Salty Foods,1,FOOD
+14,Food Temperature Safety,1,FOOD
+15,Conflict Management,1,GROW
+16,Respecting Cultural Differences,15,GROW
+17,Puberty As A Life Stage,1,GROW
+18,Puberty Across Cultures,17|16,GROW
+19,Self-Regulation,1,EMOT
+20,Cultural Self-Regulation Practices,19|16,EMOT
+21,Mental Health Benefits Of Culture,20,EMOT
+22,Emotions Influence Behavior,19,EMOT
+23,Managing Emotions,22,EMOT
+24,Responding To Teasing And Exclusion,23|26|27,EMOT
+25,Responding To Bullying,23|26|27,EMOT
+26,Bias,16,EMOT
+27,Prejudice,16|26,EMOT
+28,Mental Health Changes Over Time,21|29,EMOT
+29,Culturally Appropriate Help,30|16,EMOT
+30,Trusted Adult,1,SAFE
+31,Allergy,1,WELL
+32,Allergy Prevention And Management,31,WELL
+33,Cultural Physical Activity Traditions,16,WELL
+34,Benefits Of Physical Activity On Mood,33,WELL
+35,Infectious Disease,1,WELL
+36,Non-Infectious Disease,1,WELL
+37,How Germs Spread,35,WELL
+38,Disease Prevention Strategies,37|32,WELL
+39,Cultural Wellness Perspectives,16|38,WELL
+40,Harmful Technology Behavior,1,SAFE
+41,Situational Awareness,45,SAFE
+42,Exiting Unsafe Situations,41,SAFE
+43,Personal Boundaries,1,SAFE
+44,Setting Boundaries,43|16,SAFE
+45,Warning Sign,1,SAFE
+46,Peer Pressure,49,SAFE
+47,Refusal Skill,46,SAFE
+48,Demonstrating Refusal Skills,47|42,SAFE
+49,Influences On Health Behavior,1,SKIL
+50,Media And Technology Influence,49|40,SKIL
+51,Valid Health Information,49,SKIL
+52,Reliable Health Information,49,SKIL
+53,Evaluating Health Products And Services,51|52,SKIL
+54,Goal Plan Development,9|34|38,SKIL
+55,Identifying Supports And Barriers,54|30,SKIL
+56,Tracking Health Behaviors,54,SKIL
+57,Using Research For A Position,53,SKIL
+58,Constructing A Health Position,57|55,SKIL
