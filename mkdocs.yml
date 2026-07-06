@@ -99,6 +99,15 @@ nav:
               - Concept Taxonomy: bands/grade-4/learning-graph/concept-taxonomy.md
               - Graph Quality Analysis: bands/grade-4/learning-graph/quality-metrics.md
               - Taxonomy Distribution: bands/grade-4/learning-graph/taxonomy-distribution.md
+      - Grade 5:
+          - Course Description: bands/grade-5/course-description.md
+          - Learning Graph:
+              - Introduction: bands/grade-5/learning-graph/index.md
+              - Course Description Assessment: bands/grade-5/learning-graph/course-description-assessment.md
+              - Concept List: bands/grade-5/learning-graph/concept-list.md
+              - Concept Taxonomy: bands/grade-5/learning-graph/concept-taxonomy.md
+              - Graph Quality Analysis: bands/grade-5/learning-graph/quality-metrics.md
+              - Taxonomy Distribution: bands/grade-5/learning-graph/taxonomy-distribution.md
 
   - References: references.md
 
