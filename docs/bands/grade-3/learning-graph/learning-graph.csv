@@ -1,0 +1,58 @@
+ConceptID,ConceptLabel,Dependencies,TaxonomyID
+1,Health,,FOUND
+2,Hunger And Fullness Signals,1,FOOD
+3,Carbohydrates,1,FOOD
+4,Protein,1,FOOD
+5,Fats,1,FOOD
+6,Nutrition Label,3|4|5,FOOD
+7,Limiting Caffeinated Drinks,1,FOOD
+8,Limiting Sugary Drinks,1,FOOD
+9,Beverages For Physical Activity,7|8|33,FOOD
+10,Food Safety Practices,1,FOOD
+11,Food Preparation Methods,10,FOOD
+12,Family Member Roles,1,GROW
+13,Peer Roles In Relationships,1,GROW
+14,Healthy Relationships,12|13,GROW
+15,Puberty,1,GROW
+16,Stages Of Puberty,15,GROW
+17,Asking For Help With Body Changes,16|43,GROW
+18,Resilience,1,EMOT
+19,Personal Choices And Wellbeing,18,EMOT
+20,Coping With Challenges,18,EMOT
+21,Who To Talk To,20|43,EMOT
+22,Mental Health Challenge,18,EMOT
+23,Effects Of Mental Health Challenges,22,EMOT
+24,Empathy,1,EMOT
+25,Empathy In Friendships,24|14,EMOT
+26,Emotions Influence Behavior,18,EMOT
+27,Expressing Emotions,26,EMOT
+28,Bullying,14,EMOT
+29,Exclusion,14,EMOT
+30,Effects Of Bullying And Exclusion,28|29,EMOT
+31,Kindness And Respect For All Abilities,24|30,EMOT
+32,Traditional Health Knowledge,1,WELL
+33,Benefits Of Physical Activity,1,WELL
+34,Dressing For Weather,33,WELL
+35,Cultural Germ Prevention Practices,32,WELL
+36,Why Germ Prevention Practices Work,35,WELL
+37,Sharing Messages And Images,1,SAFE
+38,Risks Of Sharing Personal Information,37,SAFE
+39,Injury Prevention,1,SAFE
+40,Evaluating Safety Behaviors,39,SAFE
+41,Safety Procedures,1,SAFE
+42,Practicing Safety Procedures,41,SAFE
+43,Trusted Adult,1,SAFE
+44,Identifying Trusted Adults,43|41,SAFE
+45,Right To Personal Boundaries,14,SAFE
+46,Influences On Health Behavior,1,SKIL
+47,Validity Of Health Information,46,SKIL
+48,Reliability Of Health Information,46,SKIL
+49,Verbal Communication,1,SKIL
+50,Nonverbal Communication,1,SKIL
+51,Active Listening,49|50,SKIL
+52,Communication In Decision-Making,49|50|51,SKIL
+53,I-Statement,49|27,SKIL
+54,Personal Health Goal,1,SKIL
+55,Determining Need For Assistance,54|21,SKIL
+56,Examining Health-Supporting Practices,19|33,SKIL
+57,Identifying Relevant Health Topics,47|48|56,SKIL
