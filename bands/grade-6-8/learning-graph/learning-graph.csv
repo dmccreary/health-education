@@ -1,0 +1,134 @@
+ConceptID,ConceptLabel,Dependencies,TaxonomyID
+1,Health,,FOUND
+2,Dietary Guidelines Across Cultures,1,FOOD
+3,Food Label Analysis,1,FOOD
+4,Marketing Claims Analysis,3,FOOD
+5,Water Versus Sugary Drinks,1,FOOD
+6,Caffeinated And Energy Drink Effects,5,FOOD
+7,Effects Of Sugary And Salty Foods,3,FOOD
+8,Meal And Snack Planning,3|4|7,FOOD
+9,Food Sovereignty,2,FOOD
+10,Community Food Access Initiatives,9,FOOD
+11,Relationship Structures,1,GROW
+12,Healthy Relationship Characteristics,11,GROW
+13,Unhealthy Relationship Characteristics,11,GROW
+14,Romantic Relationships,12|13,GROW
+15,Seeking Help About Relationships Or Development,1,GROW
+16,Comprehensive Health Care,1,GROW
+17,Adolescent Access To Health Care,16,GROW
+18,STI Transmission,1,GROW
+19,HIV,18,GROW
+20,STI Signs And Symptoms,18|19,GROW
+21,STI Treatment And Cure,20,GROW
+22,Protecting Against STIs,20|21,GROW
+23,Preventing Unintended Pregnancy,22,GROW
+24,Healthcare Access Barriers,16|17,GROW
+25,Reducing Healthcare Barriers,24,GROW
+26,Personal Boundary-Setting,1,GROW
+27,Cultural Values Of Respect And Balance,26,GROW
+28,Consent,1,GROW
+29,Coercion,28,GROW
+30,Consent Versus Coercion,28|29,GROW
+31,Suicide And Self-Harm Warning Signs,1,EMOT
+32,Seeking Help For Suicide Risk,31,EMOT
+33,Personal Stressors,1,EMOT
+34,Restorative Stress-Management Practices,33,EMOT
+35,Warning Signs Of Emotional Distress,1,EMOT
+36,Supports For Emotional Distress,35,EMOT
+37,Trusted Adult,1,EMOT
+38,Empathy In Relationships,12,EMOT
+39,Communication For Conflict Resolution,38,EMOT
+40,Nonviolent Conflict Resolution,39,EMOT
+41,Emotion Management Strategies,34|39,EMOT
+42,Indigenous And Traditional Healing Approaches,34,EMOT
+43,Unfair Treatment,1,EMOT
+44,Exclusion And Bias Effects On Mental Health,43,EMOT
+45,Bullying Effects On Mental Health,43|44,EMOT
+46,Media Representation Of Mental Health,45,EMOT
+47,Stigma Reduction,46,EMOT
+48,Brain-Healthy Habits,1,EMOT
+49,Alzheimer's Disease,48,EMOT
+50,Dementia,49,EMOT
+51,Sleep Pattern Influences,1,WELL
+52,Cultural Sleep Practices,51,WELL
+53,Workout Plan Design,1,WELL
+54,Moderate And Vigorous Activity,53,WELL
+55,Muscle-Strengthening Activity,53,WELL
+56,Bone-Strengthening Activity,53,WELL
+57,Emergency Medication Use,1,WELL
+58,Heimlich Maneuver,57,WELL
+59,Recognizing Emergencies,1,WELL
+60,Scene Safety Assessment,59,WELL
+61,Priority Response Needs,60,WELL
+62,Infectious Disease Transmission,1,WELL
+63,Hygiene As Disease Prevention,62,WELL
+64,Food And Water Safety Practices,62,WELL
+65,Personal Protective Equipment,62,WELL
+66,Harmful Or Explicit Content Sharing,1,SAFE
+67,Consequences Of Sharing Explicit Content,66,SAFE
+68,Power Dynamics In Relationships,13,SAFE
+69,Peer Pressure,13,SAFE
+70,Digital Communication Effects On Relationships,66|69,SAFE
+71,Boundary-Setting Strategies,26|13,SAFE
+72,Seeking Support For Relationship Safety,71|37,SAFE
+73,School Safety Actions,1,SAFE
+74,Recognizing Threats,73,SAFE
+75,Reporting Safety Concerns,74,SAFE
+76,Practicing Emergency Responses,73,SAFE
+77,Consent In Healthy Relationships,28,SAFE
+78,Responding To Coercion,29|77,SAFE
+79,Substance Use Disorder,1,SUB
+80,Relapse,79,SUB
+81,Misusing Over-The-Counter Medications,1,SUB
+82,Misusing Prescription Medications,81,SUB
+83,Alcohol Misuse Consequences,1,SUB
+84,Illegal Substance Consequences,83,SUB
+85,Alcohol Effects On Developing Body And Brain,1,SUB
+86,Commercial Tobacco Effects On Developing Body And Brain,1,SUB
+87,Nicotine Effects On Developing Body And Brain,86,SUB
+88,Cannabis Effects On Developing Body And Brain,1,SUB
+89,Illegal Drug Effects On Developing Body And Brain,1,SUB
+90,Cultural Teachings That Protect Youth,85|86|87|88|89,SUB
+91,Commercial Tobacco Addiction,86,SUB
+92,Traditional Tobacco And Plant Medicine Use,91,SUB
+93,Medication Storage And Disposal Safety,81|82,SUB
+94,Reading Medication Labels,93,SUB
+95,Traditional Plant Medicine Practices,92,SUB
+96,Benefits Of Being Substance-Free,85|86|87|88|89,SUB
+97,Healthy Stress Management Without Substances,34|96,SUB
+98,Substance Use And Injury Risk,85|88|89,SUB
+99,Substance Use And Violence Risk,85|88|89,SUB
+100,Substance Use And Self-Harm Risk,31|85|88|89,SUB
+101,Substance Use And Sexual Health Risk,22|85|88|89,SUB
+102,Signs Of Substance Use Disorder,79,SUB
+103,Substance Use Treatment Options,102,SUB
+104,Community And Cultural Recovery Supports,103|37,SUB
+105,Impaired Driving Risk,85,SUB
+106,Laws On Impaired Driving,105,SUB
+107,Substance Industry Advertising Influence,1,SUB
+108,Substance-Related Health Disparities,107,SUB
+109,Social Norms And Health Practices,1,SKIL
+110,Public Health Policy Influence,109,SKIL
+111,Family And Cultural Influence On Health Behavior,1,SKIL
+112,Peer And Media Influence On Health Behavior,1,SKIL
+113,Strategies To Identify Health Influences,111|112,SKIL
+114,Valid Health Information Sources,16,SKIL
+115,Situations Needing Professional Support,37|32|36,SKIL
+116,Evaluating Validity Of Health Information,114,SKIL
+117,Verbal And Nonverbal Communication,39,SKIL
+118,Conflict-Resolution Skills,39|40,SKIL
+119,Self-Advocacy Skills,26,SKIL
+120,Refusal Skills,26|71,SKIL
+121,Communicating Boundaries And Consent,28|120,SKIL
+122,Decision-Making Process,1,SKIL
+123,Evaluating Decision Consequences,122,SKIL
+124,Supports And Barriers To Health Decisions,113|122,SKIL
+125,Health Behavior Self-Assessment,1,SKIL
+126,Individual Versus Collaborative Goal Setting,125,SKIL
+127,Goal Plan Construction,124|126,SKIL
+128,Evaluating Goal Plan Outcomes,127,SKIL
+129,Ownership Of Health Behaviors,125,SKIL
+130,Researching Health Topics,1,SKIL
+131,Health Message Design,130|116,SKIL
+132,Delivering Health Messages To Audiences,131|117,SKIL
+133,Reflecting On Health Message Effectiveness,132,SKIL

@@ -1,0 +1,10 @@
+{
+  "title": "Health Education — Grade 6-8 Learning Graph",
+  "description": "A learning graph of 133 concepts covering the Grade 6-8 band of the Health Education intelligent textbook: Food and Nutrition; Human Growth, Development, and Sexual Health; Mental and Emotional Health; Personal Health and Wellness; Personal Safety and Violence Prevention; Substance Use Awareness and Prevention (new at this band); and cross-cutting Skill Standards. Derived from the 2025 Minnesota K-12 Health Academic Standards, Commissioner Approved.",
+  "creator": "Dan McCreary",
+  "date": "2026-07-06",
+  "version": "1.0",
+  "format": "Learning Graph JSON v1.0",
+  "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+  "license": "CC BY-NC-SA 4.0 DEED"
+}

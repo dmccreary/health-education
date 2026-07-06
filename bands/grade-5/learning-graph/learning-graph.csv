@@ -1,0 +1,71 @@
+ConceptID,ConceptLabel,Dependencies,TaxonomyID
+1,Health,,FOUND
+2,Cultural Nutrient Approaches,1,FOOD
+3,Daily Energy Needs,1,FOOD
+4,Nutrition Label Comparison,1,FOOD
+5,Choosing The Healthier Food,4,FOOD
+6,Water As The Healthy Drink Choice,1,FOOD
+7,Comparing Water To Other Drinks,6,FOOD
+8,Nutritious Meal Planning,5|3,FOOD
+9,Nutritious Snack Choices,8,FOOD
+10,Foodborne Illness,1,FOOD
+11,Unsafe Food Handling Practices,10,FOOD
+12,Family Influence On Decisions,1,GROW
+13,Peer Influence On Decisions,1,GROW
+14,Emotions Shape Behavior,1,EMOT
+15,Telling A Trusted Adult,16,GROW
+16,Trusted Adult,1,SAFE
+17,Health Concern Reporting,15,GROW
+18,Restorative Self-Management Strategies,14,EMOT
+19,Managing Personal Growth,18,EMOT
+20,Managing Relationships,18|12|13,EMOT
+21,Supporting A Peer In Difficulty,22,EMOT
+22,Respecting Peer Boundaries,20,EMOT
+23,Guiding A Peer To Help,21|16,EMOT
+24,Equity,1,EMOT
+25,Belonging,24,EMOT
+26,Including And Supporting Others,24|25,EMOT
+27,Emotional Triggers,14,EMOT
+28,Situations That Influence Emotions,27,EMOT
+29,Bystander,1,EMOT
+30,Bystander Action Against Bullying,29,EMOT
+31,Preventing Fighting And Violence,30,EMOT
+32,Ability-Inclusive Kindness,26,EMOT
+33,Inclusive Environments,32|25,EMOT
+34,Sleep And Rest Needs,1,WELL
+35,Sleep Supports Growth And Learning,34,WELL
+36,Fitness Component,1,WELL
+37,Physical Activities By Fitness Component,36,WELL
+38,Allergic Reaction,1,WELL
+39,Allergic Reaction Signs,38,WELL
+40,Responding To Allergic Reactions,39,WELL
+41,Chronic Condition,1,WELL
+42,Common Illness Symptoms,41,WELL
+43,Knowing When To Seek Help,42|16,WELL
+44,Personal Behaviors And Long-Term Health,42|35,WELL
+45,Social Media Harm,1,SAFE
+46,Technology Harm Prevention Strategies,45,SAFE
+47,Reporting Online Harm,46|16,SAFE
+48,Unhealthy Relationship Recognition,20,SAFE
+49,Boundary-Setting,22|48,SAFE
+50,Seeking Support For Relationships,48|16,SAFE
+51,Safely Exiting Unsafe Relationships,49|50,SAFE
+52,Emergency Risk Reduction,1,SAFE
+53,Peer Actions During Emergencies,52,SAFE
+54,School-Staff Actions During Emergencies,52,SAFE
+55,Consent,1,SAFE
+56,Coercion,55,SAFE
+57,Consent Versus Coercion,55|56,SAFE
+58,Recognizing Unsafe Situations,57,SAFE
+59,Reporting Unsafe Situations,58|16,SAFE
+60,Health Behavior Influences,12|13,SKIL
+61,Managing Health Influences,60,SKIL
+62,Identifying Needed Trusted Resources,16|43,SKIL
+63,Conflict Resolution,20,SKIL
+64,Demonstrating Conflict Resolution,63,SKIL
+65,Demonstrating Boundary-Setting,49,SKIL
+66,Health Decision Options And Consequences,61,SKIL
+67,Decision Reflection,66,SKIL
+68,Personal Health Goal Tracking,9|37|44,SKIL
+69,Ownership Of Personal Health,68|67,SKIL
+70,Health Message Delivery,64|65,SKIL

@@ -1,0 +1,595 @@
+{
+  "metadata": {
+    "title": "Grade 2 Health Education Learning Graph",
+    "description": "A learning graph of 55 concepts covering Grade 2 health education: food and nutrition, human growth and development, mental and emotional health, personal health and wellness, personal safety and violence prevention, and cross-cutting skill standards. Derived from the 2025 Minnesota K-12 Health Academic Standards.",
+    "creator": "Dan Mccreary",
+    "date": "2026-07-06",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "FOUND": {
+      "classifierName": "Foundations",
+      "color": "SteelBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "FOOD": {
+      "classifierName": "Food and Nutrition",
+      "color": "Gold",
+      "font": {
+        "color": "black"
+      }
+    },
+    "GROW": {
+      "classifierName": "Human Growth and Development",
+      "color": "DarkSlateBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "EMOT": {
+      "classifierName": "Mental and Emotional Health",
+      "color": "MediumPurple",
+      "font": {
+        "color": "white"
+      }
+    },
+    "WELL": {
+      "classifierName": "Personal Health and Wellness",
+      "color": "DarkGreen",
+      "font": {
+        "color": "white"
+      }
+    },
+    "SAFE": {
+      "classifierName": "Personal Safety and Violence Prevention",
+      "color": "Crimson",
+      "font": {
+        "color": "white"
+      }
+    },
+    "SKIL": {
+      "classifierName": "Skill Standards",
+      "color": "Teal",
+      "font": {
+        "color": "white"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Health",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 2,
+      "label": "Food Group Function",
+      "group": "FOOD"
+    },
+    {
+      "id": 3,
+      "label": "Variety Of Foods",
+      "group": "FOOD"
+    },
+    {
+      "id": 4,
+      "label": "Food Energy",
+      "group": "FOOD"
+    },
+    {
+      "id": 5,
+      "label": "Sugar In Drinks",
+      "group": "FOOD"
+    },
+    {
+      "id": 6,
+      "label": "Caffeine In Drinks",
+      "group": "FOOD"
+    },
+    {
+      "id": 7,
+      "label": "Comparing Drink Choices",
+      "group": "FOOD"
+    },
+    {
+      "id": 8,
+      "label": "Food Storage Safety",
+      "group": "FOOD"
+    },
+    {
+      "id": 9,
+      "label": "Food Preparation Safety",
+      "group": "FOOD"
+    },
+    {
+      "id": 10,
+      "label": "Food Handling Safety",
+      "group": "FOOD"
+    },
+    {
+      "id": 11,
+      "label": "Peer Relationship",
+      "group": "GROW"
+    },
+    {
+      "id": 12,
+      "label": "Types Of Peer Relationships",
+      "group": "GROW"
+    },
+    {
+      "id": 13,
+      "label": "Coping Strategy",
+      "group": "EMOT"
+    },
+    {
+      "id": 14,
+      "label": "Cultural Coping Practice",
+      "group": "EMOT"
+    },
+    {
+      "id": 15,
+      "label": "Personal Space",
+      "group": "EMOT"
+    },
+    {
+      "id": 16,
+      "label": "Boundary",
+      "group": "EMOT"
+    },
+    {
+      "id": 17,
+      "label": "Recognizing Personal Needs",
+      "group": "EMOT"
+    },
+    {
+      "id": 18,
+      "label": "Conflict",
+      "group": "EMOT"
+    },
+    {
+      "id": 19,
+      "label": "Healthy Conflict Resolution",
+      "group": "EMOT"
+    },
+    {
+      "id": 20,
+      "label": "Managing Strong Emotions",
+      "group": "EMOT"
+    },
+    {
+      "id": 21,
+      "label": "Sharing Feelings With Trusted Adult",
+      "group": "EMOT"
+    },
+    {
+      "id": 22,
+      "label": "Playful Interaction",
+      "group": "EMOT"
+    },
+    {
+      "id": 23,
+      "label": "Teasing",
+      "group": "EMOT"
+    },
+    {
+      "id": 24,
+      "label": "Effects Of Teasing",
+      "group": "EMOT"
+    },
+    {
+      "id": 25,
+      "label": "Environmental Health Risk",
+      "group": "WELL"
+    },
+    {
+      "id": 26,
+      "label": "Sun And Noise Protection",
+      "group": "WELL"
+    },
+    {
+      "id": 27,
+      "label": "Unsafe Chemicals And Water",
+      "group": "WELL"
+    },
+    {
+      "id": 28,
+      "label": "Physical Activity",
+      "group": "WELL"
+    },
+    {
+      "id": 29,
+      "label": "Cultural Physical Activity",
+      "group": "WELL"
+    },
+    {
+      "id": 30,
+      "label": "Germs",
+      "group": "WELL"
+    },
+    {
+      "id": 31,
+      "label": "How Germs Spread",
+      "group": "WELL"
+    },
+    {
+      "id": 32,
+      "label": "Illness Prevention Practice",
+      "group": "WELL"
+    },
+    {
+      "id": 33,
+      "label": "Technology Safety",
+      "group": "SAFE"
+    },
+    {
+      "id": 34,
+      "label": "Unsafe Technology Situation",
+      "group": "SAFE"
+    },
+    {
+      "id": 35,
+      "label": "Getting Help For Tech Situations",
+      "group": "SAFE"
+    },
+    {
+      "id": 36,
+      "label": "Encouraging Safe Choices",
+      "group": "SAFE"
+    },
+    {
+      "id": 37,
+      "label": "Community Values",
+      "group": "SAFE"
+    },
+    {
+      "id": 38,
+      "label": "Safety Drill",
+      "group": "SAFE"
+    },
+    {
+      "id": 39,
+      "label": "Staying Safe Away From Classroom",
+      "group": "SAFE"
+    },
+    {
+      "id": 40,
+      "label": "Unwanted Touch",
+      "group": "SAFE"
+    },
+    {
+      "id": 41,
+      "label": "Saying No Or Exiting",
+      "group": "SAFE"
+    },
+    {
+      "id": 42,
+      "label": "Influence",
+      "group": "SKIL"
+    },
+    {
+      "id": 43,
+      "label": "Family And School Influence",
+      "group": "SKIL"
+    },
+    {
+      "id": 44,
+      "label": "Media Influence",
+      "group": "SKIL"
+    },
+    {
+      "id": 45,
+      "label": "Health Helper",
+      "group": "SKIL"
+    },
+    {
+      "id": 46,
+      "label": "Locating Health Helpers",
+      "group": "SKIL"
+    },
+    {
+      "id": 47,
+      "label": "I-Statement",
+      "group": "SKIL"
+    },
+    {
+      "id": 48,
+      "label": "Active Listening",
+      "group": "SKIL"
+    },
+    {
+      "id": 49,
+      "label": "Health Decision Options",
+      "group": "SKIL"
+    },
+    {
+      "id": 50,
+      "label": "Decision Outcomes",
+      "group": "SKIL"
+    },
+    {
+      "id": 51,
+      "label": "Goal Setting",
+      "group": "SKIL"
+    },
+    {
+      "id": 52,
+      "label": "Goal-Supporting Actions",
+      "group": "SKIL"
+    },
+    {
+      "id": 53,
+      "label": "Reflecting On Goal Progress",
+      "group": "SKIL"
+    },
+    {
+      "id": 54,
+      "label": "Recognizing Feelings About Behaviors",
+      "group": "SKIL"
+    },
+    {
+      "id": 55,
+      "label": "Modeling Positive Health Choices",
+      "group": "SKIL"
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 5,
+      "to": 1
+    },
+    {
+      "from": 6,
+      "to": 1
+    },
+    {
+      "from": 7,
+      "to": 5
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 8,
+      "to": 1
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 10,
+      "to": 8
+    },
+    {
+      "from": 10,
+      "to": 9
+    },
+    {
+      "from": 11,
+      "to": 1
+    },
+    {
+      "from": 12,
+      "to": 11
+    },
+    {
+      "from": 13,
+      "to": 1
+    },
+    {
+      "from": 14,
+      "to": 13
+    },
+    {
+      "from": 15,
+      "to": 1
+    },
+    {
+      "from": 16,
+      "to": 15
+    },
+    {
+      "from": 17,
+      "to": 15
+    },
+    {
+      "from": 17,
+      "to": 16
+    },
+    {
+      "from": 18,
+      "to": 1
+    },
+    {
+      "from": 19,
+      "to": 18
+    },
+    {
+      "from": 19,
+      "to": 13
+    },
+    {
+      "from": 20,
+      "to": 13
+    },
+    {
+      "from": 20,
+      "to": 18
+    },
+    {
+      "from": 21,
+      "to": 20
+    },
+    {
+      "from": 21,
+      "to": 47
+    },
+    {
+      "from": 22,
+      "to": 12
+    },
+    {
+      "from": 23,
+      "to": 22
+    },
+    {
+      "from": 24,
+      "to": 23
+    },
+    {
+      "from": 25,
+      "to": 1
+    },
+    {
+      "from": 26,
+      "to": 25
+    },
+    {
+      "from": 27,
+      "to": 25
+    },
+    {
+      "from": 28,
+      "to": 1
+    },
+    {
+      "from": 29,
+      "to": 28
+    },
+    {
+      "from": 30,
+      "to": 1
+    },
+    {
+      "from": 31,
+      "to": 30
+    },
+    {
+      "from": 32,
+      "to": 31
+    },
+    {
+      "from": 33,
+      "to": 1
+    },
+    {
+      "from": 34,
+      "to": 33
+    },
+    {
+      "from": 35,
+      "to": 34
+    },
+    {
+      "from": 35,
+      "to": 45
+    },
+    {
+      "from": 36,
+      "to": 37
+    },
+    {
+      "from": 37,
+      "to": 1
+    },
+    {
+      "from": 38,
+      "to": 1
+    },
+    {
+      "from": 39,
+      "to": 38
+    },
+    {
+      "from": 40,
+      "to": 1
+    },
+    {
+      "from": 41,
+      "to": 40
+    },
+    {
+      "from": 42,
+      "to": 1
+    },
+    {
+      "from": 43,
+      "to": 42
+    },
+    {
+      "from": 44,
+      "to": 42
+    },
+    {
+      "from": 45,
+      "to": 1
+    },
+    {
+      "from": 46,
+      "to": 45
+    },
+    {
+      "from": 47,
+      "to": 1
+    },
+    {
+      "from": 48,
+      "to": 1
+    },
+    {
+      "from": 49,
+      "to": 1
+    },
+    {
+      "from": 50,
+      "to": 49
+    },
+    {
+      "from": 51,
+      "to": 1
+    },
+    {
+      "from": 52,
+      "to": 51
+    },
+    {
+      "from": 53,
+      "to": 52
+    },
+    {
+      "from": 54,
+      "to": 20
+    },
+    {
+      "from": 55,
+      "to": 43
+    },
+    {
+      "from": 55,
+      "to": 44
+    },
+    {
+      "from": 55,
+      "to": 50
+    }
+  ]
+}

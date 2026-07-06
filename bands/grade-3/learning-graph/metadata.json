@@ -1,0 +1,10 @@
+{
+  "title": "Grade 3 Health Education Learning Graph",
+  "description": "A learning graph of 57 concepts covering Grade 3 health education: food and nutrition, human growth and development (including puberty), mental and emotional health, personal health and wellness, personal safety and violence prevention, and cross-cutting skill standards. Derived from the 2025 Minnesota K-12 Health Academic Standards.",
+  "creator": "Dan Mccreary",
+  "date": "2026-07-06",
+  "version": "1.0",
+  "format": "Learning Graph JSON v1.0",
+  "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+  "license": "CC BY-NC-SA 4.0 DEED"
+}

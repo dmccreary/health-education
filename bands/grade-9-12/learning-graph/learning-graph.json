@@ -1,0 +1,1435 @@
+{
+  "metadata": {
+    "title": "Health Education \u2014 Grade 9-12 Learning Graph",
+    "description": "A learning graph of 136 concepts covering the Grade 9-12 band of the Health Education intelligent textbook: Food and Nutrition; Human Growth, Development, and Sexual Health; Mental and Emotional Health; Personal Health and Wellness; Personal Safety and Violence Prevention; Substance Use Awareness and Prevention; and cross-cutting Skill Standards. This is the terminal band, culminating in career/college/community readiness framing and peaking cognitive demand (design, evaluate, synthesize, apply across contexts). Derived from the 2025 Minnesota K-12 Health Academic Standards, Commissioner Approved.",
+    "creator": "Dan McCreary",
+    "date": "2026-07-06",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "FOUND": {
+      "classifierName": "Foundations",
+      "color": "SteelBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "FOOD": {
+      "classifierName": "Food and Nutrition",
+      "color": "LimeGreen",
+      "font": {
+        "color": "black"
+      }
+    },
+    "GROW": {
+      "classifierName": "Human Growth, Development, and Sexual Health",
+      "color": "MediumPurple",
+      "font": {
+        "color": "white"
+      }
+    },
+    "EMOT": {
+      "classifierName": "Mental and Emotional Health",
+      "color": "HotPink",
+      "font": {
+        "color": "black"
+      }
+    },
+    "WELL": {
+      "classifierName": "Personal Health and Wellness",
+      "color": "DarkGoldenrod",
+      "font": {
+        "color": "white"
+      }
+    },
+    "SAFE": {
+      "classifierName": "Personal Safety and Violence Prevention",
+      "color": "Crimson",
+      "font": {
+        "color": "white"
+      }
+    },
+    "SUB": {
+      "classifierName": "Substance Use Awareness and Prevention",
+      "color": "SaddleBrown",
+      "font": {
+        "color": "white"
+      }
+    },
+    "SKIL": {
+      "classifierName": "Skill Standards",
+      "color": "Teal",
+      "font": {
+        "color": "white"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Health",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 2,
+      "label": "Personal Nutrition Needs Assessment",
+      "group": "FOOD"
+    },
+    {
+      "id": 3,
+      "label": "Nutrition Plan Design",
+      "group": "FOOD"
+    },
+    {
+      "id": 4,
+      "label": "Food Label Analysis",
+      "group": "FOOD"
+    },
+    {
+      "id": 5,
+      "label": "Nutrient Value Evaluation",
+      "group": "FOOD"
+    },
+    {
+      "id": 6,
+      "label": "Beverage Choice Evaluation",
+      "group": "FOOD"
+    },
+    {
+      "id": 7,
+      "label": "Hydration Sugar And Caffeine Evidence",
+      "group": "FOOD"
+    },
+    {
+      "id": 8,
+      "label": "Meal And Snack Evaluation",
+      "group": "FOOD"
+    },
+    {
+      "id": 9,
+      "label": "Cultural Food Traditions",
+      "group": "FOOD"
+    },
+    {
+      "id": 10,
+      "label": "Food Systems And Chronic Disease Risk",
+      "group": "FOOD"
+    },
+    {
+      "id": 11,
+      "label": "Community Nutrition Initiatives",
+      "group": "FOOD"
+    },
+    {
+      "id": 12,
+      "label": "Relationship Structures",
+      "group": "GROW"
+    },
+    {
+      "id": 13,
+      "label": "Healthy Relationship Characteristics",
+      "group": "GROW"
+    },
+    {
+      "id": 14,
+      "label": "Handling Relationship Conflict And Pressure",
+      "group": "GROW"
+    },
+    {
+      "id": 15,
+      "label": "Cultural And Historical Influences On Relationships",
+      "group": "GROW"
+    },
+    {
+      "id": 16,
+      "label": "Dignity And Compassion For All People",
+      "group": "GROW"
+    },
+    {
+      "id": 17,
+      "label": "Trusted Adult Guidance",
+      "group": "GROW"
+    },
+    {
+      "id": 18,
+      "label": "Culturally Safe Healthcare Providers",
+      "group": "GROW"
+    },
+    {
+      "id": 19,
+      "label": "Adolescent Healthcare Access Rights",
+      "group": "GROW"
+    },
+    {
+      "id": 20,
+      "label": "Youth-Friendly Provider Expectations",
+      "group": "GROW"
+    },
+    {
+      "id": 21,
+      "label": "Stereotypes And Bias Effects On Relationships",
+      "group": "GROW"
+    },
+    {
+      "id": 22,
+      "label": "Stigma Effects On Healthcare Access",
+      "group": "GROW"
+    },
+    {
+      "id": 23,
+      "label": "STI Prevention And Treatment",
+      "group": "GROW"
+    },
+    {
+      "id": 24,
+      "label": "Culturally Safe STI Care",
+      "group": "GROW"
+    },
+    {
+      "id": 25,
+      "label": "Healthcare Services Supporting Sexual Health",
+      "group": "GROW"
+    },
+    {
+      "id": 26,
+      "label": "Community-Based Sexual Health Programs",
+      "group": "GROW"
+    },
+    {
+      "id": 27,
+      "label": "Personal Boundary Communication",
+      "group": "GROW"
+    },
+    {
+      "id": 28,
+      "label": "Preventing Pregnancy And STIs Through Boundaries",
+      "group": "GROW"
+    },
+    {
+      "id": 29,
+      "label": "Mutual Respect In Health Decisions",
+      "group": "GROW"
+    },
+    {
+      "id": 30,
+      "label": "Consent",
+      "group": "GROW"
+    },
+    {
+      "id": 31,
+      "label": "Seeking Help For Suicide Or Self-Harm Risk",
+      "group": "EMOT"
+    },
+    {
+      "id": 32,
+      "label": "Depression Symptoms And Causes",
+      "group": "EMOT"
+    },
+    {
+      "id": 33,
+      "label": "Anxiety Symptoms And Causes",
+      "group": "EMOT"
+    },
+    {
+      "id": 34,
+      "label": "Mental Health Treatment Options",
+      "group": "EMOT"
+    },
+    {
+      "id": 35,
+      "label": "Supporting Peers In Mental Health Crisis",
+      "group": "EMOT"
+    },
+    {
+      "id": 36,
+      "label": "Maintaining Boundaries While Helping Others",
+      "group": "EMOT"
+    },
+    {
+      "id": 37,
+      "label": "Empathy In Relationships",
+      "group": "EMOT"
+    },
+    {
+      "id": 38,
+      "label": "Communication For Conflict Resolution",
+      "group": "EMOT"
+    },
+    {
+      "id": 39,
+      "label": "Nonviolent Conflict Resolution",
+      "group": "EMOT"
+    },
+    {
+      "id": 40,
+      "label": "Indigenous Restorative Justice Approaches",
+      "group": "EMOT"
+    },
+    {
+      "id": 41,
+      "label": "Emotion Management Strategies",
+      "group": "EMOT"
+    },
+    {
+      "id": 42,
+      "label": "Cultural Teachings For Wellbeing",
+      "group": "EMOT"
+    },
+    {
+      "id": 43,
+      "label": "Inclusive Environment Design",
+      "group": "EMOT"
+    },
+    {
+      "id": 44,
+      "label": "Addressing Exclusion And Bullying",
+      "group": "EMOT"
+    },
+    {
+      "id": 45,
+      "label": "Addressing Stereotyping And Discrimination",
+      "group": "EMOT"
+    },
+    {
+      "id": 46,
+      "label": "Mental Health Stigma Reduction",
+      "group": "EMOT"
+    },
+    {
+      "id": 47,
+      "label": "Mental Health Awareness Campaigns",
+      "group": "EMOT"
+    },
+    {
+      "id": 48,
+      "label": "Brain-Healthy Habits",
+      "group": "EMOT"
+    },
+    {
+      "id": 49,
+      "label": "Alzheimer's Disease And Other Dementias",
+      "group": "EMOT"
+    },
+    {
+      "id": 50,
+      "label": "Supporting An Elder With Cognitive Impairment",
+      "group": "EMOT"
+    },
+    {
+      "id": 51,
+      "label": "Sleep And Rest Influences On Health",
+      "group": "EMOT"
+    },
+    {
+      "id": 52,
+      "label": "Health Disparities From Social Conditions",
+      "group": "WELL"
+    },
+    {
+      "id": 53,
+      "label": "Physical Activity Access Across Communities",
+      "group": "WELL"
+    },
+    {
+      "id": 54,
+      "label": "Safe Physical Activity Participation",
+      "group": "WELL"
+    },
+    {
+      "id": 55,
+      "label": "Systemic Inequity In Health Opportunity",
+      "group": "WELL"
+    },
+    {
+      "id": 56,
+      "label": "CPR Techniques",
+      "group": "WELL"
+    },
+    {
+      "id": 57,
+      "label": "AED Use",
+      "group": "WELL"
+    },
+    {
+      "id": 58,
+      "label": "Behavioral And Environmental Factors In Disease Risk",
+      "group": "WELL"
+    },
+    {
+      "id": 59,
+      "label": "Chronic Disease Prevention Strategies",
+      "group": "WELL"
+    },
+    {
+      "id": 60,
+      "label": "Infectious Disease Prevention Strategies",
+      "group": "WELL"
+    },
+    {
+      "id": 61,
+      "label": "Digital Content Effects On Relationships",
+      "group": "SAFE"
+    },
+    {
+      "id": 62,
+      "label": "Social Media Effects On Boundaries",
+      "group": "SAFE"
+    },
+    {
+      "id": 63,
+      "label": "Responding To Online Threats And Harmful Content",
+      "group": "SAFE"
+    },
+    {
+      "id": 64,
+      "label": "Online Emergency Response",
+      "group": "SAFE"
+    },
+    {
+      "id": 65,
+      "label": "School Safety Practices Evaluation",
+      "group": "SAFE"
+    },
+    {
+      "id": 66,
+      "label": "School Shooting Preparedness",
+      "group": "SAFE"
+    },
+    {
+      "id": 67,
+      "label": "Communicating And Interpreting Consent",
+      "group": "SAFE"
+    },
+    {
+      "id": 68,
+      "label": "Withdrawing Consent",
+      "group": "SAFE"
+    },
+    {
+      "id": 69,
+      "label": "Power Dynamics And Consent",
+      "group": "SAFE"
+    },
+    {
+      "id": 70,
+      "label": "Law And Consent",
+      "group": "SAFE"
+    },
+    {
+      "id": 71,
+      "label": "Substance Use Effects On Mental Health And Brain Function",
+      "group": "SUB"
+    },
+    {
+      "id": 72,
+      "label": "Substance Use Effects On Physiology",
+      "group": "SUB"
+    },
+    {
+      "id": 73,
+      "label": "Indigenous Views Of Health And Substance Use",
+      "group": "SUB"
+    },
+    {
+      "id": 74,
+      "label": "Substance Use Effects On Relationships School And Work",
+      "group": "SUB"
+    },
+    {
+      "id": 75,
+      "label": "Substance Use Effects On Decision-Making",
+      "group": "SUB"
+    },
+    {
+      "id": 76,
+      "label": "Coping Strategies Without Substances",
+      "group": "SUB"
+    },
+    {
+      "id": 77,
+      "label": "Cultural Coping Practices",
+      "group": "SUB"
+    },
+    {
+      "id": 78,
+      "label": "Commercial Tobacco Addiction",
+      "group": "SUB"
+    },
+    {
+      "id": 79,
+      "label": "Traditional Tobacco And Plant Medicine Use",
+      "group": "SUB"
+    },
+    {
+      "id": 80,
+      "label": "Medication Interaction Risks",
+      "group": "SUB"
+    },
+    {
+      "id": 81,
+      "label": "Safe Medication Practices",
+      "group": "SUB"
+    },
+    {
+      "id": 82,
+      "label": "Traditional Medicine Use Considerations",
+      "group": "SUB"
+    },
+    {
+      "id": 83,
+      "label": "Supporting Yourself In Reducing Substance Use",
+      "group": "SUB"
+    },
+    {
+      "id": 84,
+      "label": "Supporting Others In Reducing Substance Use",
+      "group": "SUB"
+    },
+    {
+      "id": 85,
+      "label": "Cultural Resilience Strategies",
+      "group": "SUB"
+    },
+    {
+      "id": 86,
+      "label": "Alcohol Short- And Long-Term Effects",
+      "group": "SUB"
+    },
+    {
+      "id": 87,
+      "label": "Commercial Tobacco Short- And Long-Term Effects",
+      "group": "SUB"
+    },
+    {
+      "id": 88,
+      "label": "Nicotine Short- And Long-Term Effects",
+      "group": "SUB"
+    },
+    {
+      "id": 89,
+      "label": "Cannabis Short- And Long-Term Effects",
+      "group": "SUB"
+    },
+    {
+      "id": 90,
+      "label": "Other Substance Short- And Long-Term Effects",
+      "group": "SUB"
+    },
+    {
+      "id": 91,
+      "label": "Recognizing Overdose Signs",
+      "group": "SUB"
+    },
+    {
+      "id": 92,
+      "label": "Overdose Emergency Response",
+      "group": "SUB"
+    },
+    {
+      "id": 93,
+      "label": "Community Integration Of Cultural Recovery Practices",
+      "group": "SUB"
+    },
+    {
+      "id": 94,
+      "label": "Substance Use Disorder Treatment And Recovery",
+      "group": "SUB"
+    },
+    {
+      "id": 95,
+      "label": "Community Laws On Substance Use",
+      "group": "SUB"
+    },
+    {
+      "id": 96,
+      "label": "Financial And Social Costs Of Substance Use",
+      "group": "SUB"
+    },
+    {
+      "id": 97,
+      "label": "Tribal Sovereignty In Substance Use Lawmaking",
+      "group": "SUB"
+    },
+    {
+      "id": 98,
+      "label": "Substance Marketing And Availability Policy",
+      "group": "SUB"
+    },
+    {
+      "id": 99,
+      "label": "Substance-Related Health Disparities",
+      "group": "SUB"
+    },
+    {
+      "id": 100,
+      "label": "Public Health Policy Influence On Health Practices",
+      "group": "SKIL"
+    },
+    {
+      "id": 101,
+      "label": "School And Community Environment Influence",
+      "group": "SKIL"
+    },
+    {
+      "id": 102,
+      "label": "Cultural And Peer Influence On Health Practices",
+      "group": "SKIL"
+    },
+    {
+      "id": 103,
+      "label": "Social Norms And Health Practices",
+      "group": "SKIL"
+    },
+    {
+      "id": 104,
+      "label": "Individual And Interpersonal Factors In Health Practices",
+      "group": "SKIL"
+    },
+    {
+      "id": 105,
+      "label": "Community Societal And Environmental Factors In Health Practices",
+      "group": "SKIL"
+    },
+    {
+      "id": 106,
+      "label": "Evaluating Trusted Adults And Professionals",
+      "group": "SKIL"
+    },
+    {
+      "id": 107,
+      "label": "Accessibility Of Health Resources",
+      "group": "SKIL"
+    },
+    {
+      "id": 108,
+      "label": "Validity And Reliability Of Health Information",
+      "group": "SKIL"
+    },
+    {
+      "id": 109,
+      "label": "Verbal And Nonverbal Communication Analysis",
+      "group": "SKIL"
+    },
+    {
+      "id": 110,
+      "label": "Conflict-Resolution Skill Evaluation",
+      "group": "SKIL"
+    },
+    {
+      "id": 111,
+      "label": "Negotiation Skills",
+      "group": "SKIL"
+    },
+    {
+      "id": 112,
+      "label": "Evaluating Boundary And Consent Communication",
+      "group": "SKIL"
+    },
+    {
+      "id": 113,
+      "label": "Refusal Skills Evaluation",
+      "group": "SKIL"
+    },
+    {
+      "id": 114,
+      "label": "Health Decisions And Personal Wellbeing",
+      "group": "SKIL"
+    },
+    {
+      "id": 115,
+      "label": "Health Decisions And Community Wellbeing",
+      "group": "SKIL"
+    },
+    {
+      "id": 116,
+      "label": "Multiple Perspectives On Health Decisions",
+      "group": "SKIL"
+    },
+    {
+      "id": 117,
+      "label": "Evaluating Options In Health Decisions",
+      "group": "SKIL"
+    },
+    {
+      "id": 118,
+      "label": "Evaluating Consequences In Health Decisions",
+      "group": "SKIL"
+    },
+    {
+      "id": 119,
+      "label": "Choosing The Healthiest Option",
+      "group": "SKIL"
+    },
+    {
+      "id": 120,
+      "label": "Justifying Health Choices",
+      "group": "SKIL"
+    },
+    {
+      "id": 121,
+      "label": "Evaluating Health Decision Outcomes",
+      "group": "SKIL"
+    },
+    {
+      "id": 122,
+      "label": "Health Goal Focus Area Evaluation",
+      "group": "SKIL"
+    },
+    {
+      "id": 123,
+      "label": "Individual Goal-Setting Process",
+      "group": "SKIL"
+    },
+    {
+      "id": 124,
+      "label": "Supported Goal-Setting Process",
+      "group": "SKIL"
+    },
+    {
+      "id": 125,
+      "label": "Collaborative Goal-Setting Process",
+      "group": "SKIL"
+    },
+    {
+      "id": 126,
+      "label": "Formulating Goal Strategies",
+      "group": "SKIL"
+    },
+    {
+      "id": 127,
+      "label": "Evaluating Goal Strategy Outcomes",
+      "group": "SKIL"
+    },
+    {
+      "id": 128,
+      "label": "Evaluating Supports For Health Practices",
+      "group": "SKIL"
+    },
+    {
+      "id": 129,
+      "label": "Evaluating Barriers To Health Practices",
+      "group": "SKIL"
+    },
+    {
+      "id": 130,
+      "label": "Adapting Health Behaviors",
+      "group": "SKIL"
+    },
+    {
+      "id": 131,
+      "label": "Evaluating Impact Of Health Behaviors",
+      "group": "SKIL"
+    },
+    {
+      "id": 132,
+      "label": "Health Promotion Factors Across Levels",
+      "group": "SKIL"
+    },
+    {
+      "id": 133,
+      "label": "Formulating Health Messages",
+      "group": "SKIL"
+    },
+    {
+      "id": 134,
+      "label": "Justifying Health Messages With Facts",
+      "group": "SKIL"
+    },
+    {
+      "id": 135,
+      "label": "Tailoring Messages To Audiences",
+      "group": "SKIL"
+    },
+    {
+      "id": 136,
+      "label": "Evaluating Health Promotion Effectiveness",
+      "group": "SKIL"
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 5,
+      "to": 4
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 8,
+      "to": 3
+    },
+    {
+      "from": 8,
+      "to": 5
+    },
+    {
+      "from": 9,
+      "to": 1
+    },
+    {
+      "from": 10,
+      "to": 9
+    },
+    {
+      "from": 11,
+      "to": 10
+    },
+    {
+      "from": 12,
+      "to": 1
+    },
+    {
+      "from": 13,
+      "to": 12
+    },
+    {
+      "from": 14,
+      "to": 13
+    },
+    {
+      "from": 15,
+      "to": 12
+    },
+    {
+      "from": 16,
+      "to": 13
+    },
+    {
+      "from": 17,
+      "to": 1
+    },
+    {
+      "from": 18,
+      "to": 17
+    },
+    {
+      "from": 19,
+      "to": 18
+    },
+    {
+      "from": 20,
+      "to": 19
+    },
+    {
+      "from": 21,
+      "to": 15
+    },
+    {
+      "from": 22,
+      "to": 18
+    },
+    {
+      "from": 23,
+      "to": 18
+    },
+    {
+      "from": 24,
+      "to": 23
+    },
+    {
+      "from": 25,
+      "to": 24
+    },
+    {
+      "from": 26,
+      "to": 25
+    },
+    {
+      "from": 27,
+      "to": 13
+    },
+    {
+      "from": 27,
+      "to": 30
+    },
+    {
+      "from": 28,
+      "to": 27
+    },
+    {
+      "from": 28,
+      "to": 23
+    },
+    {
+      "from": 29,
+      "to": 16
+    },
+    {
+      "from": 29,
+      "to": 27
+    },
+    {
+      "from": 30,
+      "to": 13
+    },
+    {
+      "from": 31,
+      "to": 17
+    },
+    {
+      "from": 32,
+      "to": 31
+    },
+    {
+      "from": 33,
+      "to": 31
+    },
+    {
+      "from": 34,
+      "to": 32
+    },
+    {
+      "from": 34,
+      "to": 33
+    },
+    {
+      "from": 35,
+      "to": 31
+    },
+    {
+      "from": 36,
+      "to": 35
+    },
+    {
+      "from": 36,
+      "to": 30
+    },
+    {
+      "from": 37,
+      "to": 13
+    },
+    {
+      "from": 38,
+      "to": 14
+    },
+    {
+      "from": 38,
+      "to": 37
+    },
+    {
+      "from": 39,
+      "to": 38
+    },
+    {
+      "from": 40,
+      "to": 39
+    },
+    {
+      "from": 41,
+      "to": 37
+    },
+    {
+      "from": 42,
+      "to": 41
+    },
+    {
+      "from": 43,
+      "to": 16
+    },
+    {
+      "from": 44,
+      "to": 43
+    },
+    {
+      "from": 45,
+      "to": 21
+    },
+    {
+      "from": 45,
+      "to": 43
+    },
+    {
+      "from": 46,
+      "to": 34
+    },
+    {
+      "from": 47,
+      "to": 46
+    },
+    {
+      "from": 48,
+      "to": 1
+    },
+    {
+      "from": 49,
+      "to": 48
+    },
+    {
+      "from": 50,
+      "to": 49
+    },
+    {
+      "from": 51,
+      "to": 1
+    },
+    {
+      "from": 52,
+      "to": 10
+    },
+    {
+      "from": 52,
+      "to": 22
+    },
+    {
+      "from": 53,
+      "to": 52
+    },
+    {
+      "from": 54,
+      "to": 53
+    },
+    {
+      "from": 55,
+      "to": 52
+    },
+    {
+      "from": 56,
+      "to": 1
+    },
+    {
+      "from": 57,
+      "to": 56
+    },
+    {
+      "from": 58,
+      "to": 52
+    },
+    {
+      "from": 59,
+      "to": 58
+    },
+    {
+      "from": 59,
+      "to": 10
+    },
+    {
+      "from": 60,
+      "to": 58
+    },
+    {
+      "from": 61,
+      "to": 13
+    },
+    {
+      "from": 62,
+      "to": 61
+    },
+    {
+      "from": 62,
+      "to": 27
+    },
+    {
+      "from": 63,
+      "to": 62
+    },
+    {
+      "from": 64,
+      "to": 63
+    },
+    {
+      "from": 65,
+      "to": 17
+    },
+    {
+      "from": 66,
+      "to": 65
+    },
+    {
+      "from": 67,
+      "to": 30
+    },
+    {
+      "from": 68,
+      "to": 67
+    },
+    {
+      "from": 69,
+      "to": 68
+    },
+    {
+      "from": 69,
+      "to": 21
+    },
+    {
+      "from": 70,
+      "to": 69
+    },
+    {
+      "from": 71,
+      "to": 1
+    },
+    {
+      "from": 72,
+      "to": 71
+    },
+    {
+      "from": 73,
+      "to": 71
+    },
+    {
+      "from": 74,
+      "to": 71
+    },
+    {
+      "from": 75,
+      "to": 71
+    },
+    {
+      "from": 76,
+      "to": 75
+    },
+    {
+      "from": 77,
+      "to": 76
+    },
+    {
+      "from": 77,
+      "to": 73
+    },
+    {
+      "from": 78,
+      "to": 72
+    },
+    {
+      "from": 79,
+      "to": 73
+    },
+    {
+      "from": 80,
+      "to": 72
+    },
+    {
+      "from": 81,
+      "to": 80
+    },
+    {
+      "from": 82,
+      "to": 79
+    },
+    {
+      "from": 82,
+      "to": 81
+    },
+    {
+      "from": 83,
+      "to": 76
+    },
+    {
+      "from": 84,
+      "to": 83
+    },
+    {
+      "from": 84,
+      "to": 35
+    },
+    {
+      "from": 85,
+      "to": 77
+    },
+    {
+      "from": 85,
+      "to": 91
+    },
+    {
+      "from": 86,
+      "to": 72
+    },
+    {
+      "from": 87,
+      "to": 78
+    },
+    {
+      "from": 88,
+      "to": 78
+    },
+    {
+      "from": 89,
+      "to": 72
+    },
+    {
+      "from": 90,
+      "to": 72
+    },
+    {
+      "from": 91,
+      "to": 86
+    },
+    {
+      "from": 91,
+      "to": 90
+    },
+    {
+      "from": 92,
+      "to": 91
+    },
+    {
+      "from": 93,
+      "to": 77
+    },
+    {
+      "from": 94,
+      "to": 83
+    },
+    {
+      "from": 94,
+      "to": 93
+    },
+    {
+      "from": 95,
+      "to": 74
+    },
+    {
+      "from": 96,
+      "to": 95
+    },
+    {
+      "from": 97,
+      "to": 95
+    },
+    {
+      "from": 98,
+      "to": 96
+    },
+    {
+      "from": 99,
+      "to": 98
+    },
+    {
+      "from": 99,
+      "to": 52
+    },
+    {
+      "from": 100,
+      "to": 55
+    },
+    {
+      "from": 101,
+      "to": 65
+    },
+    {
+      "from": 101,
+      "to": 100
+    },
+    {
+      "from": 102,
+      "to": 15
+    },
+    {
+      "from": 102,
+      "to": 21
+    },
+    {
+      "from": 103,
+      "to": 102
+    },
+    {
+      "from": 104,
+      "to": 37
+    },
+    {
+      "from": 104,
+      "to": 41
+    },
+    {
+      "from": 105,
+      "to": 52
+    },
+    {
+      "from": 105,
+      "to": 58
+    },
+    {
+      "from": 106,
+      "to": 17
+    },
+    {
+      "from": 107,
+      "to": 106
+    },
+    {
+      "from": 107,
+      "to": 22
+    },
+    {
+      "from": 108,
+      "to": 107
+    },
+    {
+      "from": 109,
+      "to": 38
+    },
+    {
+      "from": 110,
+      "to": 39
+    },
+    {
+      "from": 110,
+      "to": 109
+    },
+    {
+      "from": 111,
+      "to": 110
+    },
+    {
+      "from": 112,
+      "to": 27
+    },
+    {
+      "from": 112,
+      "to": 68
+    },
+    {
+      "from": 113,
+      "to": 111
+    },
+    {
+      "from": 113,
+      "to": 76
+    },
+    {
+      "from": 114,
+      "to": 104
+    },
+    {
+      "from": 115,
+      "to": 105
+    },
+    {
+      "from": 115,
+      "to": 100
+    },
+    {
+      "from": 116,
+      "to": 114
+    },
+    {
+      "from": 116,
+      "to": 115
+    },
+    {
+      "from": 117,
+      "to": 116
+    },
+    {
+      "from": 118,
+      "to": 117
+    },
+    {
+      "from": 119,
+      "to": 118
+    },
+    {
+      "from": 120,
+      "to": 119
+    },
+    {
+      "from": 121,
+      "to": 120
+    },
+    {
+      "from": 122,
+      "to": 114
+    },
+    {
+      "from": 123,
+      "to": 122
+    },
+    {
+      "from": 124,
+      "to": 123
+    },
+    {
+      "from": 125,
+      "to": 124
+    },
+    {
+      "from": 126,
+      "to": 123
+    },
+    {
+      "from": 126,
+      "to": 125
+    },
+    {
+      "from": 127,
+      "to": 126
+    },
+    {
+      "from": 128,
+      "to": 103
+    },
+    {
+      "from": 128,
+      "to": 108
+    },
+    {
+      "from": 129,
+      "to": 128
+    },
+    {
+      "from": 130,
+      "to": 129
+    },
+    {
+      "from": 130,
+      "to": 113
+    },
+    {
+      "from": 131,
+      "to": 130
+    },
+    {
+      "from": 132,
+      "to": 101
+    },
+    {
+      "from": 132,
+      "to": 105
+    },
+    {
+      "from": 133,
+      "to": 108
+    },
+    {
+      "from": 133,
+      "to": 132
+    },
+    {
+      "from": 134,
+      "to": 133
+    },
+    {
+      "from": 135,
+      "to": 134
+    },
+    {
+      "from": 136,
+      "to": 135
+    },
+    {
+      "from": 136,
+      "to": 131
+    }
+  ]
+}

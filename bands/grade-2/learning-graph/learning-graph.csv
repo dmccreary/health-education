@@ -1,0 +1,56 @@
+ConceptID,ConceptLabel,Dependencies,TaxonomyID
+1,Health,,FOUND
+2,Food Group Function,1,FOOD
+3,Variety Of Foods,2,FOOD
+4,Food Energy,2,FOOD
+5,Sugar In Drinks,1,FOOD
+6,Caffeine In Drinks,1,FOOD
+7,Comparing Drink Choices,5|6,FOOD
+8,Food Storage Safety,1,FOOD
+9,Food Preparation Safety,8,FOOD
+10,Food Handling Safety,8|9,FOOD
+11,Peer Relationship,1,GROW
+12,Types Of Peer Relationships,11,GROW
+13,Coping Strategy,1,EMOT
+14,Cultural Coping Practice,13,EMOT
+15,Personal Space,1,EMOT
+16,Boundary,15,EMOT
+17,Recognizing Personal Needs,15|16,EMOT
+18,Conflict,1,EMOT
+19,Healthy Conflict Resolution,18|13,EMOT
+20,Managing Strong Emotions,13|18,EMOT
+21,Sharing Feelings With Trusted Adult,20|47,EMOT
+22,Playful Interaction,12,EMOT
+23,Teasing,22,EMOT
+24,Effects Of Teasing,23,EMOT
+25,Environmental Health Risk,1,WELL
+26,Sun And Noise Protection,25,WELL
+27,Unsafe Chemicals And Water,25,WELL
+28,Physical Activity,1,WELL
+29,Cultural Physical Activity,28,WELL
+30,Germs,1,WELL
+31,How Germs Spread,30,WELL
+32,Illness Prevention Practice,31,WELL
+33,Technology Safety,1,SAFE
+34,Unsafe Technology Situation,33,SAFE
+35,Getting Help For Tech Situations,34|45,SAFE
+36,Encouraging Safe Choices,37,SAFE
+37,Community Values,1,SAFE
+38,Safety Drill,1,SAFE
+39,Staying Safe Away From Classroom,38,SAFE
+40,Unwanted Touch,1,SAFE
+41,Saying No Or Exiting,40,SAFE
+42,Influence,1,SKIL
+43,Family And School Influence,42,SKIL
+44,Media Influence,42,SKIL
+45,Health Helper,1,SKIL
+46,Locating Health Helpers,45,SKIL
+47,I-Statement,1,SKIL
+48,Active Listening,1,SKIL
+49,Health Decision Options,1,SKIL
+50,Decision Outcomes,49,SKIL
+51,Goal Setting,1,SKIL
+52,Goal-Supporting Actions,51,SKIL
+53,Reflecting On Goal Progress,52,SKIL
+54,Recognizing Feelings About Behaviors,20,SKIL
+55,Modeling Positive Health Choices,43|44|50,SKIL
