@@ -643,6 +643,12 @@ nav:
               - Impact Evaluation Dashboard: sims/impact-evaluation-dashboard/index.md
               - The Behavior-Change Cycle: sims/behavior-change-cycle/index.md
 
+  - Posters:
+      - Poster Gallery: posters/index.md
+      - Food Groups: posters/food-groups/index.md
+      - Plate Proportions: posters/plate-proportions/index.md
+      - Safe Tech — Stop, Close, Tell: posters/safe-tech-stop-close-tell/index.md
+
   - Administration:
     - Introduction: learning-graph/index.md
     - Kindergarten: ../bands/kindergarten/learning-graph/index.md
@@ -735,9 +741,9 @@ extra_css:
   - css/extra.css
   - css/mascot.css
 
-# Custom JavaScript — uncomment once a corresponding file exists
-# extra_javascript:
-#   - js/extra.js
+# Custom JavaScript
+extra_javascript:
+  - js/extra.js
 
 # Exclude prompt scratch files and TODOs from build/search/sitemap
 exclude_docs: |

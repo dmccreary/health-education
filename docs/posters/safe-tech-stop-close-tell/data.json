@@ -1,0 +1,71 @@
+{
+  "title": "Safe Tech: Stop, Close, Tell",
+  "image": "safe-tech-stop-close-tell.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": ["#F28C18", "#2D91D0", "#5B9B28", "#7046A3"],
+  "zones": [
+    {
+      "id": "stop",
+      "label": "Stop",
+      "color": "#F28C18",
+      "x1": 1.2,
+      "y1": 14.0,
+      "x2": 32.6,
+      "y2": 97.8,
+      "summary": "Stop using the device when something feels unsafe, confusing, or uncomfortable.",
+      "facts": [
+        "Take your hands away from the screen and pause.",
+        "Do not reply to the message or request.",
+        "You do not have to solve the problem by yourself."
+      ]
+    },
+    {
+      "id": "close",
+      "label": "Close",
+      "color": "#2D91D0",
+      "x1": 33.8,
+      "y1": 14.0,
+      "x2": 65.7,
+      "y2": 97.8,
+      "summary": "Close the app or step away from the screen.",
+      "facts": [
+        "Do not click links, pictures, or buttons in the message.",
+        "Do not share your name, school, address, or photo.",
+        "Moving away gives you time to get help safely."
+      ]
+    },
+    {
+      "id": "tell",
+      "label": "Tell",
+      "color": "#5B9B28",
+      "x1": 67.0,
+      "y1": 14.0,
+      "x2": 98.8,
+      "y2": 97.8,
+      "summary": "Tell a trusted adult right away and let the adult decide what to do next.",
+      "facts": [
+        "A trusted adult could be a parent, guardian, teacher, or school counselor.",
+        "Tell the adult what you saw and how it made you feel.",
+        "Asking for help is the safe and responsible choice."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which step reminds you to take your hands away from the screen and not reply?",
+      "correct_zone": "stop",
+      "explanation": "Stop first. You do not need to answer or investigate an unsafe situation."
+    },
+    {
+      "question": "Which step means leaving the app or stepping away from the device?",
+      "correct_zone": "close",
+      "explanation": "Close the app or move away so you can get help safely."
+    },
+    {
+      "question": "Which step brings a parent, guardian, teacher, or counselor in to help?",
+      "correct_zone": "tell",
+      "explanation": "Tell a trusted adult right away and let that adult decide what happens next."
+    }
+  ]
+}
