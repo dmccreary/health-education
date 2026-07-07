@@ -1,125 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Multiple Perspectives Stakeholder Map</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 560 -->
+<title>Multiple Perspectives Stakeholder Map</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .controls { text-align: center; margin-bottom: 6px; font-size: 13px; color: #334155; }
+  .controls label { font-weight: bold; color: navy; margin-right: 4px; }
+  .controls select { font-size: 13px; padding: 3px 6px; border: 1px solid #94a3b8; border-radius: 4px; background: white; color: #1e293b; }
+  .controls .toggle { margin-left: 14px; }
+  .controls .toggle input { vertical-align: middle; margin-right: 3px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 380px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.9); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 8px; font-size: 11px; line-height: 1.6; }
+  .legend .k { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 5px; vertical-align: middle; border: 1px solid #555; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 78px; }
+  .infobox strong { color: navy; }
+  .cmp { display: flex; gap: 8px; margin-top: 8px; }
+  .cmp .card { flex: 1; border-radius: 4px; padding: 7px 9px; font-size: 12px; line-height: 1.4; color: #1e293b; }
+  .cmp .card h4 { font-size: 12px; margin-bottom: 3px; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Multiple Perspectives Stakeholder Map</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> multiple-perspectives-stakeholder-map</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Analyze<br/></p>
-            <p><strong>Learning Objective:</strong> Analyze how a single health decision affects and is</p>
-        </div>
+<main>
+  <h3>Whose View Is It? A Stakeholder Map</h3>
+  <div class="subtitle">Pick a scenario, then click any person to see their main concern. Turn on Compare to view two side by side.</div>
+  <div class="controls">
+    <label for="scenario">Scenario:</label>
+    <select id="scenario">
+      <option value="ride">Accepting a ride from an impaired driver</option>
+      <option value="vape">Vaping at a gathering</option>
+      <option value="vaccine">Skipping a recommended vaccine</option>
+      <option value="crisis">Reporting a peer in crisis</option>
+    </select>
+    <span class="toggle"><input type="checkbox" id="compare"><label for="compare" style="font-weight:normal;color:#334155;">Compare perspectives</label></span>
+  </div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k" style="background:goldenrod;"></span>Self (you)<br>
+      <span class="k" style="background:steelblue;"></span>Peer / Friend<br>
+      <span class="k" style="background:seagreen;"></span>Family<br>
+      <span class="k" style="background:navy;"></span>Community / School
     </div>
+  </div>
+  <div class="infobox" id="infobox">Every health decision looks different depending on who is affected. Click a stakeholder to learn their main concern and how it differs from your own.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// Stakeholder identities: id, label, color
+const holders = [
+  { id:'self',   label:'Self\n(You)',            color:'goldenrod',  border:'#a67c00' },
+  { id:'peer',   label:'Peer /\nFriend',         color:'steelblue',  border:'#2c5f82' },
+  { id:'family', label:'Family',                 color:'seagreen',   border:'#1f6b45' },
+  { id:'comm',   label:'Community /\nSchool',    color:'navy',       border:'#0a1a4d' }
+];
 
-    Type: diagram
-    
-    **sim-id:** multiple-perspectives-stakeholder-map<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Analyze<br/>
-    Bloom Taxonomy Verb: differentiate, examine
-    
-    Learning objective: Analyze how a single health decision affects and is
-    viewed differently by multiple stakeholders (self, peer, family, community),
-    distinguishing each stakeholder's primary concern.
-    
-    Components to show: Central node "Health Decision" with a dropdown to
-    select a scenario (impaired-driver ride, vaping at a gathering, skipping a
-    vaccine, reporting a peer crisis). Four surrounding stakeholder nodes:
-    Self, Peer/Friend, Family, Community/School.
-    
-    Connections: Edges from the central decision to each stakeholder node,
-    labeled with that stakeholder's primary concern for the selected scenario
-    (e.g., Self: "physical safety"; Peer: "feeling excluded or judged"; Family:
-    "wants to be contacted, prioritizes safety"; Community: "broader norm or
-    policy implications").
-    
-    Interactive features: Clicking a stakeholder node opens an infobox showing
-    a one-paragraph explanation of that stakeholder's perspective and why it
-    differs from Self's perspective. Learner can drag nodes; a "Compare
-    perspectives" toggle highlights any two selected nodes' concerns side by
-    side to show where they align or conflict.
-    
-    Visual style: Radial/star layout, Self at center.
-    
-    Color scheme: Self (gold), Peer (blue), Family (teal), Community (navy).
-    -->
+// Per-scenario data: central label, and for each holder a short concern (edge label)
+// plus a fuller perspective paragraph explaining how it differs from Self.
+const scenarios = {
+  ride: {
+    center: 'Accepting a Ride from\nan Impaired Driver',
+    self:   { concern:'physical safety',
+              text:'For you, the biggest concern is your own physical safety: an impaired driver greatly raises the chance of a crash and injury. Your view centers on protecting your body right now.' },
+    peer:   { concern:'not feeling judged',
+              text:'A friend may worry about feeling awkward or rejected if you refuse the ride, so their concern is social comfort. This differs from Self because they weigh the friendship and the moment over the physical risk you feel most.' },
+    family: { concern:'wants to be contacted',
+              text:'Family wants you to arrive home safely and to be called if plans change. Their concern is your long-term safety and staying informed, which reaches beyond the single moment that Self is focused on.' },
+    comm:   { concern:'road-safety norms',
+              text:'The community and school care about the broader rule that no one should ride with an impaired driver, to keep everyone safe. Their view is about shared norms for many people, not just your one choice.' }
+  },
+  vape: {
+    center: 'Vaping at a\nGathering',
+    self:   { concern:'health and belonging',
+              text:'For you, the pull is fitting in, while the concern is how vaping could affect your own health and habits. Your view balances belonging in the moment against risks to yourself.' },
+    peer:   { concern:'feeling included',
+              text:'A friend may focus on everyone doing the same thing and not wanting anyone left out, so their concern is group belonging. That differs from Self, who also carries the personal health worry that peers may set aside.' },
+    family: { concern:'long-term health',
+              text:'Family worries about the lasting health effects and the habits that can form over time. Their concern reaches years ahead, while Self is weighing the here-and-now of the gathering.' },
+    comm:   { concern:'school health rules',
+              text:'The school and community focus on health guidelines and rules meant to protect all students. Their view is about a healthy environment for everyone, not one persons single decision.' }
+  },
+  vaccine: {
+    center: 'Skipping a\nRecommended Vaccine',
+    self:   { concern:'personal choice',
+              text:'For you, the decision feels like a personal choice about your own body and comfort. Your view centers on how it affects you directly.' },
+    peer:   { concern:'shared activities',
+              text:'A friend may think about whether you can still join group activities together safely. Their concern is the friendship and plans, a social angle that differs from the personal focus Self has.' },
+    family: { concern:'protecting relatives',
+              text:'Family thinks about protecting everyone in the home, including younger or older relatives who could get sick. Their concern extends to the whole family, wider than Self alone.' },
+    comm:   { concern:'community immunity',
+              text:'The community and school care about keeping enough people protected so illness does not spread widely. Their view is about public health for the whole group, well beyond one persons choice.' }
+  },
+  crisis: {
+    center: 'Reporting a Peer\nin Crisis',
+    self:   { concern:'doing the right thing',
+              text:'For you, the concern is doing the right thing and getting help while worrying about your friends trust. Your view centers on your own sense of responsibility and the friendship.' },
+    peer:   { concern:'trust and privacy',
+              text:'The peer in crisis may fear losing privacy or trust, so their concern is feeling safe and respected. That differs from Self, who is weighing the urgent need to get help.' },
+    family: { concern:'safety and support',
+              text:'Family, on either side, prioritizes safety and getting caring adults involved. Their concern is protecting a young person, which can outweigh the privacy worry Self feels torn about.' },
+    comm:   { concern:'get trained help',
+              text:'The school and community focus on connecting the person to trained help and following support plans. Their view is about safe, caring systems for every student, larger than one friendship.' }
+  }
+};
+
+let compareMode = false;
+let selected = []; // ids selected while comparing
+
+const container = document.getElementById('network');
+const nodesDS = new vis.DataSet([]);
+const edgesDS = new vis.DataSet([]);
+const data = { nodes: nodesDS, edges: edgesDS };
+
+const options = {
+  layout: { improvedLayout: true },
+  physics: { solver: 'forceAtlas2Based', forceAtlas2Based: { gravitationalConstant: -70, springLength: 120, centralGravity: 0.02 }, stabilization: { iterations: 300 } },
+  interaction: { hover: true, dragView: true, zoomView: false, navigationButtons: true, tooltipDelay: 100000 },
+  edges: { smooth: { type: 'curvedCW', roundness: 0.06 }, font: { size: 11, color: '#334155', strokeWidth: 4, strokeColor: '#ffffff' }, color: { color: '#94a3b8' }, width: 2, arrows: { to: { enabled: false } } },
+  nodes: { shadow: true, borderWidth: 2, font: { color: 'white', size: 14, face: 'Arial' } }
+};
+
+let network = new vis.Network(container, data, options);
+
+function buildGraph(key){
+  const sc = scenarios[key];
+  const nodes = [];
+  const edges = [];
+  nodes.push({ id:'center', label:sc.center, shape:'ellipse', color:{ background:'indianred', border:'#8b2e2e' }, font:{ color:'white', size:15 }, borderWidth:3 });
+  holders.forEach(h => {
+    nodes.push({ id:h.id, label:h.label, shape:'box', color:{ background:h.color, border:h.border }, font:{ color:'white', size:14 }, margin:9 });
+    edges.push({ id:'e_'+h.id, from:'center', to:h.id, label:sc[h.id].concern, color:{ color:'#94a3b8' }, width:2 });
+  });
+  nodesDS.clear();
+  edgesDS.clear();
+  nodesDS.add(nodes);
+  edgesDS.add(edges);
+  network.setOptions({ physics: true });
+  network.once('stabilizationIterationsDone', () => { network.setOptions({ physics: false }); network.fit(); });
+}
+
+function currentKey(){ return document.getElementById('scenario').value; }
+
+function panel(id){
+  const sc = scenarios[currentKey()];
+  if (id === 'center'){
+    box.innerHTML = '<strong>The Health Decision</strong><br>This is the choice at the center. Notice that the same decision reaches four different people, and each cares about something different. Click each person to compare their concerns.';
+    return;
+  }
+  const h = holders.find(x => x.id === id);
+  if (!h) return;
+  const name = h.label.replace('\n',' ');
+  box.innerHTML = '<strong>' + name + ' &mdash; main concern: ' + sc[id].concern + '</strong><br>' + sc[id].text;
+}
+
+function renderCompare(){
+  if (selected.length < 2){
+    box.innerHTML = '<strong>Compare mode</strong><br>Click two different people to see their concerns side by side and spot where they agree or differ.';
+    return;
+  }
+  const sc = scenarios[currentKey()];
+  const cards = selected.slice(0,2).map(id => {
+    const h = holders.find(x => x.id === id);
+    const name = h.label.replace('\n',' ');
+    return '<div class="card" style="background:' + tint(h.color) + ';border-left:4px solid ' + h.color + ';">' +
+           '<h4 style="color:' + h.border + '">' + name + '</h4>' +
+           '<em>Main concern: ' + sc[id].concern + '</em><br>' + sc[id].text + '</div>';
+  }).join('');
+  box.innerHTML = '<div class="cmp">' + cards + '</div>';
+}
+
+// light background tint for a named color, for compare cards
+function tint(name){
+  const map = { goldenrod:'#fdf6e3', steelblue:'#eaf2f8', seagreen:'#e8f5ee', navy:'#e8 eaf6'.replace(' ','') };
+  return map[name] || '#f1f5f9';
+}
+
+function setSelectionHighlight(){
+  const upd = [];
+  holders.forEach(h => {
+    const on = compareMode && selected.includes(h.id);
+    upd.push({ id:h.id, borderWidth: on ? 5 : 2, color:{ background:h.color, border: on ? 'black' : h.border } });
+  });
+  nodesDS.update(upd);
+}
+
+// Events
+network.on('hoverNode', p => {
+  if (compareMode) return;
+  const id = p.node;
+  if (id === 'center'){ box.innerHTML = 'The health decision at the center &mdash; click to learn more.'; return; }
+  const h = holders.find(x => x.id === id);
+  if (h){
+    const sc = scenarios[currentKey()];
+    box.innerHTML = '<strong>' + h.label.replace('\n',' ') + '</strong>: cares most about <em>' + sc[id].concern + '</em>. Click for the full perspective.';
+  }
+});
+
+network.on('click', p => {
+  if (!p.nodes.length) return;
+  const id = p.nodes[0];
+  if (compareMode){
+    if (id === 'center') return;
+    if (selected.includes(id)){
+      selected = selected.filter(x => x !== id);
+    } else {
+      selected.push(id);
+      if (selected.length > 2) selected.shift();
+    }
+    setSelectionHighlight();
+    renderCompare();
+  } else {
+    panel(id);
+  }
+});
+
+// Controls
+document.getElementById('scenario').addEventListener('change', e => {
+  selected = [];
+  buildGraph(e.target.value);
+  if (compareMode) renderCompare(); else box.innerHTML = '<strong>Scenario changed.</strong><br>Click any person to see how their main concern shifts for this new decision.';
+});
+
+document.getElementById('compare').addEventListener('change', e => {
+  compareMode = e.target.checked;
+  selected = [];
+  setSelectionHighlight();
+  if (compareMode){
+    renderCompare();
+  } else {
+    box.innerHTML = 'Compare mode off. Click a single person to read their perspective.';
+  }
+});
+
+// Initial build
+buildGraph('ride');
+</script>
 </body>
 </html>
