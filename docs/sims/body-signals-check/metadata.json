@@ -19,5 +19,20 @@
   "chapter_number": 1,
   "chapter_title": "Health and Food",
   "chapter_dir": "01-health-and-food",
-  "chapter_rel_dir": "bands/kindergarten/chapters/01-health-and-food"
+  "chapter_rel_dir": "bands/kindergarten/chapters/01-health-and-food",
+  "educational": {
+    "gradeLevel": "Kindergarten",
+    "subjectArea": "Health Education",
+    "topic": "Health and Food",
+    "learningObjectives": [
+      "Students identify body signals that mean \"I'm hungry,\" \"I'm thirsty,\" or \"I feel fine,\" matching a picture of a child showing a signal to the correct feeling label."
+    ],
+    "bloomLevel": "Remember (L1)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "identify, recognize, name",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Remember-level objective through direct interaction rather than passive reading."
+  }
 }

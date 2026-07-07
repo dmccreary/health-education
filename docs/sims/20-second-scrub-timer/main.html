@@ -3,126 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>20-Second Scrub Timer</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>20-Second Scrub Timer MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="20-second-scrub-timer.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>20-Second Scrub Timer</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> 20-second-scrub-timer</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students practice the Handwashing routine by following along with a step-by-step, timed scrubbing sequence, reinforcing correct order and duration.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** 20-second-scrub-timer<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: practice, demonstrate
-    
-    Learning objective: Students practice the Handwashing routine by following along with a step-by-step, timed scrubbing sequence, reinforcing correct order and duration.
-    
-    Canvas layout:
-    - Top area (300px): A large friendly illustration of two cartoon hands being washed, with soap bubbles that increase as the timer runs
-    - Middle area (100px): A circular 20-second countdown ring that fills with color as time passes
-    - Bottom strip (100px): Large "Start Scrubbing!" button and a Reset button
-    
-    Visual elements:
-    - Five numbered step icons (wet, soap, scrub, rinse, dry) displayed left to right, each lighting up in sequence as the sim progresses
-    - Bubble animation increases during the "scrub" step
-    
-    Interactive controls:
-    - Button: "Start Scrubbing!" begins the timed sequence
-    - Button: "Reset" returns to the beginning
-    - Display: countdown ring and current step label read aloud by the teacher
-    
-    Default parameters:
-    - Timer length: 20 seconds for the scrub step
-    - Steps advance automatically at realistic intervals (wet: 2s, soap: 2s, scrub: 20s, rinse: 3s, dry: 3s)
-    
-    Behavior:
-    - When "Start Scrubbing!" is clicked, hands animate through each step while the step icon glows and a short label appears ("Now we scrub!")
-    - A cheerful chime plays at the end of the full sequence
-    - A celebration message appears: "Clean hands, healthy you! You scrubbed for the full 20 seconds."
-    
-    Instructional Rationale: This is an Apply-level objective — children are practicing performing a real multi-step routine — so a step-through sequence with a visible timer is appropriate. Continuous unstructured animation would not reinforce the correct order or duration, which are the actual learning targets.
-    
-    Implementation notes: Use p5.js. Represent the five steps as an ordered array with durations and labels. Keep all on-screen text large (26px+) and pair every step with an icon for pre-reader accessibility.
-    -->
+    <main></main>
 </body>
 </html>

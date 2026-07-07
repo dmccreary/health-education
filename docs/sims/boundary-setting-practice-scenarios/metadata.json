@@ -19,5 +19,20 @@
   "chapter_number": 6,
   "chapter_title": "Personal Safety And Violence Prevention",
   "chapter_dir": "06-personal-safety-and-violence-prevention",
-  "chapter_rel_dir": "bands/grade-5/chapters/06-personal-safety-and-violence-prevention"
+  "chapter_rel_dir": "bands/grade-5/chapters/06-personal-safety-and-violence-prevention",
+  "educational": {
+    "gradeLevel": "Grade 5",
+    "subjectArea": "Health Education",
+    "topic": "Personal Safety And Violence Prevention",
+    "learningObjectives": [
+      "Students practice constructing a clear boundary-setting statement using the name-it, feel-it, state-it pattern across several peer scenarios."
+    ],
+    "bloomLevel": "Apply (L3)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "demonstrate, practice, use",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Apply-level objective through direct interaction rather than passive reading."
+  }
 }

@@ -19,5 +19,20 @@
   "chapter_number": 5,
   "chapter_title": "Wellness and Disease Prevention",
   "chapter_dir": "05-wellness-and-disease-prevention",
-  "chapter_rel_dir": "bands/grade-4/chapters/05-wellness-and-disease-prevention"
+  "chapter_rel_dir": "bands/grade-4/chapters/05-wellness-and-disease-prevention",
+  "educational": {
+    "gradeLevel": "Grade 4",
+    "subjectArea": "Health Education",
+    "topic": "Wellness and Disease Prevention",
+    "learningObjectives": [
+      "Students apply allergy prevention and response knowledge by working through short scenarios and choosing the correct next step, reinforcing when a symptom requires telling an adult versus when it is a medical emergency."
+    ],
+    "bloomLevel": "Apply (L3)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "demonstrate, use, practice",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Apply-level objective through direct interaction rather than passive reading."
+  }
 }

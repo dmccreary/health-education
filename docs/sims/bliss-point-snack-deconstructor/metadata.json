@@ -19,5 +19,20 @@
   "chapter_number": 1,
   "chapter_title": "Health Foundations and Nutrition",
   "chapter_dir": "01-health-foundations-and-nutrition",
-  "chapter_rel_dir": "bands/grade-6-8/chapters/01-health-foundations-and-nutrition"
+  "chapter_rel_dir": "bands/grade-6-8/chapters/01-health-foundations-and-nutrition",
+  "educational": {
+    "gradeLevel": "Grades 6-8",
+    "subjectArea": "Health Education",
+    "topic": "Health Foundations and Nutrition",
+    "learningObjectives": [
+      "Students analyze the sugar, sodium, and fat content of common snack foods to recognize the engineered combination pattern often called the \"bliss point.\""
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "deconstruct, examine, organize, differentiate",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
 }

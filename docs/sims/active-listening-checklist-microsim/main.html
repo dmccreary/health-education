@@ -3,127 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Are You Listening Actively?</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Are You Listening Actively? MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="active-listening-checklist-microsim.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Are You Listening Actively?</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> active-listening-checklist-microsim</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students apply active listening behaviors by selecting which actions in a short scenario show active listening.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** active-listening-checklist-microsim<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: demonstrate, practice, use
-    
-    Learning objective: Students apply active listening behaviors by selecting which actions in a short scenario show active listening.
-    
-    Canvas layout:
-    - Top area (120px): Short scenario text, e.g., "A teacher explains a new hallway safety rule."
-    - Middle area (260px): Four action cards students can mark as "Active Listening" or "Not Active Listening": "Looking at the teacher and staying quiet," "Waving hands and talking to a friend," "Asking 'why do we do it this way?' after the teacher finishes," "Nodding to show understanding"
-    - Bottom area (120px): Infobox with feedback and running score
-    
-    Interactive controls:
-    - Click each action card to mark it
-    - Button: "Check My Answers"
-    - Button: "New Scenario" (cycles through 3 total scenarios)
-    - Button: "Reset"
-    
-    Default parameters:
-    - Scenario 1 active; no cards marked yet
-    
-    Data Visibility Requirements:
-      Stage 1: Show scenario and four unmarked action cards
-      Stage 2: Student marks cards, clicks "Check My Answers" -- correct cards turn green, incorrect turn orange
-      Stage 3: Infobox explains each answer: "Looking and staying quiet shows active listening because it shows attention," "Talking to a friend is not active listening because attention is elsewhere"
-      Stage 4: Student clicks "New Scenario" to try a fresh set of four actions
-    
-    Behavior:
-    - Score tracks correct identifications across all three scenarios
-    - Feedback always names the specific active-listening behavior involved
-    
-    Instructional Rationale: This is an Apply-level objective, so the design asks students to apply the concept to new scenario actions rather than simply recall a definition, matching the "demonstrate active listening in a variety of situations" benchmark.
-    
-    Implementation notes: Use p5.js. Keep scenarios varied (home, classroom, playground) so the skill transfers across settings.
-    -->
+    <main></main>
 </body>
 </html>

@@ -1,22 +1,72 @@
 ---
 title: Belonging Classroom Map
 description: Students identify visible signs that a classroom character feels a sense of belonging (or does not yet) and describe what caring relationship helped create that feeling.
-status: scaffold
+image: /sims/belonging-classroom-map/belonging-classroom-map.png
+og:image: /sims/belonging-classroom-map/belonging-classroom-map.png
+twitter:image: /sims/belonging-classroom-map/belonging-classroom-map.png
+social:
+   cards: false
 library: p5.js
 bloom_level: Understand (L2)
+grade_band: Grade 1
 ---
 
 # Belonging Classroom Map
 
+<iframe src="main.html" width="100%" height="494px" scrolling="no"></iframe>
 
+[Run the Belonging Classroom Map MicroSim Fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+You can embed this MicroSim in your own course website with this iframe:
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+```html
+<iframe src="./main.html" width="100%" height="494px" scrolling="no"></iframe>
+```
+
+## About this MicroSim
+
+**Belonging Classroom Map** is an interactive MicroSim for this health-education textbook.
+
+Students identify visible signs that a classroom character feels a sense of belonging (or does not yet) and describe what caring relationship helped create that feeling.
+
+Use the controls in the panel below the drawing to interact with the model, then talk through what changed and why. The MicroSim is width-responsive and can be embedded in any course page with the iframe shown above.
+
+**Bloom's Taxonomy level:** Understand (L2) — identify, describe, infer
+
+## Lesson Plan
+
+### Audience
+
+This MicroSim is designed for **Grade 1**. For the K-3 bands the teacher
+typically drives the activity on a shared screen; older students can explore
+the MicroSim independently.
+
+### Learning Objective
+
+Students identify visible signs that a classroom character feels a sense of belonging (or does not yet) and describe what caring relationship helped create that feeling.
+
+This activity targets **Bloom's Understand (L2)** (identify, describe, infer).
+
+### Suggested Use (about 10 minutes)
+
+1. **Warm up (2 min).** Ask students what they already know about the topic
+   and let one volunteer describe what they see on the screen.
+2. **Model it (3 min).** Demonstrate the interaction once, thinking aloud so
+   students hear the reasoning behind each choice.
+3. **Guided practice (3 min).** Invite students to try the interaction and to
+   predict what will happen before they act.
+4. **Discuss (2 min).** Ask *why* the result came out the way it did, connecting
+   the on-screen result back to the learning objective above.
+
+### Check for Understanding
+
+Have each student (or pair) explain their result in one sentence, using the
+vocabulary from this chapter. Look for reasoning that matches the
+**Understand**-level objective rather than a lucky guess.
 
 ## Specification
 
-The full specification below is extracted from
+The full specification below was extracted from
 [Chapter 4: Friendship, Uniqueness, and Belonging](../../bands/grade-1/chapters/04-friendship-and-belonging/index.md).
 
 ```text
@@ -60,6 +110,8 @@ Instructional Rationale: This is an Understand-level (identify/describe) objecti
 Implementation notes: Use p5.js. Keep every character's situation gentle and fixable — no character should look excluded in a distressing way, only in a way that invites a kind next step. Teacher facilitates discussion after each reveal.
 ```
 
-## Related Resources
+## References
 
 - [Chapter 4: Friendship, Uniqueness, and Belonging](../../bands/grade-1/chapters/04-friendship-and-belonging/index.md)
+- [List of all MicroSims](../index.md)
+- [p5.js Reference](https://p5js.org/reference/) (for the interactive graphics library)

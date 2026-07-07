@@ -3,129 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>How Moving Your Body Helps You</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>How Moving Your Body Helps You MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="activity-benefits-explorer.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>How Moving Your Body Helps You</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> activity-benefits-explorer</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students explain the benefits of regular physical activity for the body, mood, and learning by exploring a labeled figure and matching activities to the benefits they produce.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** activity-benefits-explorer<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain, summarize
-    
-    Learning objective: Students explain the benefits of regular physical activity for the body, mood, and learning by exploring a labeled figure and matching activities to the benefits they produce.
-    
-    Canvas layout:
-    - Left side (400px): A simple illustrated figure of a child in mid-activity (running), with four labeled zones: head/brain, chest/heart, muscles, and a small "zzz" cloud for sleep
-    - Right side (200px): Activity picker and revealed-benefit text panel
-    
-    Visual elements:
-    - Four clickable body zones on the figure (brain, heart, muscles, sleep cloud)
-    - A row of activity icons below: running, biking, dancing, swimming, playing outside
-    
-    Interactive controls:
-    - Click a body zone to reveal the matching benefit in the side panel
-    - Click an activity icon to see which zones light up for that activity
-    - Button: "Reset"
-    
-    Default parameters:
-    - No zone selected at start; a gentle pulsing highlight invites the student to click the heart zone first
-    
-    Data Visibility Requirements:
-      Stage 1: Show the still figure with all four zones outlined but unlabeled
-      Stage 2: When a zone is clicked, show the zone's name and a one-sentence benefit (e.g., "Brain: Physical activity helps you focus and remember things better in school.")
-      Stage 3: When an activity icon is clicked, highlight all zones that activity benefits, showing that most activities help more than one part at once
-    
-    Behavior:
-    - Clicking a zone highlights it and displays its benefit text in the panel
-    - Clicking an activity animates the figure briefly (a simple walk-cycle style loop) and highlights the relevant zones
-    - All four zones must be visited at least once before a small "You found them all!" caption appears
-    
-    Instructional Rationale: This is an Understand-level objective (explain, summarize), so the design uses a labeled, click-to-reveal figure with concrete text rather than continuous animation — students need to see and read the specific benefit tied to each body zone, matching the data-visibility approach recommended for Understand-level MicroSims.
-    
-    Implementation notes: Use p5.js. Keep the figure simple and friendly (flat cartoon style). Because Grade 3 is still building reading independence, keep revealed text short (one sentence) and consider an optional read-aloud audio icon next to each benefit.
-    -->
+    <main></main>
 </body>
 </html>

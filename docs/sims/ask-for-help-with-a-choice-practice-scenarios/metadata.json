@@ -19,5 +19,20 @@
   "chapter_number": 7,
   "chapter_title": "Getting Help and Making Healthy Choices",
   "chapter_dir": "07-help-and-decisions",
-  "chapter_rel_dir": "bands/grade-1/chapters/07-help-and-decisions"
+  "chapter_rel_dir": "bands/grade-1/chapters/07-help-and-decisions",
+  "educational": {
+    "gradeLevel": "Grade 1",
+    "subjectArea": "Health Education",
+    "topic": "Getting Help and Making Healthy Choices",
+    "learningObjectives": [
+      "Students demonstrate asking for help from others in making safe, health-promoting choices by selecting an appropriate help-seeking phrase in response to everyday decision scenarios, matching the Grade 1 benchmark on ways to ask for help in making safe, health-promoting choices."
+    ],
+    "bloomLevel": "Apply (L3)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "demonstrate, practice, apply",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Apply-level objective through direct interaction rather than passive reading."
+  }
 }

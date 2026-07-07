@@ -19,5 +19,20 @@
   "chapter_number": 7,
   "chapter_title": "Health Skills And Goal Setting",
   "chapter_dir": "07-health-skills-and-goal-setting",
-  "chapter_rel_dir": "bands/grade-5/chapters/07-health-skills-and-goal-setting"
+  "chapter_rel_dir": "bands/grade-5/chapters/07-health-skills-and-goal-setting",
+  "educational": {
+    "gradeLevel": "Grade 5",
+    "subjectArea": "Health Education",
+    "topic": "Health Skills And Goal Setting",
+    "learningObjectives": [
+      "Students judge which version of a health message best fits a given audience, and justify why the wording and format matter."
+    ],
+    "bloomLevel": "Evaluate (L5)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "judge, critique, recommend",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Evaluate-level objective through direct interaction rather than passive reading."
+  }
 }

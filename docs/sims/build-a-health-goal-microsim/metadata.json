@@ -19,5 +19,20 @@
   "chapter_number": 7,
   "chapter_title": "Influences, Decisions, and Personal Goals",
   "chapter_dir": "07-influences-decisions-goals",
-  "chapter_rel_dir": "bands/grade-2/chapters/07-influences-decisions-goals"
+  "chapter_rel_dir": "bands/grade-2/chapters/07-influences-decisions-goals",
+  "educational": {
+    "gradeLevel": "Grade 2",
+    "subjectArea": "Health Education",
+    "topic": "Influences, Decisions, and Personal Goals",
+    "learningObjectives": [
+      "Students determine the components of a personal health-related goal by assembling a goal from a target behavior, a time frame, and a way to track progress."
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "determine, organize, construct",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
 }

@@ -19,5 +19,20 @@
   "chapter_number": 3,
   "chapter_title": "Wellness And Activity",
   "chapter_dir": "03-wellness-and-activity",
-  "chapter_rel_dir": "bands/grade-3/chapters/03-wellness-and-activity"
+  "chapter_rel_dir": "bands/grade-3/chapters/03-wellness-and-activity",
+  "educational": {
+    "gradeLevel": "Grade 3",
+    "subjectArea": "Health Education",
+    "topic": "Wellness And Activity",
+    "learningObjectives": [
+      "Students explain the benefits of regular physical activity for the body, mood, and learning by exploring a labeled figure and matching activities to the benefits they produce."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "explain, summarize",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
 }

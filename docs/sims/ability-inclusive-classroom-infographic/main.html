@@ -3,127 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Ability-Inclusive Classroom Infographic</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Ability-Inclusive Classroom Infographic MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="ability-inclusive-classroom-infographic.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Ability-Inclusive Classroom Infographic</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> ability-inclusive-classroom-infographic</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students explain how everyday classroom tools and adjustments support classmates with different abilities, recognizing that these tools are ordinary, not special treatment.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: infographic
-    **sim-id:** ability-inclusive-classroom-infographic<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain, exemplify, classify
-    
-    Learning objective: Students explain how everyday classroom tools and adjustments support classmates with different abilities, recognizing that these tools are ordinary, not special treatment.
-    
-    Canvas layout:
-    - Full width (650px): Illustrated classroom scene with 6 clickable hotspots
-    - Bottom strip (100px): Infobox that displays details for the selected hotspot
-    
-    Visual elements:
-    - A friendly, flat-style illustrated classroom with six labeled hotspots: wheelchair ramp/accessible desk, noise-canceling headphones on a hook, a communication device on a desk, large-print worksheet, a quiet corner with a beanbag chair, and a visual daily schedule chart
-    - Each hotspot glows softly when hovered to indicate it is clickable
-    
-    Interactive controls:
-    - Click any of the 6 hotspots to open an infobox describing what the tool is, who might use it, and why it helps
-    - Button: "Show All Labels" — reveals text labels on every hotspot at once for review
-    - Button: "Reset"
-    
-    Default parameters:
-    - No hotspot selected on load; "Show All Labels" off
-    
-    Behavior:
-    - Clicking the wheelchair ramp/accessible desk hotspot explains it removes a physical barrier so a classmate using mobility equipment can reach their desk and the front of the room
-    - Clicking the noise-canceling headphones hotspot explains they help a classmate whose brain processes sound differently avoid becoming overwhelmed
-    - Clicking the communication device hotspot explains it lets a classmate who doesn't use spoken words fully participate in class discussion
-    - Clicking the large-print worksheet hotspot explains it supports a classmate with low vision or certain learning differences
-    - Clicking the quiet corner hotspot explains it gives any student, especially a neurodivergent student, a calm space to regroup
-    - Clicking the visual schedule hotspot explains it helps students who benefit from seeing, not just hearing, what happens next
-    
-    Instructional Rationale: This is an Understand-level objective, so the pattern uses click-to-reveal infoboxes with concrete, real information at each hotspot rather than animation, letting students build accurate mental models of why each tool matters.
-    
-    Implementation notes: Use p5.js with an array of hotspot objects (x, y, radius, label, description); render infobox text in the bottom strip on click; use warm, neutral colors and avoid exaggerated or stereotyped character depictions.
-    -->
+    <main></main>
 </body>
 </html>

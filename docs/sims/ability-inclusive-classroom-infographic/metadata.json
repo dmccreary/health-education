@@ -19,5 +19,20 @@
   "chapter_number": 4,
   "chapter_title": "Equity, Belonging, And Bystander Action",
   "chapter_dir": "04-equity-belonging-and-bystander-action",
-  "chapter_rel_dir": "bands/grade-5/chapters/04-equity-belonging-and-bystander-action"
+  "chapter_rel_dir": "bands/grade-5/chapters/04-equity-belonging-and-bystander-action",
+  "educational": {
+    "gradeLevel": "Grade 5",
+    "subjectArea": "Health Education",
+    "topic": "Equity, Belonging, And Bystander Action",
+    "learningObjectives": [
+      "Students explain how everyday classroom tools and adjustments support classmates with different abilities, recognizing that these tools are ordinary, not special treatment."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "explain, exemplify, classify",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
 }

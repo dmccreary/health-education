@@ -1,22 +1,72 @@
 ---
 title: How Moving Your Body Helps You
 description: Students explain the benefits of regular physical activity for the body, mood, and learning by exploring a labeled figure and matching activities to the benefits they produce.
-status: scaffold
+image: /sims/activity-benefits-explorer/activity-benefits-explorer.png
+og:image: /sims/activity-benefits-explorer/activity-benefits-explorer.png
+twitter:image: /sims/activity-benefits-explorer/activity-benefits-explorer.png
+social:
+   cards: false
 library: p5.js
 bloom_level: Understand (L2)
+grade_band: Grade 3
 ---
 
 # How Moving Your Body Helps You
 
+<iframe src="main.html" width="100%" height="477px" scrolling="no"></iframe>
 
+[Run the How Moving Your Body Helps You MicroSim Fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+You can embed this MicroSim in your own course website with this iframe:
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+```html
+<iframe src="./main.html" width="100%" height="477px" scrolling="no"></iframe>
+```
+
+## About this MicroSim
+
+**How Moving Your Body Helps You** is an interactive MicroSim for this health-education textbook.
+
+Students explain the benefits of regular physical activity for the body, mood, and learning by exploring a labeled figure and matching activities to the benefits they produce.
+
+Use the controls in the panel below the drawing to interact with the model, then talk through what changed and why. The MicroSim is width-responsive and can be embedded in any course page with the iframe shown above.
+
+**Bloom's Taxonomy level:** Understand (L2) — explain, summarize
+
+## Lesson Plan
+
+### Audience
+
+This MicroSim is designed for **Grade 3**. For the K-3 bands the teacher
+typically drives the activity on a shared screen; older students can explore
+the MicroSim independently.
+
+### Learning Objective
+
+Students explain the benefits of regular physical activity for the body, mood, and learning by exploring a labeled figure and matching activities to the benefits they produce.
+
+This activity targets **Bloom's Understand (L2)** (explain, summarize).
+
+### Suggested Use (about 10 minutes)
+
+1. **Warm up (2 min).** Ask students what they already know about the topic
+   and let one volunteer describe what they see on the screen.
+2. **Model it (3 min).** Demonstrate the interaction once, thinking aloud so
+   students hear the reasoning behind each choice.
+3. **Guided practice (3 min).** Invite students to try the interaction and to
+   predict what will happen before they act.
+4. **Discuss (2 min).** Ask *why* the result came out the way it did, connecting
+   the on-screen result back to the learning objective above.
+
+### Check for Understanding
+
+Have each student (or pair) explain their result in one sentence, using the
+vocabulary from this chapter. Look for reasoning that matches the
+**Understand**-level objective rather than a lucky guess.
 
 ## Specification
 
-The full specification below is extracted from
+The full specification below was extracted from
 [Chapter 3: Wellness And Activity](../../bands/grade-3/chapters/03-wellness-and-activity/index.md).
 
 ```text
@@ -61,6 +111,8 @@ Instructional Rationale: This is an Understand-level objective (explain, summari
 Implementation notes: Use p5.js. Keep the figure simple and friendly (flat cartoon style). Because Grade 3 is still building reading independence, keep revealed text short (one sentence) and consider an optional read-aloud audio icon next to each benefit.
 ```
 
-## Related Resources
+## References
 
 - [Chapter 3: Wellness And Activity](../../bands/grade-3/chapters/03-wellness-and-activity/index.md)
+- [List of all MicroSims](../index.md)
+- [p5.js Reference](https://p5js.org/reference/) (for the interactive graphics library)

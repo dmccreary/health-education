@@ -1,22 +1,72 @@
 ---
 title: Advertising Techniques Analyzer
 description: Students examine and deconstruct a set of realistic, text-described advertising scenarios to identify which documented targeting or persuasion technique (youth-appealing flavors/design, community targeting, association imagery, sponsorship/cultural presence) each one uses.
-status: scaffold
+image: /sims/advertising-techniques-analyzer/advertising-techniques-analyzer.png
+og:image: /sims/advertising-techniques-analyzer/advertising-techniques-analyzer.png
+twitter:image: /sims/advertising-techniques-analyzer/advertising-techniques-analyzer.png
+social:
+   cards: false
 library: p5.js
 bloom_level: Analyze (L4)
+grade_band: Grades 6-8
 ---
 
 # Advertising Techniques Analyzer
 
+<iframe src="main.html" width="100%" height="489px" scrolling="no"></iframe>
 
+[Run the Advertising Techniques Analyzer MicroSim Fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+You can embed this MicroSim in your own course website with this iframe:
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+```html
+<iframe src="./main.html" width="100%" height="489px" scrolling="no"></iframe>
+```
+
+## About this MicroSim
+
+**Advertising Techniques Analyzer** is an interactive MicroSim for this health-education textbook.
+
+Students examine and deconstruct a set of realistic, text-described advertising scenarios to identify which documented targeting or persuasion technique (youth-appealing flavors/design, community targeting, association imagery, sponsorship/cultural presence) each one uses.
+
+Use the controls in the panel below the drawing to interact with the model, then talk through what changed and why. The MicroSim is width-responsive and can be embedded in any course page with the iframe shown above.
+
+**Bloom's Taxonomy level:** Analyze (L4) — examine, distinguish, deconstruct
+
+## Lesson Plan
+
+### Audience
+
+This MicroSim is designed for **Grades 6-8**. For the K-3 bands the teacher
+typically drives the activity on a shared screen; older students can explore
+the MicroSim independently.
+
+### Learning Objective
+
+Students examine and deconstruct a set of realistic, text-described advertising scenarios to identify which documented targeting or persuasion technique (youth-appealing flavors/design, community targeting, association imagery, sponsorship/cultural presence) each one uses.
+
+This activity targets **Bloom's Analyze (L4)** (examine, distinguish, deconstruct).
+
+### Suggested Use (about 10 minutes)
+
+1. **Warm up (2 min).** Ask students what they already know about the topic
+   and let one volunteer describe what they see on the screen.
+2. **Model it (3 min).** Demonstrate the interaction once, thinking aloud so
+   students hear the reasoning behind each choice.
+3. **Guided practice (3 min).** Invite students to try the interaction and to
+   predict what will happen before they act.
+4. **Discuss (2 min).** Ask *why* the result came out the way it did, connecting
+   the on-screen result back to the learning objective above.
+
+### Check for Understanding
+
+Have each student (or pair) explain their result in one sentence, using the
+vocabulary from this chapter. Look for reasoning that matches the
+**Analyze**-level objective rather than a lucky guess.
 
 ## Specification
 
-The full specification below is extracted from
+The full specification below was extracted from
 [Chapter 10: Substance Use Disorder, Recovery, and Policy](../../bands/grade-6-8/chapters/10-substance-use-disorder-recovery-and-policy/index.md).
 
 ```text
@@ -41,6 +91,8 @@ Instructional Rationale: This is an Analyze-level objective requiring learners t
 Implementation notes: p5.js. All scenario text uses fictional product/brand names and is based on well-documented, publicly reported industry practices rather than any single real brand. Responsive canvas that stacks technique zones vertically on narrow screens.
 ```
 
-## Related Resources
+## References
 
 - [Chapter 10: Substance Use Disorder, Recovery, and Policy](../../bands/grade-6-8/chapters/10-substance-use-disorder-recovery-and-policy/index.md)
+- [List of all MicroSims](../index.md)
+- [p5.js Reference](https://p5js.org/reference/) (for the interactive graphics library)
