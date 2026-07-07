@@ -1,135 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Mood Before and After Movement Chart</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 500 -->
+<title>How Mood Changes Before and After Physical Activity</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 4px 0 2px; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .chart-box { background: aliceblue; border: 1px solid silver; border-radius: 6px; padding: 8px; }
+  .chart-container { position: relative; width: 100%; height: 300px; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 62px; }
+  .infobox strong { color: navy; }
+  .frame { font-style: italic; color: seagreen; }
+  .source { text-align: center; color: gray; font-size: 11px; margin-top: 6px; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Mood Before and After Movement Chart</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> mood-before-after-movement-chart</p>
-            <p><strong>Library:</strong> Chart.js</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students interpret survey-style data comparing self-reported mood before and after different physical activities, summarizing the mood-boosting effect of movement.</p>
-        </div>
-    </div>
+<main>
+  <h3>How Mood Changes Before and After Physical Activity</h3>
+  <div class="subtitle">Hover a bar to see the score, or click "Before" / "After" in the legend to compare.</div>
+  <div class="chart-box">
+    <div class="chart-container"><canvas id="chart"></canvas></div>
+  </div>
+  <div class="infobox" id="infobox">
+    Each activity was rated on a mood scale from 1 to 10, where 10 means <strong>very happy and calm</strong>.
+    Hover any bar to read about that activity. <span class="frame">Notice how the gold "After" bars are taller than
+    the blue "Before" bars &mdash; moving your body can lift your mood.</span>
+  </div>
+  <div class="source">Illustrative survey-style data on a 1&ndash;10 self-reported mood scale (10 = very happy and calm).</div>
+</main>
+<script>
+const activities = ['Recess Play', 'Community Dance', 'Team Sport Practice', 'Walking', 'Traditional Game'];
+const beforeScores = [6, 6, 5, 6, 6];
+const afterScores  = [8, 9, 8, 7, 9];
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// One-sentence, kid-friendly explanation for each activity.
+const detail = {
+  'Recess Play':         'Running and playing with friends at recess helps kids feel more cheerful and full of energy.',
+  'Community Dance':     'Dancing together at a community or cultural celebration is fun and gives one of the biggest mood boosts.',
+  'Team Sport Practice': 'Playing a team sport starts a little tiring, but working together leaves players feeling happy and proud.',
+  'Walking':             'Even a calm walk outside gently lifts your mood and helps you feel relaxed.',
+  'Traditional Game':    'Playing a traditional game from your culture is joyful, active, and one of the biggest mood boosters.'
+};
 
-    Type: chart
-    **sim-id:** mood-before-after-movement-chart<br/>
-    **Library:** Chart.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: interpret, summarize, compare
-    
-    Learning objective: Students interpret survey-style data comparing self-reported mood before and after different physical activities, summarizing the mood-boosting effect of movement.
-    
-    Chart type: Grouped bar chart
-    
-    Purpose: Show that self-reported mood scores rise after physical activity across several different activity types, including cultural traditions
-    
-    X-axis: Activity type (Recess Play, Community Dance, Team Sport Practice, Walking, Traditional Game)
-    
-    Y-axis: Average self-reported mood score (scale of 1-10, where 10 is "very happy and calm")
-    
-    Data series:
-    1. Before activity (blue bars):
-       - Recess Play: 6
-       - Community Dance: 6
-       - Team Sport Practice: 5
-       - Walking: 6
-       - Traditional Game: 6
-    
-    2. After activity (gold bars):
-       - Recess Play: 8
-       - Community Dance: 9
-       - Team Sport Practice: 8
-       - Walking: 7
-       - Traditional Game: 9
-    
-    Title: "How Mood Changes Before and After Physical Activity"
-    Legend: Position top-right, labeled "Before" and "After"
-    
-    Interactive features:
-    - Hover over any bar to see the exact score and a one-sentence explanation of that activity
-    - Click a legend entry to toggle the Before or After series on/off for easier comparison
-    
-    Annotations: Small label above the largest gains (Community Dance and Traditional Game) reading "Biggest mood boost"
-    
-    Implementation: Chart.js bar chart with tooltip callbacks and legend toggle enabled (legend.onClick default behavior).
-    -->
+const box = document.getElementById('infobox');
+function show(name){
+  const b = beforeScores[activities.indexOf(name)];
+  const a = afterScores[activities.indexOf(name)];
+  const gain = a - b;
+  box.innerHTML = '<strong>' + name + '</strong> &mdash; ' + detail[name] +
+    ' <span class="frame">Mood went from ' + b + ' up to ' + a + ' (a gain of ' + gain + ' points).</span>';
+}
+
+const ctx = document.getElementById('chart').getContext('2d');
+
+// Plugin: draw a small "Biggest mood boost" label above the largest gains
+// (Community Dance and Traditional Game), only when the "After" series is visible.
+const biggestBoostLabel = {
+  id: 'biggestBoostLabel',
+  afterDatasetsDraw(chart) {
+    const afterMeta = chart.getDatasetMeta(1);
+    if (afterMeta.hidden) return;
+    const ctx = chart.ctx;
+    const area = chart.chartArea;
+    const txt = 'Biggest mood boost';
+    ctx.save();
+    ctx.font = 'bold 10px Arial';
+    ctx.fillStyle = 'indianred';
+    const half = ctx.measureText(txt).width / 2;
+    [1, 4].forEach(i => {
+      const bar = afterMeta.data[i];
+      if (!bar) return;
+      // Keep the label fully inside the plot area (clamp near the edges).
+      let x = bar.x;
+      if (x - half < area.left) { ctx.textAlign = 'left'; x = area.left; }
+      else if (x + half > area.right) { ctx.textAlign = 'right'; x = area.right; }
+      else { ctx.textAlign = 'center'; }
+      ctx.fillText(txt, x, bar.y - 6);
+    });
+    ctx.restore();
+  }
+};
+
+const chart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: activities,
+    datasets: [
+      { label: 'Before', data: beforeScores, backgroundColor: 'rgba(70,130,180,0.85)', borderColor: 'steelblue', borderWidth: 1 },
+      { label: 'After',  data: afterScores,  backgroundColor: 'rgba(218,165,32,0.90)', borderColor: 'goldenrod', borderWidth: 1 }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    layout: { padding: { top: 18 } },
+    onClick: (e, els) => { if (els.length) show(activities[els[0].index]); },
+    scales: {
+      y: {
+        beginAtZero: true, max: 10,
+        ticks: { stepSize: 2 },
+        title: { display: true, text: 'Average mood score (1–10)' }
+      },
+      x: { title: { display: true, text: 'Activity' } }
+    },
+    plugins: {
+      legend: { position: 'top', align: 'end', labels: { font: { size: 12 }, boxWidth: 14 } },
+      tooltip: { callbacks: {
+        label: c => c.dataset.label + ' mood: ' + c.parsed.y + ' out of 10',
+        afterBody: items => detail[activities[items[0].dataIndex]]
+      }, bodyFont: { size: 11 }, boxPadding: 4 }
+    }
+  },
+  plugins: [biggestBoostLabel]
+});
+</script>
 </body>
 </html>

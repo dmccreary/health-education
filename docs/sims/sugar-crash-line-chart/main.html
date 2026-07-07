@@ -1,139 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Sugar Crash Story</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 520 -->
+<title>Energy After a Sugary Drink vs. Water</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 10px; }
+  h3 { text-align: center; color: navy; font-size: 19px; margin: 4px 0 2px; }
+  .subtitle { text-align: center; color: dimgray; font-size: 14px; margin-bottom: 8px; }
+  .toggles { text-align: center; margin-bottom: 8px; }
+  .toggles button {
+    font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;
+    color: white; border: none; border-radius: 14px; padding: 7px 16px; margin: 0 5px;
+    cursor: pointer;
+  }
+  .toggles button.soda { background: darkorange; }
+  .toggles button.water { background: steelblue; }
+  .toggles button.off { background: silver; color: dimgray; }
+  .chart-box { background: aliceblue; border: 1px solid silver; border-radius: 6px; padding: 8px; }
+  .chart-container { position: relative; width: 100%; height: 300px; }
+  .infobox {
+    margin-top: 8px; background: #f8fafc; border-left: 4px solid darkorange; border-radius: 4px;
+    padding: 9px 12px; font-size: 15px; color: #334155; line-height: 1.5; min-height: 66px;
+  }
+  .infobox strong { color: navy; }
+  .frame { font-style: italic; color: seagreen; }
+  .source { text-align: center; color: gray; font-size: 12px; margin-top: 6px; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Sugar Crash Story</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> sugar-crash-line-chart</p>
-            <p><strong>Library:</strong> Chart.js</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students describe why limiting caffeinated and sugary drinks matters by interpreting a simple energy-over-time line chart comparing a sugary drink to water.</p>
-        </div>
-    </div>
+<main>
+  <h3>Energy After a Sugary Drink vs. Water</h3>
+  <div class="subtitle">Hover a dot to see what happens. Use the buttons to show or hide each drink.</div>
+  <div class="toggles">
+    <button id="btnSoda" class="soda">Sugary Drink</button>
+    <button id="btnWater" class="water">Water</button>
+  </div>
+  <div class="chart-box">
+    <div class="chart-container"><canvas id="chart"></canvas></div>
+  </div>
+  <div class="infobox" id="infobox">
+    A sugary drink can give a fast <strong>energy spike</strong>, but then energy often
+    <strong>crashes</strong> and you feel tired. Water keeps your energy nice and steady.
+    <span class="frame">Hover any dot on the chart to learn more.</span>
+  </div>
+  <div class="source">Simple 3-point scale (Low / Medium / High). Illustrative example for learning, not exact measurements.</div>
+</main>
+<script>
+const times = ['0', '15', '30', '45', '60', '90', '120'];
+const levelNames = ['', 'Low', 'Medium', 'High'];
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// Energy levels mapped to numbers: Low=1, Medium=2, High=3
+const sodaData  = [2, 3, 3, 2, 1, 1, 2];
+const waterData = [2, 2, 2, 2, 2, 2, 2];
 
-    Type: chart
-    **sim-id:** sugar-crash-line-chart<br/>
-    **Library:** Chart.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: describe, explain, interpret
-    
-    Learning objective: Students describe why limiting caffeinated and sugary drinks matters by interpreting a simple energy-over-time line chart comparing a sugary drink to water.
-    
-    Chart type: Line chart
-    
-    Purpose: Show how energy level changes over the two hours after drinking a sugary soda compared to drinking water, illustrating the "quick spike, then crash" pattern.
-    
-    X-axis: Time after drinking (0, 15, 30, 45, 60, 90, 120 minutes)
-    Y-axis: Felt energy level (Low, Medium, High — simple 3-point scale)
-    
-    Data series:
-    1. Sugary drink (orange line):
-       - 0 min: Medium
-       - 15 min: High
-       - 30 min: High
-       - 45 min: Medium
-       - 60 min: Low
-       - 90 min: Low
-       - 120 min: Medium
-    
-    2. Water (blue line):
-       - 0 min: Medium
-       - 15 min: Medium
-       - 30 min: Medium
-       - 45 min: Medium
-       - 60 min: Medium
-       - 90 min: Medium
-       - 120 min: Medium
-    
-    Title: "Energy After a Sugary Drink vs. Water"
-    Legend: Position top-right
-    
-    Interactive features: Hovering any point on either line reveals the exact energy level and a one-sentence caption (e.g., "30 minutes: sugary drinks often cause a quick burst of energy that doesn't last."); a toggle button lets students show or hide each line to compare them one at a time
-    
-    Annotations:
-    - Callout near the orange line's peak: "Quick spike!"
-    - Callout near the orange line's dip: "Energy crash"
-    - Callout on the blue line: "Steady, no crash"
-    
-    Implementation: Chart.js line chart with point hover tooltips and a toggle-series legend
-    -->
+// One-sentence caption for each point (by minute index)
+const sodaCaptions = [
+  'Start: you drink a sugary soda. Your energy feels normal right now.',
+  '15 minutes: sugar hits fast and gives a quick burst of energy.',
+  '30 minutes: sugary drinks often cause a quick burst of energy that does not last.',
+  '45 minutes: the sugar rush is fading and your energy starts to drop.',
+  '60 minutes: the energy crash. Now you may feel tired or grumpy.',
+  '90 minutes: energy is still low after the crash.',
+  '120 minutes: energy slowly comes back to normal, but the crash is not fun.'
+];
+const waterCaptions = [
+  'Start: you drink water. Your energy feels normal.',
+  '15 minutes: water keeps your energy steady, with no spike.',
+  '30 minutes: still steady. Water does not cause a sugar rush.',
+  '45 minutes: energy stays the same, calm and even.',
+  '60 minutes: no crash with water. Your energy holds steady.',
+  '90 minutes: still steady and comfortable.',
+  '120 minutes: two hours later, water kept your energy even the whole time.'
+];
+
+const box = document.getElementById('infobox');
+function show(html){ box.innerHTML = html; }
+
+const ctx = document.getElementById('chart').getContext('2d');
+const chart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: times,
+    datasets: [
+      {
+        label: 'Sugary Drink',
+        data: sodaData,
+        borderColor: 'darkorange',
+        backgroundColor: 'darkorange',
+        borderWidth: 3,
+        tension: 0.3,
+        pointRadius: 6,
+        pointHoverRadius: 9
+      },
+      {
+        label: 'Water',
+        data: waterData,
+        borderColor: 'steelblue',
+        backgroundColor: 'steelblue',
+        borderWidth: 3,
+        tension: 0.1,
+        pointRadius: 6,
+        pointHoverRadius: 9
+      }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    interaction: { mode: 'nearest', intersect: true },
+    onClick: (e, els) => {
+      if (els.length) {
+        const d = els[0].datasetIndex, i = els[0].index;
+        const caps = d === 0 ? sodaCaptions : waterCaptions;
+        const who = d === 0 ? 'Sugary Drink' : 'Water';
+        show('<strong>' + who + ' &mdash; ' + times[i] + ' min:</strong> ' + caps[i]);
+      }
+    },
+    scales: {
+      y: {
+        min: 0.5, max: 3.5,
+        ticks: { stepSize: 1, callback: v => levelNames[v] || '', font: { size: 14 } },
+        title: { display: true, text: 'How Much Energy You Feel', font: { size: 14 } }
+      },
+      x: {
+        ticks: { font: { size: 13 } },
+        title: { display: true, text: 'Minutes After Drinking', font: { size: 14 } }
+      }
+    },
+    plugins: {
+      legend: {
+        position: 'top', align: 'end',
+        labels: { font: { size: 14 }, boxWidth: 16, usePointStyle: true }
+      },
+      tooltip: {
+        callbacks: {
+          title: items => items[0].label + ' minutes',
+          label: c => c.dataset.label + ': ' + (levelNames[c.parsed.y] || ''),
+          afterLabel: c => {
+            const caps = c.datasetIndex === 0 ? sodaCaptions : waterCaptions;
+            return caps[c.dataIndex];
+          }
+        },
+        bodyFont: { size: 13 }, titleFont: { size: 13 }, boxPadding: 4
+      }
+    },
+    onHover: (e, els) => {
+      if (els.length) {
+        const d = els[0].datasetIndex, i = els[0].index;
+        const caps = d === 0 ? sodaCaptions : waterCaptions;
+        const who = d === 0 ? 'Sugary Drink' : 'Water';
+        show('<strong>' + who + ' &mdash; ' + times[i] + ' min:</strong> ' + caps[i]);
+      }
+    }
+  },
+  plugins: [{
+    // Draw the three callout annotations directly on the chart
+    id: 'callouts',
+    afterDatasetsDraw(c) {
+      const g = c.ctx;
+      const xs = c.scales.x, ys = c.scales.y;
+      const meta0 = c.getDatasetMeta(0);
+      const meta1 = c.getDatasetMeta(1);
+      g.save();
+      g.font = 'bold 13px Arial';
+      g.textAlign = 'center';
+      // "Quick spike!" near soda peak (index 1, High)
+      if (!meta0.hidden) {
+        g.fillStyle = 'darkorange';
+        g.fillText('Quick spike!', meta0.data[1].x + 6, meta0.data[1].y - 12);
+        // "Energy crash" near soda dip (index 4, Low)
+        g.fillStyle = 'indianred';
+        g.fillText('Energy crash', meta0.data[4].x, meta0.data[4].y + 24);
+      }
+      // "Steady, no crash" on water line (index 3, Medium)
+      if (!meta1.hidden) {
+        g.fillStyle = 'steelblue';
+        g.fillText('Steady, no crash', meta1.data[3].x, meta1.data[3].y - 14);
+      }
+      g.restore();
+    }
+  }]
+});
+
+// Toggle buttons show/hide each line
+function setToggle(btn, on, cls){
+  btn.className = on ? cls : (cls + ' off');
+}
+const btnSoda = document.getElementById('btnSoda');
+const btnWater = document.getElementById('btnWater');
+
+btnSoda.addEventListener('click', () => {
+  const on = !chart.isDatasetVisible(0);
+  chart.setDatasetVisibility(0, on);
+  chart.update();
+  setToggle(btnSoda, on, 'soda');
+});
+btnWater.addEventListener('click', () => {
+  const on = !chart.isDatasetVisible(1);
+  chart.setDatasetVisibility(1, on);
+  chart.update();
+  setToggle(btnWater, on, 'water');
+});
+</script>
 </body>
 </html>

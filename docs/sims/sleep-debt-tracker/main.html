@@ -3,113 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Sleep Debt Tracker</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Sleep Debt Tracker MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="sleep-debt-tracker.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Sleep Debt Tracker</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> sleep-debt-tracker</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students explain why adequate sleep matters for growth and learning by tracking a week of sleep hours against the 9-12 hour recommendation and observing the effects for each night.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** sleep-debt-tracker<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain, summarize, interpret
-    
-    Learning objective: Students explain why adequate sleep matters for growth and learning by tracking a week of sleep hours against the 9-12 hour recommendation and observing the effects for each night.
-    
-    Canvas layout: Left (450px) 7-day bar chart of hours slept; right (200px) sliders and effects panel.
-    
-    Visual elements: Seven bars (Mon-Sun); shaded reference band for the healthy 9-12 hour range; effects panel with icons for learning, mood, growth, immune system.
-    
-    Interactive controls: Seven sliders (4-12 hours each, one per day); running "sleep debt" display; "Reset to Healthy Week" button (sets all sliders to 10).
-    
-    Default parameters: Mon 7, Tue 6, Wed 9, Thu 7, Fri 10, Sat 11, Sun 8.
-    
-    Behavior: Bars below the healthy band dim and trigger notes like "Less growth hormone released"; bars in/above the band brighten and show notes like "Memories get organized well." Sleep debt total updates live as sliders move.
-    
-    Instructional Rationale: Understand-level objective, so the design shows concrete per-night data next to plain-language effects rather than animation, letting students connect a number to a real consequence.
-    
-    Implementation notes: p5.js; store the healthy range as a constant; recompute bar color and effects text on slider change.
-    -->
+    <main></main>
 </body>
 </html>

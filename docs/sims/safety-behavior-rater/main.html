@@ -3,131 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Is This Behavior Safe Enough?</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Is This Behavior Safe Enough? MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="safety-behavior-rater.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Is This Behavior Safe Enough?</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> safety-behavior-rater</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
-            <p><strong>Learning Objective:</strong> Students evaluate personal behaviors to prevent injuries across multiple environments (home, playground, road, water) by rating scenario cards on a safety scale and justifying their rating.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** safety-behavior-rater<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Evaluate (L5)
-    Bloom Taxonomy Verb: judge, assess, justify
-    
-    Learning objective: Students evaluate personal behaviors to prevent injuries across multiple environments (home, playground, road, water) by rating scenario cards on a safety scale and justifying their rating.
-    
-    Canvas layout:
-    - Top area (150px): One illustrated scenario card at a time across four environments (home, playground, road, water), e.g., "Riding a bike on the sidewalk without a helmet," "Waiting for the crossing guard's signal before crossing," "Running next to the pool," "Leaving cleaning spray within reach of a younger sibling"
-    - Middle area (250px): A three-point rating scale the student selects: "Safe," "Risky — Needs a Change," "Unsafe — Stop This Now"
-    - Bottom strip (100px): Justification prompt, revealed reasoning, and "Next Scenario" button
-    
-    Visual elements:
-    - 10 scenario cards spread across the four environments, mixing clearly safe, borderline risky, and clearly unsafe behaviors
-    - Environment icon (house, playground swing, road sign, or wave) shown on each card
-    
-    Interactive controls:
-    - Click one of three rating buttons: "Safe," "Risky — Needs a Change," "Unsafe — Stop This Now"
-    - After rating, a text box invites a one-sentence reason (optional, can also pick from short reason chips like "could fall," "could hit someone," "hard to see danger coming")
-    - Button: "Next Scenario"
-    - Button: "Reset"
-    
-    Default parameters:
-    - First scenario: "Waiting for the crossing guard's signal before crossing" (clearly "Safe," to build confidence)
-    
-    Data Visibility Requirements:
-      Stage 1: Show the scenario card and environment, no judgment yet
-      Stage 2: After the student rates it, reveal the expert rating and a one-sentence justification ("This is risky because falls are unpredictable and a helmet protects the head, which is why it needs a change.")
-      Stage 3: Show a running scoreboard of how many ratings matched the expert view, encouraging re-tries rather than a pass/fail grade
-    
-    Behavior:
-    - Matching rating: card glows green, encouraging caption appears with the justification
-    - Non-matching rating: calm prompt, "Look again — what could go wrong here, and how serious would it be?", then reveal the reasoning anyway
-    - After all scenarios, a summary caption reminds students that evaluating safety means asking what could go wrong, how likely it is, and whether a safer choice exists
-    
-    Instructional Rationale: Evaluating personal behaviors to prevent injuries is an explicit Evaluate-level benchmark (`3.5.1.2`), the first genuine judgment task in this content strand. A rating-scale-plus-justification pattern is used instead of a simple sort, because Evaluate-level thinking requires weighing likelihood and severity and defending a judgment, not just matching an example to a category.
-    
-    Implementation notes: Use p5.js. Keep illustrations simple and non-graphic — show the safer/unsafer choice, not an injury itself. Cover all four environments named in the benchmark: home, playground, road, and water.
-    -->
+    <main></main>
 </body>
 </html>

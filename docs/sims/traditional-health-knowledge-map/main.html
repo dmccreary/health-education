@@ -1,121 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Traditional Health Knowledge Around the World</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 560 -->
+<title>Traditional Health Knowledge Around the World</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 19px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 13px; margin-bottom: 6px; }
+  .toolbar { text-align: center; margin: 4px 0 8px; }
+  .toolbar button {
+    font-family: inherit; font-size: 14px; font-weight: bold;
+    color: white; background: mediumpurple; border: none;
+    border-radius: 6px; padding: 6px 14px; cursor: pointer;
+  }
+  .toolbar button.active { background: indianred; }
+  #map { width: 100%; height: 340px; border: 1px solid silver; border-radius: 6px; background: #dff0f7; }
+  .emoji-icon { font-size: 26px; text-align: center; line-height: 30px; text-shadow: 0 0 3px white, 0 0 3px white, 0 0 3px white; cursor: pointer; }
+  .region-label { color: #64748b; font-size: 12px; font-weight: bold; text-shadow: 0 0 3px #dff0f7, 0 0 3px #dff0f7; white-space: nowrap; }
+  .infobox {
+    margin-top: 8px; background: #f8fafc; border-left: 5px solid seagreen;
+    border-radius: 4px; padding: 9px 11px; font-size: 14px; color: #334155;
+    line-height: 1.5; min-height: 78px;
+  }
+  .infobox strong { color: navy; }
+  .infobox .tag { display: inline-block; font-size: 12px; font-weight: bold; color: white; border-radius: 10px; padding: 1px 9px; margin-right: 4px; }
+  .compare-wrap { display: flex; gap: 8px; margin-top: 8px; }
+  .compare-wrap .infobox { flex: 1; margin-top: 0; }
+  .leaflet-container { font: inherit; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Traditional Health Knowledge Around the World</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> traditional-health-knowledge-map</p>
-            <p><strong>Library:</strong> Leaflet</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students describe how different cultures and communities use traditional knowledge to protect the body from the environment, comparing practices across regions.</p>
-        </div>
-    </div>
+<main>
+  <h3>Traditional Health Knowledge Around the World</h3>
+  <div class="subtitle">Click a picture on the map to learn how people protect their bodies. Hover for a quick hint.</div>
+  <div class="toolbar">
+    <button id="compareBtn">Compare Two Regions</button>
+  </div>
+  <div id="map"></div>
+  <div id="single">
+    <div class="infobox" id="infobox">Long ago and today, people around the world learned smart ways to keep their bodies safe and well. Click any picture on the map to learn one. Then try the <strong>Compare Two Regions</strong> button.</div>
+  </div>
+  <div class="compare-wrap" id="compare" style="display:none;">
+    <div class="infobox" id="infoboxA">Pick your <strong>first</strong> region on the map.</div>
+    <div class="infobox" id="infoboxB">Pick your <strong>second</strong> region on the map.</div>
+  </div>
+</main>
+<script>
+// ---- category colors ----
+const CAT = {
+  sun:   { color: 'goldenrod', label: 'Sun / Heat' },
+  cold:  { color: 'steelblue', label: 'Cold' },
+  food:  { color: 'seagreen',  label: 'Food / Drink' }
+};
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// ---- the five traditional-knowledge practices ----
+// lat/lng use a simple grid: 0..100 vertical (bottom->top), 0..200 horizontal (west->east)
+const REGIONS = {
+  westafrica: {
+    lat: 52, lng: 78, emoji: '👒', cat: 'sun', label: 'West Africa',
+    title: 'Woven Sun Hats',
+    protects: 'Protects against: strong sun',
+    text: 'In West Africa, people wear <strong>woven wide-brimmed hats</strong> and light cotton clothing. These keep the strong sun off the skin and help the body stay cool.'
+  },
+  arctic: {
+    lat: 90, lng: 55, emoji: '🧥', cat: 'cold', label: 'Arctic (Inuit)',
+    title: 'Layered Fur Clothing',
+    protects: 'Protects against: extreme cold',
+    text: 'In the Arctic, Inuit communities wear <strong>layered animal-skin clothing</strong>. The layers trap warm air against the body to stay safe in very cold weather.'
+  },
+  mediterranean: {
+    lat: 62, lng: 96, emoji: '🍵', cat: 'food', label: 'Latin America / Mediterranean',
+    title: 'Soothing Herbal Teas',
+    protects: 'Helps with: upset stomach and rest',
+    text: 'Around the Mediterranean and Latin America, people drink <strong>herbal teas</strong> like mint, chamomile, and ginger. These warm drinks can soothe an upset stomach and help the body rest.'
+  },
+  eastasia: {
+    lat: 60, lng: 150, emoji: '🍜', cat: 'food', label: 'East Asia',
+    title: 'Warm Soups and Rest',
+    protects: 'Helps with: healing in cold weather',
+    text: 'In East Asia, families make <strong>warm soups</strong> and take time to rest. Warm food and rest help support the body while it heals during cold weather.'
+  },
+  southasia: {
+    lat: 50, lng: 128, emoji: '🥛', cat: 'food', label: 'South Asia',
+    title: 'Turmeric Milk',
+    protects: 'Helps with: minor coughs and colds',
+    text: 'In South Asia, <strong>turmeric milk</strong> is a traditional comfort remedy. This warm golden drink is shared to help soothe minor coughs and colds.'
+  }
+};
 
-    Type: map
-    **sim-id:** traditional-health-knowledge-map<br/>
-    **Library:** Leaflet<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: describe, explain, compare
-    
-    Learning objective: Students describe how different cultures and communities use traditional knowledge to protect the body from the environment, comparing practices across regions.
-    
-    Geographic scope: World map with five highlighted regions
-    
-    Locations and markers:
-    - West Africa: icon of a woven wide-brimmed hat — "Woven hats and light cotton clothing protect from strong sun."
-    - Arctic (Inuit communities): icon of layered fur clothing — "Layered animal-skin clothing traps warm air against the body in extreme cold."
-    - Latin America / Mediterranean: icon of a teacup — "Herbal teas like mint, chamomile, and ginger soothe upset stomachs and help the body rest."
-    - East Asia: icon of a soup bowl — "Warm soups and rest support the body's healing during cold weather."
-    - South Asia: icon of a glass of milk — "Turmeric milk is a traditional comfort remedy for minor coughs and colds."
-    
-    Legend: Each marker icon matches a category — clothing, food/drink — shown in a small key in the corner
-    
-    Interactive features:
-    - Click a region marker to open an infobox with the practice name, a description, and what part of the environment it protects against (sun, cold, upset stomach, general wellness)
-    - Hover a marker for a one-line preview before clicking
-    - A "Compare Two Regions" button lets a student pick two markers and see their infoboxes side by side
-    
-    Color scheme: Warm gold for sun/heat protection, cool blue for cold protection, green for food/drink remedies
-    
-    Implementation: Leaflet map with custom marker icons and popups; teacher-facing tool for read-aloud exploration, since Grade 3 students are still developing independent reading fluency
-    -->
+// ---- map setup (schematic world, not a real tile map) ----
+const map = L.map('map', { crs: L.CRS.Simple, minZoom: -1, maxZoom: 2, zoomControl: true, attributionControl: false });
+const bounds = [[0,0],[100,200]];
+map.fitBounds(bounds);
+map.setMaxBounds(bounds);
+
+// ---- schematic continents (light gray land shapes) ----
+const land = '#e2e8f0';
+const landEdge = '#cbd5e1';
+function continent(pts){ L.polygon(pts, { color: landEdge, weight: 1.5, fillColor: land, fillOpacity: 1 }).addTo(map); }
+
+// Americas
+continent([[95,38],[80,30],[72,42],[58,40],[48,58],[40,52],[30,66],[22,60],[30,72],[52,74],[66,60],[78,58],[92,52]]);
+// Africa + Europe block
+continent([[96,84],[86,80],[70,80],[58,88],[46,96],[40,92],[46,104],[58,108],[70,104],[78,110],[90,102],[96,92]]);
+// Asia + Australia
+continent([[98,110],[88,110],[80,118],[74,132],[70,150],[62,160],[54,166],[46,158],[52,146],[58,134],[64,124],[74,116],[86,112],[96,108]]);
+
+// region name labels
+function regionLabel(lat,lng,txt){
+  L.marker([lat,lng], { icon: L.divIcon({ className: 'region-label', html: txt, iconSize: [140,16] }), interactive: false }).addTo(map);
+}
+regionLabel(40,50,'North &<br>South America');
+regionLabel(36,90,'Africa & Europe');
+regionLabel(34,140,'Asia');
+
+// ---- infobox helpers ----
+const infobox  = document.getElementById('infobox');
+const infoboxA = document.getElementById('infoboxA');
+const infoboxB = document.getElementById('infoboxB');
+const singlePanel  = document.getElementById('single');
+const comparePanel = document.getElementById('compare');
+const compareBtn   = document.getElementById('compareBtn');
+
+function cardHtml(r){
+  const c = CAT[r.cat];
+  return '<span class="tag" style="background:'+c.color+'">'+c.label+'</span>'
+       + '<strong>'+r.title+'</strong><br>'
+       + r.text + '<br><em>'+r.protects+'</em>';
+}
+
+// ---- compare mode state ----
+let compareMode = false;
+let pickTarget = 'A';   // which side gets the next pick
+let picked = { A: null, B: null };
+
+compareBtn.addEventListener('click', () => {
+  compareMode = !compareMode;
+  if (compareMode) {
+    compareBtn.classList.add('active');
+    compareBtn.textContent = 'Back to Single View';
+    singlePanel.style.display = 'none';
+    comparePanel.style.display = 'flex';
+    pickTarget = 'A'; picked = { A: null, B: null };
+    infoboxA.innerHTML = 'Pick your <strong>first</strong> region on the map.';
+    infoboxB.innerHTML = 'Pick your <strong>second</strong> region on the map.';
+  } else {
+    compareBtn.classList.remove('active');
+    compareBtn.textContent = 'Compare Two Regions';
+    comparePanel.style.display = 'none';
+    singlePanel.style.display = 'block';
+  }
+});
+
+function handleClick(r){
+  if (!compareMode) {
+    infobox.innerHTML = cardHtml(r);
+    return;
+  }
+  // compare mode: fill A then B, then start over
+  if (pickTarget === 'A') {
+    picked.A = r; infoboxA.innerHTML = cardHtml(r);
+    infoboxB.innerHTML = 'Now pick your <strong>second</strong> region on the map.';
+    pickTarget = 'B';
+  } else {
+    picked.B = r; infoboxB.innerHTML = cardHtml(r);
+    pickTarget = 'A'; // next click restarts the first slot
+  }
+}
+
+// ---- place the emoji markers ----
+Object.keys(REGIONS).forEach(key => {
+  const r = REGIONS[key];
+  const m = L.marker([r.lat, r.lng], {
+    icon: L.divIcon({ className: 'emoji-icon', html: r.emoji, iconSize: [30,30] })
+  }).addTo(map);
+  m.bindTooltip(r.label + ' — ' + r.title, { direction: 'top', offset: [0,-6] });
+  m.on('click', () => handleClick(r));
+});
+
+// ---- legend (category key) ----
+const legend = L.control({ position: 'bottomright' });
+legend.onAdd = function(){
+  const div = L.DomUtil.create('div');
+  div.style.background = 'rgba(255,255,255,0.9)';
+  div.style.padding = '6px 8px';
+  div.style.borderRadius = '6px';
+  div.style.font = 'bold 12px Arial';
+  div.style.lineHeight = '18px';
+  div.style.color = '#334155';
+  div.innerHTML =
+      '<div style="color:navy;margin-bottom:2px;">Key</div>'
+    + '<div><span style="color:goldenrod;">●</span> 👒 Sun / heat (clothing)</div>'
+    + '<div><span style="color:steelblue;">●</span> 🧥 Cold (clothing)</div>'
+    + '<div><span style="color:seagreen;">●</span> 🍵🍜🥛 Food / drink remedy</div>';
+  return div;
+};
+legend.addTo(map);
+</script>
 </body>
 </html>

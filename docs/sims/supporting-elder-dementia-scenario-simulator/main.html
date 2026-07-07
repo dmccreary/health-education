@@ -3,137 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Supporting an Elder With Dementia Scenario Simulator</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Supporting an Elder With Dementia Scenario Simulator MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="supporting-elder-dementia-scenario-simulator.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Supporting an Elder With Dementia Scenario Simulator</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> supporting-elder-dementia-scenario-simulator</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students apply respectful support strategies
-(maintaining routine, adapting communication, patience with repetition,</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    
-    **sim-id:** supporting-elder-dementia-scenario-simulator<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy Level: Apply (L3)
-    Bloom Verb: apply, demonstrate, practice
-    
-    Learning objective: Students apply respectful support strategies
-    (maintaining routine, adapting communication, patience with repetition,
-    preserving dignity, connecting with resources) to realistic family
-    scenarios involving an elder with cognitive impairment.
-    
-    Canvas layout:
-    - Left (55%): a short, respectful scenario (e.g., "Your grandmother asks
-      where her late husband is for the third time this visit")
-    - Right (45%): four or five response-strategy cards the student selects
-      from, each naming a support strategy
-    
-    Data Visibility Requirements:
-      Stage 1: Show the scenario and all response-strategy options
-      Stage 2: Student selects the response they believe is most supportive
-      Stage 3: Reveal an explanation of why that response supports dignity
-      and reduces distress, and, where more than one response is reasonable,
-      acknowledge that other compassionate responses may also work
-      Stage 4: Show a running count of scenarios completed out of a bank of 6
-    
-    Interactive controls:
-    - Click to select a response card
-    - Button: "Show Explanation"
-    - Button: "Next Scenario"
-    
-    Default parameters: Scenario bank of 6 realistic, respectful family
-    situations; feedback always explains the reasoning rather than only
-    marking right or wrong
-    
-    Instructional Rationale: Applying a specific support strategy to a
-    realistic family scenario is an Apply-level objective, so a
-    scenario-response tool with explanatory feedback is used rather than a
-    passive list of caregiving tips, since real application requires judgment
-    about which strategy fits a specific, emotionally sensitive moment.
-    
-    Implementation notes: p5.js; all scenario and feedback text written with
-    dignity and compassion, avoiding fear-based or clinical-sounding language;
-    object array of {scenario, options, bestResponse, explanation}.
-    -->
+    <main></main>
 </body>
 </html>

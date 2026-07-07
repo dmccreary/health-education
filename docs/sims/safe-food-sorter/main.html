@@ -3,125 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Safe to Eat or Not?</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Safe to Eat or Not? MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="safe-food-sorter.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Safe to Eat or Not?</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> safe-food-sorter</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students distinguish safe food from food that is no longer safe to eat by examining simple picture clues (color, spots, freshness) and sorting each picture into a "Safe to Eat" or "Ask a Grown-Up First" bin.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** safe-food-sorter<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: distinguish, examine
-    
-    Learning objective: Students distinguish safe food from food that is no longer safe to eat by examining simple picture clues (color, spots, freshness) and sorting each picture into a "Safe to Eat" or "Ask a Grown-Up First" bin.
-    
-    Canvas layout:
-    - Top area (100px): One food picture shown at a time, large and centered
-    - Middle area (300px): Two large bins side by side: "Safe to Eat" (green, with a smiling apple icon) and "Ask a Grown-Up First" (orange, with a question-mark icon)
-    - Bottom strip (100px): Feedback caption area and "Next Picture" button
-    
-    Visual elements:
-    - 10 simple food picture pairs: a fresh apple vs. a bruised/spotted apple, fresh bread vs. moldy bread, cold milk in a carton vs. a carton left open on a warm counter, a sealed yogurt vs. an open yogurt with a strange color, fresh strawberries vs. mushy discolored strawberries
-    - Clear visual clues on the "unsafe" version: green/blue fuzzy spots, dull discoloration, drawn-in "smell lines"
-    
-    Interactive controls:
-    - Drag-and-drop or click-to-select: child places the food picture into the correct bin
-    - Button: "Next Picture"
-    - Button: "Reset"
-    
-    Default parameters:
-    - First picture: the fresh apple (clearly safe, to build confidence before showing trickier examples)
-    
-    Behavior:
-    - Correct placement: bin glows, gentle chime, and a one-sentence explanation appears (e.g., "Right! Fuzzy spots mean this bread is not safe anymore.")
-    - Incorrect placement: no harsh feedback — the picture returns to the top and a gentle hint appears (e.g., "Look closely — does it have spots or a strange color?")
-    - Tone throughout stays calm and matter-of-fact, never scary, consistent with plainly sincere safety-content voice
-    
-    Instructional Rationale: Distinguishing safe from unsafe food requires comparing visual clues side by side, which is an Analyze-level task even though the response format (sort into two bins) stays simple enough for a pre-reader. The paired safe/unsafe images make the distinguishing clue (spot, smell line, color) obvious enough for a Kindergartner to examine with teacher guidance, while still requiring genuine comparison rather than simple recall.
-    
-    Implementation notes: Use p5.js. Keep illustrations friendly and non-frightening — spots and discoloration should be clearly stylized, not realistic or gross. Maintain a plainly sincere tone in all captions per the project's safety-content voice rule (no puns).
-    -->
+    <main></main>
 </body>
 </html>

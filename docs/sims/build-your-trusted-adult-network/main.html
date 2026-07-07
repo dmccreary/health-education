@@ -1,131 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Build Your Trusted Adult Network</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 540 -->
+<title>Build Your Trusted Adult Network</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 18px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 380px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 9px; font-size: 11px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 13px; height: 13px; margin-right: 6px; vertical-align: middle; border: 1px solid #555; }
+  .legend .circle { border-radius: 50%; }
+  .legend .line { width: 18px; height: 0; border: 0; border-top: 3px dashed seagreen; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 9px 11px; font-size: 13px; color: #334155; line-height: 1.5; min-height: 84px; }
+  .infobox strong { color: navy; }
+  .infobox .reflect { display: block; margin-top: 5px; color: seagreen; font-style: italic; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Build Your Trusted Adult Network</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> build-your-trusted-adult-network</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
-            <p><strong>Learning Objective:</strong> Students evaluate which trusted adults and resources are best suited to different situation types and justify their choice using the qualities of a good trusted adult.</p>
-        </div>
+<main>
+  <h3>Build Your Trusted Adult Network</h3>
+  <div class="subtitle">Hover any circle or square to learn more. Click an orange situation to see who can help.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k circle" style="background:darkorange;"></span>Situation you might face<br>
+      <span class="k" style="background:steelblue;"></span>Trusted adult or resource<br>
+      <span class="k" style="background:goldenrod;border-color:#8a6d0b;"></span>Helps with everything<br>
+      <span class="k line"></span>&nbsp;Can help with (thicker = better fit)
     </div>
+  </div>
+  <div class="infobox" id="infobox">Different worries call for different helpers. Explore how six trusted adults match up with six kinds of situations, then click a situation to find your best people to talk to.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// The five qualities of a good trusted adult (shared reminder for adult nodes)
+const FIVE_QUALITIES = 'The five qualities of a good trusted adult: they LISTEN carefully, they KEEP YOU SAFE, they are HONEST, they TAKE YOU SERIOUSLY, and they KNOW HOW TO HELP or find someone who can.';
 
-    Type: microsim
-    **sim-id:** build-your-trusted-adult-network<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Evaluate (L5)
-    Bloom Taxonomy Verb: judge, justify, prioritize, recommend
-    
-    Learning objective: Students evaluate which trusted adults and resources are best suited to different situation types and justify their choice using the qualities of a good trusted adult.
-    
-    Purpose: Help students build a personalized mental map of trusted adults matched to situation categories, reinforcing that different concerns may call for different people.
-    
-    Node types:
-    1. Situation nodes (orange circles): "Physical symptom," "Friendship worry," "Family stress," "Online safety concern," "Feeling unsafe," "Question about my body"
-    2. Adult/resource nodes (blue squares): "Parent/Guardian," "School Nurse," "School Counselor," "Teacher," "Grandparent/Relative," "Coach"
-    
-    Edge types:
-    - CAN HELP WITH (dashed green line): connects an adult/resource node to situation nodes they are well-suited to help with
-    
-    Sample data:
-    - School Nurse — CAN HELP WITH → Physical symptom, Question about my body
-    - School Counselor — CAN HELP WITH → Friendship worry, Family stress, Feeling unsafe
-    - Parent/Guardian — CAN HELP WITH → all six situation types (shown with a distinct highlight color)
-    - Teacher — CAN HELP WITH → Friendship worry, Online safety concern
-    
-    Layout: Force-directed, with situation nodes on the left and adult/resource nodes on the right
-    
-    Interactive features:
-    - Hover any node to see its full description and, for adults, a reminder of the five qualities of a good trusted adult
-    - Click a situation node to highlight every adult/resource connected to it and dim unrelated nodes
-    - Drag nodes to rearrange the personal map; zoom and pan supported
-    - A short reflection prompt appears after each click: "Which of the five trusted-adult qualities does this person show for this situation?"
-    
-    Visual styling: Situation nodes colored orange, adult/resource nodes colored blue, with edge thickness representing how strongly suited that adult is to that situation type
-    
-    Legend: Node shapes and colors explained; edge meaning explained
-    
-    Implementation: vis-network JavaScript library with click and hover event handlers driving an infobox panel.
-    Canvas size: 700x500px
-    -->
+// Situation nodes (orange circles, placed on the left)
+const situations = [
+  { id:'s_phys',   label:'Physical\nsymptom',        hover:'A body concern such as a stomachache, headache, or feeling sick.',
+    full:'A physical symptom is something you feel in your body, like a stomachache, a sore throat, or a scrape. A helper can check it and decide what to do next.' },
+  { id:'s_friend', label:'Friendship\nworry',        hover:'Trouble with a friend, like an argument or feeling left out.',
+    full:'A friendship worry might be an argument, feeling left out, or not knowing how to fix a fight. Talking it through helps you find kind, fair choices.' },
+  { id:'s_family', label:'Family\nstress',           hover:'Something hard happening at home that is on your mind.',
+    full:'Family stress is when something at home feels heavy or confusing. A caring adult can listen and help you find calm and support.' },
+  { id:'s_online', label:'Online safety\nconcern',   hover:'Something online that feels wrong, confusing, or unsafe.',
+    full:'An online safety concern is a message, picture, or person online that feels off or scary. A trusted adult can help you stay safe and know what to do.' },
+  { id:'s_unsafe', label:'Feeling\nunsafe',          hover:'Any time you feel scared or in danger and need help right away.',
+    full:'Feeling unsafe means you are scared or worried that you or someone else could be hurt. Tell a trusted adult right away so they can help keep everyone safe.' },
+  { id:'s_body',   label:'Question about\nmy body',  hover:'A private question about how your body works or is changing.',
+    full:'A question about your body might be about growing up or how your body works. A caring, honest adult can give you clear, true answers.' }
+];
+
+// Adult / resource nodes (blue squares, placed on the right)
+const adults = [
+  { id:'a_parent',  label:'Parent /\nGuardian', all:true,
+    hover:'The person who cares for you at home. A great first stop for almost any worry.',
+    full:'A parent or guardian knows you well and cares for you every day. They can help with any of these situations, or help you find the right person if they are not sure.' },
+  { id:'a_nurse',   label:'School\nNurse',
+    hover:'The health helper at school for body concerns and health questions.',
+    full:'A school nurse is trained to help with physical symptoms and health questions. They can check how you feel and decide what to do next.' },
+  { id:'a_couns',   label:'School\nCounselor',
+    hover:'A school helper for feelings, friendships, and staying safe.',
+    full:'A school counselor is trained to help with feelings, friendships, family stress, and safety. Talking with them is private and caring.' },
+  { id:'a_teacher', label:'Teacher',
+    hover:'A trusted adult at school who sees you every day.',
+    full:'A teacher sees you every day and can help with friendship worries and online safety, or walk you to someone who can help more.' },
+  { id:'a_relative',label:'Grandparent /\nRelative',
+    hover:'A caring family member outside your home.',
+    full:'A grandparent or relative is family who cares about you. They are a good person to talk to about family stress or when you just need a caring ear.' },
+  { id:'a_coach',   label:'Coach',
+    hover:'A trusted adult from a team, club, or activity.',
+    full:'A coach leads a team or activity and can be a trusted adult for friendship worries and for times you feel unsafe during an activity.' }
+];
+
+// CAN HELP WITH edges: [adultId, situationId, strength 1..3]  (strength -> edge thickness)
+const links = [
+  ['a_nurse','s_phys',3], ['a_nurse','s_body',2],
+  ['a_couns','s_friend',3], ['a_couns','s_family',3], ['a_couns','s_unsafe',3], ['a_couns','s_online',2],
+  ['a_teacher','s_friend',2], ['a_teacher','s_online',2],
+  ['a_relative','s_family',3], ['a_relative','s_friend',1],
+  ['a_coach','s_friend',2], ['a_coach','s_unsafe',2]
+  // Parent/Guardian edges to ALL situations are added below.
+];
+
+const nodes = [], edges = [];
+const info = {};      // id -> { title, full }
+const hoverInfo = {}; // id -> one-line hover string
+const isAdult = {};
+
+// Build situation nodes (orange circles, anchored to the left with a fixed x)
+situations.forEach((s, i) => {
+  nodes.push({
+    id:s.id, label:s.label, shape:'dot', size:26,
+    color:{ background:'darkorange', border:'#a85700', highlight:{ background:'#ff9d33', border:'#a85700' } },
+    font:{ size:12, color:'#3a2600', face:'Arial' }, borderWidth:2,
+    x:-300, y:(i - 2.5) * 82, fixed:{ x:true, y:false }
+  });
+  info[s.id] = { title:s.label.replace(/\n/g,' '), full:s.full };
+  hoverInfo[s.id] = s.hover;
+});
+
+// Build adult nodes (blue squares; Parent/Guardian gets a distinct goldenrod highlight)
+adults.forEach((a, i) => {
+  const bg = a.all ? 'goldenrod' : 'steelblue';
+  const bd = a.all ? '#8a6d0b' : '#2f5a7a';
+  nodes.push({
+    id:a.id, label:a.label, shape:'box', margin:9,
+    color:{ background:bg, border:bd, highlight:{ background:a.all?'#e8bf3a':'#5c9dc9', border:bd } },
+    font:{ size:12, color:'white', face:'Arial' }, borderWidth:2,
+    x:300, y:(i - 2.5) * 82, fixed:{ x:true, y:false }
+  });
+  info[a.id] = { title:a.label.replace(/\n/g,' '), full:a.full + ' ' + FIVE_QUALITIES };
+  hoverInfo[a.id] = a.hover + ' Remember the five qualities of a good trusted adult.';
+  isAdult[a.id] = true;
+});
+
+// Add Parent/Guardian "can help with" edges to every situation (distinct color)
+situations.forEach(s => links.push(['a_parent', s.id, 3, true]));
+
+// Create dashed green "CAN HELP WITH" edges (thickness = strength)
+links.forEach(([from, to, strength, isParent]) => {
+  edges.push({
+    from, to, dashes:true,
+    width: strength,
+    color:{ color: isParent ? 'goldenrod' : 'seagreen', highlight: isParent ? 'goldenrod' : 'seagreen' },
+    label: strength === 3 ? 'can help' : '',
+    font:{ size:9, color:'#5a5a5a', strokeWidth:3, strokeColor:'aliceblue' },
+    smooth:{ type:'curvedCW', roundness:0.12 }
+  });
+});
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  physics: { solver:'forceAtlas2Based', forceAtlas2Based:{ gravitationalConstant:-55, springLength:120, avoidOverlap:0.8 }, stabilization:{ iterations:320 } },
+  interaction: { hover:true, dragView:true, zoomView:false, navigationButtons:true, tooltipDelay:100000 },
+  edges: { arrows:{ to:{ enabled:true, scaleFactor:0.4 } } },
+  nodes: { shadow:true }
+};
+const network = new vis.Network(container, data, options);
+network.once('stabilizationIterationsDone', () => { network.setOptions({ physics:false }); network.fit(); });
+
+// Build quick lookup of which adults help each situation
+const helpersOf = {};
+links.forEach(([from, to]) => { (helpersOf[to] = helpersOf[to] || []).push(from); });
+
+function showInfo(id){
+  const d = info[id];
+  if (!d) return;
+  let html = '<strong>' + d.title + '</strong><br>' + d.full;
+  if (!isAdult[id]) {
+    // Situation clicked: add the reflection prompt
+    html += '<span class="reflect">Which of the five trusted-adult qualities does this person show for this situation?</span>';
+  }
+  box.innerHTML = html;
+}
+
+// Highlight helpers for a clicked situation; dim everything unrelated
+function highlightSituation(sid){
+  const keep = new Set([sid, ...(helpersOf[sid] || [])]);
+  const nodeUpdates = nodes.map(n => ({ id:n.id, opacity: keep.has(n.id) ? 1 : 0.22 }));
+  data.nodes.update(nodeUpdates);
+  const edgeUpdates = data.edges.get().map(e => ({
+    id:e.id,
+    hidden: !(e.to === sid && keep.has(e.from))
+  }));
+  data.edges.update(edgeUpdates);
+}
+
+function clearHighlight(){
+  data.nodes.update(nodes.map(n => ({ id:n.id, opacity:1 })));
+  data.edges.update(data.edges.get().map(e => ({ id:e.id, hidden:false })));
+}
+
+network.on('hoverNode', p => { const h = hoverInfo[p.node]; if (h) box.innerHTML = h; });
+
+network.on('click', p => {
+  if (p.nodes.length) {
+    const id = p.nodes[0];
+    showInfo(id);
+    if (!isAdult[id]) highlightSituation(id); else clearHighlight();
+  } else {
+    clearHighlight();
+    box.innerHTML = 'Different worries call for different helpers. Click an orange situation to light up every trusted adult who can help with it.';
+  }
+});
+</script>
 </body>
 </html>

@@ -1,128 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Handwashing Habit Timeline Tracker</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 500 -->
+<title>Handwashing Habit Timeline Tracker</title>
+<script src="https://unpkg.com/vis-timeline@7.7.3/standalone/umd/vis-timeline-graph2d.min.js"></script>
+<link href="https://unpkg.com/vis-timeline@7.7.3/styles/vis-timeline-graph2d.min.css" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  #timeline { border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  /* Meal / food-contact pathway = teal */
+  .vis-item.meal { background-color: #b7e4e0; border-color: teal; color: #0a3d3a; }
+  /* Shared-surface pathway = gold */
+  .vis-item.surface { background-color: #f4e2a8; border-color: goldenrod; color: #5a4410; }
+  /* Respiratory droplet pathway = purple */
+  .vis-item.respiratory { background-color: #dcd0f0; border-color: mediumpurple; color: #362159; }
+  .vis-item { font-size: 12px; font-weight: bold; }
+  .vis-item-content { padding: 3px 6px; }
+  .legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 6px 0 2px; font-size: 11px; color: #334155; }
+  .legend span { display: inline-flex; align-items: center; }
+  .swatch { width: 12px; height: 12px; border-radius: 3px; margin-right: 4px; border: 1px solid; }
+  .sw-meal { background-color: #b7e4e0; border-color: teal; }
+  .sw-surface { background-color: #f4e2a8; border-color: goldenrod; }
+  .sw-resp { background-color: #dcd0f0; border-color: mediumpurple; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 66px; }
+  .infobox strong { color: navy; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Handwashing Habit Timeline Tracker</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> handwashing-habit-timeline-tracker</p>
-            <p><strong>Library:</strong> vis-timeline</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students apply disease prevention strategies by tracking a simulated day's key moments when handwashing matters most, reinforcing when and why each moment blocks a germ pathway.</p>
-        </div>
-    </div>
+<main>
+  <h3>When Does Handwashing Matter Most?</h3>
+  <div class="subtitle">Hover a moment for a quick hint, then click it to learn which germ pathway it blocks.</div>
+  <div id="timeline"></div>
+  <div class="legend">
+    <span><span class="swatch sw-meal"></span>Meal moments (food/contact)</span>
+    <span><span class="swatch sw-surface"></span>Shared-surface moments</span>
+    <span><span class="swatch sw-resp"></span>Coughing / sneezing (droplet)</span>
+  </div>
+  <div class="infobox" id="infobox">This timeline follows one school day. Each marker is a moment when washing your hands stops germs from spreading. Click a marker to find out which pathway it blocks and why the timing matters.</div>
+</main>
+<script>
+// Build clock-time events for a single school day (7:00 AM to 8:00 PM).
+// vis-timeline needs full Date objects, so we anchor every time to one shared day.
+function at(h, m){ return new Date(2020, 0, 1, h, m, 0); }
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+const events = [
+  { id: 'breakfast', content: 'Before breakfast', start: at(7,30), className: 'meal',
+    hint: 'Before breakfast &mdash; keep breakfast germ-free.',
+    detail: '<strong>Before breakfast (7:30 AM).</strong> Blocks the <em>food / contact pathway</em>. Washing before you eat keeps germs from your hands off your food, so they never reach your mouth.' },
+  { id: 'arrive', content: 'Arriving at school', start: at(8,45), className: 'surface',
+    hint: 'At school &mdash; you just touched shared doorknobs.',
+    detail: '<strong>Arriving at school (8:45 AM).</strong> Blocks the <em>shared-surface pathway</em>. Doorknobs and handrails are touched by many people, so washing right after clears off germs you picked up on the way in.' },
+  { id: 'recess', content: 'After recess', start: at(10,15), className: 'surface',
+    hint: 'After recess &mdash; hands touched lots of things.',
+    detail: '<strong>After recess (10:15 AM).</strong> Blocks the <em>direct-contact and surface pathway</em>. Playground equipment and other kids\' hands pass germs along, so washing afterward stops them before they spread.' },
+  { id: 'lunch', content: 'Before lunch', start: at(12,0), className: 'meal',
+    hint: 'Before lunch &mdash; clean hands for eating.',
+    detail: '<strong>Before lunch (12:00 PM).</strong> Blocks the <em>food / contact pathway</em>. Clean hands before a meal keep germs off your food and out of your body.' },
+  { id: 'bathroom', content: 'After the bathroom', start: at(12,30), className: 'surface',
+    hint: 'After the bathroom &mdash; an important time to wash.',
+    detail: '<strong>After using the bathroom (12:30 PM).</strong> Blocks the <em>contact and surface pathway</em>. This is one of the most important times to wash, because it stops germs from spreading to food, surfaces, and other people.' },
+  { id: 'snack', content: 'Before a snack', start: at(15,30), className: 'meal',
+    hint: 'After school &mdash; wash before your snack.',
+    detail: '<strong>After school, before a snack (3:30 PM).</strong> Blocks the <em>food / contact pathway</em>. You have touched many things all day, so washing before a snack keeps those germs away from your food.' },
+  { id: 'dinner', content: 'Before dinner', start: at(18,0), className: 'meal',
+    hint: 'Before dinner &mdash; clean hands at the table.',
+    detail: '<strong>Before dinner (6:00 PM).</strong> Blocks the <em>food / contact pathway</em>. Washing before dinner is one more chance to keep germs off your food and help your whole family stay healthy.' },
+  { id: 'cough', content: 'After a cough/sneeze', start: at(20,0), className: 'respiratory',
+    hint: 'Evening &mdash; you coughed or sneezed.',
+    detail: '<strong>After coughing or sneezing (8:00 PM).</strong> Blocks the <em>respiratory droplet pathway</em>. Coughs and sneezes put tiny droplets on your hands, so washing keeps you from spreading them to surfaces and people.' }
+];
 
-    Type: timeline
-    **sim-id:** handwashing-habit-timeline-tracker<br/>
-    **Library:** vis-timeline<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: demonstrate, practice, use
-    
-    Learning objective: Students apply disease prevention strategies by tracking a simulated day's key moments when handwashing matters most, reinforcing when and why each moment blocks a germ pathway.
-    
-    Time period: One school day, from morning to evening (7:00 AM to 8:00 PM)
-    
-    Orientation: Horizontal
-    
-    Events:
-    - 7:30 AM: "Before breakfast" — blocks food/contact pathway
-    - 8:45 AM: "Arriving at school, after touching shared doorknobs" — blocks surface pathway
-    - 10:15 AM: "After recess" — blocks direct contact and surface pathway
-    - 12:00 PM: "Before lunch" — blocks food/contact pathway
-    - 12:30 PM: "After using the bathroom" — blocks contact and surface pathway
-    - 3:30 PM: "After school, before a snack" — blocks food/contact pathway
-    - 6:00 PM: "Before dinner" — blocks food/contact pathway
-    - 8:00 PM: "After coughing or sneezing during the evening" — blocks respiratory droplet pathway
-    
-    Color coding:
-    - Teal: Meal-related moments (food/contact pathway)
-    - Gold: Shared-surface moments (surface pathway)
-    - Purple: Respiratory-related moments (droplet pathway)
-    
-    Interactive features:
-    - Click any event to reveal an infobox explaining which germ pathway it blocks and why the timing matters
-    - Hover over an event for a short one-line preview before clicking
-    
-    Responsive behavior: Timeline collapses to a scrollable vertical list on narrow screens while retaining click functionality
-    
-    Implementation: vis-timeline library with custom item styling per color group and a click listener that populates a side infobox panel.
-    -->
+const box = document.getElementById('infobox');
+const items = new vis.DataSet(events.map(e => ({ id: e.id, content: e.content, start: e.start, className: e.className, title: e.hint })));
+
+const options = {
+  min: at(6,0), max: at(21,30), start: at(6,0), end: at(21,30),
+  zoomable: false, moveable: false, showCurrentTime: false, selectable: true, stack: true,
+  margin: { item: 10, axis: 14 },
+  orientation: { axis: 'bottom' },
+  format: {
+    minorLabels: { hour: 'ha', minute: 'h:mma' },
+    majorLabels: { hour: '', minute: '' }
+  },
+  timeAxis: { scale: 'hour', step: 1 }
+};
+
+const tl = new vis.Timeline(document.getElementById('timeline'), items, options);
+
+const byId = {};
+events.forEach(e => byId[e.id] = e.detail);
+
+tl.on('select', (p) => { if (p.items.length && byId[p.items[0]]) box.innerHTML = byId[p.items[0]]; });
+</script>
 </body>
 </html>

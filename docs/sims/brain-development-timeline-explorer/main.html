@@ -1,113 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Brain Development Timeline Explorer</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 470 -->
+<title>Brain Development Timeline Explorer</title>
+<script src="https://unpkg.com/vis-timeline@7.7.3/standalone/umd/vis-timeline-graph2d.min.js"></script>
+<link href="https://unpkg.com/vis-timeline@7.7.3/styles/vis-timeline-graph2d.min.css" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  #timeline { border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .vis-item.brain { background-color: #bcd8f5; border-color: steelblue; color: #10314f; }
+  .vis-item.limbic { background-color: #f6cfa0; border-color: darkorange; color: #5a3410; }
+  .vis-item.prefrontal { background-color: #bfe3c0; border-color: seagreen; color: #12401a; }
+  .vis-item { font-size: 12px; font-weight: bold; }
+  .vis-item.vis-background.here { background-color: rgba(120,120,120,0.18); }
+  .here-label { color: dimgray; font-weight: bold; font-size: 11px; }
+  .row { display: flex; gap: 8px; margin-top: 8px; align-items: stretch; }
+  .infobox { flex: 2; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 74px; }
+  .infobox strong { color: navy; }
+  button { flex: 1; background: steelblue; color: white; border: none; border-radius: 5px; padding: 8px; font-size: 13px; font-weight: bold; cursor: pointer; }
+  button:hover { background: #34618a; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Brain Development Timeline Explorer</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> brain-development-timeline-explorer</p>
-            <p><strong>Library:</strong> vis-timeline</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students explain that different brain regions mature at different rates, and describe why the mismatch between an early-maturing reward system and a late-maturing prefrontal cortex makes the adolescent brain more vulnerable to substance effects.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: timeline
-    **sim-id:** brain-development-timeline-explorer<br/>
-    **Library:** vis-timeline<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain, summarize, describe
-    
-    Learning objective: Students explain that different brain regions mature at different rates, and describe why the mismatch between an early-maturing reward system and a late-maturing prefrontal cortex makes the adolescent brain more vulnerable to substance effects.
-    
-    Time period: Birth through age 25, with a highlighted band for ages 11-14 (the reader's current stage)
-    
-    Events/regions plotted as horizontal bands showing relative maturity over time: "Brainstem (basic survival functions) — matures earliest, largely complete in early childhood"; "Limbic System / Reward Pathway (emotion and pleasure) — matures during the early-to-mid teen years"; "Prefrontal Cortex (judgment, impulse control, planning) — the last region to mature, not complete until the mid-20s."
-    
-    Visual style: Horizontal timeline with three stacked growth bands from age 0 to 25, each band filling in gradually to show relative maturity percentage at each age; a vertical marker at ages 11-14 labeled "You are here."
-    
-    Interactive features: Click any band to open an infobox explaining that region's function in plain language and why its maturity timeline matters; hover the "You are here" marker to see a one-sentence summary of the reward-system/prefrontal-cortex mismatch; a "Why does this matter?" button reveals a short infobox connecting the timeline to substance-use risk without naming or depicting any specific substance.
-    
-    Color coding: Blue for brainstem, orange for limbic/reward system, green for prefrontal cortex; the "You are here" marker in gray.
-    
-    Implementation: vis-timeline JavaScript library. Responsive width, reflows on window resize. No content in this diagram references how to obtain, use, or conceal any substance — it addresses brain development only.
-    -->
+<main>
+  <h3>When Does the Brain Grow Up?</h3>
+  <div class="subtitle">Each bar shows when a brain region is doing most of its maturing. Click a bar to learn more.</div>
+  <div id="timeline"></div>
+  <div class="row">
+    <div class="infobox" id="infobox">Different parts of the brain finish developing at different ages. Click any bar &mdash; or the gray <span class="here-label">You are here</span> band &mdash; to read what that region does.</div>
+    <button id="whyBtn">Why does this matter?</button>
+  </div>
+</main>
+<script>
+// Map age (years) to a date so vis-timeline can plot it: age N -> Jan 1 of year 2000+N.
+function age(y){ return new Date(2000 + y, 0, 1); }
+const info = {
+  brain: '<strong>Brainstem</strong> controls basic survival jobs like breathing and heartbeat. It matures earliest and is largely complete in early childhood.',
+  limbic: '<strong>Limbic System / Reward Pathway</strong> drives emotion and the feeling of pleasure. It matures during the early-to-mid teen years &mdash; earlier than the part that weighs consequences.',
+  prefrontal: '<strong>Prefrontal Cortex</strong> handles judgment, impulse control, and planning. It is the last region to mature and is not fully complete until the mid-20s.',
+  here: '<strong>You are here (ages 11&ndash;14).</strong> Your reward system is speeding up while your prefrontal cortex is still developing.',
+  why: '<strong>Why it matters:</strong> Because the reward pathway matures before the prefrontal cortex, the teen brain can feel strong pulls toward exciting things before the "braking" system is fully online. That mismatch is a normal part of development &mdash; and it is why this stage is a sensitive one for the brain.'
+};
+const box = document.getElementById('infobox');
+const items = new vis.DataSet([
+  { id: 'brain', group: 0, content: 'Brainstem', start: age(0), end: age(6), className: 'brain' },
+  { id: 'limbic', group: 1, content: 'Limbic / Reward', start: age(10), end: age(17), className: 'limbic' },
+  { id: 'prefrontal', group: 2, content: 'Prefrontal Cortex', start: age(15), end: age(25), className: 'prefrontal' },
+  { id: 'here', start: age(11), end: age(14), type: 'background', className: 'here', content: 'You are here' }
+]);
+const groups = new vis.DataSet([
+  { id: 0, content: 'Survival' },
+  { id: 1, content: 'Reward' },
+  { id: 2, content: 'Judgment' }
+]);
+const options = {
+  min: age(0), max: age(25), start: age(0), end: age(25),
+  zoomable: false, moveable: false, showCurrentTime: false, selectable: true, stack: false,
+  margin: { item: 8, axis: 10 },
+  format: { minorLabels: (d) => 'Age ' + ((typeof d.getFullYear === 'function' ? d.getFullYear() : d.year()) - 2000), majorLabels: () => '' },
+  timeAxis: { scale: 'year', step: 5 }
+};
+const tl = new vis.Timeline(document.getElementById('timeline'), items, groups, options);
+tl.on('select', (p) => { if (p.items.length && info[p.items[0]]) box.innerHTML = info[p.items[0]]; });
+tl.on('click', (p) => { if (p.what === 'background' || (p.group !== null && !p.item)) box.innerHTML = info.here; });
+document.getElementById('whyBtn').addEventListener('click', () => { box.innerHTML = info.why; });
+</script>
 </body>
 </html>

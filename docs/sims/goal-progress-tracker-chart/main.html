@@ -1,125 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>My Goal Progress Tracker</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 545 -->
+<title>My Goal Progress: Drink Water Instead of Soda</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 18px; margin: 4px 0 2px; }
+  .subtitle { text-align: center; color: dimgray; font-size: 13px; margin-bottom: 8px; }
+  .controls { text-align: center; margin-bottom: 8px; }
+  .controls button {
+    font-family: inherit; font-size: 13px; font-weight: bold;
+    color: white; background: seagreen; border: none; border-radius: 6px;
+    padding: 7px 12px; margin: 2px 3px; cursor: pointer;
+  }
+  .controls button:hover { background: #2e8b57cc; }
+  .controls button.on { background: darkorange; }
+  .chart-box { background: honeydew; border: 1px solid silver; border-radius: 6px; padding: 8px; }
+  .chart-container { position: relative; width: 100%; height: 280px; }
+  .infobox { margin-top: 8px; background: #f4fbf6; border-left: 5px solid seagreen; border-radius: 4px; padding: 9px 11px; font-size: 14px; color: #2f3e34; line-height: 1.45; min-height: 64px; }
+  .infobox strong { color: navy; }
+  .frame { font-style: italic; color: seagreen; }
+  .reflect { margin-top: 8px; background: #fffaf0; border-left: 5px solid goldenrod; border-radius: 4px; padding: 9px 11px; font-size: 14px; color: #5c4a1a; line-height: 1.5; display: none; }
+  .reflect ol { margin: 4px 0 0 20px; }
+  .reflect li { margin: 3px 0; }
+  .reflect strong { color: darkgoldenrod; }
+  .source { text-align: center; color: gray; font-size: 11px; margin-top: 6px; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>My Goal Progress Tracker</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> goal-progress-tracker-chart</p>
-            <p><strong>Library:</strong> Chart.js</p>
-            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
-            <p><strong>Learning Objective:</strong> Students reflect on the results of working toward a personal health-related goal by reviewing a week of sample progress data and judging what went well and what to change.</p>
-        </div>
-    </div>
+<main>
+  <h3>My Goal Progress: Drink Water Instead of Soda</h3>
+  <div class="subtitle">Hover a bar to reflect on that day. Try building your own week!</div>
+  <div class="controls">
+    <button id="modeBtn">Toggle My Own Week</button>
+    <button id="reflectBtn">Show Reflection Questions</button>
+  </div>
+  <div class="chart-box">
+    <div class="chart-container"><canvas id="chart"></canvas></div>
+  </div>
+  <div class="infobox" id="infobox">
+    A tall <strong>green</strong> bar means you met your goal that day. A short <strong>gray</strong> bar
+    means you did not this time &mdash; and that is okay. <span class="frame">Looking back helps us learn
+    what to try next.</span>
+  </div>
+  <div class="reflect" id="reflect">
+    <strong>Reflection Questions</strong>
+    <ol>
+      <li>Which days were <strong>easiest</strong> to meet your goal?</li>
+      <li>Which days were the <strong>hardest</strong>?</li>
+      <li>What is <strong>one thing</strong> you could try next week?</li>
+    </ol>
+  </div>
+  <div class="source">Sample data for practice. Reflecting on progress is just as important as setting a goal.</div>
+</main>
+<script>
+const days = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+// true = goal met (Yes), false = not met (No)
+const sampleWeek = [true, true, false, true, false, true, true];
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// Reflection prompts shown on hover for each result type.
+const yesPrompts = [
+  'Great job! What helped you succeed today?',
+  'You met your goal! Did having a water bottle handy help?',
+  'Nice work! Keep that streak going.'
+];
+const noPrompts = [
+  'what might have made this day harder? A busy afternoon? Forgetting the water bottle?',
+  'no worries -- what got in the way today? A party or a treat?',
+  'that is okay -- what could remind you to reach for water next time?'
+];
+function promptFor(met, i){
+  return met ? yesPrompts[i % yesPrompts.length] : noPrompts[i % noPrompts.length];
+}
 
-    Type: chart
-    **sim-id:** goal-progress-tracker-chart<br/>
-    **Library:** Chart.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Evaluate (L5)
-    Bloom Taxonomy Verb: assess, judge, reflect
-    
-    Learning objective: Students reflect on the results of working toward a personal health-related goal by reviewing a week of sample progress data and judging what went well and what to change.
-    
-    Chart type: Bar chart with a toggle to a simple weekly calendar view
-    
-    Purpose: Show a sample week of goal-tracking data ("Drink water instead of soda") so students can practice reflecting on progress rather than only setting goals
-    
-    X-axis: Day of the week (Mon-Sun)
-    Y-axis: Goal met? (Yes = full bar height, No = short bar height)
-    
-    Data series:
-    - Sample week: Mon (Yes), Tue (Yes), Wed (No), Thu (Yes), Fri (No), Sat (Yes), Sun (Yes)
-    
-    Interactive features (REQUIRED):
-    - Hover any bar to see a tooltip with that day's result and a short reflection prompt, e.g., hovering Wednesday shows "No -- what might have made this day harder? A busy afternoon? Forgetting the water bottle?"
-    - Click "Toggle My Own Week" button to let a student (via teacher-led class discussion) click each day to mark Yes/No and generate their own bar chart live
-    - Button: "Show Reflection Questions" reveals three prompts below the chart: "Which days were easiest? Which were hardest? What is one thing to try next week?"
-    
-    Title: "My Goal Progress: Drink Water Instead of Soda"
-    Legend: Green bars = goal met, gray bars = not met that day
-    
-    Color scheme: Green for "Yes," soft gray for "No" -- non-judgmental, no red or negative coloring
-    
-    Annotations: Small star icon over the day with the longest streak
-    
-    Implementation: Chart.js bar chart with custom click handling to let a class build its own sample week interactively
-    -->
+const YES = 3, NO = 1;           // bar heights
+let ownMode = false;             // false = sample week, true = student builds their own
+let week = sampleWeek.slice();   // current data being displayed
+
+const box = document.getElementById('infobox');
+
+// Find the day index that ends the single longest run of met goals (for the star).
+function longestStreakEndIndex(w){
+  let best = 0, bestEnd = -1, run = 0;
+  for (let i = 0; i < w.length; i++){
+    if (w[i]) { run++; if (run > best) { best = run; bestEnd = i; } }
+    else run = 0;
+  }
+  return best > 0 ? bestEnd : -1;
+}
+
+// Star plugin: draws a gold star above the top of the longest-streak bar.
+const starPlugin = {
+  id: 'streakStar',
+  afterDatasetsDraw(c){
+    const idx = longestStreakEndIndex(week);
+    if (idx < 0) return;
+    const meta = c.getDatasetMeta(0);
+    const bar = meta.data[idx];
+    if (!bar) return;
+    const x = bar.x, y = bar.y - 16;
+    const ctx = c.ctx;
+    ctx.save();
+    ctx.fillStyle = 'gold';
+    ctx.strokeStyle = 'goldenrod';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    const spikes = 5, outer = 9, inner = 4;
+    let rot = -Math.PI / 2;
+    const step = Math.PI / spikes;
+    ctx.moveTo(x + Math.cos(rot) * outer, y + Math.sin(rot) * outer);
+    for (let s = 0; s < spikes; s++){
+      rot += step;
+      ctx.lineTo(x + Math.cos(rot) * inner, y + Math.sin(rot) * inner);
+      rot += step;
+      ctx.lineTo(x + Math.cos(rot) * outer, y + Math.sin(rot) * outer);
+    }
+    ctx.closePath();
+    ctx.fill();
+    ctx.stroke();
+    ctx.restore();
+  }
+};
+
+function colors(){ return week.map(m => m ? 'seagreen' : 'darkgray'); }
+function borders(){ return week.map(m => m ? '#2e8b57' : 'gray'); }
+function heights(){ return week.map(m => m ? YES : NO); }
+
+const ctx = document.getElementById('chart').getContext('2d');
+const chart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: days,
+    datasets: [{
+      label: 'Goal met?',
+      data: heights(),
+      backgroundColor: colors(),
+      borderColor: borders(),
+      borderWidth: 1,
+      borderRadius: 4
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    onClick: (e, els) => {
+      if (!ownMode || !els.length) return;
+      const i = els[0].index;
+      week[i] = !week[i];   // toggle Yes/No for this day
+      refresh();
+      const met = week[i];
+      box.innerHTML = '<strong>' + days[i] + ': ' + (met ? 'Yes' : 'No') +
+        '</strong> &mdash; you set this day. ' +
+        '<span class="frame">Keep tapping days to build your own week!</span>';
+    },
+    scales: {
+      y: {
+        beginAtZero: true, max: 3.6,
+        ticks: { stepSize: 1, callback: v => v >= YES ? 'Yes' : (v <= NO && v > 0 ? 'No' : '') },
+        title: { display: true, text: 'Goal met?' }
+      },
+      x: { title: { display: true, text: 'Day of the Week' } }
+    },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          title: items => days[items[0].dataIndex],
+          label: item => {
+            const i = item.dataIndex, met = week[i];
+            return (met ? 'Yes -- goal met!' : 'No -- not this time');
+          },
+          afterBody: items => {
+            const i = items[0].dataIndex;
+            return promptFor(week[i], i);
+          }
+        },
+        bodyFont: { size: 12 }, titleFont: { size: 13 }, boxPadding: 4
+      }
+    }
+  },
+  plugins: [starPlugin]
+});
+
+function refresh(){
+  chart.data.datasets[0].data = heights();
+  chart.data.datasets[0].backgroundColor = colors();
+  chart.data.datasets[0].borderColor = borders();
+  chart.update();
+}
+
+// Toggle between the sample week and student-built mode.
+const modeBtn = document.getElementById('modeBtn');
+modeBtn.addEventListener('click', () => {
+  ownMode = !ownMode;
+  if (ownMode){
+    modeBtn.classList.add('on');
+    modeBtn.textContent = 'Back to Sample Week';
+    week = [true, false, false, false, false, false, false]; // start fresh, one day on
+    box.innerHTML = '<strong>Your Week</strong> &mdash; tap each day\'s bar to mark it ' +
+      '<strong>Yes</strong> (tall green) or <strong>No</strong> (short gray). ' +
+      '<span class="frame">Build the week your class wants to talk about.</span>';
+  } else {
+    modeBtn.classList.remove('on');
+    modeBtn.textContent = 'Toggle My Own Week';
+    week = sampleWeek.slice();
+    box.innerHTML = 'This is a <strong>sample week</strong> of working toward a goal. ' +
+      'Hover any bar to reflect on that day. ' +
+      '<span class="frame">Some days go well and some are harder -- that is normal.</span>';
+  }
+  refresh();
+});
+
+// Show / hide the reflection questions.
+const reflectBtn = document.getElementById('reflectBtn');
+const reflect = document.getElementById('reflect');
+reflectBtn.addEventListener('click', () => {
+  const showing = reflect.style.display === 'block';
+  reflect.style.display = showing ? 'none' : 'block';
+  reflectBtn.classList.toggle('on', !showing);
+  reflectBtn.textContent = showing ? 'Show Reflection Questions' : 'Hide Reflection Questions';
+});
+</script>
 </body>
 </html>

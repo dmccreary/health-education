@@ -1,117 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Daily Habits and Long-Term Health Concept Map</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 520 -->
+<title>Daily Habits and Long-Term Health</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 380px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.9); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 8px; font-size: 11px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 5px; vertical-align: middle; border: 1px solid #555; }
+  .legend .arrow { display: inline-block; width: 14px; margin-right: 5px; vertical-align: middle; color: gray; font-weight: bold; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid seagreen; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 70px; }
+  .infobox strong { color: navy; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Daily Habits and Long-Term Health Concept Map</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> daily-habits-long-term-health-map</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students analyze how five categories of everyday personal behavior connect to and build toward long-term health.</p>
-        </div>
+<main>
+  <h3>How Daily Habits Build Long-Term Health</h3>
+  <div class="subtitle">Hover any circle for a quick definition. Click a blue habit for a real example, or the green center for the big picture.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k" style="background:seagreen;"></span>Combined outcome<br>
+      <span class="k" style="background:steelblue;"></span>Contributing habit<br>
+      <span class="arrow">&rarr;</span>"supports" relationship
     </div>
+  </div>
+  <div class="infobox" id="infobox">Five everyday habits all feed into your long-term health. Explore each one to see how the small choices you make every day add up over time.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// Five contributing behavior categories feeding into Long-Term Health
+const habits = [
+  { id:'sleep', label:'Sleep\nHabits',
+    hover:'Getting enough regular, good-quality sleep each night.',
+    example:'Going to bed at about the same time every night gives your body and brain time to rest, grow, and get ready for the next day.' },
+  { id:'activity', label:'Physical\nActivity',
+    hover:'Moving your body through play, exercise, and active time.',
+    example:'Riding a bike, playing at recess, or joining a sports team keeps your heart, muscles, and bones strong as you grow.' },
+  { id:'symptoms', label:'Recognizing\nSymptoms Early',
+    hover:'Noticing when your body feels different or unwell.',
+    example:'Telling a trusted adult when you have a sore throat or a stomachache means you can get help early, before a small problem grows.' },
+  { id:'chronic', label:'Managing\nChronic Conditions',
+    hover:'Taking daily care of an ongoing health condition.',
+    example:'A student with asthma who keeps their inhaler nearby and follows their care plan can stay active and feel their best every day.' },
+  { id:'hygiene', label:'Hygiene &\nSafe Food',
+    hover:'Keeping clean and handling food safely to prevent illness.',
+    example:'Washing your hands before eating and keeping foods stored properly helps stop germs from making you sick.' }
+];
 
-    Type: graph-model
-    **sim-id:** daily-habits-long-term-health-map<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: examine, organize, distinguish
-    
-    Learning objective: Students analyze how five categories of everyday personal behavior connect to and build toward long-term health.
-    
-    Purpose: Show five everyday behavior categories feeding into the central concept of long-term health, letting students explore each connection.
-    
-    Node types: Central node "Long-Term Health" (large green circle, center); five supporting nodes (medium blue circles): "Sleep Habits", "Physical Activity", "Recognizing Symptoms Early", "Managing Chronic Conditions", "Hygiene and Safe Food Handling".
-    
-    Edge types: Solid arrows from each supporting node pointing inward to "Long-Term Health", labeled "supports".
-    
-    Layout: Radial/hub layout, central node fixed in the middle, five supporting nodes spaced evenly around it.
-    
-    Interactive features: Hover any node for a one-sentence definition tooltip; click a supporting node to highlight its edge and show a daily-life example in a side panel; click the center node for a summary of all five behaviors; zoom with mouse wheel, pan by dragging background.
-    
-    Visual styling: Central node green and larger; supporting nodes blue; "supports" edges gray with arrowheads pointing inward.
-    
-    Legend: Green = combined outcome; Blue = contributing behavior category; Gray arrow = "supports" relationship.
-    
-    Implementation: vis-network library with a fixed dataset (6 nodes, 5 edges) and click/hover handlers tied to a definitions object. Canvas 650x450px, responsive to container width.
-    -->
+const nodes = [];
+const edges = [];
+const info = {};
+
+// Central combined-outcome node: large green ellipse, fixed at center
+nodes.push({
+  id:'center', label:'Long-Term\nHealth', shape:'ellipse',
+  color:{ background:'seagreen', border:'#1f6b46' },
+  font:{ color:'white', size:18, face:'Arial' },
+  borderWidth:3, x:0, y:0, fixed:{ x:true, y:true }
+});
+info.center = {
+  title:'Long-Term Health',
+  text:'Your long-term health is built from many small habits. Sleep, physical activity, noticing symptoms early, managing conditions, and good hygiene all work together over the years to keep you well.'
+};
+
+// Place five blue habit nodes evenly around the center in a radial ring
+const R = 210;
+habits.forEach((h, i) => {
+  const angle = (-Math.PI / 2) + (i * 2 * Math.PI / habits.length); // start at top
+  nodes.push({
+    id:h.id, label:h.label, shape:'ellipse',
+    color:{ background:'steelblue', border:'#2a5d82' },
+    font:{ color:'white', size:13, face:'Arial' },
+    borderWidth:2,
+    x: Math.round(R * Math.cos(angle)),
+    y: Math.round(R * Math.sin(angle))
+  });
+  // Solid gray arrow from habit pointing inward to Long-Term Health
+  edges.push({
+    from:h.id, to:'center', label:'supports',
+    font:{ size:10, color:'gray', strokeWidth:3, strokeColor:'white' },
+    color:{ color:'gray', highlight:'darkorange' }, width:2
+  });
+  info[h.id] = { title:h.label.replace('\n',' '), text:h.example };
+  info[h.id + '_hover'] = h.hover;
+});
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  physics: { solver: 'forceAtlas2Based', forceAtlas2Based: { gravitationalConstant: -80, springLength: 150 }, stabilization: { iterations: 250 } },
+  interaction: { hover: true, dragView: true, zoomView: true, navigationButtons: true, tooltipDelay: 100000 },
+  edges: { smooth: { type: 'continuous' }, arrows: { to: { enabled: true, scaleFactor: 0.7 } } },
+  nodes: { shadow: true }
+};
+const network = new vis.Network(container, data, options);
+network.once('stabilizationIterationsDone', () => { network.setOptions({ physics: false }); network.fit(); });
+
+function panel(id){
+  const d = info[id];
+  if (d) box.innerHTML = '<strong>' + d.title + '</strong><br>' + d.text;
+}
+
+network.on('hoverNode', p => {
+  const h = info[p.node + '_hover'];
+  if (h) box.innerHTML = h;
+});
+
+network.on('click', p => {
+  if (p.nodes.length) {
+    const id = p.nodes[0];
+    panel(id);
+    // Highlight the clicked habit's edge to the center
+    if (id !== 'center') {
+      network.selectEdges(data.edges.getIds().filter(eid => {
+        const e = data.edges.get(eid);
+        return e.from === id && e.to === 'center';
+      }));
+    }
+  }
+});
+</script>
 </body>
 </html>

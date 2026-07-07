@@ -1,125 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Life Stages Timeline</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 480 -->
+<title>Life Stages Timeline</title>
+<script src="https://unpkg.com/vis-timeline@7.7.3/standalone/umd/vis-timeline-graph2d.min.js"></script>
+<link href="https://unpkg.com/vis-timeline@7.7.3/styles/vis-timeline-graph2d.min.css" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 18px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 13px; margin-bottom: 6px; }
+  #timeline { border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .vis-item { font-size: 13px; font-weight: bold; }
+  .vis-item.infancy      { background-color: #cfe8f7; border-color: steelblue;    color: #123a52; }
+  .vis-item.childhood    { background-color: #d4eecb; border-color: seagreen;     color: #16401a; }
+  .vis-item.puberty      { background-color: #e6d7f2; border-color: mediumpurple; color: #3d2159;
+                           background-image: linear-gradient(to right,
+                             rgba(230,215,242,0) 0%, #e6d7f2 12%, #e6d7f2 88%, rgba(230,215,242,0) 100%); }
+  .vis-item.later        { background-color: #fbe3c6; border-color: darkorange;   color: #6a3b0d; }
+  .vis-item.adulthood    { background-color: #f8d7d7; border-color: indianred;    color: #6b1f1f; }
+  .vis-item.vis-selected { box-shadow: 0 0 0 2px goldenrod; }
+  .edge-note { color: mediumpurple; font-weight: bold; font-size: 12px; }
+  .row { display: flex; gap: 8px; margin-top: 8px; align-items: stretch; }
+  .infobox { flex: 1; background: #f8fafc; border-left: 4px solid mediumpurple; border-radius: 4px; padding: 8px 10px; font-size: 14px; color: #334155; line-height: 1.45; min-height: 82px; }
+  .infobox strong { color: navy; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Life Stages Timeline</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> life-stages-timeline</p>
-            <p><strong>Library:</strong> vis-timeline</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students explain that puberty is one normal life stage among several across a human lifespan, and describe its general place and range in that sequence.</p>
-        </div>
-    </div>
+<main>
+  <h3>The Stages of Growing Up</h3>
+  <div class="subtitle">Puberty is just one normal stage in a whole life. Click any colored band to learn about it.</div>
+  <div id="timeline"></div>
+  <div class="row">
+    <div class="infobox" id="infobox">Every person grows through the same big stages, but not always at the same ages. Click a colored band above to read about that stage. The purple <span class="edge-note">Puberty</span> band is extra wide on purpose.</div>
+  </div>
+</main>
+<script>
+// Map age (years) to a date so vis-timeline can plot it: age N -> Jan 1 of year 2000+N.
+function age(y){ return new Date(2000 + y, 0, 1); }
+const info = {
+  infancy: '<strong>Infancy (about ages 0&ndash;2).</strong> This is the very start of life, when a baby grows quickly and learns to crawl, walk, and say first words. Caregivers do almost everything for a baby during this stage.',
+  childhood: '<strong>Early Childhood (about ages 2&ndash;8).</strong> Kids grow steadily and get much better at talking, playing, learning, and making friends. This is a time of curiosity, questions, and learning new skills every day.',
+  puberty: '<strong>Puberty / Adolescence (about ages 8&ndash;16).</strong> This band is wide on purpose &mdash; puberty can start anywhere in this range, and every starting point is normal. It is the natural stage when a young person&rsquo;s body begins changing from a child&rsquo;s toward an adult&rsquo;s.',
+  later: '<strong>Later Adolescence (about ages 15&ndash;19).</strong> A young person keeps growing while thinking more about the future, friendships, and who they want to be. Feelings and independence both grow stronger during these years.',
+  adulthood: '<strong>Adulthood (about ages 18 and up).</strong> Growth in height finishes, but people keep learning and changing for the rest of their lives. Adults make their own choices and often care for others.',
+  edge: '<strong>Exact start and end times are different for everyone.</strong> The soft, faded edges of the purple band show that puberty does not begin or end on one exact birthday &mdash; it varies from person to person, and that is normal.'
+};
+const box = document.getElementById('infobox');
 
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: timeline
-    **sim-id:** life-stages-timeline<br/>
-    **Library:** vis-timeline<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain, describe, interpret
-    
-    Learning objective: Students explain that puberty is one normal life stage among several across a human lifespan, and describe its general place and range in that sequence.
-    
-    Purpose: Normalize puberty by placing it visually alongside other widely recognized life stages, with no anatomical imagery anywhere in the diagram.
-    
-    Time period: Birth through adulthood (ages 0-25, approximate)
-    
-    Orientation: Horizontal
-    
-    Life stage segments shown (labeled bands, not individual people):
-    - Infancy (0-2)
-    - Early Childhood (2-8)
-    - Puberty / Adolescence (approximately 8-16, shown as a wide band to represent normal variation in timing)
-    - Later Adolescence (approximately 15-19)
-    - Adulthood (approximately 18+)
-    
-    Visual style: Horizontal band timeline with soft color blocks for each stage; the Puberty/Adolescence band is intentionally wide and shows a gradient edge rather than a hard line, visually reinforcing that its start and end vary by person
-    
-    Color coding: Each life stage has its own soft, calm color; no skin tones or body imagery anywhere
-    
-    Interactive features:
-    - Click any life-stage band to open an infobox with a two-sentence, non-anatomical description of that stage
-    - Click the Puberty/Adolescence band specifically to reveal: "This band is wide on purpose — puberty can start anywhere in this range, and every starting point is normal."
-    - Hover over the gradient edges of the Puberty/Adolescence band to see the note "Exact start and end times are different for everyone."
-    
-    Implementation: vis-timeline with custom-styled bands and click-to-reveal infobox panels; no anatomical or body imagery of any kind — purely abstract colored bands and labels.
-    -->
+const items = new vis.DataSet([
+  { id: 'infancy',   group: 0, content: 'Infancy',              start: age(0),  end: age(2),  className: 'infancy' },
+  { id: 'childhood', group: 0, content: 'Early Childhood',      start: age(2),  end: age(8),  className: 'childhood' },
+  { id: 'puberty',   group: 1, content: 'Puberty / Adolescence', start: age(8),  end: age(16), className: 'puberty' },
+  { id: 'later',     group: 2, content: 'Later Adolescence',    start: age(15), end: age(19), className: 'later' },
+  { id: 'adulthood', group: 3, content: 'Adulthood',            start: age(18), end: age(25), className: 'adulthood' }
+]);
+const groups = new vis.DataSet([
+  { id: 0, content: 'Childhood' },
+  { id: 1, content: 'Puberty' },
+  { id: 2, content: 'Teens' },
+  { id: 3, content: 'Adult' }
+]);
+const options = {
+  min: age(0), max: age(25), start: age(0), end: age(25),
+  zoomable: false, moveable: false, showCurrentTime: false, selectable: true, stack: false,
+  margin: { item: 8, axis: 10 },
+  format: { minorLabels: (d) => 'Age ' + ((typeof d.getFullYear === 'function' ? d.getFullYear() : d.year()) - 2000), majorLabels: () => '' },
+  timeAxis: { scale: 'year', step: 5 }
+};
+const tl = new vis.Timeline(document.getElementById('timeline'), items, groups, options);
+tl.on('select', (p) => { if (p.items.length && info[p.items[0]]) box.innerHTML = info[p.items[0]]; });
+</script>
 </body>
 </html>

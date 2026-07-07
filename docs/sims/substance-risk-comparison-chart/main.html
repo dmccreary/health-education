@@ -1,121 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Substance Risk Comparison Chart</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 520 -->
+<title>Comparing Substance Risk Categories for a Developing Brain</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 4px 0 2px; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .chart-box { background: aliceblue; border: 1px solid silver; border-radius: 6px; padding: 8px; }
+  .chart-container { position: relative; width: 100%; height: 300px; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 74px; }
+  .infobox strong { color: navy; }
+  .warn { color: indianred; font-weight: bold; }
+  .frame { font-style: italic; color: seagreen; }
+  .source { text-align: center; color: gray; font-size: 11px; margin-top: 6px; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Substance Risk Comparison Chart</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> substance-risk-comparison-chart</p>
-            <p><strong>Library:</strong> Chart.js</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students compare and differentiate the documented developmental-brain-risk profile and unpredictability of alcohol, commercial tobacco/nicotine, cannabis, and illegal drugs, reinforcing that unregulated illegal drugs carry the added risk of unknown content and strength.</p>
-        </div>
-    </div>
+<main>
+  <h3>Comparing Substance Risk Categories for a Developing Brain</h3>
+  <div class="subtitle">Hover a bar for the reason behind its rating. Click a substance name at the left to focus on it; click again to show all.</div>
+  <div class="chart-box">
+    <div class="chart-container"><canvas id="chart"></canvas></div>
+  </div>
+  <div class="infobox" id="infobox">
+    Two kinds of risk are shown for each substance. <strong>Developmental Brain Risk</strong> (blue) is how much a
+    substance can harm a brain that is still growing. <strong>Unpredictability / Contamination Risk</strong> (orange)
+    is how uncertain it is what a substance actually contains. <span class="frame">Hover a bar or click a substance name to learn more.</span>
+  </div>
+  <div class="source">Educational, qualitative scale (Low / Moderate / High / Severe). Illustrative comparison based on public-health and brain-science literature, not exact clinical statistics.</div>
+</main>
+<script>
+// Qualitative scale: 1=Low, 2=Moderate, 3=High, 4=Severe
+const levelNames = ['', 'Low', 'Moderate', 'High', 'Severe'];
+const cats = ['Alcohol', 'Commercial Tobacco / Nicotine', 'Cannabis', 'Illegal Drugs'];
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// [Developmental Brain Risk, Unpredictability/Contamination Risk]
+const brainRisk = [3, 3, 3, 4];      // High, High, High, Severe
+const contamRisk = [1, 1, 2, 4];     // Low, Low, Moderate, Severe
 
-    Type: chart
-    **sim-id:** substance-risk-comparison-chart<br/>
-    **Library:** Chart.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: compare, examine, differentiate
-    
-    Learning objective: Students compare and differentiate the documented developmental-brain-risk profile and unpredictability of alcohol, commercial tobacco/nicotine, cannabis, and illegal drugs, reinforcing that unregulated illegal drugs carry the added risk of unknown content and strength.
-    
-    Chart type: Horizontal grouped bar chart
-    
-    Purpose: Compare four substance categories across two illustrative, research-informed dimensions — not exact clinical statistics, but relative educational comparisons clearly labeled as such.
-    
-    X-axis: Relative risk rating (Low, Moderate, High, Severe) — plotted as a labeled qualitative scale, not a specific number
-    Y-axis: Substance category (Alcohol, Commercial Tobacco/Nicotine, Cannabis, Illegal Drugs)
-    
-    Data series:
-    1. "Developmental Brain Risk" (blue bars): Alcohol — High; Commercial Tobacco/Nicotine — High; Cannabis — High; Illegal Drugs — Severe
-    2. "Unpredictability/Contamination Risk" (orange bars): Alcohol — Low; Commercial Tobacco/Nicotine — Low; Cannabis — Moderate; Illegal Drugs — Severe
-    
-    Title: "Comparing Substance Risk Categories for a Developing Brain"
-    Legend: top-right, labeled "Developmental Brain Risk" and "Unpredictability/Contamination Risk"
-    
-    Interactive features: Hovering any bar reveals a tooltip with a one- to two-sentence, factual explanation of why that substance received that rating, referencing the brain-science content already covered in the chapter; clicking a substance category label filters the chart to show only that category's two bars enlarged with an expanded infobox.
-    
-    Annotation: A callout near the Illegal Drugs "Unpredictability" bar reads "Illegal drugs are unregulated — contents and strength, including possible fentanyl contamination, cannot be verified."
-    
-    Implementation: Chart.js horizontal bar chart with tooltip callbacks and a custom click-to-filter interaction; responsive canvas via Chart.js responsive:true option. No content in tooltips or annotations describes how to obtain, identify, or use any substance.
-    -->
+// Per-bar factual explanations (why this rating), grounded in the chapter's brain science.
+const brainWhy = {
+  'Alcohol': 'Alcohol interferes with the brain circuits that are still being wired during the teen years, affecting learning, memory, and self-control. Because a developing brain is more sensitive, this risk is rated High.',
+  'Commercial Tobacco / Nicotine': 'Nicotine changes how the developing brain builds its reward and attention pathways, and the teen brain forms addiction faster than an adult brain. That is why the developmental risk is rated High.',
+  'Cannabis': 'Regular cannabis use during the teen years can affect memory, attention, and motivation while the brain is still maturing. Because these systems are still developing, the risk is rated High.',
+  'Illegal Drugs': 'Illegal drugs can act powerfully on a still-developing brain, and their strength is often much higher than expected. Combined with unknown contents, this pushes the developmental risk to Severe.'
+};
+const contamWhy = {
+  'Alcohol': 'Legal alcohol is regulated, so its strength is printed and consistent. There is little uncertainty about what is inside, so contamination risk is rated Low.',
+  'Commercial Tobacco / Nicotine': 'Commercial tobacco and nicotine products are regulated and labeled, so their contents are known. That keeps the contamination risk Low.',
+  'Cannabis': 'Cannabis products vary a lot in strength, and some sources are unregulated, so what you get is less certain. This raises the contamination risk to Moderate.',
+  'Illegal Drugs': 'Illegal drugs are unregulated, so their contents and strength cannot be verified and may include dangerous substances such as fentanyl. This makes the contamination risk Severe.'
+};
+
+// Fuller infobox text shown when a substance is clicked/focused.
+const focusText = {
+  'Alcohol': '<strong>Alcohol</strong> &mdash; Developmental Brain Risk: <b>High</b>; Unpredictability / Contamination Risk: <b>Low</b>. ' +
+    'Alcohol strongly affects a developing brain’s memory and self-control, but because it is regulated, what is inside is known and consistent. ' +
+    '<span class="frame">The main concern here is the effect on a growing brain, not what the substance contains.</span>',
+  'Commercial Tobacco / Nicotine': '<strong>Commercial Tobacco / Nicotine</strong> &mdash; Developmental Brain Risk: <b>High</b>; Unpredictability / Contamination Risk: <b>Low</b>. ' +
+    'Nicotine reshapes the developing brain’s reward pathways and leads to addiction quickly, while regulation keeps the product’s contents known. ' +
+    '<span class="frame">A developing brain forms addiction faster than an adult brain.</span>',
+  'Cannabis': '<strong>Cannabis</strong> &mdash; Developmental Brain Risk: <b>High</b>; Unpredictability / Contamination Risk: <b>Moderate</b>. ' +
+    'Cannabis can affect memory, attention, and motivation in a maturing brain, and its strength and sourcing vary, adding some uncertainty about what is inside. ' +
+    '<span class="frame">Both the brain effect and the uncertainty matter for cannabis.</span>',
+  'Illegal Drugs': '<strong>Illegal Drugs</strong> &mdash; Developmental Brain Risk: <b>Severe</b>; Unpredictability / Contamination Risk: <b>Severe</b>. ' +
+    '<span class="warn">Illegal drugs are unregulated — contents and strength, including possible fentanyl contamination, cannot be verified.</span> ' +
+    'This unknown content, on top of powerful effects on a developing brain, makes both risks the highest on the scale.'
+};
+
+const box = document.getElementById('infobox');
+function showFocus(name){ box.innerHTML = focusText[name]; }
+function resetInfo(){
+  box.innerHTML = 'Two kinds of risk are shown for each substance. <strong>Developmental Brain Risk</strong> (blue) is how much a ' +
+    'substance can harm a brain that is still growing. <strong>Unpredictability / Contamination Risk</strong> (orange) ' +
+    'is how uncertain it is what a substance actually contains. <span class="frame">Hover a bar or click a substance name to learn more.</span>';
+}
+
+let focused = null; // currently focused category name, or null for all
+
+// Custom plugin: draw a callout arrow + label near the Illegal Drugs "Unpredictability" bar.
+const calloutPlugin = {
+  id: 'illegalDrugsCallout',
+  afterDatasetsDraw(chart){
+    if (focused !== null && focused !== 'Illegal Drugs') return;
+    const meta = chart.getDatasetMeta(1); // orange = Unpredictability
+    const idx = cats.indexOf('Illegal Drugs');
+    if (!meta || !meta.data[idx]) return;
+    const bar = meta.data[idx];
+    const ctx = chart.ctx;
+    const ca = chart.chartArea;
+    const lines = ['Illegal drugs are unregulated — contents', 'and strength, including possible fentanyl', 'contamination, cannot be verified.'];
+    ctx.save();
+    ctx.font = 'bold 10px Arial';
+    // Box positioned above the bar, anchored to the right side of the plot.
+    const pad = 6, lh = 12;
+    let boxW = 0;
+    lines.forEach(l => { boxW = Math.max(boxW, ctx.measureText(l).width); });
+    boxW += pad * 2;
+    const boxH = lines.length * lh + pad * 2;
+    let bx = Math.min(bar.x + 8, ca.right - boxW - 2);
+    if (bx < ca.left + 2) bx = ca.left + 2;
+    let by = bar.y - boxH - 14;
+    if (by < ca.top + 2) by = ca.top + 2;
+    // connector line from box to bar
+    ctx.strokeStyle = 'indianred';
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.moveTo(bx + boxW / 2, by + boxH);
+    ctx.lineTo(bar.x, bar.y);
+    ctx.stroke();
+    // arrowhead
+    ctx.fillStyle = 'indianred';
+    ctx.beginPath();
+    ctx.arc(bar.x, bar.y, 3, 0, Math.PI * 2);
+    ctx.fill();
+    // box
+    ctx.fillStyle = 'rgba(255,245,238,0.97)';
+    ctx.strokeStyle = 'indianred';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.rect(bx, by, boxW, boxH);
+    ctx.fill();
+    ctx.stroke();
+    // text
+    ctx.fillStyle = 'indianred';
+    ctx.textBaseline = 'top';
+    lines.forEach((l, i) => { ctx.fillText(l, bx + pad, by + pad + i * lh); });
+    ctx.restore();
+  }
+};
+
+const ctx = document.getElementById('chart').getContext('2d');
+const chart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: cats,
+    datasets: [
+      { label: 'Developmental Brain Risk', data: brainRisk.slice(),
+        backgroundColor: 'rgba(70,130,180,0.85)', borderColor: 'steelblue', borderWidth: 1 },
+      { label: 'Unpredictability / Contamination Risk', data: contamRisk.slice(),
+        backgroundColor: 'rgba(230,140,60,0.85)', borderColor: 'darkorange', borderWidth: 1 }
+    ]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true, maintainAspectRatio: false,
+    onClick: (e, els, ch) => {
+      // Click a bar or a y-axis label to focus that substance.
+      let name = null;
+      if (els.length) {
+        name = cats[els[0].index];
+      } else {
+        const yScale = ch.scales.y;
+        if (yScale && e.y >= yScale.top && e.y <= yScale.bottom && e.x < ch.chartArea.left) {
+          for (let i = 0; i < cats.length; i++) {
+            const px = yScale.getPixelForValue(i);
+            if (Math.abs(e.y - px) < (yScale.height / cats.length) / 2) { name = cats[i]; break; }
+          }
+        }
+      }
+      if (!name) return;
+      if (focused === name) { setFocus(null); } else { setFocus(name); }
+    },
+    onHover: (e, els, ch) => { ch.canvas.style.cursor = els.length ? 'pointer' : 'default'; },
+    scales: {
+      x: { beginAtZero: true, max: 4,
+        ticks: { stepSize: 1, callback: v => levelNames[v] || '', font: { size: 11 } },
+        title: { display: true, text: 'Relative Risk Rating', font: { size: 12 } },
+        grid: { color: '#e2e8f0' } },
+      y: { title: { display: false }, ticks: { font: { size: 11 } }, grid: { display: false } }
+    },
+    plugins: {
+      legend: { position: 'top', align: 'end', labels: { font: { size: 11 }, boxWidth: 14 } },
+      tooltip: {
+        callbacks: {
+          label: c => c.dataset.label + ': ' + (levelNames[c.parsed.x] || ''),
+          afterBody: items => {
+            const name = cats[items[0].dataIndex];
+            const which = items[0].datasetIndex === 0 ? brainWhy : contamWhy;
+            return '\n' + which[name];
+          }
+        },
+        bodyFont: { size: 11 }, boxPadding: 4, titleFont: { size: 12 }
+      }
+    }
+  },
+  plugins: [calloutPlugin]
+});
+
+function setFocus(name){
+  focused = name;
+  if (name === null){
+    chart.data.labels = cats;
+    chart.data.datasets[0].data = brainRisk.slice();
+    chart.data.datasets[1].data = contamRisk.slice();
+    chart.options.scales.y.ticks.font = { size: 11 };
+    resetInfo();
+  } else {
+    const i = cats.indexOf(name);
+    chart.data.labels = [name];
+    chart.data.datasets[0].data = [brainRisk[i]];
+    chart.data.datasets[1].data = [contamRisk[i]];
+    // Larger label when focused on a single, enlarged category.
+    chart.options.scales.y.ticks.font = { size: 14, weight: 'bold' };
+    showFocus(name);
+  }
+  chart.update();
+}
+</script>
 </body>
 </html>

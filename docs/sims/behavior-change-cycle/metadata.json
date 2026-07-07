@@ -19,5 +19,20 @@
   "chapter_number": 15,
   "chapter_title": "Health Promotion and Behavior Change",
   "chapter_dir": "15-health-promotion-and-behavior-change",
-  "chapter_rel_dir": "bands/grade-9-12/chapters/15-health-promotion-and-behavior-change"
+  "chapter_rel_dir": "bands/grade-9-12/chapters/15-health-promotion-and-behavior-change",
+  "educational": {
+    "gradeLevel": "Grades 9-12",
+    "subjectArea": "Health Education",
+    "topic": "Health Promotion and Behavior Change",
+    "learningObjectives": [
+      "Apply the four-step behavior-change cycle (evaluate"
+    ],
+    "bloomLevel": "Apply<br/>",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "use, demonstrate",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Apply-level objective through direct interaction rather than passive reading."
+  }
 }

@@ -3,130 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Substance-Free Coping Toolkit Builder</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Substance-Free Coping Toolkit Builder MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="substance-free-coping-toolkit-builder.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Substance-Free Coping Toolkit Builder</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> substance-free-coping-toolkit-builder</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students apply knowledge of evidence-based,</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    
-    **sim-id:** substance-free-coping-toolkit-builder<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy Level: Apply (L3)
-    Bloom Verb: apply, practice, demonstrate
-    
-    Learning objective: Students apply knowledge of evidence-based,
-    substance-free coping strategies by matching realistic high-school stress
-    scenarios to appropriate strategies and building a personal toolkit.
-    
-    Canvas layout:
-    - Left (55%): a deck of 8 realistic high-school stress scenarios (e.g.,
-      "You're overwhelmed before finals," "A friend group conflict is stressing
-      you out," "You feel pressure at a party to fit in," "You're anxious about
-      a college or job decision")
-    - Right (45%): five draggable strategy tiles (Physical Activity, Creative
-      Expression, Talking to Someone, Mindfulness/Breathing, Rest/Sleep) and a
-      feedback panel
-    
-    Interactive controls: Drag a strategy tile onto a scenario card; feedback
-    explains why that strategy could help, noting multiple strategies can be
-    valid; "Build My Toolkit" button lets the learner select their top 3
-    preferred strategies into a saved summary card; "Reset" button
-    
-    Default parameters: Scenario deck order randomized each session; no
-    strategy pre-assigned
-    
-    Instructional Rationale: Apply-level objectives require using knowledge in
-    new situations; a drag-and-match activity with open-ended validity mirrors
-    the real flexibility of coping strategy selection better than a
-    single-right-answer quiz, and the toolkit-building step gives students a
-    personally relevant takeaway.
-    
-    Implementation notes: p5.js drag-and-drop with rectangle collision
-    detection; scenario and strategy data stored as structured objects.
-    Responsive canvas that stacks scenario deck and strategy tiles vertically
-    on narrow screens.
-    -->
+    <main></main>
 </body>
 </html>

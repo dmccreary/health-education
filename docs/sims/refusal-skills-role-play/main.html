@@ -3,133 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Refusal Skills Role-Play Branching Scenario</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Refusal Skills Role-Play Branching Scenario MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="refusal-skills-role-play.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Refusal Skills Role-Play Branching Scenario</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> refusal-skills-role-play</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students apply refusal-skill scripts (direct no, broken record, suggest an alternative, blame a rule, walk away) by choosing responses in a branching dialogue scenario and observing realistic, respectful outcomes.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** refusal-skills-role-play<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: demonstrate, practice, use
-    
-    Learning objective: Students apply refusal-skill scripts (direct no, broken record, suggest an alternative, blame a rule, walk away) by choosing responses in a branching dialogue scenario and observing realistic, respectful outcomes.
-    
-    Canvas layout:
-    - Top (300px): A comic-style dialogue panel showing a peer character's speech bubble and a short scene description
-    - Bottom (250px): Four to five response buttons, each showing one refusal-skill script type by name and example phrase
-    
-    Visual elements:
-    - Two simple flat-illustration characters: "You" and "Friend," speech bubbles for dialogue
-    - A small progress tracker showing how many rounds of pressure have been navigated
-    - A calm color palette (no threatening imagery); the peer character is drawn as an ordinary classmate, not a menacing figure
-    
-    Interactive controls:
-    - Button per response option (e.g., "Direct No," "Broken Record," "Suggest Alternative," "Blame a Rule," "Walk Away")
-    - Button: "Start Over"
-    - Button: "Try a Different Scenario" (cycles between 3 preset scenarios: being pressured to skip wearing a helmet, being pressured to exclude a classmate from a game, being pressured to go somewhere without telling an adult)
-    
-    Default parameters:
-    - Scenario 1: "Come on, take off your helmet, it looks silly" loads first
-    - Every scenario is resolved within 2-3 rounds of dialogue
-    
-    Data Visibility Requirements:
-      Stage 1: Show the scene and the friend's pressuring line
-      Stage 2: Show the available refusal-script response options with their exact wording
-      Stage 3: After a choice, show the friend's realistic reply (sometimes pressure continues once, sometimes it stops) and whether the chosen script type worked in this round
-      Stage 4: If pressure continues, show a follow-up choice (repeat the script, escalate to "walk away," or "tell a trusted adult")
-      Final: Show a short recap of which refusal scripts were used and a confirming message that any of the scripts, used calmly and repeated if needed, is an effective and respectful choice
-    
-    Behavior:
-    - All response options are treated as valid strategies; the sim never penalizes a choice, but shows that persistence (repeating a script or walking away) is sometimes needed if the first attempt does not work
-    - Every scenario resolves safely within the branching paths — there is no "losing" ending, only different realistic paths to a safe resolution
-    - The "tell a trusted adult" option is always available as a branch and always leads to a supportive, resolved ending
-    
-    Instructional Rationale: This is an Apply-level objective requiring learners to practice using refusal scripts in a realistic, low-stakes context before needing them in real life. Branching dialogue with guaranteed safe resolutions lets students rehearse language and build confidence without anxiety about "failing" the scenario.
-    
-    Implementation notes: Use p5.js with a simple state-machine structure for dialogue branches. Store each scenario as a small tree of nodes (prompt, response options, follow-up nodes). Keep all peer characters, settings, and pressure scenarios ordinary and age-appropriate (helmets, group games, telling an adult where you're going) rather than involving strangers or graphic danger, which are covered elsewhere in this chapter.
-    -->
+    <main></main>
 </body>
 </html>

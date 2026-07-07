@@ -3,129 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Peer Pressure Situation Sorter</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Peer Pressure Situation Sorter MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="peer-pressure-situation-sorter.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Peer Pressure Situation Sorter</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> peer-pressure-situation-sorter</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students analyze short peer-pressure scenarios to distinguish low-risk social pressure from pressure toward an unsafe or unhealthy choice, preparing them to decide when a refusal skill is needed.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** peer-pressure-situation-sorter<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: examine, distinguish, differentiate
-    
-    Learning objective: Students analyze short peer-pressure scenarios to distinguish low-risk social pressure from pressure toward an unsafe or unhealthy choice, preparing them to decide when a refusal skill is needed.
-    
-    Canvas layout:
-    - Top (350px): A scenario card describing peer pressure in a short, realistic situation
-    - Bottom (200px): Two zones, "Low-Risk Choice" and "Needs a Refusal Skill," and a "Why?" button
-    
-    Visual elements:
-    - Neutral scenario icons (two speech bubbles representing friends talking)
-    - Calm colors: green for "Low-Risk Choice," amber for "Needs a Refusal Skill"
-    
-    Interactive controls:
-    - Drag-and-drop scenario card into a zone
-    - Button: "Why?" reveals explanation
-    - Button: "Next Scenario"
-    
-    Default parameters:
-    - 8 scenarios presented one at a time in random order, mixing low-risk (trying a new snack, joining a new game) and higher-risk (skipping a bike helmet, going somewhere without telling an adult, being pressured to exclude a classmate) examples
-    
-    Data Visibility Requirements:
-      Stage 1: Show the full scenario text
-      Stage 2: Show the two sorting zones
-      Stage 3: After sorting, show a short explanation and, for "Needs a Refusal Skill" scenarios, a reminder that the next section teaches exactly what to say
-      Final: Show how many scenarios were sorted, with an option to review any of them
-    
-    Behavior:
-    - Every sort is followed by an explanation regardless of correctness, framed as learning rather than scoring
-    - "Needs a Refusal Skill" scenarios link thematically forward to the Refusal Skill and Demonstrating Refusal Skills sections
-    
-    Instructional Rationale: This is an Analyze-level objective requiring learners to examine scenarios and distinguish types of peer pressure. Sorting with full explanations builds the judgment needed before practicing refusal scripts in the next sections.
-    
-    Implementation notes: Use p5.js. Keep all scenarios realistic and age-appropriate, focused on situations like activity choices, dares, and social exclusion rather than substance use, which is covered in a later band.
-    -->
+    <main></main>
 </body>
 </html>

@@ -1,123 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Community Values Around the World</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 540 -->
+<title>Community Values Around the World</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 20px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 14px; margin-bottom: 6px; }
+  #map { width: 100%; height: 300px; border: 1px solid silver; border-radius: 6px; background: #eaf2f8; }
+  /* Every marker uses the SAME neutral gold badge so no tradition is emphasized. */
+  .gold-icon { font-size: 18px; text-align: center; line-height: 30px; background: goldenrod; border: 2px solid white; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,0.4); cursor: pointer; }
+  .gold-icon:hover { background: darkorange; }
+  .region-label { color: #6b7f95; font-size: 12px; font-weight: bold; text-shadow: 0 0 3px white, 0 0 3px white; }
+  .infobox { margin-top: 8px; background: #fdf7e8; border-left: 5px solid goldenrod; border-radius: 4px; padding: 10px 12px; font-size: 15px; color: #3a3a3a; line-height: 1.5; min-height: 80px; }
+  .infobox strong { color: navy; }
+  .btnbar { text-align: center; margin-top: 8px; }
+  .btnbar button { font-size: 15px; font-family: inherit; background: goldenrod; color: white; border: none; border-radius: 6px; padding: 8px 16px; cursor: pointer; }
+  .btnbar button:hover { background: darkorange; }
+  .leaflet-container { font: inherit; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Community Values Around the World</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> community-values-safety-map</p>
-            <p><strong>Library:</strong> Leaflet</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students describe examples of community values and cultural traditions from different communities that encourage safe, caring choices.</p>
-        </div>
-    </div>
+<main>
+  <h3>Community Values Around the World</h3>
+  <div class="subtitle">Click a gold marker to learn how a community cares for one another.</div>
+  <div id="map"></div>
+  <div class="btnbar"><button id="mine">Show My Community</button></div>
+  <div class="infobox" id="infobox">Communities everywhere have <strong>traditions</strong> that help people stay safe and care for each other. Click each gold marker to hear its story. Every tradition here is special.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+function show(html){ box.innerHTML = html; }
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// Simple schematic world map (generic, not tied to exact borders).
+const map = L.map('map', { crs: L.CRS.Simple, minZoom: -1, maxZoom: 1, zoomControl: true, attributionControl: false });
+// Coordinate space: y = 0..100 (bottom..top), x = 0..200 (west..east)
+const bounds = [[0,0],[100,200]];
+map.fitBounds(bounds);
+map.setMaxBounds(bounds);
 
-    Type: map
-    **sim-id:** community-values-safety-map<br/>
-    **Library:** Leaflet<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: describe, exemplify, compare
-    
-    Learning objective: Students describe examples of community values and cultural traditions from different communities that encourage safe, caring choices.
-    
-    Geographic scope: World map with five marked regions
-    
-    Purpose: Show that many different communities and cultures have their own traditions and values that encourage safety and care for one another
-    
-    Locations and markers:
-    - West Africa: proverb-and-storytelling tradition marker about caring for community members
-    - East Asia: family-respect tradition marker about looking out for younger and older generations
-    - North American Indigenous nations (general region marker, respectfully labeled by nation where possible): community-circle tradition marker about shared responsibility
-    - Latin America: extended-family "compadrazgo" support-network marker
-    - General "your community" marker inviting students to think of a local value or tradition
-    
-    Legend: Icons for "storytelling tradition," "family tradition," and "community gathering"
-    
-    Interactive features:
-    - Click each marker to open an infobox with: the name of the tradition or value, a simple description, and one sentence on how it encourages safe or caring choices
-    - All markers presented with equally respectful, neutral description style -- no marker described as more "unusual" than another
-    - Button: "Show My Community" prompts students (via teacher discussion) to name a local value or tradition to add to the discussion
-    
-    Color scheme: Each marker uses the same neutral gold color (matching mascot palette) so no single tradition is visually emphasized over another
-    
-    Implementation: Leaflet map with custom marker icons and popups; simple world basemap with minimal extra detail so markers are the visual focus
-    -->
+// --- Soft "land" shapes so markers have a friendly backdrop (schematic, not real borders) ---
+const land = L.layerGroup().addTo(map);
+function shape(pts){ L.polygon(pts, { color:'#cbdcc4', weight:1, fillColor:'#d8ead0', fillOpacity:0.9 }).addTo(land); }
+// Americas
+shape([[40,20],[75,25],[80,45],[60,55],[45,50],[35,35]]);
+shape([[8,45],[38,42],[42,58],[25,72],[15,60]]);
+// Africa + Europe
+shape([[45,90],[72,88],[78,100],[70,120],[50,118],[42,105]]);
+// Asia
+shape([[55,120],[85,118],[92,140],[80,160],[60,150],[52,132]]);
+
+// Region name labels (small, quiet)
+function label(y,x,txt){
+  L.marker([y,x], { icon: L.divIcon({ className:'region-label', html:txt, iconSize:[110,16] }) }).addTo(land);
+}
+label(30,28,'Americas');
+label(30,150,'Asia');
+label(48,100,'Africa');
+
+function goldMarker(lat,lng,ch){ return L.marker([lat,lng], { icon: L.divIcon({ className:'gold-icon', html:ch, iconSize:[30,30] }) }); }
+
+// All markers share the SAME neutral gold badge so none is emphasized.
+// Symbols map to the legend: storytelling, family, community gathering.
+
+// West Africa -- proverb & storytelling tradition
+const westAfrica = goldMarker(50,92,'📖').addTo(map)
+  .on('click',()=>show('<strong>West Africa: Storytelling &amp; Proverbs.</strong> Elders share stories and wise sayings that teach kindness and good choices. These stories help everyone remember to care for the whole community.'))
+  .bindTooltip('West Africa: Storytelling');
+
+// East Asia -- family respect across generations
+const eastAsia = goldMarker(58,150,'👪').addTo(map)
+  .on('click',()=>show('<strong>East Asia: Respect for Family.</strong> Many families look out for both younger children and older grandparents. Caring for every generation helps keep each family member safe and loved.'))
+  .bindTooltip('East Asia: Family Respect');
+
+// North American Indigenous nations -- community circle / shared responsibility
+const indigenous = goldMarker(62,40,'⭕').addTo(map)
+  .on('click',()=>show('<strong>Indigenous Nations of North America: Community Circle.</strong> Many nations gather in a circle where everyone has a voice. Sharing responsibility helps the whole community make safe, caring choices together.'))
+  .bindTooltip('North America: Community Circle');
+
+// Latin America -- compadrazgo extended-family support network
+const latinAmerica = goldMarker(28,55,'👪').addTo(map)
+  .on('click',()=>show('<strong>Latin America: Compadrazgo.</strong> Families build a wide network of godparents and close relatives who help raise and protect children. This large support family means more caring adults looking out for each child.'))
+  .bindTooltip('Latin America: Compadrazgo');
+
+// Your community -- invites students to add a local value
+const yourCommunity = goldMarker(20,110,'🤝').addTo(map)
+  .on('click',()=>show('<strong>Your Community.</strong> Your family and neighbors have caring traditions too! Think of one thing your community does to help people feel safe and cared for, and share it with your class.'))
+  .bindTooltip('Your Community');
+
+// Group each tradition into its own layer so they can toggle independently.
+const gStory = L.layerGroup([westAfrica]);
+const gFamily = L.layerGroup([eastAsia, latinAmerica]);
+const gGather = L.layerGroup([indigenous, yourCommunity]);
+
+L.control.layers(null, {
+  '📖 Storytelling tradition': gStory,
+  '👪 Family tradition': gFamily,
+  '🤝 Community gathering': gGather
+}, { collapsed: false }).addTo(map);
+
+// "Show My Community" button -> prompt for class discussion
+document.getElementById('mine').addEventListener('click', ()=>{
+  show('<strong>Show My Community!</strong> With your class, name one value or tradition from <em>your</em> community that helps people stay safe or care for each other. Every community has one!');
+});
+</script>
 </body>
 </html>

@@ -1,144 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Holistic Wellness Framework Explorer</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 560 -->
+<title>Holistic Wellness Framework Explorer</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 420px; border: 1px solid silver; border-radius: 6px; background: #fbf7f0; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 8px; font-size: 11px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 5px; vertical-align: middle; border: 1px solid #555; }
+  .legend .dot { border-radius: 50%; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 72px; }
+  .infobox strong { color: navy; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Holistic Wellness Framework Explorer</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> holistic-wellness-framework-explorer</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students examine the four connected dimensions of a</p>
-        </div>
+<main>
+  <h3>Holistic Wellness Framework Explorer</h3>
+  <div class="subtitle">Hover any node for a quick idea. Click a dimension, a disruption, or a protective practice to learn more.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k" style="background:#c99a2e;"></span>Balance / Wellness<br>
+      <span class="k" style="background:#5b9bd5;"></span>Dimension<br>
+      <span class="k" style="background:#b08b6e;"></span>Disruption<br>
+      <span class="k dot" style="background:#66bb6a;"></span>Protective practice
     </div>
+  </div>
+  <div class="infobox" id="infobox">This wheel shows four connected dimensions of wellness &mdash; physical, mental, emotional, and spiritual &mdash; that surround a center of balance. Explore how substance use can disrupt more than one dimension, and how each can be restored. This is one widely taught holistic framework among many Indigenous nations, not a single view shared by all.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// Central node position and layout radii
+const CX = 0, CY = 0;
+const RD = 200;   // radius for the four dimension nodes
+const RO = 400;   // radius for the outer disruption + protective nodes
 
-    Type: graph-model
-    
-    **sim-id:** holistic-wellness-framework-explorer<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy Level: Analyze (L4)
-    Bloom Verb: examine, organize, distinguish
-    
-    Learning objective: Students examine the four connected dimensions of a
-    holistic Indigenous wellness framework (physical, mental, emotional,
-    spiritual), and distinguish how substance use disorder can reflect
-    disruption across more than one dimension rather than a single isolated
-    cause.
-    
-    Node types:
-    1. Central node (circle): "Balance / Wellness"
-    2. Four dimension nodes (colored quadrant shapes): "Physical," "Mental,"
-       "Emotional," "Spiritual"
-    3. Four disruption nodes (one per dimension, muted color): short example
-       of how substance use can disrupt that specific dimension
-    4. Four protective-practice nodes (one per dimension, green): a specific
-       protective practice connected to restoring that dimension (e.g.,
-       ceremony for Spiritual, counseling/talking circles for Emotional)
-    
-    Edge types:
-    - "Part Of" (dimension node to central node)
-    - "Can Be Disrupted By Substance Use" (dimension node to its disruption
-      node)
-    - "Restored Through" (dimension node to its protective-practice node)
-    
-    Layout: Medicine-wheel-inspired circular layout with the four dimensions
-    arranged evenly around the central "Balance/Wellness" node, disruption and
-    protective nodes branching outward from each dimension
-    
-    Interactive features:
-    - Hover any node: one-sentence description
-    - Click a dimension node: infobox explains that dimension's meaning within
-      a holistic wellness framework
-    - Click a disruption node: infobox gives a specific, respectful example
-      grounded in chapter text
-    - Click a protective-practice node: infobox names the practice and its
-      documented protective value
-    - Drag, zoom, and pan enabled
-    
-    Legend: color key distinguishing dimensions, disruption nodes, and
-    protective-practice nodes
-    
-    Implementation: vis-network circular/radial layout; all infobox text
-    reviewed for respectful, non-stereotyping language; content emphasizes
-    that this is one widely-taught holistic framework among Indigenous
-    nations, not a single monolithic Indigenous view.
-    -->
+// Four dimensions arranged like a medicine wheel (top, right, bottom, left).
+// Each has its own quadrant color, a disruption example, and a protective practice.
+const dims = [
+  {
+    id:'physical', label:'Physical', angle:-90, color:'#e6b800', border:'#a37f00',
+    hover:'The body: rest, movement, food, and physical health.',
+    detail:'The physical dimension is the health of the body — sleep, nourishment, movement, and freedom from harm. In a holistic view, caring for the body is part of caring for the whole person.',
+    disrupt:{ short:'Disrupted\nsleep &\nbody health', hover:'Substance use can wear down the body and disturb rest.',
+      detail:'Over time, substance use can interfere with sleep, appetite, and physical health, leaving the body run down. This shows how one dimension can be knocked out of balance.' },
+    protect:{ short:'Rest &\nland-based\nactivity', hover:'Movement and time outdoors help the body recover.',
+      detail:'Practices such as regular rest, healthy food, and land-based or outdoor activity help restore the body. Communities often pair physical care with cultural activity like hunting, gathering, or walking on the land.' }
+  },
+  {
+    id:'mental', label:'Mental', angle:0, color:'#5b9bd5', border:'#2e5f8a',
+    hover:'The mind: thinking, learning, focus, and making choices.',
+    detail:'The mental dimension is the health of the mind — clear thinking, focus, learning, and decision-making. A balanced mind helps a person weigh choices and set goals.',
+    disrupt:{ short:'Cloudy\nthinking &\nfocus', hover:'Substance use can make thinking and focus harder.',
+      detail:'Substance use can cloud judgment and make it harder to concentrate, learn, or plan ahead. A person may notice this dimension slipping even while others seem steady.' },
+    protect:{ short:'Learning &\ngoal-setting', hover:'Setting goals and learning skills strengthen the mind.',
+      detail:'Setting goals, building skills, and staying engaged in school or work help restore mental clarity. Mentorship from elders and teachers supports steady, focused thinking.' }
+  },
+  {
+    id:'emotional', label:'Emotional', angle:90, color:'#c0504d', border:'#8a3532',
+    hover:'The heart: feelings, relationships, and belonging.',
+    detail:'The emotional dimension is the health of the heart — feelings, relationships, and a sense of belonging. Naming and sharing emotions in trusted relationships supports wellness.',
+    disrupt:{ short:'Isolation &\nhard\nfeelings', hover:'Substance use can pull a person away from others.',
+      detail:'Substance use can deepen difficult feelings and pull a person away from family and friends, leading to isolation. Emotional pain and disconnection often feed one another.' },
+    protect:{ short:'Talking\ncircles &\ncounseling', hover:'Sharing feelings with trusted people brings healing.',
+      detail:'Talking circles, counseling, and time with trusted family and friends help restore emotional balance. Sharing feelings in a safe, respectful space is a documented source of support and healing.' }
+  },
+  {
+    id:'spiritual', label:'Spiritual', angle:180, color:'#8064a2', border:'#59456f',
+    hover:'The spirit: meaning, identity, culture, and connection.',
+    detail:'The spiritual dimension is a sense of meaning, identity, and connection — to culture, to community, and to something larger than oneself. It gives a person purpose and grounding.',
+    disrupt:{ short:'Lost\nmeaning &\nconnection', hover:'Substance use can weaken a sense of purpose and connection.',
+      detail:'Substance use can weaken a person’s sense of purpose and their connection to culture and community. A loss of grounding in this dimension can make recovery in the others harder.' },
+    protect:{ short:'Ceremony &\ncultural\nconnection', hover:'Ceremony and culture help restore meaning and belonging.',
+      detail:'Participating in ceremony, cultural teachings, and community life helps restore meaning and belonging. Reconnection to culture and identity is widely recognized as a protective source of strength.' }
+  }
+];
+
+const nodes = [];
+const edges = [];
+const info = {};   // id -> { title, text }
+const hover = {};  // id -> one-line string
+
+// Central node
+nodes.push({
+  id:'center', label:'Balance /\nWellness', x:CX, y:CY, fixed:true, shape:'ellipse',
+  color:{ background:'#c99a2e', border:'#8a6a12' }, font:{ color:'white', size:15, face:'Arial' },
+  borderWidth:3
+});
+info['center'] = { title:'Balance / Wellness', text:'At the center is overall balance — wellness of the whole person. The four dimensions around it are connected, so a change in one affects the others. Substance use disorder often reflects disruption across more than one dimension, not a single isolated cause.' };
+hover['center'] = 'Overall balance — the whole person, where all four dimensions meet.';
+
+const rad = a => a * Math.PI / 180;
+
+dims.forEach(d => {
+  const dx = CX + RD * Math.cos(rad(d.angle));
+  const dy = CY + RD * Math.sin(rad(d.angle));
+
+  // Dimension node
+  nodes.push({
+    id:d.id, label:d.label, x:dx, y:dy, fixed:true, shape:'box',
+    color:{ background:d.color, border:d.border }, font:{ color:'white', size:16, face:'Arial' },
+    borderWidth:2, margin:10
+  });
+  edges.push({ from:d.id, to:'center', label:'part of', font:{ size:10, color:'#666' }, color:{ color:'#b9a98a' }, width:2 });
+  info[d.id] = { title:d.label + ' Dimension', text:d.detail };
+  hover[d.id] = d.hover;
+
+  // Outer nodes sit further out along a small spread from the dimension angle
+  const disA = d.angle - 22;
+  const proA = d.angle + 22;
+  const disX = CX + RO * Math.cos(rad(disA));
+  const disY = CY + RO * Math.sin(rad(disA));
+  const proX = CX + RO * Math.cos(rad(proA));
+  const proY = CY + RO * Math.sin(rad(proA));
+
+  // Disruption node (muted brown, diamond)
+  const disId = d.id + '_dis';
+  nodes.push({
+    id:disId, label:d.disrupt.short, x:disX, y:disY, fixed:true, shape:'diamond', size:26,
+    color:{ background:'#b08b6e', border:'#7c5f47' }, font:{ size:11, color:'#2b1e12' }
+  });
+  edges.push({ from:d.id, to:disId, label:'disrupted by\nsubstance use', font:{ size:9, color:'#8a6a55', multi:true }, color:{ color:'#c9a98f' }, dashes:true, width:2, arrows:{ to:{ enabled:true, scaleFactor:0.5 } } });
+  info[disId] = { title:'Disruption: ' + d.label, text:d.disrupt.detail };
+  hover[disId] = d.disrupt.hover;
+
+  // Protective-practice node (green, dot)
+  const proId = d.id + '_pro';
+  nodes.push({
+    id:proId, label:d.protect.short, x:proX, y:proY, fixed:true, shape:'dot', size:22,
+    color:{ background:'#66bb6a', border:'#357a38' }, font:{ size:11, color:'#173d19' }
+  });
+  edges.push({ from:d.id, to:proId, label:'restored\nthrough', font:{ size:9, color:'#3f7a41', multi:true }, color:{ color:'#9fd4a1' }, width:2, arrows:{ to:{ enabled:true, scaleFactor:0.5 } } });
+  info[proId] = { title:'Protective Practice: ' + d.label, text:d.protect.detail };
+  hover[proId] = d.protect.hover;
+});
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  physics: false,
+  layout: { randomSeed: 7 },
+  interaction: { hover: true, dragView: true, zoomView: true, dragNodes: true, navigationButtons: true, tooltipDelay: 100000 },
+  edges: { smooth: { type: 'continuous' } },
+  nodes: { shadow: true }
+};
+const network = new vis.Network(container, data, options);
+network.fit({ animation: false });
+
+function panel(id){
+  const d = info[id];
+  if (d) box.innerHTML = '<strong>' + d.title + '</strong><br>' + d.text;
+}
+network.on('hoverNode', p => { const h = hover[p.node]; if (h) box.innerHTML = h; });
+network.on('click', p => { if (p.nodes.length) panel(p.nodes[0]); });
+</script>
 </body>
 </html>

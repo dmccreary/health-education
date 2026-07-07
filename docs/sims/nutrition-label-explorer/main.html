@@ -3,130 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Explore a Nutrition Label</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Explore a Nutrition Label MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="nutrition-label-explorer.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Explore a Nutrition Label</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> nutrition-label-explorer</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students practice reading a real-style nutrition label by clicking each section to reveal what it means, then apply that skill by comparing two sample labels.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** nutrition-label-explorer<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: use, demonstrate, practice
-    
-    Learning objective: Students practice reading a real-style nutrition label by clicking each section to reveal what it means, then apply that skill by comparing two sample labels.
-    
-    Canvas layout:
-    - Left side (350px): A large, simplified Nutrition Facts label graphic with clickable rows (serving size, carbohydrates, protein, fats)
-    - Right side (250px): An infobox panel and a "Compare Labels" toggle showing a second sample label (e.g., plain crackers vs. a granola bar)
-    
-    Visual elements:
-    - Clickable label rows highlighted with a soft outline
-    - Two sample food labels available for comparison mode
-    
-    Interactive controls:
-    - Click any row on the label to reveal its meaning in the infobox
-    - Toggle: "Compare with a Second Label"
-    - Dropdown: choose which second food to compare (granola bar, crackers, yogurt)
-    - Button: "Reset"
-    
-    Default parameters:
-    - Sample food: granola bar; no row selected at start
-    
-    Data Visibility Requirements:
-      Stage 1: Show the blank-highlighted label with all rows visible but unexplained
-      Stage 2: Clicking a row shows its grams/amount and a one-sentence plain-language meaning (e.g., "Protein: 4 grams — this food has some protein to help build and repair muscles.")
-      Stage 3: In compare mode, show both labels side by side with the same row highlighted on each, so students can directly compare grams of the same nutrient
-    
-    Behavior:
-    - Clicking a row updates the infobox instantly
-    - Compare mode re-renders both labels whenever a new food is chosen from the dropdown
-    - A short prompt asks, "Which food has more protein?" with an optional reveal button
-    
-    Instructional Rationale: This is an Apply-level objective (use, demonstrate, practice), so the design lets students actively interact with real label data and compare concrete values, rather than simply viewing a static picture of a label.
-    
-    Implementation notes: Use p5.js. Use realistic but simplified label formatting so it transfers to real packages students see at home. This MicroSim is the direct student practice activity for this K-3 chapter.
-    -->
+    <main></main>
 </body>
 </html>

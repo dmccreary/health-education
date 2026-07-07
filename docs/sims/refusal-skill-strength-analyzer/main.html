@@ -1,135 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Refusal Skill Strength Analyzer</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 560 -->
+<title>How Strong Is That Refusal?</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 4px 0 2px; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+
+  /* Drag-to-rank pre-step */
+  .rank-box { background: aliceblue; border: 1px solid silver; border-radius: 6px; padding: 8px; }
+  .rank-hint { font-size: 12px; color: dimgray; margin-bottom: 6px; text-align: center; }
+  .rank-ends { display: flex; justify-content: space-between; font-size: 11px; font-weight: bold; color: steelblue; padding: 0 2px 4px; }
+  ul.ranklist { list-style: none; }
+  ul.ranklist li {
+    background: white; border: 1px solid steelblue; border-left: 5px solid steelblue;
+    border-radius: 5px; padding: 7px 9px; margin: 5px 0; font-size: 13px; color: #223;
+    cursor: grab; display: flex; align-items: center; line-height: 1.3;
+  }
+  ul.ranklist li .grip { color: silver; margin-right: 8px; font-size: 15px; letter-spacing: -1px; }
+  ul.ranklist li.dragging { opacity: 0.4; }
+  ul.ranklist li.over { border-color: darkorange; border-left-color: darkorange; background: #fff7ee; }
+  .revealbtn {
+    display: block; margin: 8px auto 0; background: seagreen; color: white; border: none;
+    border-radius: 5px; padding: 8px 18px; font-size: 14px; font-weight: bold; cursor: pointer;
+  }
+  .revealbtn:hover { background: #2e8b57cc; }
+
+  .chart-box { background: aliceblue; border: 1px solid silver; border-radius: 6px; padding: 8px; }
+  .chart-container { position: relative; width: 100%; height: 300px; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 62px; }
+  .infobox strong { color: navy; }
+  .frame { font-style: italic; color: seagreen; }
+  .source { text-align: center; color: gray; font-size: 11px; margin-top: 6px; }
+  .hidden { display: none; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Refusal Skill Strength Analyzer</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> refusal-skill-strength-analyzer</p>
-            <p><strong>Library:</strong> Chart.js</p>
-            <p><strong>Bloom Level:</strong> Evaluate<br/></p>
-            <p><strong>Learning Objective:</strong> Evaluate and rank six sample refusal-line examples by</p>
-        </div>
-    </div>
+<main>
+  <h3>How Strong Is That Refusal?</h3>
+  <div class="subtitle">Drag the lines from weakest to strongest, then press Reveal scoring.</div>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+  <!-- STEP 1: drag-to-rank -->
+  <div class="rank-box" id="rankStep">
+    <div class="rank-hint">Order these six ways of saying no. Drag each card up or down.</div>
+    <div class="rank-ends"><span>&#8593; Weakest</span><span>Strongest &#8595;</span></div>
+    <ul class="ranklist" id="ranklist"></ul>
+    <button class="revealbtn" id="revealBtn">Reveal scoring</button>
+  </div>
 
-    Type: infographic
-    
-    **sim-id:** refusal-skill-strength-analyzer<br/>
-    **Library:** Chart.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Evaluate<br/>
-    Bloom Taxonomy Verb: rank, critique
-    
-    Learning objective: Evaluate and rank six sample refusal-line examples by
-    strength using the four criteria (directness, verbal/nonverbal consistency,
-    alternative/exit plan, resilience to repeated pressure), building on
-    refusal skills introduced in Chapters 3, 4, and 10.
-    
-    Purpose: Move learners from recalling refusal lines to ranking their
-    relative strength and justifying the ranking against explicit criteria.
-    
-    Chart type: Horizontal stacked bar chart, one bar per refusal-line example,
-    segments representing the four criteria scored 0-1.
-    
-    X-axis: Composite strength score (0-4)
-    Y-axis: Six example refusal lines (e.g., "Um, maybe, I guess so" vs. "No,
-    I'm not doing that — I'm heading to Jae's, come with me if you want")
-    
-    Data series: Four stacked segments per bar (Directness, Consistency,
-    Exit plan, Resilience), each pre-scored 0 or 1 based on the example text,
-    used as the "expert" answer key revealed after the learner submits their
-    own ranking.
-    
-    Interactive elements: Learner first drags the six examples into their own
-    ranked order (weakest to strongest); clicking "Reveal scoring" renders the
-    stacked bar chart and the learner compares their ranking to the computed
-    composite scores; hovering any bar segment shows the specific rationale for
-    that criterion's score.
-    
-    Title: "How Strong Is That Refusal?"
-    Legend: Four criteria colors, positioned top-right.
-    
-    Color scheme: Four distinct colors per criterion segment (e.g., blue =
-    directness, teal = consistency, gold = exit plan, orange = resilience).
-    
-    Implementation: Chart.js horizontal stacked bar chart with a custom
-    drag-to-rank pre-step built in HTML/JS before the chart renders.
-    -->
+  <!-- STEP 2: chart (hidden until reveal) -->
+  <div class="chart-box hidden" id="chartStep">
+    <div class="chart-container"><canvas id="chart"></canvas></div>
+  </div>
+
+  <div class="infobox" id="infobox">
+    A <em>strong refusal</em> is clear, matches your body language, offers a way out, and holds up if
+    someone keeps pushing. Rank the lines above, then reveal how experts score each one.
+    <span class="frame">There is no wrong feeling &mdash; you always get to say no.</span>
+  </div>
+  <div class="source">Educational scoring. Each criterion is scored 0 or 1 by an example answer key; composite strength = 0&ndash;4.</div>
+</main>
+<script>
+// ---- The six refusal-line examples with expert 0/1 scores on four criteria ----
+// Criteria: Directness, Consistency (words match body), Exit plan, Resilience (holds up to repeated pressure)
+const examples = [
+  { id: 'e1', text: '"Um... maybe... I guess so."',
+    D:0, C:0, X:0, R:0,
+    rationale: {
+      D: 'Not direct — "maybe" and "I guess" do not clearly say no.',
+      C: 'Words and tone are unsure, so the message is mixed.',
+      X: 'No other plan or way to leave the situation is offered.',
+      R: 'This gives in easily, so it will not hold up if someone keeps asking.'
+    } },
+  { id: 'e2', text: '"I don’t think I should."',
+    D:0, C:1, X:0, R:0,
+    rationale: {
+      D: 'Still soft — "I don’t think" leaves the door open instead of a clear no.',
+      C: 'The message is honest and steady, even if it is gentle.',
+      X: 'No alternative activity or exit is suggested.',
+      R: 'Easy to talk you out of, so it is not very sturdy under pressure.'
+    } },
+  { id: 'e3', text: '"No thanks, that’s not for me."',
+    D:1, C:1, X:0, R:0,
+    rationale: {
+      D: 'Clear and direct — it plainly says no.',
+      C: 'Calm and matter-of-fact; words and tone agree.',
+      X: 'It stops there, without offering something else to do.',
+      R: 'A repeat push might still work, since there is no follow-up plan.'
+    } },
+  { id: 'e4', text: '"No. Let’s go grab food instead."',
+    D:1, C:1, X:1, R:0,
+    rationale: {
+      D: 'Starts with a firm "No."',
+      C: 'Confident and consistent — no mixed signals.',
+      X: 'Offers a different plan, giving everyone an easy way to move on.',
+      R: 'Good, but it does not clearly hold the line if the person asks again.'
+    } },
+  { id: 'e5', text: '"No, I’m not doing that — I’m heading to Jae’s, come with me."',
+    D:1, C:1, X:1, R:1,
+    rationale: {
+      D: 'Very direct: "No, I’m not doing that."',
+      C: 'Sure of itself — the words and the plan match.',
+      X: 'Gives a clear exit ("heading to Jae’s") and an invite to leave together.',
+      R: 'Strong under pressure — you are already moving to a new plan.'
+    } },
+  { id: 'e6', text: '"Not for me. Text me later — I’m out."',
+    D:1, C:1, X:1, R:0,
+    rationale: {
+      D: 'Direct — "Not for me" clearly declines.',
+      C: 'Steady and calm; the message is consistent.',
+      X: 'Provides an exit by leaving the situation ("I’m out").',
+      R: 'Leaving helps, but it does not set up what to do if pressure continues.'
+    } }
+];
+
+const critKeys   = ['D','C','X','R'];
+const critNames  = { D:'Directness', C:'Consistency', X:'Exit plan', R:'Resilience' };
+const critColors = { D:'rgba(65,105,225,0.85)', C:'rgba(32,178,170,0.85)', X:'rgba(218,165,32,0.9)', R:'rgba(255,140,0,0.85)' };
+const critBorder = { D:'royalblue', C:'lightseagreen', X:'goldenrod', R:'darkorange' };
+
+function score(ex){ return ex.D + ex.C + ex.X + ex.R; }
+
+// ---- Infobox ----
+const box = document.getElementById('infobox');
+function showSegment(ex, key){
+  box.innerHTML = '<strong>' + critNames[key] + ' &mdash; ' + (ex[key] ? '1 point' : '0 points') +
+    '</strong> for ' + ex.text + '<br>' + ex.rationale[key];
+}
+function showBar(ex){
+  box.innerHTML = '<strong>' + ex.text + '</strong> &mdash; composite strength ' + score(ex) + ' of 4.' +
+    '<br>Hover a colored segment to see why each criterion earned its point. ' +
+    '<span class="frame">A higher score means a clearer, sturdier no.</span>';
+}
+
+// ---- STEP 1: build draggable list (start shuffled) ----
+const listEl = document.getElementById('ranklist');
+function shuffled(arr){ const a = arr.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+let order = shuffled(examples);
+
+function renderList(){
+  listEl.innerHTML = '';
+  order.forEach(ex => {
+    const li = document.createElement('li');
+    li.draggable = true;
+    li.dataset.id = ex.id;
+    li.innerHTML = '<span class="grip">&#8942;&#8942;</span>' + ex.text;
+    listEl.appendChild(li);
+  });
+}
+renderList();
+
+let dragEl = null;
+listEl.addEventListener('dragstart', e => { const li = e.target.closest('li'); if(!li) return; dragEl = li; li.classList.add('dragging'); });
+listEl.addEventListener('dragend',   e => { const li = e.target.closest('li'); if(li) li.classList.remove('dragging'); listEl.querySelectorAll('li').forEach(l=>l.classList.remove('over')); dragEl = null; syncOrder(); });
+listEl.addEventListener('dragover',  e => {
+  e.preventDefault();
+  const li = e.target.closest('li');
+  listEl.querySelectorAll('li').forEach(l=>l.classList.remove('over'));
+  if(!li || li === dragEl) return;
+  li.classList.add('over');
+  const r = li.getBoundingClientRect();
+  const before = (e.clientY - r.top) < r.height / 2;
+  if(before) listEl.insertBefore(dragEl, li);
+  else listEl.insertBefore(dragEl, li.nextSibling);
+});
+function syncOrder(){
+  const ids = [...listEl.querySelectorAll('li')].map(l => l.dataset.id);
+  order = ids.map(id => examples.find(ex => ex.id === id));
+}
+
+// ---- STEP 2: reveal the chart ----
+let chart = null;
+document.getElementById('revealBtn').addEventListener('click', () => {
+  syncOrder();
+  document.getElementById('rankStep').classList.add('hidden');
+  document.getElementById('chartStep').classList.remove('hidden');
+  // Chart shows the learner's ranked order, weakest at bottom -> strongest at top.
+  const ordered = order.slice();
+  const labels = ordered.map(ex => ex.text);
+  const datasets = critKeys.map(key => ({
+    label: critNames[key],
+    data: ordered.map(ex => ex[key]),
+    backgroundColor: critColors[key],
+    borderColor: critBorder[key],
+    borderWidth: 1
+  }));
+  const ctx = document.getElementById('chart').getContext('2d');
+  chart = new Chart(ctx, {
+    type: 'bar',
+    data: { labels, datasets },
+    options: {
+      indexAxis: 'y',
+      responsive: true, maintainAspectRatio: false,
+      onClick: (e, els) => { if(els.length) showBar(ordered[els[0].index]); },
+      onHover: (e, els) => {
+        if(els.length){ const el = els[0]; showSegment(ordered[el.index], critKeys[el.datasetIndex]); }
+      },
+      scales: {
+        x: { stacked: true, beginAtZero: true, max: 4, ticks: { stepSize: 1 },
+             title: { display: true, text: 'Composite strength score (0–4)' } },
+        y: { stacked: true, ticks: { font: { size: 10 } } }
+      },
+      plugins: {
+        legend: { position: 'top', align: 'end', labels: { font: { size: 11 }, boxWidth: 14 } },
+        tooltip: { callbacks: {
+          label: c => critNames[critKeys[c.datasetIndex]] + ': ' + (c.parsed.x ? '1 point' : '0 points'),
+          afterBody: items => { const ex = ordered[items[0].dataIndex]; const k = critKeys[items[0].datasetIndex]; return '\n' + ex.rationale[k]; }
+        }, bodyFont: { size: 11 }, boxPadding: 4 }
+      }
+    }
+  });
+  box.innerHTML = 'Scoring revealed. The longest bars are the strongest refusals. ' +
+    'Compare the order you chose to the scores. <span class="frame">Hover any colored block to see why it earned a point.</span>';
+});
+</script>
 </body>
 </html>

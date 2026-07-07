@@ -3,113 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Need It or Want It?</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Need It or Want It? MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="need-it-or-want-it.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Need It or Want It?</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> need-it-or-want-it</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Remember (L1)</p>
-            <p><strong>Learning Objective:</strong> Students identify personal health needs, wants, and desires by sorting illustrated items into "Need" and "Want" bins, supporting benchmark 0.7.8.1.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** need-it-or-want-it<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Remember (L1)
-    Bloom Taxonomy Verb: identify, recognize, name
-    
-    Learning objective: Students identify personal health needs, wants, and desires by sorting illustrated items into "Need" and "Want" bins, supporting benchmark 0.7.8.1.
-    
-    Canvas layout: Top area (250px) shows one illustrated item at a time (glass of water, favorite toy, bed/pillow for sleep, dessert, safety helmet, video game controller). Bottom area (200px): two bins, "I Need This" (blue, heart icon) and "I Want This" (yellow, star icon). Bottom strip (50px): score display and Reset button.
-    
-    Visual elements: 6 item cards cycling one at a time, split 3 needs and 3 wants; bins glow when a card is dragged over them.
-    
-    Interactive controls: Drag-and-drop the item into the matching bin; Reset button; "Next Item" button after each placement.
-    
-    Default parameters: First item is a glass of water (I Need This); items appear in a fixed, teacher-predictable order.
-    
-    Behavior: Correct placement glows blue or yellow with a chime and a one-line infobox, e.g., "Yes! Your body needs water every day." Incorrect placement slides back gently with an explanation. After all 6: "You know the difference between things your body needs and things you just want!"
-    
-    Instructional Rationale: A Remember-level (identify/name) objective, so a simple drag-to-bin sorting pattern with immediate infobox feedback matches the pre-reader audience without requiring independent reading.
-    
-    Implementation notes: p5.js. Each item is an object with an illustration reference, correct category, and explanation string. Text large (24px+) for read-aloud use.
-    -->
+    <main></main>
 </body>
 </html>

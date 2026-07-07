@@ -19,5 +19,20 @@
   "chapter_number": 6,
   "chapter_title": "Making Healthy Choices",
   "chapter_dir": "06-health-choices",
-  "chapter_rel_dir": "bands/kindergarten/chapters/06-health-choices"
+  "chapter_rel_dir": "bands/kindergarten/chapters/06-health-choices",
+  "educational": {
+    "gradeLevel": "Kindergarten",
+    "subjectArea": "Health Education",
+    "topic": "Making Healthy Choices",
+    "learningObjectives": [
+      "Students identify personal health needs, wants, and desires by sorting illustrated items into \"Need\" and \"Want\" bins, supporting benchmark 0.7.8.1."
+    ],
+    "bloomLevel": "Remember (L1)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "identify, recognize, name",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Remember-level objective through direct interaction rather than passive reading."
+  }
 }

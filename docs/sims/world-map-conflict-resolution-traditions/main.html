@@ -1,122 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>World Map of Conflict Resolution Traditions</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 520 -->
+<title>World Map of Conflict Resolution Traditions</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  #map { width: 100%; height: 330px; border: 1px solid silver; border-radius: 6px; background: #dce7ef; }
+  .emoji-icon { font-size: 22px; text-align: center; line-height: 26px; text-shadow: 0 0 3px white, 0 0 3px white; }
+  .infobox { margin-top: 8px; background: #f0f7f6; border-left: 4px solid teal; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 78px; }
+  .infobox strong { color: navy; }
+  .closing { margin-top: 6px; background: #fff8ec; border-left: 4px solid goldenrod; border-radius: 4px; padding: 8px 10px; font-size: 12.5px; color: #5b4a1f; line-height: 1.45; display: none; }
+  .leaflet-container { font: inherit; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>World Map of Conflict Resolution Traditions</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> world-map-conflict-resolution-traditions</p>
-            <p><strong>Library:</strong> Leaflet</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students describe and compare examples of how different cultures and communities approach resolving disagreements fairly, recognizing that there is more than one respectful way to manage conflict.</p>
-        </div>
-    </div>
+<main>
+  <h3>How Different Cultures Resolve Disagreements</h3>
+  <div class="subtitle">Click each teal marker on the map to learn one community's respectful way to work through conflict.</div>
+  <div id="map"></div>
+  <div class="infobox" id="infobox">People everywhere disagree sometimes. Around the world, communities have their own respectful ways to talk things through and reach a fair solution. <strong>Click any marker</strong> to explore one example.</div>
+  <div class="closing" id="closing">These are just a few examples. Every culture and even every family has its own ways of handling disagreements &mdash; and most share the same goal: finding a fair solution while respecting everyone involved.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+const closing = document.getElementById('closing');
+const clicked = new Set();
+function show(id, html){
+  box.innerHTML = html;
+  clicked.add(id);
+  if (clicked.size >= 2) closing.style.display = 'block';
+}
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+const map = L.map('map', { minZoom: 1, maxZoom: 6, worldCopyJump: true, attributionControl: false });
+map.setView([18, 15], 1);
 
-    Type: map
-    **sim-id:** world-map-conflict-resolution-traditions<br/>
-    **Library:** Leaflet<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: describe, compare, exemplify
-    
-    Learning objective: Students describe and compare examples of how different cultures and communities approach resolving disagreements fairly, recognizing that there is more than one respectful way to manage conflict.
-    
-    Purpose: Show that respectful conflict management takes different forms across cultures, reinforcing that no single approach is the "correct" one.
-    
-    Geographic scope: World map with five to six marked regions/communities
-    
-    Locations and examples (respectful, factual, non-stereotyping descriptions):
-    - Aotearoa/New Zealand (Māori): community meetings called "hui," where people gather to talk through disagreements together
-    - Rwanda: community "gacaca"-style gatherings that bring people together to discuss problems openly
-    - Northern Plains Indigenous communities (United States/Canada): talking circles, where each person speaks in turn and everyone else listens without interrupting
-    - Japan: an emphasis on quiet reflection and finding harmony before responding to a conflict
-    - United States (general classroom example): peer mediation programs, where a trained student helps two classmates talk through a disagreement
-    
-    Legend: A marker icon for each region with the name of the tradition
-    
-    Interactive features:
-    - Click any marker to open an infobox describing that tradition in two to three respectful sentences, written to inform rather than to generalize about all members of that culture
-    - A closing note visible after clicking any two markers: "These are just a few examples. Every culture and even every family has its own ways of handling disagreements — and most share the same goal: finding a fair solution while respecting everyone involved."
-    
-    Color scheme: Warm, neutral marker colors (soft teal) with no flags or stereotyped imagery
-    
-    Implementation: Leaflet map with custom markers and click-to-open infobox panels; content reviewed for respectful, non-stereotyping language before publication.
-    -->
+// Real, muted world tile layer (these are real, named places)
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  maxZoom: 8, subdomains: 'abcd'
+}).addTo(map);
+
+function tealPin(lat, lng, label){
+  return L.marker([lat, lng], { icon: L.divIcon({
+    className: 'emoji-icon',
+    html: '<span style="color:teal;">&#9679;</span>',
+    iconSize: [26, 26],
+    iconAnchor: [13, 13]
+  }) }).bindTooltip(label, { direction: 'top', offset: [0, -12] });
+}
+
+// --- Aotearoa / New Zealand (Māori): hui ---
+tealPin(-41, 174, 'Aotearoa / New Zealand: hui')
+  .on('click', () => show('nz', '<strong>Aotearoa / New Zealand &mdash; Hui.</strong> In Māori tradition, a <em>hui</em> is a gathering where people come together to talk through a disagreement as a group. Everyone has a chance to share their view so the community can reach an understanding together.'))
+  .addTo(map);
+
+// --- Rwanda: gacaca-style community gatherings ---
+tealPin(-2, 30, 'Rwanda: community gatherings')
+  .on('click', () => show('rw', '<strong>Rwanda &mdash; Community gatherings.</strong> In a <em>gacaca</em>-style meeting, neighbors gather outdoors to discuss a problem openly and honestly. Talking in the open helps people understand what happened and work toward repairing the harm.'))
+  .addTo(map);
+
+// --- Northern Plains Indigenous communities (US/Canada): talking circles ---
+tealPin(48, -100, 'Northern Plains: talking circles')
+  .on('click', () => show('plains', '<strong>Northern Plains Indigenous communities &mdash; Talking circles.</strong> In a talking circle, each person speaks in turn while everyone else listens without interrupting. Taking turns makes sure every voice is heard and respected before a decision is made.'))
+  .addTo(map);
+
+// --- Japan: quiet reflection and harmony ---
+tealPin(37, 138, 'Japan: reflection and harmony')
+  .on('click', () => show('jp', '<strong>Japan &mdash; Reflection and harmony.</strong> Many people value taking a quiet moment to think carefully before responding to a conflict. Pausing to reflect helps keep peace, or <em>harmony</em>, between the people involved.'))
+  .addTo(map);
+
+// --- United States: peer mediation in schools ---
+tealPin(39, -95, 'United States: peer mediation')
+  .on('click', () => show('us', '<strong>United States &mdash; Peer mediation.</strong> In many schools, a trained student called a peer mediator helps two classmates talk through a disagreement calmly. The mediator does not pick sides &mdash; they help both people be heard and find a fair solution together.'))
+  .addTo(map);
+</script>
 </body>
 </html>

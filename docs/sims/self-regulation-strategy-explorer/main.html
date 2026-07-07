@@ -3,130 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Self-Regulation Strategy Explorer</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Self-Regulation Strategy Explorer MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="self-regulation-strategy-explorer.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Self-Regulation Strategy Explorer</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> self-regulation-strategy-explorer</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students apply self-regulation strategies by matching a short scenario showing a strong feeling to an appropriate calming strategy, then see the likely outcome of that choice.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** self-regulation-strategy-explorer<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: use, demonstrate, practice
-    
-    Learning objective: Students apply self-regulation strategies by matching a short scenario showing a strong feeling to an appropriate calming strategy, then see the likely outcome of that choice.
-    
-    Canvas layout:
-    - Left side (350px): A scenario card showing a short, realistic situation (e.g., "You got a lower grade than you hoped on a spelling test")
-    - Right side (250px): Four strategy buttons (Deep Breaths, Count to Ten, Take a Break, Talk It Out) plus a feedback panel
-    
-    Visual elements:
-    - A simple thermometer-style "feeling intensity" bar that starts high (red zone) for each scenario
-    - Icons for each strategy (lungs for breathing, numbers for counting, a footprint for a break, a speech bubble for talking)
-    
-    Interactive controls:
-    - Button: choose one of four strategies
-    - Button: "Next Scenario"
-    - Button: "Reset"
-    
-    Default parameters:
-    - Scenario 1 loads with the feeling-intensity bar at "high"
-    
-    Data Visibility Requirements:
-      Stage 1: Show the scenario text and the starting feeling-intensity level
-      Stage 2: Show the four strategy choices
-      Stage 3: After a choice, show the feeling-intensity bar move down (any reasonable strategy lowers it) and a short explanation of why that strategy helps
-      Final: Show a summary of which strategies were tried across all scenarios
-    
-    Behavior:
-    - Any of the four strategies is treated as a valid, healthy choice and lowers the intensity bar somewhat, reinforcing that there is more than one right way to self-regulate
-    - A fifth hidden "unhealthy" option is not offered as a button; the sim focuses only on reinforcing healthy strategies rather than modeling unhealthy ones
-    - After choosing, a short affirming message explains the strategy (e.g., "Deep breaths slow your heart rate and give your brain a moment to think clearly")
-    
-    Instructional Rationale: This is an Apply-level objective, so the design uses guided scenario practice with immediate feedback. Because self-regulation strategies are personal and many are equally valid, the simulation avoids ranking strategies against each other and instead reinforces that trying any healthy strategy is a good choice.
-    
-    Implementation notes: Use p5.js. Store scenarios and strategy-specific feedback text as arrays of objects. Keep all scenarios about ordinary school and home situations (grades, waiting in line, a change of plans) rather than anything involving danger or harm.
-    -->
+    <main></main>
 </body>
 </html>

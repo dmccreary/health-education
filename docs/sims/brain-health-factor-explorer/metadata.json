@@ -19,5 +19,20 @@
   "chapter_number": 7,
   "chapter_title": "Brain Health, Sleep, and Emergency Care",
   "chapter_dir": "07-brain-health-sleep-and-emergency-care",
-  "chapter_rel_dir": "bands/grade-9-12/chapters/07-brain-health-sleep-and-emergency-care"
+  "chapter_rel_dir": "bands/grade-9-12/chapters/07-brain-health-sleep-and-emergency-care",
+  "educational": {
+    "gradeLevel": "Grades 9-12",
+    "subjectArea": "Health Education",
+    "topic": "Brain Health, Sleep, and Emergency Care",
+    "learningObjectives": [
+      "Students explain how five modifiable factors (physical"
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "explain, classify, exemplify",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
 }

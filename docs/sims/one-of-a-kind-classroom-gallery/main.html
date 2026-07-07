@@ -3,123 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>One-of-a-Kind Classroom Gallery</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>One-of-a-Kind Classroom Gallery MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="one-of-a-kind-classroom-gallery.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>One-of-a-Kind Classroom Gallery</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> one-of-a-kind-classroom-gallery</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students describe several different kinds of uniqueness among classmates and explain how valuing each one strengthens caring relationships and belonging.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: infographic
-    **sim-id:** one-of-a-kind-classroom-gallery<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: describe, exemplify, compare
-    
-    Learning objective: Students describe several different kinds of uniqueness among classmates and explain how valuing each one strengthens caring relationships and belonging.
-    
-    Purpose: Show a warm, respectful gallery of eight diverse classroom characters, each with a unique trait, ability, family type, or interest, helping students see the many valid ways people can be different
-    
-    Layout: A friendly grid of eight illustrated classroom characters arranged around a shared center label reading "Our Class Is Full of One-of-a-Kind People"
-    
-    Characters to show (each with one notable, respectfully depicted trait):
-    - A student who uses a wheelchair and loves basketball
-    - A student who speaks two languages at home
-    - A student raised by grandparents
-    - A student who wears hearing aids and loves music
-    - A student with curly red hair who loves painting
-    - A student from a blended family who loves cooking with both households
-    - A student who is quiet and loves reading alone at recess
-    - A student who uses glasses and loves stargazing
-    
-    Interactive elements:
-    - Hover or click each character to reveal a short, warm caption naming their unique trait and one thing they love
-    - A second click reveals: "What makes [name] a great friend to have?" with one caring-relationship example
-    - No character is marked as more or less "normal" than another; captions use equally warm, matter-of-fact language for each
-    
-    Visual style: Bright, friendly flat-style illustrations; diverse skin tones, abilities, family structures, and interests shown matter-of-factly, without singling any character out as different in a negative sense
-    Color scheme: Each character highlighted in its own soft accent color when selected; shared warm neutral background
-    
-    Implementation: p5.js with click regions mapped to two-stage caption reveals; alternatively HTML/CSS grid with JavaScript hover/click handlers
-    -->
+    <main></main>
 </body>
 </html>

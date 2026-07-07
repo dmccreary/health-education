@@ -1,134 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Decision-Making to Goal-Setting Bridge</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 540 -->
+<title>Decision-Making to Goal-Setting Bridge</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 400px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 8px; font-size: 11px; line-height: 1.6; }
+  .legend .k { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 5px; vertical-align: middle; border: 1px solid #555; }
+  .legend .line { display: inline-block; width: 14px; height: 0; margin-right: 5px; vertical-align: middle; border-top: 2px dashed #555; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 70px; }
+  .infobox strong { color: navy; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Decision-Making to Goal-Setting Bridge</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> decision-to-goal-bridge</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Understand<br/></p>
-            <p><strong>Learning Objective:</strong> Explain how each step of the DECIDE decision-making</p>
-        </div>
+<main>
+  <h3>From Deciding to Goal-Setting: The Same Skill Over Time</h3>
+  <div class="subtitle">Hover any step for what it means. Click a vertical link to see how the two steps match up.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k" style="background:steelblue;"></span>Decision-making step<br>
+      <span class="k" style="background:#a9cce8;"></span>Goal-setting step<br>
+      <span class="line"></span>Maps to: same underlying skill,<br>
+      <span style="display:inline-block;width:19px;"></span>applied over time
     </div>
+  </div>
+  <div class="infobox" id="infobox">The DECIDE steps you use to make one good choice are the same steps you use to set and reach a health goal &mdash; just repeated over time. Click any vertical link to compare a matching pair.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// Six DECIDE colors (top row) and one-tone-lighter matches (bottom row)
+const pairs = [
+  {
+    key:'define',
+    top:{ label:'Define\nthe Problem', bg:'#c0392b', border:'#7d2116',
+          hover:'DECIDE step D: name clearly what decision you actually need to make.' },
+    bottom:{ label:'Evaluate\nFocus Area', bg:'#e6a29a', border:'#c0392b',
+          hover:'Goal step: decide which part of your health truly deserves a goal right now.' },
+    mapping:'Just as you first Define a decision, you first Evaluate which health focus area actually deserves a goal.'
+  },
+  {
+    key:'explore',
+    top:{ label:'Explore\nOptions', bg:'#d35400', border:'#8a3600',
+          hover:'DECIDE step E: gather the different choices you could make.' },
+    bottom:{ label:'Explore\nProcess Type', bg:'#e8b58f', border:'#d35400',
+          hover:'Goal step: look at the different kinds of goals and approaches you could take.' },
+    mapping:'Just as you Explore your options before deciding, you Explore what type of goal and plan could work.'
+  },
+  {
+    key:'consider',
+    top:{ label:'Consider\nConsequences', bg:'#c9a227', border:'#8a6d10',
+          hover:'DECIDE step C: think through what could happen with each option.' },
+    bottom:{ label:'Formulate\nStrategies', bg:'#e3d190', border:'#c9a227',
+          hover:'Goal step: build possible strategies and weigh where each one would lead.' },
+    mapping:'Just as you Consider the consequences of each option, you Formulate strategies and picture the outcome each one would bring.'
+  },
+  {
+    key:'identify',
+    top:{ label:'Identify\nYour Values', bg:'#27ae60', border:'#186a38',
+          hover:'DECIDE step I: check which option best fits what matters to you.' },
+    bottom:{ label:'Choose\nStrategy', bg:'#96d9b3', border:'#27ae60',
+          hover:'Goal step: pick the strategy that best fits your values and situation.' },
+    mapping:'Just as you Identify your values to guide a choice, you Choose the strategy that best fits what matters to you.'
+  },
+  {
+    key:'decide',
+    top:{ label:'Decide\n& Act', bg:'#2e86c1', border:'#1a5276',
+          hover:'DECIDE step D: commit to the best option and follow through.' },
+    bottom:{ label:'Act on\nPlan', bg:'#a9cce8', border:'#2e86c1',
+          hover:'Goal step: put your chosen plan into action, step by step.' },
+    mapping:'Just as you Decide and act on your choice, you Act on your plan by taking the real steps toward the goal.'
+  },
+  {
+    key:'evaluate',
+    top:{ label:'Evaluate\nResults', bg:'#8e44ad', border:'#5b2c6f',
+          hover:'DECIDE step E: look back and judge how well the choice worked.' },
+    bottom:{ label:'Evaluate\nOutcomes', bg:'#c9a4dd', border:'#8e44ad',
+          hover:'Goal step: review your progress and adjust the goal for next time.' },
+    mapping:'Just as you Evaluate the results of a decision, you Evaluate your outcomes and adjust the goal &mdash; then the cycle begins again.'
+  }
+];
 
-    Type: graph-model
-    
-    **sim-id:** decision-to-goal-bridge<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand<br/>
-    Bloom Taxonomy Verb: compare, exemplify
-    
-    Learning objective: Explain how each step of the DECIDE decision-making
-    model maps onto an equivalent step of the goal-setting process, showing
-    goal-setting as decision-making applied repeatedly over time.
-    
-    Node types: Two parallel chains of six nodes each — top chain "Decision-
-    Making Steps" (Define, Explore, Consider, Identify, Decide, Evaluate);
-    bottom chain "Goal-Setting Steps" (Evaluate Focus Area, Explore Process
-    Type, Formulate Strategies, Choose Strategy, Act on Plan, Evaluate
-    Outcomes).
-    
-    Edge types: A horizontal "maps to" edge connecting each top node to its
-    corresponding bottom node (e.g., "Define" maps to "Evaluate Focus Area";
-    "Explore" maps to "Explore Process Type"; "Consider" and "Identify" map to
-    "Formulate Strategies" and "Choose Strategy"; "Decide" maps to "Act on
-    Plan"; "Evaluate" maps to "Evaluate Outcomes").
-    
-    Sample data: Clicking any "maps to" edge opens an infobox explaining the
-    parallel in one sentence, e.g., "Just as you first Define a decision, you
-    first must Evaluate which health focus area actually deserves a goal."
-    
-    Layout: Two horizontal rows, decision-making on top, goal-setting on
-    bottom, aligned in columns.
-    
-    Interactive features: Hover a node for its definition; click a connecting
-    edge for the mapping explanation; zoom and pan enabled.
-    
-    Visual styling: Top row in the six DECIDE colors from the earlier diagram;
-    bottom row in matching shades one tone lighter, visually pairing each step.
-    
-    Legend: "Decision-making step" vs. "Goal-setting step," with the mapping
-    edges explained as "same underlying skill, applied over time."
-    
-    Implementation: vis-network with a fixed two-row hierarchical layout.
-    -->
+const nodes = [], edges = [];
+const info = {};        // click info keyed by node/edge id
+const hoverText = {};   // hover text keyed by node id
+
+const colW = 200;       // horizontal spacing between columns
+const x0 = 0;
+const yTop = -70;
+const yBot = 70;
+
+pairs.forEach((p, i) => {
+  const x = x0 + i * colW;
+  const topId = 't_' + p.key;
+  const botId = 'b_' + p.key;
+
+  nodes.push({
+    id: topId, label: p.top.label, x: x, y: yTop, fixed: true,
+    shape: 'box', widthConstraint:{ minimum:120, maximum:120 },
+    color:{ background:p.top.bg, border:p.top.border },
+    font:{ color:'white', size:14, face:'Arial', bold:true }, borderWidth:2, margin:8
+  });
+  nodes.push({
+    id: botId, label: p.bottom.label, x: x, y: yBot, fixed: true,
+    shape: 'box', widthConstraint:{ minimum:120, maximum:120 },
+    color:{ background:p.bottom.bg, border:p.bottom.border },
+    font:{ color:'#222', size:14, face:'Arial' }, borderWidth:2, margin:8
+  });
+
+  const edgeId = 'e_' + p.key;
+  edges.push({
+    id: edgeId, from: topId, to: botId,
+    label: 'maps to', font:{ size:10, color:'#555', strokeWidth:3, strokeColor:'#fff' },
+    color:{ color:'#94a3b8', highlight:'#f39c12' }, width:2, dashes:true,
+    smooth:false, arrows:{ to:{ enabled:true, scaleFactor:0.5 } }
+  });
+
+  hoverText[topId] = p.top.hover;
+  hoverText[botId] = p.bottom.hover;
+  info[topId] = { title: p.top.label.replace('\n',' '), text: p.top.hover };
+  info[botId] = { title: p.bottom.label.replace('\n',' '), text: p.bottom.hover };
+  info[edgeId] = {
+    title: p.top.label.replace('\n',' ') + '  &rarr;  ' + p.bottom.label.replace('\n',' '),
+    text: p.mapping
+  };
+});
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  physics: false,
+  interaction: { hover: true, dragView: true, zoomView: false, navigationButtons: true, tooltipDelay: 100000, selectConnectedEdges: false },
+  nodes: { shadow: true },
+  edges: { selectionWidth: 2 }
+};
+const network = new vis.Network(container, data, options);
+network.once('afterDrawing', () => network.fit({ animation: false }));
+
+function panel(id){
+  const d = info[id];
+  if (d) box.innerHTML = '<strong>' + d.title + '</strong><br>' + d.text;
+}
+network.on('hoverNode', p => { const h = hoverText[p.node]; if (h) box.innerHTML = h; });
+network.on('click', p => {
+  if (p.nodes.length) { panel(p.nodes[0]); }
+  else if (p.edges.length) { panel(p.edges[0]); }
+});
+</script>
 </body>
 </html>

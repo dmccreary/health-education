@@ -19,5 +19,20 @@
   "chapter_number": 5,
   "chapter_title": "Personal Health And Wellness",
   "chapter_dir": "05-personal-health-and-wellness",
-  "chapter_rel_dir": "bands/grade-5/chapters/05-personal-health-and-wellness"
+  "chapter_rel_dir": "bands/grade-5/chapters/05-personal-health-and-wellness",
+  "educational": {
+    "gradeLevel": "Grade 5",
+    "subjectArea": "Health Education",
+    "topic": "Personal Health And Wellness",
+    "learningObjectives": [
+      "Students apply the correct sequence of actions for responding to a mild versus a severe allergic reaction."
+    ],
+    "bloomLevel": "Apply (L3)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "demonstrate, use, practice",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Apply-level objective through direct interaction rather than passive reading."
+  }
 }

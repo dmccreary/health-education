@@ -3,109 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Power Dynamics Spotter</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Power Dynamics Spotter MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="power-dynamics-spotter.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Power Dynamics Spotter</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> power-dynamics-spotter</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students examine short relationship scenarios to identify the source of a power imbalance and distinguish a fair use of influence from an exploitative one.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** power-dynamics-spotter<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: examine, differentiate, distinguish
-    
-    Learning objective: Students examine short relationship scenarios to identify the source of a power imbalance and distinguish a fair use of influence from an exploitative one.
-    
-    Layout: A deck of 8 scenario cards (e.g., "An 8th grader tells a 6th grader to give up their seat at lunch or face social exclusion," "A team captain reminds a new player of practice times," "A popular student threatens to spread rumors unless a classmate does what they ask," "An older cousin helps a younger one with homework and sets a bedtime during a sleepover") with a two-part response panel: (1) select the source of power at play (age, popularity, size, access to information, emotional leverage, or none), and (2) judge whether the influence shown is fair guidance or exploitative pressure.
-    
-    Interactive controls: Click to select the power source, then click to judge fair vs. exploitative; feedback explains both choices in one or two sentences; "Next Scenario" button; running tally of scenarios completed.
-    
-    Default parameters: Deck order randomized each session; feedback panel starts empty until both parts are answered.
-    
-    Instructional Rationale: Identifying the source of a power imbalance and distinguishing fair guidance from exploitation requires examining relationships between scenario details, which is Analyze-level; a two-part card format is used instead of a single label because power dynamics and their fairness are separate judgments students must learn to make independently.
-    
-    Implementation notes: p5.js. Scenario data stored as an array of objects with text, power source, and fairness judgment fields. Responsive canvas that reflows cards on window resize. No scenario content depicts physical violence.
-    -->
+    <main></main>
 </body>
 </html>

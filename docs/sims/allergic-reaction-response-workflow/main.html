@@ -1,118 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Allergic Reaction Response Workflow</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 986 -->
+<title>Allergic Reaction Response</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis', subGraphTitleMargin: { top: 10, bottom: 14 } } });
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+  main { display: flex; height: 100%; }
+  .diagram { flex: 2; background: aliceblue; display: flex; justify-content: center; align-items: center; overflow: hidden; padding: 8px; }
+  .diagram .mermaid { width: 100%; text-align: center; }
+  .diagram svg { max-width: 100%; height: auto; }
+  .info { flex: 1; background: #f8fafc; border-left: 1px solid #e2e8f0; padding: 10px; overflow: hidden; }
+  .info h3 { font-size: 14px; color: #1a3a6c; margin-bottom: 8px; }
+  #panel { font-size: 13px; color: #334155; line-height: 1.4; }
+  .node { cursor: pointer; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Allergic Reaction Response Workflow</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> allergic-reaction-response-workflow</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students apply the correct sequence of actions for responding to a mild versus a severe allergic reaction.</p>
-        </div>
-    </div>
+<main>
+  <div class="diagram"><div class="mermaid">
+flowchart TD
+    Start("You notice a possible<br/>allergic reaction"):::startNode
+    Decision{"Emergency signs?<br/>swelling, trouble<br/>breathing, fainting"}:::decisionNode
+    Call911["Call 911 or get an adult<br/>to call immediately"]:::emergNode
+    Epi["Use epinephrine auto-injector<br/>if prescribed and an<br/>adult is trained"]:::emergNode
+    TellAdult["Tell a trusted adult<br/>right away"]:::mildNode
+    Avoid["Avoid further contact<br/>and watch closely"]:::mildNode
+    StayWith("Stay with the person;<br/>do not leave them alone"):::endNode
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    Start --> Decision
+    Decision -->|Yes| Call911 --> Epi --> Avoid
+    Decision -->|No, mild| TellAdult --> Avoid
+    Avoid --> StayWith
 
-    Type: workflow
-    **sim-id:** allergic-reaction-response-workflow<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: demonstrate, use, practice
-    
-    Learning objective: Students apply the correct sequence of actions for responding to a mild versus a severe allergic reaction.
-    
-    Purpose: Show a clear, branching decision path for responding to an allergic reaction based on severity, every node clickable for an explanation.
-    
-    Visual style: Flowchart with a decision diamond and process rectangles.
-    
-    Steps:
-    1. Start: "You notice a possible allergic reaction" — Click: "Signs can include hives, swelling, coughing, or stomach upset."
-    2. Decision: "Are there emergency signs (face/throat swelling, trouble breathing, dizziness/fainting)?" — Click: "Emergency signs mean this could be anaphylaxis, a life-threatening reaction."
-    3a. Process (if yes): "Call 911 or get an adult to call immediately" — Click: "Never wait to see if severe symptoms improve on their own."
-    3b. Process (if yes): "Use epinephrine auto-injector if prescribed and an adult is trained" — Click: "Only a person trained on that student's emergency plan should give this."
-    4. Process (if no, mild): "Tell a trusted adult right away" — Click: "Even mild signs should be reported immediately, since they can escalate."
-    5. Process: "Avoid further contact with the allergen and watch closely" — Click: "Move away from the food or substance and keep observing."
-    6. End: "Stay with the person and do not leave them alone" — Click: "Staying nearby means help arrives faster if things change."
-    
-    Color coding: Red for emergency-path steps, yellow for the decision diamond, blue for mild-path steps, gray for the ending step.
-    
-    Implementation: Mermaid flowchart with a `click` directive on every node opening an infobox with that node's explanation text. Tone stays calm and clear, avoiding alarmism while conveying urgency for emergency signs.
-    -->
+    classDef startNode fill:#5b9bd5,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef processNode fill:#7e57c2,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#ffd54f,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef emergNode fill:#e57373,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef mildNode fill:#64b5f6,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef goodNode fill:#66bb6a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef endNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    linkStyle default stroke:#999,stroke-width:2px,font-size:14px
+  </div></div>
+  <div class="info"><h3>Allergic Reaction Response</h3><div id="panel">Hover or tap any step for details.</div></div>
+</main>
+<script>
+const nodeInfo = {
+  "Start": "Signs can include hives, swelling, coughing, or stomach upset.",
+  "Decision": "Emergency signs mean this could be anaphylaxis, a life-threatening reaction.",
+  "Call911": "Never wait to see if severe symptoms improve on their own.",
+  "Epi": "Only a person trained on that student's emergency plan should give this.",
+  "TellAdult": "Even mild signs should be reported immediately, since they can escalate.",
+  "Avoid": "Move away from the food or substance and keep observing.",
+  "StayWith": "Staying nearby means help arrives faster if things change."
+};
+const panel = document.getElementById('panel');
+function setup() {
+  document.querySelectorAll('.node').forEach(n => {
+    const id = n.id.replace('flowchart-', '').split('-')[0];
+    if (nodeInfo[id]) {
+      n.addEventListener('mouseenter', () => { panel.textContent = nodeInfo[id]; });
+      n.addEventListener('click', () => { panel.textContent = nodeInfo[id]; });
+    }
+  });
+}
+function wait() {
+  const m = document.querySelector('.mermaid');
+  if (m && m.querySelector('svg') && document.querySelectorAll('.node').length) setup();
+  else setTimeout(wait, 100);
+}
+setTimeout(wait, 150);
+</script>
 </body>
 </html>

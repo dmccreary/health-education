@@ -1,125 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>World Traditions of Movement Map</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 540 -->
+<title>World Traditions of Movement Map</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  #map { width: 100%; height: 330px; border: 1px solid silver; border-radius: 6px; background: #eaf1f5; }
+  .emoji-icon { font-size: 22px; text-align: center; line-height: 26px; text-shadow: 0 0 3px white, 0 0 4px white, 0 0 4px white; cursor: pointer; }
+  .infobox { margin-top: 8px; background: #fbf8f2; border-left: 4px solid darkorange; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #3a3226; line-height: 1.45; min-height: 78px; }
+  .infobox strong { color: navy; }
+  .infobox .kind { display: inline-block; background: goldenrod; color: white; font-size: 11px; padding: 1px 7px; border-radius: 10px; margin-left: 6px; vertical-align: middle; }
+  .leaflet-container { font: inherit; }
+  .leaflet-popup-content { font-size: 13px; line-height: 1.4; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>World Traditions of Movement Map</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> world-traditions-of-movement-map</p>
-            <p><strong>Library:</strong> Leaflet</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students identify and describe cultural physical activity traditions from different regions of the world, recognizing them as valid forms of physical activity tied to community identity.</p>
-        </div>
-    </div>
+<main>
+  <h3>World Traditions of Movement</h3>
+  <div class="subtitle">Move around the globe. Hover a marker to see the tradition, then click it to learn how people move and why it matters.</div>
+  <div id="map"></div>
+  <div class="infobox" id="infobox">People everywhere keep their bodies moving in ways passed down through their families and communities. Click any <strong>marker</strong> on the map to meet a living movement tradition and the region it comes from.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+function show(html){ box.innerHTML = html; }
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// Real, named world regions -> use a real tile layer (OpenStreetMap).
+const map = L.map('map', { worldCopyJump: true, minZoom: 1, maxZoom: 6, zoomControl: true, attributionControl: true });
+map.setView([18, 0], 2);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 6, minZoom: 1,
+  attribution: '&copy; OpenStreetMap'
+}).addTo(map);
 
-    Type: map
-    **sim-id:** world-traditions-of-movement-map<br/>
-    **Library:** Leaflet<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: identify, describe, exemplify
-    
-    Learning objective: Students identify and describe cultural physical activity traditions from different regions of the world, recognizing them as valid forms of physical activity tied to community identity.
-    
-    Geographic scope: World map with 6 marked regions
-    
-    Purpose: Show that cultural physical activity traditions exist across the globe and are practiced with pride, not treated as "old-fashioned" or lesser than organized sports
-    
-    Locations and markers:
-    - North America (Great Plains/Eastern Woodlands): Powwow dance traditions and the origins of lacrosse
-    - West Africa: Traditional dance forms tied to community celebrations and drumming
-    - Ireland: Step dancing traditions
-    - China: Tai Chi as a traditional movement practice
-    - Brazil: Capoeira, blending movement, music, and history
-    - Caribbean: Traditional jump-rope and rhyming games passed through generations
-    
-    Interactive features:
-    - Click a marker to open an infobox with a respectful description of the tradition, what it involves physically, and its cultural significance
-    - Hover over a marker to see the tradition's name and region before clicking
-    
-    Legend: Simple icon per tradition type (dance, sport, game, martial art)
-    
-    Color scheme: Warm, neutral map palette; markers in a single friendly accent color so no region is visually emphasized over another
-    
-    Responsive behavior: Map resizes to container width; markers remain clickable at all screen sizes; on narrow screens, marker list becomes a scrollable panel below the map
-    
-    Implementation: Leaflet.js with a static base map and custom marker popups. All descriptions written respectfully, describing traditions as valid ongoing practices rather than historical curiosities.
-    -->
+// One friendly accent color for every marker so no region is emphasized over another.
+function emoji(lat,lng,ch){
+  return L.marker([lat,lng], { icon: L.divIcon({ className:'emoji-icon', html:ch, iconSize:[28,28], iconAnchor:[14,14] }) });
+}
+function kind(label){ return '<span class="kind">' + label + '</span>'; }
+
+// Each tradition: [lat, lng, emoji, name, region, kindLabel, hoverText, infoHTML]
+const traditions = [
+  [40, -96, '🥍', 'Powwow Dance & Lacrosse', 'North America',
+   'Dance / Sport',
+   'Powwow Dance & Lacrosse — North America',
+   '<strong>Powwow Dance & Lacrosse</strong>' + kind('Dance / Sport') +
+   '<br>Among Great Plains and Eastern Woodlands Native nations, powwow dancing uses strong, rhythmic steps with the whole body, and lacrosse is a fast running-and-throwing game they created long ago. Both are practiced today with great pride as part of community life and identity.'],
+
+  [10, -2, '🥁', 'Community Dance & Drumming', 'West Africa',
+   'Dance',
+   'Community Dance & Drumming — West Africa',
+   '<strong>Community Dance & Drumming</strong>' + kind('Dance') +
+   '<br>In many West African communities, dancing to live drums is part of celebrations and gatherings. The movements work the legs, arms, and core to the beat. These traditions are alive today and passed from elders to children.'],
+
+  [53.3, -8, '🩰', 'Irish Step Dancing', 'Ireland',
+   'Dance',
+   'Irish Step Dancing — Ireland',
+   '<strong>Irish Step Dancing</strong>' + kind('Dance') +
+   '<br>In Ireland, step dancing is known for quick, precise footwork while the upper body stays tall and still. It builds strong legs, balance, and stamina. Families and dance schools keep this tradition thriving around the world.'],
+
+  [34, 108, '☯️', 'Tai Chi', 'China',
+   'Martial Art',
+   'Tai Chi — China',
+   '<strong>Tai Chi</strong>' + kind('Martial Art') +
+   '<br>In China, Tai Chi is a flowing practice of slow, balanced movements and steady breathing, rooted in the martial arts. It gently builds balance, flexibility, and calm focus. People of all ages practice it in parks and communities every day.'],
+
+  [-10, -52, '🤸', 'Capoeira', 'Brazil',
+   'Martial Art',
+   'Capoeira — Brazil',
+   '<strong>Capoeira</strong>' + kind('Martial Art') +
+   '<br>In Brazil, capoeira blends movement, music, and history into a martial art that looks like a dance. Players move in a circle with kicks, spins, and low sweeps as others sing and play instruments. It builds full-body strength and agility and carries a proud cultural story.'],
+
+  [18, -74, '🤾', 'Jump-Rope & Rhyming Games', 'Caribbean',
+   'Game',
+   'Jump-Rope & Rhyming Games — Caribbean',
+   '<strong>Jump-Rope & Rhyming Games</strong>' + kind('Game') +
+   '<br>Across the Caribbean, children play jumping and clapping games set to rhymes and songs passed down for generations. The jumping and quick footwork give a great workout while friends chant together. These playground traditions keep both bodies and stories moving.']
+];
+
+const traditionLayer = L.layerGroup().addTo(map);
+traditions.forEach(t => {
+  const m = emoji(t[0], t[1], t[2]);
+  m.bindTooltip(t[6], { direction:'top', offset:[0,-12] });
+  m.bindPopup('<strong>' + t[3] + '</strong><br>' + t[4]);
+  m.on('click', () => show(t[7]));
+  m.addTo(traditionLayer);
+});
+
+// Simple legend of tradition types (icon per kind).
+const legend = L.control({ position: 'bottomleft' });
+legend.onAdd = function () {
+  const div = L.DomUtil.create('div');
+  div.style.cssText = 'background:rgba(255,255,255,0.9);padding:5px 8px;border-radius:5px;font-size:11px;color:#3a3226;line-height:1.5;box-shadow:0 0 4px rgba(0,0,0,0.2);';
+  div.innerHTML = '<b>Tradition types</b><br>🩰 Dance &nbsp; 🥍 Sport<br>🤸 Martial art &nbsp; 🤾 Game';
+  return div;
+};
+legend.addTo(map);
+</script>
 </body>
 </html>

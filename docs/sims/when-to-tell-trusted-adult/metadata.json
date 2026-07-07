@@ -19,5 +19,20 @@
   "chapter_number": 3,
   "chapter_title": "Understanding and Talking About Feelings",
   "chapter_dir": "03-feelings",
-  "chapter_rel_dir": "bands/grade-1/chapters/03-feelings"
+  "chapter_rel_dir": "bands/grade-1/chapters/03-feelings",
+  "educational": {
+    "gradeLevel": "Grade 1",
+    "subjectArea": "Health Education",
+    "topic": "Understanding and Talking About Feelings",
+    "learningObjectives": [
+      "Students recall common signs of emotional struggle and recognize that telling a trusted adult is always the right response."
+    ],
+    "bloomLevel": "Remember (L1)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "recall, identify, recognize",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Remember-level objective through direct interaction rather than passive reading."
+  }
 }

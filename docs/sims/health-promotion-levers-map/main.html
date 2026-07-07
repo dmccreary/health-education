@@ -1,132 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Health Promotion Levers Across Levels</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 560 -->
+<title>Health Promotion Levers Across Levels</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 14px; margin-bottom: 6px; font-size: 13px; color: #334155; }
+  .controls label { font-weight: bold; color: navy; }
+  .controls select { font-size: 13px; padding: 3px 6px; border: 1px solid steelblue; border-radius: 4px; background: white; color: #334155; }
+  .controls .toggle { font-weight: normal; color: #334155; cursor: pointer; }
+  .controls .toggle input { vertical-align: middle; margin-right: 4px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 400px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 8px; font-size: 11px; line-height: 1.6; }
+  .legend .k { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 5px; vertical-align: middle; border: 1px solid #555; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 72px; }
+  .infobox strong { color: navy; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Health Promotion Levers Across Levels</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> health-promotion-levers-map</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Analyze<br/></p>
-            <p><strong>Learning Objective:</strong> Examine how a single health-promotion goal can be</p>
-        </div>
+<main>
+  <h3>Health Promotion Levers Across Levels</h3>
+  <div class="subtitle">Pick a goal, then click each level to see one action and how it reinforces another level.</div>
+  <div class="controls">
+    <span><label for="goal">Goal:</label>
+      <select id="goal">
+        <option value="stress">Reducing student stress</option>
+        <option value="activity">Increasing physical activity</option>
+        <option value="vaping">Reducing vaping among teens</option>
+      </select>
+    </span>
+    <label class="toggle"><input type="checkbox" id="reinforce">Show reinforcement links</label>
+  </div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k" style="background:steelblue;"></span>Health promotion goal<br>
+      <span class="k" style="background:goldenrod;"></span>Individual<br>
+      <span class="k" style="background:cornflowerblue;"></span>Interpersonal<br>
+      <span class="k" style="background:teal;"></span>Community<br>
+      <span class="k" style="background:seagreen;"></span>Environmental<br>
+      <span class="k" style="background:navy;"></span>Policy
     </div>
+  </div>
+  <div class="infobox" id="infobox">One shared goal can be pursued at five levels at once. Choose a goal above, then click a level node to see a real action and how it strengthens the other levels.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// The five socio-ecological levels, with fixed colors and radial positions.
+const levels = [
+  { id:'individual',    label:'Individual',    color:{ background:'goldenrod',      border:'#8a6d0b' }, font:'white', x:  0, y:-190 },
+  { id:'interpersonal', label:'Interpersonal', color:{ background:'cornflowerblue', border:'#2f5fb0' }, font:'white', x:180, y:-60  },
+  { id:'community',     label:'Community',     color:{ background:'teal',           border:'#0b4a4a' }, font:'white', x:110, y:160  },
+  { id:'environmental', label:'Environmental', color:{ background:'seagreen',       border:'#245a3a' }, font:'white', x:-110,y:160  },
+  { id:'policy',        label:'Policy',        color:{ background:'navy',           border:'#00003a' }, font:'white', x:-180,y:-60  }
+];
 
-    Type: graph-model
-    
-    **sim-id:** health-promotion-levers-map<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Analyze<br/>
-    Bloom Taxonomy Verb: examine, differentiate
-    
-    Learning objective: Examine how a single health-promotion goal can be
-    pursued through distinct but reinforcing levers at the individual,
-    interpersonal, community, environmental, and policy levels.
-    
-    Node types: One central node "Health Promotion Goal" with a dropdown to
-    select a goal (reducing student stress, increasing physical activity,
-    reducing vaping among teens). Five surrounding level nodes: Individual,
-    Interpersonal, Community, Environmental, Policy.
-    
-    Edge types: An edge from the central goal to each level node, labeled with
-    a concrete promotion action at that level for the selected goal.
-    
-    Sample data: For "reducing vaping among teens" — Individual: "peer-led
-    workshop on nicotine's effects on the teen brain"; Interpersonal: "parents
-    trained to discuss vaping without shaming"; Community: "youth center offers
-    vaping-cessation support group"; Environmental: "retailers required to
-    store vape products behind the counter"; Policy: "local ordinance raises
-    minimum sale age enforcement and taxes flavored products."
-    
-    Interactive features: Clicking a level node opens an infobox with the
-    action, plus a one-sentence note on how it reinforces at least one other
-    level (e.g., the policy change makes retailers' environmental compliance
-    enforceable). Learner can drag nodes, zoom, and pan. A "Show
-    reinforcement links" toggle adds dashed edges between levels that support
-    each other.
-    
-    Layout: Radial/star, goal at center, five levels surrounding it.
-    
-    Color scheme: Individual (gold), Interpersonal (blue), Community (teal),
-    Environmental (green), Policy (navy) — consistent with the socio-ecological
-    color coding introduced in Chapter 13.
-    -->
+// For each goal: the central label, the edge action per level (short, for the
+// edge label), and per-level detail = the action plus a reinforcement note.
+const goals = {
+  stress: {
+    center: 'Reduce\nStudent Stress',
+    intro: 'Lowering student stress works best when personal skills, relationships, community supports, the school setting, and policy all pull together.',
+    levels: {
+      individual:   { edge:'stress-management\nskills class',
+                      detail:'Students learn breathing, time-management, and sleep habits to handle stress.',
+                      reinforce:'These skills work better when the school schedule (environmental) protects time to use them.' },
+      interpersonal:{ edge:'teachers trained to\nnotice overload',
+                      detail:'Teachers and mentors learn to spot signs of stress and check in with students early.',
+                      reinforce:'Caring adults reinforce the individual skills students learn and can connect them to community counseling.' },
+      community:    { edge:'peer support and\ncounseling access',
+                      detail:'The school and neighborhood offer peer groups and easy access to counselors.',
+                      reinforce:'Community services give teachers a place to refer a struggling student, backing up interpersonal support.' },
+      environmental:{ edge:'later start times,\nquiet study spaces',
+                      detail:'The school setting adds later start times, calm study areas, and lighter homework loads.',
+                      reinforce:'A calmer environment makes the individual coping skills far easier to actually practice.' },
+      policy:       { edge:'district homework and\nmental-health day rules',
+                      detail:'District policy caps homework and allows excused mental-health days.',
+                      reinforce:'Policy makes the environmental changes official and required across every school, not optional.' }
+    }
+  },
+  activity: {
+    center: 'Increase\nPhysical Activity',
+    intro: 'Getting students more active is easier when motivation, social support, safe places, and policy all reinforce one another.',
+    levels: {
+      individual:   { edge:'set personal\nactivity goals',
+                      detail:'Students set their own movement goals and track daily steps or active minutes.',
+                      reinforce:'Personal goals are easier to reach when safe parks and paths (environmental) exist nearby.' },
+      interpersonal:{ edge:'family walk and\nplay challenges',
+                      detail:'Families and friends join walking challenges and active weekend outings together.',
+                      reinforce:'Group challenges give students partners, reinforcing the individual goals they set.' },
+      community:    { edge:'free after-school\nsports programs',
+                      detail:'The community runs free clubs, intramurals, and open-gym sessions for all skill levels.',
+                      reinforce:'Community programs give families organized activities to join, supporting the interpersonal level.' },
+      environmental:{ edge:'safe bike lanes\nand play areas',
+                      detail:'The neighborhood builds safe sidewalks, bike lanes, and well-kept play spaces.',
+                      reinforce:'Safe places make walking or biking to school realistic, backing up individual activity goals.' },
+      policy:       { edge:'daily PE and\nsafe-routes funding',
+                      detail:'Policy requires daily physical education and funds safe routes to school.',
+                      reinforce:'Policy pays for the environmental changes and guarantees active time in every school day.' }
+    }
+  },
+  vaping: {
+    center: 'Reduce\nTeen Vaping',
+    intro: 'Reducing teen vaping works best when education, trusted adults, community support, store rules, and policy all reinforce each other.',
+    levels: {
+      individual:   { edge:'peer-led workshop\non nicotine effects',
+                      detail:'A peer-led workshop helps students understand how nicotine affects the developing teen brain.',
+                      reinforce:'Understanding the risks helps students seek the community support groups that exist for cessation.' },
+      interpersonal:{ edge:'parents trained to\ntalk without shaming',
+                      detail:'Parents learn to discuss vaping calmly and supportively, without shame or lecturing.',
+                      reinforce:'Supportive parents reinforce the peer-workshop message and encourage students to use community help.' },
+      community:    { edge:'youth center\ncessation support group',
+                      detail:'The youth center hosts a supportive, judgment-free group for teens who want to quit.',
+                      reinforce:'The support group gives parents and peers a trusted place to point a teen toward, backing the interpersonal level.' },
+      environmental:{ edge:'vape products stored\nbehind the counter',
+                      detail:'Retailers are required to keep vape products behind the counter, out of easy reach.',
+                      reinforce:'Harder access makes the individual choice to stay vape-free easier to keep day to day.' },
+      policy:       { edge:'higher sale age and\nflavor taxes',
+                      detail:'A local ordinance strengthens minimum-age enforcement and taxes flavored products.',
+                      reinforce:'Policy makes the retailers’ behind-the-counter rule enforceable, so the environmental change actually sticks.' }
+    }
+  }
+};
+
+// Reinforcement links (dashed) shown by the toggle. Each pair supports the
+// other, matching the reinforcement notes above.
+const reinforceLinks = [
+  { a:'policy',        b:'environmental', label:'makes enforceable' },
+  { a:'community',     b:'interpersonal', label:'gives a place to refer' },
+  { a:'individual',    b:'environmental', label:'easier to sustain' },
+  { a:'interpersonal', b:'individual',    label:'backs up the message' }
+];
+
+const container = document.getElementById('network');
+const nodesDS = new vis.DataSet();
+const edgesDS = new vis.DataSet();
+const data = { nodes: nodesDS, edges: edgesDS };
+const options = {
+  physics: false,
+  layout: { randomSeed: 2 },
+  interaction: { hover: true, dragView: true, zoomView: false, navigationButtons: true, tooltipDelay: 100000 },
+  edges: {
+    smooth: { type: 'curvedCW', roundness: 0.05 },
+    font: { size: 11, color: '#334155', strokeWidth: 4, strokeColor: 'white', multi: false, align: 'middle' },
+    color: { color: '#94a3b8' },
+    width: 2,
+    arrows: { to: { enabled: true, scaleFactor: 0.5 } }
+  },
+  nodes: { shadow: true }
+};
+const network = new vis.Network(container, data, options);
+
+let currentGoal = 'vaping';
+
+// Build (or rebuild) the star graph for the selected goal.
+function buildGraph(goalKey) {
+  currentGoal = goalKey;
+  const g = goals[goalKey];
+  const nodes = [];
+  const edges = [];
+
+  nodes.push({
+    id: 'center', label: g.center, shape: 'ellipse',
+    color: { background: 'steelblue', border: '#2e5f8a' },
+    font: { color: 'white', size: 16, face: 'Arial', multi: false },
+    borderWidth: 3, x: 0, y: 0, fixed: false
+  });
+
+  levels.forEach(lv => {
+    const spec = g.levels[lv.id];
+    nodes.push({
+      id: lv.id, label: lv.label, shape: 'box',
+      color: lv.color, font: { color: lv.font, size: 14 },
+      borderWidth: 2, margin: 9, x: lv.x, y: lv.y
+    });
+    edges.push({
+      id: 'e_' + lv.id, from: 'center', to: lv.id,
+      label: spec.edge, color: { color: '#94a3b8' }, width: 2
+    });
+  });
+
+  nodesDS.clear();
+  edgesDS.clear();
+  nodesDS.add(nodes);
+  edgesDS.add(edges);
+  applyReinforce();
+  network.fit({ animation: false });
+  box.innerHTML = g.intro;
+}
+
+// Add or remove the dashed inter-level reinforcement edges.
+function applyReinforce() {
+  reinforceLinks.forEach((r, i) => {
+    const id = 'r_' + i;
+    if (edgesDS.get(id)) edgesDS.remove(id);
+    if (document.getElementById('reinforce').checked) {
+      edgesDS.add({
+        id: id, from: r.a, to: r.b, label: r.label,
+        dashes: true, color: { color: 'mediumpurple' },
+        font: { size: 10, color: 'mediumpurple', strokeWidth: 4, strokeColor: 'white' },
+        width: 2, arrows: { to: { enabled: true, scaleFactor: 0.4 }, from: { enabled: true, scaleFactor: 0.4 } },
+        smooth: { type: 'curvedCW', roundness: 0.35 }
+      });
+    }
+  });
+}
+
+// Infobox updates.
+function showLevel(levelId) {
+  const g = goals[currentGoal];
+  const spec = g.levels[levelId];
+  if (!spec) return;
+  const name = levels.find(l => l.id === levelId).label;
+  box.innerHTML = '<strong>' + name + ' level</strong><br>' +
+    'Action: ' + spec.detail + '<br>' +
+    '<em>Reinforces:</em> ' + spec.reinforce;
+}
+
+network.on('hoverNode', p => {
+  if (p.node === 'center') { box.innerHTML = goals[currentGoal].intro; return; }
+  const g = goals[currentGoal];
+  const spec = g.levels[p.node];
+  if (spec) {
+    const name = levels.find(l => l.id === p.node).label;
+    box.innerHTML = '<strong>' + name + ':</strong> ' + spec.edge.replace(/\n/g, ' ') + '. Click for the full action.';
+  }
+});
+network.on('click', p => {
+  if (!p.nodes.length) return;
+  if (p.nodes[0] === 'center') { box.innerHTML = goals[currentGoal].intro; }
+  else { showLevel(p.nodes[0]); }
+});
+
+document.getElementById('goal').addEventListener('change', e => buildGraph(e.target.value));
+document.getElementById('reinforce').addEventListener('change', () => { applyReinforce(); });
+
+// Initial build (default goal = vaping, matching the sample data in the spec).
+document.getElementById('goal').value = 'vaping';
+buildGraph('vaping');
+</script>
 </body>
 </html>

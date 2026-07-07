@@ -1,143 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Medication Interaction Risk Network</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 545 -->
+<title>Medication Interaction Risk Network</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 400px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 8px; font-size: 11px; line-height: 1.55; max-width: 210px; }
+  .legend .k { display: inline-block; width: 18px; height: 0; border-top-style: solid; margin-right: 6px; vertical-align: middle; }
+  .legend .note { display: block; margin-top: 4px; color: #555; font-size: 10px; line-height: 1.35; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 72px; }
+  .infobox strong { color: navy; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Medication Interaction Risk Network</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> medication-interaction-risk-network</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students examine documented interaction risks between</p>
-        </div>
+<main>
+  <h3>Medication &amp; Substance Interaction Risks</h3>
+  <div class="subtitle">Hover a node to learn about it. Click a node to spotlight its risky combinations. Click a line to see why.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k" style="border-top-width:4px; border-top-color:indianred;"></span>Documented High Risk<br>
+      <span class="k" style="border-top-width:2px; border-top-color:goldenrod;"></span>Use Caution &mdash; Ask Pharmacist
+      <span class="note">Unregulated / counterfeit pills connect to every category at high risk because their contents cannot be verified.</span>
     </div>
+  </div>
+  <div class="infobox" id="infobox">This network shows documented interaction risks between medication and substance categories. Hover or click any node or line to explore. This tool explains concepts only &mdash; always ask a pharmacist or doctor about your own medicines.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// ---- Node (category) data ---------------------------------------------------
+const categories = [
+  { id:'alcohol', label:'Alcohol',
+    hover:'A depressant that slows down the brain and body.',
+    desc:'Alcohol is a central nervous system depressant. It slows brain activity, breathing, and reaction time, which is why it can interact strongly with other depressants.' },
+  { id:'opioid', label:'Opioid\nPain Relievers',
+    hover:'Strong prescription pain medicines that slow breathing.',
+    desc:'Opioid pain relievers are prescribed for serious pain. They also slow breathing, so combining them with other depressants raises the risk of dangerously slow or stopped breathing.' },
+  { id:'antianx', label:'Anti-Anxiety\nMedications',
+    hover:'Prescription medicines that calm the nervous system.',
+    desc:'Anti-anxiety medications calm an overactive nervous system. Because they too slow the brain and breathing, they can multiply the depressant effect of alcohol or opioids.' },
+  { id:'antihist', label:'Antihistamines',
+    hover:'Allergy medicines that can also cause drowsiness.',
+    desc:'Antihistamines treat allergy symptoms, and many cause drowsiness. Mixing a drowsy antihistamine with alcohol can add up to more sedation than expected.' },
+  { id:'counterfeit', label:'Unregulated /\nCounterfeit Pills',
+    hover:'Pills from unknown sources with unverified contents.',
+    desc:'Unregulated or counterfeit pills are not made or checked by a licensed pharmacy. Because no one can confirm what is actually inside, any combination with them is treated as high risk.' }
+];
 
-    Type: graph-model
-    
-    **sim-id:** medication-interaction-risk-network<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy Level: Analyze (L4)
-    Bloom Verb: examine, differentiate, organize
-    
-    Learning objective: Students examine documented interaction risks between
-    categories of medications and substances (alcohol, opioid pain relievers,
-    anti-anxiety medications, antihistamines, unregulated/counterfeit pills)
-    and differentiate low-risk combinations from documented high-risk
-    combinations, without any dosage or method information.
-    
-    Node types:
-    1. Substance/medication category nodes (blue rectangles): "Alcohol,"
-       "Opioid Pain Relievers," "Anti-Anxiety Medications," "Antihistamines,"
-       "Unregulated/Counterfeit Pills"
-    2. Risk-level edge labels connecting relevant pairs (not all pairs
-       connected): "Documented High Risk" (red), "Use Caution — Ask
-       Pharmacist" (yellow)
-    
-    Edge types:
-    - "Documented High Risk" (red, thick): Alcohol—Opioid Pain Relievers,
-      Alcohol—Anti-Anxiety Medications, Opioid Pain Relievers—Anti-Anxiety
-      Medications, any category—Unregulated/Counterfeit Pills (labeled
-      "Unknown Contents — Cannot Be Assessed")
-    - "Use Caution — Ask Pharmacist" (yellow, thin): Alcohol—Antihistamines
-    
-    Layout: Force-directed network with the five category nodes distributed
-    evenly, edges colored and weighted by risk level
-    
-    Interactive features:
-    - Hover any node: brief description of that medication/substance category
-    - Click any node: highlights all its connected edges and dims the rest of
-      the network
-    - Click any edge: infobox names the documented mechanism (e.g., "Both
-      slow breathing; combined effect on the respiratory system is greater
-      than either alone")
-    - Drag, zoom, pan enabled
-    
-    Legend: color key for risk-level edges and a note that the
-    "Unregulated/Counterfeit Pills" node connects to every other node at
-    "Documented High Risk" because contents cannot be verified
-    
-    Implementation: vis-network JavaScript library, force-directed layout;
-    edge and node data in a structured lookup object. Content restriction: no
-    node or edge describes a dosage amount, a method of combining substances,
-    or how to obtain any substance — only documented interaction risk
-    categories and mechanisms.
-    -->
+// ---- Edge (interaction) data ------------------------------------------------
+// risk: 'high' (indianred, thick) or 'caution' (goldenrod, thin)
+const links = [
+  { from:'alcohol', to:'opioid', risk:'high', label:'Documented High Risk',
+    mech:'Both alcohol and opioids slow breathing. Their combined effect on the respiratory system is greater than either one alone.' },
+  { from:'alcohol', to:'antianx', risk:'high', label:'Documented High Risk',
+    mech:'Alcohol and anti-anxiety medications are both depressants. Together they can slow the brain and breathing more than either alone.' },
+  { from:'opioid', to:'antianx', risk:'high', label:'Documented High Risk',
+    mech:'Opioids and anti-anxiety medications each slow the nervous system and breathing, so combining them compounds that slowing effect.' },
+  { from:'alcohol', to:'antihist', risk:'caution', label:'Use Caution',
+    mech:'Alcohol and drowsy antihistamines can each cause sedation. Together they may make you sleepier and less alert than expected. Ask a pharmacist.' },
+  { from:'counterfeit', to:'alcohol', risk:'high', label:'Unknown Contents',
+    mech:'Counterfeit pills have unverified contents, so any mix cannot be assessed for safety. This combination is treated as high risk.' },
+  { from:'counterfeit', to:'opioid', risk:'high', label:'Unknown Contents',
+    mech:'Because the contents of counterfeit pills cannot be confirmed, their interaction with any medicine cannot be predicted and is treated as high risk.' },
+  { from:'counterfeit', to:'antianx', risk:'high', label:'Unknown Contents',
+    mech:'The ingredients in unregulated pills are unknown, so combining them with anti-anxiety medicine cannot be assessed and is treated as high risk.' },
+  { from:'counterfeit', to:'antihist', risk:'high', label:'Unknown Contents',
+    mech:'Even a common allergy medicine cannot be safely combined with a pill of unverified contents, so this pairing is treated as high risk.' }
+];
+
+// ---- Build vis nodes & edges ------------------------------------------------
+const nodes = [];
+const info = {};
+categories.forEach(c => {
+  const isCounterfeit = c.id === 'counterfeit';
+  nodes.push({
+    id: c.id,
+    label: c.label,
+    shape: 'box',
+    color: { background: isCounterfeit ? '#4a5b8c' : 'steelblue', border: 'navy',
+             highlight: { background: isCounterfeit ? '#5c6fa8' : '#5b9bd5', border: 'navy' } },
+    font: { color: 'white', size: 14, face: 'Arial' },
+    borderWidth: 2,
+    margin: 9
+  });
+  info[c.id] = { title: c.label.replace(/\n/g,' '), text: c.desc };
+});
+
+const edges = [];
+links.forEach((l, i) => {
+  const high = l.risk === 'high';
+  const eid = 'e' + i;
+  edges.push({
+    id: eid,
+    from: l.from,
+    to: l.to,
+    label: l.label,
+    color: { color: high ? 'indianred' : 'goldenrod', highlight: high ? '#b22222' : '#b8860b' },
+    width: high ? 4 : 2,
+    font: { size: 10, color: high ? '#8b1a1a' : '#7a5c00', strokeWidth: 3, strokeColor: 'white', align: 'middle' },
+    smooth: { type: 'continuous' }
+  });
+  info[eid] = { title: high ? 'Documented High Risk' : 'Use Caution — Ask Pharmacist', text: l.mech };
+});
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  physics: {
+    solver: 'forceAtlas2Based',
+    forceAtlas2Based: { gravitationalConstant: -70, springLength: 130, avoidOverlap: 0.6 },
+    stabilization: { iterations: 320 }
+  },
+  interaction: { hover: true, dragView: true, zoomView: false, navigationButtons: true, tooltipDelay: 100000 },
+  edges: { smooth: { type: 'continuous' } },
+  nodes: { shadow: true }
+};
+const network = new vis.Network(container, data, options);
+network.once('stabilizationIterationsDone', () => { network.setOptions({ physics: false }); network.fit(); });
+
+// ---- Interaction: highlight connected edges, dim the rest --------------------
+const allNodeIds = categories.map(c => c.id);
+const allEdgeIds = links.map((l, i) => 'e' + i);
+
+function resetHighlight() {
+  data.nodes.update(allNodeIds.map(id => ({ id, opacity: 1 })));
+  allEdgeIds.forEach(eid => {
+    const l = links[parseInt(eid.slice(1), 10)];
+    const high = l.risk === 'high';
+    data.edges.update({ id: eid, color: { color: high ? 'indianred' : 'goldenrod', opacity: 1 }, width: high ? 4 : 2 });
+  });
+}
+
+function spotlightNode(nodeId) {
+  const connectedEdges = network.getConnectedEdges(nodeId);
+  const connectedNodes = new Set([nodeId]);
+  connectedEdges.forEach(eid => {
+    const e = data.edges.get(eid);
+    connectedNodes.add(e.from); connectedNodes.add(e.to);
+  });
+  data.nodes.update(allNodeIds.map(id => ({ id, opacity: connectedNodes.has(id) ? 1 : 0.25 })));
+  allEdgeIds.forEach(eid => {
+    const l = links[parseInt(eid.slice(1), 10)];
+    const high = l.risk === 'high';
+    const on = connectedEdges.indexOf(eid) !== -1;
+    data.edges.update({
+      id: eid,
+      color: { color: high ? 'indianred' : 'goldenrod', opacity: on ? 1 : 0.12 },
+      width: on ? (high ? 5 : 3) : (high ? 4 : 2)
+    });
+  });
+}
+
+function panel(id) {
+  const d = info[id];
+  if (d) box.innerHTML = '<strong>' + d.title + '</strong><br>' + d.text;
+}
+
+network.on('hoverNode', p => {
+  const c = categories.find(x => x.id === p.node);
+  if (c) box.innerHTML = '<strong>' + c.label.replace(/\n/g,' ') + '</strong><br>' + c.hover;
+});
+
+network.on('click', p => {
+  if (p.nodes.length) {
+    spotlightNode(p.nodes[0]);
+    panel(p.nodes[0]);
+  } else if (p.edges.length) {
+    panel(p.edges[0]);
+  } else {
+    resetHighlight();
+    box.innerHTML = 'Click a node to spotlight its risky combinations, or click a line to read the documented mechanism. This tool explains concepts only &mdash; always ask a pharmacist or doctor about your own medicines.';
+  }
+});
+</script>
 </body>
 </html>

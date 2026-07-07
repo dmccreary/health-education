@@ -3,128 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Safe or Ask First? Technology Sorter</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Safe or Ask First? Technology Sorter MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="safe-or-ask-first-technology-sorter.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Safe or Ask First? Technology Sorter</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> safe-or-ask-first-technology-sorter</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students apply the rule of asking permission before sharing information by sorting a series of simple scenario cards into "Safe to Do" and "Ask a Trusted Adult First" bins.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** safe-or-ask-first-technology-sorter<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: demonstrate, practice, apply
-    
-    Learning objective: Students apply the rule of asking permission before sharing information by sorting a series of simple scenario cards into "Safe to Do" and "Ask a Trusted Adult First" bins.
-    
-    Canvas layout:
-    - Left area (450px): One scenario card at a time (simple flat illustration plus one short sentence)
-    - Right area (150px): Two labeled bins, "Safe to Do" and "Ask a Trusted Adult First," and an infobox
-    
-    Visual elements:
-    - 8 scenario cards cycling one at a time, such as: "Playing an approved learning game," "Typing in your home address on a pop-up screen," "Watching a video a grown-up picked," "A message asking for your full name and school"
-    - Two friendly labeled bins with icons (a green checkmark for "Safe to Do," a raised hand for "Ask a Trusted Adult First")
-    
-    Interactive controls:
-    - Click-to-select: student clicks the bin that matches the scenario
-    - Button: "Next Scenario"
-    - Button: "Reset"
-    
-    Default parameters:
-    - First scenario: "Playing a game a trusted adult downloaded for you" (clearly safe, to build confidence)
-    
-    Data Visibility Requirements:
-      Stage 1: Show the scenario card with no label
-      Stage 2: After the student clicks a bin, show whether it matches
-      Stage 3: Reveal a one-sentence explanation of why the scenario is safe or needs an adult's help
-    
-    Behavior:
-    - Correct match: bin glows softly, gentle chime, explanation caption appears
-    - Incorrect match: gentle prompt, "Take another look — would you need to type in private information?", correct bin glows softly as a hint
-    
-    Instructional Rationale: This is an Apply-level (demonstrate/practice) objective, so the MicroSim has students practice classifying real scenarios rather than only reciting a rule, with concrete feedback after each choice to reinforce the ask-first habit.
-    
-    Implementation notes: Use p5.js. Keep all scenarios age-appropriate and free of any frightening imagery; the goal is building a calm, confident habit, not fear. Teacher reads each scenario aloud and discusses the answer with the class.
-    -->
+    <main></main>
 </body>
 </html>

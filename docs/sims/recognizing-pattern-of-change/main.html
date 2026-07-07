@@ -3,109 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Recognizing a Pattern of Change</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Recognizing a Pattern of Change MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="recognizing-pattern-of-change.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Recognizing a Pattern of Change</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> recognizing-pattern-of-change</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students analyze short scenario descriptions of a friend's behavior over several weeks and distinguish between an ordinary bad day and a pattern of change that deserves a caring, serious response.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** recognizing-pattern-of-change<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: examine, distinguish, differentiate
-    
-    Learning objective: Students analyze short scenario descriptions of a friend's behavior over several weeks and distinguish between an ordinary bad day and a pattern of change that deserves a caring, serious response.
-    
-    Layout: A simple weekly log for a fictional friend (Weeks 1-4), showing short text entries about mood, sleep, and social activity for each week. Below the log, two response options: "One Bad Day" and "A Pattern Worth Caring About."
-    
-    Interactive controls: Student reads the four-week log (populated with one of several pre-written scenario sets, selectable from a dropdown) and clicks the option that best matches; feedback explains why the log does or does not show a lasting pattern, and reinforces that the response either way is the same: notice with care, never with judgment.
-    
-    Default parameters: Three to five scenario sets, at least one showing an ordinary rough patch and at least two showing a genuine multi-week pattern.
-    
-    Instructional Rationale: Distinguishing between a passing hard day and a lasting pattern requires examining information across time, which is Analyze-level; a scenario log with reflection is used instead of a single static snapshot, since the pattern itself is the concept being taught.
-    
-    Implementation notes: p5.js. Scenario data stored as arrays of weekly entries; dropdown to select scenario set; feedback text stored per scenario. No content in this MicroSim depicts a crisis event itself — only everyday mood, sleep, and social indicators over time.
-    -->
+    <main></main>
 </body>
 </html>

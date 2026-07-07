@@ -1,118 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Healthcare Access Barriers Concept Map</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 540 -->
+<title>Healthcare Access Barriers Concept Map</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 400px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 8px; font-size: 11px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 12px; height: 12px; margin-right: 5px; vertical-align: middle; border: 1px solid #555; }
+  .legend .circle { border-radius: 50%; }
+  .legend .diamond { transform: rotate(45deg); }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 66px; }
+  .infobox strong { color: navy; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Healthcare Access Barriers Concept Map</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> healthcare-access-barriers-concept-map</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students analyze how distinct barriers to healthcare access (cost, transportation, fear, stigma, lack of awareness of rights) can combine and reinforce each other for a given adolescent.</p>
-        </div>
+<main>
+  <h3>Barriers to Getting Health Care</h3>
+  <div class="subtitle">Hover a node for a quick label. Click a barrier for a real example, or click the center to see how barriers combine.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k circle" style="background:steelblue;"></span>Teen seeking care<br>
+      <span class="k" style="background:darkorange;"></span>Barrier<br>
+      <span class="k diamond" style="background:silver;"></span>Community/culture
     </div>
+  </div>
+  <div class="infobox" id="infobox">Five different barriers can each block a teen from getting health care. Click any orange barrier to see how it shows up in real life.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// Barrier nodes: each has a hover label and a fuller real-world example.
+const barriers = [
+  { id:'cost', label:'Cost', x:-260, y:-150,
+    hover:'Care can cost money a teen may not have.',
+    example:'A teen skips a needed clinic visit because they worry about the bill or do not want a charge to appear on a family insurance statement.' },
+  { id:'transport', label:'Transportation', x:260, y:-150,
+    hover:'Getting to a clinic can be hard without a ride.',
+    example:'The nearest clinic is across town with no bus route, and no adult is free to drive during its open hours, so the appointment never happens.' },
+  { id:'fear', label:'Fear /\nEmbarrassment', x:-300, y:60,
+    hover:'Feeling nervous or embarrassed can hold a teen back.',
+    example:'A teen feels too embarrassed to ask about a private health question, so they stay silent and the problem is never checked.' },
+  { id:'stigma', label:'Stigma', x:300, y:60,
+    hover:'Fear of being judged can stop someone from asking.',
+    example:'Worry that friends or neighbors will judge them for visiting a certain clinic keeps a teen from walking in the door.' },
+  { id:'rights', label:'Lack of Awareness\nof Rights', x:0, y:150,
+    hover:'Not knowing your rights can block access.',
+    example:'A teen does not know that some services are confidential or low-cost, so they assume care is out of reach and never ask.' }
+];
 
-    Type: graph-model
-    **sim-id:** healthcare-access-barriers-concept-map<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: examine, differentiate, organize
-    
-    Learning objective: Students analyze how distinct barriers to healthcare access (cost, transportation, fear, stigma, lack of awareness of rights) can combine and reinforce each other for a given adolescent.
-    
-    Node types:
-    1. Central node: "Adolescent Seeking Care" (blue circle)
-    2. Barrier nodes (orange squares): Cost, Transportation, Fear/Embarrassment, Stigma, Lack of Awareness of Rights
-    3. Context node (gray diamond): "Community/Cultural Variation" connected to all barrier nodes
-    
-    Edge types:
-    1. "Can Block Access" (solid black arrows from each barrier node to the central node)
-    2. "Shaped By" (dashed gray arrows from Community/Cultural Variation to each barrier node)
-    
-    Layout: Hierarchical, central node in the middle, barrier nodes surrounding it, context node beneath
-    
-    Interactive features: Hover a node to see its label; click a barrier node to open an infobox with a concrete example of how that barrier shows up; click the central node to show a summary noting that barriers often combine rather than occurring one at a time; zoom with mouse wheel, pan by dragging background
-    
-    Legend: Node shape/color key explaining central, barrier, and context nodes
-    
-    Implementation: vis-network JavaScript library; canvas size responsive, default 800x500px
-    -->
+const nodes = [], edges = [];
+const info = {};
+
+// Central node
+nodes.push({ id:'center', label:'Adolescent\nSeeking Care', x:0, y:-30, shape:'ellipse',
+  color:{ background:'steelblue', border:'#2c5d82' }, font:{ color:'white', size:16 }, borderWidth:2, fixed:{ x:true, y:true } });
+info.center = { title:'When Barriers Combine',
+  text:'Barriers rarely happen one at a time. For one teen, cost, distance, fear, stigma, and not knowing their rights can stack up and reinforce each other, making care much harder to reach.' };
+
+// Context node (below everything)
+nodes.push({ id:'context', label:'Community /\nCultural Variation', x:0, y:300, shape:'diamond',
+  color:{ background:'silver', border:'#8a8a8a' }, font:{ color:'#333', size:12 }, size:26, fixed:{ x:true, y:true } });
+info.context = { title:'Community & Culture',
+  text:'How strong each barrier feels is shaped by a teen’s community and culture. The same barrier can be large in one place and small in another.' };
+info.context_hover = 'The community and culture around a teen shape every barrier.';
+
+// Barrier nodes + edges
+barriers.forEach(b => {
+  nodes.push({ id:b.id, label:b.label, x:b.x, y:b.y, shape:'box',
+    color:{ background:'darkorange', border:'#b25e00' }, font:{ color:'white', size:13 }, borderWidth:2, margin:8, fixed:{ x:true, y:true } });
+  // "Can Block Access": solid dark arrow from barrier to center
+  edges.push({ from:b.id, to:'center', label:'can block', font:{ size:9, color:'#444', strokeWidth:3, strokeColor:'white' },
+    color:{ color:'#333' }, width:2, arrows:{ to:{ enabled:true, scaleFactor:0.6 } } });
+  // "Shaped By": dashed gray arrow from context to barrier
+  edges.push({ from:'context', to:b.id, label:'shaped by', font:{ size:8, color:'#888', strokeWidth:3, strokeColor:'white' },
+    color:{ color:'#aaa' }, width:1, dashes:true, arrows:{ to:{ enabled:true, scaleFactor:0.45 } } });
+  info[b.id] = { title:'Barrier: ' + b.label.replace(/\n/g,' '), text:b.example };
+  info[b.id + '_hover'] = b.hover;
+});
+info.center_hover = 'The teen who is trying to reach health care.';
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  physics: false,
+  layout: { randomSeed: 2 },
+  interaction: { hover: true, dragView: true, zoomView: true, navigationButtons: true, tooltipDelay: 100000 },
+  edges: { smooth: { type: 'continuous' } },
+  nodes: { shadow: true }
+};
+const network = new vis.Network(container, data, options);
+network.fit();
+
+function panel(id){
+  const d = info[id];
+  if (d) box.innerHTML = '<strong>' + d.title + '</strong><br>' + d.text;
+}
+network.on('hoverNode', p => { const h = info[p.node + '_hover']; if (h) box.innerHTML = h; });
+network.on('click', p => { if (p.nodes.length) panel(p.nodes[0]); });
+</script>
 </body>
 </html>

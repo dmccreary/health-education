@@ -3,111 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Match The Trusted Resource</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Match The Trusted Resource MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="match-the-trusted-resource.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Match The Trusted Resource</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> match-the-trusted-resource</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
-            <p><strong>Learning Objective:</strong> Students determine which trusted adult or resource is needed for a range of health situations and justify the choice.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** match-the-trusted-resource<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Evaluate (L5)
-    Bloom Taxonomy Verb: determine, justify, recommend
-    
-    Learning objective: Students determine which trusted adult or resource is needed for a range of health situations and justify the choice.
-    
-    Canvas layout: Left (450px) scenario card; right (200px) four resource buttons (School Nurse, Counselor, Parent/Guardian, Teacher) plus a "Why?" reveal panel.
-    
-    Visual elements: Scenario card (e.g., "You've had a stomachache for three days and it's getting worse"); four resource option buttons.
-    
-    Interactive controls: Click a resource button to answer; "Why?" reveals whether it was the best fit and explains the reasoning; "Next Situation" cycles through 8 scenarios spanning physical, emotional, relationship, and academic-safety situations.
-    
-    Behavior: Selecting "School Nurse" for the stomachache scenario reveals "Right call — a school nurse can assess symptoms and help contact a parent or doctor if needed."
-    
-    Instructional Rationale: Evaluate-level objective, so students must weigh several plausible resources and justify which one truly fits, rather than simply recalling one correct name.
-    
-    Implementation notes: p5.js; scenario objects with best-fit resource id and justification string; allow partial credit reasoning for reasonable second-best choices.
-    -->
+    <main></main>
 </body>
 </html>

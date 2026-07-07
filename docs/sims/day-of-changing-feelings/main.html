@@ -1,131 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>A Day of Changing Feelings Timeline</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 520 -->
+<title>A Day of Changing Feelings Timeline</title>
+<script src="https://unpkg.com/vis-timeline@7.7.3/standalone/umd/vis-timeline-graph2d.min.js"></script>
+<link href="https://unpkg.com/vis-timeline@7.7.3/styles/vis-timeline-graph2d.min.css" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 19px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 13px; margin-bottom: 6px; }
+  #timeline { border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+
+  /* Feeling color families. Each event shows a big face emoji + a short word. */
+  .vis-item { font-size: 20px; font-weight: bold; text-align: center; border-width: 2px; border-radius: 8px; }
+  .vis-item .vis-item-content { padding: 3px 4px; }
+  .word { display: block; font-size: 11px; margin-top: 1px; }
+
+  .vis-item.happy   { background-color: gold;         border-color: goldenrod;    color: #5a4a00; }
+  .vis-item.sad     { background-color: lightskyblue; border-color: steelblue;    color: #123a5a; }
+  .vis-item.angry   { background-color: lightsalmon;  border-color: indianred;    color: #6a1f1f; }
+  .vis-item.scared  { background-color: plum;         border-color: mediumpurple; color: #3f2060; }
+  .vis-item.calm    { background-color: palegreen;    border-color: seagreen;     color: #124020; }
+
+  .vis-item.vis-selected { box-shadow: 0 0 0 3px navy; }
+
+  .row { display: flex; gap: 8px; margin-top: 8px; align-items: stretch; flex-wrap: wrap; }
+  .infobox { flex: 2; min-width: 260px; background: #f8fafc; border-left: 5px solid steelblue; border-radius: 4px; padding: 9px 11px; font-size: 14px; color: #334155; line-height: 1.5; min-height: 92px; }
+  .infobox strong { color: navy; }
+  .infobox .feeling { font-size: 22px; }
+  .infobox .tip { display: block; margin-top: 5px; color: seagreen; font-weight: bold; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 12px; justify-content: center; margin: 6px 0 2px; font-size: 12px; color: #444; }
+  .legend span { display: inline-flex; align-items: center; gap: 4px; }
+  .swatch { width: 13px; height: 13px; border-radius: 3px; border: 1px solid rgba(0,0,0,0.25); display: inline-block; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>A Day of Changing Feelings Timeline</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> day-of-changing-feelings</p>
-            <p><strong>Library:</strong> vis-timeline</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students describe how different situations across a single school day affect the way a character feels and responds.</p>
-        </div>
-    </div>
+<main>
+  <h3>A Day of Changing Feelings</h3>
+  <div class="subtitle">Follow one school day. Click any face to learn about the feeling and what could help.</div>
+  <div id="timeline"></div>
+  <div class="legend">
+    <span><span class="swatch" style="background:gold;"></span>Happy / Excited / Proud</span>
+    <span><span class="swatch" style="background:lightskyblue;"></span>Sad</span>
+    <span><span class="swatch" style="background:lightsalmon;"></span>Angry</span>
+    <span><span class="swatch" style="background:plum;"></span>Scared / Nervous</span>
+    <span><span class="swatch" style="background:palegreen;"></span>Calm</span>
+  </div>
+  <div class="row">
+    <div class="infobox" id="infobox">Feelings can change many times in one day, and that is completely normal. Click a face on the timeline to read what happened and how the feeling makes sense.</div>
+  </div>
+</main>
+<script>
+// Time-of-day axis: put every event on the same day (Jan 1, 2000) and use the hour/minute.
+function t(h, m){ return new Date(2000, 0, 1, h, m); }
+// Two-digit minutes helper for the time label on the axis.
+function pad(n){ return (n < 10 ? '0' : '') + n; }
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+const info = {
+  wake:  '<span class="feeling">😃</span> <strong>7:00 AM &mdash; Excited.</strong> It is picture day! Waking up to something special can fill you with happy, excited energy. That bubbly feeling shows you are looking forward to your day.',
+  homework: '<span class="feeling">😟</span> <strong>8:15 AM &mdash; Nervous.</strong> You realized your homework is still at home. Feeling nervous when something goes wrong makes sense &mdash; your body is telling you it cares. <span class="tip">What could help: Take a slow breath and tell your teacher the truth. Grown-ups can help you make a plan.</span>',
+  math:  '<span class="feeling">😌</span> <strong>9:30 AM &mdash; Proud.</strong> You solved a hard math problem! Proud feelings come when you work hard and do something difficult. It is a great feeling to notice and remember.',
+  lunch: '<span class="feeling">😄</span> <strong>12:00 PM &mdash; Happy.</strong> You sat with friends at lunch. Being with people you like helps you feel happy and safe. Sharing time with friends is one of the best parts of a day.',
+  recess: '<span class="feeling">😢</span> <strong>1:45 PM &mdash; Sad.</strong> A friend was sick and could not play at recess. Feeling sad when you miss someone shows you care about them. <span class="tip">What could help: Tell your friend you hope they feel better, and find another fun way to play today.</span>',
+  drill: '<span class="feeling">😨</span> <strong>3:00 PM &mdash; Scared.</strong> A loud fire-drill alarm went off. Loud, sudden sounds can make your heart race and feel scary &mdash; that is your body trying to keep you safe. <span class="tip">What could help: Cover your ears, breathe slowly, and stay close to your teacher and class.</span>',
+  drillcalm: '<span class="feeling">😊</span> <strong>3:15 PM &mdash; Calm.</strong> Your teacher explained the drill was just practice. Once you know you are safe, scared feelings can settle down and turn into calm. Knowing what is happening helps a lot.',
+  toy:   '<span class="feeling">😠</span> <strong>6:00 PM &mdash; Angry.</strong> Your sibling broke a favorite toy. Feeling angry when something you love gets hurt is normal &mdash; anger tells you something feels unfair. <span class="tip">What could help: Take a break, breathe, and use calm words to say &ldquo;That made me upset&rdquo; instead of yelling.</span>',
+  bedtime: '<span class="feeling">😴</span> <strong>8:00 PM &mdash; Calm.</strong> A bedtime story with a trusted adult ends the day. Quiet time with someone who cares about you helps your body and mind feel calm and ready to rest.'
+};
 
-    Type: timeline
-    **sim-id:** day-of-changing-feelings<br/>
-    **Library:** vis-timeline<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain, describe, infer
-    
-    Learning objective: Students describe how different situations across a single school day affect the way a character feels and responds.
-    
-    Time period: One school day, from morning arrival to bedtime (7:00 AM - 8:00 PM)
-    
-    Orientation: Horizontal
-    
-    Events:
-    - 7:00 AM: Waking up excited — "It's picture day!"
-    - 8:15 AM: Nervous — forgot homework at home
-    - 9:30 AM: Proud — solved a hard math problem
-    - 12:00 PM: Happy — sat with friends at lunch
-    - 1:45 PM: Sad — a friend couldn't play at recess because they were sick
-    - 3:00 PM: Scared — a loud fire drill alarm
-    - 3:15 PM: Calm — teacher explains the drill was just practice
-    - 6:00 PM: Angry — sibling broke a favorite toy
-    - 8:00 PM: Calm — bedtime story with a trusted adult
-    
-    Visual style: Horizontal timeline with a simple cartoon face icon above each event matching the feeling
-    
-    Color coding:
-    - Yellow: happy/excited feelings
-    - Blue: sad feelings
-    - Red: angry feelings
-    - Purple: scared/nervous feelings
-    - Green: calm feelings
-    
-    Interactive features:
-    - Click any event to open an infobox explaining the situation, the feeling it caused, and why that response makes sense
-    - Infobox includes a "What could help?" tip for the harder moments (nervous, scared, angry, sad)
-    
-    Implementation: vis-timeline JavaScript library with click event listeners opening a definition/explanation panel
-    -->
+const box = document.getElementById('infobox');
+
+const items = new vis.DataSet([
+  { id: 'wake',      start: t(7,0),   content: '😃<span class="word">Excited</span>', className: 'happy'  },
+  { id: 'homework',  start: t(8,15),  content: '😟<span class="word">Nervous</span>', className: 'scared' },
+  { id: 'math',      start: t(9,30),  content: '😌<span class="word">Proud</span>',   className: 'happy'  },
+  { id: 'lunch',     start: t(12,0),  content: '😄<span class="word">Happy</span>',   className: 'happy'  },
+  { id: 'recess',    start: t(13,45), content: '😢<span class="word">Sad</span>',     className: 'sad'    },
+  { id: 'drill',     start: t(15,0),  content: '😨<span class="word">Scared</span>',  className: 'scared' },
+  { id: 'drillcalm', start: t(15,15), content: '😊<span class="word">Calm</span>',    className: 'calm'   },
+  { id: 'toy',       start: t(18,0),  content: '😠<span class="word">Angry</span>',   className: 'angry'  },
+  { id: 'bedtime',   start: t(20,0),  content: '😴<span class="word">Calm</span>',    className: 'calm'   }
+]);
+
+const options = {
+  min: t(5,30), max: t(21,30), start: t(5,30), end: t(21,30),
+  zoomable: false, moveable: false, showCurrentTime: false, selectable: true, stack: true,
+  margin: { item: 12, axis: 24 },
+  orientation: { axis: 'top' },
+  format: {
+    minorLabels: (d) => {
+      const h = (typeof d.getHours === 'function') ? d.getHours() : d.hours();
+      const m = (typeof d.getMinutes === 'function') ? d.getMinutes() : d.minutes();
+      const ampm = h < 12 ? 'AM' : 'PM';
+      let hr = h % 12; if (hr === 0) hr = 12;
+      return hr + ':' + pad(m) + ' ' + ampm;
+    },
+    majorLabels: () => 'One School Day'
+  },
+  timeAxis: { scale: 'hour', step: 1 }
+};
+
+const tl = new vis.Timeline(document.getElementById('timeline'), items, options);
+
+tl.on('select', (p) => {
+  if (p.items.length && info[p.items[0]]) box.innerHTML = info[p.items[0]];
+});
+</script>
 </body>
 </html>

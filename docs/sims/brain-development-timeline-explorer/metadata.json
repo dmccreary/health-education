@@ -19,5 +19,20 @@
   "chapter_number": 8,
   "chapter_title": "Substances and the Developing Brain",
   "chapter_dir": "08-substances-and-the-developing-brain",
-  "chapter_rel_dir": "bands/grade-6-8/chapters/08-substances-and-the-developing-brain"
+  "chapter_rel_dir": "bands/grade-6-8/chapters/08-substances-and-the-developing-brain",
+  "educational": {
+    "gradeLevel": "Grades 6-8",
+    "subjectArea": "Health Education",
+    "topic": "Substances and the Developing Brain",
+    "learningObjectives": [
+      "Students explain that different brain regions mature at different rates, and describe why the mismatch between an early-maturing reward system and a late-maturing prefrontal cortex makes the adolescent brain more vulnerable to substance effects."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "explain, summarize, describe",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
 }
