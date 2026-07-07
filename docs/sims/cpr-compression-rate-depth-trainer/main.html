@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>CPR Compression Rate and Depth Trainer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>CPR Compression Rate and Depth Trainer</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> cpr-compression-rate-depth-trainer</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Apply (L3)</p>
+            <p><strong>Learning Objective:</strong> Students apply correct chest compression rate (100-120</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    
+    **sim-id:** cpr-compression-rate-depth-trainer<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy Level: Apply (L3)
+    Bloom Verb: demonstrate, execute, apply
+    
+    Learning objective: Students apply correct chest compression rate (100-120
+    per minute) and depth (at least 2 inches) by tapping in rhythm with visual
+    feedback, reinforcing the muscle-memory timing used in real CPR.
+    
+    Canvas layout:
+    - Left (55%): a metronome-style visual beat indicator and a simple chest
+      compression depth gauge
+    - Right (45%): a tap button (or spacebar target), rate readout in
+      compressions per minute, and a depth-simulation slider representing how
+      hard the student is "pressing"
+    
+    Data Visibility Requirements:
+      Stage 1: Show the target rate zone (100-120 bpm) highlighted on a
+      visual tempo bar, alongside a real reference: the tempo of "Stayin'
+      Alive" by the Bee Gees, a widely used real-world memory aid for correct
+      CPR rate
+      Stage 2: Student taps the button repeatedly; the tool calculates their
+      actual tap rate in real time and displays whether they are too slow,
+      in range, or too fast
+      Stage 3: A separate depth slider requires the student to hold at least
+      a simulated "2 inch" mark before releasing, reinforcing that full
+      recoil matters as much as depth
+      Stage 4: After a 30-second trial, show a summary: average rate
+      achieved, percentage of compressions in the correct depth range, and a
+      persistent reminder that this is a rhythm-and-depth trainer, not a
+      substitute for certified hands-on practice
+    
+    Interactive controls:
+    - Tap button / spacebar for compressions
+    - Depth slider
+    - Button: "Start 30-Second Trial"
+    - Button: "Reset"
+    
+    Default parameters: Target rate 100-120 bpm; target depth marked at 2
+    inches on the slider scale
+    
+    Instructional Rationale: Correct compression rate and depth are Apply-level
+    psychomotor skills that require rhythm practice, not just factual recall,
+    so a tap-timing tool with immediate rate/depth feedback is used rather
+    than a static diagram of hand placement.
+    
+    Implementation notes: p5.js; rate calculated from timestamps between taps
+    over a rolling window; persistent on-screen note: "For awareness and
+    rhythm practice only — get certified hands-on training from a course such
+    as the American Heart Association or American Red Cross."
+    -->
+</body>
+</html>

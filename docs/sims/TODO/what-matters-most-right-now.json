@@ -1,0 +1,15 @@
+{
+  "sim_id": "what-matters-most-right-now",
+  "diagram_name": "What Matters Most to Me Right Now",
+  "chapter_number": 8,
+  "chapter_title": "Communication And Goals",
+  "chapter_dir": "08-communication-and-goals",
+  "chapter_rel_dir": "bands/grade-3/chapters/08-communication-and-goals",
+  "library": "vis-network",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "prioritize, judge, justify",
+  "learning_objective": "Students prioritize which health topics from across the book feel most personally relevant right now and justify their choice in a short reflection.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** what-matters-most-right-now<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy: Evaluate (L5)\nBloom Taxonomy Verb: prioritize, judge, justify\n\nLearning objective: Students prioritize which health topics from across the book feel most personally relevant right now and justify their choice in a short reflection.\n\nPurpose: Give students a concrete way to connect the whole book's topics back to their own life and choose where to focus next, tying together every strand covered this year.\n\nLayout: A radial node map with \"Me\" in the center and eight surrounding topic nodes drawn from the book's strands — Food Choices, Growth and Changing Bodies, Feelings and Coping, Physical Activity, Safety Habits, Friendships and Respect, Communication Skills, Personal Health Goals.\n\nInteractive features: Drag any topic node closer to \"Me\" to mark it as more relevant right now, or farther away to mark it as less relevant currently. Clicking a node reveals a one-sentence reminder of what that topic covers. A \"Save My Top Choice\" button lets the student type a short reason their closest topic matters most right now.\n\nVisual styling: Warm, friendly palette matching earlier chapter diagrams; simple circular icons, no realistic depictions of people.\n\nImplementation: vis-network with draggable nodes and a simple text-reflection field; responsive layout for narrower screens."
+}

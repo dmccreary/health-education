@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Elbow or Hands?</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Elbow or Hands?</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> elbow-or-hands</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students distinguish helpful cough-covering behavior from unhelpful behavior by sorting illustrated scenario cards into two labeled bins, applying the Covering Coughs concept.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** elbow-or-hands<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: distinguish, sort, compare
+    
+    Learning objective: Students distinguish helpful cough-covering behavior from unhelpful behavior by sorting illustrated scenario cards into two labeled bins, applying the Covering Coughs concept.
+    
+    Canvas layout:
+    - Top area (250px): One simple illustrated scenario card shown at a time, depicting a child about to cough or sneeze in different ways (into elbow, into a tissue, into open hands, into open air)
+    - Bottom area (200px): Two large labeled bins side by side: "Keeps Germs Away" (green, with a shield icon) and "Lets Germs Spread" (gray, with a germ icon)
+    - Bottom strip (50px): Score display ("You sorted 4 scenarios!") and a Reset button
+    
+    Visual elements:
+    - 8 scenario cards cycling one at a time, evenly split between helpful and unhelpful cough/sneeze coverings, drawn in a simple, warm cartoon style
+    - Bins glow softly when a card is dragged over them
+    
+    Interactive controls:
+    - Drag-and-drop: child drags the scenario card into the bin they believe matches
+    - Button: "Reset" to start over
+    - Button: "Next Scenario" appears after each placement
+    
+    Default parameters:
+    - First scenario: a child coughing into their elbow (Keeps Germs Away)
+    - Scenarios appear in a fixed friendly order so a teacher can predict what is coming next
+    
+    Behavior:
+    - When a card is placed in the correct bin, the bin glows green, a cheerful chime plays, and the score increases by one
+    - When a card is placed in the incorrect bin, the card gently slides back to the top and a friendly infobox reminds the child why, e.g., "Coughing into hands lets germs spread to the next thing you touch."
+    - After all 8 scenarios are sorted, show a celebration message: "You really know how to keep germs from spreading!"
+    
+    Instructional Rationale: This is an Analyze-level objective because the child must examine a small scenario and distinguish which category it belongs to, rather than simply recalling a rule. The forgiving retry behavior with an explanatory infobox keeps the activity appropriate for a pre-reader audience while still requiring a real comparison judgment.
+    
+    Implementation notes: Use p5.js. Represent each scenario as an object with an illustration reference, a correct category, and an explanation string. Keep all captions read-aloud length (one short sentence).
+    -->
+</body>
+</html>

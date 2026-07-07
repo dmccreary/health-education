@@ -1,0 +1,15 @@
+{
+  "sim_id": "stigma-mechanism-reduction-map",
+  "diagram_name": "Stigma Mechanism and Reduction Strategy Map",
+  "chapter_number": 5,
+  "chapter_title": "Mental Health and Crisis Support",
+  "chapter_dir": "05-mental-health-and-crisis-support",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/05-mental-health-and-crisis-support",
+  "library": "vis-network",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, differentiate, organize",
+  "learning_objective": "Students examine how the mechanisms of stigma\n(stereotyping, prejudice, discrimination, self-stigma) connect to specific",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n\n**sim-id:** stigma-mechanism-reduction-map<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: examine, differentiate, organize\n\nLearning objective: Students examine how the mechanisms of stigma\n(stereotyping, prejudice, discrimination, self-stigma) connect to specific\nevidence-based reduction strategies, and organize which strategy most\ndirectly counters which mechanism.\n\nNode types:\n1. Central node: \"Mental Health Stigma\" (red circle)\n2. Mechanism nodes (orange squares): Stereotyping, Prejudice,\n   Discrimination, Self-Stigma\n3. Strategy nodes (green circles): Accurate Education, Contact-Based\n   Approaches, Person-First Language, Policy and Institutional Change\n4. Outcome node (blue diamond): \"Increased Willingness to Seek Treatment\"\n\nEdge types:\n- \"Produces\" (arrows from central node to each mechanism node)\n- \"Counters\" (arrows from each strategy node to the mechanism node it most\n  directly addresses — e.g., Contact-Based Approaches counters Prejudice;\n  Accurate Education counters Stereotyping)\n- \"Leads To\" (arrow from the reduced-stigma state to the outcome node)\n\nLayout: Hierarchical, stigma at top, mechanisms in the middle, strategies\nand the outcome at the bottom\n\nInteractive features:\n- Hover any node: shows a one-sentence definition\n- Click a mechanism node: opens a panel with a concrete, realistic example\n  of that mechanism in a school or community setting\n- Click a strategy node: opens a panel explaining the evidence behind why\n  that strategy works and which mechanism it counters\n- Drag, zoom, and pan enabled\n\nLegend: color/shape key for stigma, mechanisms, strategies, and outcome\n\nImplementation: vis-network, hierarchical layout, click-triggered side\npanel content stored in a JSON lookup keyed by node id"
+}

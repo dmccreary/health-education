@@ -1,0 +1,15 @@
+{
+  "sim_id": "my-personal-health-goal",
+  "diagram_name": "My Personal Health Goal",
+  "chapter_number": 6,
+  "chapter_title": "Making Healthy Choices",
+  "chapter_dir": "06-health-choices",
+  "chapter_rel_dir": "bands/kindergarten/chapters/06-health-choices",
+  "library": "p5.js",
+  "bloom_level": "Create (L6)",
+  "bloom_verb": "state, produce, generate",
+  "learning_objective": "Students state one personal health-related goal and a supporting practice, the capstone skill for benchmark 0.7.7.1 and for the Kindergarten book as a whole.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** my-personal-health-goal<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Create (L6)\nBloom Taxonomy Verb: state, produce, generate\n\nLearning objective: Students state one personal health-related goal and a supporting practice, the capstone skill for benchmark 0.7.7.1 and for the Kindergarten book as a whole.\n\nCanvas layout: Top area (200px) shows six illustrated goal-choice cards drawn from earlier chapters (wash hands, eat a fruit or vegetable, move your body, wear a helmet, drink water, tell a trusted adult about a feeling). Middle area (150px): the selected card enlarges with the sentence starter \"I will ___\" filled in with a picture-word combination. Bottom strip (150px): a \"My Goal\" button that displays a printable/read-aloud goal card, and a Reset button.\n\nVisual elements: 6 selectable goal cards in a grid; selected card highlights with a star border; final goal card shows Scout giving a thumbs-up.\n\nInteractive controls: Click a goal card to select it; \"My Goal\" button reveals a large goal-statement card for the teacher to read aloud with the child; Reset clears the selection to choose again.\n\nDefault parameters: No goal pre-selected; child/teacher chooses one of the six cards together.\n\nBehavior: Selecting a card shows, \"I will wash my hands before eating\" (or the matching sentence for the chosen card). Clicking \"My Goal\" displays a large, shareable goal card with the sentence and a simple picture, suitable for a teacher to print or read aloud to a family. No card is marked wrong — every choice is celebrated.\n\nInstructional Rationale: A Create-level objective (state a personal goal) is the appropriate capstone for the whole Kindergarten book, so the MicroSim lets the child produce their own statement from a supported picture-word menu rather than simply recalling a fact, while still keeping the interaction simple enough for a pre-reader with teacher support.\n\nImplementation notes: p5.js. Each goal is an object with an icon reference, sentence string, and picture cue. Text large (24px+), warm, and encouraging in tone. No incorrect state — every selection is a valid personal goal."
+}

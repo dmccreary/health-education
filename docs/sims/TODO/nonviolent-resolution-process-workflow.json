@@ -1,0 +1,15 @@
+{
+  "sim_id": "nonviolent-resolution-process-workflow",
+  "diagram_name": "Nonviolent Resolution Process Workflow",
+  "chapter_number": 6,
+  "chapter_title": "Conflict Resolution and Inclusion",
+  "chapter_dir": "06-conflict-resolution-and-inclusion",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/06-conflict-resolution-and-inclusion",
+  "library": "Mermaid",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "apply, demonstrate, use",
+  "learning_objective": "Students apply the five-step nonviolent conflict",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n\n**sim-id:** nonviolent-resolution-process-workflow<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Apply (L3)\nBloom Verb: apply, demonstrate, use\n\nLearning objective: Students apply the five-step nonviolent conflict\nresolution process to a realistic scenario, distinguishing stated\npositions from underlying needs at each step.\n\nVisual style: Mermaid flowchart, top-to-bottom, five sequential nodes plus\none feedback loop, click handlers on every node\n\nNodes (all clickable, `click NodeId call showInfo(\"term\")`):\n1. \"Separate People From the Problem\" — click text: \"Reframe the\n   disagreement as a shared problem, not a contest to win\"\n2. \"Identify Underlying Needs\" — click text: \"Ask what each position is\n   actually trying to protect or achieve\"\n3. \"Generate Multiple Solutions\" — click text: \"List several possible\n   solutions before judging any of them\"\n4. \"Evaluate Against Both People's Needs\" — click text: \"Choose the option\n   that satisfies the most real needs on both sides\"\n5. \"Agree and Check Back Later\" (decision diamond: \"Did it actually\n   work?\") — click text: \"Resolution is confirmed by follow-up, not\n   assumed at the moment of agreement\"\n\nConnections: 1→2, 2→3, 3→4, 4→5, and a feedback loop from 5 back to 2\nlabeled \"Not Working — Revisit Needs\" if the check-back reveals the\nsolution failed\n\nColor coding: blue for process steps, gold for the check-back decision\ndiamond, green for the loop-closing \"resolved\" path\n\nInteractive features: click any node for its infobox describing that\nstep's purpose and a one-sentence example\n\nImplementation: Mermaid.js flowchart with JavaScript click bindings to a\ncustom showInfo() function"
+}

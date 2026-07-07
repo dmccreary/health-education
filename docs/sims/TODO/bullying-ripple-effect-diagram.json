@@ -1,0 +1,15 @@
+{
+  "sim_id": "bullying-ripple-effect-diagram",
+  "diagram_name": "The Ripple Effect",
+  "chapter_number": 5,
+  "chapter_title": "Relationships And Respect",
+  "chapter_dir": "05-relationships-and-respect",
+  "chapter_rel_dir": "bands/grade-3/chapters/05-relationships-and-respect",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, summarize, interpret",
+  "learning_objective": "Students explain how teasing, exclusion, or bullying affects individuals and the community by exploring an infographic showing effects that ripple outward from one person to the whole classroom.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** bullying-ripple-effect-diagram<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, summarize, interpret\n\nLearning objective: Students explain how teasing, exclusion, or bullying affects individuals and the community by exploring an infographic showing effects that ripple outward from one person to the whole classroom.\n\nPurpose: Show, in a calm and factual way, how the effects of bullying and exclusion extend beyond the person targeted to bystanders and the whole classroom community.\n\nLayout: Concentric-circle infographic — a center circle labeled \"Person Targeted,\" surrounded by a ring labeled \"Bystanders,\" surrounded by an outer ring labeled \"Whole Classroom/Community\"\n\nInteractive elements:\n- Click the center circle to reveal effects on the person targeted (sadness, fear, loneliness, trouble sleeping, stomachaches)\n- Click the middle ring to reveal effects on bystanders (feeling unsafe, guilt, not knowing what to do)\n- Click the outer ring to reveal effects on the whole community (lower trust, less willingness to speak up)\n- A calm \"What Helps\" button reveals three supportive actions: telling a trusted adult, including others, and treating everyone with kindness and respect\n\nVisual style: Soft, non-alarming concentric circles; muted, calm color palette (blues and greens) rather than harsh reds\n\nColor scheme: Center circle in soft blue, middle ring in soft teal, outer ring in soft green; the \"What Helps\" button in warm gold\n\nImplementation: p5.js infographic with click-to-reveal infobox panels for each ring; ends every path with the reminder that trusted adults can help."
+}

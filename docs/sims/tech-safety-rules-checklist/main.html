@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Technology Safety Rules Checklist</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Technology Safety Rules Checklist</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> tech-safety-rules-checklist</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Remember (L1)</p>
+            <p><strong>Learning Objective:</strong> Students identify which everyday technology scenarios follow technology safety rules and which do not.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** tech-safety-rules-checklist<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Remember (L1)
+    Bloom Taxonomy Verb: identify, recognize, recall
+    
+    Learning objective: Students identify which everyday technology scenarios follow technology safety rules and which do not.
+    
+    Canvas layout:
+    - Top area (100px): A scenario banner showing a simple picture and one-sentence caption describing a technology scenario
+    - Middle area (250px): Two large buttons: a green checkmark ("Safe") and an orange question mark ("Not Safe")
+    - Bottom area (150px): Infobox showing feedback text after each answer
+    
+    Visual elements:
+    - Eight preset scenario cards that cycle through, for example: "Playing a learning game a parent installed," "Messaging a stranger who asked for a home address," "Video-calling grandma with a parent nearby," "Clicking a pop-up that says you won a prize," "Using a tablet timer set by a trusted adult," "Sharing a school photo with someone met only online"
+    - Simple flat-style icons matching the mascot's visual style
+    
+    Interactive controls:
+    - Click "Safe" or "Not Safe" for the current scenario
+    - Button: "Next Scenario" advances through all eight cards
+    - Button: "Reset" restarts from scenario one
+    
+    Default parameters:
+    - Scenario 1: "Playing a learning game a parent installed" (correct answer: Safe)
+    - No answer selected yet
+    
+    Data Visibility Requirements:
+      Stage 1: Show scenario 1 image and caption
+      Stage 2: Student clicks "Safe" -- infobox shows "Correct! A trusted adult chose this game, so it follows technology safety rules."
+      Stage 3: Student advances to scenario 2 ("stranger asking for a home address") and clicks "Not Safe" -- infobox shows "Correct! Never share your address with someone you don't know. Tell a trusted adult if this happens."
+      Stage 4: If a student picks the wrong button on any scenario, infobox gently explains the correct answer without a harsh "wrong" sound
+    
+    Behavior:
+    - Each scenario has exactly one correct answer; a correct click highlights the button green and shows an explanation
+    - An incorrect click shows a calm correction explaining the rule, then allows the student to try again or move on
+    
+    Instructional Rationale: This is a Remember-level objective, so the design uses simple recognition (identify safe vs. not-safe) with immediate, gentle feedback rather than a multi-step simulation. Cycling through eight varied scenarios helps students generalize the pattern instead of memorizing a single example.
+    
+    Implementation notes: Use p5.js. Keep all scenario images simple, non-scary, and age-appropriate. Every piece of feedback text stays calm and matter-of-fact, since this MicroSim touches personal-safety-adjacent content.
+    -->
+</body>
+</html>

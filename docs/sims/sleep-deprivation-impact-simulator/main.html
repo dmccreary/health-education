@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Sleep Deprivation Impact Simulator</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Sleep Deprivation Impact Simulator</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> sleep-deprivation-impact-simulator</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
+            <p><strong>Learning Objective:</strong> Students evaluate how varying nightly sleep duration</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    
+    **sim-id:** sleep-deprivation-impact-simulator<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy Level: Evaluate (L5)
+    Bloom Verb: assess, justify, evaluate
+    
+    Learning objective: Students evaluate how varying nightly sleep duration
+    affects cognitive, emotional, immune, and metabolic outcomes, and justify
+    a recommended sleep target for a realistic student schedule.
+    
+    Canvas layout:
+    - Left (55%): a slider-controlled "sleep duration" readout showing
+      simulated next-day effects across four dimensions (cognitive, emotional,
+      immune, metabolic), each as a simple bar gauge
+    - Right (45%): a realistic student schedule scenario (school start time,
+      after-school job or activity, homework load) with a text prompt asking
+      the student to justify a target bedtime
+    
+    Data Visibility Requirements:
+      Stage 1: Show baseline gauges at 8 hours of sleep (all four dimensions
+      in the healthy range)
+      Stage 2: Student drags the sleep-duration slider from 4 to 10 hours and
+      watches all four gauges shift in real time, based on research-informed
+      weighting (largest drop-off below 6 hours)
+      Stage 3: Student reads the schedule scenario and proposes a target
+      bedtime that would achieve at least 8 hours given the fixed wake time
+      Stage 4: Reveal a model answer showing the bedtime math and naming one
+      trade-off the student would need to negotiate (e.g., cutting a late
+      activity short)
+    
+    Interactive controls:
+    - Slider: Sleep duration (4-10 hours)
+    - Text input: proposed target bedtime
+    - Button: "Check My Reasoning"
+    - Button: "Reset"
+    
+    Default parameters: Slider starts at 8 hours; scenario wake time fixed at
+    6:30 a.m.
+    
+    Instructional Rationale: Justifying a specific sleep target against a
+    realistic, constrained schedule is an Evaluate-level task, so the
+    simulator pairs a parameter-exploration gauge (to build the evidence base)
+    with a justification prompt (to apply that evidence to a real decision),
+    rather than only displaying facts about sleep.
+    
+    Implementation notes: p5.js; gauge values computed from a simple weighted
+    function of sleep duration per dimension; schedule scenario data stored
+    as an object with fixed wake time and variable evening commitments.
+    -->
+</body>
+</html>

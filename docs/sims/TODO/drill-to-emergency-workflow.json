@@ -1,0 +1,15 @@
+{
+  "sim_id": "drill-to-emergency-workflow",
+  "diagram_name": "From Drill to Real Emergency",
+  "chapter_number": 2,
+  "chapter_title": "Safety And Trusted Adults",
+  "chapter_dir": "02-safety-and-trusted-adults",
+  "chapter_rel_dir": "bands/grade-3/chapters/02-safety-and-trusted-adults",
+  "library": "Mermaid",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, summarize",
+  "learning_objective": "Students explain how practicing a safety procedure prepares students and staff to respond in a real emergency, by exploring each step of a fire-drill workflow and its purpose.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n**sim-id:** drill-to-emergency-workflow<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, summarize\n\nLearning objective: Students explain how practicing a safety procedure prepares students and staff to respond in a real emergency, by exploring each step of a fire-drill workflow and its purpose.\n\nPurpose: Show the connection between practicing a drill and being ready for a real emergency, so students understand *why* schools repeat drills rather than just memorizing steps.\n\nVisual style: Simple top-to-bottom flowchart with rounded process boxes\n\nSteps (every node must have a Mermaid click directive opening an infobox):\n1. \"Alarm or Signal Sounds\" — Hover text: \"A drill or real emergency always starts with a clear signal, like a bell or announcement, so everyone knows to begin.\"\n2. \"Stop and Listen\" — Hover text: \"Students pause what they're doing and listen for the teacher's instructions.\"\n3. \"Follow the Practiced Route\" — Hover text: \"Because the class has practiced this route before, students already know where to walk without needing to think hard.\"\n4. \"Walk Calmly to the Safe Spot\" — Hover text: \"Walking, not running, keeps everyone safer and helps adults keep track of the group.\"\n5. \"Adult Checks Everyone Is Present\" — Hover text: \"A teacher or staff member counts students to make sure no one is missing.\"\n6. \"Wait for the All-Clear\" — Hover text: \"Students wait calmly until an adult says it is safe to return or the emergency has ended.\"\n\nBranch note: A side note box (not a decision diamond) clarifies \"This exact sequence works whether it's a practice drill or a real emergency — that's the point of practicing!\"\n\nColor coding:\n- Blue: Signal and listening steps\n- Green: Movement steps\n- Orange: Adult-led safety check steps\n\nImplementation: Mermaid flowchart with `click` directive on every node calling an infobox function that shows the hover text described above."
+}

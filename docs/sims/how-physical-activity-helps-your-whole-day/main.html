@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>How Physical Activity Helps Your Whole Day</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>How Physical Activity Helps Your Whole Day</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> how-physical-activity-helps-your-whole-day</p>
+            <p><strong>Library:</strong> Chart.js</p>
+            <p><strong>Bloom Level:</strong> Remember (L1)</p>
+            <p><strong>Learning Objective:</strong> Students recall and identify the different benefits of physical activity by exploring a simple bar chart showing how many classmates in a pretend survey named each benefit.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: chart
+    **sim-id:** how-physical-activity-helps-your-whole-day<br/>
+    **Library:** Chart.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Remember (L1)
+    Bloom Taxonomy Verb: recall, identify, name
+    
+    Learning objective: Students recall and identify the different benefits of physical activity by exploring a simple bar chart showing how many classmates in a pretend survey named each benefit.
+    
+    Chart type: Horizontal bar chart
+    
+    Purpose: Show, in kid-friendly terms, the variety of benefits physical activity provides, using a simple pretend classroom survey ("What do you notice after you play outside?")
+    
+    X-axis: Number of classmates who noticed this benefit (0-20, pretend survey of 20 students)
+    Y-axis: Benefit categories (icons plus short labels)
+    
+    Data series (single series, one color per bar for visual variety):
+    - "I feel happier" (green bar): 18
+    - "I have more energy" (orange bar): 15
+    - "I focus better in class" (blue bar): 12
+    - "I sleep better at night" (purple bar): 10
+    - "My muscles feel stronger" (red bar): 14
+    
+    Title: "What Grade 1 Friends Noticed After Being Active"
+    Legend: Not needed (single series with labeled bars)
+    
+    Interactive features:
+    - Hover over each bar to reveal a tooltip with the exact number and a one-sentence explanation of that benefit
+    - Click a bar to highlight it and show a matching simple icon animation (e.g., a sun icon for energy)
+    
+    Annotations:
+    - Small icon next to each bar label (heart for feelings, lightning bolt for energy, brain for focus, moon for sleep, muscle for strength)
+    
+    Implementation: Chart.js horizontal bar chart with tooltip callbacks; icons rendered as HTML labels next to axis ticks
+    -->
+</body>
+</html>

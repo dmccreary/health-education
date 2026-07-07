@@ -1,0 +1,22 @@
+{
+  "title": "Bystander Response Decision Tool",
+  "description": "Students examine a bullying or exclusion scenario and",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "bystander-response-decision-tool",
+  "library": "Mermaid",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine, differentiate, organize",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Conflict Resolution and Inclusion",
+  "chapter_dir": "06-conflict-resolution-and-inclusion"
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Health Claim Evaluator Rubric Rater</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Health Claim Evaluator Rubric Rater</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> health-claim-evaluator-rubric-rater</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
+            <p><strong>Learning Objective:</strong> Students assess and judge six realistic health claims (three from government/institutional sources, three from unverified social-media or influencer posts) against the five-question rubric, justifying a final validity verdict for each.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** health-claim-evaluator-rubric-rater<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Evaluate (L5)
+    Bloom Taxonomy Verb: assess, judge, justify
+    
+    Learning objective: Students assess and judge six realistic health claims (three from government/institutional sources, three from unverified social-media or influencer posts) against the five-question rubric, justifying a final validity verdict for each.
+    
+    Canvas layout: Left area (60%): claim text box showing one health claim at a time with its stated source type. Right area (40%): five rubric-question sliders/toggles (Who Wrote/Reviewed It, Evidence Cited, Funding Transparent, Regularly Updated, Product Being Sold) plus a verdict panel.
+    
+    Visual elements: Claim card; five rubric toggle switches the learner sets based on the information given about the source; a computed "Validity Score" (0-5) that updates live as toggles change; a verdict label (Likely Valid / Use Caution / Likely Not Valid) tied to the score.
+    
+    Interactive controls: Learner reads each claim and its source description, sets the five toggles based on their judgment, and reads the computed verdict; "Compare My Verdict" button reveals the model's reasoning and a brief justification; "Next Claim" button advances through six claims; a summary screen at the end tallies how many verdicts matched the model reasoning.
+    
+    Default parameters: All toggles start unset (neutral); six claims presented in a fixed sequence, evenly split between institutional and unverified social-media sources.
+    
+    Instructional Rationale: An Evaluate-level objective requires learners to judge and justify a conclusion using criteria, not just recall a definition; a rubric-rater with a live-updating score makes the evaluation criteria transparent and lets students see exactly how each factor changes the overall verdict.
+    
+    Implementation notes: p5.js. All six claims and sources are fictionalized composites based on realistic, well-documented patterns rather than naming any real individual or brand. Responsive canvas that stacks the two areas vertically on narrow screens.
+    -->
+</body>
+</html>

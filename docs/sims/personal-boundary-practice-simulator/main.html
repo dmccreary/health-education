@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Practice Setting a Boundary</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Practice Setting a Boundary</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> personal-boundary-practice-simulator</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Apply (L3)</p>
+            <p><strong>Learning Objective:</strong> Students practice using clear boundary-setting language by choosing the best response in short, everyday scenarios involving personal space or belongings.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** personal-boundary-practice-simulator<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Apply (L3)
+    Bloom Taxonomy Verb: use, demonstrate, practice
+    
+    Learning objective: Students practice using clear boundary-setting language by choosing the best response in short, everyday scenarios involving personal space or belongings.
+    
+    Canvas layout:
+    - Left side (400px): One scenario at a time (e.g., "A cousin wants to borrow your favorite toy without asking" or "A friend keeps tickling you after you asked them to stop")
+    - Right side (200px): Three response choice buttons (a clear boundary statement, a silent/no-response option, an unkind response) plus a "Show What Happens" button
+    
+    Visual elements:
+    - Simple scenario illustration with two friendly characters
+    - Three response buttons with plain text
+    
+    Interactive controls:
+    - Click the response the student would choose
+    - Button: "Show What Happens"
+    - Button: "Next Scenario"
+    
+    Default parameters:
+    - Begins on scenario 1 of 4 with no response chosen
+    
+    Data Visibility Requirements:
+      Stage 1: Show the scenario and three response choices
+      Stage 2: After a choice and clicking "Show What Happens," reveal a short, calm outcome and explanation (e.g., "Saying 'Please stop, I don't like that' is clear and respectful — it tells your friend exactly what you need.")
+      Stage 3: "Next Scenario" loads a new situation, resetting the choices
+    
+    Behavior:
+    - The clear boundary statement is affirmed as the strongest choice, with a one-sentence reason
+    - Other choices receive a gentle, non-judgmental explanation of why a clear boundary statement usually works better
+    - After all four scenarios, a "Boundary-Setting Star!" caption appears, along with a reminder that a trusted adult can always help if a boundary is not respected
+    
+    Instructional Rationale: This is an Apply-level objective (use, demonstrate, practice), so the design lets students actively choose and test boundary-setting language in realistic scenarios, rather than only reading about the concept, which builds a practical skill they can use in real situations.
+    
+    Implementation notes: Use p5.js. Keep every scenario mild and age-appropriate (toys, personal space, tickling, hugs) — never depict abuse or unsafe situations. Every scenario path should end supportively. This MicroSim is the direct student-facing practice activity for this K-3 band.
+    -->
+</body>
+</html>

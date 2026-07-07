@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Active Games and Dances Around the World</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Active Games and Dances Around the World</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> cultural-physical-activity-map</p>
+            <p><strong>Library:</strong> Leaflet</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Students describe examples of cultural and traditional physical activities from different communities and compare what makes each one active and meaningful.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: map
+    **sim-id:** cultural-physical-activity-map<br/>
+    **Library:** Leaflet<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: describe, exemplify, compare
+    
+    Learning objective: Students describe examples of cultural and traditional physical activities from different communities and compare what makes each one active and meaningful.
+    
+    Geographic scope: World map with five marked regions
+    
+    Purpose: Show that active, traditional games and dances exist in communities all over the world, each with its own history
+    
+    Locations and markers:
+    - Philippines: Tinikling dance marker
+    - North American Indigenous nations (general region marker, respectfully labeled by nation where possible): Powwow dance marker
+    - West Africa: traditional circle-dance marker
+    - Caribbean: jump-rope game marker (Double Dutch origins)
+    - General "your community" marker inviting students to think of a local tradition
+    
+    Legend: Icons for "dance," "jump-rope game," and "group circle activity"
+    
+    Interactive features:
+    - Click each marker to open an infobox with: name of the activity, a simple description, and one sentence on why it is physically active
+    - All markers presented with equally respectful, neutral description style -- no marker described as more "unusual" than another
+    - Button: "Show My Community" prompts students (via teacher discussion) to name a local tradition to add to the discussion
+    
+    Color scheme: Each marker uses the same neutral gold color (matching mascot palette) so no single tradition is visually emphasized over another
+    
+    Implementation: Leaflet map with custom marker icons and popups; simple world basemap with minimal extra detail so markers are the visual focus
+    -->
+</body>
+</html>

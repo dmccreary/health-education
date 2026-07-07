@@ -1,0 +1,22 @@
+{
+  "title": "Foods Around the World",
+  "description": "Students recognize that foods from many cultural traditions belong to the same five food groups, connecting Cultural Food Tradition to Food Group.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "foods-around-the-world",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "recognize, connect, classify",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "Health and Food",
+  "chapter_dir": "01-health-and-food"
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "personal-health-goal-tracker",
+  "diagram_name": "Personal Health Goal Tracker",
+  "chapter_number": 7,
+  "chapter_title": "Health Skills And Goal Setting",
+  "chapter_dir": "07-health-skills-and-goal-setting",
+  "chapter_rel_dir": "bands/grade-5/chapters/07-health-skills-and-goal-setting",
+  "library": "Chart.js",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "track, assess, reflect",
+  "learning_objective": "Students track simulated progress toward a personal health goal over a two-week period and reflect on whether the goal was met.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** personal-health-goal-tracker<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Evaluate (L5)\nBloom Taxonomy Verb: track, assess, reflect\n\nLearning objective: Students track simulated progress toward a personal health goal over a two-week period and reflect on whether the goal was met.\n\nCanvas layout: Left (450px) a bar chart showing daily progress toward a chosen goal across 14 days; right (200px) goal-setup controls and a reflection prompt panel.\n\nVisual elements: Bar chart with one bar per day, color-coded green (goal met that day) or gray (not met); goal-setup dropdown (\"Drink water instead of soda at lunch,\" \"Get 9 hours of sleep,\" \"Walk or bike to school,\" \"Eat a vegetable at dinner\"); a \"days met\" counter.\n\nInteractive controls: Dropdown to choose a sample goal; click any day's bar to toggle it met/not-met and see the counter and chart update live; \"Reflect\" button reveals reflection questions once at least 7 days are logged.\n\nDefault parameters: 14-day window, goal defaults to \"Drink water instead of soda at lunch,\" all days start gray.\n\nBehavior: Hovering a bar shows the exact day and status in a tooltip. Clicking \"Reflect\" after logging days shows: \"You met your goal 9 out of 14 days. What helped on the days it worked? What got in the way on the days it didn't?\"\n\nInstructional Rationale: Evaluate-level objective, so the tool has students assess their own simulated progress and reflect on patterns rather than just viewing a static result.\n\nImplementation notes: Chart.js bar chart with click-to-toggle bar data; goal objects stored with label and target description; reflection panel populated dynamically based on the ratio of met/unmet days."
+}

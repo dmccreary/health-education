@@ -1,0 +1,22 @@
+{
+  "title": "Finish the Sentence — Communication Practice",
+  "description": "Students demonstrate communicating thoughts, feelings, wants, and needs in healthy ways by completing simple sentence-starter scenarios with the best available response.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "communication-sentence-builder",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate, practice, use",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "Foundations of Health and Safe Habits",
+  "chapter_dir": "01-foundations"
+}

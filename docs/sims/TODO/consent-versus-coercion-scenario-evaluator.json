@@ -1,0 +1,15 @@
+{
+  "sim_id": "consent-versus-coercion-scenario-evaluator",
+  "diagram_name": "Consent Versus Coercion Scenario Evaluator",
+  "chapter_number": 6,
+  "chapter_title": "Personal Safety And Violence Prevention",
+  "chapter_dir": "06-personal-safety-and-violence-prevention",
+  "chapter_rel_dir": "bands/grade-5/chapters/06-personal-safety-and-violence-prevention",
+  "library": "p5.js",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "judge, justify, assess",
+  "learning_objective": "Students evaluate short scenarios and judge whether the outcome reflects genuine consent or coercion, justifying their reasoning.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** consent-versus-coercion-scenario-evaluator<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Evaluate (L5)\nBloom Taxonomy Verb: judge, justify, assess\n\nLearning objective: Students evaluate short scenarios and judge whether the outcome reflects genuine consent or coercion, justifying their reasoning.\n\nCanvas layout: Left (450px) scenario text; right (200px) two judgment buttons (\"Consent\" / \"Coercion\") and a \"Justify It\" reveal panel.\n\nVisual elements: Scenario card (e.g., \"Maya asks Jordan three times to share his tablet game password. Jordan finally says fine just to stop her from asking.\"); two judgment buttons.\n\nInteractive controls: Click a judgment button; \"Why?\" reveals reasoning using the test \"Would they have said yes without the pressure?\"; \"Next Scenario\" cycles through 8 scenarios spanning items, photos, secrets, activities, and money.\n\nBehavior: Selecting \"Coercion\" reveals \"Jordan only agreed after repeated asking wore him down — that's coercion, not consent.\"\n\nInstructional Rationale: Evaluate-level objective requiring justified judgment rather than passive reading.\n\nImplementation notes: p5.js; scenario objects with text, correct judgment, and justification string."
+}

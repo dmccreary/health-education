@@ -1,0 +1,15 @@
+{
+  "sim_id": "inclusive-environment-design-studio",
+  "diagram_name": "Inclusive Environment Design Studio",
+  "chapter_number": 6,
+  "chapter_title": "Conflict Resolution and Inclusion",
+  "chapter_dir": "06-conflict-resolution-and-inclusion",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/06-conflict-resolution-and-inclusion",
+  "library": "p5.js",
+  "bloom_level": "Create (L6)",
+  "bloom_verb": "design, formulate, construct",
+  "learning_objective": "Students design a set of concrete policy, physical",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n\n**sim-id:** inclusive-environment-design-studio<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Create (L6)\nBloom Verb: design, formulate, construct\n\nLearning objective: Students design a set of concrete policy, physical\nspace, and norm interventions for a given environment (a classroom, a\nsports team, or a club) that systemically build inclusion, going beyond\nindividual acts of kindness.\n\nCanvas layout:\n- Left (40%): a description of a realistic environment with 2-3 named\n  exclusion risk points (e.g., a classroom where group work always uses\n  the same self-selected teams)\n- Right (60%): three labeled design columns — Policy, Physical Space,\n  Norms — into which the student drags or types their own proposed\n  interventions\n\nData Visibility Requirements:\n  Stage 1: Show the environment description and its named risk points\n  Stage 2: Student proposes at least one intervention per column\n  addressing the risk points\n  Stage 3: Reveal a set of model interventions for comparison, organized\n  by the same three columns, with a one-sentence rationale for each\n  Stage 4: Student can revise their own design after seeing the model\n  set, and a short reflection prompt asks what they would change and why\n\nInteractive controls:\n- Text input or drag-and-drop cards for each of the three design columns\n- Button: \"Compare to Model Interventions\"\n- Button: \"Revise My Design\"\n- Button: \"New Environment Scenario\" (3 scenario sets: classroom, sports\n  team, club)\n\nDefault parameters: Scenario bank includes classroom, sports team, and\nclub settings; model interventions cover concrete, realistic examples\n(mixed seating charts, rotating group assignments, accessible physical\nspace, explicit newcomer-inclusion norms)\n\nInstructional Rationale: Designing original systemic interventions across\nthree levels (policy, space, norms) is a Create-level objective — the\npeak cognitive demand for this grade band — so a construction tool with a\nmodel-comparison step is used rather than a selection or rating task,\nrequiring students to generate their own solutions before seeing an\nexpert model.\n\nImplementation notes: p5.js with draggable/editable card interface across\nthree columns; object array of {environment, riskPoints, modelPolicy,\nmodelSpace, modelNorms, rationale} for each of the three scenarios."
+}

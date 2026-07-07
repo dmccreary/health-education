@@ -1,0 +1,15 @@
+{
+  "sim_id": "cultural-physical-activity-map",
+  "diagram_name": "Active Games and Dances Around the World",
+  "chapter_number": 4,
+  "chapter_title": "Staying Healthy in Our Environment",
+  "chapter_dir": "04-staying-healthy-environment",
+  "chapter_rel_dir": "bands/grade-2/chapters/04-staying-healthy-environment",
+  "library": "Leaflet",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "describe, exemplify, compare",
+  "learning_objective": "Students describe examples of cultural and traditional physical activities from different communities and compare what makes each one active and meaningful.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: map\n**sim-id:** cultural-physical-activity-map<br/>\n**Library:** Leaflet<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: describe, exemplify, compare\n\nLearning objective: Students describe examples of cultural and traditional physical activities from different communities and compare what makes each one active and meaningful.\n\nGeographic scope: World map with five marked regions\n\nPurpose: Show that active, traditional games and dances exist in communities all over the world, each with its own history\n\nLocations and markers:\n- Philippines: Tinikling dance marker\n- North American Indigenous nations (general region marker, respectfully labeled by nation where possible): Powwow dance marker\n- West Africa: traditional circle-dance marker\n- Caribbean: jump-rope game marker (Double Dutch origins)\n- General \"your community\" marker inviting students to think of a local tradition\n\nLegend: Icons for \"dance,\" \"jump-rope game,\" and \"group circle activity\"\n\nInteractive features:\n- Click each marker to open an infobox with: name of the activity, a simple description, and one sentence on why it is physically active\n- All markers presented with equally respectful, neutral description style -- no marker described as more \"unusual\" than another\n- Button: \"Show My Community\" prompts students (via teacher discussion) to name a local tradition to add to the discussion\n\nColor scheme: Each marker uses the same neutral gold color (matching mascot palette) so no single tradition is visually emphasized over another\n\nImplementation: Leaflet map with custom marker icons and popups; simple world basemap with minimal extra detail so markers are the visual focus"
+}

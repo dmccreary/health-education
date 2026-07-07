@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>World Traditions, Same Nutrients</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>World Traditions, Same Nutrients</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> world-traditions-same-nutrients</p>
+            <p><strong>Library:</strong> Leaflet</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Students compare how four cultural food traditions meet the same daily nutrient and energy needs through different staple foods.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: map
+    **sim-id:** world-traditions-same-nutrients<br/>
+    **Library:** Leaflet<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: compare, exemplify, classify
+    
+    Learning objective: Students compare how four cultural food traditions meet the same daily nutrient and energy needs through different staple foods.
+    
+    Purpose: Show that nutrient needs are universal even though the foods used to meet them vary widely and respectfully across cultures.
+    
+    Geographic scope: World map with four marked regions — Japan, West Africa, Mexico, and Scandinavia (Norway/Sweden)
+    
+    Locations and markers:
+    - Japan marker: rice, fish, tofu icon cluster
+    - West Africa marker: millet/rice, cassava, beans/peanuts icon cluster
+    - Mexico marker: corn, beans, chili icon cluster
+    - Scandinavia marker: rye, dairy, salmon icon cluster
+    
+    Data being represented: For each region, a short list of staple foods and which nutrient category each mainly supplies (protein, carbohydrate/energy, vitamins/minerals)
+    
+    Legend: Icon key for protein sources, carbohydrate/energy sources, and vitamin/mineral sources; a neutral note that all four approaches are equally valid ways to meet nutrient needs
+    
+    Color scheme: Each region uses its own neutral accent color (no ranking colors like red/green)
+    
+    Interactive features:
+    - Click a region marker to open an infobox listing its staple foods and which nutrients each food mainly supplies
+    - A "Compare Two Regions" toggle lets students select two markers and see their nutrient-source lists side by side in a panel
+    - Hover any staple-food icon for a one-sentence description of the food and its nutrient role
+    
+    Implementation: Leaflet.js with custom markers and a side info panel populated from a small JSON dataset of region/food/nutrient mappings.
+    -->
+</body>
+</html>

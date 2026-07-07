@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Recovery Supports Network Map</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Recovery Supports Network Map</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> recovery-supports-network-map</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students examine how clinical treatment and community/cultural recovery supports connect and reinforce each other, organizing the relationship between distinct support types and a shared recovery outcome.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: graph-model
+    **sim-id:** recovery-supports-network-map<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: organize, examine, distinguish
+    
+    Learning objective: Students examine how clinical treatment and community/cultural recovery supports connect and reinforce each other, organizing the relationship between distinct support types and a shared recovery outcome.
+    
+    Node types: Central node "A Person In Recovery" (green circle). Support nodes (blue squares): Peer Support Groups, Indigenous And Cultural Healing Practices, Family-Based Support, Faith And Community Organizations, Clinical Treatment (linking back to the Treatment Pathway Explorer content). Outcome node (gold circle): "Stronger, Lasting Recovery."
+    
+    Edge types: "Supports" (solid green arrows from each support node to the central "A Person In Recovery" node). "Contributes To" (solid gold arrows from the central node to the outcome node).
+    
+    Layout: Central node in the middle, five support nodes arranged around it in a ring, shared outcome node positioned prominently below.
+    
+    Interactive features: Hover any node for its label; click a support node to open an infobox with two to three factual, hopeful sentences describing that support type and its documented role in recovery; click the central node for an infobox noting that most people combine more than one support type; click the outcome node for an infobox affirming that recovery is a realistic, achievable outcome; zoom with mouse wheel, pan by dragging background.
+    
+    Legend: Color/shape key distinguishing the central node, support types, and the outcome node.
+    
+    Implementation: vis-network JavaScript library; canvas responsive, default 800x500px. Content note: every support-type description is specific and affirming, avoiding generic or token references to culture or faith.
+    -->
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "title": "Germ Spread Pathway Explorer",
+  "description": "Students identify and explain the five common pathways germs use to spread between people, surfaces, and hosts.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "germ-spread-pathway-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, identify, describe",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Wellness and Disease Prevention",
+  "chapter_dir": "05-wellness-and-disease-prevention"
+}

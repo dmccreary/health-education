@@ -1,0 +1,22 @@
+{
+  "title": "Sort the Stage",
+  "description": "Students recognize the general stages of puberty by sorting plain, non-anatomical statements into the correct simplified stage: Before Changes Start, Changes Beginning, or Changes Continuing.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "puberty-stage-sorter",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "describe, classify, sequence",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Growth And Puberty",
+  "chapter_dir": "06-growth-and-puberty"
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Decision-Making to Goal-Setting Bridge</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Decision-Making to Goal-Setting Bridge</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> decision-to-goal-bridge</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Understand<br/></p>
+            <p><strong>Learning Objective:</strong> Explain how each step of the DECIDE decision-making</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: graph-model
+    
+    **sim-id:** decision-to-goal-bridge<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Understand<br/>
+    Bloom Taxonomy Verb: compare, exemplify
+    
+    Learning objective: Explain how each step of the DECIDE decision-making
+    model maps onto an equivalent step of the goal-setting process, showing
+    goal-setting as decision-making applied repeatedly over time.
+    
+    Node types: Two parallel chains of six nodes each — top chain "Decision-
+    Making Steps" (Define, Explore, Consider, Identify, Decide, Evaluate);
+    bottom chain "Goal-Setting Steps" (Evaluate Focus Area, Explore Process
+    Type, Formulate Strategies, Choose Strategy, Act on Plan, Evaluate
+    Outcomes).
+    
+    Edge types: A horizontal "maps to" edge connecting each top node to its
+    corresponding bottom node (e.g., "Define" maps to "Evaluate Focus Area";
+    "Explore" maps to "Explore Process Type"; "Consider" and "Identify" map to
+    "Formulate Strategies" and "Choose Strategy"; "Decide" maps to "Act on
+    Plan"; "Evaluate" maps to "Evaluate Outcomes").
+    
+    Sample data: Clicking any "maps to" edge opens an infobox explaining the
+    parallel in one sentence, e.g., "Just as you first Define a decision, you
+    first must Evaluate which health focus area actually deserves a goal."
+    
+    Layout: Two horizontal rows, decision-making on top, goal-setting on
+    bottom, aligned in columns.
+    
+    Interactive features: Hover a node for its definition; click a connecting
+    edge for the mapping explanation; zoom and pan enabled.
+    
+    Visual styling: Top row in the six DECIDE colors from the earlier diagram;
+    bottom row in matching shades one tone lighter, visually pairing each step.
+    
+    Legend: "Decision-making step" vs. "Goal-setting step," with the mapping
+    edges explained as "same underlying skill, applied over time."
+    
+    Implementation: vis-network with a fixed two-row hierarchical layout.
+    -->
+</body>
+</html>

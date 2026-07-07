@@ -1,0 +1,22 @@
+{
+  "title": "Feeling Sentence Builder",
+  "description": "Students practice communicating a feeling in a healthy way by assembling an \"I feel ___ because ___\" sentence from word/picture tiles for a given scenario.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "feeling-sentence-builder",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "use, practice, demonstrate",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "Understanding and Talking About Feelings",
+  "chapter_dir": "03-feelings"
+}

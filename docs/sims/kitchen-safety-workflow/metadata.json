@@ -1,0 +1,22 @@
+{
+  "title": "Kitchen Safety Checklist",
+  "description": "Students describe food safety practices that promote healthy eating by exploring each step of a simple kitchen safety sequence and why it matters.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "kitchen-safety-workflow",
+  "library": "Mermaid",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "describe, explain, summarize",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Food And Nutrition",
+  "chapter_dir": "04-food-and-nutrition"
+}

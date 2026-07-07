@@ -1,0 +1,22 @@
+{
+  "title": "Health Source Credibility Checklist",
+  "description": "Students identify the five characteristics of a valid health information source (expertise-based, evidence-based, transparent funding, regularly updated, no product-selling conflict) and exemplify each with a realistic source type.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "health-source-credibility-checklist",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "identify, summarize, exemplify",
+  "completion_status": "scaffold",
+  "chapter_number": 11,
+  "chapter_title": "Health Influences and Information Literacy",
+  "chapter_dir": "11-health-influences-and-information-literacy"
+}

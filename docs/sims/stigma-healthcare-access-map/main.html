@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>How Stigma Blocks Healthcare-Seeking</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>How Stigma Blocks Healthcare-Seeking</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> stigma-healthcare-access-map</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students examine how four levels of stigma
+(internalized, interpersonal, community/cultural, institutional) can</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: graph-model
+    
+    **sim-id:** stigma-healthcare-access-map<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy Level: Analyze (L4)
+    Bloom Verb: examine, differentiate, organize
+    
+    Learning objective: Students examine how four levels of stigma
+    (internalized, interpersonal, community/cultural, institutional) can
+    independently or jointly block healthcare-seeking, and analyze the
+    resulting public-health consequence.
+    
+    Node types:
+    1. Central node: "Person With a Health Question" (blue circle)
+    2. Stigma-level nodes (orange squares): Internalized Stigma, Interpersonal
+       Stigma, Community/Cultural Stigma, Institutional Stigma
+    3. Outcome node (red diamond): "Delayed or Avoided Care"
+    4. Consequence node (gray hexagon): "Undetected Health Complications and
+       Continued Transmission Risk"
+    
+    Edge types:
+    - "Can Discourage Seeking Care" (solid black arrows from each stigma-level
+      node to the central node)
+    - "Leads To" (solid arrow from central node to "Delayed or Avoided Care")
+    - "Results In" (solid arrow from "Delayed or Avoided Care" to the
+      consequence node)
+    
+    Layout: Hierarchical, stigma-level nodes at top, central node in middle,
+    outcome and consequence nodes at bottom
+    
+    Interactive features:
+    - Hover a stigma-level node: shows its definition
+    - Click a stigma-level node: opens a side panel with a concrete example of
+      how that level of stigma shows up in a real scenario
+    - Click the outcome or consequence node: opens a panel explaining the
+      public-health reasoning connecting delayed care to worse health outcomes
+    - Drag, zoom, and pan enabled
+    
+    Legend: color key for stigma-level, outcome, and consequence node types
+    
+    Implementation: vis-network, hierarchical layout, click-triggered side
+    panel content stored in a JSON lookup keyed by node id
+    -->
+</body>
+</html>

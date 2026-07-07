@@ -1,0 +1,22 @@
+{
+  "title": "Buckle Up and Gear Up",
+  "description": "Students practice matching the correct injury-prevention gear to a given activity, reinforcing the Injury Prevention concept through hands-on drag-and-drop matching.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "buckle-up-and-gear-up",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "practice, demonstrate",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Staying Safe",
+  "chapter_dir": "05-staying-safe"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Nutrition Plan Builder",
+  "description": "Students design a one-day nutrition plan by assembling",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "nutrition-plan-builder",
+  "library": "p5.js",
+  "bloomLevel": "Create (L6)",
+  "bloomVerb": "design, construct",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "Food and Nutrition",
+  "chapter_dir": "01-food-and-nutrition"
+}

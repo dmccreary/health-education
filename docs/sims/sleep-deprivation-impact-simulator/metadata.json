@@ -1,0 +1,22 @@
+{
+  "title": "Sleep Deprivation Impact Simulator",
+  "description": "Students evaluate how varying nightly sleep duration",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "sleep-deprivation-impact-simulator",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "assess, justify, evaluate",
+  "completion_status": "scaffold",
+  "chapter_number": 7,
+  "chapter_title": "Brain Health, Sleep, and Emergency Care",
+  "chapter_dir": "07-brain-health-sleep-and-emergency-care"
+}

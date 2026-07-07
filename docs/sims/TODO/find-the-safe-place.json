@@ -1,0 +1,15 @@
+{
+  "sim_id": "find-the-safe-place",
+  "diagram_name": "Find the Safe Place",
+  "chapter_number": 5,
+  "chapter_title": "Staying Safe",
+  "chapter_dir": "05-staying-safe",
+  "chapter_rel_dir": "bands/kindergarten/chapters/05-staying-safe",
+  "library": "p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "identify, recognize, locate",
+  "learning_objective": "Students identify the correct safe place for a given type of school emergency, reinforcing the Safe Place concept alongside School Emergency.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** find-the-safe-place<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Remember (L1)\nBloom Taxonomy Verb: identify, recognize, locate\n\nLearning objective: Students identify the correct safe place for a given type of school emergency, reinforcing the Safe Place concept alongside School Emergency.\n\nCanvas layout: Full canvas (500px) shows a simple illustrated school map (classroom, hallway, outdoor field, gym). Bottom strip (80px): a prompt naming one emergency type at a time (e.g., \"Fire drill — where is the safe place?\") with three tappable location options.\n\nVisual elements: School map locations shown as friendly labeled icons; the selected answer highlights green (correct) or shakes gently (incorrect, try again).\n\nInteractive controls: Tap the location believed correct; \"Next Emergency\" cycles prompts; \"Reset\" restarts.\n\nDefault parameters: Three prompts cycle in order — fire drill (outdoor field), severe weather drill (hallway), lockdown drill (classroom).\n\nBehavior: Correct tap glows green with a chime and confirming infobox, e.g., \"Yes! During a fire drill, we walk to the outdoor field.\" Incorrect tap shakes gently with a friendly hint. After all three: \"You know where to go for each kind of school emergency!\"\n\nInstructional Rationale: A Remember-level (identify/locate) objective appropriate for pre-readers, so a tap-to-identify pattern with an immediate confirming infobox is used rather than a more complex simulation.\n\nImplementation notes: p5.js. Each emergency type is an object with a prompt string, correct location id, and confirmation string. Text large (24px+) for read-aloud use."
+}

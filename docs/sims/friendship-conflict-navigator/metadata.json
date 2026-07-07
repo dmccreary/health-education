@@ -1,0 +1,22 @@
+{
+  "title": "Friendship Conflict Navigator",
+  "description": "Students apply a step-by-step relationship-management process to a friendship disagreement scenario.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "friendship-conflict-navigator",
+  "library": "Mermaid",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate, practice, use",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "Managing Emotions and Relationships",
+  "chapter_dir": "03-managing-emotions-and-relationships"
+}

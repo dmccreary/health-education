@@ -1,0 +1,15 @@
+{
+  "sim_id": "decision-to-goal-bridge",
+  "diagram_name": "Decision-Making to Goal-Setting Bridge",
+  "chapter_number": 14,
+  "chapter_title": "Health Decision-Making and Goal-Setting",
+  "chapter_dir": "14-health-decision-making-and-goal-setting",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/14-health-decision-making-and-goal-setting",
+  "library": "vis-network",
+  "bloom_level": "Understand<br/>",
+  "bloom_verb": "compare, exemplify",
+  "learning_objective": "Explain how each step of the DECIDE decision-making",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n\n**sim-id:** decision-to-goal-bridge<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand<br/>\nBloom Taxonomy Verb: compare, exemplify\n\nLearning objective: Explain how each step of the DECIDE decision-making\nmodel maps onto an equivalent step of the goal-setting process, showing\ngoal-setting as decision-making applied repeatedly over time.\n\nNode types: Two parallel chains of six nodes each — top chain \"Decision-\nMaking Steps\" (Define, Explore, Consider, Identify, Decide, Evaluate);\nbottom chain \"Goal-Setting Steps\" (Evaluate Focus Area, Explore Process\nType, Formulate Strategies, Choose Strategy, Act on Plan, Evaluate\nOutcomes).\n\nEdge types: A horizontal \"maps to\" edge connecting each top node to its\ncorresponding bottom node (e.g., \"Define\" maps to \"Evaluate Focus Area\";\n\"Explore\" maps to \"Explore Process Type\"; \"Consider\" and \"Identify\" map to\n\"Formulate Strategies\" and \"Choose Strategy\"; \"Decide\" maps to \"Act on\nPlan\"; \"Evaluate\" maps to \"Evaluate Outcomes\").\n\nSample data: Clicking any \"maps to\" edge opens an infobox explaining the\nparallel in one sentence, e.g., \"Just as you first Define a decision, you\nfirst must Evaluate which health focus area actually deserves a goal.\"\n\nLayout: Two horizontal rows, decision-making on top, goal-setting on\nbottom, aligned in columns.\n\nInteractive features: Hover a node for its definition; click a connecting\nedge for the mapping explanation; zoom and pan enabled.\n\nVisual styling: Top row in the six DECIDE colors from the earlier diagram;\nbottom row in matching shades one tone lighter, visually pairing each step.\n\nLegend: \"Decision-making step\" vs. \"Goal-setting step,\" with the mapping\nedges explained as \"same underlying skill, applied over time.\"\n\nImplementation: vis-network with a fixed two-row hierarchical layout."
+}

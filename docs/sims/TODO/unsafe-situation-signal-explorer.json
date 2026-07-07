@@ -1,0 +1,15 @@
+{
+  "sim_id": "unsafe-situation-signal-explorer",
+  "diagram_name": "Unsafe Situation Signal Explorer",
+  "chapter_number": 6,
+  "chapter_title": "Personal Safety And Violence Prevention",
+  "chapter_dir": "06-personal-safety-and-violence-prevention",
+  "chapter_rel_dir": "bands/grade-5/chapters/06-personal-safety-and-violence-prevention",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, distinguish, organize",
+  "learning_objective": "Students examine situations across relationships, technology, and physical safety, and distinguish which signals indicate an unsafe situation worth reporting.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** unsafe-situation-signal-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: examine, distinguish, organize\n\nLearning objective: Students examine situations across relationships, technology, and physical safety, and distinguish which signals indicate an unsafe situation worth reporting.\n\nCanvas layout: Full width (650px) grid of 9 clickable icons in three columns (Relationships, Technology, Physical Safety); bottom strip (120px) infobox.\n\nVisual elements: Three icon cards per column (Relationships: isolation, repeated pressure, ignored \"no\"; Technology: stranger contact, photo shared without permission, secretive message; Physical Safety: unfamiliar adult on campus, uneasy feeling, mismatched emergency routine).\n\nInteractive controls: Click any icon to reveal a description and why it's worth acting on; \"Show All Signals\" and \"Reset\" buttons.\n\nBehavior: Clicking \"repeated pressure\" shows \"Someone continuing to ask after you've said no is coercion.\" Clicking \"uneasy feeling\" shows \"Trust this feeling — tell a trusted adult.\"\n\nInstructional Rationale: Analyze-level objective requiring students to organize and distinguish signals across domains via a categorized click-to-reveal grid.\n\nImplementation notes: p5.js; icon objects grouped by column with label, description, and reasoning string."
+}

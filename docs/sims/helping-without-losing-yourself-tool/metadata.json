@@ -1,0 +1,22 @@
+{
+  "title": "Helping Without Losing Yourself Decision Tool",
+  "description": "Students distinguish healthy peer-support boundaries",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "helping-without-losing-yourself-tool",
+  "library": "Mermaid",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "distinguish, examine, differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Mental Health and Crisis Support",
+  "chapter_dir": "05-mental-health-and-crisis-support"
+}

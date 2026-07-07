@@ -1,0 +1,15 @@
+{
+  "sim_id": "feelings-face-matcher",
+  "diagram_name": "Feelings Face Matcher",
+  "chapter_number": 3,
+  "chapter_title": "Understanding and Talking About Feelings",
+  "chapter_dir": "03-feelings",
+  "chapter_rel_dir": "bands/grade-1/chapters/03-feelings",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "identify, explain, classify",
+  "learning_objective": "Students identify a feeling from a facial expression and cartoon scene, then explain what likely caused that feeling, moving beyond simple naming toward reasoning about cause.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** feelings-face-matcher<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: identify, explain, classify\n\nLearning objective: Students identify a feeling from a facial expression and cartoon scene, then explain what likely caused that feeling, moving beyond simple naming toward reasoning about cause.\n\nCanvas layout:\n- Left area (450px): A large cartoon character scene showing a facial expression and a short situation (e.g., a child hugging a new puppy)\n- Right area (150px): Six feeling word cards to choose from (Happy, Sad, Angry, Scared, Excited, Calm) and an infobox\n\nVisual elements:\n- 8 scenes cycling one at a time, each a simple flat-style illustration of a child in a common situation\n- Six labeled feeling word cards with simple corresponding facial icons\n\nInteractive controls:\n- Click-to-select: student clicks the feeling word that matches the scene\n- Button: \"Next Scene\"\n- Button: \"Reset\"\n\nDefault parameters:\n- First scene: a child smiling while opening a birthday present (clearly \"Happy,\" to build confidence)\n\nData Visibility Requirements:\n  Stage 1: Show the scene with no label\n  Stage 2: After the student clicks a feeling word, show whether it matches\n  Stage 3: Reveal a one-sentence explanation of the cause (\"This child feels happy because they got a fun surprise.\")\n\nBehavior:\n- Correct match: the feeling card glows, gentle chime, explanation caption appears\n- Incorrect match: gentle prompt, \"Look again — what just happened in the picture?\" and the correct card glows softly as a hint\n\nInstructional Rationale: This is an Understand-level (identify/explain) objective, so the MicroSim reveals the cause of the feeling after each answer rather than using continuous animation, letting students connect each scene to a concrete reason a feeling occurred.\n\nImplementation notes: Use p5.js. Large, simple, flat-style illustrations with clear, friendly facial expressions. Teacher reads each scene and explanation aloud."
+}

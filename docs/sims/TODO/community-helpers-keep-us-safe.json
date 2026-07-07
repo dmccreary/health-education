@@ -1,0 +1,15 @@
+{
+  "sim_id": "community-helpers-keep-us-safe",
+  "diagram_name": "Community Helpers Keep Us Safe",
+  "chapter_number": 5,
+  "chapter_title": "Staying Safe",
+  "chapter_dir": "05-staying-safe",
+  "chapter_rel_dir": "bands/kindergarten/chapters/05-staying-safe",
+  "library": "p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "identify, recognize, name",
+  "learning_objective": "Students identify community helpers and the safety practice each one supports, reinforcing the Community Safety Practice concept.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** community-helpers-keep-us-safe<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Remember (L1)\nBloom Taxonomy Verb: identify, recognize, name\n\nLearning objective: Students identify community helpers and the safety practice each one supports, reinforcing the Community Safety Practice concept.\n\nCanvas layout: Full canvas (500px) shows a neighborhood street scene with a crossing guard at a crosswalk, a lifeguard at a pool, and a park safety sign. Bottom strip (60px): instructions and a Reset button.\n\nVisual elements: 3 glowing hotspots (crossing guard, lifeguard, park sign); clicking pops up a labeled infobox.\n\nInteractive controls: Click reveals the safety practice for that helper/sign; Reset button.\n\nDefault parameters: All 3 hotspots begin unrevealed, clickable in any order.\n\nBehavior: Crossing guard reveals \"The crossing guard helps everyone cross the street safely together.\" Lifeguard reveals \"The lifeguard watches the pool so everyone can swim safely.\" Park sign reveals \"Safety signs remind everyone of the playground rules.\" After all three: \"You know how our community works together to stay safe!\"\n\nInstructional Rationale: A Remember-level (identify/name) objective, so click-to-reveal hotspots with short spoken infoboxes match the pre-reader audience without requiring independent reading.\n\nImplementation notes: p5.js. Each hotspot is an object with a label, relative (x,y) region, and infobox string. Text large (24px+) for read-aloud use."
+}

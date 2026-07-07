@@ -1,0 +1,15 @@
+{
+  "sim_id": "verbal-nonverbal-match-simulator",
+  "diagram_name": "Verbal-Nonverbal Match Simulator",
+  "chapter_number": 11,
+  "chapter_title": "Health Influences and Information Literacy",
+  "chapter_dir": "11-health-influences-and-information-literacy",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/11-health-influences-and-information-literacy",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, distinguish, compare",
+  "learning_objective": "Students examine eight paired scenarios (a spoken line plus a described nonverbal cue) and distinguish whether the verbal and nonverbal signals are congruent or incongruent, comparing what each combination communicates.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** verbal-nonverbal-match-simulator<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: examine, distinguish, compare\n\nLearning objective: Students examine eight paired scenarios (a spoken line plus a described nonverbal cue) and distinguish whether the verbal and nonverbal signals are congruent or incongruent, comparing what each combination communicates.\n\nCanvas layout: Top area shows a spoken line in a speech-bubble graphic alongside a simple described nonverbal cue (e.g., \"arms crossed, no eye contact,\" \"relaxed posture, steady eye contact\"); bottom area has two buttons: \"Congruent\" and \"Incongruent.\"\n\nVisual elements: Speech bubble with the verbal line; a simple posture icon representing the described nonverbal cue; feedback panel below the buttons.\n\nInteractive controls: Learner reads the pair and clicks \"Congruent\" or \"Incongruent\"; feedback confirms the answer and explains, in one to two sentences, what the mismatch (or match) likely communicates and what a listener might reasonably infer; \"Next\" button advances through 8 pairs; running score displayed.\n\nDefault parameters: Pairs presented in a fixed order moving from clearly congruent/incongruent examples to more subtle ones; score reset on \"Restart.\"\n\nInstructional Rationale: An Analyze-level objective requires learners to examine and distinguish between signal combinations; immediate feedback on realistic verbal/nonverbal pairs builds the transferable skill of noticing incongruence in real conversations, which is more useful than memorizing a definition of congruence.\n\nImplementation notes: p5.js. Responsive canvas that stacks the speech bubble above the posture icon on narrow screens."
+}

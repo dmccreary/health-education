@@ -1,0 +1,15 @@
+{
+  "sim_id": "how-germs-travel-map",
+  "diagram_name": "How Germs Travel Map",
+  "chapter_number": 5,
+  "chapter_title": "Healthy Habits, Activity, and Germs",
+  "chapter_dir": "05-healthy-habits",
+  "chapter_rel_dir": "bands/grade-1/chapters/05-healthy-habits",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, identify, describe",
+  "learning_objective": "Students identify and explain the common paths germs travel between people, surfaces, and objects in a classroom scene.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** how-germs-travel-map<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, identify, describe\n\nLearning objective: Students identify and explain the common paths germs travel between people, surfaces, and objects in a classroom scene.\n\nCanvas layout:\n- Left area (450px): A simple classroom scene showing a student sneezing, a shared doorknob, a shared water fountain, a shared toy bin, and two students shaking hands\n- Right area (150px): Infobox and a \"Show Germ Path\" toggle button\n\nVisual elements:\n- Five labeled hotspots in the classroom scene: sneeze droplets, doorknob, water fountain, toy bin, handshake\n- Small dotted arrow animation showing germs moving from one hotspot to a hand icon when selected\n\nInteractive controls:\n- Click each hotspot to reveal how germs could spread from that spot\n- Button: \"Show Germ Path\" (animates a simple dotted line from the hotspot to a hand, then to a face)\n- Button: \"Reset\"\n\nDefault parameters:\n- Scene opens with all five hotspots visible and unselected\n\nData Visibility Requirements:\n  Stage 1: Show the classroom scene with five hotspots, no labels\n  Stage 2: After a click, show a one-sentence explanation of that germ path (\"Sneezing without covering your mouth sends tiny droplets into the air that others can breathe in.\")\n  Stage 3: Show the \"Show Germ Path\" animation connecting the hotspot to a hand and then a face, reinforcing the hand-to-face connection\n\nBehavior:\n- Each hotspot reveals its explanation and animated path when clicked\n- A final summary caption appears after all five hotspots are explored: \"Germs travel from surfaces and people to your hands, and then to your face — washing your hands breaks that path!\"\n\nInstructional Rationale: This is an Understand-level (explain/identify) objective, so the MicroSim uses clickable hotspots with concrete captions and a simple path animation rather than continuous animation, helping students trace exactly how germs move step by step.\n\nImplementation notes: Use p5.js. Keep the scene light-hearted, not scary — germs can be shown as small friendly-looking dot characters rather than frightening monsters. Teacher facilitates discussion after each reveal."
+}

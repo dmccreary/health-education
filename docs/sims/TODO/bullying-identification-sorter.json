@@ -1,0 +1,15 @@
+{
+  "sim_id": "bullying-identification-sorter",
+  "diagram_name": "What Counts as Bullying?",
+  "chapter_number": 5,
+  "chapter_title": "Relationships And Respect",
+  "chapter_dir": "05-relationships-and-respect",
+  "chapter_rel_dir": "bands/grade-3/chapters/05-relationships-and-respect",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "describe, distinguish, classify",
+  "learning_objective": "Students describe how bullying affects individuals and distinguish bullying situations from one-time disagreements by sorting short scenario cards into two categories.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** bullying-identification-sorter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: describe, distinguish, classify\n\nLearning objective: Students describe how bullying affects individuals and distinguish bullying situations from one-time disagreements by sorting short scenario cards into two categories.\n\nCanvas layout:\n- Left side (400px): Two labeled columns — \"Bullying\" and \"One-Time Disagreement\"\n- Right side (200px): A stack of short scenario cards read aloud by the teacher (e.g., \"A classmate calls someone a mean name every day at lunch\" vs. \"Two friends argue once about which game to play\")\n\nVisual elements:\n- Two calm, non-graphic columns with simple icons\n- Scenario cards presented as plain text, no depictions of physical harm\n\nInteractive controls:\n- Click each scenario card and place it in the correct column\n- Button: \"Check My Answers\"\n- Button: \"Reset\"\n\nDefault parameters:\n- Six scenario cards begin shuffled above the two columns\n\nData Visibility Requirements:\n  Stage 1: Show the shuffled scenario cards above the two empty columns\n  Stage 2: As each card is placed, show it snap into the chosen column\n  Stage 3: When \"Check My Answers\" is clicked, reveal a calm, factual one-sentence explanation for each card, noting whether it was repeated, intentional, and involved a power difference\n\nBehavior:\n- Correct placements get a checkmark\n- Incorrect placements get a brief, factual explanation of the three bullying features\n- A closing message reminds students: \"If you see or experience bullying, tell a trusted adult.\"\n\nInstructional Rationale: This is an Understand-level objective (describe, distinguish), so the design uses a calm sorting-and-explanation pattern with plain, factual language rather than any dramatized animation, keeping the tone serious and supportive rather than sensational.\n\nImplementation notes: Use p5.js. Keep all scenario text mild, non-graphic, and free of any names resembling real students. Always end the activity with a visible reminder to talk to a trusted adult. This MicroSim is the direct student-facing practice activity for this K-3 band."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "overdose-response-sequence-simulator",
+  "diagram_name": "Overdose Response Sequence Simulator",
+  "chapter_number": 11,
+  "chapter_title": "Substance Recovery and Resilience",
+  "chapter_dir": "11-substance-recovery-and-resilience",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/11-substance-recovery-and-resilience",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate, apply, execute",
+  "learning_objective": "Apply the correct, ordered overdose emergency response",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n\n**sim-id:** overdose-response-sequence-simulator<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Apply (L3)\nBloom Verb: demonstrate, apply, execute\n\nLearning objective: Apply the correct, ordered overdose emergency response\nsequence (call 911, stay with the person, recovery position, naloxone if\navailable/trained, rescue breathing/CPR if trained) to realistic scenario\nprompts, reinforcing that recognition must lead immediately to this\nsequence.\n\nCanvas layout: Left (55%) shows one scenario at a time (e.g., \"You find a\nfriend unresponsive with slow, gurgling breathing and blue-tinged lips at\na party\") with five action-step tiles in random order. Right (45%) holds\na sequence-builder panel and a feedback panel.\n\nInteractive controls: Drag or click tiles into order; \"Check Sequence\"\nconfirms whether Call 911 is placed first (required) and whether the rest\nform a defensible order, explaining why 911 always comes first; a\nfollow-up infobox explains the Good Samaritan law and naloxone's\ntemporary, opioid-specific effect; \"Next Scenario\" cycles through a bank\nof four; \"Reset\" clears the board.\n\nInstructional Rationale: Apply-level objectives require executing a\ncorrect procedure in a new situation; an ordering activity mirrors the\nreal decision an emergency responder faces, with feedback reinforcing why\ncalling 911 always comes first.\n\nImplementation notes: p5.js drag-and-drop or click-to-order; scenario and\nfeedback text in a structured object. No scenario or tile describes how\nto obtain, use, dose, or conceal any substance — scoped entirely to\nrecognizing an emergency and the help-seeking sequence, matching the\nCPR/AED content from earlier in this course. Responsive canvas."
+}

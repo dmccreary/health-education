@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Safe vs. Unsafe Bystander Response Sorter</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Safe vs. Unsafe Bystander Response Sorter</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> safe-bystander-response-sorter</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
+            <p><strong>Learning Objective:</strong> Students evaluate a list of possible bystander responses to a fight or serious bullying situation and judge which responses are safe and effective versus which put the bystander at risk or cause harm.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** safe-bystander-response-sorter<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Evaluate (L5)
+    Bloom Taxonomy Verb: judge, assess, justify
+    
+    Learning objective: Students evaluate a list of possible bystander responses to a fight or serious bullying situation and judge which responses are safe and effective versus which put the bystander at risk or cause harm.
+    
+    Canvas layout:
+    - Left side (450px): A single response card describing one possible bystander action
+    - Right side (200px): Two sorting buttons ("Safe and Helpful" / "Risky or Harmful") and a feedback panel
+    
+    Visual elements:
+    - Response card with plain text describing one action (e.g., "Run to get a teacher", "Try to physically pull them apart", "Record it on your phone", "Walk a friend away before it escalates", "Cheer from the crowd")
+    - Two clearly labeled sorting buttons
+    - Feedback panel explaining why the response belongs in that category, with a calm, sincere tone throughout
+    
+    Interactive controls:
+    - Click "Safe and Helpful" or "Risky or Harmful" to sort each response card
+    - Button: "Why?" — reveals a short, serious explanation, always emphasizing that bystander safety comes first
+    - Button: "Next Response" — cycles through a bank of 8 response cards
+    
+    Default parameters:
+    - Starts with response card: "Run to get a teacher or staff member right away."
+    
+    Behavior:
+    - Correctly sorting "Run to get a teacher" as Safe and Helpful reveals: "This is the single most important bystander action in a fight."
+    - Correctly sorting "Try to physically pull them apart" as Risky or Harmful reveals: "Never physically intervene in a fight. You could be seriously hurt, and it rarely stops the fight."
+    - Correctly sorting "Record it on your phone" as Risky or Harmful reveals: "Filming and sharing causes lasting harm to everyone involved."
+    - Every response, once sorted, keeps its feedback visible until "Next Response" is clicked, reinforcing the reasoning rather than just scoring the answer
+    
+    Instructional Rationale: This is an Evaluate-level objective requiring students to judge and justify safe versus unsafe bystander actions, so the pattern is a judgment task with serious, justification-based feedback rather than a fast-paced game, matching the safety-first tone this topic requires. No humor, sound effects, or playful mascot language appear anywhere in this MicroSim.
+    
+    Implementation notes: Use p5.js. Store each response as an object with text, correct category, and an explanation string; keep all visuals calm and flat with no celebratory animation, consistent with the serious subject matter.
+    -->
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "sim_id": "cultural-wellness-practices-concept-map",
+  "diagram_name": "Cultural Wellness Practices Concept Map",
+  "chapter_number": 5,
+  "chapter_title": "Wellness and Disease Prevention",
+  "chapter_dir": "05-wellness-and-disease-prevention",
+  "chapter_rel_dir": "bands/grade-4/chapters/05-wellness-and-disease-prevention",
+  "library": "vis-network",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, exemplify, classify",
+  "learning_objective": "Students explain and classify examples of cultural wellness perspectives across categories (herbal traditions, caregiving customs, community healing, spiritual/communal practices), recognizing them as valid parts of a whole-health approach.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n**sim-id:** cultural-wellness-practices-concept-map<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, exemplify, classify\n\nLearning objective: Students explain and classify examples of cultural wellness perspectives across categories (herbal traditions, caregiving customs, community healing, spiritual/communal practices), recognizing them as valid parts of a whole-health approach.\n\nPurpose: Illustrate that \"wellness\" includes many valid cultural approaches alongside modern medicine, not instead of it\n\nNode types:\n1. Central node: \"Cultural Wellness Perspectives\" (large gray circle)\n2. Category nodes (four, medium colored circles): \"Herbal Traditions,\" \"Caregiving Customs,\" \"Community Healing Practices,\" \"Spiritual and Communal Practices\"\n3. Example nodes (small circles connected to each category): 2-3 respectful, real-world examples per category (e.g., under Herbal Traditions: \"Ginger tea for upset stomach,\" \"Chamomile for calm rest\")\n\nEdge types:\n- \"Includes\" edges (solid gray lines) connecting the central node to each category\n- \"Example of\" edges (thin colored lines matching category color) connecting each category to its example nodes\n\nLayout: Hierarchical, central node at top, categories in a middle ring, examples in an outer ring\n\nInteractive features:\n- Hover any node to see its full label and one-sentence description\n- Click a category node to highlight only its connected examples and dim the rest\n- Click the central node to reset the full view\n- Zoom with mouse wheel, pan by dragging the background\n\nVisual styling:\n- Central node: neutral warm gray\n- Category nodes: four distinct calm colors (teal, gold, purple, green)\n- Example nodes: lighter tint of their parent category's color\n- Edge thickness: uniform, since all relationships are equally valid\n\nLegend: Small panel explaining node levels (Central Idea → Category → Example)\n\nResponsive behavior: Graph auto-fits to container width on load and on window resize\n\nImplementation: vis-network library with a hierarchical layout option and click event listeners that adjust node/edge opacity to highlight a selected branch."
+}

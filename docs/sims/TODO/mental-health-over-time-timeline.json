@@ -1,0 +1,15 @@
+{
+  "sim_id": "mental-health-over-time-timeline",
+  "diagram_name": "Mental Health Over Time — Interactive Timeline",
+  "chapter_number": 3,
+  "chapter_title": "Mental and Emotional Health",
+  "chapter_dir": "03-mental-emotional-health",
+  "chapter_rel_dir": "bands/grade-4/chapters/03-mental-emotional-health",
+  "library": "vis-timeline",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "describe, explain, interpret",
+  "learning_objective": "Students describe how mental health can rise and fall over time in response to life events, just as physical health does, and explain that seeking help during a harder stretch is a normal, healthy response.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: timeline\n**sim-id:** mental-health-over-time-timeline<br/>\n**Library:** vis-timeline<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: describe, explain, interpret\n\nLearning objective: Students describe how mental health can rise and fall over time in response to life events, just as physical health does, and explain that seeking help during a harder stretch is a normal, healthy response.\n\nPurpose: Normalize the idea that mental health is dynamic, not fixed, using a relatable one-year example timeline.\n\nTime period: A single representative school year (September through June)\n\nOrientation: Horizontal, with a wavy line showing a \"mental health level\" rising and falling across the months\n\nEvents plotted along the wavy line:\n- September: Starting a new school year (steady)\n- November: A stressful stretch after losing a pet (dip)\n- December: Time with family during a break (rise)\n- February: A harder stretch after a friendship conflict (dip)\n- March: Talking to a school counselor and feeling supported (rise begins)\n- June: Feeling steady again at the end of the year (steady, higher than the February dip)\n\nVisual style: A smooth wavy line graph with a calm color gradient; no numeric \"score,\" just relative up/down movement, to avoid implying mental health is measured like a test grade\n\nColor coding: Cool blue for dips, warm gold for rises, neutral gray for steady periods\n\nInteractive features:\n- Click any point on the line to open an infobox describing that life event and how it might affect mental health\n- Click the March point specifically to reveal: \"Reaching out for help during a harder stretch is one of the healthiest things a person can do — it's exactly like seeing a doctor for a physical illness.\"\n- A closing note after exploring three or more points: \"Notice that the line goes back up. Mental health can improve again after a harder stretch, especially with support.\"\n\nImplementation: vis-timeline with a custom-rendered wavy overlay line and click-to-reveal infobox panels."
+}

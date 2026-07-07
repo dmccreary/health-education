@@ -1,0 +1,15 @@
+{
+  "sim_id": "family-shapes-gallery",
+  "diagram_name": "Families Come in Many Shapes",
+  "chapter_number": 2,
+  "chapter_title": "Family And Trusted Adults",
+  "chapter_dir": "02-family",
+  "chapter_rel_dir": "bands/kindergarten/chapters/02-family",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "recognize, connect, classify",
+  "learning_objective": "Students recognize that families come in a variety of structures and that every structure shown is a healthy, real family, connecting Family to Family Structure.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** family-shapes-gallery<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: recognize, connect, classify\n\nLearning objective: Students recognize that families come in a variety of structures and that every structure shown is a healthy, real family, connecting Family to Family Structure.\n\nPurpose and main message: Show six illustrated family portraits in a friendly gallery grid, each representing a different family structure, with a click revealing a short warm description of that family.\n\nLayout: A grid of six large, simple, warm illustrated family portraits: a two-parent family, a single-parent family, a grandparent-led family, a foster family, a blended family, and a family with two moms or two dads. Each portrait shows the family members smiling together in a simple home or park setting.\n\nInteractive elements:\n- Click or tap any family portrait to open a simple infobox with one warm sentence describing that family structure (e.g., \"This family has a grandma who takes care of the children every day — that's her important job in this family.\")\n- Hover highlights the portrait with a soft glow before clicking\n- No portrait is marked as more \"normal\" than another; all six appear the same size with the same friendly visual treatment\n\nData to display per portrait:\n- Two-parent family — \"Two parents share the job of taking care of their children.\"\n- Single-parent family — \"One parent takes care of the children all on their own, and does a great job.\"\n- Grandparent-led family — \"A grandparent takes care of the children every day, just like a parent would.\"\n- Foster family — \"A foster family opens their home to take care of a child for a while.\"\n- Blended family — \"A blended family happens when two families join together to become one new family.\"\n- Two moms or two dads — \"Some children have two moms or two dads who take care of them together.\"\n\nColor coding: Use the same soft, warm color palette across all six portraits so no single family structure is visually singled out as different or unusual.\n\nResponsive behavior: Grid collapses to a single vertical column of portraits on narrow screens.\n\nImplementation: p5.js canvas with click-region detection for each portrait; infobox rendered as a text panel below the grid."
+}

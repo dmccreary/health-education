@@ -1,0 +1,15 @@
+{
+  "sim_id": "nutrition-plan-builder",
+  "diagram_name": "Nutrition Plan Builder",
+  "chapter_number": 1,
+  "chapter_title": "Food and Nutrition",
+  "chapter_dir": "01-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/01-food-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Create (L6)",
+  "bloom_verb": "design, construct",
+  "learning_objective": "Students design a one-day nutrition plan by assembling",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n\n**sim-id:** nutrition-plan-builder<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Create (L6)\nBloom Verb: design, construct\n\nLearning objective: Students design a one-day nutrition plan by assembling\nmeals and snacks from a food bank into slots, then receive feedback on\nhow well the resulting plan matches a target calorie range and\nmacronutrient balance carried over from their needs assessment.\n\nCanvas layout:\n- Top: five plan slots (Breakfast, Lunch, Dinner, Snack 1, Snack 2)\n- Bottom: scrollable food card bank organized by category (grains,\n  protein, dairy/alternatives, fruits/vegetables, combination dishes)\n  including foods from multiple cultural cuisines\n- Side panel: running totals (calories, carbohydrate/protein/fat grams,\n  key micronutrients) compared against target range\n\nInteractive controls:\n- Drag-and-drop: food cards from bank into plan slots\n- Button: \"Evaluate My Plan\"\n- Button: \"Load My Needs Assessment\" (pulls target range from the\n  previous MicroSim if available, otherwise uses a default target)\n- Button: \"Clear Plan\"\n- Filter buttons: filter food bank by category or by cultural cuisine tag\n\nDefault parameters: Empty plan slots; default target 2,200-2,400 kcal\n\nBehavior:\n- As cards are dropped into slots, side panel totals update live\n- \"Evaluate My Plan\" produces a written assessment: whether calorie total\n  is within range, whether macronutrient balance is reasonable, and\n  which micronutrient gaps remain\n- Encourage iteration: students can swap cards and re-evaluate as many\n  times as they want\n- Include at least 24 food cards spanning several cultural traditions so\n  no single plan design uses only one culture's foods\n\nInstructional Rationale: A Create-level objective requires a builder\nwhere students assemble original combinations and get feedback on the\nresult, rather than a rigid template. Drag-and-drop assembly mirrors the\nactual cognitive task of design: choosing components under constraints\nand evaluating the outcome, then revising.\n\nImplementation notes: Use p5.js with simple drag detection on card\nobjects and slot bounding boxes; store food nutrient data in a JSON\narray; keep the interface usable on both mouse and touch."
+}

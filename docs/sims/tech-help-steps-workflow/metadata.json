@@ -1,0 +1,22 @@
+{
+  "title": "Steps for Getting Help With a Tech Situation",
+  "description": "Students explain the correct order of steps to take when a technology situation feels unsafe or uncomfortable.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "tech-help-steps-workflow",
+  "library": "Mermaid",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, describe, summarize",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Technology, Community, and Emergency Safety",
+  "chapter_dir": "05-technology-community-emergency-safety"
+}

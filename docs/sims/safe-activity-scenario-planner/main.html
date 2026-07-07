@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Safe Activity Scenario Planner</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Safe Activity Scenario Planner</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> safe-activity-scenario-planner</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Apply (L3)</p>
+            <p><strong>Learning Objective:</strong> Students apply safe-participation strategies (buddy</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    
+    **sim-id:** safe-activity-scenario-planner<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy Level: Apply (L3)
+    Bloom Verb: apply, demonstrate, practice
+    
+    Learning objective: Students apply safe-participation strategies (buddy
+    system, timing, indoor alternatives, equipment, warm-up/cool-down,
+    community programs, hydration) by selecting an appropriate combination of
+    strategies for realistic under-resourced or unsafe-environment scenarios.
+    
+    Canvas layout:
+    - Left (55%): a scenario card describing a realistic setting (e.g., "It's
+      6 p.m. in December and gets dark at 5; your neighborhood park has no
+      streetlights")
+    - Right (45%): seven strategy tiles (one per strategy above) the student
+      can select in any combination
+    
+    Data Visibility Requirements:
+      Stage 1: Show the scenario and all seven strategy tiles unselected
+      Stage 2: Student selects the strategies they judge as most relevant to
+      this specific scenario (multi-select allowed)
+      Stage 3: Reveal feedback identifying which selected strategies directly
+      address the scenario's specific hazard, and noting any strong strategy
+      the student missed, with a one-sentence reason
+      Stage 4: Show a running count of scenarios completed out of a bank of 6,
+      each testing a different combination of environmental barriers (darkness,
+      extreme heat, no sidewalks, unfamiliar area, limited equipment, bad
+      weather)
+    
+    Interactive controls:
+    - Click to select/deselect strategy tiles
+    - Button: "Check My Plan"
+    - Button: "Next Scenario"
+    
+    Default parameters: Scenario bank of 6; no strategy pre-selected
+    
+    Instructional Rationale: Matching a combination of safety strategies to a
+    specific environmental hazard is an Apply-level task requiring judgment
+    about fit, not memorization of a checklist, so a scenario-based
+    multi-select tool with explanatory feedback is used rather than a static
+    list of tips.
+    
+    Implementation notes: p5.js; scenario and feedback data stored as an array
+    of {scenario, hazards, recommendedStrategies, explanation} objects; tone
+    is practical and non-alarmist.
+    -->
+</body>
+</html>

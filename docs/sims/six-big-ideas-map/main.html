@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Six Big Ideas Concept Map</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Six Big Ideas Concept Map</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> six-big-ideas-map</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Remember (L1)</p>
+            <p><strong>Learning Objective:</strong> Students identify each of the six root words for this chapter (Health, Trusted Adult, Permission, Safe Behavior, Influence, Communication) and recognize that Health is the central idea connecting the other five.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: graph-model
+    **sim-id:** six-big-ideas-map<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Remember (L1)
+    Bloom Taxonomy Verb: identify, name, recognize
+    
+    Learning objective: Students identify each of the six root words for this chapter (Health, Trusted Adult, Permission, Safe Behavior, Influence, Communication) and recognize that Health is the central idea connecting the other five.
+    
+    Purpose: Show Health as a hub node connected to the five supporting ideas, so students see the chapter's whole shape before studying each part.
+    
+    Node types:
+    1. Health (center, large yellow circle)
+       - Property: "The big idea — how well your body and mind are working and feeling"
+    2. Trusted Adult, Permission, Safe Behavior, Influence, Communication (five smaller circles around Health, each a different color: blue, green, orange, purple, teal)
+       - Property: one child-friendly definition sentence per node (matching the table above)
+    
+    Edge types:
+    1. CONNECTS_TO (thick gray lines from Health to each of the five outer nodes)
+       - No arrowheads needed; represents "is part of," not direction
+    
+    Layout: Hierarchical/radial with Health in the center and the five ideas arranged evenly around it like a flower.
+    
+    Interactive features:
+    - Hover any node: node glows and a caption appears below the graph with that word's one-sentence meaning, read aloud by the teacher
+    - Click any outer node: the connecting edge to Health highlights in yellow, reinforcing "this idea is part of being healthy"
+    - Drag nodes: children can rearrange the circles; they snap gently back into a tidy layout after a few seconds
+    - Zoom: mouse wheel or pinch; Pan: click-and-drag background
+    
+    Visual styling: Large circular nodes (at least 80px) with big friendly icons (a heart for Health, a handshake for Trusted Adult, a raised hand for Permission, a shield for Safe Behavior, an arrow for Influence, two speech bubbles for Communication). Simple sans-serif labels in large text.
+    
+    Legend: A small key below the canvas listing each color and its word.
+    
+    Implementation: vis-network with a fixed hierarchical/radial layout option (not free-floating physics) so the shape stays readable for young students; canvas size approximately 700x450px, responsive to container width.
+    -->
+</body>
+</html>

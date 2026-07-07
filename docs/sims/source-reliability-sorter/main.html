@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Source Reliability Sorter</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Source Reliability Sorter</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> source-reliability-sorter</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
+            <p><strong>Learning Objective:</strong> Students evaluate short example sources (a health agency web page, an influencer post, a doctor's advice, an ad) and sort each into "Reliable," "Not Reliable," or "Depends — Check Further," building justification skills rather than memorized labels.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** source-reliability-sorter<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Evaluate (L5)
+    Bloom Taxonomy Verb: judge, assess, justify
+    
+    Learning objective: Students evaluate short example sources (a health agency web page, an influencer post, a doctor's advice, an ad) and sort each into "Reliable," "Not Reliable," or "Depends — Check Further," building justification skills rather than memorized labels.
+    
+    Canvas layout:
+    - Top (280px): A source card showing a short mock example (a headline, a one-line quote, and a labeled source type icon)
+    - Bottom (270px): Three drop zones — "Reliable," "Not Reliable," "Depends — Check Further" — plus a "Why?" button
+    
+    Visual elements:
+    - Icons representing source type: a stethoscope (doctor), a government building (health agency), a phone with a heart icon (social media post), a price tag (advertisement)
+    - Color-coded zones: green for Reliable, red for Not Reliable, amber for Depends — Check Further
+    
+    Interactive controls:
+    - Drag-and-drop the source card into a zone
+    - Button: "Why?" reveals a short explanation of the reasoning after sorting
+    - Button: "Next Source"
+    - Button: "Reset"
+    
+    Default parameters:
+    - 8 example source cards cycling in random order, mixing clearly reliable, clearly unreliable, and "depends" cases
+    
+    Data Visibility Requirements:
+      Stage 1: Show the source card with its short example claim and icon
+      Stage 2: Show the three sorting zones
+      Stage 3: After sorting, reveal the correct zone and a short explanation naming the trait involved (expertise, accountability, or bias)
+      Final: Show a summary list of all 8 sources with their correct categories and one-line reasons
+    
+    Behavior:
+    - Every sort reveals an explanation regardless of correctness, reinforcing the three reliability traits rather than just right/wrong answers
+    
+    Instructional Rationale: This is an Evaluate-level objective requiring learners to judge sources by criteria, not recall a fixed list. Sorting with guaranteed justification builds the habit of asking "why" before trusting a source, which transfers beyond the specific examples shown.
+    
+    Implementation notes: Use p5.js. Keep example claims realistic and age-appropriate; avoid naming real social media influencers or real brands.
+    -->
+</body>
+</html>

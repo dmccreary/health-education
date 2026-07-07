@@ -1,0 +1,15 @@
+{
+  "sim_id": "consent-law-principle-map",
+  "diagram_name": "How Consent Law Maps to Ethical Principles",
+  "chapter_number": 3,
+  "chapter_title": "Consent and Boundaries",
+  "chapter_dir": "03-consent-and-boundaries",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/03-consent-and-boundaries",
+  "library": "Mermaid",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, interpret, classify",
+  "learning_objective": "Students interpret why each category of consent law",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n\n**sim-id:** consent-law-principle-map<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Understand (L2)\nBloom Verb: explain, interpret, classify\n\nLearning objective: Students interpret why each category of consent law\nexists by classifying it against the underlying ethical principle\n(freely given, informed) it is designed to protect, and explain the role\nof jurisdiction in which laws apply.\n\nVisual style: Mermaid flowchart, top-to-bottom, click handlers on every\nnode (`click NodeId call showInfo(\"term\")`)\n\nNodes (all clickable):\n1. \"Ethical Principle: Consent Must Be Freely Given and Informed\" — click\n   text: \"The foundation this whole chapter builds — the ethical\n   requirement law is designed to protect\"\n2. \"Age-of-Consent Laws\" — click text: \"Protects the freely-given/informed\n   principle when a significant age gap involving a minor is present;\n   specific ages vary by state\"\n3. \"Incapacitation Laws\" — click text: \"Protects the freely-given/informed\n   principle when alcohol, drugs, unconsciousness, or sleep remove a\n   person's ability to understand or agree\"\n4. \"State and Local Law\" — click text: \"Sets the specific ages,\n   definitions, and rules; varies by state and locality — check your own\n   state's specifics with a qualified source\"\n5. \"Tribal Jurisdiction\" — click text: \"Many tribal nations are sovereign\n   governments with their own legal systems; jurisdiction can depend on\n   location and the people involved\"\n6. \"Federal Law\" — click text: \"Applies in certain contexts, such as\n   crossing state lines or on certain federal lands\"\n\nConnections: 1→2, 1→3, 2→4, 2→5, 2→6, 3→4, 3→5, 3→6\n\nColor coding: gold for the ethical-principle root node, blue for the two\nlaw-category nodes, gray for the three jurisdiction nodes\n\nInteractive features: click any node for its infobox explaining what it\nmeans and how it connects back to the ethical principle at the root\n\nImplementation: Mermaid.js flowchart with JavaScript click bindings to a\ncustom showInfo() function"
+}

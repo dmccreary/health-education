@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Foods Around the World</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Foods Around the World</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> foods-around-the-world</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Students recognize that foods from many cultural traditions belong to the same five food groups, connecting Cultural Food Tradition to Food Group.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: infographic
+    **sim-id:** foods-around-the-world<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: recognize, connect, classify
+    
+    Learning objective: Students recognize that foods from many cultural traditions belong to the same five food groups, connecting Cultural Food Tradition to Food Group.
+    
+    Purpose and main message: Show six foods from different cultural traditions around a circle, with a click revealing which food group(s) each belongs to.
+    
+    Layout: A circle of six large, simple food illustrations (rice, tortilla, injera flatbread, lefse, dumpling, hummus with pita), each with a small flag or pattern motif hinting at its tradition of origin, arranged around a central image of a smiling family sharing a meal.
+    
+    Interactive elements:
+    - Click or tap any food image to open a simple infobox with: the food's name, one sentence naming a culture/region connected to it, and which food group(s) it belongs to (shown as a colored badge matching the food-group colors used in the Food Group Sorting Game)
+    - Hover highlights the food with a soft glow before clicking
+    
+    Data to display per food:
+    - Rice — many cultures worldwide — Grains Group
+    - Tortilla — Mexican and Central American tradition — Grains Group
+    - Injera — Ethiopian tradition — Grains Group
+    - Lefse — Norwegian tradition — Grains Group
+    - Dumpling — Chinese and Eastern European traditions — Grains Group and Protein Foods Group (meat-filled varieties)
+    - Hummus with pita — Middle Eastern tradition — Protein Foods Group and Grains Group
+    
+    Color coding: Reuse the same food-group color key from the Food Group Sorting Game (tan for Grains, brown for Protein Foods) so the two MicroSims reinforce each other.
+    
+    Responsive behavior: Circle layout collapses to a vertical stack of food cards on narrow screens.
+    
+    Implementation: p5.js canvas with click-region detection for each food image; infobox rendered as a text panel below the circle.
+    -->
+</body>
+</html>

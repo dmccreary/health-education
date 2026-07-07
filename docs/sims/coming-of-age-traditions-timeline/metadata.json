@@ -1,0 +1,22 @@
+{
+  "title": "Coming-of-Age Traditions Around the World",
+  "description": "Students describe and compare several real coming-of-age traditions from different cultures, recognizing puberty as a universally experienced but culturally diverse life stage.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "coming-of-age-traditions-timeline",
+  "library": "vis-timeline",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "describe, compare, exemplify",
+  "completion_status": "scaffold",
+  "chapter_number": 2,
+  "chapter_title": "Growth and Development Across Cultures",
+  "chapter_dir": "02-growth-and-development"
+}

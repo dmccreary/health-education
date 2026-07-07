@@ -1,0 +1,22 @@
+{
+  "title": "Curable Versus Manageable STI Classifier",
+  "description": "Students classify named STIs (by text label only, no imagery) as curable or manageable-but-not-curable, and justify each classification using the bacterial-versus-viral distinction.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "curable-versus-manageable-sti-classifier",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "classify, justify, differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "Healthcare Access and Sexual Health",
+  "chapter_dir": "03-healthcare-access-and-sexual-health"
+}

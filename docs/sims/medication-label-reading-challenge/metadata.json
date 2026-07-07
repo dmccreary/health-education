@@ -1,0 +1,22 @@
+{
+  "title": "Medication Label Reading Challenge",
+  "description": "Students apply label-reading skills by locating specific pieces of safety information (dosage, warnings, interactions, expiration date) on a realistic sample medication label.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "medication-label-reading-challenge",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate, apply, practice",
+  "completion_status": "scaffold",
+  "chapter_number": 9,
+  "chapter_title": "Substance Use Culture, Safety, and Risk",
+  "chapter_dir": "09-substance-use-culture-safety-and-risk"
+}

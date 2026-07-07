@@ -1,0 +1,15 @@
+{
+  "sim_id": "marketing-claims-fact-checker",
+  "diagram_name": "Marketing Claims Fact-Checker",
+  "chapter_number": 1,
+  "chapter_title": "Health Foundations and Nutrition",
+  "chapter_dir": "01-health-foundations-and-nutrition",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/01-health-foundations-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "judge, critique, assess, justify",
+  "learning_objective": "Students evaluate real marketing claims against actual label data to judge whether each claim is misleading, technically true but incomplete, or genuinely informative.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** marketing-claims-fact-checker<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Evaluate (L5)\nBloom Taxonomy Verb: judge, critique, assess, justify\n\nLearning objective: Students evaluate real marketing claims against actual label data to judge whether each claim is misleading, technically true but incomplete, or genuinely informative.\n\nLayout: Package mockup with a large front-of-package claim on top, its matching Nutrition Facts panel below, then three judgment buttons — \"Misleading,\" \"Technically True But Incomplete,\" \"Genuinely Informative\" — plus feedback caption and \"Next Product\" button.\n\nVisual elements: 6 paired product examples, e.g. a \"made with real fruit\" snack whose label shows fruit puree as the 5th ingredient; a \"no added sugar\" juice box whose label shows 24g of naturally occurring sugar; plain water with no claims as a contrast case.\n\nBehavior: After a judgment is submitted, feedback explains the reasoning using that product's specific label numbers, reinforcing the general pattern (technical truth versus broader impression) rather than just marking right/wrong.\n\nInstructional Rationale: Judging honesty and completeness is Evaluate-level, so classification-with-justification is used rather than passive reading, requiring the learner to weigh evidence before committing to a judgment.\n\nImplementation notes: p5.js. Each product stored as an object with claim text, label data fields, correct judgment category, and explanation string."
+}

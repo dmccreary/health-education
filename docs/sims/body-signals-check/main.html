@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>My Body's Signals</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>My Body's Signals</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> body-signals-check</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Remember (L1)</p>
+            <p><strong>Learning Objective:</strong> Students identify body signals that mean "I'm hungry," "I'm thirsty," or "I feel fine," matching a picture of a child showing a signal to the correct feeling label.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** body-signals-check<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Remember (L1)
+    Bloom Taxonomy Verb: identify, recognize, name
+    
+    Learning objective: Students identify body signals that mean "I'm hungry," "I'm thirsty," or "I feel fine," matching a picture of a child showing a signal to the correct feeling label.
+    
+    Canvas layout:
+    - Left side (60%): One large illustrated scene at a time showing a child exhibiting a signal (holding stomach with a wavy "growl" line, licking dry lips and reaching for a cup, or smiling and playing energetically)
+    - Right side (40%): Three big labeled buttons: "Hungry," "Thirsty," "Feeling Fine"
+    
+    Visual elements:
+    - 6 simple scenes cycling one at a time (2 hungry scenes, 2 thirsty scenes, 2 feeling-fine scenes)
+    - Large, friendly, rounded character illustrations with exaggerated but gentle expressions
+    
+    Interactive controls:
+    - Button: "Hungry"
+    - Button: "Thirsty"
+    - Button: "Feeling Fine"
+    - Button: "Next Scene"
+    
+    Default parameters:
+    - First scene: child holding stomach (hungry signal)
+    
+    Behavior:
+    - When the correct button is clicked, the scene character smiles bigger and a soft chime plays; a short caption appears explaining the signal (e.g., "A growling tummy means it might be time for a healthy snack!")
+    - When an incorrect button is clicked, no penalty — a gentle prompt appears: "Look again — what is the picture showing?"
+    - Teacher can click "Next Scene" any time to move on, regardless of whether the child answered
+    
+    Instructional Rationale: This is a Remember-level identify/recognize objective for pre-readers, so the pattern uses large pictures and big buttons rather than any text-based question. Immediate, low-stakes feedback supports a whole-class read-aloud format where the teacher calls on students to answer together.
+    
+    Implementation notes: Use p5.js. Keep all illustrations simple, flat, and friendly — avoid any imagery that could look like the child is in distress. Captions should be short enough for the teacher to read aloud in one breath.
+    -->
+</body>
+</html>

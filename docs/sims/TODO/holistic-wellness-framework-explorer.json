@@ -1,0 +1,15 @@
+{
+  "sim_id": "holistic-wellness-framework-explorer",
+  "diagram_name": "Holistic Wellness Framework Explorer",
+  "chapter_number": 10,
+  "chapter_title": "Substances - Effects and Safer Choices",
+  "chapter_dir": "10-substances-effects-and-safer-choices",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/10-substances-effects-and-safer-choices",
+  "library": "vis-network",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, organize, distinguish",
+  "learning_objective": "Students examine the four connected dimensions of a",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n\n**sim-id:** holistic-wellness-framework-explorer<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: examine, organize, distinguish\n\nLearning objective: Students examine the four connected dimensions of a\nholistic Indigenous wellness framework (physical, mental, emotional,\nspiritual), and distinguish how substance use disorder can reflect\ndisruption across more than one dimension rather than a single isolated\ncause.\n\nNode types:\n1. Central node (circle): \"Balance / Wellness\"\n2. Four dimension nodes (colored quadrant shapes): \"Physical,\" \"Mental,\"\n   \"Emotional,\" \"Spiritual\"\n3. Four disruption nodes (one per dimension, muted color): short example\n   of how substance use can disrupt that specific dimension\n4. Four protective-practice nodes (one per dimension, green): a specific\n   protective practice connected to restoring that dimension (e.g.,\n   ceremony for Spiritual, counseling/talking circles for Emotional)\n\nEdge types:\n- \"Part Of\" (dimension node to central node)\n- \"Can Be Disrupted By Substance Use\" (dimension node to its disruption\n  node)\n- \"Restored Through\" (dimension node to its protective-practice node)\n\nLayout: Medicine-wheel-inspired circular layout with the four dimensions\narranged evenly around the central \"Balance/Wellness\" node, disruption and\nprotective nodes branching outward from each dimension\n\nInteractive features:\n- Hover any node: one-sentence description\n- Click a dimension node: infobox explains that dimension's meaning within\n  a holistic wellness framework\n- Click a disruption node: infobox gives a specific, respectful example\n  grounded in chapter text\n- Click a protective-practice node: infobox names the practice and its\n  documented protective value\n- Drag, zoom, and pan enabled\n\nLegend: color key distinguishing dimensions, disruption nodes, and\nprotective-practice nodes\n\nImplementation: vis-network circular/radial layout; all infobox text\nreviewed for respectful, non-stereotyping language; content emphasizes\nthat this is one widely-taught holistic framework among Indigenous\nnations, not a single monolithic Indigenous view."
+}

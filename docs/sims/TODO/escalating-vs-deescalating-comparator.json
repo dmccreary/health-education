@@ -1,0 +1,15 @@
+{
+  "sim_id": "escalating-vs-deescalating-comparator",
+  "diagram_name": "Escalating vs. De-escalating Language Comparator",
+  "chapter_number": 6,
+  "chapter_title": "Conflict Resolution and Inclusion",
+  "chapter_dir": "06-conflict-resolution-and-inclusion",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/06-conflict-resolution-and-inclusion",
+  "library": "Chart.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "compare, contrast, classify",
+  "learning_objective": "Students compare accusatory (\"you\") language against\n\"I\"-statement language across realistic conflict scenarios and classify",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: chart\n\n**sim-id:** escalating-vs-deescalating-comparator<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Understand (L2)\nBloom Verb: compare, contrast, classify\n\nLearning objective: Students compare accusatory (\"you\") language against\n\"I\"-statement language across realistic conflict scenarios and classify\nwhich phrasing is more likely to de-escalate a disagreement.\n\nChart type: Paired horizontal bar chart functioning as a classification\ntool\n\nData Visibility Requirements:\n  Stage 1: Show a bank of 8 paired statement examples (one accusatory\n  version, one \"I\"-statement version of the same underlying complaint)\n  Stage 2: Student selects, for each pair, which version is more likely to\n  de-escalate\n  Stage 3: Reveal a short explanation naming the specific communication\n  skill (active listening, \"I\" statement structure, or perspective-taking)\n  that the de-escalating version demonstrates\n  Stage 4: Track a running score across all 8 pairs\n\nX-axis: Not applicable — statement pairs are displayed as labeled text\ncards rather than a plotted numeric axis\n\nInteractive features: Clicking a statement card selects it as the\nstudent's choice; hovering reveals which communication skill category the\nstatement belongs to before the student commits to an answer\n\nTitle: \"Which Statement Is More Likely to De-escalate the Conflict?\"\n\nInstructional Rationale: Classifying realistic statement pairs against a\ndefined standard is an Understand-level objective, so paired comparison\nwith revealed explanation is used rather than open-ended chart\ninterpretation, keeping the focus on recognizing the communication\npattern rather than on numeric data.\n\nImplementation notes: Chart.js used as a structured card-comparison\ninterface rather than a traditional plotted chart; data stored as an array\nof {accusatory, iStatement, skillDemonstrated, explanation} objects."
+}

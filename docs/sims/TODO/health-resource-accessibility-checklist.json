@@ -1,0 +1,15 @@
+{
+  "sim_id": "health-resource-accessibility-checklist",
+  "diagram_name": "Health Resource Accessibility Checklist",
+  "chapter_number": 13,
+  "chapter_title": "Influences on Health Behavior",
+  "chapter_dir": "13-influences-on-health-behavior",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/13-influences-on-health-behavior",
+  "library": "p5.js",
+  "bloom_level": "Evaluate<br/>",
+  "bloom_verb": "assess, judge",
+  "learning_objective": "Evaluate a given health resource scenario against six",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n\n**sim-id:** health-resource-accessibility-checklist<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Evaluate<br/>\nBloom Taxonomy Verb: assess, judge\n\nLearning objective: Evaluate a given health resource scenario against six\naccessibility dimensions (cost, location/transportation, hours,\nconfidentiality, language/cultural fit, digital access) and reach an overall\naccessibility judgment.\n\nPurpose: Let learners drag a scenario card (e.g., \"school-based health\nclinic,\" \"rural telehealth mental health service,\" \"urban Planned\nParenthood-style clinic,\" \"tribal health center\") onto a six-spoke radar\nchart and rate each spoke 1 (low) to 5 (high) accessibility based on\nprovided scenario facts, then see a computed overall accessibility score.\n\nLayout: Radar/spider chart with six axes, one per accessibility dimension;\nscenario selector above; computed composite score and short written\nrationale panel to the right.\n\nInteractive elements: Click a scenario to load its facts; drag each axis\npoint to a 1-5 rating; a \"Compare\" toggle overlays two scenarios at once so\nlearners can see which is more accessible and on which specific dimension.\n\nData to display: 4 preset scenarios with embedded facts (cost, hours,\ntransit availability, confidentiality law, language services, digital\nrequirement) that justify a \"correct range\" rating band per axis, used for\nfeedback, not a single rigid right answer.\n\nColor coding: Green wedge (high accessibility, 4-5), yellow (moderate, 2-3),\nred (low, 0-1).\n\nResponsive behavior: Chart resizes to container width; radar redraws on\nwindow resize.\n\nImplementation: p5.js custom radar chart component."
+}

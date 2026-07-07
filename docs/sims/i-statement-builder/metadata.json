@@ -1,0 +1,22 @@
+{
+  "title": "I-Statement Builder",
+  "description": "Students practice constructing I-statements by assembling a feeling, a situation, and a request from a scenario prompt using the \"I feel ___ when ___, because ___. Could you ___?\" frame.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "i-statement-builder",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "use, construct, practice",
+  "completion_status": "scaffold",
+  "chapter_number": 8,
+  "chapter_title": "Communication And Goals",
+  "chapter_dir": "08-communication-and-goals"
+}

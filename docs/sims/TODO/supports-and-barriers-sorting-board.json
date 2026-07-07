@@ -1,0 +1,15 @@
+{
+  "sim_id": "supports-and-barriers-sorting-board",
+  "diagram_name": "Supports And Barriers Sorting Board",
+  "chapter_number": 12,
+  "chapter_title": "Advocacy, Goal Setting, and Health Messaging",
+  "chapter_dir": "12-advocacy-goal-setting-and-health-messaging",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/12-advocacy-goal-setting-and-health-messaging",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, distinguish, organize",
+  "learning_objective": "Students examine 12 realistic factor cards (family, culture, technology, media, peers, beliefs) and organize each as a support, a barrier, or \"depends on the situation\" for a specific health decision scenario, distinguishing why the same factor type can function either way.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** supports-and-barriers-sorting-board<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: examine, distinguish, organize\n\nLearning objective: Students examine 12 realistic factor cards (family, culture, technology, media, peers, beliefs) and organize each as a support, a barrier, or \"depends on the situation\" for a specific health decision scenario, distinguishing why the same factor type can function either way.\n\nLayout: One scenario shown at the top (e.g., \"deciding whether to tell a parent about a concerning symptom\"); a deck of 12 factor cards below; three drop zones labeled \"Support,\" \"Barrier,\" and \"Depends On Details.\"\n\nInteractive controls: Learner drags or clicks each factor card into a zone; feedback explains the reasoning and, for \"depends\" cards, gives a concrete example of when that same factor would flip from support to barrier or vice versa; \"New Scenario\" button loads a different decision scenario with a re-shuffled card set.\n\nDefault parameters: Three total scenarios available via the \"New Scenario\" button; card order randomized each session.\n\nInstructional Rationale: An Analyze-level objective requires learners to examine and distinguish overlapping influences rather than memorize a fixed list; sorting the same factor types across multiple scenarios teaches that support-versus-barrier depends on situational details, not on the factor category alone.\n\nImplementation notes: p5.js. Responsive canvas that stacks the three zones vertically on narrow screens."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "handwashing-habit-timeline-tracker",
+  "diagram_name": "Handwashing Habit Timeline Tracker",
+  "chapter_number": 5,
+  "chapter_title": "Wellness and Disease Prevention",
+  "chapter_dir": "05-wellness-and-disease-prevention",
+  "chapter_rel_dir": "bands/grade-4/chapters/05-wellness-and-disease-prevention",
+  "library": "vis-timeline",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate, practice, use",
+  "learning_objective": "Students apply disease prevention strategies by tracking a simulated day's key moments when handwashing matters most, reinforcing when and why each moment blocks a germ pathway.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: timeline\n**sim-id:** handwashing-habit-timeline-tracker<br/>\n**Library:** vis-timeline<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: demonstrate, practice, use\n\nLearning objective: Students apply disease prevention strategies by tracking a simulated day's key moments when handwashing matters most, reinforcing when and why each moment blocks a germ pathway.\n\nTime period: One school day, from morning to evening (7:00 AM to 8:00 PM)\n\nOrientation: Horizontal\n\nEvents:\n- 7:30 AM: \"Before breakfast\" — blocks food/contact pathway\n- 8:45 AM: \"Arriving at school, after touching shared doorknobs\" — blocks surface pathway\n- 10:15 AM: \"After recess\" — blocks direct contact and surface pathway\n- 12:00 PM: \"Before lunch\" — blocks food/contact pathway\n- 12:30 PM: \"After using the bathroom\" — blocks contact and surface pathway\n- 3:30 PM: \"After school, before a snack\" — blocks food/contact pathway\n- 6:00 PM: \"Before dinner\" — blocks food/contact pathway\n- 8:00 PM: \"After coughing or sneezing during the evening\" — blocks respiratory droplet pathway\n\nColor coding:\n- Teal: Meal-related moments (food/contact pathway)\n- Gold: Shared-surface moments (surface pathway)\n- Purple: Respiratory-related moments (droplet pathway)\n\nInteractive features:\n- Click any event to reveal an infobox explaining which germ pathway it blocks and why the timing matters\n- Hover over an event for a short one-line preview before clicking\n\nResponsive behavior: Timeline collapses to a scrollable vertical list on narrow screens while retaining click functionality\n\nImplementation: vis-timeline library with custom item styling per color group and a click listener that populates a side infobox panel."
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Ability-Inclusive Classroom Infographic",
+  "description": "Students explain how everyday classroom tools and adjustments support classmates with different abilities, recognizing that these tools are ordinary, not special treatment.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "ability-inclusive-classroom-infographic",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, exemplify, classify",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Equity, Belonging, And Bystander Action",
+  "chapter_dir": "04-equity-belonging-and-bystander-action"
+}

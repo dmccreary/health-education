@@ -1,0 +1,22 @@
+{
+  "title": "Kindness for Every Ability Explorer",
+  "description": "Students explain how to show kindness and respect to classmates of all abilities by exploring a set of clickable classmate icons representing different physical and neurological differences.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "kindness-for-every-ability-explorer",
+  "library": "vis-network",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, describe, exemplify",
+  "completion_status": "scaffold",
+  "chapter_number": 7,
+  "chapter_title": "Mental And Emotional Health",
+  "chapter_dir": "07-mental-and-emotional-health"
+}

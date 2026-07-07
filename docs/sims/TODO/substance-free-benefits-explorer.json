@@ -1,0 +1,15 @@
+{
+  "sim_id": "substance-free-benefits-explorer",
+  "diagram_name": "Substance-Free Benefits Explorer",
+  "chapter_number": 9,
+  "chapter_title": "Substance Use Culture, Safety, and Risk",
+  "chapter_dir": "09-substance-use-culture-safety-and-risk",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/09-substance-use-culture-safety-and-risk",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, summarize, identify",
+  "learning_objective": "Students identify and explain specific, concrete benefits of remaining substance-free across sleep, athletics, academics, relationships, and brain development.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** substance-free-benefits-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, summarize, identify\n\nLearning objective: Students identify and explain specific, concrete benefits of remaining substance-free across sleep, athletics, academics, relationships, and brain development.\n\nLayout: A central figure icon representing \"A Substance-Free Teen\" with five surrounding labeled nodes: Sleep, Athletic Performance, Academic Focus, Relationships, Brain Development.\n\nInteractive features: Clicking or hovering each node opens an infobox with two to three sentences explaining the specific, concrete benefit in that area, referencing the biological reasons established in the previous chapter (e.g., \"Sleep: Alcohol, nicotine, and cannabis all disrupt healthy sleep cycles; a substance-free body gets full, restorative sleep that supports memory and mood\"). A \"See All Benefits\" button reveals all five infobox texts stacked together as a printable-style summary.\n\nDefault state: No node selected; prompt reads \"Click a topic to see how staying substance-free helps.\"\n\nColor scheme: Warm, positive palette (greens and golds) to visually reinforce the positive framing of this section, distinct from the risk-focused color schemes used later in the chapter.\n\nImplementation: p5.js with clickable circular nodes around a central figure; responsive canvas that rearranges nodes into a vertical list on narrow screens."
+}

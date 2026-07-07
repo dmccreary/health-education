@@ -1,0 +1,22 @@
+{
+  "title": "Warning Sign to Response Workflow",
+  "description": "Students apply the correct sequence from noticing a",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "warning-sign-to-response-workflow",
+  "library": "Mermaid",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "apply, demonstrate, execute",
+  "completion_status": "scaffold",
+  "chapter_number": 9,
+  "chapter_title": "Digital and School Safety",
+  "chapter_dir": "09-digital-and-school-safety"
+}

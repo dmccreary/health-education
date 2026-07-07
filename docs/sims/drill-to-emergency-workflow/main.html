@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>From Drill to Real Emergency</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>From Drill to Real Emergency</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> drill-to-emergency-workflow</p>
+            <p><strong>Library:</strong> Mermaid</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Students explain how practicing a safety procedure prepares students and staff to respond in a real emergency, by exploring each step of a fire-drill workflow and its purpose.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: workflow
+    **sim-id:** drill-to-emergency-workflow<br/>
+    **Library:** Mermaid<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: explain, summarize
+    
+    Learning objective: Students explain how practicing a safety procedure prepares students and staff to respond in a real emergency, by exploring each step of a fire-drill workflow and its purpose.
+    
+    Purpose: Show the connection between practicing a drill and being ready for a real emergency, so students understand *why* schools repeat drills rather than just memorizing steps.
+    
+    Visual style: Simple top-to-bottom flowchart with rounded process boxes
+    
+    Steps (every node must have a Mermaid click directive opening an infobox):
+    1. "Alarm or Signal Sounds" — Hover text: "A drill or real emergency always starts with a clear signal, like a bell or announcement, so everyone knows to begin."
+    2. "Stop and Listen" — Hover text: "Students pause what they're doing and listen for the teacher's instructions."
+    3. "Follow the Practiced Route" — Hover text: "Because the class has practiced this route before, students already know where to walk without needing to think hard."
+    4. "Walk Calmly to the Safe Spot" — Hover text: "Walking, not running, keeps everyone safer and helps adults keep track of the group."
+    5. "Adult Checks Everyone Is Present" — Hover text: "A teacher or staff member counts students to make sure no one is missing."
+    6. "Wait for the All-Clear" — Hover text: "Students wait calmly until an adult says it is safe to return or the emergency has ended."
+    
+    Branch note: A side note box (not a decision diamond) clarifies "This exact sequence works whether it's a practice drill or a real emergency — that's the point of practicing!"
+    
+    Color coding:
+    - Blue: Signal and listening steps
+    - Green: Movement steps
+    - Orange: Adult-led safety check steps
+    
+    Implementation: Mermaid flowchart with `click` directive on every node calling an infobox function that shows the hover text described above.
+    -->
+</body>
+</html>

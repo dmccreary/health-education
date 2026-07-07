@@ -1,0 +1,15 @@
+{
+  "sim_id": "safe-or-unsafe-scenes",
+  "diagram_name": "Safe or Unsafe? School and Community Scenes",
+  "chapter_number": 1,
+  "chapter_title": "Foundations of Health and Safe Habits",
+  "chapter_dir": "01-foundations",
+  "chapter_rel_dir": "bands/grade-1/chapters/01-foundations",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "distinguish, examine, differentiate",
+  "learning_objective": "Students distinguish safe behaviors from unsafe behaviors across home, school, and community settings, and identify when a scene calls for telling a trusted adult.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** safe-or-unsafe-scenes<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: distinguish, examine, differentiate\n\nLearning objective: Students distinguish safe behaviors from unsafe behaviors across home, school, and community settings, and identify when a scene calls for telling a trusted adult.\n\nCanvas layout:\n- Top area (150px): One illustrated scene at a time (e.g., a child crossing the street holding an adult's hand vs. a child running into the street alone; a child participating calmly in a fire drill vs. a child ignoring the drill)\n- Middle area (250px): Two large bins: \"Safe Behavior\" (green) and \"Unsafe Behavior\" (orange)\n- Bottom strip (100px): Explanation caption and \"Next Scene\" button\n\nVisual elements:\n- 10 paired scenes across home, school, and community settings, each clearly showing one safe and one unsafe version of a similar situation\n\nInteractive controls:\n- Drag-and-drop or click-to-select: place the scene in the correct bin\n- Button: \"Next Scene\"\n- Button: \"Reset\"\n\nDefault parameters:\n- First scene: child holding an adult's hand to cross the street (clearly safe, to build confidence)\n\nBehavior:\n- Correct placement: bin glows green or orange to match, gentle chime, one-sentence explanation appears\n- Incorrect placement: gentle prompt, \"Look again — is anyone in danger of getting hurt here?\"\n- Every 3rd scene, an extra prompt asks: \"If this were unsafe, who could you tell?\" with the answer always modeling \"a trusted adult\"\n\nInstructional Rationale: Distinguishing safe from unsafe behavior across multiple settings is an Analyze-level task — it requires comparing visual cues rather than simple recall. Tying the unsafe examples back to \"tell a trusted adult\" reinforces the connection between Safe Behavior and Trusted Adult introduced earlier in this chapter.\n\nImplementation notes: Use p5.js. Keep illustrations calm and non-graphic; no scene should depict actual injury. Maintain a plainly sincere tone in all captions, per the project's safety-content voice rule (no puns)."
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Food Group Sorting Game</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Food Group Sorting Game</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> food-group-sorter</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Remember (L1)</p>
+            <p><strong>Learning Objective:</strong> Students identify and name which of the five food groups a given food belongs to (Fruits, Vegetables, Grains, Protein Foods, Dairy) by dragging a food picture into the correct labeled bin.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** food-group-sorter<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Remember (L1)
+    Bloom Taxonomy Verb: identify, name, sort
+    
+    Learning objective: Students identify and name which of the five food groups a given food belongs to (Fruits, Vegetables, Grains, Protein Foods, Dairy) by dragging a food picture into the correct labeled bin.
+    
+    Canvas layout:
+    - Top area (100px): One food picture appears at a time, large and centered, with its name printed below it in big friendly text (read aloud by teacher)
+    - Middle/bottom area (350px): Five labeled bins side by side, one per food group, each with a small icon and color
+    - Bottom strip (50px): Score display ("You sorted 4 foods!") and a Reset button
+    
+    Visual elements:
+    - 15 large, simple, colorful food images cycling one at a time (apple, banana, grapes, carrot, broccoli, corn, bread, rice, oatmeal, egg, beans, chicken drumstick, peanut butter jar, milk carton, cheese slice)
+    - Five bins labeled: "Fruits," "Vegetables," "Grains," "Protein Foods," "Dairy"
+    - Each bin has a distinct color: red-orange for Fruits, green for Vegetables, tan for Grains, brown for Protein Foods, light blue for Dairy
+    
+    Interactive controls:
+    - Drag-and-drop: child drags the current food image onto the bin they think is correct
+    - Button: "Reset" to start over
+    - Button: "Next Food" appears after each correct placement
+    
+    Default parameters:
+    - First food shown: apple
+    - Foods appear in a fixed friendly order (not randomized) so a teacher can predict what is coming next
+    
+    Behavior:
+    - When a food is dropped on the correct bin, the bin glows green, a cheerful chime plays, and the score increases by one
+    - When a food is dropped on the wrong bin, the bin flashes gently and the food gently slides back to the top so the child can try again — no harsh error sound
+    - After all 15 foods are sorted, show a celebration message: "Great job! You sorted every food!"
+    
+    Instructional Rationale: This is a Remember-level (identify/name) objective, so a simple drag-and-drop matching pattern is appropriate — it gives the child immediate, forgiving feedback without requiring reading. Continuous animation or complex scoring would distract from the single goal of recognizing which group a food belongs to.
+    
+    Implementation notes: Use p5.js. Represent each food and bin as an object with x/y/width/height for hit-testing during drag events. Keep all text large (24px+) since this is a read-aloud/pre-reader audience.
+    -->
+</body>
+</html>

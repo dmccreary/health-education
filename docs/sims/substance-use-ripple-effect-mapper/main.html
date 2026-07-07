@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Substance Use Ripple Effect Mapper</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Substance Use Ripple Effect Mapper</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> substance-use-ripple-effect-mapper</p>
+            <p><strong>Library:</strong> Mermaid</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students examine how a single substance-use pattern</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: workflow
+    
+    **sim-id:** substance-use-ripple-effect-mapper<br/>
+    **Library:** Mermaid<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy Level: Analyze (L4)
+    Bloom Verb: examine, distinguish, organize
+    
+    Learning objective: Students examine how a single substance-use pattern
+    can create compounding effects across relationships, school, and work
+    domains, distinguishing direct effects from cascading secondary effects.
+    
+    Visual style: Mermaid flowchart with a central starting node branching
+    into three domain chains, all nodes clickable via `click NodeId call
+    showInfo("term")`
+    
+    Nodes:
+    1. Start: "Ongoing Substance Use (e.g., regular vaping or drinking)" —
+       click reveals: "This node represents any pattern of regular substance
+       use, not a specific product or method."
+    2. "Disrupted Sleep and Concentration" — click reveals: "Nicotine,
+       cannabis, and alcohol all measurably disrupt sleep quality and
+       next-day concentration."
+    3a. "Relationship Trust Strain" — click reveals: "Mood changes and
+       impaired judgment are linked to increased conflict and reduced honest
+       communication."
+    3b. "Declining School Performance" — click reveals: "Reduced
+       concentration and attendance are linked to lower grades and more
+       disciplinary consequences."
+    3c. "Workplace Risk" — click reveals: "Impaired performance and safety
+       violations are linked to job loss and, in roles involving machinery or
+       driving, physical danger to self and others."
+    4. "Increased Stress" — click reveals: "Strained relationships, school
+       struggles, and job instability all increase overall stress levels."
+    5. End (highlighted): "Cycle Can Reinforce Further Substance Use — Unless
+       Interrupted" — click reveals: "Reaching out for support at any point in
+       this chain is what breaks the cycle; earlier is easier, but any point
+       is a valid time to seek help."
+    
+    Connections: Start → 2 → (3a, 3b, 3c, each shown as parallel branches) →
+    4 → 5, with a dashed feedback arrow from 5 back to Start labeled "Without
+    intervention"
+    
+    Color coding: gray for the start/mechanism nodes, orange for the three
+    domain-effect branches, red for the stress/cycle nodes, green highlight on
+    a small "Support Breaks This Cycle" callout node connected to node 5
+    
+    Implementation: Mermaid flowchart with click bindings to a showInfo()
+    function; infobox text in a JS lookup object; content restriction: no node
+    depicts a specific product, brand, or method of use — only documented
+    effect categories and relationship pathways.
+    -->
+</body>
+</html>

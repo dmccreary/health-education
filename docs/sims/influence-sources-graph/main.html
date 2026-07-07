@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Family, School, and Media Influence Map</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Family, School, and Media Influence Map</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> influence-sources-graph</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Students explain how family, school, and media each influence health practices and behaviors, and compare how each source sends its message.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: graph-model
+    **sim-id:** influence-sources-graph<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: explain, compare, classify
+    
+    Learning objective: Students explain how family, school, and media each influence health practices and behaviors, and compare how each source sends its message.
+    
+    Node types:
+    1. Center node "My Health Choices" (large gold circle)
+    2. Source nodes (three medium circles): "Family" (green), "School" (blue), "Media/Technology" (orange)
+    3. Example nodes (small squares, several per source): under Family -- "Bedtime routine," "Meals at home"; under School -- "Handwashing rule," "Recess time"; under Media -- "Cereal commercial," "App reminder"
+    
+    Edge types:
+    1. SHAPES (arrow from each source node to "My Health Choices") -- hover shows "This source influences health choices through everyday routines and messages"
+    2. EXAMPLE_OF (line from each example node to its source node) -- hover shows a one-sentence description of that specific example
+    
+    Layout: Hierarchical, with "My Health Choices" in the center and the three sources arranged around it, examples branching outward from each source
+    
+    Interactive features:
+    - Hover any node: show its short definition in a side panel
+    - Click a source node: highlight only that source and its examples, dim the rest
+    - Click an example node: infobox explains how that example influences behavior
+    - Zoom with mouse wheel, pan by dragging background
+    
+    Visual styling:
+    - Family = green, School = blue, Media/Technology = orange, matching the color key used elsewhere in this chapter
+    - Center node larger than source nodes; source nodes larger than example nodes
+    
+    Legend: Color key explaining Family/School/Media colors and an icon key for the two edge types
+    
+    Implementation: vis-network JavaScript library, canvas size responsive, default 700x450px
+    -->
+</body>
+</html>

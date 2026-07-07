@@ -1,0 +1,22 @@
+{
+  "title": "Social Norm Or Personal Choice Sorter",
+  "description": "Students distinguish between a health behavior driven mainly by an unspoken group/community norm versus one driven mainly by individual personal choice, examining ten realistic scenario cards.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "social-norm-or-personal-choice-sorter",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine, distinguish, differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 11,
+  "chapter_title": "Health Influences and Information Literacy",
+  "chapter_dir": "11-health-influences-and-information-literacy"
+}

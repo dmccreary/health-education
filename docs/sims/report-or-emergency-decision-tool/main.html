@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Report or Emergency Decision Tool</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Report or Emergency Decision Tool</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> report-or-emergency-decision-tool</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students differentiate online situations that call for</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    
+    **sim-id:** report-or-emergency-decision-tool<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy Level: Analyze (L4)
+    Bloom Verb: differentiate, distinguish, examine
+    
+    Learning objective: Students differentiate online situations that call for
+    standard reporting/blocking from situations that require immediate
+    emergency escalation, using the presence of a credible, specific threat of
+    violence as the deciding signal. No scenario describes graphic threat
+    content, weapon types, or methods — only the presence or absence of a
+    named target, location, and indication of intent.
+    
+    Canvas layout:
+    - Left (60%): one scenario card at a time, drawn from a bank of 8 (e.g.,
+      "A classmate posts a vague angry rant about the school with no named
+      person or plan," "A former partner threatens to share a private photo
+      unless you get back together," "A post names a specific classmate and
+      describes an intent to hurt them at a specific time")
+    - Right (40%): two large response buttons, "Report/Block" and "Emergency —
+      Tell an Adult Now," plus a feedback panel
+    
+    Data Visibility Requirements:
+      Stage 1: Show the scenario and both response buttons, neither selected
+      Stage 2: Student selects a response
+      Stage 3: Reveal feedback naming the specific signal that determined the
+      correct classification (presence or absence of a named target, location,
+      and specific intent), reinforcing that uncertainty should default to
+      telling a trusted adult
+      Stage 4: Running tally across the 8-scenario bank with a closing message
+      that both correct paths — reporting and emergency escalation — share the
+      same first move: telling someone
+    
+    Interactive controls:
+    - Two response buttons
+    - Button: "Next Scenario"
+    
+    Default parameters: 8-scenario bank, shuffled order each session
+    
+    Instructional Rationale: Differentiating reportable harm from a genuine
+    emergency requires examining specific situational signals, which is an
+    Analyze-level task; a scenario-based binary-choice tool with signal-based
+    feedback is used rather than a static rule list so students practice
+    applying the distinguishing criteria themselves.
+    
+    Implementation notes: p5.js; scenario data stored as an array of
+    {scenario, correctResponse, signal, explanation} objects; no scenario
+    includes graphic detail, weapon type, or method — only the presence or
+    absence of a named target/location/intent.
+    -->
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "sim_id": "transmission-chain-interrupter",
+  "diagram_name": "Infectious Disease Transmission Chain Interrupter",
+  "chapter_number": 8,
+  "chapter_title": "Health Equity and Disease Prevention",
+  "chapter_dir": "08-health-equity-and-disease-prevention",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/08-health-equity-and-disease-prevention",
+  "library": "Mermaid",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "assess, justify, recommend",
+  "learning_objective": "Students evaluate which prevention strategy correctly",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n\n**sim-id:** transmission-chain-interrupter<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Evaluate (L5)\nBloom Verb: assess, justify, recommend\n\nLearning objective: Students evaluate which prevention strategy correctly\ninterrupts a given point in the infection transmission chain, and justify\nwhy that intervention point is effective for a specific scenario (e.g., a\nfoodborne outbreak vs. a respiratory virus outbreak).\n\nVisual style: Mermaid flowchart depicting a transmission chain\n(Source → Environment/Surface → Person-to-Person Spread → New Host), with\nclick handlers on every node revealing the matching prevention strategy\n\nNodes (all clickable, `click NodeId call showInfo(\"term\")`):\n1. \"Infectious Source\" — click text: \"The person or contaminated item\n   currently carrying the pathogen\"\n2. \"Environment/Surfaces\" — click text: \"Sanitation and safe food/water\n   handling interrupt spread here — e.g., handwashing, safe food storage\"\n3. \"Person-to-Person Spread\" — click text: \"Physical distancing and\n   ventilation interrupt spread here during outbreaks of respiratory\n   illness\"\n4. \"New Host's Immune Defense\" — click text: \"Vaccination prepares the\n   immune system here, before exposure even happens\"\n5. \"Community Immunity\" (outcome node) — click text: \"When enough of a\n   community is vaccinated, transmission chains break down even for people\n   who cannot be vaccinated\"\n\nConnections: 1→2, 2→3, 3→4, 4→5, with a feedback arrow from 5 back to 1\nlabeled \"Fewer active sources when spread is interrupted\"\n\nScenario mode: two scenario buttons (\"Foodborne Outbreak\" and \"Respiratory\nVirus Outbreak\") that, when clicked, highlight the single most effective\ninterruption point for that scenario and reveal a justification panel\n\nColor coding: gray for source, blue for environment/surfaces, orange for\nperson-to-person spread, green for immune defense and community immunity\n\nInteractive features: click any node for its infobox; click either\nscenario button to see the highlighted best-intervention point with\njustification text\n\nImplementation: Mermaid.js flowchart with JavaScript click bindings to a\ncustom showInfo() function and a scenario-highlight function driven by a\nsmall lookup table"
+}

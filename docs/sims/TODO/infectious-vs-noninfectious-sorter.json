@@ -1,0 +1,15 @@
+{
+  "sim_id": "infectious-vs-noninfectious-sorter",
+  "diagram_name": "Infectious vs Non-Infectious Sorter",
+  "chapter_number": 5,
+  "chapter_title": "Wellness and Disease Prevention",
+  "chapter_dir": "05-wellness-and-disease-prevention",
+  "chapter_rel_dir": "bands/grade-4/chapters/05-wellness-and-disease-prevention",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "differentiate, classify, distinguish",
+  "learning_objective": "Students differentiate infectious from non-infectious diseases by sorting example illnesses into the correct category and reviewing the reasoning for each.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** infectious-vs-noninfectious-sorter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: differentiate, classify, distinguish\n\nLearning objective: Students differentiate infectious from non-infectious diseases by sorting example illnesses into the correct category and reviewing the reasoning for each.\n\nCanvas layout:\n- Top (300px): A card naming one illness (e.g., \"Chickenpox,\" \"Asthma,\" \"Strep Throat,\" \"Diabetes\")\n- Bottom (200px): Two zones, \"Infectious\" and \"Non-Infectious,\" plus a \"Why?\" button\n\nVisual elements:\n- Simple icon per illness card (a germ icon for infectious examples, a body-outline icon for non-infectious examples — icons only appear after sorting, not before, so students must reason it out)\n- Color-coded zones: teal for Infectious, purple for Non-Infectious\n\nInteractive controls:\n- Drag-and-drop the illness card into a zone\n- Button: \"Why?\" reveals a short explanation of the cause after sorting\n- Button: \"Next Illness\"\n\nDefault parameters:\n- 8 illness cards cycling in random order: cold, flu, strep throat, chickenpox, asthma, diabetes, seasonal allergies-triggered asthma flare, mild eczema\n\nData Visibility Requirements:\n  Stage 1: Show the illness name only, no icon\n  Stage 2: Show the two sorting zones\n  Stage 3: After sorting, reveal the icon and a short explanation of the cause (germ vs. genetics/environment/lifestyle)\n  Final: Show a summary of all 8 illnesses sorted correctly, grouped under their categories\n\nBehavior:\n- Every sort is followed by an explanation regardless of correctness, reinforcing the \"caused by a germ\" test as the key distinguishing question\n\nInstructional Rationale: This is an Analyze-level objective requiring learners to examine each illness and distinguish it by cause and spreadability rather than by memorized lists. Sorting with full explanations builds the underlying reasoning pattern (ask: \"Is a germ causing this, and can it spread to someone else?\").\n\nImplementation notes: Use p5.js. Keep illness descriptions simple and non-alarming; focus on the cause-and-spread distinction rather than detailed medical symptoms."
+}

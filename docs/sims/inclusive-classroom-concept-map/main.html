@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Building an Inclusive Classroom Concept Map</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Building an Inclusive Classroom Concept Map</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> inclusive-classroom-concept-map</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students analyze how equity, belonging, including and supporting others, and ability-inclusive kindness relate to and build toward an inclusive environment.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: graph-model
+    **sim-id:** inclusive-classroom-concept-map<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: examine, distinguish, organize
+    
+    Learning objective: Students analyze how equity, belonging, including and supporting others, and ability-inclusive kindness relate to and build toward an inclusive environment.
+    
+    Purpose: Show the four supporting concepts feeding into the central concept of an inclusive environment, and let students explore how each one contributes.
+    
+    Node types:
+    1. Central node: "Inclusive Environment" (large green circle, center)
+    2. Supporting nodes (four medium blue circles arranged around the center): "Equity", "Belonging", "Including and Supporting Others", "Ability-Inclusive Kindness"
+    
+    Edge types:
+    - Solid arrows from each supporting node pointing inward to "Inclusive Environment", labeled "builds toward"
+    
+    Sample data:
+    - Equity → builds toward → Inclusive Environment
+    - Belonging → builds toward → Inclusive Environment
+    - Including and Supporting Others → builds toward → Inclusive Environment
+    - Ability-Inclusive Kindness → builds toward → Inclusive Environment
+    
+    Layout: Radial/hub layout with the central node fixed in the middle and the four supporting nodes spaced evenly around it
+    
+    Interactive features:
+    - Hover over any node: show a one-sentence definition in a tooltip
+    - Click a supporting node: highlight its edge to the center and display a short real-world example in a side panel
+    - Click the center node: display a summary combining all four supporting ideas
+    - Zoom: mouse wheel; Pan: click and drag background
+    
+    Visual styling:
+    - Central node in green, supporting nodes in blue, "builds toward" edges in gray with arrowheads pointing to the center
+    - Node size for the central node larger than the four supporting nodes to show its role as the combined outcome
+    
+    Legend:
+    - Green = combined outcome; Blue = contributing concept; Gray arrow = "builds toward" relationship
+    
+    Implementation: vis-network JavaScript library with a small fixed dataset (5 nodes, 4 edges) and click/hover event handlers tied to a definitions object
+    Canvas size: 650x450px, responsive to container width
+    -->
+</body>
+</html>

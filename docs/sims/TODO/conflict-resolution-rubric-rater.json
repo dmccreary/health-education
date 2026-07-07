@@ -1,0 +1,15 @@
+{
+  "sim_id": "conflict-resolution-rubric-rater",
+  "diagram_name": "Conflict-Resolution Skill Rubric Rater",
+  "chapter_number": 13,
+  "chapter_title": "Influences on Health Behavior",
+  "chapter_dir": "13-influences-on-health-behavior",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/13-influences-on-health-behavior",
+  "library": "p5.js",
+  "bloom_level": "Evaluate<br/>",
+  "bloom_verb": "rate, critique, justify",
+  "learning_objective": "Evaluate a scripted conflict-resolution dialogue",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n\n**sim-id:** conflict-resolution-rubric-rater<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Evaluate<br/>\nBloom Taxonomy Verb: rate, critique, justify\n\nLearning objective: Evaluate a scripted conflict-resolution dialogue\nagainst a four-criterion rubric (stayed on the issue, listened actively,\nchecked understanding, reached a mutual solution), scoring each criterion\nand justifying the score.\n\nPurpose: Move students from simply recalling conflict-resolution steps\n(earlier chapter) to judging the quality of an example's execution.\n\nLayout: Left panel shows a short scripted dialogue transcript (selectable\nfrom 3 preset scenarios: roommate/sibling chore conflict, group project\ndisagreement, friend-group exclusion incident). Right panel shows a\n4-row rubric with a 1-4 star rating control per row and a text box for\nthe learner's justification.\n\nInteractive elements: Selecting a scenario loads its transcript; clicking\neach star rating locks in a score; a \"Compare to expert rating\" button\nreveals a model rating with brief reasoning for each criterion so the\nlearner can check their evaluation against it.\n\nData to display: Three full transcripts (roughly 8-10 lines of dialogue\neach) with one criterion clearly strong and at least one clearly weak, so\nratings are not uniformly high.\n\nColor scheme: Neutral gray transcript panel; gold stars for rating;\ngreen/red highlight comparing learner rating to expert rating after reveal.\n\nImplementation: p5.js with DOM-based text panels layered over canvas\ncontrols, or pure HTML/CSS/JS panel with p5.js star-rating widget."
+}

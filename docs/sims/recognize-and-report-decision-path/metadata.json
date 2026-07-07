@@ -1,0 +1,22 @@
+{
+  "title": "Recognize and Report Decision Path",
+  "description": "Students apply a consistent recognize-and-report process across relationship, technology, and emergency situations covered in this chapter.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "recognize-and-report-decision-path",
+  "library": "Mermaid",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate, use, practice",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Personal Safety And Violence Prevention",
+  "chapter_dir": "06-personal-safety-and-violence-prevention"
+}

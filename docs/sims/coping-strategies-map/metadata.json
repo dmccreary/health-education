@@ -1,0 +1,22 @@
+{
+  "title": "Coping Strategies Around the World",
+  "description": "Students describe a range of coping strategies, including cultural practices such as storytelling and ceremony, and explain how each one helps a person feel calmer or more supported.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "coping-strategies-map",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "describe, exemplify, explain",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "Health Basics, Friendships, and Feelings",
+  "chapter_dir": "01-health-friendships-feelings"
+}

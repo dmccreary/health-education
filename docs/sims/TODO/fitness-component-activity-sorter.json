@@ -1,0 +1,15 @@
+{
+  "sim_id": "fitness-component-activity-sorter",
+  "diagram_name": "Fitness Component Activity Sorter",
+  "chapter_number": 5,
+  "chapter_title": "Personal Health And Wellness",
+  "chapter_dir": "05-personal-health-and-wellness",
+  "chapter_rel_dir": "bands/grade-5/chapters/05-personal-health-and-wellness",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "classify, distinguish, organize",
+  "learning_objective": "Students classify physical activities into the fitness component (cardiovascular endurance, muscular strength, flexibility, balance and coordination) each one primarily builds.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** fitness-component-activity-sorter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: classify, distinguish, organize\n\nLearning objective: Students classify physical activities into the fitness component (cardiovascular endurance, muscular strength, flexibility, balance and coordination) each one primarily builds.\n\nCanvas layout: Left (450px) four labeled bins with a deck of activity cards; right (200px) score display and feedback panel.\n\nVisual elements: Four bins with icons (heart, dumbbell, stretching figure, balance beam); 12 activity cards (running, push-ups, yoga, balance-beam walk, swimming, climbing, dancing, jump rope, stretching, juggling, biking, catching a ball).\n\nInteractive controls: Drag each card into its bin; \"Check My Sorting\" button reveals correct/incorrect placements; \"Shuffle New Round\" resets with cards reordered.\n\nDefault parameters: All 12 cards start unsorted in a scrambled row.\n\nBehavior: Correct placements highlight green, incorrect orange with a one-line hint (e.g., \"Push-ups build muscular strength, not flexibility\"). Multi-component cards like swimming accept either correct bin.\n\nInstructional Rationale: Analyze-level objective requiring classification, so the pattern is an active sorting task with clear category feedback rather than passive viewing.\n\nImplementation notes: p5.js; store activities as objects with name, icon, and one or two correct component tags; drag detection via mouseIsPressed and bounding boxes."
+}

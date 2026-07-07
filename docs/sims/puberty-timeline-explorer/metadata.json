@@ -1,0 +1,22 @@
+{
+  "title": "Everyone's Timeline Looks Different",
+  "description": "Students describe that puberty is a normal, healthy stage of growth that happens to every person at a different time, by exploring several sample timelines side by side.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "puberty-timeline-explorer",
+  "library": "vis-timeline",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "describe, explain, interpret",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Growth And Puberty",
+  "chapter_dir": "06-growth-and-puberty"
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "personal-health-behavior-self-assessment-wheel",
+  "diagram_name": "Personal Health Behavior Self-Assessment Wheel",
+  "chapter_number": 12,
+  "chapter_title": "Advocacy, Goal Setting, and Health Messaging",
+  "chapter_dir": "12-advocacy-goal-setting-and-health-messaging",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/12-advocacy-goal-setting-and-health-messaging",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, assess, identify",
+  "learning_objective": "Students examine their own current habits across six health areas and identify realistic goal-focus areas by rating themselves on a private, non-graded self-assessment wheel.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** personal-health-behavior-self-assessment-wheel<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: examine, assess, identify\n\nLearning objective: Students examine their own current habits across six health areas and identify realistic goal-focus areas by rating themselves on a private, non-graded self-assessment wheel.\n\nLayout: A six-spoke wheel, one spoke per area (nutrition, sleep, physical activity, mental/emotional health, relationships, substance-related pressure), each spoke a slider from 1 (needs attention) to 5 (going well).\n\nInteractive controls: Learner privately drags each spoke's slider to reflect their own honest current state; wheel visually fills in to show a personal \"shape\" (uneven wheel highlights the lowest-rated areas); clicking the lowest-scoring spoke opens a reflection prompt asking what a realistic small step in that area could look like; \"Save My Reflection\" stores responses locally in the browser only (not submitted or graded).\n\nDefault parameters: All spokes start at 3 (neutral); no data is transmitted or shared — this is a private reflection tool.\n\nInstructional Rationale: An Analyze-level self-assessment objective benefits from a visual \"shape\" that makes uneven areas obvious at a glance, prompting honest identification of a goal-focus area rather than a vague overall judgment.\n\nImplementation notes: p5.js. Explicitly labeled as private/ungraded in the UI itself. Responsive canvas that resizes the wheel to fit narrow screens."
+}

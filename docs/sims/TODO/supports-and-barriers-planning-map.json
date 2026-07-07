@@ -1,0 +1,15 @@
+{
+  "sim_id": "supports-and-barriers-planning-map",
+  "diagram_name": "Supports and Barriers Planning Map",
+  "chapter_number": 6,
+  "chapter_title": "Health Literacy and Goal Setting",
+  "chapter_dir": "06-health-literacy-and-goals",
+  "chapter_rel_dir": "bands/grade-4/chapters/06-health-literacy-and-goals",
+  "library": "vis-network",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "organize, examine, distinguish",
+  "learning_objective": "Students organize example supports and barriers around a sample health goal, distinguishing which category each item belongs to and connecting each barrier to a planned response.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n**sim-id:** supports-and-barriers-planning-map<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: organize, examine, distinguish\n\nLearning objective: Students organize example supports and barriers around a sample health goal, distinguishing which category each item belongs to and connecting each barrier to a planned response.\n\nPurpose: Show a sample health goal surrounded by its supports, barriers, and barrier-response plans as a connected network students can explore\n\nNode types:\n1. Central node: the sample goal, \"Walk to school 3 days this week\" (large box)\n2. Support nodes (green circles): \"Walking buddy,\" \"Comfortable shoes,\" \"Parent's approved route,\" \"Morning reminder chart\"\n3. Barrier nodes (red circles): \"Rainy weather,\" \"Forgetting in week one,\" \"No walking buddy available that day\"\n4. Response nodes (blue circles, connected only to their matching barrier): \"Do a 10-minute indoor movement video,\" \"Set a phone reminder the night before,\" \"Walk with a different neighbor or sibling instead\"\n\nEdge types:\n- \"Helps reach\" edges (solid green) connecting support nodes to the central goal\n- \"Threatens\" edges (solid red) connecting barrier nodes to the central goal\n- \"Planned response\" edges (dashed blue) connecting each barrier node to its specific response node\n\nLayout: Force-directed with the goal node fixed at the center\n\nInteractive features:\n- Hover any node to see its full description\n- Click a barrier node to highlight its connected response node and dim unrelated nodes\n- Click the central goal node to reset the full view\n- Drag nodes to rearrange; zoom with mouse wheel; pan by dragging background\n\nVisual styling:\n- Central node: neutral gray box, larger than other nodes\n- Support nodes: green, sized equally\n- Barrier nodes: red, sized equally\n- Response nodes: blue, connected only via dashed lines to their barrier\n\nLegend: Small panel explaining node colors (Goal, Support, Barrier, Planned Response)\n\nResponsive behavior: Graph auto-fits to container width on load and window resize\n\nImplementation: vis-network library with force-directed physics enabled and a click event listener that adjusts node/edge opacity to spotlight a selected barrier-response pair."
+}

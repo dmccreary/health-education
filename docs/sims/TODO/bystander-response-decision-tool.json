@@ -1,0 +1,15 @@
+{
+  "sim_id": "bystander-response-decision-tool",
+  "diagram_name": "Bystander Response Decision Tool",
+  "chapter_number": 6,
+  "chapter_title": "Conflict Resolution and Inclusion",
+  "chapter_dir": "06-conflict-resolution-and-inclusion",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/06-conflict-resolution-and-inclusion",
+  "library": "Mermaid",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, differentiate, organize",
+  "learning_objective": "Students examine a bullying or exclusion scenario and",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n\n**sim-id:** bystander-response-decision-tool<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: examine, differentiate, organize\n\nLearning objective: Students examine a bullying or exclusion scenario and\ndifferentiate which bystander strategy (direct intervention, distraction,\ndelayed support, or reporting) fits the specific situation and safety\nconsiderations involved.\n\nVisual style: Mermaid flowchart, top-to-bottom, decision-driven, click\nhandlers on every node\n\nNodes (all clickable, `click NodeId call showInfo(\"term\")`):\n1. \"You Witness Exclusion or Bullying\" — click text: \"This applies to\n   in-person and digital/cyberbullying situations alike\"\n2. \"Is It Safe for You to Intervene Directly Right Now?\" (decision\n   diamond) — click text: \"Your own safety is a legitimate factor in\n   choosing a response\"\n3a. \"Yes\" → \"Use Direct Intervention or Distraction\" — click text: \"Direct\n   intervention means calmly telling the behavior to stop; distraction\n   means redirecting attention without confrontation\"\n3b. \"No\" → \"Is the Situation Ongoing or Serious?\" (decision diamond) —\n   click text: \"Repeated behavior or any safety risk raises the priority\n   of adult involvement\"\n4a. From 3b, \"Yes\" → \"Report to an Adult With Authority to Act\n   Immediately\" — click text: \"A teacher, coach, or administrator can\n   intervene with authority a peer does not have\"\n4b. From 3b, \"No\" → \"Check In With the Person Afterward\" — click text:\n   \"Delayed support still communicates that what happened was seen and\n   mattered\"\n5. Shared end node \"Support the Person Who Was Targeted\" — click text:\n   \"Every path leads back to making sure the person targeted is supported,\n   not just the incident being 'handled'\"\n\nConnections: 1→2, 2→3a, 2→3b, 3b→4a, 3b→4b, 3a→5, 4a→5, 4b→5\n\nColor coding: gold for decision diamonds, blue for response actions, green\nfor the shared end node\n\nInteractive features: click any node for its infobox\n\nImplementation: Mermaid.js flowchart with JavaScript click bindings to a\ncustom showInfo() function"
+}

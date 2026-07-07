@@ -1,0 +1,15 @@
+{
+  "sim_id": "stigma-reduction-action-network",
+  "diagram_name": "Stigma Reduction Action Network",
+  "chapter_number": 5,
+  "chapter_title": "Stigma, Bias, and Brain Health",
+  "chapter_dir": "05-stigma-bias-and-brain-health",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/05-stigma-bias-and-brain-health",
+  "library": "vis-network",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, classify, summarize",
+  "learning_objective": "Students explain how specific individual and community actions connect to reducing mental health stigma, and classify each action by the barrier it addresses.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n**sim-id:** stigma-reduction-action-network<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, classify, summarize\n\nLearning objective: Students explain how specific individual and community actions connect to reducing mental health stigma, and classify each action by the barrier it addresses.\n\nNode types: Central node \"Reducing Mental Health Stigma\" (teal circle). Action nodes (light blue squares): Accurate Respectful Language, Positive Accurate Media, Sharing Personal Stories, Normalizing Help-Seeking, Correcting Myths Kindly. Barrier nodes (gray diamonds): Careless Language, Harmful Stereotypes, Sense of Shame, Fear of Weakness, Misinformation.\n\nEdge types: \"Addresses\" (solid green arrows from each action node to its matching barrier node). \"Supports\" (solid teal lines from each action node to the central node).\n\nLayout: Central node in the middle, action nodes arranged in an inner ring, corresponding barrier nodes arranged in an outer ring aligned with their matching action.\n\nInteractive features: Hover any node to see its label; click an action node to open an infobox explaining that action in one or two supportive sentences; click a barrier node to open an infobox explaining why that barrier makes seeking help harder; click the central node to reveal a summary statement that stigma reduction works through many small, combined actions rather than one single fix; zoom with mouse wheel, pan by dragging background.\n\nLegend: Color/shape key distinguishing action nodes, barrier nodes, and the central goal node.\n\nImplementation: vis-network JavaScript library; canvas responsive, default 800x500px."
+}

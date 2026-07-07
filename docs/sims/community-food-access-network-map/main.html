@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Community Food Access Network Map</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Community Food Access Network Map</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> community-food-access-network-map</p>
+            <p><strong>Library:</strong> Leaflet</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students analyze a sample neighborhood map to differentiate food desert conditions from areas served by community food access initiatives, and examine which initiative types address which gaps.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: map
+    **sim-id:** community-food-access-network-map<br/>
+    **Library:** Leaflet<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: examine, differentiate, organize
+    
+    Learning objective: Students analyze a sample neighborhood map to differentiate food desert conditions from areas served by community food access initiatives, and examine which initiative types address which gaps.
+    
+    Geographic scope: A representative fictional mid-sized city neighborhood (generic, not tied to a real address) with a downtown core, residential zones, and one rural-edge zone, illustrating how distance to grocery stores and community initiatives combine to shape food access.
+    
+    Locations: 2 full-service grocery stores (green markers) near downtown; 1 food desert zone (shaded orange, over 1 mile from any grocery store with low vehicle access); 3 community gardens (plant icons); 1 food bank (box icon) near the food desert zone; 1 mobile market route (dotted blue line) looping through the food desert zone twice weekly; 2 schools with breakfast/lunch and backpack programs (school icons).
+    
+    Interactive features: Click the shaded food desert zone for an infobox defining food desert conditions with this map's specific distances; click any marker for an infobox on that initiative type and which access gap it helps close; toggle layer control to show/hide each initiative type independently.
+    
+    Implementation: Leaflet.js with custom marker icons and a toggleable GeoJSON layer for the food desert shading and mobile market route.
+    -->
+</body>
+</html>

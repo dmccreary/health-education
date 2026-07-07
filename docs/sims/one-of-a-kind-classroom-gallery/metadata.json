@@ -1,0 +1,22 @@
+{
+  "title": "One-of-a-Kind Classroom Gallery",
+  "description": "Students describe several different kinds of uniqueness among classmates and explain how valuing each one strengthens caring relationships and belonging.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "one-of-a-kind-classroom-gallery",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "describe, exemplify, compare",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Friendship, Uniqueness, and Belonging",
+  "chapter_dir": "04-friendship-and-belonging"
+}

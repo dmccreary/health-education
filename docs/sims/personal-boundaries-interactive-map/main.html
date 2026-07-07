@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Personal Boundaries Interactive Map</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Personal Boundaries Interactive Map</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> personal-boundaries-interactive-map</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Students explain and classify examples of personal boundaries across four categories (physical, belongings, time, information) and connect each to an example boundary-setting phrase.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: infographic
+    **sim-id:** personal-boundaries-interactive-map<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: explain, exemplify, classify
+    
+    Learning objective: Students explain and classify examples of personal boundaries across four categories (physical, belongings, time, information) and connect each to an example boundary-setting phrase.
+    
+    Purpose: Reinforce the four boundary categories from the chapter and show a matching respectful phrase for each.
+    
+    Layout: A central circle labeled "Personal Boundaries" with four surrounding petal shapes labeled Physical, Belongings, Time, and Information
+    
+    Interactive elements:
+    - Hover or click a petal to reveal: a one-sentence definition of that boundary type, one everyday example, and one example phrase for setting that boundary
+    - Clicking the center circle reveals a summary: "You have the right to set boundaries, and you also have the responsibility to respect other people's boundaries."
+    
+    Data to display per petal:
+    - Physical: "Your body and personal space." Example: someone standing too close. Phrase: "Please give me a little more space."
+    - Belongings: "Your things." Example: a classmate grabbing your pencil. Phrase: "Please ask before you borrow my things."
+    - Time: "How you spend your time." Example: being pressured to stay longer at an activity. Phrase: "I need to head home now."
+    - Information: "What you share about yourself." Example: being asked personal questions by someone you don't know well. Phrase: "I'd rather not share that."
+    
+    Color coding: Each petal a distinct calm color (blue, green, purple, gold); center circle in warm neutral gray
+    
+    Responsive behavior: Petals rearrange into a vertical stack on narrow screens while keeping click/hover functionality
+    
+    Implementation: p5.js with clickable petal shapes and a text infobox panel that updates on interaction.
+    -->
+</body>
+</html>

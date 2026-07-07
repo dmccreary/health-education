@@ -1,0 +1,22 @@
+{
+  "title": "Consent Signal Sorter",
+  "description": "Students classify everyday statements as showing real consent or not, reinforcing that consent must be freely given, specific, and reversible.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "consent-signal-sorter",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "classify, interpret, distinguish",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Personal Safety And Violence Prevention",
+  "chapter_dir": "06-personal-safety-and-violence-prevention"
+}

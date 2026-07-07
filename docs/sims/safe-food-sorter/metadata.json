@@ -1,0 +1,22 @@
+{
+  "title": "Safe to Eat or Not?",
+  "description": "Students distinguish safe food from food that is no longer safe to eat by examining simple picture clues (color, spots, freshness) and sorting each picture into a \"Safe to Eat\" or \"Ask a Grown-Up First\" bin.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "safe-food-sorter",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "distinguish, examine",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "Health and Food",
+  "chapter_dir": "01-health-and-food"
+}

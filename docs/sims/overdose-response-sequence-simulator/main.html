@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Overdose Response Sequence Simulator</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Overdose Response Sequence Simulator</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> overdose-response-sequence-simulator</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Apply (L3)</p>
+            <p><strong>Learning Objective:</strong> Apply the correct, ordered overdose emergency response</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    
+    **sim-id:** overdose-response-sequence-simulator<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy Level: Apply (L3)
+    Bloom Verb: demonstrate, apply, execute
+    
+    Learning objective: Apply the correct, ordered overdose emergency response
+    sequence (call 911, stay with the person, recovery position, naloxone if
+    available/trained, rescue breathing/CPR if trained) to realistic scenario
+    prompts, reinforcing that recognition must lead immediately to this
+    sequence.
+    
+    Canvas layout: Left (55%) shows one scenario at a time (e.g., "You find a
+    friend unresponsive with slow, gurgling breathing and blue-tinged lips at
+    a party") with five action-step tiles in random order. Right (45%) holds
+    a sequence-builder panel and a feedback panel.
+    
+    Interactive controls: Drag or click tiles into order; "Check Sequence"
+    confirms whether Call 911 is placed first (required) and whether the rest
+    form a defensible order, explaining why 911 always comes first; a
+    follow-up infobox explains the Good Samaritan law and naloxone's
+    temporary, opioid-specific effect; "Next Scenario" cycles through a bank
+    of four; "Reset" clears the board.
+    
+    Instructional Rationale: Apply-level objectives require executing a
+    correct procedure in a new situation; an ordering activity mirrors the
+    real decision an emergency responder faces, with feedback reinforcing why
+    calling 911 always comes first.
+    
+    Implementation notes: p5.js drag-and-drop or click-to-order; scenario and
+    feedback text in a structured object. No scenario or tile describes how
+    to obtain, use, dose, or conceal any substance — scoped entirely to
+    recognizing an emergency and the help-seeking sequence, matching the
+    CPR/AED content from earlier in this course. Responsive canvas.
+    -->
+</body>
+</html>

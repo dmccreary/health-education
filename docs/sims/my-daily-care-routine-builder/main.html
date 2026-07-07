@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>My Daily Care Routine Builder</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>My Daily Care Routine Builder</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> my-daily-care-routine-builder</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Apply (L3)</p>
+            <p><strong>Learning Objective:</strong> Students apply their understanding of personal care practices by dragging daily hygiene icons into a morning routine and a bedtime routine, in a reasonable order.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** my-daily-care-routine-builder<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Apply (L3)
+    Bloom Taxonomy Verb: demonstrate, practice, apply
+    
+    Learning objective: Students apply their understanding of personal care practices by dragging daily hygiene icons into a morning routine and a bedtime routine, in a reasonable order.
+    
+    Canvas layout:
+    - Left area (450px): Two labeled routine tracks, "Morning Routine" and "Bedtime Routine," each with empty slots
+    - Right area (150px): A tray of six hygiene icons (wash hands, brush teeth, comb hair, bathe, put on clean clothes, wash face) and an infobox
+    
+    Visual elements:
+    - Six simple flat-style icons representing each personal care practice
+    - Two horizontal routine tracks with 3 empty slots each
+    - Sun icon above the morning track, moon icon above the bedtime track
+    
+    Interactive controls:
+    - Drag-and-drop: student drags icons from the tray into morning or bedtime slots
+    - Button: "Check My Routine"
+    - Button: "Reset"
+    
+    Default parameters:
+    - All six icons start in the tray, unplaced
+    
+    Data Visibility Requirements:
+      Stage 1: Show the empty routine tracks and full icon tray
+      Stage 2: As icons are placed, show them snapped into the routine slot
+      Stage 3: After "Check My Routine" is clicked, show a caption for each placement confirming it fits that time of day (bathing and bedtime brushing fit night; handwashing and morning brushing fit morning; some icons like washing hands fit both times)
+    
+    Behavior:
+    - Reasonable placements are confirmed with a green check and a short caption ("Brushing your teeth before bed helps keep your smile healthy overnight!")
+    - The MicroSim accepts multiple valid arrangements since routines vary by family
+    
+    Instructional Rationale: This is an Apply-level (practice/demonstrate) objective, so the MicroSim uses hands-on drag-and-drop practice with immediate confirming feedback rather than passive viewing, letting students build and test their own version of a daily routine.
+    
+    Implementation notes: Use p5.js. Icons should be simple, friendly, and diverse (different skin tones and hair types). Teacher can pause and discuss why order matters for some steps but not others.
+    -->
+</body>
+</html>

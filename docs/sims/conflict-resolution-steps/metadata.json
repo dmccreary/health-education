@@ -1,0 +1,22 @@
+{
+  "title": "Four Steps to Solve a Conflict",
+  "description": "Students apply the four-step healthy conflict resolution process to a simple playground scenario by choosing what to do at each step.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "conflict-resolution-steps",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate, use, practice",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "Handling Conflict and Kind Play",
+  "chapter_dir": "03-conflict-kind-play"
+}

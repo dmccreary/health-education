@@ -1,0 +1,15 @@
+{
+  "sim_id": "caffeine-adolescent-body-explorer",
+  "diagram_name": "Caffeine and the Adolescent Body Explorer",
+  "chapter_number": 1,
+  "chapter_title": "Health Foundations and Nutrition",
+  "chapter_dir": "01-health-foundations-and-nutrition",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/01-health-foundations-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, describe, interpret",
+  "learning_objective": "Students explain how caffeine affects four body systems (nervous system, sleep, cardiovascular system, mood) differently in adolescents compared to adults.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** caffeine-adolescent-body-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, describe, interpret\n\nLearning objective: Students explain how caffeine affects four body systems (nervous system, sleep, cardiovascular system, mood) differently in adolescents compared to adults.\n\nLayout: A body outline with four labeled hotspots — brain (nervous system/sleep), heart (cardiovascular), stomach (absorption/timing), and a mood icon near the head.\n\nInteractive elements: Click brain hotspot for the adenosine-blocking mechanism and the concrete detail that caffeine 6 hours before bed still reduces sleep quality; click heart hotspot for the heart-rate/blood-pressure effect and how added stimulants in energy drinks compound it; click mood icon for the anxiety/jitteriness explanation; slider \"Hours Before Bedtime\" (0-10) recalculates a sleep-quality indicator bar tied to the brain hotspot.\n\nData Visibility Requirements: Stage 1 shows caffeine's plain-language mechanism; Stage 2 shows the bedtime-slider sleep impact; Stage 3 shows the cardiovascular explanation; Stage 4 shows the mood explanation; Final shows adolescent-versus-adult sensitivity at the same dose.\n\nInstructional Rationale: Explaining mechanisms and effects is Understand-level, so labeled hotspots with concrete, adjustable data (the sleep slider) are used instead of animation, keeping the physiology inspectable at the learner's own pace.\n\nImplementation notes: p5.js. Each hotspot's explanation stored as text; the slider implemented as a simple linear function mapping hours-before-bed to a sleep-quality percentage."
+}

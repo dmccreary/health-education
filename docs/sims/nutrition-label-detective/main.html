@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Nutrition Label Detective</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Nutrition Label Detective</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> nutrition-label-detective</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Apply (L3)</p>
+            <p><strong>Learning Objective:</strong> Students locate specific nutrient information on a realistic nutrition label and use it to answer questions about a food product.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** nutrition-label-detective<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Apply (L3)
+    Bloom Taxonomy Verb: use, demonstrate, locate
+    
+    Learning objective: Students locate specific nutrient information on a realistic nutrition label and use it to answer questions about a food product.
+    
+    Canvas layout:
+    - Left side (300px): A realistic, clickable nutrition label graphic for a sample snack food
+    - Right side (200px): One question at a time (e.g., "How many grams of protein are in one serving?") with a text-input answer box and "Check Answer" button
+    
+    Visual elements:
+    - Full nutrition label with clearly separated rows: serving size, calories, total carbohydrates, sugars, protein, total fat, saturated fat, sodium, Vitamin D, calcium, iron, potassium
+    
+    Interactive controls:
+    - Click any row on the label to highlight it and show a one-sentence explanation of what that row means
+    - Input box: type a numeric answer to the current question
+    - Button: "Check Answer"
+    - Button: "Next Question" (cycles through 6 questions about the same label)
+    
+    Default parameters:
+    - Sample label: a granola bar with realistic values (serving size 1 bar, 140 calories, 22g carbohydrates, 9g sugars, 3g protein, 5g fat, 95mg sodium)
+    
+    Data Visibility Requirements:
+      Stage 1: Show the full label with all values visible
+      Stage 2: Highlight the row relevant to the current question when clicked
+      Stage 3: Show whether the typed answer matches the highlighted value, with the correct value revealed either way
+    
+    Behavior:
+    - Correct answer: green confirmation and brief encouragement
+    - Incorrect answer: label row highlights again with a hint to re-read the value
+    - After all 6 questions, a summary shows the score and reminds students that every packaged food has a label like this one
+    
+    Instructional Rationale: Locating and using specific values from a real-looking label is an Apply-level skill, so the pattern uses guided practice with a real (if simplified) nutrition label rather than an abstract animation — students need to practice the actual skill of finding and using label data.
+    
+    Implementation notes: Use p5.js. Render the label to resemble the real FDA/USDA nutrition facts format for authenticity. Store questions and answer keys as an array of objects.
+    -->
+</body>
+</html>

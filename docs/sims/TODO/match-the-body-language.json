@@ -1,0 +1,15 @@
+{
+  "sim_id": "match-the-body-language",
+  "diagram_name": "Match the Body Language",
+  "chapter_number": 8,
+  "chapter_title": "Communication And Goals",
+  "chapter_dir": "08-communication-and-goals",
+  "chapter_rel_dir": "bands/grade-3/chapters/08-communication-and-goals",
+  "library": "p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "identify, recognize, name",
+  "learning_objective": "Students identify the feeling behind common nonverbal cues by matching simple cartoon body-language poses to the feeling they most likely show.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** match-the-body-language<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Remember (L1)\nBloom Taxonomy Verb: identify, recognize, name\n\nLearning objective: Students identify the feeling behind common nonverbal cues by matching simple cartoon body-language poses to the feeling they most likely show.\n\nCanvas layout: Left side (350px) shows one large cartoon figure at a time in a clear pose (arms crossed and frowning, shoulders slumped and looking down, wide smile with open arms, tense shoulders with clenched fists). Right side (250px) shows four feeling-word buttons (e.g., \"Frustrated,\" \"Sad,\" \"Happy,\" \"Angry\") plus a feedback box.\n\nInteractive controls: Click a feeling-word button to answer; \"Next Pose\" and \"Reset\" buttons.\n\nDefault parameters: Starts on pose 1 of 6 prepared poses, presented in random order each reset.\n\nBehavior: Clicking a feeling reveals whether it matches the pose and a one-sentence explanation of the specific cue (e.g., \"Crossed arms and a frown often mean someone feels frustrated or closed off.\").\n\nInstructional Rationale: Remember-level objective calling for straightforward recognition, so simple matching with immediate feedback is appropriate — no timer or scoring pressure.\n\nImplementation notes: Use p5.js with simple flat cartoon figures, no realistic faces. Keep the tone neutral; note that body language is a clue, not a certainty, since people can feel one way and look another."
+}

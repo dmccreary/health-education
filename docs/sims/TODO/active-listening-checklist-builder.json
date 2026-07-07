@@ -1,0 +1,15 @@
+{
+  "sim_id": "active-listening-checklist-builder",
+  "diagram_name": "Active Listening Checklist Builder",
+  "chapter_number": 8,
+  "chapter_title": "Communication And Goals",
+  "chapter_dir": "08-communication-and-goals",
+  "chapter_rel_dir": "bands/grade-3/chapters/08-communication-and-goals",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate, practice, apply",
+  "learning_objective": "Students demonstrate active listening behaviors by selecting the actions an active listener would take during a short animated conversation scenario.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** active-listening-checklist-builder<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: demonstrate, practice, apply\n\nLearning objective: Students demonstrate active listening behaviors by selecting the actions an active listener would take during a short animated conversation scenario.\n\nCanvas layout: Top (150px) shows a simple two-character comic-style scene with a speech bubble describing what one character is saying (e.g., \"I'm nervous about my soccer game tomorrow\"). Middle (250px) shows six behavior-choice cards a listener could do (e.g., \"Look at my phone,\" \"Make eye contact,\" \"Interrupt to talk about myself,\" \"Nod and say 'that makes sense',\" \"Change the subject,\" \"Ask 'What are you nervous about?'\"). Bottom (100px) is a feedback panel.\n\nInteractive controls: Click each card to mark it \"Active Listening\" or \"Not Listening\"; \"Check My Answers\" and \"Next Scenario\" buttons.\n\nDefault parameters: Starts on scenario 1 of 4 prepared conversation scenarios.\n\nData Visibility Requirements: After clicking \"Check My Answers,\" each card reveals a check mark or an X plus a one-sentence reason (e.g., \"Interrupting takes the focus away from the speaker's feelings.\").\n\nInstructional Rationale: Apply-level objective requiring students to practice choosing correct behaviors in a realistic scenario, so scenario-based selection with explanatory feedback is appropriate.\n\nImplementation notes: Use p5.js with simple flat character illustrations. Keep scenarios everyday and low-stakes (sports, school, friendship), not emotionally heavy."
+}

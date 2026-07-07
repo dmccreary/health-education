@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Build a Health Goal</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Build a Health Goal</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> build-a-health-goal-microsim</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students determine the components of a personal health-related goal by assembling a goal from a target behavior, a time frame, and a way to track progress.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** build-a-health-goal-microsim<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: determine, organize, construct
+    
+    Learning objective: Students determine the components of a personal health-related goal by assembling a goal from a target behavior, a time frame, and a way to track progress.
+    
+    Canvas layout:
+    - Left side (350px): Three selection columns: "Pick a Target" (e.g., drink water, try a new food, play outside, sleep on time), "Pick a Time Frame" (this week, two weeks, this month), "Pick a Tracker" (calendar stickers, tally marks, checklist)
+    - Right side (250px): A built "My Goal" card that assembles the three chosen pieces into one readable sentence
+    
+    Visual elements:
+    - Three vertical lists of clickable option chips
+    - A goal card that updates live as choices are made, styled like a simple certificate
+    
+    Interactive controls:
+    - Click one chip from each of the three columns
+    - Button: "Build My Goal" (finalizes the sentence on the card)
+    - Button: "Start Over"
+    
+    Default parameters:
+    - No chips selected; goal card shows placeholder text "Pick a target, a time frame, and a tracker to build your goal"
+    
+    Data Visibility Requirements:
+      Stage 1: Show three empty columns and placeholder goal card
+      Stage 2: Student picks "drink water" -- goal card updates to show "My goal: drink water ___"
+      Stage 3: Student picks "this week" -- goal card updates to "My goal: drink water this week ___"
+      Stage 4: Student picks "calendar stickers" -- goal card completes: "My goal: drink water this week, and I'll track it with calendar stickers"
+    
+    Behavior:
+    - Goal card always reflects current selections live
+    - "Build My Goal" locks in the sentence and shows a small celebration highlight (color flash, not sound) on the card
+    
+    Instructional Rationale: This is an Analyze-level objective ("determine actions that support a personal health-related goal"), so the design has students organize the separate components (target, time frame, tracker) into a coherent structure themselves rather than simply recalling a premade goal.
+    
+    Implementation notes: Use p5.js. Keep the interface simple with large clickable chips appropriate for early-elementary fine motor skills.
+    -->
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "sim_id": "health-message-design-studio",
+  "diagram_name": "Health Message Design Studio",
+  "chapter_number": 12,
+  "chapter_title": "Advocacy, Goal Setting, and Health Messaging",
+  "chapter_dir": "12-advocacy-goal-setting-and-health-messaging",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/12-advocacy-goal-setting-and-health-messaging",
+  "library": "p5.js",
+  "bloom_level": "Create (L6)",
+  "bloom_verb": "design, compose, formulate",
+  "learning_objective": "Students design a fact-supported health message by selecting a topic, audience, and format, then composing the message using the five design principles (audience-first opening, cited facts, matched tone/format, clear call to action, no unsupported scare tactics).",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** health-message-design-studio<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Create (L6)\nBloom Taxonomy Verb: design, compose, formulate\n\nLearning objective: Students design a fact-supported health message by selecting a topic, audience, and format, then composing the message using the five design principles (audience-first opening, cited facts, matched tone/format, clear call to action, no unsupported scare tactics).\n\nCanvas layout: Left area: topic and audience selection (dropdown: Sleep, Vaping Prevention, Nutrition, Stress Management; dropdown: Classmates, Younger Students, Parents/Family, School Community). Right area: message-composition fields (Opening Hook, Key Fact + Source, Call To Action) plus a live preview panel.\n\nVisual elements: Topic/audience dropdowns; three composition text fields; a \"Design Principles Checklist\" sidebar that checks off automatically as the learner's draft meets each principle (detected via simple heuristics such as presence of a source citation and a call-to-action field); live preview panel showing the assembled message as a poster-style layout.\n\nInteractive controls: Learner selects topic and audience, drafts the three message fields, and watches the checklist and preview update live; \"See Model Example\" button shows a fully worked example (the sleep message above) for the selected topic if available; \"Export My Message\" produces a printable/downloadable poster layout.\n\nDefault parameters: Topic and audience unselected at start; checklist items unchecked until criteria are met.\n\nInstructional Rationale: A Create-level objective requires learners to compose an original message from component parts; a studio layout with a live design-principles checklist scaffolds the creative process by making the five criteria visible and checkable in real time, rather than only listing them as text to remember.\n\nImplementation notes: p5.js or HTML form elements in a p5.js canvas wrapper. Responsive layout that stacks the two areas vertically on narrow screens."
+}

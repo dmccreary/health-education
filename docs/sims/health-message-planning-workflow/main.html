@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Health Message Planning Workflow</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Health Message Planning Workflow</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> health-message-planning-workflow</p>
+            <p><strong>Library:</strong> Mermaid</p>
+            <p><strong>Bloom Level:</strong> Create (L6)</p>
+            <p><strong>Learning Objective:</strong> Students formulate a short health message for a chosen audience by working through each planning step and examining a simulated outcome.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: workflow
+    **sim-id:** health-message-planning-workflow<br/>
+    **Library:** Mermaid<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Create (L6)
+    Bloom Taxonomy Verb: compose, produce, formulate
+    
+    Learning objective: Students formulate a short health message for a chosen audience by working through each planning step and examining a simulated outcome.
+    
+    Purpose: Show the five-step message-planning process as a sequence, every node clickable, ending in an outcome-examination step.
+    
+    Visual style: Flowchart, five process rectangles in sequence ending in a reflection node.
+    
+    Steps: 1) "Know your audience" (click reveals: "Who is listening, and what fits their age and interests?"); 2) "Pick one clear main idea" (click reveals: "One focused idea is more memorable than five half-explained ones"); 3) "Choose a format that fits" (click reveals: "Spoken, poster, or slide — match the time and setting"); 4) "Practice saying it out loud" (click reveals: "Catches awkward wording before the real delivery"); 5) "Deliver the message" (click reveals: "Share it clearly and confidently with your audience"); 6) End — "Examine the outcome" (click reveals: "Did it land? What would you change next time?").
+    
+    Color coding: Blue for planning steps, orange for delivery, green for the reflection step.
+    
+    Implementation: Mermaid flowchart with a `click` directive on every node opening an infobox with the revealed text.
+    -->
+</body>
+</html>

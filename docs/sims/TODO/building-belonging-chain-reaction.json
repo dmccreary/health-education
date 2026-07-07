@@ -1,0 +1,15 @@
+{
+  "sim_id": "building-belonging-chain-reaction",
+  "diagram_name": "Building Belonging Chain Reaction",
+  "chapter_number": 4,
+  "chapter_title": "Friendship, Uniqueness, and Belonging",
+  "chapter_dir": "04-friendship-and-belonging",
+  "chapter_rel_dir": "bands/grade-1/chapters/04-friendship-and-belonging",
+  "library": "Mermaid",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, summarize, infer",
+  "learning_objective": "Students explain how healthy peer traits, kindness, and valuing uniqueness work together, through caring relationships, to build a classroom where everyone belongs.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n**sim-id:** building-belonging-chain-reaction<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, summarize, infer\n\nLearning objective: Students explain how healthy peer traits, kindness, and valuing uniqueness work together, through caring relationships, to build a classroom where everyone belongs.\n\nPurpose: Show a simple, positive chain from individual kind actions to a whole classroom feeling of belonging\n\nVisual style: Simple vertical flowchart with rounded boxes and an arrow chain, warm colors, ending in a bright \"Everyone Belongs\" node\n\nSteps:\n1. Start: \"Healthy Peer Traits\" — hover text: \"Listening, sharing, taking turns, and telling the truth with a peer.\"\n2. Process: \"Kindness\" — hover text: \"Choosing words and actions that help someone else feel good, safe, or included.\"\n3. Process: \"Valuing Uniqueness\" — hover text: \"Appreciating what makes each classmate different instead of expecting everyone to be the same.\"\n4. Process: \"Caring Relationships\" — hover text: \"Ongoing connections built on trust, respect, and support between classmates and with trusted adults.\"\n5. End: \"Everyone Belongs\" — hover text: \"A classroom where every person feels welcomed, valued, and safe being themselves.\"\n\nEvery node includes a click handler opening an infobox with the hover text described above (Mermaid `click` directive on each node).\n\nColor coding:\n- Soft blue: Healthy Peer Traits\n- Soft green: Kindness\n- Soft purple: Valuing Uniqueness\n- Soft orange: Caring Relationships\n- Gold: Everyone Belongs (end state)\n\nImplementation: Mermaid flowchart with `click NodeId call showInfo(\"text\")` directives on all five nodes, each opening an infobox with the corresponding hover text"
+}

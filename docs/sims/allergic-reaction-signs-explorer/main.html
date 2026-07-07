@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Allergic Reaction Signs Explorer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Allergic Reaction Signs Explorer</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> allergic-reaction-signs-explorer</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Remember (L1)</p>
+            <p><strong>Learning Objective:</strong> Students identify the signs of an allergic reaction across the skin, breathing, digestive system, and whole body, and recognize which signs signal an emergency.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: infographic
+    **sim-id:** allergic-reaction-signs-explorer<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Remember (L1)
+    Bloom Taxonomy Verb: identify, recognize, list
+    
+    Learning objective: Students identify the signs of an allergic reaction across the skin, breathing, digestive system, and whole body, and recognize which signs signal an emergency.
+    
+    Canvas layout: Full width (650px) illustrated figure with 8 clickable hotspots; bottom strip (100px) infobox showing sign and severity.
+    
+    Visual elements: Flat-style illustrated person with hotspots at face/lips, skin (arm), throat, chest, stomach, whole-body icon (dizziness), plus a "Mild"/"Emergency" legend. Hotspots color-coded yellow (mild) or red (emergency).
+    
+    Interactive controls: Click any hotspot to reveal sign/description/severity; "Show All Signs" button; "Reset" button.
+    
+    Default parameters: No hotspot selected on load.
+    
+    Behavior: Face/lips shows "Swelling of face, lips, or tongue — Emergency"; skin shows "Hives or redness — Mild to moderate"; throat shows "Throat tightness — Emergency"; chest shows "Coughing, wheezing, trouble breathing — Emergency"; stomach shows "Cramps, nausea, vomiting — Mild to moderate"; whole-body icon shows "Dizziness or weakness — Emergency".
+    
+    Instructional Rationale: Remember-level objective, so click-to-reveal labeling builds a clear factual list rather than animation.
+    
+    Implementation notes: p5.js; hotspot objects (x, y, radius, sign, severity, description) colored by severity; infobox renders in bottom strip on click.
+    -->
+</body>
+</html>

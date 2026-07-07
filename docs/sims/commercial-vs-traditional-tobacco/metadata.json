@@ -1,0 +1,22 @@
+{
+  "title": "Commercial Tobacco Vs. Traditional Tobacco Comparison",
+  "description": "Students differentiate commercial tobacco addiction from traditional/ceremonial tobacco use across purpose, preparation, frequency, and cultural meaning, correcting the common misconception that the two are the same practice.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "commercial-vs-traditional-tobacco",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "differentiate, distinguish, compare",
+  "completion_status": "scaffold",
+  "chapter_number": 9,
+  "chapter_title": "Substance Use Culture, Safety, and Risk",
+  "chapter_dir": "09-substance-use-culture-safety-and-risk"
+}

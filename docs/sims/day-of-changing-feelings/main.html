@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>A Day of Changing Feelings Timeline</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>A Day of Changing Feelings Timeline</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> day-of-changing-feelings</p>
+            <p><strong>Library:</strong> vis-timeline</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Students describe how different situations across a single school day affect the way a character feels and responds.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: timeline
+    **sim-id:** day-of-changing-feelings<br/>
+    **Library:** vis-timeline<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: explain, describe, infer
+    
+    Learning objective: Students describe how different situations across a single school day affect the way a character feels and responds.
+    
+    Time period: One school day, from morning arrival to bedtime (7:00 AM - 8:00 PM)
+    
+    Orientation: Horizontal
+    
+    Events:
+    - 7:00 AM: Waking up excited — "It's picture day!"
+    - 8:15 AM: Nervous — forgot homework at home
+    - 9:30 AM: Proud — solved a hard math problem
+    - 12:00 PM: Happy — sat with friends at lunch
+    - 1:45 PM: Sad — a friend couldn't play at recess because they were sick
+    - 3:00 PM: Scared — a loud fire drill alarm
+    - 3:15 PM: Calm — teacher explains the drill was just practice
+    - 6:00 PM: Angry — sibling broke a favorite toy
+    - 8:00 PM: Calm — bedtime story with a trusted adult
+    
+    Visual style: Horizontal timeline with a simple cartoon face icon above each event matching the feeling
+    
+    Color coding:
+    - Yellow: happy/excited feelings
+    - Blue: sad feelings
+    - Red: angry feelings
+    - Purple: scared/nervous feelings
+    - Green: calm feelings
+    
+    Interactive features:
+    - Click any event to open an infobox explaining the situation, the feeling it caused, and why that response makes sense
+    - Infobox includes a "What could help?" tip for the harder moments (nervous, scared, angry, sad)
+    
+    Implementation: vis-timeline JavaScript library with click event listeners opening a definition/explanation panel
+    -->
+</body>
+</html>

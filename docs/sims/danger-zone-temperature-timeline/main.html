@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Danger Zone Temperature Timeline</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Danger Zone Temperature Timeline</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> danger-zone-temperature-timeline</p>
+            <p><strong>Library:</strong> vis-timeline</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Students interpret a temperature/time timeline to explain why leaving perishable food out too long is unsafe and describe safe handling checkpoints.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: timeline
+    **sim-id:** danger-zone-temperature-timeline<br/>
+    **Library:** vis-timeline<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: explain, describe, interpret
+    
+    Learning objective: Students interpret a temperature/time timeline to explain why leaving perishable food out too long is unsafe and describe safe handling checkpoints.
+    
+    Time period: A single afternoon, from "Food Cooked (12:00 PM)" to "Food Discarded if Unsafe (4:30 PM)"
+    
+    Orientation: Horizontal
+    
+    Events:
+    - 12:00 PM: Food finishes cooking at a safe internal temperature (label: "Safe — just cooked")
+    - 12:15 PM: Food placed on counter to cool (label: "Still safe — just served")
+    - 1:00 PM: One hour at room temperature (label: "Entering the Danger Zone — bacteria start multiplying")
+    - 2:00 PM: Two hours at room temperature (label: "Time Limit Reached — should be refrigerated or discarded now")
+    - 2:30 PM onward: Food left out past two hours (label: "Unsafe — bacteria may have multiplied to unsafe levels")
+    - Alternate branch at 12:15 PM: Food refrigerated promptly (label: "Safe — cold storage stops bacteria growth")
+    
+    Visual style: Horizontal timeline with a color-graded "danger zone" band overlay between 40°F and 140°F context, and a branching comparison path showing "left out" versus "refrigerated promptly"
+    
+    Color coding:
+    - Green: Safe temperature/time zone
+    - Yellow: Entering the danger zone (1 hour)
+    - Red: Past the safe time limit (2+ hours)
+    
+    Interactive features:
+    - Click any event marker to open an infobox explaining what is happening to the food at that point and why
+    - Toggle between the "left out" and "refrigerated promptly" branches to compare outcomes
+    - Hover over the color band to see the definition of the "danger zone" (40°F-140°F, the range where bacteria multiply fastest)
+    
+    Implementation: vis-timeline with two parallel timeline branches (left-out vs. refrigerated) and custom click handlers opening a definition panel.
+    -->
+</body>
+</html>

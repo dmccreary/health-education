@@ -1,0 +1,22 @@
+{
+  "title": "Goal Strategy Outcome Evaluation Rubric",
+  "description": "Evaluate a completed goal-setting scenario's process",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "goal-strategy-outcome-rubric",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate<br/>",
+  "bloomVerb": "assess, critique, justify",
+  "completion_status": "scaffold",
+  "chapter_number": 14,
+  "chapter_title": "Health Decision-Making and Goal-Setting",
+  "chapter_dir": "14-health-decision-making-and-goal-setting"
+}

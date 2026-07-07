@@ -1,0 +1,15 @@
+{
+  "sim_id": "saying-no-getting-help-workflow",
+  "diagram_name": "Steps for Saying No and Getting Help",
+  "chapter_number": 6,
+  "chapter_title": "Body Safety and Speaking Up",
+  "chapter_dir": "06-body-safety-speaking-up",
+  "chapter_rel_dir": "bands/grade-2/chapters/06-body-safety-speaking-up",
+  "library": "Mermaid",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, describe, summarize",
+  "learning_objective": "Students explain the sequence of actions to take when facing an unwanted touch, from saying no through telling a trusted adult.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n**sim-id:** saying-no-getting-help-workflow<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, describe, summarize\n\nLearning objective: Students explain the sequence of actions to take when facing an unwanted touch, from saying no through telling a trusted adult.\n\nPurpose: Show the four-step process for saying no or exiting an unwanted-touch situation and getting help, as a simple, linear flowchart\n\nVisual style: Mermaid flowchart (graph TD), four boxes connected top to bottom, plain and calm in tone -- no urgent or alarming imagery, calm color palette\n\nNodes (each must have a click handler opening an infobox with plain, sincere definition text):\n1. \"This Touch Feels Wrong\" (start node) -- click shows \"This is the moment you notice a touch that feels unwanted, confusing, or unsafe. Trust that feeling.\"\n2. \"Say No or Move Away\" -- click shows \"Use a strong voice to say no, or simply step away. You do not need permission to do either.\"\n3. \"Go Find a Trusted Adult\" -- click shows \"Walk to a parent, guardian, teacher, or school counselor as soon as you can.\"\n4. \"Keep Telling Until Someone Helps\" -- click shows \"Tell exactly what happened. If the first adult does not understand or help, tell another trusted adult. You will never be in trouble for telling.\"\n\nConnections: Straight top-to-bottom arrows connecting node 1 to node 2, node 2 to node 3, and node 3 to node 4 -- no branches, since the same steps apply every time\n\nColor coding: Calm blue-gray tones throughout; no red or alarming colors, matching the plainly sincere tone required for this content\n\nInteractive features: click directive on every node in the Mermaid syntax, mapped to a JavaScript function that opens an infobox with the definition text above\n\nImplementation: Mermaid flowchart with click bindings; render inside a small wrapper page that displays the infobox below the diagram. Keep the visual plain, calm, and reassuring throughout."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "curable-versus-manageable-sti-classifier",
+  "diagram_name": "Curable Versus Manageable STI Classifier",
+  "chapter_number": 3,
+  "chapter_title": "Healthcare Access and Sexual Health",
+  "chapter_dir": "03-healthcare-access-and-sexual-health",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/03-healthcare-access-and-sexual-health",
+  "library": "p5.js",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "classify, justify, differentiate",
+  "learning_objective": "Students classify named STIs (by text label only, no imagery) as curable or manageable-but-not-curable, and justify each classification using the bacterial-versus-viral distinction.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** curable-versus-manageable-sti-classifier<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Evaluate (L5)\nBloom Taxonomy Verb: classify, justify, differentiate\n\nLearning objective: Students classify named STIs (by text label only, no imagery) as curable or manageable-but-not-curable, and justify each classification using the bacterial-versus-viral distinction.\n\nLayout: A deck of text-only infection name cards (chlamydia, gonorrhea, syphilis, HIV, herpes, HPV) with two click zones: \"Curable with Treatment\" and \"Manageable, Not Currently Curable.\"\n\nInteractive controls: Click-to-sort each card; feedback confirms placement and explains whether the infection is bacterial or viral and what treatment achieves; progress counter; \"Reset Deck\" button.\n\nInstructional Rationale: Classifying and justifying against a clinical framework is Evaluate-level, so a sorting task requiring a stated reason is used rather than simple recall, reinforcing that \"not curable\" does not mean \"untreatable\" or \"hopeless.\"\n\nImplementation notes: p5.js. Card data as objects with infection name, correct category, and bacterial/viral explanation string; text labels only, no anatomical or clinical imagery."
+}

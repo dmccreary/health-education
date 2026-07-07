@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>The Three Parts of Health</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>The Three Parts of Health</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> three-parts-of-health</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Students explain the three connected parts of health (physical, mental/emotional, social) and classify everyday example situations under the part(s) of health they mainly affect.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: infographic
+    **sim-id:** three-parts-of-health<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: explain, classify, exemplify
+    
+    Learning objective: Students explain the three connected parts of health (physical, mental/emotional, social) and classify everyday example situations under the part(s) of health they mainly affect.
+    
+    Purpose: Help students see health as a whole-person idea made of interacting parts rather than a single measure of "sick vs. not sick."
+    
+    Layout: Three overlapping circles (a Venn-style cluster) labeled Physical, Mental/Emotional, and Social, with a shared center zone labeled "Whole Health."
+    
+    Interactive elements:
+    - Click any circle to open an infobox with a one-sentence definition of that part of health and two examples
+    - A tray of 10 scenario cards below the diagram (e.g., "Sofia stayed up late worrying about a test," "Malik ate breakfast before school," "Priya felt better after talking to her aunt about a hard day") — click a card, then click the circle(s) it belongs in
+    - Cards that genuinely touch more than one circle can be dropped in the overlapping zone, with a confirmation explaining why it touches multiple parts of health
+    - A progress counter tracks how many of the 10 scenarios have been placed
+    
+    Visual style: Soft, rounded flat-color circles with simple icons (heart for physical, brain for mental/emotional, two linked figures for social)
+    
+    Color scheme: Physical = green, Mental/Emotional = purple, Social = orange, overlap zone = soft gold
+    
+    Responsive behavior: Circles resize and re-center on narrow screens; scenario tray becomes a horizontal scroll strip
+    
+    Implementation: p5.js with an array of scenario objects (text, correct category or categories, explanation) driving click-to-place logic and infobox rendering.
+    -->
+</body>
+</html>

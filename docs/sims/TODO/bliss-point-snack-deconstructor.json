@@ -1,0 +1,15 @@
+{
+  "sim_id": "bliss-point-snack-deconstructor",
+  "diagram_name": "Bliss Point Snack Deconstructor",
+  "chapter_number": 1,
+  "chapter_title": "Health Foundations and Nutrition",
+  "chapter_dir": "01-health-foundations-and-nutrition",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/01-health-foundations-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "deconstruct, examine, organize, differentiate",
+  "learning_objective": "Students analyze the sugar, sodium, and fat content of common snack foods to recognize the engineered combination pattern often called the \"bliss point.\"",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** bliss-point-snack-deconstructor<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: deconstruct, examine, organize, differentiate\n\nLearning objective: Students analyze the sugar, sodium, and fat content of common snack foods to recognize the engineered combination pattern often called the \"bliss point.\"\n\nLayout: Selectable snack icons (flavored chips, sweetened granola bar, chocolate-covered pretzel, plain fruit, plain nuts) beside a three-bar mini-chart (sugar/sodium/fat) that updates on selection, plus a \"Compare to Whole Food\" toggle overlaying plain fruit or nuts as a reference line.\n\nBehavior: Clicking a snack loads its real nutrition values into the chart; hovering a bar shows the exact gram/mg value and %DV; a highlighted \"engineered combination zone\" marker appears whenever sugar and sodium are both in the upper range, opening an infobox that explains the bliss point using that snack's numbers.\n\nInstructional Rationale: Examining and differentiating product composition is Analyze-level, so a selectable, data-driven comparison is used rather than a single illustration, letting learners test multiple snacks against each other and against whole-food references.\n\nImplementation notes: p5.js. Snack data stored as objects with sugar/sodium/fat fields; bars render proportionally; the \"engineered combination zone\" flag recomputes whenever both sugar and sodium exceed defined thresholds."
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Stereotype-to-Discrimination Pathway Map",
+  "description": "Students examine how stereotypes lead to prejudice and",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "stereotype-discrimination-pathway-map",
+  "library": "vis-network",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine, differentiate, distinguish",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Conflict Resolution and Inclusion",
+  "chapter_dir": "06-conflict-resolution-and-inclusion"
+}

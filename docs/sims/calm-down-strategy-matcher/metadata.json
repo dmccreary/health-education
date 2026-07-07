@@ -1,0 +1,22 @@
+{
+  "title": "Calm-Down Strategy Matcher",
+  "description": "Students match a described emotional scenario to an appropriate restorative self-management strategy and see why it is a good fit.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "calm-down-strategy-matcher",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "use, demonstrate, practice",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "Managing Emotions and Relationships",
+  "chapter_dir": "03-managing-emotions-and-relationships"
+}

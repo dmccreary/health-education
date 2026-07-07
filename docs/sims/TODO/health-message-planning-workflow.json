@@ -1,0 +1,15 @@
+{
+  "sim_id": "health-message-planning-workflow",
+  "diagram_name": "Health Message Planning Workflow",
+  "chapter_number": 7,
+  "chapter_title": "Health Skills And Goal Setting",
+  "chapter_dir": "07-health-skills-and-goal-setting",
+  "chapter_rel_dir": "bands/grade-5/chapters/07-health-skills-and-goal-setting",
+  "library": "Mermaid",
+  "bloom_level": "Create (L6)",
+  "bloom_verb": "compose, produce, formulate",
+  "learning_objective": "Students formulate a short health message for a chosen audience by working through each planning step and examining a simulated outcome.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n**sim-id:** health-message-planning-workflow<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy: Create (L6)\nBloom Taxonomy Verb: compose, produce, formulate\n\nLearning objective: Students formulate a short health message for a chosen audience by working through each planning step and examining a simulated outcome.\n\nPurpose: Show the five-step message-planning process as a sequence, every node clickable, ending in an outcome-examination step.\n\nVisual style: Flowchart, five process rectangles in sequence ending in a reflection node.\n\nSteps: 1) \"Know your audience\" (click reveals: \"Who is listening, and what fits their age and interests?\"); 2) \"Pick one clear main idea\" (click reveals: \"One focused idea is more memorable than five half-explained ones\"); 3) \"Choose a format that fits\" (click reveals: \"Spoken, poster, or slide — match the time and setting\"); 4) \"Practice saying it out loud\" (click reveals: \"Catches awkward wording before the real delivery\"); 5) \"Deliver the message\" (click reveals: \"Share it clearly and confidently with your audience\"); 6) End — \"Examine the outcome\" (click reveals: \"Did it land? What would you change next time?\").\n\nColor coding: Blue for planning steps, orange for delivery, green for the reflection step.\n\nImplementation: Mermaid flowchart with a `click` directive on every node opening an infobox with the revealed text."
+}

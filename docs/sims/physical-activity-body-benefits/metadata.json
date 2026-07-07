@@ -1,0 +1,22 @@
+{
+  "title": "How Physical Activity Helps the Body",
+  "description": "Students describe how physical activity benefits different parts and functions of the body by exploring a labeled body diagram.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "physical-activity-body-benefits",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, describe",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Staying Healthy in Our Environment",
+  "chapter_dir": "04-staying-healthy-environment"
+}

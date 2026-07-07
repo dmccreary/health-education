@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Neighborhood Physical Activity Resource Comparator</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Neighborhood Physical Activity Resource Comparator</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> neighborhood-activity-resource-comparator</p>
+            <p><strong>Library:</strong> Chart.js</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students compare physical activity infrastructure
+(park acreage, lit sidewalks, recreation programs, perceived safety) across</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: chart
+    
+    **sim-id:** neighborhood-activity-resource-comparator<br/>
+    **Library:** Chart.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy Level: Analyze (L4)
+    Bloom Verb: compare, examine, differentiate
+    
+    Learning objective: Students compare physical activity infrastructure
+    (park acreage, lit sidewalks, recreation programs, perceived safety) across
+    three representative neighborhood income tiers and analyze how the gaps
+    translate into unequal opportunity.
+    
+    Chart type: Grouped bar chart with a neighborhood-tier selector
+    
+    Purpose: Show how park acreage per 1,000 residents, percentage of streets
+    with sidewalks, number of free/low-cost recreation programs, and a
+    resident-reported safety score differ across representative
+    higher-income, middle-income, and lower-income neighborhood tiers, using
+    realistic composite data drawn from published park-access and community
+    health research patterns
+    
+    X-axis: Four resource categories (Park Acreage per 1,000 Residents,
+    Percent Streets with Sidewalks, Free/Low-Cost Recreation Programs,
+    Resident Safety Score out of 10)
+    
+    Y-axis: Normalized value per category (0-10 scale for comparability)
+    
+    Data series (toggleable):
+    1. Higher-Income Neighborhood Tier (green bars): Park acreage 8, sidewalks
+       9, programs 7, safety 8
+    2. Middle-Income Neighborhood Tier (gold bars): Park acreage 5, sidewalks
+       6, programs 4, safety 6
+    3. Lower-Income Neighborhood Tier (orange-red bars): Park acreage 2,
+       sidewalks 3, programs 2, safety 4
+    
+    Title: "Physical Activity Resources by Neighborhood Income Tier"
+    Legend: top-right, click a tier's legend entry to show/hide that series
+    
+    Interactive features:
+    - Hover any bar: tooltip shows exact category, tier, and value with a
+      one-sentence explanation of what that value represents in real terms
+    - Click a legend entry to toggle a tier on/off for direct comparison
+    - Dropdown: highlight one category across all three tiers at once
+    
+    Annotations: callout on the Park Acreage category noting "Gaps like this
+    are shaped by zoning and investment decisions, not resident preference"
+    
+    Implementation: Chart.js grouped bar chart with legend-click toggling and
+    custom tooltip callback
+    -->
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "sim_id": "who-can-i-turn-to-support-network",
+  "diagram_name": "Who Can I Turn To Support Network",
+  "chapter_number": 4,
+  "chapter_title": "Emotional Well-Being and Mental Health",
+  "chapter_dir": "04-emotional-well-being-and-mental-health",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/04-emotional-well-being-and-mental-health",
+  "library": "vis-network",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "identify, list, recognize",
+  "learning_objective": "Students identify multiple concrete people and resources they can turn to, immediately, if they or a friend are at risk, reinforcing that help is always available and never limited to a single option.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n**sim-id:** who-can-i-turn-to-support-network<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy: Remember (L1)\nBloom Taxonomy Verb: identify, list, recognize\n\nLearning objective: Students identify multiple concrete people and resources they can turn to, immediately, if they or a friend are at risk, reinforcing that help is always available and never limited to a single option.\n\nNode types: Central node \"Me or a Friend Needs Help Now\" (orange circle, high visual prominence). Support nodes (blue circles): Parent/Guardian, School Counselor, Teacher or Coach, Trusted Family Member or Knowledge Keeper, 988 Suicide and Crisis Lifeline (call or text).\n\nEdge types: \"Can Help Right Now\" (thick solid lines from every support node to the central node, all styled identically to avoid implying any option is a lesser choice).\n\nLayout: Central node in the middle, all five support nodes arranged evenly around it in a simple wheel layout.\n\nInteractive features: Hover a support node to see its label; click a support node to open an infobox with one sentence on how to reach that support (e.g., clicking the 988 node reveals \"Call or text 988. Available 24/7, free and confidential.\"); click the central node to reveal the message \"There is always more than one way to get help, and reaching out is always the right choice.\"; zoom with mouse wheel, pan by dragging background.\n\nLegend: Simple key noting all support nodes are equally valid first steps.\n\nImplementation: vis-network JavaScript library; canvas responsive, default 800x500px. Contains no depiction of a crisis event — only the identification of help pathways."
+}

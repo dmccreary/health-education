@@ -1,0 +1,15 @@
+{
+  "sim_id": "emergency-response-priority-workflow",
+  "diagram_name": "Emergency Response Priority Workflow",
+  "chapter_number": 6,
+  "chapter_title": "Sleep, Fitness, and Emergency Response",
+  "chapter_dir": "06-sleep-fitness-and-emergency-response",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/06-sleep-fitness-and-emergency-response",
+  "library": "Mermaid",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, prioritize, differentiate",
+  "learning_objective": "Students examine an emergency scenario with multiple people needing help and prioritize response order based on severity, differentiating life-threatening conditions from less urgent ones.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n**sim-id:** emergency-response-priority-workflow<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: examine, prioritize, differentiate\n\nLearning objective: Students examine an emergency scenario with multiple people needing help and prioritize response order based on severity, differentiating life-threatening conditions from less urgent ones.\n\nVisual style: Mermaid flowchart with a start node, sequential process nodes, one decision diamond, and an end node.\n\nSteps: (1) Start node \"Emergency Situation Identified,\" click reveals this is the trigger point for the whole priority sequence; (2) process \"Assess Scene Safety First,\" click reveals that helpers must never skip this step, even under pressure; (3) process \"Check Responsiveness and Breathing,\" click reveals how to check (tap and shout, look for chest movement); (4) process \"Call Emergency Services,\" click reveals that calling for help should never be delayed while waiting to see if things improve; (5) decision diamond \"More Than One Person Needs Help?,\" click reveals that multiple-casualty situations require an extra prioritization step; (5a) branch \"No\" leads directly to \"Address the Person's Most Urgent Need,\" click reveals the life-threatening-first rule (breathing and severe bleeding before less urgent injuries); (5b) branch \"Yes\" leads to \"Prioritize by Severity: Life-Threatening Conditions First,\" click reveals an example comparing a non-breathing person to a person with a minor injury; both paths lead to end node \"Continue Care Until Help Arrives,\" click reveals that priority decisions continue as conditions change.\n\nEvery node must have a Mermaid `click` directive calling an infobox function.\n\nColor coding: Blue for start/process nodes, yellow for the decision diamond, green for both resolution paths and the shared end node.\n\nImplementation: Mermaid flowchart syntax with `click NodeId call showInfo(\"key\")` for every node; infobox text in a JS lookup object. No graphic injury imagery or detail in infobox text."
+}

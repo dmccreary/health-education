@@ -1,0 +1,15 @@
+{
+  "sim_id": "refusal-skill-strength-analyzer",
+  "diagram_name": "Refusal Skill Strength Analyzer",
+  "chapter_number": 13,
+  "chapter_title": "Influences on Health Behavior",
+  "chapter_dir": "13-influences-on-health-behavior",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/13-influences-on-health-behavior",
+  "library": "Chart.js",
+  "bloom_level": "Evaluate<br/>",
+  "bloom_verb": "rank, critique",
+  "learning_objective": "Evaluate and rank six sample refusal-line examples by",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n\n**sim-id:** refusal-skill-strength-analyzer<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Evaluate<br/>\nBloom Taxonomy Verb: rank, critique\n\nLearning objective: Evaluate and rank six sample refusal-line examples by\nstrength using the four criteria (directness, verbal/nonverbal consistency,\nalternative/exit plan, resilience to repeated pressure), building on\nrefusal skills introduced in Chapters 3, 4, and 10.\n\nPurpose: Move learners from recalling refusal lines to ranking their\nrelative strength and justifying the ranking against explicit criteria.\n\nChart type: Horizontal stacked bar chart, one bar per refusal-line example,\nsegments representing the four criteria scored 0-1.\n\nX-axis: Composite strength score (0-4)\nY-axis: Six example refusal lines (e.g., \"Um, maybe, I guess so\" vs. \"No,\nI'm not doing that — I'm heading to Jae's, come with me if you want\")\n\nData series: Four stacked segments per bar (Directness, Consistency,\nExit plan, Resilience), each pre-scored 0 or 1 based on the example text,\nused as the \"expert\" answer key revealed after the learner submits their\nown ranking.\n\nInteractive elements: Learner first drags the six examples into their own\nranked order (weakest to strongest); clicking \"Reveal scoring\" renders the\nstacked bar chart and the learner compares their ranking to the computed\ncomposite scores; hovering any bar segment shows the specific rationale for\nthat criterion's score.\n\nTitle: \"How Strong Is That Refusal?\"\nLegend: Four criteria colors, positioned top-right.\n\nColor scheme: Four distinct colors per criterion segment (e.g., blue =\ndirectness, teal = consistency, gold = exit plan, orange = resilience).\n\nImplementation: Chart.js horizontal stacked bar chart with a custom\ndrag-to-rank pre-step built in HTML/JS before the chart renders."
+}

@@ -1,0 +1,22 @@
+{
+  "title": "How Moving Your Body Helps You",
+  "description": "Students explain the benefits of regular physical activity for the body, mood, and learning by exploring a labeled figure and matching activities to the benefits they produce.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "activity-benefits-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, summarize",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "Wellness And Activity",
+  "chapter_dir": "03-wellness-and-activity"
+}

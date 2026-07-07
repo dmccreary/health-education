@@ -1,0 +1,22 @@
+{
+  "title": "My Goal Progress Tracker",
+  "description": "Students reflect on the results of working toward a personal health-related goal by reviewing a week of sample progress data and judging what went well and what to change.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "goal-progress-tracker-chart",
+  "library": "Chart.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "assess, judge, reflect",
+  "completion_status": "scaffold",
+  "chapter_number": 7,
+  "chapter_title": "Influences, Decisions, and Personal Goals",
+  "chapter_dir": "07-influences-decisions-goals"
+}

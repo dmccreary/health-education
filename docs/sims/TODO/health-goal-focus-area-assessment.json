@@ -1,0 +1,15 @@
+{
+  "sim_id": "health-goal-focus-area-assessment",
+  "diagram_name": "Health Goal Focus Area Self-Assessment",
+  "chapter_number": 14,
+  "chapter_title": "Health Decision-Making and Goal-Setting",
+  "chapter_dir": "14-health-decision-making-and-goal-setting",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/14-health-decision-making-and-goal-setting",
+  "library": "Chart.js",
+  "bloom_level": "Evaluate<br/>",
+  "bloom_verb": "judge, prioritize",
+  "learning_objective": "Evaluate personal wellbeing across six focus-area",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n\n**sim-id:** health-goal-focus-area-assessment<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Evaluate<br/>\nBloom Taxonomy Verb: judge, prioritize\n\nLearning objective: Evaluate personal wellbeing across six focus-area\ndomains (physical activity, nutrition, sleep, mental/emotional health,\nrelationships, substance-free choices) to justify prioritizing one area\nfor goal-setting.\n\nChart type: Radar/spider chart, six axes, one per wellbeing domain.\n\nPurpose: Let learners self-rate their current standing (1-5) on each of\nsix domains, then visually identify the domain with the lowest score\nand/or the domain they mark as \"matters most to me\" via a separate\npriority-weight slider per axis, producing a combined \"priority score\"\n(gap size x personal importance).\n\nX-axis/Y-axis: Not applicable (radar chart); six labeled axes around the\nperimeter.\n\nData series: One series per learner (self-rating), one overlay series for\n\"where I want to be\" (target rating), so the gap between current and\ntarget is visually the shaded area between the two polygons.\n\nInteractive elements: Slider per axis for current rating and target\nrating; hovering any axis point shows the numeric gap; a ranked list\nbelow the chart auto-sorts domains by gap x importance to suggest a\ntop-priority focus area, with a text box for the learner to write why they\nagree or disagree with the suggestion.\n\nTitle: \"Where Should My Health Goal Focus?\"\nLegend: Current rating (blue polygon) vs. target rating (gold polygon).\n\nImplementation: Chart.js radar chart plugin with linked sliders."
+}

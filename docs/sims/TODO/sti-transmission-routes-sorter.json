@@ -1,0 +1,15 @@
+{
+  "sim_id": "sti-transmission-routes-sorter",
+  "diagram_name": "STI Transmission Routes Sorter",
+  "chapter_number": 3,
+  "chapter_title": "Healthcare Access and Sexual Health",
+  "chapter_dir": "03-healthcare-access-and-sexual-health",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/03-healthcare-access-and-sexual-health",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "classify, explain, distinguish",
+  "learning_objective": "Students classify common routes of contact (skin-to-skin, fluid exchange, casual contact) as transmitting or not transmitting STIs, building an accurate model of how infections do and do not spread.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** sti-transmission-routes-sorter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: classify, explain, distinguish\n\nLearning objective: Students classify common routes of contact (skin-to-skin, fluid exchange, casual contact) as transmitting or not transmitting STIs, building an accurate model of how infections do and do not spread.\n\nLayout: A deck of 10 text-only contact scenarios (e.g., \"sharing a water bottle,\" \"skin-to-skin genital contact\") with three click zones: \"Can Transmit an STI,\" \"Cannot Transmit an STI,\" \"Depends on the Specific Infection.\"\n\nInteractive controls: Click-to-sort each scenario; immediate feedback names the correct category and gives a one-sentence clinical explanation; progress counter; \"Reset Deck\" button.\n\nInstructional Rationale: Classifying routes of transmission against a factual standard is Understand-level, so a sorting task with explanatory feedback is used, correcting common misconceptions about casual contact directly.\n\nImplementation notes: p5.js. Scenario data stored as objects with text, correct category, and explanation string; no anatomical imagery, text labels only."
+}

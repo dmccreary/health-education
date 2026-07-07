@@ -1,0 +1,15 @@
+{
+  "sim_id": "youth-friendly-provider-workflow",
+  "diagram_name": "Youth-Friendly Provider Visit Workflow",
+  "chapter_number": 4,
+  "chapter_title": "Healthcare Access and Sexual Health",
+  "chapter_dir": "04-healthcare-access-and-sexual-health",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/04-healthcare-access-and-sexual-health",
+  "library": "Mermaid",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, distinguish, differentiate",
+  "learning_objective": "Students examine the sequence of a youth-friendly",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n\n**sim-id:** youth-friendly-provider-workflow<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: examine, distinguish, differentiate\n\nLearning objective: Students examine the sequence of a youth-friendly\nclinic visit and distinguish which specific provider behaviors at each\nstep meet or fail the youth-friendly standard.\n\nVisual style: Mermaid flowchart, top-to-bottom, click handlers on every\nnode (`click NodeId call showInfo(\"term\")`)\n\nNodes (all clickable):\n1. \"Check-In\" — click text: \"A youth-friendly clinic protects\n   confidentiality starting at check-in, not only during the exam room\n   conversation\"\n2. \"Provider Introduces Confidentiality Limits\" — click text: \"States\n   clearly, up front, what stays private and the narrow exceptions\n   (such as serious safety risk) before any other conversation happens\"\n3. \"Provider Talks Directly to the Patient\" — click text: \"Addresses the\n   adolescent as the primary person in the conversation, not only an\n   accompanying adult\"\n4. \"Patient Asks a Question\" — click text: \"A youth-friendly provider\n   answers direct questions with direct, medically accurate information\"\n5. \"Provider Explains Clearly and Checks Understanding\" — click text:\n   \"Uses plain language and confirms the patient actually understood,\n   rather than assuming\"\n6. \"Provider Asks Permission Before Any Exam or Disclosure\" — click text:\n   \"Permission is asked before an exam, procedure, or sharing information\n   with anyone else, including a parent\"\n7. \"Visit Concludes\" — click text: \"The patient leaves with clear next\n   steps and knows exactly what information was or was not shared\"\n\nConnections: 1→2, 2→3, 3→4, 4→5, 5→6, 6→7\n\nColor coding: blue for process steps, gold for the two confidentiality-\nrelated nodes (2 and 6)\n\nInteractive features: click any node for its infobox; pan/zoom not\nrequired for a linear flowchart of this size\n\nImplementation: Mermaid.js flowchart with JavaScript click bindings to a\ncustom showInfo() function"
+}

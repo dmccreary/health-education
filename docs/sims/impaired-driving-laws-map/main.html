@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Impaired Driving Laws Interactive Map</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Impaired Driving Laws Interactive Map</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> impaired-driving-laws-map</p>
+            <p><strong>Library:</strong> Leaflet</p>
+            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
+            <p><strong>Learning Objective:</strong> Students assess and justify why impaired driving laws include stricter zero-tolerance standards for underage drivers by comparing adult and underage legal BAC limits and penalty structures across a sample of states.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: map
+    **sim-id:** impaired-driving-laws-map<br/>
+    **Library:** Leaflet<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Evaluate (L5)
+    Bloom Taxonomy Verb: assess, justify, compare
+    
+    Learning objective: Students assess and justify why impaired driving laws include stricter zero-tolerance standards for underage drivers by comparing adult and underage legal BAC limits and penalty structures across a sample of states.
+    
+    Geographic scope: Map of the United States with a sample of 6-8 states highlighted (illustrative, using publicly documented legal categories rather than every state's exact current statute).
+    
+    Locations: Each highlighted state is a clickable region.
+    
+    Data represented: For each highlighted state, an infobox shows: adult legal BAC limit, underage (zero-tolerance) BAC limit, and a general description of penalty severity categories (e.g., "first offense: license suspension and fines; repeat or high-BAC offense: increased penalties, possible mandatory education").
+    
+    Legend: Color coding distinguishes states by penalty-severity category (illustrative categories, not a precise ranking), with a note that all states enforce meaningfully stricter standards for underage drivers than for adults.
+    
+    Interactive features: Click a highlighted state to open an infobox with its legal categories described above; a "Compare Two States" mode lets the learner click two states to see their infobox data side by side; hover any state for its name.
+    
+    Implementation: Leaflet.js with a simplified U.S. states GeoJSON layer; responsive container that resizes with the browser window. Content note: figures are presented as illustrative educational categories, and the diagram includes a visible caption noting that students should consult their own state's current statute for exact legal limits, since laws can change.
+    -->
+</body>
+</html>

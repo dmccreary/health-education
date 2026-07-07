@@ -1,0 +1,15 @@
+{
+  "sim_id": "my-daily-care-routine-builder",
+  "diagram_name": "My Daily Care Routine Builder",
+  "chapter_number": 5,
+  "chapter_title": "Healthy Habits, Activity, and Germs",
+  "chapter_dir": "05-healthy-habits",
+  "chapter_rel_dir": "bands/grade-1/chapters/05-healthy-habits",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate, practice, apply",
+  "learning_objective": "Students apply their understanding of personal care practices by dragging daily hygiene icons into a morning routine and a bedtime routine, in a reasonable order.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** my-daily-care-routine-builder<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: demonstrate, practice, apply\n\nLearning objective: Students apply their understanding of personal care practices by dragging daily hygiene icons into a morning routine and a bedtime routine, in a reasonable order.\n\nCanvas layout:\n- Left area (450px): Two labeled routine tracks, \"Morning Routine\" and \"Bedtime Routine,\" each with empty slots\n- Right area (150px): A tray of six hygiene icons (wash hands, brush teeth, comb hair, bathe, put on clean clothes, wash face) and an infobox\n\nVisual elements:\n- Six simple flat-style icons representing each personal care practice\n- Two horizontal routine tracks with 3 empty slots each\n- Sun icon above the morning track, moon icon above the bedtime track\n\nInteractive controls:\n- Drag-and-drop: student drags icons from the tray into morning or bedtime slots\n- Button: \"Check My Routine\"\n- Button: \"Reset\"\n\nDefault parameters:\n- All six icons start in the tray, unplaced\n\nData Visibility Requirements:\n  Stage 1: Show the empty routine tracks and full icon tray\n  Stage 2: As icons are placed, show them snapped into the routine slot\n  Stage 3: After \"Check My Routine\" is clicked, show a caption for each placement confirming it fits that time of day (bathing and bedtime brushing fit night; handwashing and morning brushing fit morning; some icons like washing hands fit both times)\n\nBehavior:\n- Reasonable placements are confirmed with a green check and a short caption (\"Brushing your teeth before bed helps keep your smile healthy overnight!\")\n- The MicroSim accepts multiple valid arrangements since routines vary by family\n\nInstructional Rationale: This is an Apply-level (practice/demonstrate) objective, so the MicroSim uses hands-on drag-and-drop practice with immediate confirming feedback rather than passive viewing, letting students build and test their own version of a daily routine.\n\nImplementation notes: Use p5.js. Icons should be simple, friendly, and diverse (different skin tones and hair types). Teacher can pause and discuss why order matters for some steps but not others."
+}

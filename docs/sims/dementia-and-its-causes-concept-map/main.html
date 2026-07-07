@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Dementia and Its Causes Concept Map</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Dementia and Its Causes Concept Map</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> dementia-and-its-causes-concept-map</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Students explain the relationship between dementia as a general category and Alzheimer's disease as its most common specific cause, and connect brain-healthy habits to long-term brain health.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: graph-model
+    **sim-id:** dementia-and-its-causes-concept-map<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: explain, classify, summarize
+    
+    Learning objective: Students explain the relationship between dementia as a general category and Alzheimer's disease as its most common specific cause, and connect brain-healthy habits to long-term brain health.
+    
+    Node types: Central node "Dementia (General Pattern of Symptoms)" (purple circle). Cause nodes (blue squares): Alzheimer's Disease (largest, most prominent), Vascular Conditions, Other Brain Diseases. Supporting habit nodes (green circles): Quality Sleep, Balanced Nutrition, Physical Activity, Social Connection, Mental Engagement.
+    
+    Edge types: "Is a Cause Of" (solid blue arrows from each cause node to the central Dementia node). "May Support Long-Term Brain Health" (dashed green arrows from each habit node to the central Dementia node, styled differently to show this is supportive, not a guarantee or cure).
+    
+    Layout: Central node in the middle, cause nodes arranged above it, habit nodes arranged below it, visually separating "what causes it" from "what may support brain health."
+    
+    Interactive features: Hover any node to see its label; click a cause node to open an infobox with a short, factual, non-frightening description; click a habit node to open an infobox connecting that habit to brain health, worded carefully to avoid overpromising prevention; click the central node to reveal a summary reminding students that dementia is common in older age but not a normal or required part of aging, and that people living with dementia deserve the same dignity and respect as anyone else; zoom with mouse wheel, pan by dragging background.
+    
+    Legend: Color/shape key distinguishing the central term, its causes, and supportive habits.
+    
+    Implementation: vis-network JavaScript library; canvas responsive, default 800x500px. Language throughout the infobox text avoids fear-based framing and does not claim any habit prevents dementia.
+    -->
+</body>
+</html>

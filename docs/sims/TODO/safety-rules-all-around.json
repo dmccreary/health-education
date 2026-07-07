@@ -1,0 +1,15 @@
+{
+  "sim_id": "safety-rules-all-around",
+  "diagram_name": "Safety Rules All Around",
+  "chapter_number": 5,
+  "chapter_title": "Staying Safe",
+  "chapter_dir": "05-staying-safe",
+  "chapter_rel_dir": "bands/kindergarten/chapters/05-staying-safe",
+  "library": "p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "identify, recognize, name",
+  "learning_objective": "Students identify safety rules that apply in three settings (home, school, community), building recognition of the Safety Rules concept before learning injury-prevention behaviors.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** safety-rules-all-around<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Remember (L1)\nBloom Taxonomy Verb: identify, recognize, name\n\nLearning objective: Students identify safety rules that apply in three settings (home, school, community), building recognition of the Safety Rules concept before learning injury-prevention behaviors.\n\nCanvas layout: Full canvas (500px) shows three illustrated scenes side by side — home, school hallway, community street — each with two glowing hotspots on a child following a safety rule. Bottom strip (60px): instructions and a Reset button.\n\nVisual elements: 6 hotspots total (2 per scene) — home (stair rail, staying from a hot stove), school (walking in hallway, sitting properly), community (holding a grown-up's hand at a crossing, wearing a bike helmet).\n\nInteractive controls: Click a hotspot to reveal the rule; Reset button; running count display (\"You found 4 of 6!\").\n\nDefault parameters: All 6 hotspots start unrevealed and can be clicked in any order.\n\nBehavior: Clicking reveals a short infobox naming the rule, e.g., \"At home: always hold the rail on the stairs!\" Found spots stay highlighted green. After all 6 are found: \"You found safety rules at home, at school, and in the community!\"\n\nInstructional Rationale: A Remember-level (identify/name) objective, so a simple click-to-reveal hotspot pattern works well for pre-readers — no reading required, immediate infobox feedback.\n\nImplementation notes: p5.js. Each hotspot is an object with a scene, a relative (x,y) region so the scene resizes responsively, a label, and an infobox string. Text large (24px+) for read-aloud use."
+}

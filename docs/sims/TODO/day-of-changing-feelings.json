@@ -1,0 +1,15 @@
+{
+  "sim_id": "day-of-changing-feelings",
+  "diagram_name": "A Day of Changing Feelings Timeline",
+  "chapter_number": 3,
+  "chapter_title": "Understanding and Talking About Feelings",
+  "chapter_dir": "03-feelings",
+  "chapter_rel_dir": "bands/grade-1/chapters/03-feelings",
+  "library": "vis-timeline",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, describe, infer",
+  "learning_objective": "Students describe how different situations across a single school day affect the way a character feels and responds.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: timeline\n**sim-id:** day-of-changing-feelings<br/>\n**Library:** vis-timeline<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, describe, infer\n\nLearning objective: Students describe how different situations across a single school day affect the way a character feels and responds.\n\nTime period: One school day, from morning arrival to bedtime (7:00 AM - 8:00 PM)\n\nOrientation: Horizontal\n\nEvents:\n- 7:00 AM: Waking up excited — \"It's picture day!\"\n- 8:15 AM: Nervous — forgot homework at home\n- 9:30 AM: Proud — solved a hard math problem\n- 12:00 PM: Happy — sat with friends at lunch\n- 1:45 PM: Sad — a friend couldn't play at recess because they were sick\n- 3:00 PM: Scared — a loud fire drill alarm\n- 3:15 PM: Calm — teacher explains the drill was just practice\n- 6:00 PM: Angry — sibling broke a favorite toy\n- 8:00 PM: Calm — bedtime story with a trusted adult\n\nVisual style: Horizontal timeline with a simple cartoon face icon above each event matching the feeling\n\nColor coding:\n- Yellow: happy/excited feelings\n- Blue: sad feelings\n- Red: angry feelings\n- Purple: scared/nervous feelings\n- Green: calm feelings\n\nInteractive features:\n- Click any event to open an infobox explaining the situation, the feeling it caused, and why that response makes sense\n- Infobox includes a \"What could help?\" tip for the harder moments (nervous, scared, angry, sad)\n\nImplementation: vis-timeline JavaScript library with click event listeners opening a definition/explanation panel"
+}

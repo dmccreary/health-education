@@ -1,0 +1,15 @@
+{
+  "sim_id": "hunger-fullness-signal-explorer",
+  "diagram_name": "Reading Your Body's Signals",
+  "chapter_number": 4,
+  "chapter_title": "Food And Nutrition",
+  "chapter_dir": "04-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-3/chapters/04-food-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "recall, identify, recognize",
+  "learning_objective": "Students recall and identify body signals for hunger and fullness by matching feeling-cards to a labeled body figure.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** hunger-fullness-signal-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Remember (L1)\nBloom Taxonomy Verb: recall, identify, recognize\n\nLearning objective: Students recall and identify body signals for hunger and fullness by matching feeling-cards to a labeled body figure.\n\nCanvas layout:\n- Left side (400px): A simple, friendly body figure with a highlighted stomach/belly zone\n- Right side (200px): A stack of clickable feeling-cards (e.g., \"rumbling tummy,\" \"hard to focus,\" \"comfortably full,\" \"food tastes less exciting\")\n\nVisual elements:\n- Body figure with a gentle glow around the belly area\n- Feeling-cards in two color groups: hunger cards (light orange) and fullness cards (light green)\n- A simple two-column sorting area labeled \"Hungry\" and \"Full\"\n\nInteractive controls:\n- Click and drag (or click to select, then click a column) each feeling-card into the \"Hungry\" or \"Full\" column\n- Button: \"Check My Answers\"\n- Button: \"Reset\"\n\nDefault parameters:\n- All feeling-cards start in a shuffled pile above the two columns\n\nData Visibility Requirements:\n  Stage 1: Show the shuffled pile of feeling-cards above two empty columns\n  Stage 2: As each card is sorted, show it snap into the chosen column\n  Stage 3: When \"Check My Answers\" is clicked, show a checkmark or gentle \"try again\" cue on each card, with the correct column highlighted for any that were misplaced\n\nBehavior:\n- Correctly sorted cards get a small checkmark and the body figure smiles\n- Incorrectly sorted cards get a gentle nudge with a one-sentence explanation of which signal group they belong to\n- A \"You found them all!\" caption appears once every card is correctly sorted\n\nInstructional Rationale: This is a Remember-level objective (recall, identify), so the design uses a flashcard-style sorting activity rather than a complex simulation — students need to recognize and recall signals, which a simple sort-and-check pattern supports directly.\n\nImplementation notes: Use p5.js. Keep the body figure simple and gender-neutral. Because this is a K-3 band, this MicroSim is the direct student-facing practice activity; the surrounding body text remains teacher-facing read-aloud material."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "substance-free-coping-toolkit-builder",
+  "diagram_name": "Substance-Free Coping Toolkit Builder",
+  "chapter_number": 10,
+  "chapter_title": "Substances - Effects and Safer Choices",
+  "chapter_dir": "10-substances-effects-and-safer-choices",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/10-substances-effects-and-safer-choices",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "apply, practice, demonstrate",
+  "learning_objective": "Students apply knowledge of evidence-based,",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n\n**sim-id:** substance-free-coping-toolkit-builder<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Apply (L3)\nBloom Verb: apply, practice, demonstrate\n\nLearning objective: Students apply knowledge of evidence-based,\nsubstance-free coping strategies by matching realistic high-school stress\nscenarios to appropriate strategies and building a personal toolkit.\n\nCanvas layout:\n- Left (55%): a deck of 8 realistic high-school stress scenarios (e.g.,\n  \"You're overwhelmed before finals,\" \"A friend group conflict is stressing\n  you out,\" \"You feel pressure at a party to fit in,\" \"You're anxious about\n  a college or job decision\")\n- Right (45%): five draggable strategy tiles (Physical Activity, Creative\n  Expression, Talking to Someone, Mindfulness/Breathing, Rest/Sleep) and a\n  feedback panel\n\nInteractive controls: Drag a strategy tile onto a scenario card; feedback\nexplains why that strategy could help, noting multiple strategies can be\nvalid; \"Build My Toolkit\" button lets the learner select their top 3\npreferred strategies into a saved summary card; \"Reset\" button\n\nDefault parameters: Scenario deck order randomized each session; no\nstrategy pre-assigned\n\nInstructional Rationale: Apply-level objectives require using knowledge in\nnew situations; a drag-and-match activity with open-ended validity mirrors\nthe real flexibility of coping strategy selection better than a\nsingle-right-answer quiz, and the toolkit-building step gives students a\npersonally relevant takeaway.\n\nImplementation notes: p5.js drag-and-drop with rectangle collision\ndetection; scenario and strategy data stored as structured objects.\nResponsive canvas that stacks scenario deck and strategy tiles vertically\non narrow screens."
+}

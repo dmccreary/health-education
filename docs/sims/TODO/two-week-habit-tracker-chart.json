@@ -1,0 +1,15 @@
+{
+  "sim_id": "two-week-habit-tracker-chart",
+  "diagram_name": "Two-Week Habit Tracker Chart",
+  "chapter_number": 6,
+  "chapter_title": "Health Literacy and Goal Setting",
+  "chapter_dir": "06-health-literacy-and-goals",
+  "chapter_rel_dir": "bands/grade-4/chapters/06-health-literacy-and-goals",
+  "library": "Chart.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate, use, practice",
+  "learning_objective": "Students interpret and interact with a sample two-week tracking chart for a health goal, practicing how to read progress data and decide whether a plan needs adjustment.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: chart\n**sim-id:** two-week-habit-tracker-chart<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: demonstrate, use, practice\n\nLearning objective: Students interpret and interact with a sample two-week tracking chart for a health goal, practicing how to read progress data and decide whether a plan needs adjustment.\n\nChart type: Bar chart with a goal line overlay\n\nPurpose: Show a realistic two-week tracking record for the sample \"walk to school\" goal, including a dip that models a barrier occurring, to teach students how to read and respond to tracking data\n\nX-axis: Day (Day 1 through Day 14)\n\nY-axis: Completed goal that day? (1 = Yes, 0 = No)\n\nData series:\n1. Daily completion (teal bars):\n   - Days 1-3: 1, 1, 1\n   - Day 4: 0 (rainy day barrier)\n   - Days 5-7: 1, 1, 0 (weekend, goal only applies on school days — shown as grayed \"not applicable\")\n   - Days 8-10: 1, 1, 1\n   - Day 11: 0 (forgot)\n   - Days 12-14: 1, 1, 1\n\n2. Target line (gold dashed line): drawn at a 3-day-per-week pace to show the intended goal frequency\n\nTitle: \"Two Weeks of Tracking: Walk to School Goal\"\nLegend: Position top-right, labeled \"Completed,\" \"Not a School Day,\" and \"Target Pace\"\n\nInteractive features:\n- Hover any bar to see the day number and a one-line note (e.g., \"Day 4: Rain — used the indoor movement backup plan\")\n- Click a \"Show Trend\" button to display a simple summary: \"9 out of 10 applicable school days completed — plan is working well\"\n\nAnnotations: Small callout above Day 4 reading \"Barrier occurred — backup plan used\" and above Day 11 reading \"Missed — no barrier plan existed yet\"\n\nImplementation: Chart.js bar chart with a line dataset overlay for the target pace, tooltip callbacks for daily notes, and a button-triggered summary calculation."
+}

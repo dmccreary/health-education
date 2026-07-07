@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Choose the Right Drink</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Choose the Right Drink</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> activity-beverage-sorter</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Apply (L3)</p>
+            <p><strong>Learning Objective:</strong> Students apply knowledge of beverages for physical activity by matching drink choices to activity scenarios (recess, long practice, after activity, everyday).</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** activity-beverage-sorter<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Apply (L3)
+    Bloom Taxonomy Verb: apply, demonstrate, practice
+    
+    Learning objective: Students apply knowledge of beverages for physical activity by matching drink choices to activity scenarios (recess, long practice, after activity, everyday).
+    
+    Canvas layout:
+    - Left side (400px): Four scenario cards shown one at a time (recess/gym class, long hot-weather practice, after activity feeling hungry, just relaxing at home)
+    - Right side (200px): Row of drink icons (water bottle, milk carton, sports drink, soda, energy drink)
+    
+    Visual elements:
+    - Scenario illustration changes with each card
+    - Drink icons remain constant across scenarios
+    
+    Interactive controls:
+    - Click the drink icon that best matches the current scenario
+    - Button: "Next Scenario"
+    - Button: "Reset"
+    
+    Default parameters:
+    - Starts on the "recess or gym class" scenario
+    
+    Data Visibility Requirements:
+      Stage 1: Show the scenario illustration and all drink icon options
+      Stage 2: After a choice is made, reveal whether it was the best choice and a one-sentence reason (e.g., "Water is the best choice for regular recess — your body just needs its fluids back.")
+      Stage 3: Advancing to the next scenario resets the choice and shows a new situation
+    
+    Behavior:
+    - Best-choice selections get a checkmark and a short reason
+    - Less ideal choices get a gentle explanation of why water (or milk, after activity) is usually better
+    - After all four scenarios are complete, a "Hydration Helper!" caption appears
+    
+    Instructional Rationale: This is an Apply-level objective (apply, demonstrate), so the design uses a scenario-matching pattern where students actively apply the water-first principle to new situations, rather than just reading a rule.
+    
+    Implementation notes: Use p5.js. Keep scenario art simple and recognizable. This MicroSim is the direct student practice activity for this K-3 chapter.
+    -->
+</body>
+</html>

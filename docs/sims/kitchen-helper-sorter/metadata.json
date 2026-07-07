@@ -1,0 +1,22 @@
+{
+  "title": "Kitchen Helper Sorting Game",
+  "description": "Students classify kitchen tasks as \"safe for me to help with\" or \"grown-up-only job,\" and explain why each grown-up-only job needs an adult.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "kitchen-helper-sorter",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "classify, explain, distinguish",
+  "completion_status": "scaffold",
+  "chapter_number": 2,
+  "chapter_title": "Food, Drinks, and Staying Safe in the Kitchen",
+  "chapter_dir": "02-food-and-nutrition"
+}

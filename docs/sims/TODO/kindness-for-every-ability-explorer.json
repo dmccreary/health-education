@@ -1,0 +1,15 @@
+{
+  "sim_id": "kindness-for-every-ability-explorer",
+  "diagram_name": "Kindness for Every Ability Explorer",
+  "chapter_number": 7,
+  "chapter_title": "Mental And Emotional Health",
+  "chapter_dir": "07-mental-and-emotional-health",
+  "chapter_rel_dir": "bands/grade-3/chapters/07-mental-and-emotional-health",
+  "library": "vis-network",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, describe, exemplify",
+  "learning_objective": "Students explain how to show kindness and respect to classmates of all abilities by exploring a set of clickable classmate icons representing different physical and neurological differences.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** kindness-for-every-ability-explorer<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, describe, exemplify\n\nLearning objective: Students explain how to show kindness and respect to classmates of all abilities by exploring a set of clickable classmate icons representing different physical and neurological differences.\n\nPurpose: Build genuine, concrete understanding of inclusion through specific, respectful examples rather than abstract statements.\n\nLayout: A row of six simple, friendly cartoon classmate icons (no realistic depictions), arranged left to right, none visually marked as more \"different\" than another.\n\nIcons and content: (1) Uses a wheelchair — click reveals: \"Alex uses a wheelchair to get around. Ask how to include them, like choosing a game area that's easy to reach.\" (2) Uses a hearing aid — click reveals: \"Jordan uses a hearing aid. Facing Jordan when you talk helps them hear and understand you.\" (3) Is autistic — click reveals: \"Sam's brain processes the world a little differently and may need quiet breaks — that's a strength of knowing what helps, not a weakness.\" (4) Has ADHD — click reveals: \"Riley has ADHD, which can make sitting still or focusing harder some days. Riley isn't being lazy on purpose.\" (5) Has dyslexia — click reveals: \"Priya has dyslexia, which makes reading take more effort. Priya is just as smart as any classmate.\" (6) No visible difference — click reveals: \"Not every difference can be seen. Being kind to everyone, always, is the right choice.\"\n\nInteractive features: Click any icon to reveal its infobox. A \"What's the same for everyone?\" button reveals: \"Everyone wants to be included, respected, and treated kindly.\"\n\nImplementation: vis-network or a clickable icon grid with infobox panels; responsive layout that reflows on narrow screens."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "safe-activity-scenario-planner",
+  "diagram_name": "Safe Activity Scenario Planner",
+  "chapter_number": 8,
+  "chapter_title": "Health Equity and Disease Prevention",
+  "chapter_dir": "08-health-equity-and-disease-prevention",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/08-health-equity-and-disease-prevention",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "apply, demonstrate, practice",
+  "learning_objective": "Students apply safe-participation strategies (buddy",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n\n**sim-id:** safe-activity-scenario-planner<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Apply (L3)\nBloom Verb: apply, demonstrate, practice\n\nLearning objective: Students apply safe-participation strategies (buddy\nsystem, timing, indoor alternatives, equipment, warm-up/cool-down,\ncommunity programs, hydration) by selecting an appropriate combination of\nstrategies for realistic under-resourced or unsafe-environment scenarios.\n\nCanvas layout:\n- Left (55%): a scenario card describing a realistic setting (e.g., \"It's\n  6 p.m. in December and gets dark at 5; your neighborhood park has no\n  streetlights\")\n- Right (45%): seven strategy tiles (one per strategy above) the student\n  can select in any combination\n\nData Visibility Requirements:\n  Stage 1: Show the scenario and all seven strategy tiles unselected\n  Stage 2: Student selects the strategies they judge as most relevant to\n  this specific scenario (multi-select allowed)\n  Stage 3: Reveal feedback identifying which selected strategies directly\n  address the scenario's specific hazard, and noting any strong strategy\n  the student missed, with a one-sentence reason\n  Stage 4: Show a running count of scenarios completed out of a bank of 6,\n  each testing a different combination of environmental barriers (darkness,\n  extreme heat, no sidewalks, unfamiliar area, limited equipment, bad\n  weather)\n\nInteractive controls:\n- Click to select/deselect strategy tiles\n- Button: \"Check My Plan\"\n- Button: \"Next Scenario\"\n\nDefault parameters: Scenario bank of 6; no strategy pre-selected\n\nInstructional Rationale: Matching a combination of safety strategies to a\nspecific environmental hazard is an Apply-level task requiring judgment\nabout fit, not memorization of a checklist, so a scenario-based\nmulti-select tool with explanatory feedback is used rather than a static\nlist of tips.\n\nImplementation notes: p5.js; scenario and feedback data stored as an array\nof {scenario, hazards, recommendedStrategies, explanation} objects; tone\nis practical and non-alarmist."
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Inclusive Environment Design Studio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Inclusive Environment Design Studio</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> inclusive-environment-design-studio</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Create (L6)</p>
+            <p><strong>Learning Objective:</strong> Students design a set of concrete policy, physical</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    
+    **sim-id:** inclusive-environment-design-studio<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy Level: Create (L6)
+    Bloom Verb: design, formulate, construct
+    
+    Learning objective: Students design a set of concrete policy, physical
+    space, and norm interventions for a given environment (a classroom, a
+    sports team, or a club) that systemically build inclusion, going beyond
+    individual acts of kindness.
+    
+    Canvas layout:
+    - Left (40%): a description of a realistic environment with 2-3 named
+      exclusion risk points (e.g., a classroom where group work always uses
+      the same self-selected teams)
+    - Right (60%): three labeled design columns — Policy, Physical Space,
+      Norms — into which the student drags or types their own proposed
+      interventions
+    
+    Data Visibility Requirements:
+      Stage 1: Show the environment description and its named risk points
+      Stage 2: Student proposes at least one intervention per column
+      addressing the risk points
+      Stage 3: Reveal a set of model interventions for comparison, organized
+      by the same three columns, with a one-sentence rationale for each
+      Stage 4: Student can revise their own design after seeing the model
+      set, and a short reflection prompt asks what they would change and why
+    
+    Interactive controls:
+    - Text input or drag-and-drop cards for each of the three design columns
+    - Button: "Compare to Model Interventions"
+    - Button: "Revise My Design"
+    - Button: "New Environment Scenario" (3 scenario sets: classroom, sports
+      team, club)
+    
+    Default parameters: Scenario bank includes classroom, sports team, and
+    club settings; model interventions cover concrete, realistic examples
+    (mixed seating charts, rotating group assignments, accessible physical
+    space, explicit newcomer-inclusion norms)
+    
+    Instructional Rationale: Designing original systemic interventions across
+    three levels (policy, space, norms) is a Create-level objective — the
+    peak cognitive demand for this grade band — so a construction tool with a
+    model-comparison step is used rather than a selection or rating task,
+    requiring students to generate their own solutions before seeing an
+    expert model.
+    
+    Implementation notes: p5.js with draggable/editable card interface across
+    three columns; object array of {environment, riskPoints, modelPolicy,
+    modelSpace, modelNorms, rationale} for each of the three scenarios.
+    -->
+</body>
+</html>

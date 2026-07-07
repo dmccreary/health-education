@@ -1,0 +1,15 @@
+{
+  "sim_id": "multiple-perspectives-stakeholder-map",
+  "diagram_name": "Multiple Perspectives Stakeholder Map",
+  "chapter_number": 14,
+  "chapter_title": "Health Decision-Making and Goal-Setting",
+  "chapter_dir": "14-health-decision-making-and-goal-setting",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/14-health-decision-making-and-goal-setting",
+  "library": "vis-network",
+  "bloom_level": "Analyze<br/>",
+  "bloom_verb": "differentiate, examine",
+  "learning_objective": "Analyze how a single health decision affects and is",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: diagram\n\n**sim-id:** multiple-perspectives-stakeholder-map<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze<br/>\nBloom Taxonomy Verb: differentiate, examine\n\nLearning objective: Analyze how a single health decision affects and is\nviewed differently by multiple stakeholders (self, peer, family, community),\ndistinguishing each stakeholder's primary concern.\n\nComponents to show: Central node \"Health Decision\" with a dropdown to\nselect a scenario (impaired-driver ride, vaping at a gathering, skipping a\nvaccine, reporting a peer crisis). Four surrounding stakeholder nodes:\nSelf, Peer/Friend, Family, Community/School.\n\nConnections: Edges from the central decision to each stakeholder node,\nlabeled with that stakeholder's primary concern for the selected scenario\n(e.g., Self: \"physical safety\"; Peer: \"feeling excluded or judged\"; Family:\n\"wants to be contacted, prioritizes safety\"; Community: \"broader norm or\npolicy implications\").\n\nInteractive features: Clicking a stakeholder node opens an infobox showing\na one-paragraph explanation of that stakeholder's perspective and why it\ndiffers from Self's perspective. Learner can drag nodes; a \"Compare\nperspectives\" toggle highlights any two selected nodes' concerns side by\nside to show where they align or conflict.\n\nVisual style: Radial/star layout, Self at center.\n\nColor scheme: Self (gold), Peer (blue), Family (teal), Community (navy)."
+}

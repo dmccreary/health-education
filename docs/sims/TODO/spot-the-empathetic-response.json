@@ -1,0 +1,15 @@
+{
+  "sim_id": "spot-the-empathetic-response",
+  "diagram_name": "Spot the Empathetic Response",
+  "chapter_number": 7,
+  "chapter_title": "Mental And Emotional Health",
+  "chapter_dir": "07-mental-and-emotional-health",
+  "chapter_rel_dir": "bands/grade-3/chapters/07-mental-and-emotional-health",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate, apply, practice",
+  "learning_objective": "Students demonstrate recognition of empathetic responses in friendships by choosing the most empathetic reply to a friend's statement from several options.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** spot-the-empathetic-response<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: demonstrate, apply, practice\n\nLearning objective: Students demonstrate recognition of empathetic responses in friendships by choosing the most empathetic reply to a friend's statement from several options.\n\nCanvas layout: Top (100px) shows a speech-bubble box with a friend's statement (e.g., \"I didn't make the team,\" \"I got a new puppy!\", \"I'm nervous about the test\"). Middle (300px) shows three response-choice buttons — one empathetic, one dismissive, one self-centered. Bottom (100px) is a feedback panel.\n\nInteractive controls: Click a response choice; \"Next Scenario\" and \"Reset\" buttons.\n\nDefault parameters: Starts on scenario 1 of 5 prepared scenarios.\n\nBehavior: Clicking a response reveals whether it was the most empathetic choice and explains why in one or two sentences before advancing.\n\nInstructional Rationale: Apply-level objective, so realistic scenario choices with immediate explanatory feedback replace passive viewing.\n\nImplementation notes: Use p5.js. Keep scenarios everyday friendship moments only — no bullying or mental-health-challenge content here."
+}

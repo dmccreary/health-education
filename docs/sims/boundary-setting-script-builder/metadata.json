@@ -1,0 +1,22 @@
+{
+  "title": "Boundary-Setting Script Builder",
+  "description": "Students apply the three-part boundary-setting structure (name the limit, state it directly, restate if needed) by building a short response script for realistic scenarios.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "boundary-setting-script-builder",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate, practice, use",
+  "completion_status": "scaffold",
+  "chapter_number": 2,
+  "chapter_title": "Relationships, Boundaries, and Consent",
+  "chapter_dir": "02-relationships-boundaries-and-consent"
+}

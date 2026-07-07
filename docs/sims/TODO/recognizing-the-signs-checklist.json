@@ -1,0 +1,15 @@
+{
+  "sim_id": "recognizing-the-signs-checklist",
+  "diagram_name": "Recognizing The Signs Interactive Checklist",
+  "chapter_number": 10,
+  "chapter_title": "Substance Use Disorder, Recovery, and Policy",
+  "chapter_dir": "10-substance-use-disorder-recovery-and-policy",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/10-substance-use-disorder-recovery-and-policy",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "identify, classify, exemplify",
+  "learning_objective": "Students identify the five sign categories of substance use disorder (loss of control, continued use despite harm, withdrawal, life narrowing, increasing tolerance) and classify realistic scenario statements into the correct category, reinforcing that recognizing a pattern signals it is time to seek help, not to judge.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** recognizing-the-signs-checklist<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: identify, classify, exemplify\n\nLearning objective: Students identify the five sign categories of substance use disorder (loss of control, continued use despite harm, withdrawal, life narrowing, increasing tolerance) and classify realistic scenario statements into the correct category, reinforcing that recognizing a pattern signals it is time to seek help, not to judge.\n\nLayout: Five labeled category cards arranged in a row (Loss Of Control, Continued Use Despite Harm, Withdrawal Symptoms, Life Narrowing, Increasing Tolerance), each with an icon. Below the cards, a deck of 10 short realistic scenario statements (e.g., \"Skips basketball practice, which used to be their favorite part of the week, to keep using\" or \"Needs to use twice as much as a few months ago to feel the same effect\").\n\nInteractive controls: Learner clicks a scenario card, then clicks the matching category card; immediate feedback confirms the match and shows a one-sentence explanation; a running count shows how many scenarios have been correctly categorized; \"Reset\" button reshuffles the deck.\n\nDefault parameters: Deck order randomized each session; no category pre-selected.\n\nInstructional Rationale: Understand-level objectives require learners to classify examples into defined categories; a click-to-match activity reinforces recognition of real-world patterns without requiring the learner to generate examples from memory, which keeps the tone factual and non-judgmental.\n\nImplementation notes: p5.js. All scenario text is written in neutral, non-graphic, non-judgmental language and reviewed to avoid stigmatizing phrasing. Responsive canvas that stacks category cards vertically on narrow screens."
+}

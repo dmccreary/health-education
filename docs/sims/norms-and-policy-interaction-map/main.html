@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Norms And Policy Interaction Map</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Norms And Policy Interaction Map</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> norms-and-policy-interaction-map</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students examine and organize how public health policy and social norms interact to influence four real health issues (tobacco use, seatbelt use, handwashing, vaccination), comparing the two types of influence side by side.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: graph-model
+    **sim-id:** norms-and-policy-interaction-map<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: organize, examine, compare
+    
+    Learning objective: Students examine and organize how public health policy and social norms interact to influence four real health issues (tobacco use, seatbelt use, handwashing, vaccination), comparing the two types of influence side by side.
+    
+    Node types: Four central issue nodes (gold circles): Tobacco Use, Seatbelt Use, Handwashing, Vaccination. Two influence-type nodes per issue (connected as neighbors): a blue square "Social Norm" node and an orange square "Public Health Policy" node.
+    
+    Edge types: "Shapes" (solid arrows from each Social Norm or Public Health Policy node to its issue node). "Reinforces" (dashed arrow connecting each issue's Social Norm node to its Public Health Policy node, showing they influence each other over time).
+    
+    Layout: Force-directed, four clusters (one per health issue), each cluster showing its norm and policy nodes.
+    
+    Interactive features: Hover any node for its label; click an issue node to open an infobox summarizing both influences on that issue; click a Social Norm or Public Health Policy node for a specific one-to-two sentence example from the chapter; zoom with mouse wheel, pan by dragging background.
+    
+    Legend: Color/shape key distinguishing issue nodes, norm nodes, and policy nodes.
+    
+    Implementation: vis-network JavaScript library; responsive canvas, default 800x500px.
+    -->
+</body>
+</html>

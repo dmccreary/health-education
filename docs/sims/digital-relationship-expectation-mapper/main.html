@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Digital Relationship Expectation Mapper</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Digital Relationship Expectation Mapper</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> digital-relationship-expectation-mapper</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
+            <p><strong>Learning Objective:</strong> Students evaluate how specific digital behaviors
+(response-time expectations, tagging/posting norms, viewing likes and</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: graph-model
+    
+    **sim-id:** digital-relationship-expectation-mapper<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy Level: Evaluate (L5)
+    Bloom Verb: evaluate, judge, assess
+    
+    Learning objective: Students evaluate how specific digital behaviors
+    (response-time expectations, tagging/posting norms, viewing likes and
+    comments from others, screenshotting) shape relationship expectations, and
+    judge whether a given behavior reflects a healthy norm or an unhealthy
+    pressure.
+    
+    Node types:
+    1. Central node (dark circle): "Digital Behavior"
+    2. Behavior nodes (blue squares): "Expecting Instant Replies," "Posting
+       About the Relationship," "Viewing a Partner's Likes/Comments,"
+       "Screenshotting Messages," "Sharing a Location Live"
+    3. Effect nodes (two per behavior, light circles): one labeled "Can Reflect
+       a Healthy Norm" with a short realistic example, one labeled "Can Become
+       an Unhealthy Pressure" with a short realistic example
+    
+    Edge types:
+    - "Can Lead To" (solid gray, behavior node to each effect node)
+    
+    Layout: Central node in the middle, five behavior nodes surrounding it,
+    each with two effect nodes branching outward in contrasting colors (green
+    tint for healthy, orange-red tint for unhealthy)
+    
+    Interactive features:
+    - Hover any node: one-sentence plain-language description
+    - Click a behavior node: side panel explains that the same behavior can
+      land in either category depending on context, frequency, and whether
+      both people agree to it
+    - Click an effect node: side panel gives a concrete realistic example and,
+      for unhealthy-pressure nodes, names it as a boundary concern worth
+      addressing directly or with a trusted adult
+    - Drag, zoom, and pan enabled
+    
+    Legend: color key distinguishing the central node, behaviors, and the two
+    effect categories
+    
+    Implementation: vis-network, radial layout, click-triggered panel content
+    stored in a JSON lookup keyed by node id; emphasize in all panel text that
+    context and mutual agreement — not the behavior alone — determine whether
+    it is healthy
+    -->
+</body>
+</html>

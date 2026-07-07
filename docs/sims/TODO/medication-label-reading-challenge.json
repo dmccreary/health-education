@@ -1,0 +1,15 @@
+{
+  "sim_id": "medication-label-reading-challenge",
+  "diagram_name": "Medication Label Reading Challenge",
+  "chapter_number": 9,
+  "chapter_title": "Substance Use Culture, Safety, and Risk",
+  "chapter_dir": "09-substance-use-culture-safety-and-risk",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/09-substance-use-culture-safety-and-risk",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate, apply, practice",
+  "learning_objective": "Students apply label-reading skills by locating specific pieces of safety information (dosage, warnings, interactions, expiration date) on a realistic sample medication label.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** medication-label-reading-challenge<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: demonstrate, apply, practice\n\nLearning objective: Students apply label-reading skills by locating specific pieces of safety information (dosage, warnings, interactions, expiration date) on a realistic sample medication label.\n\nCanvas layout: Left side (500px) displays a realistic but fictional OTC medication label graphic with clearly zoned sections; right side (200px) shows a question panel and score tracker.\n\nVisual elements: A labeled sample box/bottle graphic with sections for active ingredient, dosage instructions, warnings, drug interactions, and expiration date, each in a distinct clickable zone.\n\nInteractive controls: A question appears (e.g., \"How many hours should you wait between doses?\" or \"What should you avoid combining with this medication?\"); the learner clicks the label zone containing the answer; immediate feedback confirms correct/incorrect with the relevant label text highlighted; \"Next Question\" button cycles through 6-8 questions; running score display.\n\nDefault parameters: Fictional label pre-populated with realistic sample dosage/warning/interaction text; first question shown on load.\n\nInstructional Rationale: Apply-level objectives require learners to practice a skill in a realistic scenario; a click-to-locate challenge on a real-looking label lets students practice the actual skill of finding safety information rather than just recalling label categories from memory.\n\nImplementation notes: p5.js. Label content is entirely fictional/generic (no real product names or brands). Responsive canvas that stacks the label and question panel vertically on narrow screens."
+}

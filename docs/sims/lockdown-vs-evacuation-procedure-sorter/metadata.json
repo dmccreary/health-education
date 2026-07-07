@@ -1,0 +1,22 @@
+{
+  "title": "Lockdown Vs. Evacuation Procedure Sorter",
+  "description": "Students classify correct student actions as belonging to lockdown or evacuation procedure, distinguishing the two standard school safety responses. No scenario content describes a triggering event — only the procedure and correct student actions.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "lockdown-vs-evacuation-procedure-sorter",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "classify, distinguish, exemplify",
+  "completion_status": "scaffold",
+  "chapter_number": 7,
+  "chapter_title": "Digital Safety and School Safety",
+  "chapter_dir": "07-digital-safety-and-school-safety"
+}

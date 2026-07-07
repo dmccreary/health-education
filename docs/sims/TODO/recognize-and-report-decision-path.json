@@ -1,0 +1,15 @@
+{
+  "sim_id": "recognize-and-report-decision-path",
+  "diagram_name": "Recognize and Report Decision Path",
+  "chapter_number": 6,
+  "chapter_title": "Personal Safety And Violence Prevention",
+  "chapter_dir": "06-personal-safety-and-violence-prevention",
+  "chapter_rel_dir": "bands/grade-5/chapters/06-personal-safety-and-violence-prevention",
+  "library": "Mermaid",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate, use, practice",
+  "learning_objective": "Students apply a consistent recognize-and-report process across relationship, technology, and emergency situations covered in this chapter.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n**sim-id:** recognize-and-report-decision-path<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: demonstrate, use, practice\n\nLearning objective: Students apply a consistent recognize-and-report process across relationship, technology, and emergency situations covered in this chapter.\n\nPurpose: Show one unifying decision path across all categories of unsafe situations, every node clickable.\n\nVisual style: Flowchart with one decision diamond and sequential process rectangles.\n\nSteps: 1) Start — \"Something feels wrong — online, in a relationship, or around you\"; 2) Decision — \"Am I in immediate physical danger?\"; 3a) if yes, \"Move to safety first\"; 3b) if no, \"Find a trusted adult now\"; 4) \"Describe what happened clearly\"; 5) \"Let the trusted adult take next steps\"; 6) End — \"You took the safest, strongest action available.\" Each node's click reveals a one-sentence explanation (e.g., the decision node: \"Physical danger means safety comes before anything else\").\n\nColor coding: Red for the immediate-danger path, blue for standard reporting, green for shared final steps.\n\nImplementation: Mermaid flowchart with a `click` directive on every node opening an infobox. Tone stays calm and non-alarmist."
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Safety Concern Reporting Workflow</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Safety Concern Reporting Workflow</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> safety-concern-reporting-workflow</p>
+            <p><strong>Library:</strong> Mermaid</p>
+            <p><strong>Bloom Level:</strong> Apply (L3)</p>
+            <p><strong>Learning Objective:</strong> Students apply the "see something, say something" reporting process by tracing the correct workflow from noticing a concern to a trained adult responding.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: workflow
+    **sim-id:** safety-concern-reporting-workflow<br/>
+    **Library:** Mermaid<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Apply (L3)
+    Bloom Taxonomy Verb: demonstrate, apply, execute
+    
+    Learning objective: Students apply the "see something, say something" reporting process by tracing the correct workflow from noticing a concern to a trained adult responding.
+    
+    Visual style: Mermaid flowchart with a start node, three sequential process/decision nodes, and an end node. No node describes any specific threat content, methods, or tactics — every node addresses only the reporting process.
+    
+    Steps: (1) Start node "I Notice Concerning Behavior Or A Statement," click reveals: "This could be from a classmate, something you saw online, or something you overheard — noticing it is the first step."; (2) decision "Who Can I Tell?," click reveals three equally valid options: a trusted adult, school staff (counselor, administrator, resource officer), or an anonymous tip line; (3) process "Report It, Even If Unsure," click reveals: "See something, say something — reporting a concern that turns out to be nothing causes far less harm than staying silent about a real one."; (4) process "Trained Adults Assess And Respond," click reveals: "Assessing the seriousness of a concern is the job of trained adults and staff, not students."; end node "The School Community Stays Safer," click reveals: "Reporting protects everyone, including the person the concern was about, who may need support."
+    
+    Every node must have a Mermaid `click` directive calling an infobox function.
+    
+    Color coding: Blue for the start/notice node, yellow for the decision node, green for the reporting, response, and outcome nodes.
+    
+    Implementation: Mermaid flowchart syntax with `click NodeId call showInfo("key")` for every node; infobox text in a JS lookup object. No node may include threat specifics, weapon types, or methods — only the general reporting process.
+    -->
+</body>
+</html>

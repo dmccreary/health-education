@@ -1,0 +1,15 @@
+{
+  "sim_id": "weekly-workout-plan-builder",
+  "diagram_name": "Weekly Workout Plan Builder",
+  "chapter_number": 6,
+  "chapter_title": "Sleep, Fitness, and Emergency Response",
+  "chapter_dir": "06-sleep-fitness-and-emergency-response",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/06-sleep-fitness-and-emergency-response",
+  "library": "p5.js",
+  "bloom_level": "Create (L6)",
+  "bloom_verb": "design, construct, formulate",
+  "learning_objective": "Students design a complete seven-day workout plan by placing activities of each required type onto specific days, and receive feedback on whether the plan meets weekly guidelines.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** weekly-workout-plan-builder<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Create (L6)\nBloom Taxonomy Verb: design, construct, formulate\n\nLearning objective: Students design a complete seven-day workout plan by placing activities of each required type onto specific days, and receive feedback on whether the plan meets weekly guidelines.\n\nCanvas layout: Left side (450px) shows a 7-day weekly planner grid with drop zones for morning/afternoon/evening. Right side (150px) shows draggable activity tokens grouped by type (Moderate, Vigorous, Muscle-Strengthening, Bone-Strengthening) and a \"Plan Completeness\" checklist panel.\n\nVisual elements: Weekly grid, color-coded activity tokens (blue for moderate, red for vigorous, purple for muscle-strengthening, green for bone-strengthening), a checklist showing which required activity types are present in the week so far.\n\nInteractive controls: Drag activity tokens onto day/time slots; \"Check My Plan\" button evaluates whether the week includes at least 60 minutes most days, vigorous activity 3 days a week, and muscle- and bone-strengthening activity at least 3 days a week; \"Reset Plan\" button; \"See Example Plan\" button shows one sample balanced week.\n\nDefault parameters: Empty planner grid at start; checklist items all unchecked until requirements are met.\n\nInstructional Rationale: Designing an original, personalized weekly plan that satisfies multiple constraints is a Create-level task, so a builder with constraint-checking feedback is used rather than a static checklist, letting students formulate their own valid solution.\n\nImplementation notes: p5.js. Activity and day data stored as arrays/objects; drag-and-drop interaction; responsive canvas that reflows on window resize."
+}

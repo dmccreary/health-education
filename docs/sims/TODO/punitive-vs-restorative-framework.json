@@ -1,0 +1,15 @@
+{
+  "sim_id": "punitive-vs-restorative-framework",
+  "diagram_name": "Punitive vs. Restorative Justice Framework Comparison",
+  "chapter_number": 6,
+  "chapter_title": "Conflict Resolution and Inclusion",
+  "chapter_dir": "06-conflict-resolution-and-inclusion",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/06-conflict-resolution-and-inclusion",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "differentiate, compare, examine",
+  "learning_objective": "Students differentiate the guiding questions,",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n\n**sim-id:** punitive-vs-restorative-framework<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: differentiate, compare, examine\n\nLearning objective: Students differentiate the guiding questions,\nprocesses, and goals of a punitive justice model from an Indigenous\nrestorative justice model, examining talking circles and peacemaking\ncircles as concrete practices within the restorative framework.\n\nLayout: Two labeled columns, \"Punitive Model\" and \"Indigenous Restorative\nModel,\" each with four rows: Guiding Question, Who Participates, Process,\nand Goal\n\nData Visibility Requirements:\n  Stage 1: Show both columns with their four rows populated (Punitive:\n  \"What rule was broken and what punishment fits?\" / single authority\n  decides / hearing or disciplinary process / punishment); (Restorative:\n  \"Who was harmed and what do they need?\" / affected community including\n  the person harmed and person responsible / talking circle or peacemaking\n  circle / repair and reintegration)\n  Stage 2: Clicking \"Talking Circles\" or \"Peacemaking Circles\" (labeled\n  buttons beneath the Restorative column) opens an infobox with a\n  respectful, specific description of that practice drawn from the\n  chapter text\n  Stage 3: A prompt scenario (a conflict between two students) is shown,\n  and the learner selects which questions each model would ask about it,\n  reinforcing the guiding-question distinction\n\nInteractive controls: Click any row label for an expanded explanation;\nclick \"Talking Circles\" / \"Peacemaking Circles\" buttons for practice\ndescriptions; button \"Apply to Scenario\" reveals how each model would\napproach the sample conflict\n\nInstructional Rationale: Differentiating two justice frameworks by their\nguiding logic is an Analyze-level objective, so a structured comparison\nwith a scenario-application check is used rather than simple recall,\nensuring the restorative framework is presented with genuine substance\nrather than a single sentence.\n\nImplementation notes: p5.js; content written to present both frameworks\nrespectfully, with the restorative model described using its own\npractices (talking circles, peacemaking circles) rather than defined only\nin contrast to the punitive model."
+}

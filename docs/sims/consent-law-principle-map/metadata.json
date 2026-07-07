@@ -1,0 +1,22 @@
+{
+  "title": "How Consent Law Maps to Ethical Principles",
+  "description": "Students interpret why each category of consent law",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "consent-law-principle-map",
+  "library": "Mermaid",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, interpret, classify",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "Consent and Boundaries",
+  "chapter_dir": "03-consent-and-boundaries"
+}

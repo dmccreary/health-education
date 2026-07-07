@@ -1,0 +1,15 @@
+{
+  "sim_id": "build-a-meal-planner",
+  "diagram_name": "Build-A-Meal Planner",
+  "chapter_number": 2,
+  "chapter_title": "Food and Nutrition",
+  "chapter_dir": "02-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-5/chapters/02-food-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Create (L6)",
+  "bloom_verb": "design, construct, formulate",
+  "learning_objective": "Students design a nutritious meal by selecting one item from each food category and a drink, then receive feedback on whether their plan is balanced.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** build-a-meal-planner<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Create (L6)\nBloom Taxonomy Verb: design, construct, formulate\n\nLearning objective: Students design a nutritious meal by selecting one item from each food category and a drink, then receive feedback on whether their plan is balanced.\n\nCanvas layout:\n- Left side (400px): Four category trays — Protein, Grain, Fruit/Vegetable, Drink — each with 5-6 selectable food icons\n- Right side (250px): The assembled plate showing current selections, plus a feedback panel\n\nVisual elements:\n- A plate graphic in the center-right that fills in with icons as items are chosen\n- Category trays with icons: Protein (egg, beans, chicken, fish, tofu), Grain (whole-wheat bread, brown rice, oats, tortilla), Fruit/Vegetable (apple, carrot, spinach, orange, broccoli), Drink (water, milk, soda, juice, sports drink)\n\nInteractive controls:\n- Click one icon per category to add it to the plate (clicking a new icon in the same category swaps it)\n- Button: \"Check My Meal\" — evaluates the plate against the balanced-meal checklist\n- Button: \"Reset Plate\"\n\nDefault parameters:\n- Plate starts empty; no pre-selected items\n\nBehavior:\n- \"Check My Meal\" gives specific feedback: confirms categories that are covered, flags any missing category, and notes if the drink choice was water/milk versus soda/juice\n- Encouraging tone in feedback text regardless of outcome, with a specific suggestion for improvement if something is missing\n\nInstructional Rationale: This is a Create-level objective, so the pattern is an open-ended builder where students assemble their own solution from component parts, rather than a rigid template, matching the \"design/construct\" verb this concept calls for.\n\nImplementation notes: Use p5.js. Store food items as objects with category and tags (e.g., drink tagged as \"water-like\" or \"sugary\"); \"Check My Meal\" runs a rule-based check across the four categories."
+}

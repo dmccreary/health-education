@@ -1,0 +1,15 @@
+{
+  "sim_id": "health-claim-validity-checker",
+  "diagram_name": "Health Claim Validity Checker Workflow",
+  "chapter_number": 13,
+  "chapter_title": "Influences on Health Behavior",
+  "chapter_dir": "13-influences-on-health-behavior",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/13-influences-on-health-behavior",
+  "library": "Mermaid",
+  "bloom_level": "Evaluate<br/>",
+  "bloom_verb": "judge, validate",
+  "learning_objective": "Evaluate a health claim by walking through a decision",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n\n**sim-id:** health-claim-validity-checker<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy: Evaluate<br/>\nBloom Taxonomy Verb: judge, validate\n\nLearning objective: Evaluate a health claim by walking through a decision\nworkflow that checks source expertise, evidence citation, funding\ndisclosure, and consensus with other sources, arriving at a validity/\nreliability judgment.\n\nPurpose: Give learners a repeatable process for fact-checking any health\nclaim they encounter (social media, advertising, word of mouth).\n\nVisual style: Mermaid flowchart with decision diamonds; every node has a\nclick handler opening an infobox.\n\nSteps:\n1. Start: \"Claim encountered\" — hover/click: \"A health claim you saw,\n   heard, or read that you want to check.\"\n2. Decision: \"Does the source disclose expertise/credentials?\" — click:\n   \"Look for author bio, degree, or institutional affiliation.\"\n3. Decision: \"Is evidence cited (study, data, named source)?\" — click:\n   \"A trustworthy claim points to where its facts came from.\"\n4. Decision: \"Does the source disclose funding/conflicts of interest?\" —\n   click: \"Who paid for this? Product sellers have an incentive to\n   overstate benefits.\"\n5. Decision: \"Do other independent, reliable sources agree?\" — click:\n   \"Cross-check with a second source that isn't just repeating the first.\"\n6. End: \"Likely valid and reliable\" (all checks pass) or \"Treat with\n   caution — verify further\" (any check fails) — click: \"Explains what to\n   do next: consult a trusted professional before acting on the claim.\"\n\nColor coding: Blue decision diamonds, green \"pass\" path, orange \"caution\"\npath.\n\nImplementation: Mermaid flowchart syntax with `click` directives calling a\nJS function that opens a side infobox with the hover text above."
+}

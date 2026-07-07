@@ -1,0 +1,22 @@
+{
+  "title": "Germ-Stopping Action Sorter",
+  "description": "Students evaluate short scenario cards showing a student's action and judge whether the action helps stop germs from spreading or could let germs spread, then rank a short list of actions from most to least helpful.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "germ-stopping-action-sorter",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "judge, assess, prioritize",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Healthy Habits, Activity, and Germs",
+  "chapter_dir": "05-healthy-habits"
+}

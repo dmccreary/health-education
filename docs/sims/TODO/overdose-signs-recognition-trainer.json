@@ -1,0 +1,15 @@
+{
+  "sim_id": "overdose-signs-recognition-trainer",
+  "diagram_name": "Overdose Signs Recognition Trainer",
+  "chapter_number": 11,
+  "chapter_title": "Substance Recovery and Resilience",
+  "chapter_dir": "11-substance-recovery-and-resilience",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/11-substance-recovery-and-resilience",
+  "library": "p5.js",
+  "bloom_level": "Remember/Understand (L1/L2)",
+  "bloom_verb": "identify, recognize, classify",
+  "learning_objective": "Identify and classify the specific, observable warning",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n\n**sim-id:** overdose-signs-recognition-trainer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Remember/Understand (L1/L2)\nBloom Verb: identify, recognize, classify\n\nLearning objective: Identify and classify the specific, observable warning\nsigns of opioid overdose, alcohol poisoning, and stimulant overdose,\nbuilding rapid, accurate recognition of a substance-related emergency.\n\nCanvas layout: Left (55%) shows three tabs (Opioid Overdose, Alcohol\nPoisoning, Stimulant Overdose) each with a checklist of that category's\nsigns as plain text (no depiction of a person or substance). Right (45%)\nholds a deck of 12 factual sign-description cards (e.g., \"Blue tinge to\nthe lips and fingertips,\" \"Vomiting while unresponsive,\" \"Pinpoint\npupils\") and a feedback panel.\n\nInteractive controls: Click a card, then click the category tab it\nbelongs to; immediate feedback confirms the match and briefly explains\nwhy; \"Show All Signs\" reveals a complete reference table at any time,\nsince the safety goal is retention of every sign, not quiz performance;\n\"Reset\" reshuffles the deck.\n\nInstructional Rationale: This is a Remember/Understand-level recognition\ntask where every student must recall these signs under pressure, so\ndirect sorting with immediate feedback is used; animation is avoided so\nit does not distract from recognition.\n\nImplementation notes: p5.js; all sign text is factual and clinical,\nsourced from standard first-aid/overdose-recognition curricula; no\ndepiction of a person, substance, or method of use. Responsive, stacks\nvertically on narrow screens."
+}

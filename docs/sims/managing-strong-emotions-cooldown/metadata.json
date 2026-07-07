@@ -1,0 +1,22 @@
+{
+  "title": "Cooling Down a Big Feeling",
+  "description": "Students explain how a calming strategy lowers a strong emotion over time by stepping through a \"feelings thermometer\" scenario.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "managing-strong-emotions-cooldown",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, describe",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "Handling Conflict and Kind Play",
+  "chapter_dir": "03-conflict-kind-play"
+}

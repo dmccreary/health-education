@@ -1,0 +1,22 @@
+{
+  "title": "Positive or Negative Influence?",
+  "description": "Students distinguish which people or situations positively or negatively influence a health practice or behavior, using short, everyday examples.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "influence-spotter",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "distinguish, examine",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "Foundations of Health and Safe Habits",
+  "chapter_dir": "01-foundations"
+}

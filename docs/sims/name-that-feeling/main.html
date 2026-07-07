@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Name That Feeling!</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Name That Feeling!</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> name-that-feeling</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Remember (L1)</p>
+            <p><strong>Learning Objective:</strong> Students name a feeling shown on a large friendly face by clicking the matching word/icon button, building the skill of Naming Feelings and expanding their Emotions Vocabulary.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** name-that-feeling<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Remember (L1)
+    Bloom Taxonomy Verb: name, identify, recognize
+    
+    Learning objective: Students name a feeling shown on a large friendly face by clicking the matching word/icon button, building the skill of Naming Feelings and expanding their Emotions Vocabulary.
+    
+    Canvas layout:
+    - Top area (280px): One large, simple, friendly cartoon face displayed at a time, showing a clear expression (big smile, tears, furrowed brow, wide eyes, or relaxed calm face)
+    - Bottom area (170px): Five large buttons in a row, each with a word and a small matching icon: "Happy," "Sad," "Mad," "Scared," "Calm"
+    - Bottom strip (50px): Score display ("You named 3 feelings!") and a Reset button
+    
+    Visual elements:
+    - 10 faces cycling one at a time, covering all five feeling words at least twice, drawn in a warm, simple, non-scary cartoon style
+    - Buttons highlight in a soft color when hovered: yellow for Happy, blue for Sad, red for Mad, purple for Scared, green for Calm
+    
+    Interactive controls:
+    - Click: child taps the button matching the face's feeling
+    - Button: "Reset" to start over
+    - Button: "Next Face" appears automatically after each answer
+    
+    Default parameters:
+    - First face shown: a big smiling face (Happy)
+    - Faces appear in a fixed friendly order so a teacher can predict what is coming next
+    
+    Behavior:
+    - When the correct button is clicked, the face nods, a cheerful chime plays, and the score increases by one
+    - When an incorrect button is clicked, the face gently shakes side to side and the correct button glows so the child can try again — no harsh error sound or red X
+    - After all 10 faces are shown, display a celebration message: "Great job! You know so many feeling words!"
+    
+    Instructional Rationale: This is a Remember-level (name/identify) objective for pre-readers, so a simple click-to-match pattern with icon-supported buttons is appropriate — it does not require independent reading and gives immediate, forgiving feedback.
+    
+    Implementation notes: Use p5.js. Store each face as an image or vector drawing tagged with its correct feeling word. Keep all button text large (28px+) and pair every word with an icon since this is a read-aloud/pre-reader audience.
+    -->
+</body>
+</html>

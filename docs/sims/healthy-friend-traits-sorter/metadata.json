@@ -1,0 +1,22 @@
+{
+  "title": "Healthy Friend Traits Sorter",
+  "description": "Students identify and classify short scenario cards as showing a healthy or unhealthy peer trait, then explain what makes each one healthy or unhealthy.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "healthy-friend-traits-sorter",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "classify, identify, describe",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Friendship, Uniqueness, and Belonging",
+  "chapter_dir": "04-friendship-and-belonging"
+}

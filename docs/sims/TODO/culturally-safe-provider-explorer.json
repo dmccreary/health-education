@@ -1,0 +1,15 @@
+{
+  "sim_id": "culturally-safe-provider-explorer",
+  "diagram_name": "What Makes a Provider Culturally Safe?",
+  "chapter_number": 4,
+  "chapter_title": "Healthcare Access and Sexual Health",
+  "chapter_dir": "04-healthcare-access-and-sexual-health",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/04-healthcare-access-and-sexual-health",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, classify, exemplify",
+  "learning_objective": "Students explain the specific practices that make a",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n\n**sim-id:** culturally-safe-provider-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Understand (L2)\nBloom Verb: explain, classify, exemplify\n\nLearning objective: Students explain the specific practices that make a\nhealthcare provider culturally safe and classify example provider\nbehaviors as culturally safe or culturally unsafe.\n\nCanvas layout:\n- Left (55%): a central node \"Culturally Safe Provider\" connected to four\n  spokes: Asks Rather Than Assumes, Communicates Clearly, Acknowledges\n  Historical Mistrust, Adapts Care to Context\n- Right (45%): a scenario card showing a short provider behavior example\n  and two buttons, \"Culturally Safe\" and \"Culturally Unsafe\"\n\nData Visibility Requirements:\n  Stage 1: Show all four spokes and their one-sentence definitions as\n  reference material\n  Stage 2: Show one example provider behavior (12 examples in the bank,\n  covering assumptions about family structure, language access, and\n  historical mistrust)\n  Stage 3: After the learner classifies the example, show whether they\n  were correct and which spoke it relates to, with a one-line explanation\n  Stage 4: Track a running count of correctly classified examples\n\nInteractive controls:\n- Click any spoke to see its expanded definition and a real-world example\n- Button: \"Culturally Safe\" / Button: \"Culturally Unsafe\"\n- Button: \"Next Example\"\n\nDefault parameters: Example bank cycles without repetition until\nexhausted, then reshuffles\n\nInstructional Rationale: This is an Understand-level objective, so the\ndesign favors step-through classification with concrete examples over\nanimation. Testing the same four practices against varied provider\nscenarios builds a transferable model of cultural safety rather than one\ntied to a single narrow example.\n\nImplementation notes: p5.js with an object array of {behavior, correctCategory,\nrelatedSpoke, explanation}; spokes highlighted in gold when active;\ncorrect/incorrect feedback shown through color change and text panel."
+}

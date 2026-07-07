@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Where Do Germs Hide?</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Where Do Germs Hide?</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> where-do-germs-hide</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Remember (L1)</p>
+            <p><strong>Learning Objective:</strong> Students identify everyday classroom objects and body parts where germs commonly collect, building foundational understanding of the Germs concept before learning the habits that remove them.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: infographic
+    **sim-id:** where-do-germs-hide<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Remember (L1)
+    Bloom Taxonomy Verb: identify, recognize, locate
+    
+    Learning objective: Students identify everyday classroom objects and body parts where germs commonly collect, building foundational understanding of the Germs concept before learning the habits that remove them.
+    
+    Canvas layout:
+    - Full canvas (500px): One large, friendly illustrated classroom scene (a desk, a doorknob, a tissue, hands, a shared toy bin, a drinking fountain)
+    - Bottom strip (60px): Instruction text "Click the spots where germs like to hide!" and a Reset button
+    
+    Visual elements:
+    - 6 hotspot icons glowing very faintly (a soft pulsing gold outline) over: hands, doorknob, shared toy, tissue, drinking fountain, desk surface
+    - When clicked, a small friendly cartoon germ character pops up briefly over that spot with a label
+    
+    Interactive controls:
+    - Click: child taps a hotspot to reveal whether germs like to hide there
+    - Button: "Reset" to hide all revealed spots and try again
+    - Display: running count "You found 4 of 6 germ spots!"
+    
+    Default parameters:
+    - All 6 hotspots start hidden/unrevealed
+    - Hotspots can be clicked in any order
+    
+    Behavior:
+    - Clicking a correct hotspot reveals a small infobox: "Doorknobs are touched by many hands every day — that's a great place for germs to collect!"
+    - Once a spot is found it stays revealed (highlighted green) so the child can see progress
+    - After all 6 spots are found, display a celebration message: "You found every germ hideout! Now let's learn how to wash them away."
+    
+    Instructional Rationale: This is a Remember-level (identify/locate) objective appropriate for pre-readers, so a simple click-to-reveal hotspot pattern works well — it requires no reading and gives an immediate, encouraging infobox for every click.
+    
+    Implementation notes: Use p5.js. Store each hotspot as an object with an (x,y) region (relative/percentage-based, not fixed pixels, so the scene resizes responsively), a label, and an infobox string. Keep all text large (24px+) for read-aloud use.
+    -->
+</body>
+</html>

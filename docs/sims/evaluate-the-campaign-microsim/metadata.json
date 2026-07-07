@@ -1,0 +1,22 @@
+{
+  "title": "Evaluate the Campaign MicroSim",
+  "description": "Students critique short, realistic descriptions of",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "evaluate-the-campaign-microsim",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "critique, assess, justify",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Mental Health and Crisis Support",
+  "chapter_dir": "05-mental-health-and-crisis-support"
+}

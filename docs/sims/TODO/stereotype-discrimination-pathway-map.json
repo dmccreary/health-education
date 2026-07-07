@@ -1,0 +1,15 @@
+{
+  "sim_id": "stereotype-discrimination-pathway-map",
+  "diagram_name": "Stereotype-to-Discrimination Pathway Map",
+  "chapter_number": 6,
+  "chapter_title": "Conflict Resolution and Inclusion",
+  "chapter_dir": "06-conflict-resolution-and-inclusion",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/06-conflict-resolution-and-inclusion",
+  "library": "vis-network",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, differentiate, distinguish",
+  "learning_objective": "Students examine how stereotypes lead to prejudice and",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n\n**sim-id:** stereotype-discrimination-pathway-map<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: examine, differentiate, distinguish\n\nLearning objective: Students examine how stereotypes lead to prejudice and\ndiscrimination, and distinguish individual discrimination from systemic\ndiscrimination, along with the intervention that most directly addresses\neach.\n\nNode types:\n1. Starting node: \"Stereotype (Oversimplified Group Belief)\" (orange\n   circle)\n2. Intermediate node: \"Prejudice (Negative Attitude Based on Stereotype)\"\n   (orange circle)\n3. Outcome nodes (red squares): \"Individual Discrimination,\" \"Systemic\n   (Institutional) Discrimination\"\n4. Intervention nodes (green circles): Interrupting Stereotypes Directly,\n   Genuine Contact and Accurate Information, Examining Policies for\n   Systemic Bias, Supporting People Who Experience Discrimination\n\nEdge types:\n- \"Leads To\" (Stereotype → Prejudice → both Discrimination outcome nodes)\n- \"Most Directly Addresses\" (arrows from each intervention node to the\n  outcome node it targets most — e.g., Examining Policies for Systemic\n  Bias → Systemic Discrimination; Genuine Contact → Individual\n  Discrimination and the underlying Stereotype node)\n\nLayout: Hierarchical, left to right, following the causal pathway from\nstereotype to outcome to intervention\n\nInteractive features:\n- Hover any node: shows a one-sentence definition\n- Click \"Individual Discrimination\" or \"Systemic (Institutional)\n  Discrimination\": opens a panel with a concrete, realistic school-based\n  example distinguishing the two\n- Click an intervention node: opens a panel explaining why that\n  intervention works and which part of the pathway it interrupts\n- Drag, zoom, and pan enabled\n\nLegend: color/shape key for stereotype/prejudice nodes, discrimination\noutcomes, and interventions\n\nImplementation: vis-network, hierarchical layout, click-triggered side\npanel content stored in a JSON lookup keyed by node id"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Explore a Nutrition Label",
+  "description": "Students practice reading a real-style nutrition label by clicking each section to reveal what it means, then apply that skill by comparing two sample labels.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "nutrition-label-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "use, demonstrate, practice",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Food And Nutrition",
+  "chapter_dir": "04-food-and-nutrition"
+}

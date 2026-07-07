@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Substance Use Risk Connections Network</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Substance Use Risk Connections Network</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> substance-use-risk-connections-network</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students examine how impaired judgment from substance use connects to four distinct risk areas (injury, violence, self-harm, sexual health), while distinguishing each risk's specific mechanism and organizing every risk pathway toward the same protective response.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: graph-model
+    **sim-id:** substance-use-risk-connections-network<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: examine, distinguish, organize
+    
+    Learning objective: Students examine how impaired judgment from substance use connects to four distinct risk areas (injury, violence, self-harm, sexual health), while distinguishing each risk's specific mechanism and organizing every risk pathway toward the same protective response.
+    
+    Node types: Central node "Substance Use Impairs Judgment And Coordination" (gray hexagon). Four risk nodes (orange circles): Injury Risk, Violence Risk, Self-Harm Risk, Sexual Health Risk. One shared protective outcome node (green circle): "Trusted Adult / Help-Seeking Support."
+    
+    Edge types: "Increases Risk Of" (solid orange arrows from the central node to each of the four risk nodes). "Protective Response" (solid green arrows from each risk node to the shared "Trusted Adult / Help-Seeking Support" node).
+    
+    Layout: Central node in the middle, four risk nodes arranged around it, shared protective outcome node positioned prominently below, so every path visually terminates in the same support resource.
+    
+    Interactive features: Hover any node for its label; click a risk node to open an infobox with two to three factual sentences (drawn directly from the chapter text) explaining that specific risk mechanism, calibrated to avoid graphic detail or normalizing statistics; click the central node for an infobox on how impaired judgment and coordination generally increase risk; click the protective outcome node for an infobox listing concrete help-seeking resources (trusted adult, school counselor, healthcare provider, crisis resource); zoom with mouse wheel, pan by dragging background.
+    
+    Legend: Color/shape key distinguishing the central mechanism node, the four risk nodes, and the shared protective outcome node.
+    
+    Implementation: vis-network JavaScript library; canvas responsive, default 800x500px. Content restriction: infobox text stays factual and non-graphic, and every risk node's infobox explicitly links back to the protective outcome node rather than presenting the risk in isolation.
+    -->
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "sim_id": "decide-framework-walkthrough",
+  "diagram_name": "The DECIDE Framework Walkthrough",
+  "chapter_number": 14,
+  "chapter_title": "Health Decision-Making and Goal-Setting",
+  "chapter_dir": "14-health-decision-making-and-goal-setting",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/14-health-decision-making-and-goal-setting",
+  "library": "Mermaid",
+  "bloom_level": "Apply<br/>",
+  "bloom_verb": "use, demonstrate",
+  "learning_objective": "Apply the six-step DECIDE decision-making model\n(Define, Explore, Consider, Identify, Decide, Evaluate) to a realistic",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n\n**sim-id:** decide-framework-walkthrough<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply<br/>\nBloom Taxonomy Verb: use, demonstrate\n\nLearning objective: Apply the six-step DECIDE decision-making model\n(Define, Explore, Consider, Identify, Decide, Evaluate) to a realistic\nhealth scenario, tracing how each step builds on the last.\n\nPurpose: Give learners a persistent visual anchor for the model referenced\nthroughout the chapter, using Maya's ride-home scenario as the worked\nexample at every step.\n\nVisual style: Mermaid flowchart, six sequential nodes in a loop shape (the\nfinal \"Evaluate\" node loops back to \"Define,\" showing decisions feed future\ndecisions); every node has a click handler.\n\nSteps:\n1. \"Define\" — click: \"Maya defines the real decision: how do I get home\n   safely tonight, given that my planned ride has been drinking?\"\n2. \"Explore\" — click: \"Maya lists real options: ride with her friend, call\n   a parent, use a rideshare app, ask another sober friend, stay over.\"\n3. \"Consider\" — click: \"For each option, Maya considers consequences —\n   physical safety, relationships, cost, curfew, honesty with parents.\"\n4. \"Identify\" — click: \"Maya compares consequences against her values and\n   identifies which option best protects health and safety.\"\n5. \"Decide\" — click: \"Maya acts: she calls her mother for a ride and texts\n   her friend that she is not getting in the car.\"\n6. \"Evaluate\" — click: \"Afterward, Maya reflects: did this decision keep\n   me safe? What would I do differently next time?\" Loops back to Define\n   for the next decision.\n\nColor coding: Each step a distinct color (blue, teal, gold, orange, red,\npurple) in a circular flow to emphasize decision-making as a repeating\ncycle, not a one-time event.\n\nImplementation: Mermaid flowchart with `click` directives opening an\ninfobox reusing the text above for each node."
+}

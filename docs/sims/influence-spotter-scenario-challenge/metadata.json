@@ -1,0 +1,22 @@
+{
+  "title": "Influence Spotter Scenario Challenge",
+  "description": "Students examine 10 short scenarios and classify the primary source of health influence at work (Social Norm, Public Health Policy, Family/Culture, Peer, or Media), distinguishing between influences that can look similar on the surface.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "influence-spotter-scenario-challenge",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine, classify, distinguish",
+  "completion_status": "scaffold",
+  "chapter_number": 11,
+  "chapter_title": "Health Influences and Information Literacy",
+  "chapter_dir": "11-health-influences-and-information-literacy"
+}

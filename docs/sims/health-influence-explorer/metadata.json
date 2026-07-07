@@ -1,0 +1,22 @@
+{
+  "title": "Who Shapes My Health Choices?",
+  "description": "Students classify everyday scenarios into the correct source of influence (family, friends, school, community, media, culture) and explain whether each example nudges a health behavior in a helpful or unhelpful direction.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "health-influence-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "classify, exemplify, explain",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "Foundations Of Health",
+  "chapter_dir": "01-foundations-of-health"
+}

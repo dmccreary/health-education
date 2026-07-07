@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Dementia Types Comparison Tool</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Dementia Types Comparison Tool</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> dementia-types-comparison-tool</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students differentiate Alzheimer's disease, vascular</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: infographic
+    
+    **sim-id:** dementia-types-comparison-tool<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy Level: Analyze (L4)
+    Bloom Verb: differentiate, compare, examine
+    
+    Learning objective: Students differentiate Alzheimer's disease, vascular
+    dementia, Lewy body dementia, and frontotemporal dementia by cause,
+    typical early symptoms, and progression pattern.
+    
+    Layout: Four labeled columns, one per dementia type, each with three rows:
+    Underlying Cause, Typical Early Symptoms, Progression Pattern
+    
+    Data Visibility Requirements:
+      Stage 1: Show all four columns populated with the chapter's descriptions
+      Stage 2: Clicking a column header opens an infobox with one additional
+      respectful, factual detail about that type
+      Stage 3: A short scenario describing a person's symptoms is shown, and
+      the learner selects which dementia type it most closely resembles,
+      reinforcing the distinguishing features
+      Stage 4: Reveal explanation naming which specific detail in the
+      scenario pointed to that type
+    
+    Interactive controls: Click any column header for expanded detail; button
+    "Try a Scenario" reveals a symptom description and answer options; button
+    "Next Scenario" cycles through 3 scenarios
+    
+    Instructional Rationale: Differentiating several related conditions by
+    their distinguishing features is an Analyze-level objective, so a
+    structured comparison with a scenario-matching check is used rather than
+    simple recall of a definition list.
+    
+    Implementation notes: p5.js; content written in respectful, non-alarmist
+    language; no graphic or frightening imagery; scenario data stored as an
+    array of {symptoms, correctType, explanation} objects.
+    -->
+</body>
+</html>

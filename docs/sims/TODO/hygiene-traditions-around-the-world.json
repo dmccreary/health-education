@@ -1,0 +1,15 @@
+{
+  "sim_id": "hygiene-traditions-around-the-world",
+  "diagram_name": "Hygiene Traditions Around the World",
+  "chapter_number": 5,
+  "chapter_title": "Healthy Habits, Activity, and Germs",
+  "chapter_dir": "05-healthy-habits",
+  "chapter_rel_dir": "bands/grade-1/chapters/05-healthy-habits",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "describe, exemplify, compare",
+  "learning_objective": "Students describe several different community and cultural hygiene traditions and explain that different traditions can all support health, without ranking any as more \"correct\" than another.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** hygiene-traditions-around-the-world<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: describe, exemplify, compare\n\nLearning objective: Students describe several different community and cultural hygiene traditions and explain that different traditions can all support health, without ranking any as more \"correct\" than another.\n\nPurpose: Show a warm, respectful gallery of six family/community hygiene traditions from around the world, helping students see that healthy hygiene practices vary by culture and are equally valid\n\nLayout: A friendly grid of six illustrated family scenes arranged around a shared center label reading \"Healthy Habits Look Different in Every Family\"\n\nScenes to show (each respectfully depicted, without stereotype or caricature):\n- A family removing shoes and washing feet before entering the home\n- A family sharing an evening bath routine together\n- A family washing hands together before a meal, saying a short family phrase\n- A family with a morning hair-oiling and combing tradition\n- A family using a washcloth-and-basin morning routine\n- A family brushing teeth together as a nightly routine with a favorite song\n\nInteractive elements:\n- Hover or click each scene to reveal a short, respectful caption naming the tradition and the health reason behind it (e.g., \"Washing feet before entering the home keeps outside dirt from spreading inside.\")\n- No scene is marked as more correct than another; captions use equally warm, factual language\n\nVisual style: Bright, friendly flat-style illustrations; diverse homes, clothing, and family structures shown matter-of-factly\nColor scheme: Each scene highlighted in its own soft accent color when selected; shared warm neutral background\n\nImplementation: p5.js with click regions mapped to caption reveals; alternatively HTML/CSS grid with JavaScript hover/click handlers"
+}

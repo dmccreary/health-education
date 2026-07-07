@@ -1,0 +1,15 @@
+{
+  "sim_id": "boundary-erosion-timeline-simulator",
+  "diagram_name": "Boundary Erosion Timeline Simulator",
+  "chapter_number": 9,
+  "chapter_title": "Digital and School Safety",
+  "chapter_dir": "09-digital-and-school-safety",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/09-digital-and-school-safety",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, distinguish, differentiate",
+  "learning_objective": "Students examine a sequence of small digital",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n\n**sim-id:** boundary-erosion-timeline-simulator<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: examine, distinguish, differentiate\n\nLearning objective: Students examine a sequence of small digital\nrelationship requests and distinguish the point, if any, at which a\nreasonable digital behavior becomes a boundary-eroding pattern of control.\n\nCanvas layout:\n- Top (full width): a horizontal six-step timeline of realistic requests\n  in a dating relationship (e.g., Step 1: \"Can you share your location\n  when you're out late?\" through Step 6: \"Give me your phone password so\n  I know you're not talking to anyone else\")\n- Bottom (full width): a step-through control with a single question at\n  each step: \"Healthy boundary, still healthy but worth watching, or\n  boundary erosion?\"\n\nData Visibility Requirements:\n  Stage 1: Show Step 1 alone with the three-option judgment control\n  Stage 2: On the student's selection, reveal a brief explanation of where\n  professionals would place that specific step and why, without\n  overriding the student's own reasoning\n  Stage 3: Advance to the next step, showing all prior steps as a compact\n  timeline strip above for context\n  Stage 4: After Step 6, show the full six-step timeline with the\n  professional judgment overlay and a short synthesis noting that erosion\n  is usually gradual, which is exactly why noticing it early matters\n\nInteractive controls:\n- Three-option judgment buttons per step\n- Button: \"Next Step\"\n- Button: \"Restart Timeline\"\n\nDefault parameters: Six-step sequence, starting at Step 1, no step\npre-judged\n\nInstructional Rationale: Distinguishing a healthy request from an eroding\npattern requires examining a sequence for a shifting relationship, which is\nan Analyze-level task; a step-through timeline with reflection at each\npoint is used instead of animation so students can reason about each step\nindividually before seeing the cumulative pattern.\n\nImplementation notes: p5.js; step and explanation data stored as an array\nof {step, request, professionalJudgment, explanation} objects; tone\nnon-alarmist and focused on pattern recognition, not diagnosing any real\nrelationship."
+}

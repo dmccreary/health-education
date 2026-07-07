@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>My Goal Progress Tracker</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>My Goal Progress Tracker</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> goal-progress-tracker-chart</p>
+            <p><strong>Library:</strong> Chart.js</p>
+            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
+            <p><strong>Learning Objective:</strong> Students reflect on the results of working toward a personal health-related goal by reviewing a week of sample progress data and judging what went well and what to change.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: chart
+    **sim-id:** goal-progress-tracker-chart<br/>
+    **Library:** Chart.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Evaluate (L5)
+    Bloom Taxonomy Verb: assess, judge, reflect
+    
+    Learning objective: Students reflect on the results of working toward a personal health-related goal by reviewing a week of sample progress data and judging what went well and what to change.
+    
+    Chart type: Bar chart with a toggle to a simple weekly calendar view
+    
+    Purpose: Show a sample week of goal-tracking data ("Drink water instead of soda") so students can practice reflecting on progress rather than only setting goals
+    
+    X-axis: Day of the week (Mon-Sun)
+    Y-axis: Goal met? (Yes = full bar height, No = short bar height)
+    
+    Data series:
+    - Sample week: Mon (Yes), Tue (Yes), Wed (No), Thu (Yes), Fri (No), Sat (Yes), Sun (Yes)
+    
+    Interactive features (REQUIRED):
+    - Hover any bar to see a tooltip with that day's result and a short reflection prompt, e.g., hovering Wednesday shows "No -- what might have made this day harder? A busy afternoon? Forgetting the water bottle?"
+    - Click "Toggle My Own Week" button to let a student (via teacher-led class discussion) click each day to mark Yes/No and generate their own bar chart live
+    - Button: "Show Reflection Questions" reveals three prompts below the chart: "Which days were easiest? Which were hardest? What is one thing to try next week?"
+    
+    Title: "My Goal Progress: Drink Water Instead of Soda"
+    Legend: Green bars = goal met, gray bars = not met that day
+    
+    Color scheme: Green for "Yes," soft gray for "No" -- non-judgmental, no red or negative coloring
+    
+    Annotations: Small star icon over the day with the longest streak
+    
+    Implementation: Chart.js bar chart with custom click handling to let a class build its own sample week interactively
+    -->
+</body>
+</html>

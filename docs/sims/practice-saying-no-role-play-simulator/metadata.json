@@ -1,0 +1,22 @@
+{
+  "title": "Practice Saying No Role-Play Simulator",
+  "description": "Students demonstrate saying \"no\" to an unsafe or uncomfortable touch by selecting and practicing a firm refusal phrase in response to simple, non-graphic scenario prompts, matching the Grade 1 benchmark that calls for demonstration of this skill.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "practice-saying-no-role-play-simulator",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate, practice, apply",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Staying Safe at Home, School, and Online",
+  "chapter_dir": "06-personal-safety"
+}

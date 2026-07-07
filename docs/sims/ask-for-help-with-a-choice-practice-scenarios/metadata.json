@@ -1,0 +1,22 @@
+{
+  "title": "Ask for Help With a Choice — Practice Scenarios",
+  "description": "Students demonstrate asking for help from others in making safe, health-promoting choices by selecting an appropriate help-seeking phrase in response to everyday decision scenarios, matching the Grade 1 benchmark on ways to ask for help in making safe, health-promoting choices.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "ask-for-help-with-a-choice-practice-scenarios",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate, practice, apply",
+  "completion_status": "scaffold",
+  "chapter_number": 7,
+  "chapter_title": "Getting Help and Making Healthy Choices",
+  "chapter_dir": "07-help-and-decisions"
+}

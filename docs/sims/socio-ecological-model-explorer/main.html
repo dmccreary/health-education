@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Socio-Ecological Model Explorer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Socio-Ecological Model Explorer</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> socio-ecological-model-explorer</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Analyze<br/></p>
+            <p><strong>Learning Objective:</strong> Analyze how individual, interpersonal, community,</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: diagram
+    
+    **sim-id:** socio-ecological-model-explorer<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Analyze<br/>
+    Bloom Taxonomy Verb: examine, differentiate
+    
+    Learning objective: Analyze how individual, interpersonal, community,
+    societal/environmental, and policy-level factors interact to influence a
+    health practice, and distinguish which level a given real-world example
+    belongs to.
+    
+    Components to show: Five concentric rings (nodes grouped by ring), labeled
+    from center outward — Individual, Interpersonal, Community, Societal/
+    Environmental, Policy. Inside each ring, place 2-3 example nodes relevant to
+    teen health (e.g., Individual: "personal beliefs about vaping," "self-
+    efficacy"; Interpersonal: "peer group," "family guidance"; Community:
+    "school wellness policy," "neighborhood recreation access"; Societal/
+    Environmental: "food advertising," "outlet density"; Policy: "state tobacco
+    tax," "public health law").
+    
+    Connections: Draw directed edges from outer rings toward inner rings showing
+    "shapes" relationships (e.g., Policy node "state tobacco tax" → edge labeled
+    "shapes" → Societal/Environmental node "retail availability" → Community
+    node "school norms" → Interpersonal node "peer group" → Individual node
+    "personal belief").
+    
+    Interactive features: Clicking any node highlights its full causal chain
+    toward the center and opens an infobox with a definition of that level and
+    a one-sentence real-world example. Learner can drag nodes; layout re-settles
+    with physics. A dropdown lets the learner pick a starting health behavior
+    (vaping, nutrition, physical activity, mental health help-seeking) and the
+    diagram repopulates each ring with behavior-specific examples.
+    
+    Visual style: Concentric hierarchical layout, Individual at center in gold,
+    rings shading outward through blue to policy in dark navy.
+    
+    Color scheme: Gold (individual) → light blue (interpersonal) → teal
+    (community) → blue (societal/environmental) → navy (policy).
+    -->
+</body>
+</html>

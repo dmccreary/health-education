@@ -1,0 +1,15 @@
+{
+  "sim_id": "active-listening-checklist-microsim",
+  "diagram_name": "Are You Listening Actively?",
+  "chapter_number": 7,
+  "chapter_title": "Influences, Decisions, and Personal Goals",
+  "chapter_dir": "07-influences-decisions-goals",
+  "chapter_rel_dir": "bands/grade-2/chapters/07-influences-decisions-goals",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate, practice, use",
+  "learning_objective": "Students apply active listening behaviors by selecting which actions in a short scenario show active listening.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** active-listening-checklist-microsim<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: demonstrate, practice, use\n\nLearning objective: Students apply active listening behaviors by selecting which actions in a short scenario show active listening.\n\nCanvas layout:\n- Top area (120px): Short scenario text, e.g., \"A teacher explains a new hallway safety rule.\"\n- Middle area (260px): Four action cards students can mark as \"Active Listening\" or \"Not Active Listening\": \"Looking at the teacher and staying quiet,\" \"Waving hands and talking to a friend,\" \"Asking 'why do we do it this way?' after the teacher finishes,\" \"Nodding to show understanding\"\n- Bottom area (120px): Infobox with feedback and running score\n\nInteractive controls:\n- Click each action card to mark it\n- Button: \"Check My Answers\"\n- Button: \"New Scenario\" (cycles through 3 total scenarios)\n- Button: \"Reset\"\n\nDefault parameters:\n- Scenario 1 active; no cards marked yet\n\nData Visibility Requirements:\n  Stage 1: Show scenario and four unmarked action cards\n  Stage 2: Student marks cards, clicks \"Check My Answers\" -- correct cards turn green, incorrect turn orange\n  Stage 3: Infobox explains each answer: \"Looking and staying quiet shows active listening because it shows attention,\" \"Talking to a friend is not active listening because attention is elsewhere\"\n  Stage 4: Student clicks \"New Scenario\" to try a fresh set of four actions\n\nBehavior:\n- Score tracks correct identifications across all three scenarios\n- Feedback always names the specific active-listening behavior involved\n\nInstructional Rationale: This is an Apply-level objective, so the design asks students to apply the concept to new scenario actions rather than simply recall a definition, matching the \"demonstrate active listening in a variety of situations\" benchmark.\n\nImplementation notes: Use p5.js. Keep scenarios varied (home, classroom, playground) so the skill transfers across settings."
+}

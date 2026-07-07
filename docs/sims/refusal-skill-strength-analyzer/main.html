@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Refusal Skill Strength Analyzer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Refusal Skill Strength Analyzer</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> refusal-skill-strength-analyzer</p>
+            <p><strong>Library:</strong> Chart.js</p>
+            <p><strong>Bloom Level:</strong> Evaluate<br/></p>
+            <p><strong>Learning Objective:</strong> Evaluate and rank six sample refusal-line examples by</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: infographic
+    
+    **sim-id:** refusal-skill-strength-analyzer<br/>
+    **Library:** Chart.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Evaluate<br/>
+    Bloom Taxonomy Verb: rank, critique
+    
+    Learning objective: Evaluate and rank six sample refusal-line examples by
+    strength using the four criteria (directness, verbal/nonverbal consistency,
+    alternative/exit plan, resilience to repeated pressure), building on
+    refusal skills introduced in Chapters 3, 4, and 10.
+    
+    Purpose: Move learners from recalling refusal lines to ranking their
+    relative strength and justifying the ranking against explicit criteria.
+    
+    Chart type: Horizontal stacked bar chart, one bar per refusal-line example,
+    segments representing the four criteria scored 0-1.
+    
+    X-axis: Composite strength score (0-4)
+    Y-axis: Six example refusal lines (e.g., "Um, maybe, I guess so" vs. "No,
+    I'm not doing that — I'm heading to Jae's, come with me if you want")
+    
+    Data series: Four stacked segments per bar (Directness, Consistency,
+    Exit plan, Resilience), each pre-scored 0 or 1 based on the example text,
+    used as the "expert" answer key revealed after the learner submits their
+    own ranking.
+    
+    Interactive elements: Learner first drags the six examples into their own
+    ranked order (weakest to strongest); clicking "Reveal scoring" renders the
+    stacked bar chart and the learner compares their ranking to the computed
+    composite scores; hovering any bar segment shows the specific rationale for
+    that criterion's score.
+    
+    Title: "How Strong Is That Refusal?"
+    Legend: Four criteria colors, positioned top-right.
+    
+    Color scheme: Four distinct colors per criterion segment (e.g., blue =
+    directness, teal = consistency, gold = exit plan, orange = resilience).
+    
+    Implementation: Chart.js horizontal stacked bar chart with a custom
+    drag-to-rank pre-step built in HTML/JS before the chart renders.
+    -->
+</body>
+</html>

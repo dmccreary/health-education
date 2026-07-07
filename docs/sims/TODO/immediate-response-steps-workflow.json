@@ -1,0 +1,15 @@
+{
+  "sim_id": "immediate-response-steps-workflow",
+  "diagram_name": "Immediate Response Steps Workflow",
+  "chapter_number": 5,
+  "chapter_title": "Mental Health and Crisis Support",
+  "chapter_dir": "05-mental-health-and-crisis-support",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/05-mental-health-and-crisis-support",
+  "library": "Mermaid",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate, apply, use",
+  "learning_objective": "Students apply the correct sequence of response steps",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n\n**sim-id:** immediate-response-steps-workflow<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Apply (L3)\nBloom Verb: demonstrate, apply, use\n\nLearning objective: Students apply the correct sequence of response steps\nwhen they recognize a suicide or self-harm warning sign in themselves or\nsomeone else, with every path ending in a trusted adult or 988 becoming\ninvolved.\n\nVisual style: Mermaid flowchart, linear with one branch point, deliberately\ncalm and text-only — no imagery or wording depicting a suicide attempt,\nself-harm act, or method\n\nNodes (all clickable, `click NodeId call showInfo(\"term\")`):\n1. \"Warning Sign Noticed (In Yourself or a Friend)\" — click text: \"This\n   applies whether someone says it directly or shows strong behavioral,\n   verbal, or emotional signs\"\n2. \"Take It Seriously Immediately\" — click text: \"Do not wait to see if\n   the feeling passes on its own\"\n3. \"Do Not Promise Secrecy\" — click text: \"Use the direct script: 'I care\n   about you too much to keep this a secret. I need to get help.'\"\n4. \"Can You Reach a Trusted Adult Right Now?\" (decision diamond) — click\n   text: \"Both paths from here lead to the same outcome: getting help\n   involved without delay\"\n5a. \"Yes\" branch to \"Tell the Trusted Adult Immediately\" — click text:\n   \"This happens even if the person at risk asks you not to tell anyone\"\n5b. \"Not Yet\" branch to \"Call or Text 988 Right Now\" — click text: \"988 is\n   available 24/7, free and confidential, while you also work on reaching\n   a trusted adult\"\n6. Shared end node \"Help Is Now Involved\" — click text: \"Staying engaged\n   until a trusted adult or crisis counselor has taken over matters as\n   much as the first response\"\n\nConnections: 1→2, 2→3, 3→4, 4→5a, 4→5b, 5a→6, 5b→6\n\nColor coding: blue for response steps, gray for the decision diamond,\ngreen for both branches and the shared end node (both paths are equally\nvalid, immediate responses)\n\nInteractive features: click any node for its infobox; no depiction of a\ncrisis event, only response actions\n\nImplementation: Mermaid.js flowchart with JavaScript click bindings to a\ncustom showInfo() function; content strictly limited to listening,\ndisclosure response, and connecting to help — no method-related content\nanywhere in the specification"
+}

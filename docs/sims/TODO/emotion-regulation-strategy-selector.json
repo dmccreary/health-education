@@ -1,0 +1,15 @@
+{
+  "sim_id": "emotion-regulation-strategy-selector",
+  "diagram_name": "Emotion Regulation Strategy Selector",
+  "chapter_number": 6,
+  "chapter_title": "Conflict Resolution and Inclusion",
+  "chapter_dir": "06-conflict-resolution-and-inclusion",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/06-conflict-resolution-and-inclusion",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "apply, demonstrate, practice",
+  "learning_objective": "Students apply the most appropriate emotion management",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n\n**sim-id:** emotion-regulation-strategy-selector<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Apply (L3)\nBloom Verb: apply, demonstrate, practice\n\nLearning objective: Students apply the most appropriate emotion management\nstrategy (paced breathing, cognitive reframing, deliberate pause, or\ngrounding) to a set of realistic emotionally charged scenarios.\n\nCanvas layout:\n- Left (55%): a short scenario describing an emotionally intense moment\n  (e.g., feeling humiliated after a public correction, feeling panicked\n  before a hard conversation)\n- Right (45%): four strategy cards (Paced Breathing, Cognitive Reframing,\n  Deliberate Pause, Grounding) with one-line descriptions\n\nData Visibility Requirements:\n  Stage 1: Show the scenario and all four strategy cards with brief\n  descriptions\n  Stage 2: Student selects which strategy fits best\n  Stage 3: Reveal an explanation of why that strategy fits (or why a\n  different strategy might fit better), tied to the specific emotional and\n  situational cues in the scenario\n  Stage 4: Show a running count of scenarios completed out of a bank of 8\n\nInteractive controls:\n- Click to select a strategy card\n- Button: \"Show Explanation\"\n- Button: \"Next Scenario\"\n\nDefault parameters: Scenario bank cycles without repetition until\nexhausted, then reshuffles; more than one strategy may be defensible for a\ngiven scenario, with the explanation acknowledging this\n\nInstructional Rationale: Matching a management technique to a concrete\nemotional scenario is an Apply-level objective, so a scenario-based\nselection tool with explanatory feedback is used rather than passive\ndescription of the four strategies.\n\nImplementation notes: p5.js with an object array of {scenario, bestFit,\nexplanation, acceptableAlternates}; explanations acknowledge legitimate\noverlap between strategies rather than presenting a single rigid answer."
+}

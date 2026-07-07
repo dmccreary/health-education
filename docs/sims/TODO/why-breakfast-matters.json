@@ -1,0 +1,15 @@
+{
+  "sim_id": "why-breakfast-matters",
+  "diagram_name": "Why Breakfast? Cause and Effect",
+  "chapter_number": 2,
+  "chapter_title": "Food, Drinks, and Staying Safe in the Kitchen",
+  "chapter_dir": "02-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-1/chapters/02-food-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, summarize, infer",
+  "learning_objective": "Students explain why eating breakfast is important by comparing two versions of the same student's morning — one with breakfast and one without.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** why-breakfast-matters<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, summarize, infer\n\nLearning objective: Students explain why eating breakfast is important by comparing two versions of the same student's morning — one with breakfast and one without.\n\nCanvas layout:\n- Left area (350px): \"With Breakfast\" morning scene (student playing energetically, focused in class)\n- Right area (350px): \"Without Breakfast\" morning scene (student looking tired, distracted)\n- Bottom strip (100px): Toggle button and explanation caption\n\nVisual elements:\n- Two side-by-side illustrated scenes of the same cartoon student's morning\n- Small energy-meter icon above each scene (full vs. low)\n\nInteractive controls:\n- Button: \"Toggle Scene\" (switches focus between the two scenes)\n- Hover or click each scene: reveals a caption explaining what is happening and why\n\nDefault parameters:\n- Both scenes visible at start; \"With Breakfast\" scene highlighted first\n\nData Visibility Requirements:\n  Stage 1: Show both scenes side by side with energy meters\n  Stage 2: Click \"With Breakfast\" scene — caption explains the fuel/energy connection\n  Stage 3: Click \"Without Breakfast\" scene — caption explains why the student feels tired and unfocused\n  Stage 4: Summary caption ties both scenes together: \"Breakfast fuels your body and brain for the whole morning.\"\n\nBehavior:\n- Clicking either scene highlights it and reveals its caption; the energy meter animates filling or draining once, then stays still (no continuous animation)\n\nInstructional Rationale: This is an Understand-level (explain/summarize) objective, so the MicroSim uses a side-by-side comparison with revealed captions rather than continuous animation, letting students infer the cause-and-effect relationship between breakfast and energy/focus at their own pace.\n\nImplementation notes: Use p5.js. Keep both scenes calm and simple; avoid making the \"without breakfast\" student look unwell, just tired and less focused. Teacher reads captions aloud."
+}

@@ -1,0 +1,22 @@
+{
+  "title": "STI Transmission Routes Sorter",
+  "description": "Students classify common routes of contact (skin-to-skin, fluid exchange, casual contact) as transmitting or not transmitting STIs, building an accurate model of how infections do and do not spread.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "sti-transmission-routes-sorter",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "classify, explain, distinguish",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "Healthcare Access and Sexual Health",
+  "chapter_dir": "03-healthcare-access-and-sexual-health"
+}

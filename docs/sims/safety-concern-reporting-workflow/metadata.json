@@ -1,0 +1,22 @@
+{
+  "title": "Safety Concern Reporting Workflow",
+  "description": "Students apply the \"see something, say something\" reporting process by tracing the correct workflow from noticing a concern to a trained adult responding.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "safety-concern-reporting-workflow",
+  "library": "Mermaid",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate, apply, execute",
+  "completion_status": "scaffold",
+  "chapter_number": 7,
+  "chapter_title": "Digital Safety and School Safety",
+  "chapter_dir": "07-digital-safety-and-school-safety"
+}

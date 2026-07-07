@@ -1,0 +1,22 @@
+{
+  "title": "Active Games and Dances Around the World",
+  "description": "Students describe examples of cultural and traditional physical activities from different communities and compare what makes each one active and meaningful.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "cultural-physical-activity-map",
+  "library": "Leaflet",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "describe, exemplify, compare",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Staying Healthy in Our Environment",
+  "chapter_dir": "04-staying-healthy-environment"
+}

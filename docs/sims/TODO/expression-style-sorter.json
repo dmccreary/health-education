@@ -1,0 +1,15 @@
+{
+  "sim_id": "expression-style-sorter",
+  "diagram_name": "Healthy vs. Unhealthy Expression Sorter",
+  "chapter_number": 7,
+  "chapter_title": "Mental And Emotional Health",
+  "chapter_dir": "07-mental-and-emotional-health",
+  "chapter_rel_dir": "bands/grade-3/chapters/07-mental-and-emotional-health",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "differentiate, examine, distinguish",
+  "learning_objective": "Students differentiate between healthy and unhealthy ways of expressing emotions by sorting example statements and actions into the correct category.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** expression-style-sorter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: differentiate, examine, distinguish\n\nLearning objective: Students differentiate between healthy and unhealthy ways of expressing emotions by sorting example statements and actions into the correct category.\n\nCanvas layout: Left side (400px) has two labeled bins, \"Healthy Expression\" (speech-bubble-with-heart icon) and \"Unhealthy Expression\" (stormy-cloud icon). Right side (200px) holds a stack of shuffled example cards, such as \"I feel left out, can we talk?\", \"Slamming the door and refusing to speak\", \"I'm nervous about the game, wish me luck\", \"Yelling mean names when losing a game.\"\n\nInteractive controls: Click or drag each card into a bin; \"Check My Answers\" and \"Reset\" buttons.\n\nData Visibility Requirements: As each card is sorted it snaps into the chosen bin; clicking \"Check My Answers\" reveals a one-sentence explanation for every card, and incorrectly sorted cards get a gentle explanation of why they fit the other category.\n\nInstructional Rationale: Analyze-level objective requiring students to distinguish categories by shared features, so sorting-with-explanation is appropriate.\n\nImplementation notes: Use p5.js. Keep tone non-judgmental toward the \"unhealthy\" category — frame it as practice noticing the difference, not as labeling a student."
+}

@@ -1,0 +1,22 @@
+{
+  "title": "20-Second Scrub Timer",
+  "description": "Students practice the Handwashing routine by following along with a step-by-step, timed scrubbing sequence, reinforcing correct order and duration.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "20-second-scrub-timer",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "practice, demonstrate",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Staying Healthy Every Day",
+  "chapter_dir": "04-staying-healthy"
+}

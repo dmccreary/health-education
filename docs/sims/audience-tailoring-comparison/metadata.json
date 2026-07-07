@@ -1,0 +1,22 @@
+{
+  "title": "Audience Tailoring Comparison Tool",
+  "description": "Compare how the same justified health message is",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "audience-tailoring-comparison",
+  "library": "Chart.js",
+  "bloomLevel": "Analyze<br/>",
+  "bloomVerb": "compare, contrast, distinguish",
+  "completion_status": "scaffold",
+  "chapter_number": 15,
+  "chapter_title": "Health Promotion and Behavior Change",
+  "chapter_dir": "15-health-promotion-and-behavior-change"
+}

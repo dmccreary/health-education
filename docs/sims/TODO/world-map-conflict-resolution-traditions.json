@@ -1,0 +1,15 @@
+{
+  "sim_id": "world-map-conflict-resolution-traditions",
+  "diagram_name": "World Map of Conflict Resolution Traditions",
+  "chapter_number": 2,
+  "chapter_title": "Growth and Development Across Cultures",
+  "chapter_dir": "02-growth-and-development",
+  "chapter_rel_dir": "bands/grade-4/chapters/02-growth-and-development",
+  "library": "Leaflet",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "describe, compare, exemplify",
+  "learning_objective": "Students describe and compare examples of how different cultures and communities approach resolving disagreements fairly, recognizing that there is more than one respectful way to manage conflict.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: map\n**sim-id:** world-map-conflict-resolution-traditions<br/>\n**Library:** Leaflet<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: describe, compare, exemplify\n\nLearning objective: Students describe and compare examples of how different cultures and communities approach resolving disagreements fairly, recognizing that there is more than one respectful way to manage conflict.\n\nPurpose: Show that respectful conflict management takes different forms across cultures, reinforcing that no single approach is the \"correct\" one.\n\nGeographic scope: World map with five to six marked regions/communities\n\nLocations and examples (respectful, factual, non-stereotyping descriptions):\n- Aotearoa/New Zealand (Māori): community meetings called \"hui,\" where people gather to talk through disagreements together\n- Rwanda: community \"gacaca\"-style gatherings that bring people together to discuss problems openly\n- Northern Plains Indigenous communities (United States/Canada): talking circles, where each person speaks in turn and everyone else listens without interrupting\n- Japan: an emphasis on quiet reflection and finding harmony before responding to a conflict\n- United States (general classroom example): peer mediation programs, where a trained student helps two classmates talk through a disagreement\n\nLegend: A marker icon for each region with the name of the tradition\n\nInteractive features:\n- Click any marker to open an infobox describing that tradition in two to three respectful sentences, written to inform rather than to generalize about all members of that culture\n- A closing note visible after clicking any two markers: \"These are just a few examples. Every culture and even every family has its own ways of handling disagreements — and most share the same goal: finding a fair solution while respecting everyone involved.\"\n\nColor scheme: Warm, neutral marker colors (soft teal) with no flags or stereotyped imagery\n\nImplementation: Leaflet map with custom markers and click-to-open infobox panels; content reviewed for respectful, non-stereotyping language before publication."
+}

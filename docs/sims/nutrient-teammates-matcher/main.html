@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Meet the Three Nutrient Teammates</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Meet the Three Nutrient Teammates</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> nutrient-teammates-matcher</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Students explain how carbohydrates, protein, and fats help the body grow by classifying example foods under the correct nutrient and reading a one-sentence explanation of its job.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** nutrient-teammates-matcher<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: explain, classify, exemplify
+    
+    Learning objective: Students explain how carbohydrates, protein, and fats help the body grow by classifying example foods under the correct nutrient and reading a one-sentence explanation of its job.
+    
+    Canvas layout:
+    - Left side (400px): Three labeled bins — "Carbohydrates," "Protein," "Fats" — each with a small icon (lightning bolt for quick energy, muscle for repair, battery for long-lasting energy)
+    - Right side (200px): A row of clickable food icons (bread, rice, apple, beans, egg, fish, nuts, avocado, oil)
+    
+    Visual elements:
+    - Three nutrient bins with distinct colors (gold for carbohydrates, red for protein, blue for fats)
+    - Food icons that can be clicked or dragged into a bin
+    
+    Interactive controls:
+    - Click or drag a food icon into the bin where it belongs
+    - Button: "Check My Answers"
+    - Button: "Reset"
+    
+    Default parameters:
+    - All nine food icons begin in a shuffled row above the three bins
+    
+    Data Visibility Requirements:
+      Stage 1: Show the shuffled food icons and three empty labeled bins
+      Stage 2: As each food is sorted, show it snap into the chosen bin
+      Stage 3: When "Check My Answers" is clicked, reveal a one-sentence explanation under each bin (e.g., "Carbohydrates give your body quick energy for running and playing.")
+    
+    Behavior:
+    - Correct placements get a checkmark; incorrect ones get a gentle explanation of the correct bin
+    - Once all nine foods are sorted correctly, a "Nutrient Expert!" caption appears
+    
+    Instructional Rationale: This is an Understand-level objective (explain, classify), so the design uses a classify-and-reveal pattern with concrete example foods and short text explanations, rather than animation, so students can see the specific reasoning behind each nutrient's job.
+    
+    Implementation notes: Use p5.js. Keep icons simple, flat, and easy to tell apart. This MicroSim is the direct student practice activity for this K-3 chapter.
+    -->
+</body>
+</html>

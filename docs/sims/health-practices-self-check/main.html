@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Health Practices Self-Check</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Health Practices Self-Check</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> health-practices-self-check</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students examine a set of everyday health-supporting practices across multiple health categories and identify which ones they already do well and which they might want to improve.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** health-practices-self-check<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: examine, organize, compare
+    
+    Learning objective: Students examine a set of everyday health-supporting practices across multiple health categories and identify which ones they already do well and which they might want to improve.
+    
+    Canvas layout: A grid of eight practice cards spanning categories from across the book (Eating balanced meals, Staying active, Getting enough sleep, Washing hands, Using safety gear, Talking about feelings, Being kind to others, Following family safety plans). Each card has a simple three-option selector: "Going Well," "Could Improve," "Not Sure."
+    
+    Interactive controls: Click a rating on each card; a "See My Summary" button.
+    
+    Data Visibility Requirements: After all eight cards are rated, "See My Summary" displays a simple non-graded summary such as "You marked 5 practices as Going Well and 2 as Could Improve," and highlights the "Could Improve" cards as candidates for a personal health goal.
+    
+    Instructional Rationale: Analyze-level objective requiring students to organize and compare their own practices across categories, so a self-rating grid with a reflective summary is appropriate — this is a private reflection tool, not a scored quiz.
+    
+    Implementation notes: Use p5.js. Keep the tone entirely non-judgmental; there is no "wrong" self-rating. This tool works well paired directly with the My Health Goal Planner MicroSim above.
+    -->
+</body>
+</html>

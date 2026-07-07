@@ -1,0 +1,22 @@
+{
+  "title": "Who Are My Trusted Adults? Web Builder",
+  "description": "Students apply their understanding of trusted adults by building a personal web of at least three trusted adults from home, school, and the community, reinforcing that there is always more than one person to tell.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "who-are-my-trusted-adults-web-builder",
+  "library": "vis-network",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "apply, identify, construct",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Staying Safe at Home, School, and Online",
+  "chapter_dir": "06-personal-safety"
+}

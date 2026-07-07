@@ -1,0 +1,15 @@
+{
+  "sim_id": "supportive-friend-decision-path",
+  "diagram_name": "Supportive Friend Decision Path",
+  "chapter_number": 3,
+  "chapter_title": "Managing Emotions and Relationships",
+  "chapter_dir": "03-managing-emotions-and-relationships",
+  "chapter_rel_dir": "bands/grade-5/chapters/03-managing-emotions-and-relationships",
+  "library": "p5.js",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "judge, assess, justify",
+  "learning_objective": "Students evaluate a series of short peer-support scenarios and judge which response best balances listening, respecting boundaries, and guiding the peer toward trusted-adult help.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** supportive-friend-decision-path<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Evaluate (L5)\nBloom Taxonomy Verb: judge, assess, justify\n\nLearning objective: Students evaluate a series of short peer-support scenarios and judge which response best balances listening, respecting boundaries, and guiding the peer toward trusted-adult help.\n\nCanvas layout:\n- Left side (450px): A scenario card describing a peer's difficult situation and three possible responses\n- Right side (200px): Response selector and feedback panel\n\nVisual elements:\n- Scenario card with a short, age-appropriate situation (a worried friend, a friend being excluded, a friend mentioning a scary home situation)\n- Three response option cards per scenario, each written in a warm, sincere tone\n- Feedback panel that explains the strengths or gaps of the chosen response\n\nInteractive controls:\n- Click one of three response cards to answer\n- Button: \"See Feedback\" — reveals why the response is strong, or what a stronger response would include\n- Button: \"Next Scenario\"\n\nDefault parameters:\n- Starts on Scenario 1: a friend who seems sad and quiet at recess\n\nBehavior:\n- Every scenario has one response that best balances listening, respecting the peer's boundaries, and gently guiding toward a trusted adult; feedback is sincere and non-judgmental regardless of which option the student picks\n- After feedback, the student can proceed to additional scenarios covering different situations\n\nInstructional Rationale: This is an Evaluate-level objective, so the pattern is a judgment task with justification feedback rather than a game with points, matching the sincere, careful tone this sensitive topic requires.\n\nImplementation notes: Use p5.js. Keep visual style calm and simple (no game-like scoring sounds or animations); store scenarios and responses as objects with a \"best response\" flag and an explanation string for every option."
+}

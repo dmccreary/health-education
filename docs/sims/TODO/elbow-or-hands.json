@@ -1,0 +1,15 @@
+{
+  "sim_id": "elbow-or-hands",
+  "diagram_name": "Elbow or Hands?",
+  "chapter_number": 4,
+  "chapter_title": "Staying Healthy Every Day",
+  "chapter_dir": "04-staying-healthy",
+  "chapter_rel_dir": "bands/kindergarten/chapters/04-staying-healthy",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "distinguish, sort, compare",
+  "learning_objective": "Students distinguish helpful cough-covering behavior from unhelpful behavior by sorting illustrated scenario cards into two labeled bins, applying the Covering Coughs concept.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** elbow-or-hands<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: distinguish, sort, compare\n\nLearning objective: Students distinguish helpful cough-covering behavior from unhelpful behavior by sorting illustrated scenario cards into two labeled bins, applying the Covering Coughs concept.\n\nCanvas layout:\n- Top area (250px): One simple illustrated scenario card shown at a time, depicting a child about to cough or sneeze in different ways (into elbow, into a tissue, into open hands, into open air)\n- Bottom area (200px): Two large labeled bins side by side: \"Keeps Germs Away\" (green, with a shield icon) and \"Lets Germs Spread\" (gray, with a germ icon)\n- Bottom strip (50px): Score display (\"You sorted 4 scenarios!\") and a Reset button\n\nVisual elements:\n- 8 scenario cards cycling one at a time, evenly split between helpful and unhelpful cough/sneeze coverings, drawn in a simple, warm cartoon style\n- Bins glow softly when a card is dragged over them\n\nInteractive controls:\n- Drag-and-drop: child drags the scenario card into the bin they believe matches\n- Button: \"Reset\" to start over\n- Button: \"Next Scenario\" appears after each placement\n\nDefault parameters:\n- First scenario: a child coughing into their elbow (Keeps Germs Away)\n- Scenarios appear in a fixed friendly order so a teacher can predict what is coming next\n\nBehavior:\n- When a card is placed in the correct bin, the bin glows green, a cheerful chime plays, and the score increases by one\n- When a card is placed in the incorrect bin, the card gently slides back to the top and a friendly infobox reminds the child why, e.g., \"Coughing into hands lets germs spread to the next thing you touch.\"\n- After all 8 scenarios are sorted, show a celebration message: \"You really know how to keep germs from spreading!\"\n\nInstructional Rationale: This is an Analyze-level objective because the child must examine a small scenario and distinguish which category it belongs to, rather than simply recalling a rule. The forgiving retry behavior with an explanatory infobox keeps the activity appropriate for a pre-reader audience while still requiring a real comparison judgment.\n\nImplementation notes: Use p5.js. Represent each scenario as an object with an illustration reference, a correct category, and an explanation string. Keep all captions read-aloud length (one short sentence)."
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Conflict Resolution Path Explorer",
+  "description": "Students apply the four-step conflict management pattern (pause, use an I-statement, listen, find a fair solution) to short realistic classroom and home scenarios by choosing the most respectful next step at each stage.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "conflict-resolution-path-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "use, demonstrate, practice",
+  "completion_status": "scaffold",
+  "chapter_number": 2,
+  "chapter_title": "Growth and Development Across Cultures",
+  "chapter_dir": "02-growth-and-development"
+}

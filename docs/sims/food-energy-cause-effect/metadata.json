@@ -1,0 +1,22 @@
+{
+  "title": "Where Does Your Energy Come From?",
+  "description": "Students explain the cause-and-effect relationship between eating food and having energy to grow, move, and think, using a step-through scenario of a school day.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "food-energy-cause-effect",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, interpret",
+  "completion_status": "scaffold",
+  "chapter_number": 2,
+  "chapter_title": "Food, Energy, and Safe Eating",
+  "chapter_dir": "02-food-energy-safe-eating"
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "bystander-action-decision-path",
+  "diagram_name": "Bystander Action Decision Path",
+  "chapter_number": 4,
+  "chapter_title": "Equity, Belonging, And Bystander Action",
+  "chapter_dir": "04-equity-belonging-and-bystander-action",
+  "chapter_rel_dir": "bands/grade-5/chapters/04-equity-belonging-and-bystander-action",
+  "library": "Mermaid",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate, use, practice",
+  "learning_objective": "Students apply a concrete, safety-first decision path for responding as a bystander when they witness bullying.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n**sim-id:** bystander-action-decision-path<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: demonstrate, use, practice\n\nLearning objective: Students apply a concrete, safety-first decision path for responding as a bystander when they witness bullying.\n\nPurpose: Show a clear, repeatable sequence of safe bystander actions when witnessing bullying, emphasizing safety first and concrete steps over vague advice.\n\nVisual style: Flowchart with process rectangles and one decision diamond, every node clickable\n\nSteps:\n1. Start: \"You see someone being bullied\"\n   Click text: \"Notice what's happening. You don't have to do everything at once — even one safe action helps.\"\n2. Process: \"Don't laugh, film, or share\"\n   Click text: \"Bullying often continues because it gets an audience. Refusing to laugh or record removes that reward.\"\n3. Decision: \"Can you safely say something supportive right now?\"\n   Click text: \"Only do this if it feels safe. If not, skip straight to getting an adult.\"\n4a. Process (if yes): \"Support the targeted student\"\n    Click text: \"A short, caring statement like 'That wasn't okay, are you alright?' helps a lot.\"\n4b. Process (if no): \"Get a trusted adult safely\"\n    Click text: \"Telling an adult is one of the most effective actions a bystander can take. It is never tattling.\"\n5. Process: \"Get a trusted adult safely\"\n   Click text: \"Even after supporting the student directly, still tell a trusted adult what happened.\"\n6. End: \"Check in again later\"\n   Click text: \"Following up afterward shows the targeted student that someone noticed and cares.\"\n\nColor coding: Blue for immediate safe actions, yellow for the decision diamond, green for the adult-reporting step, gray for the follow-up ending\n\nImplementation: Mermaid flowchart with a `click` directive on every node calling a JavaScript function that opens an infobox with that node's explanation text. Tone of all infobox text must remain calm, sincere, and non-judgmental — no humor, no mascot puns."
+}

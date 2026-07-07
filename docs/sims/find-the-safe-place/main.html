@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Find the Safe Place</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Find the Safe Place</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> find-the-safe-place</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Remember (L1)</p>
+            <p><strong>Learning Objective:</strong> Students identify the correct safe place for a given type of school emergency, reinforcing the Safe Place concept alongside School Emergency.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: infographic
+    **sim-id:** find-the-safe-place<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Remember (L1)
+    Bloom Taxonomy Verb: identify, recognize, locate
+    
+    Learning objective: Students identify the correct safe place for a given type of school emergency, reinforcing the Safe Place concept alongside School Emergency.
+    
+    Canvas layout: Full canvas (500px) shows a simple illustrated school map (classroom, hallway, outdoor field, gym). Bottom strip (80px): a prompt naming one emergency type at a time (e.g., "Fire drill — where is the safe place?") with three tappable location options.
+    
+    Visual elements: School map locations shown as friendly labeled icons; the selected answer highlights green (correct) or shakes gently (incorrect, try again).
+    
+    Interactive controls: Tap the location believed correct; "Next Emergency" cycles prompts; "Reset" restarts.
+    
+    Default parameters: Three prompts cycle in order — fire drill (outdoor field), severe weather drill (hallway), lockdown drill (classroom).
+    
+    Behavior: Correct tap glows green with a chime and confirming infobox, e.g., "Yes! During a fire drill, we walk to the outdoor field." Incorrect tap shakes gently with a friendly hint. After all three: "You know where to go for each kind of school emergency!"
+    
+    Instructional Rationale: A Remember-level (identify/locate) objective appropriate for pre-readers, so a tap-to-identify pattern with an immediate confirming infobox is used rather than a more complex simulation.
+    
+    Implementation notes: p5.js. Each emergency type is an object with a prompt string, correct location id, and confirmation string. Text large (24px+) for read-aloud use.
+    -->
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "title": "Unsafe Situation Signal Explorer",
+  "description": "Students examine situations across relationships, technology, and physical safety, and distinguish which signals indicate an unsafe situation worth reporting.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "unsafe-situation-signal-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine, distinguish, organize",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Personal Safety And Violence Prevention",
+  "chapter_dir": "06-personal-safety-and-violence-prevention"
+}

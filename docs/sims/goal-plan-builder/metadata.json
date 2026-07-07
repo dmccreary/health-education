@@ -1,0 +1,22 @@
+{
+  "title": "Goal Plan Builder",
+  "description": "Students construct a complete, specific health goal plan by filling in five required elements (target, steps and timeframe, supports, barriers and responses, tracking method) for a health area of their choice.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "goal-plan-builder",
+  "library": "p5.js",
+  "bloomLevel": "Create (L6)",
+  "bloomVerb": "construct, design, formulate",
+  "completion_status": "scaffold",
+  "chapter_number": 12,
+  "chapter_title": "Advocacy, Goal Setting, and Health Messaging",
+  "chapter_dir": "12-advocacy-goal-setting-and-health-messaging"
+}

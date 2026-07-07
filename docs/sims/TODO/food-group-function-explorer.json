@@ -1,0 +1,15 @@
+{
+  "sim_id": "food-group-function-explorer",
+  "diagram_name": "What Each Food Group Does",
+  "chapter_number": 2,
+  "chapter_title": "Food, Energy, and Safe Eating",
+  "chapter_dir": "02-food-energy-safe-eating",
+  "chapter_rel_dir": "bands/grade-2/chapters/02-food-energy-safe-eating",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, describe, classify",
+  "learning_objective": "Students explain what each food group does for the body by clicking on a food group icon and seeing its job and example foods.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** food-group-function-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, describe, classify\n\nLearning objective: Students explain what each food group does for the body by clicking on a food group icon and seeing its job and example foods.\n\nCanvas layout:\n- Left area (450px): Five large tappable food-group icons arranged in a row or wheel (Grains, Vegetables, Fruits, Protein, Dairy)\n- Right area (150px): Infobox panel showing the selected group's job and example foods\n\nVisual elements:\n- Flat, friendly icons for each food group (a wheat stalk, a carrot, an apple, a drumstick/bean pod, a milk carton)\n- A simple cartoon child character in the center who \"reacts\" (stretches, flexes, smiles) based on which group is selected\n\nInteractive controls:\n- Click a food-group icon to select it\n- Button: \"Show Me a Meal\" — displays a simple plate containing one example from each group\n\nDefault parameters:\n- No group selected at start; instructions read \"Tap a food group to see its job!\"\n\nData Visibility Requirements:\n  Stage 1: Show five icons with no explanation\n  Stage 2: On click, show the group name and its one-sentence job (\"Grains give you energy to run and play!\")\n  Stage 3: Show 2-3 example foods for that group\n  Stage 4: The character animation matches the job (flexes for protein, stretches for grains)\n\nBehavior:\n- Clicking a new icon updates the infobox and character animation immediately\n- \"Show Me a Meal\" button highlights one food from each group on a plate graphic to reinforce that a healthy meal uses several groups together\n\nInstructional Rationale: This is an Understand-level (explain/describe) objective, so the design uses direct click-to-reveal information rather than animation for its own sake. Concrete text and example foods are visible at every stage so a teacher can read them aloud.\n\nImplementation notes: Use p5.js. Keep icons large and simple for read-aloud pointing. Ensure text is large enough to read from the front of a classroom."
+}

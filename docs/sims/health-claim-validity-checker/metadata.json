@@ -1,0 +1,22 @@
+{
+  "title": "Health Claim Validity Checker Workflow",
+  "description": "Evaluate a health claim by walking through a decision",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "health-claim-validity-checker",
+  "library": "Mermaid",
+  "bloomLevel": "Evaluate<br/>",
+  "bloomVerb": "judge, validate",
+  "completion_status": "scaffold",
+  "chapter_number": 13,
+  "chapter_title": "Influences on Health Behavior",
+  "chapter_dir": "13-influences-on-health-behavior"
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "feelings-word-match",
+  "diagram_name": "Feelings Word Match",
+  "chapter_number": 3,
+  "chapter_title": "Feelings And Kindness",
+  "chapter_dir": "03-feelings-and-kindness",
+  "chapter_rel_dir": "bands/kindergarten/chapters/03-feelings-and-kindness",
+  "library": "p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "match, recall, identify",
+  "learning_objective": "Students expand their Emotions Vocabulary by matching feeling-word cards to picture cards showing a face with that expression.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** feelings-word-match<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Remember (L1)\nBloom Taxonomy Verb: match, recall, identify\n\nLearning objective: Students expand their Emotions Vocabulary by matching feeling-word cards to picture cards showing a face with that expression.\n\nCanvas layout:\n- Left column (250px): Five picture cards, each showing a simple face expressing one emotion (happy, excited, frustrated, proud, lonely)\n- Right column (250px): Five word cards in scrambled order, each showing one feeling word read aloud by the teacher\n- Bottom strip (60px): Score display (\"4 of 5 matched!\") and a Reset button\n\nVisual elements:\n- Picture cards and word cards both have a distinct pastel background color that is consistent between a matching pair once solved, so children get a visual reward for pairing correctly\n- A connecting line is drawn between matched pairs once solved\n\nInteractive controls:\n- Drag-and-drop or tap-tap-to-connect: child selects a picture card, then selects the word card they think matches\n- Button: \"Reset\" to shuffle and start again\n\nDefault parameters:\n- Cards appear in a shuffled but fixed starting layout for the first play so a teacher can preview it\n- Only 5 pairs shown at once to avoid overwhelming a pre-reader audience\n\nBehavior:\n- When a correct pair is selected, both cards glow gold, a soft chime plays, and a line connects them permanently\n- When an incorrect pair is selected, both cards gently shake and return to their unselected state — no harsh error sound\n- After all 5 pairs are matched, show a celebration message: \"Wow, look at all the feeling words you know!\"\n\nInstructional Rationale: This is a Remember-level (recall/match) objective, so a matching-pairs pattern is appropriate — it reinforces new vocabulary through repetition and visual pairing rather than requiring the child to read or write independently.\n\nImplementation notes: Use p5.js. Store each pair as linked objects with a shared \"pairId.\" Keep all card text large (26px+) and always paired with a picture, since this is a read-aloud/pre-reader audience."
+}

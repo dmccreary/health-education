@@ -1,0 +1,15 @@
+{
+  "sim_id": "buckle-up-and-gear-up",
+  "diagram_name": "Buckle Up and Gear Up",
+  "chapter_number": 5,
+  "chapter_title": "Staying Safe",
+  "chapter_dir": "05-staying-safe",
+  "chapter_rel_dir": "bands/kindergarten/chapters/05-staying-safe",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "practice, demonstrate",
+  "learning_objective": "Students practice matching the correct injury-prevention gear to a given activity, reinforcing the Injury Prevention concept through hands-on drag-and-drop matching.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** buckle-up-and-gear-up<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: practice, demonstrate\n\nLearning objective: Students practice matching the correct injury-prevention gear to a given activity, reinforcing the Injury Prevention concept through hands-on drag-and-drop matching.\n\nCanvas layout: Top area (250px) shows an illustrated child ready for one of three activities (bike, car, stairs). Middle area (150px): three draggable gear icons (helmet, seatbelt, handrail-holding hand). Bottom strip (100px): \"Check\" and \"Reset\" buttons plus score display.\n\nVisual elements: Child illustration changes with the current activity; gear icons are large and simple for small hands to drag.\n\nInteractive controls: Drag-and-drop gear onto the child; \"Check\" confirms; \"Reset\" clears; score display (e.g., \"2 of 3 matched!\").\n\nDefault parameters: Activities cycle bike, car, stairs; correct gear is helmet, seatbelt, handrail respectively.\n\nBehavior: Correct match snaps into place with a chime and infobox (\"Yes! A helmet protects your head while biking.\"). Incorrect match bounces back with an explanation. After all three: \"You know how to gear up and stay safe every time!\"\n\nInstructional Rationale: An Apply-level objective — practicing gear knowledge in specific situations — so hands-on matching with immediate feedback is appropriate, rather than passive viewing.\n\nImplementation notes: p5.js. Each activity is an object with an illustration reference, correct gear id, and explanation string. Captions short enough for one-breath read-aloud."
+}

@@ -1,0 +1,22 @@
+{
+  "title": "World Traditions, Same Nutrients",
+  "description": "Students compare how four cultural food traditions meet the same daily nutrient and energy needs through different staple foods.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "world-traditions-same-nutrients",
+  "library": "Leaflet",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "compare, exemplify, classify",
+  "completion_status": "scaffold",
+  "chapter_number": 2,
+  "chapter_title": "Food and Nutrition",
+  "chapter_dir": "02-food-and-nutrition"
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Belonging Classroom Map</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Belonging Classroom Map</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> belonging-classroom-map</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Students identify visible signs that a classroom character feels a sense of belonging (or does not yet) and describe what caring relationship helped create that feeling.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** belonging-classroom-map<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: identify, describe, infer
+    
+    Learning objective: Students identify visible signs that a classroom character feels a sense of belonging (or does not yet) and describe what caring relationship helped create that feeling.
+    
+    Canvas layout:
+    - Left area (450px): A simple classroom scene with six character icons scattered around tables, the reading corner, and the recess area
+    - Right area (150px): Infobox and a "Show Signs" toggle button
+    
+    Visual elements:
+    - Six character icons, each with a distinct posture/expression: relaxed and smiling (belonging), hesitating at the edge of a group (not yet belonging), etc.
+    - A small "caring connection" line appears between a character and a peer or teacher when selected, if one is shown in the scene
+    
+    Interactive controls:
+    - Click each character icon to reveal their belonging status and why
+    - Button: "Show Signs" (highlights the specific body language/action clue on the selected character)
+    - Button: "Reset"
+    
+    Default parameters:
+    - Scene opens with all six characters visible and unselected
+    
+    Data Visibility Requirements:
+      Stage 1: Show the classroom scene with six characters, no labels
+      Stage 2: After a click, highlight the visible clue (posture, action, or expression)
+      Stage 3: Reveal a one-sentence explanation connecting the clue to belonging or to a caring relationship ("Sam is smiling and sitting with friends — that caring friendship helps Sam feel like they belong.")
+    
+    Behavior:
+    - Each character reveals a short explanation in the infobox when clicked
+    - Encouraging caption appears for "not yet belonging" characters describing one small kind action that could help, e.g., "Inviting Priya to join the game could help her feel like she belongs too."
+    
+    Instructional Rationale: This is an Understand-level (identify/describe) objective, so the MicroSim uses static, clickable scenes with concrete captions rather than continuous animation, letting students infer belonging from visible clues and connect it to a specific caring relationship.
+    
+    Implementation notes: Use p5.js. Keep every character's situation gentle and fixable — no character should look excluded in a distressing way, only in a way that invites a kind next step. Teacher facilitates discussion after each reveal.
+    -->
+</body>
+</html>

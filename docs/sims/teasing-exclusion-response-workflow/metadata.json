@@ -1,0 +1,22 @@
+{
+  "title": "Responding to Teasing and Exclusion — Decision Path",
+  "description": "Students demonstrate the correct sequence of safe, healthy responses when experiencing or witnessing teasing or exclusion.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "teasing-exclusion-response-workflow",
+  "library": "Mermaid",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate, use, practice",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "Mental and Emotional Health",
+  "chapter_dir": "03-mental-emotional-health"
+}

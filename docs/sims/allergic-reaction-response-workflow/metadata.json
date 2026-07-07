@@ -1,0 +1,22 @@
+{
+  "title": "Allergic Reaction Response Workflow",
+  "description": "Students apply the correct sequence of actions for responding to a mild versus a severe allergic reaction.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "allergic-reaction-response-workflow",
+  "library": "Mermaid",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate, use, practice",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Personal Health And Wellness",
+  "chapter_dir": "05-personal-health-and-wellness"
+}

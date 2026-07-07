@@ -1,0 +1,22 @@
+{
+  "title": "Brain Development Timeline Explorer",
+  "description": "Students explain that different brain regions mature at different rates, and describe why the mismatch between an early-maturing reward system and a late-maturing prefrontal cortex makes the adolescent brain more vulnerable to substance effects.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "brain-development-timeline-explorer",
+  "library": "vis-timeline",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, summarize, describe",
+  "completion_status": "scaffold",
+  "chapter_number": 8,
+  "chapter_title": "Substances and the Developing Brain",
+  "chapter_dir": "08-substances-and-the-developing-brain"
+}

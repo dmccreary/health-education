@@ -1,0 +1,15 @@
+{
+  "sim_id": "recognizing-pattern-of-change",
+  "diagram_name": "Recognizing a Pattern of Change",
+  "chapter_number": 4,
+  "chapter_title": "Emotional Well-Being and Mental Health",
+  "chapter_dir": "04-emotional-well-being-and-mental-health",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/04-emotional-well-being-and-mental-health",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, distinguish, differentiate",
+  "learning_objective": "Students analyze short scenario descriptions of a friend's behavior over several weeks and distinguish between an ordinary bad day and a pattern of change that deserves a caring, serious response.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** recognizing-pattern-of-change<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: examine, distinguish, differentiate\n\nLearning objective: Students analyze short scenario descriptions of a friend's behavior over several weeks and distinguish between an ordinary bad day and a pattern of change that deserves a caring, serious response.\n\nLayout: A simple weekly log for a fictional friend (Weeks 1-4), showing short text entries about mood, sleep, and social activity for each week. Below the log, two response options: \"One Bad Day\" and \"A Pattern Worth Caring About.\"\n\nInteractive controls: Student reads the four-week log (populated with one of several pre-written scenario sets, selectable from a dropdown) and clicks the option that best matches; feedback explains why the log does or does not show a lasting pattern, and reinforces that the response either way is the same: notice with care, never with judgment.\n\nDefault parameters: Three to five scenario sets, at least one showing an ordinary rough patch and at least two showing a genuine multi-week pattern.\n\nInstructional Rationale: Distinguishing between a passing hard day and a lasting pattern requires examining information across time, which is Analyze-level; a scenario log with reflection is used instead of a single static snapshot, since the pattern itself is the concept being taught.\n\nImplementation notes: p5.js. Scenario data stored as arrays of weekly entries; dropdown to select scenario set; feedback text stored per scenario. No content in this MicroSim depicts a crisis event itself — only everyday mood, sleep, and social indicators over time."
+}

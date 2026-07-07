@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Safe and Unsafe Behavior Explorer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Safe and Unsafe Behavior Explorer</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> safe-and-unsafe-behavior-explorer</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students distinguish safe from unsafe behaviors across three settings — home, school, and community — by exploring an illustrated scene of each setting.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: infographic
+    **sim-id:** safe-and-unsafe-behavior-explorer<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: distinguish, examine, differentiate
+    
+    Learning objective: Students distinguish safe from unsafe behaviors across three settings — home, school, and community — by exploring an illustrated scene of each setting.
+    
+    Purpose: Help students examine three familiar settings and differentiate between behaviors that are safe and behaviors that are unsafe within each one
+    
+    Layout: Three tabs across the top labeled "Home," "School," and "Community." Each tab opens a simple illustrated scene with 4-5 clickable hotspots showing children doing different things.
+    
+    Scenes to show:
+    - Home: a child washing hands before dinner (safe), a child playing near an unlocked cleaning-supply cabinet (unsafe), a child wearing a helmet while biking in the driveway (safe), a child playing with a lighter found on a table (unsafe)
+    - School: a child walking in the hallway (safe), a child pushing others near the stairs (unsafe), a child raising a hand to leave the room (safe), a child opening an exterior door for a stranger (unsafe)
+    - Community: a child holding an adult's hand crossing the street (safe), a child wandering away from the group at the park (unsafe), a child wearing a helmet while scootering (safe), a child accepting a ride from someone the family doesn't know (unsafe)
+    
+    Interactive elements:
+    - Click each hotspot to reveal a label: "Safe Behavior" or "Unsafe Behavior," plus a one-sentence explanation
+    - A running tally at the top shows how many safe and unsafe behaviors the student has identified in the current scene
+    
+    Visual style: Bright, simple flat-style illustrations with diverse characters; unsafe hotspots glow gently amber when revealed (never anything frightening), safe hotspots glow green
+    Color scheme: Green for safe, amber for unsafe, neutral warm background
+    
+    Implementation: p5.js with clickable regions mapped to label-and-caption reveals; tabs implemented as simple buttons that swap the displayed scene
+    -->
+</body>
+</html>

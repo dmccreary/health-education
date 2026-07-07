@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Escalating vs. De-escalating Language Comparator</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Escalating vs. De-escalating Language Comparator</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> escalating-vs-deescalating-comparator</p>
+            <p><strong>Library:</strong> Chart.js</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Students compare accusatory ("you") language against
+"I"-statement language across realistic conflict scenarios and classify</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: chart
+    
+    **sim-id:** escalating-vs-deescalating-comparator<br/>
+    **Library:** Chart.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy Level: Understand (L2)
+    Bloom Verb: compare, contrast, classify
+    
+    Learning objective: Students compare accusatory ("you") language against
+    "I"-statement language across realistic conflict scenarios and classify
+    which phrasing is more likely to de-escalate a disagreement.
+    
+    Chart type: Paired horizontal bar chart functioning as a classification
+    tool
+    
+    Data Visibility Requirements:
+      Stage 1: Show a bank of 8 paired statement examples (one accusatory
+      version, one "I"-statement version of the same underlying complaint)
+      Stage 2: Student selects, for each pair, which version is more likely to
+      de-escalate
+      Stage 3: Reveal a short explanation naming the specific communication
+      skill (active listening, "I" statement structure, or perspective-taking)
+      that the de-escalating version demonstrates
+      Stage 4: Track a running score across all 8 pairs
+    
+    X-axis: Not applicable — statement pairs are displayed as labeled text
+    cards rather than a plotted numeric axis
+    
+    Interactive features: Clicking a statement card selects it as the
+    student's choice; hovering reveals which communication skill category the
+    statement belongs to before the student commits to an answer
+    
+    Title: "Which Statement Is More Likely to De-escalate the Conflict?"
+    
+    Instructional Rationale: Classifying realistic statement pairs against a
+    defined standard is an Understand-level objective, so paired comparison
+    with revealed explanation is used rather than open-ended chart
+    interpretation, keeping the focus on recognizing the communication
+    pattern rather than on numeric data.
+    
+    Implementation notes: Chart.js used as a structured card-comparison
+    interface rather than a traditional plotted chart; data stored as an array
+    of {accusatory, iStatement, skillDemonstrated, explanation} objects.
+    -->
+</body>
+</html>

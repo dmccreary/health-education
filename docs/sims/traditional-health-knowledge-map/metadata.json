@@ -1,0 +1,22 @@
+{
+  "title": "Traditional Health Knowledge Around the World",
+  "description": "Students describe how different cultures and communities use traditional knowledge to protect the body from the environment, comparing practices across regions.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "traditional-health-knowledge-map",
+  "library": "Leaflet",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "describe, explain, compare",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "Wellness And Activity",
+  "chapter_dir": "03-wellness-and-activity"
+}

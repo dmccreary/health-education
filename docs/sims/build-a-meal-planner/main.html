@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Build-A-Meal Planner</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Build-A-Meal Planner</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> build-a-meal-planner</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Create (L6)</p>
+            <p><strong>Learning Objective:</strong> Students design a nutritious meal by selecting one item from each food category and a drink, then receive feedback on whether their plan is balanced.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** build-a-meal-planner<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Create (L6)
+    Bloom Taxonomy Verb: design, construct, formulate
+    
+    Learning objective: Students design a nutritious meal by selecting one item from each food category and a drink, then receive feedback on whether their plan is balanced.
+    
+    Canvas layout:
+    - Left side (400px): Four category trays — Protein, Grain, Fruit/Vegetable, Drink — each with 5-6 selectable food icons
+    - Right side (250px): The assembled plate showing current selections, plus a feedback panel
+    
+    Visual elements:
+    - A plate graphic in the center-right that fills in with icons as items are chosen
+    - Category trays with icons: Protein (egg, beans, chicken, fish, tofu), Grain (whole-wheat bread, brown rice, oats, tortilla), Fruit/Vegetable (apple, carrot, spinach, orange, broccoli), Drink (water, milk, soda, juice, sports drink)
+    
+    Interactive controls:
+    - Click one icon per category to add it to the plate (clicking a new icon in the same category swaps it)
+    - Button: "Check My Meal" — evaluates the plate against the balanced-meal checklist
+    - Button: "Reset Plate"
+    
+    Default parameters:
+    - Plate starts empty; no pre-selected items
+    
+    Behavior:
+    - "Check My Meal" gives specific feedback: confirms categories that are covered, flags any missing category, and notes if the drink choice was water/milk versus soda/juice
+    - Encouraging tone in feedback text regardless of outcome, with a specific suggestion for improvement if something is missing
+    
+    Instructional Rationale: This is a Create-level objective, so the pattern is an open-ended builder where students assemble their own solution from component parts, rather than a rigid template, matching the "design/construct" verb this concept calls for.
+    
+    Implementation notes: Use p5.js. Store food items as objects with category and tags (e.g., drink tagged as "water-like" or "sugary"); "Check My Meal" runs a rule-based check across the four categories.
+    -->
+</body>
+</html>

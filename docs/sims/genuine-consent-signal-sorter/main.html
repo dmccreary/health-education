@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Genuine Yes or Reluctant Compliance?</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Genuine Yes or Reluctant Compliance?</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> genuine-consent-signal-sorter</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students analyze short described interactions
+(verbal response, body language, tone, and context together) and</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    
+    **sim-id:** genuine-consent-signal-sorter<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy Level: Analyze (L4)
+    Bloom Verb: differentiate, distinguish, examine
+    
+    Learning objective: Students analyze short described interactions
+    (verbal response, body language, tone, and context together) and
+    distinguish genuine, enthusiastic consent from reluctant compliance,
+    silence, or a freeze response.
+    
+    Canvas layout:
+    - Top: a scenario card describing a brief interaction with four
+      observable signals (verbal response, body language, tone, context)
+    - Bottom: two drop zones, "Genuine Yes" and "Not Genuine Consent"
+    
+    Interactive controls:
+    - Drag-and-drop each scenario card into the correct zone
+    - Button: "Check My Sorting"
+    - Button: "Next Scenario"
+    - Button: "Show Reasoning" — reveals which specific signal(s) indicated
+      the correct classification
+    
+    Default parameters: 12 preloaded scenarios spanning physical affection,
+    sharing images, and sharing personal information contexts, including at
+    least three "freeze or silence mistaken for agreement" examples and three
+    "pressure preceded the answer" examples
+    
+    Behavior: correct placements highlight green with the deciding signal
+    underlined; incorrect placements highlight red with the correct signal
+    explained; running score displayed
+    
+    Instructional Rationale: This is an Analyze-level objective requiring
+    students to examine multiple simultaneous signals and distinguish subtle
+    categories (genuine yes vs. freeze vs. reluctant compliance) rather than
+    recall a single rule. Sorting realistic multi-signal scenarios builds
+    that discrimination skill better than a static list of examples would.
+    
+    Implementation notes: p5.js drag-and-drop; store each scenario as a JSON
+    object with four signal fields, correct classification, and explanation
+    text.
+    -->
+</body>
+</html>

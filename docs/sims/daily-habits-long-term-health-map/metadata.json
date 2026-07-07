@@ -1,0 +1,22 @@
+{
+  "title": "Daily Habits and Long-Term Health Concept Map",
+  "description": "Students analyze how five categories of everyday personal behavior connect to and build toward long-term health.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "daily-habits-long-term-health-map",
+  "library": "vis-network",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine, organize, distinguish",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Personal Health And Wellness",
+  "chapter_dir": "05-personal-health-and-wellness"
+}

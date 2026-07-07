@@ -1,0 +1,22 @@
+{
+  "title": "Healthy or Needs Help?",
+  "description": "Students describe the roles of family members and peers in healthy relationships by reading short scenarios and identifying the healthy relationship signs present.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "healthy-relationship-scenario-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "describe, interpret, classify",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Relationships And Respect",
+  "chapter_dir": "05-relationships-and-respect"
+}

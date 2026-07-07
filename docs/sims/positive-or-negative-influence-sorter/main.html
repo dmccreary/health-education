@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Positive or Negative? Influence Sorter</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Positive or Negative? Influence Sorter</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> positive-or-negative-influence-sorter</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students distinguish positive influences from negative influences by sorting simple, everyday scenario cards into two labeled bins, matching the Grade 1 benchmark on which people or situations positively or negatively influence a health behavior.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** positive-or-negative-influence-sorter<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: distinguish, examine, differentiate
+    
+    Learning objective: Students distinguish positive influences from negative influences by sorting simple, everyday scenario cards into two labeled bins, matching the Grade 1 benchmark on which people or situations positively or negatively influence a health behavior.
+    
+    Canvas layout:
+    - Left area (450px): One scenario card at a time, shown as a short sentence with a simple flat illustration
+    - Right area (150px): Two labeled bins, "Positive Influence" and "Negative Influence," plus an infobox
+    
+    Visual elements:
+    - 8 scenario cards cycling one at a time, such as: "A grandparent packs apple slices in your lunch," "A commercial makes candy look like the best snack ever," "A friend invites you to ride bikes after school," "A show makes staying up past bedtime look fun," "A coach reminds the team to drink water," "A friend dares you to skip washing your hands"
+    - Two friendly labeled bins with icons (a sun for "Positive Influence," a cloud for "Negative Influence")
+    
+    Interactive controls:
+    - Click-to-select: student clicks the bin that matches the scenario
+    - Button: "Next Scenario"
+    - Button: "Reset"
+    
+    Default parameters:
+    - First scenario: "A grandparent packs apple slices in your lunch" (clearly positive, to build confidence)
+    
+    Data Visibility Requirements:
+      Stage 1: Show the scenario card with no label
+      Stage 2: After the student clicks a bin, show whether it matches
+      Stage 3: Reveal a one-sentence explanation of why the scenario is a positive or negative influence
+    
+    Behavior:
+    - Correct match: bin glows softly, gentle chime, explanation caption appears
+    - Incorrect match: gentle prompt, "Take another look — does this make a healthy choice easier or harder?", correct bin glows softly as a hint
+    
+    Instructional Rationale: This is an Analyze-level (distinguish/examine) objective, so the MicroSim has students actively sort concrete examples into two categories rather than only reciting definitions, building the pattern-recognition skill needed to notice influences in real life.
+    
+    Implementation notes: Use p5.js. Keep all scenarios everyday and age-appropriate — no mention of substances or mature themes, since this Grade 1 skill focuses on everyday choices like food, activity, sleep, and hygiene.
+    -->
+</body>
+</html>

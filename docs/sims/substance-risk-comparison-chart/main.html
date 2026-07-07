@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Substance Risk Comparison Chart</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Substance Risk Comparison Chart</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> substance-risk-comparison-chart</p>
+            <p><strong>Library:</strong> Chart.js</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students compare and differentiate the documented developmental-brain-risk profile and unpredictability of alcohol, commercial tobacco/nicotine, cannabis, and illegal drugs, reinforcing that unregulated illegal drugs carry the added risk of unknown content and strength.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: chart
+    **sim-id:** substance-risk-comparison-chart<br/>
+    **Library:** Chart.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: compare, examine, differentiate
+    
+    Learning objective: Students compare and differentiate the documented developmental-brain-risk profile and unpredictability of alcohol, commercial tobacco/nicotine, cannabis, and illegal drugs, reinforcing that unregulated illegal drugs carry the added risk of unknown content and strength.
+    
+    Chart type: Horizontal grouped bar chart
+    
+    Purpose: Compare four substance categories across two illustrative, research-informed dimensions — not exact clinical statistics, but relative educational comparisons clearly labeled as such.
+    
+    X-axis: Relative risk rating (Low, Moderate, High, Severe) — plotted as a labeled qualitative scale, not a specific number
+    Y-axis: Substance category (Alcohol, Commercial Tobacco/Nicotine, Cannabis, Illegal Drugs)
+    
+    Data series:
+    1. "Developmental Brain Risk" (blue bars): Alcohol — High; Commercial Tobacco/Nicotine — High; Cannabis — High; Illegal Drugs — Severe
+    2. "Unpredictability/Contamination Risk" (orange bars): Alcohol — Low; Commercial Tobacco/Nicotine — Low; Cannabis — Moderate; Illegal Drugs — Severe
+    
+    Title: "Comparing Substance Risk Categories for a Developing Brain"
+    Legend: top-right, labeled "Developmental Brain Risk" and "Unpredictability/Contamination Risk"
+    
+    Interactive features: Hovering any bar reveals a tooltip with a one- to two-sentence, factual explanation of why that substance received that rating, referencing the brain-science content already covered in the chapter; clicking a substance category label filters the chart to show only that category's two bars enlarged with an expanded infobox.
+    
+    Annotation: A callout near the Illegal Drugs "Unpredictability" bar reads "Illegal drugs are unregulated — contents and strength, including possible fentanyl contamination, cannot be verified."
+    
+    Implementation: Chart.js horizontal bar chart with tooltip callbacks and a custom click-to-filter interaction; responsive canvas via Chart.js responsive:true option. No content in tooltips or annotations describes how to obtain, identify, or use any substance.
+    -->
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "sim_id": "evaluate-the-campaign-microsim",
+  "diagram_name": "Evaluate the Campaign MicroSim",
+  "chapter_number": 5,
+  "chapter_title": "Mental Health and Crisis Support",
+  "chapter_dir": "05-mental-health-and-crisis-support",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/05-mental-health-and-crisis-support",
+  "library": "p5.js",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "critique, assess, justify",
+  "learning_objective": "Students critique short, realistic descriptions of",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n\n**sim-id:** evaluate-the-campaign-microsim<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Evaluate (L5)\nBloom Verb: critique, assess, justify\n\nLearning objective: Students critique short, realistic descriptions of\nmental health awareness campaigns or media portrayals and assess whether\neach is likely to reduce or reinforce stigma, justifying their assessment\nusing the criteria from the chapter text.\n\nCanvas layout:\n- Left (55%): a short description of a fictional awareness campaign or\n  media portrayal (text only, no depiction of crisis content)\n- Right (45%): a rating scale (\"Likely Reduces Stigma\" to \"Likely\n  Reinforces Stigma\") and a text box for the student's justification\n  prompt\n\nData Visibility Requirements:\n  Stage 1: Show campaign/portrayal description and the four evaluation\n  criteria (lived experience, concrete next step, non-sensationalized\n  language, measured outcomes) as reference\n  Stage 2: Student rates the example and selects which criteria it meets\n  or fails\n  Stage 3: Reveal a model assessment with reasoning, allowing comparison\n  to the student's own rating\n  Stage 4: Track how many examples the student has evaluated across a\n  bank of 8\n\nInteractive controls:\n- Rating slider or button set\n- Checkboxes for each of the four criteria\n- Button: \"Reveal Model Assessment\"\n- Button: \"Next Example\"\n\nDefault parameters: Example bank includes both strong and weak campaign\nexamples, text-only, no crisis imagery or scenario content\n\nInstructional Rationale: Critiquing real-world communication artifacts\nagainst defined criteria is an Evaluate-level objective, so a rate-and-\njustify tool with a model-answer comparison is used rather than a simple\nclassification task, matching the media-literacy analytical tone\nappropriate for this closing section.\n\nImplementation notes: p5.js with an object array of {description,\ncriteriaMet, modelAssessment}; strictly text-based scenario content, no\ndepiction of crisis or self-harm."
+}

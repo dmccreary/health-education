@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Recognizing Bias in Everyday Scenarios</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Recognizing Bias in Everyday Scenarios</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> recognizing-bias-scenario-sorter</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students analyze short, realistic classroom scenarios to distinguish between a fair, evidence-based judgment and a biased assumption made with limited information.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** recognizing-bias-scenario-sorter<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: examine, distinguish, differentiate
+    
+    Learning objective: Students analyze short, realistic classroom scenarios to distinguish between a fair, evidence-based judgment and a biased assumption made with limited information.
+    
+    Canvas layout:
+    - Top (400px): A scenario card describing a short classroom situation
+    - Bottom (150px): Two labeled zones, "Fair Judgment" and "Biased Assumption," and one scenario card that the student drags to the correct zone
+    
+    Visual elements:
+    - Neutral scenario icons only (no depictions of specific people's appearance)
+    - A calm color scheme: blue for "Fair Judgment" zone, soft amber for "Biased Assumption" zone (avoid red/wrong-answer coding, since the goal is reflection, not scorekeeping)
+    
+    Interactive controls:
+    - Drag-and-drop scenario card into one of the two zones
+    - Button: "Next Scenario"
+    - Button: "Why?" to reveal an explanation after sorting
+    
+    Default parameters:
+    - 8 scenario cards total, presented one at a time in random order
+    
+    Data Visibility Requirements:
+      Stage 1: Show the full scenario text
+      Stage 2: Show the two sorting zones
+      Stage 3: After sorting, show a calm explanation of why the scenario is a fair judgment (based on direct evidence) or a biased assumption (based on a stereotype or limited information)
+      Final: Show how many scenarios were correctly identified, with an option to review any missed ones
+    
+    Behavior:
+    - Correct sort: brief affirming message plus the explanation
+    - Incorrect sort: gentle correction plus the same explanation, framed as a learning moment rather than a failure
+    
+    Instructional Rationale: This is an Analyze-level objective requiring learners to examine scenarios and distinguish evidence-based judgments from biased assumptions. A sorting interaction with reflection-based feedback (rather than a scored quiz) keeps the tone appropriate for this sensitive topic.
+    
+    Implementation notes: Use p5.js. Keep all scenario text realistic, respectful, and focused on assumptions about ability, interests, or behavior rather than physical appearance or protected characteristics, to keep content classroom-appropriate for this age group.
+    -->
+</body>
+</html>

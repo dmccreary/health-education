@@ -1,0 +1,22 @@
+{
+  "title": "Safe or Unsafe? School and Community Scenes",
+  "description": "Students distinguish safe behaviors from unsafe behaviors across home, school, and community settings, and identify when a scene calls for telling a trusted adult.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "safe-or-unsafe-scenes",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "distinguish, examine, differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "Foundations of Health and Safe Habits",
+  "chapter_dir": "01-foundations"
+}

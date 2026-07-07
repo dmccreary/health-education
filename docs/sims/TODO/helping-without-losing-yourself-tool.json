@@ -1,0 +1,15 @@
+{
+  "sim_id": "helping-without-losing-yourself-tool",
+  "diagram_name": "Helping Without Losing Yourself Decision Tool",
+  "chapter_number": 5,
+  "chapter_title": "Mental Health and Crisis Support",
+  "chapter_dir": "05-mental-health-and-crisis-support",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/05-mental-health-and-crisis-support",
+  "library": "Mermaid",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "distinguish, examine, differentiate",
+  "learning_objective": "Students distinguish healthy peer-support boundaries",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n\n**sim-id:** helping-without-losing-yourself-tool<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: distinguish, examine, differentiate\n\nLearning objective: Students distinguish healthy peer-support boundaries\nfrom unsustainable or inappropriate ones, and examine when a helper should\ninvolve additional adult or professional support for their own sake as\nwell as their friend's.\n\nVisual style: Mermaid flowchart, top-to-bottom, click handlers on every\nnode\n\nNodes (all clickable):\n1. \"You Are Supporting a Friend's Ongoing Mental Health Challenge\" — click\n   text: \"This applies to ongoing support, distinct from an acute safety\n   crisis, which always requires immediate adult or 988 involvement\"\n2. \"Are You Being Asked to Keep a Safety Risk Secret?\" (decision diamond) —\n   click text: \"This boundary is never optional — a safety secret is\n   always shared with a trusted adult\"\n3a. \"Yes\" → \"Tell a Trusted Adult, Regardless of the Promise\" — click\n   text: \"This protects your friend's safety and your own wellbeing\"\n3b. \"No\" → \"Is This Affecting Your Own Sleep, Mood, or Schoolwork?\" — click\n   text: \"Noticing this in yourself is not a sign you are a bad friend —\n   it is a sign you need support too\"\n4a. From 3b, \"Yes\" → \"Tell Your Own Trusted Adult and Set Limits\" — click\n   text: \"Setting a limit on your own availability does not mean you have\n   abandoned your friend\"\n4b. From 3b, \"No\" → \"Continue Supportive Listening and Encourage\n   Professional Help\" — click text: \"Ongoing encouragement toward\n   professional care remains the goal even when things feel manageable\"\n5. Shared end node \"Friend Is Connected to Appropriate Support, and You\n   Remain Well\" — click text: \"A sustainable support role protects both\n   people, not just one\"\n\nConnections: 1→2, 2→3a, 2→3b, 3b→4a, 3b→4b, 3a→5, 4a→5, 4b→5\n\nColor coding: gold for decision diamonds, blue for process steps, green\nfor the shared end node\n\nInteractive features: click any node for its infobox\n\nImplementation: Mermaid.js flowchart with JavaScript click bindings to a\ncustom showInfo() function"
+}

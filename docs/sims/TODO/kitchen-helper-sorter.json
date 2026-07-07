@@ -1,0 +1,15 @@
+{
+  "sim_id": "kitchen-helper-sorter",
+  "diagram_name": "Kitchen Helper Sorting Game",
+  "chapter_number": 2,
+  "chapter_title": "Food, Drinks, and Staying Safe in the Kitchen",
+  "chapter_dir": "02-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-1/chapters/02-food-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "classify, explain, distinguish",
+  "learning_objective": "Students classify kitchen tasks as \"safe for me to help with\" or \"grown-up-only job,\" and explain why each grown-up-only job needs an adult.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** kitchen-helper-sorter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: classify, explain, distinguish\n\nLearning objective: Students classify kitchen tasks as \"safe for me to help with\" or \"grown-up-only job,\" and explain why each grown-up-only job needs an adult.\n\nCanvas layout:\n- Top area (150px): One kitchen task picture card at a time (washing vegetables, stirring a bowl, using the stove, cutting with a knife, setting the table, taking a hot pan out of the oven)\n- Middle area (250px): Two bins: \"I Can Help\" (green) and \"Grown-Up Job\" (orange)\n- Bottom strip (100px): Explanation caption and \"Next Task\" button\n\nVisual elements:\n- 8 kitchen task cards cycling one at a time, calm and non-graphic (no depictions of injury)\n\nInteractive controls:\n- Click-to-place or drag-and-drop: place the card in the correct bin\n- Button: \"Next Task\"\n- Button: \"Reset\"\n\nDefault parameters:\n- First card: washing vegetables (clearly a task the student can help with, to build confidence)\n\nBehavior:\n- Correct placement: bin glows, gentle chime, one-sentence reason appears (\"Hot stoves can burn skin, so this is always a grown-up's job.\")\n- Incorrect placement: gentle, non-scary prompt, \"Look again — could this task get too hot or too sharp for kids?\"\n\nInstructional Rationale: This is an Understand-level (classify/explain) objective, so each answer reveals a plain, practical reason rather than a scary warning, framing food preparation safety as everyday kitchen rules rather than danger content.\n\nImplementation notes: Use p5.js. Keep every task illustration calm, friendly, and non-graphic. Tone should stay plainly practical, matching the project's rule that food safety content should never feel frightening."
+}

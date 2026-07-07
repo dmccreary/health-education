@@ -1,0 +1,22 @@
+{
+  "title": "Food Safety Danger Zone Timeline",
+  "description": "Students examine a timed food-handling scenario to distinguish safe time windows from \"danger zone\" risk periods and identify where a food safety practice would have prevented risk.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "food-safety-danger-zone-timeline",
+  "library": "vis-timeline",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine, differentiate, distinguish",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Sleep, Fitness, and Emergency Response",
+  "chapter_dir": "06-sleep-fitness-and-emergency-response"
+}

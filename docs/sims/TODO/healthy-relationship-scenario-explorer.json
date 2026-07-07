@@ -1,0 +1,15 @@
+{
+  "sim_id": "healthy-relationship-scenario-explorer",
+  "diagram_name": "Healthy or Needs Help?",
+  "chapter_number": 5,
+  "chapter_title": "Relationships And Respect",
+  "chapter_dir": "05-relationships-and-respect",
+  "chapter_rel_dir": "bands/grade-3/chapters/05-relationships-and-respect",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "describe, interpret, classify",
+  "learning_objective": "Students describe the roles of family members and peers in healthy relationships by reading short scenarios and identifying the healthy relationship signs present.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** healthy-relationship-scenario-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: describe, interpret, classify\n\nLearning objective: Students describe the roles of family members and peers in healthy relationships by reading short scenarios and identifying the healthy relationship signs present.\n\nCanvas layout:\n- Left side (400px): One scenario card at a time, shown as simple illustrated text (e.g., \"Maya's brother helps her with homework and says sorry when he snaps at her.\")\n- Right side (200px): Four checkbox-style options representing healthy relationship signs (listening, honesty, apology and repair, support) plus a \"Show Answer\" button\n\nVisual elements:\n- Scenario illustration with two simple characters\n- Checkboxes that light up green when correctly identified\n\nInteractive controls:\n- Click the checkboxes that apply to the current scenario\n- Button: \"Show Answer\"\n- Button: \"Next Scenario\"\n\nDefault parameters:\n- Begins on scenario 1 of 5 with no checkboxes selected\n\nData Visibility Requirements:\n  Stage 1: Show the scenario text/illustration and four unmarked checkboxes\n  Stage 2: After the student selects checkboxes and clicks \"Show Answer,\" reveal which signs truly applied with a one-sentence explanation for each\n  Stage 3: \"Next Scenario\" loads a new short scenario, resetting the checkboxes\n\nBehavior:\n- Correct selections turn green with a brief explanation\n- Missed or incorrect selections are gently highlighted with the correct reasoning\n- After all five scenarios, a \"Relationship Detective!\" caption appears\n\nInstructional Rationale: This is an Understand-level objective (describe, interpret), so the design uses short worked scenarios with concrete, visible reasoning rather than an animated simulation, helping students connect the abstract \"signs of healthy relationships\" list to real situations.\n\nImplementation notes: Use p5.js. Keep scenarios warm, age-appropriate, and free of any physical danger content — this MicroSim addresses everyday friendship and family situations, not abuse or crisis situations. This MicroSim is the direct student-facing practice activity for this K-3 band."
+}

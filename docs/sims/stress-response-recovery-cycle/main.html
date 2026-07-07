@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Stress Response and Recovery Cycle</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Stress Response and Recovery Cycle</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> stress-response-recovery-cycle</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Apply (L3)</p>
+            <p><strong>Learning Objective:</strong> Students apply a restorative practice to a simulated stress scenario and observe how a simple body-based measure (a simplified stress-level indicator, not a real biometric) responds differently depending on which practice is chosen.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** stress-response-recovery-cycle<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Apply (L3)
+    Bloom Taxonomy Verb: apply, demonstrate, practice
+    
+    Learning objective: Students apply a restorative practice to a simulated stress scenario and observe how a simple body-based measure (a simplified stress-level indicator, not a real biometric) responds differently depending on which practice is chosen.
+    
+    Canvas layout: Left side (450px) shows a simplified stress-level gauge (0-100, starting at a stressed value like 75) with a short scenario description above it. Right side (150px) shows practice-selection buttons.
+    
+    Visual elements: A gauge or bar showing "Stress Level," a scenario text box, five buttons representing restorative practices (Deep Breathing, Walk, Journaling, Talk to Someone, Consistent Sleep).
+    
+    Interactive controls: Buttons for each restorative practice; a "New Scenario" button to load a different stress scenario; a "Reset" button.
+    
+    Default parameters: Starting stress level of 75 out of 100; five practice buttons each reduce the gauge by a modest, realistic amount (10-20 points) over a short step-through animation, not an instant jump.
+    
+    Data Visibility Requirements: Stage 1 shows the scenario and starting stress level; Stage 2 shows the student's practice choice; Stage 3 shows the gauge decreasing in a labeled, stepped animation with a caption naming what is physically happening (e.g., "Heart rate slowing"); Final stage shows the new stress level and a one-sentence explanation of why that practice helped.
+    
+    Instructional Rationale: Applying a chosen strategy and observing its effect is Apply-level, so a step-through interaction with a visible, labeled gauge is used instead of an abstract animation, keeping the connection between action and effect concrete.
+    
+    Implementation notes: p5.js. Scenario and practice-effect data stored as objects; gauge implemented as a simple animated rectangle or arc; responsive to window resize.
+    -->
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "sim_id": "20-second-scrub-timer",
+  "diagram_name": "20-Second Scrub Timer",
+  "chapter_number": 4,
+  "chapter_title": "Staying Healthy Every Day",
+  "chapter_dir": "04-staying-healthy",
+  "chapter_rel_dir": "bands/kindergarten/chapters/04-staying-healthy",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "practice, demonstrate",
+  "learning_objective": "Students practice the Handwashing routine by following along with a step-by-step, timed scrubbing sequence, reinforcing correct order and duration.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** 20-second-scrub-timer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: practice, demonstrate\n\nLearning objective: Students practice the Handwashing routine by following along with a step-by-step, timed scrubbing sequence, reinforcing correct order and duration.\n\nCanvas layout:\n- Top area (300px): A large friendly illustration of two cartoon hands being washed, with soap bubbles that increase as the timer runs\n- Middle area (100px): A circular 20-second countdown ring that fills with color as time passes\n- Bottom strip (100px): Large \"Start Scrubbing!\" button and a Reset button\n\nVisual elements:\n- Five numbered step icons (wet, soap, scrub, rinse, dry) displayed left to right, each lighting up in sequence as the sim progresses\n- Bubble animation increases during the \"scrub\" step\n\nInteractive controls:\n- Button: \"Start Scrubbing!\" begins the timed sequence\n- Button: \"Reset\" returns to the beginning\n- Display: countdown ring and current step label read aloud by the teacher\n\nDefault parameters:\n- Timer length: 20 seconds for the scrub step\n- Steps advance automatically at realistic intervals (wet: 2s, soap: 2s, scrub: 20s, rinse: 3s, dry: 3s)\n\nBehavior:\n- When \"Start Scrubbing!\" is clicked, hands animate through each step while the step icon glows and a short label appears (\"Now we scrub!\")\n- A cheerful chime plays at the end of the full sequence\n- A celebration message appears: \"Clean hands, healthy you! You scrubbed for the full 20 seconds.\"\n\nInstructional Rationale: This is an Apply-level objective — children are practicing performing a real multi-step routine — so a step-through sequence with a visible timer is appropriate. Continuous unstructured animation would not reinforce the correct order or duration, which are the actual learning targets.\n\nImplementation notes: Use p5.js. Represent the five steps as an ordered array with durations and labels. Keep all on-screen text large (26px+) and pair every step with an icon for pre-reader accessibility."
+}

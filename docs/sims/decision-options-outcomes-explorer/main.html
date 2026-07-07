@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Decision Options and Outcomes Explorer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Decision Options and Outcomes Explorer</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> decision-options-outcomes-explorer</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Students describe two or more options for a health-related decision and the likely outcome of each option.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** decision-options-outcomes-explorer<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: describe, explain, compare
+    
+    Learning objective: Students describe two or more options for a health-related decision and the likely outcome of each option.
+    
+    Canvas layout:
+    - Top area (100px): A health-related scenario prompt selectable from a dropdown (e.g., "You are offered a sugary drink at a party," "A friend wants you to skip washing hands before snack," "You are choosing how to spend recess time")
+    - Middle area (280px): Two or three option cards displayed side by side, each with a "Show Outcome" button beneath it
+    - Bottom area (120px): Outcome panel showing the result text for the most recently clicked option
+    
+    Interactive controls:
+    - Dropdown: Select scenario (3 total)
+    - Button under each option card: "Show Outcome"
+    - Button: "Compare All Outcomes" (reveals all outcome text at once, side by side)
+    - Button: "Reset"
+    
+    Default parameters:
+    - Scenario: "You are offered a sugary drink at a party"
+    - Options shown: "Drink it," "Ask for water instead," "Have a little of both"
+    - No outcome revealed yet
+    
+    Data Visibility Requirements:
+      Stage 1: Show scenario and unopened option cards, no outcomes visible
+      Stage 2: Student clicks "Show Outcome" under "Drink it" -- panel shows "Tastes exciting now, but a lot of sugar can lead to a stomachache or low energy later."
+      Stage 3: Student clicks "Show Outcome" under "Ask for water instead" -- panel shows "Less exciting in the moment, but your body feels steady afterward."
+      Stage 4: Student clicks "Compare All Outcomes" -- all outcome texts appear together so the student can weigh them side by side
+    
+    Behavior:
+    - Every option always has a described outcome, calm and non-judgmental in tone -- no option is framed as "bad," only as leading to a different result
+    - Switching scenarios resets revealed outcomes
+    
+    Instructional Rationale: This is an Understand-level objective ("describe options and potential outcomes"), so the design emphasizes step-through data visibility of concrete outcome text for each option rather than animation, letting students compare real outcome language side by side.
+    
+    Implementation notes: Use p5.js. Keep all outcome language balanced and non-judgmental; avoid depicting any option as shameful.
+    -->
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "sim_id": "recovery-supports-network-map",
+  "diagram_name": "Recovery Supports Network Map",
+  "chapter_number": 10,
+  "chapter_title": "Substance Use Disorder, Recovery, and Policy",
+  "chapter_dir": "10-substance-use-disorder-recovery-and-policy",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/10-substance-use-disorder-recovery-and-policy",
+  "library": "vis-network",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "organize, examine, distinguish",
+  "learning_objective": "Students examine how clinical treatment and community/cultural recovery supports connect and reinforce each other, organizing the relationship between distinct support types and a shared recovery outcome.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n**sim-id:** recovery-supports-network-map<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: organize, examine, distinguish\n\nLearning objective: Students examine how clinical treatment and community/cultural recovery supports connect and reinforce each other, organizing the relationship between distinct support types and a shared recovery outcome.\n\nNode types: Central node \"A Person In Recovery\" (green circle). Support nodes (blue squares): Peer Support Groups, Indigenous And Cultural Healing Practices, Family-Based Support, Faith And Community Organizations, Clinical Treatment (linking back to the Treatment Pathway Explorer content). Outcome node (gold circle): \"Stronger, Lasting Recovery.\"\n\nEdge types: \"Supports\" (solid green arrows from each support node to the central \"A Person In Recovery\" node). \"Contributes To\" (solid gold arrows from the central node to the outcome node).\n\nLayout: Central node in the middle, five support nodes arranged around it in a ring, shared outcome node positioned prominently below.\n\nInteractive features: Hover any node for its label; click a support node to open an infobox with two to three factual, hopeful sentences describing that support type and its documented role in recovery; click the central node for an infobox noting that most people combine more than one support type; click the outcome node for an infobox affirming that recovery is a realistic, achievable outcome; zoom with mouse wheel, pan by dragging background.\n\nLegend: Color/shape key distinguishing the central node, support types, and the outcome node.\n\nImplementation: vis-network JavaScript library; canvas responsive, default 800x500px. Content note: every support-type description is specific and affirming, avoiding generic or token references to culture or faith."
+}

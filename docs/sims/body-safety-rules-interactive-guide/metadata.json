@@ -1,0 +1,22 @@
+{
+  "title": "Body Safety Rules Interactive Guide",
+  "description": "Students explain the three core body-safety rules (my body belongs to me, I can say no, I always tell a trusted adult) by exploring a calm, simple interactive guide.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "body-safety-rules-interactive-guide",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, describe, recognize",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Staying Safe at Home, School, and Online",
+  "chapter_dir": "06-personal-safety"
+}

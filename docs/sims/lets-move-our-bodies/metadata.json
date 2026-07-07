@@ -1,0 +1,22 @@
+{
+  "title": "Let's Move Our Bodies!",
+  "description": "Students explain why daily movement helps the body feel good and stay healthy by following along with a simple animated character performing different movement activities and seeing a \"happy energy\" meter respond.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "lets-move-our-bodies",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, demonstrate",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Staying Healthy Every Day",
+  "chapter_dir": "04-staying-healthy"
+}

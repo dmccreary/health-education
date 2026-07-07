@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Food System to Chronic Disease Pathway</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Food System to Chronic Disease Pathway</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> food-system-disease-pathway</p>
+            <p><strong>Library:</strong> Mermaid</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> TBD</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: workflow
+    
+    **sim-id:** food-system-disease-pathway<br/>
+    **Library:** Mermaid<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy Level: Analyze (L4)
+    Bloom Verb: examine, distinguish
+    
+    Purpose: Show how upstream food-system factors connect to downstream
+    chronic-disease risk through a chain of intermediate conditions, with
+    every node clickable for an explanation grounded in evidence.
+    
+    Visual style: Mermaid flowchart, top-to-bottom, with click handlers on
+    every node
+    
+    Nodes (all must have `click NodeId call showInfo("term")` handlers
+    mapped to an infobox):
+    1. "Food System Structure" — hover/click text: "How food is grown,
+       distributed, priced, and marketed in a region"
+    2. "Grocery Store Density" — click text: "Number of full-service grocery
+       stores relative to population in a given area"
+    3. "Food Desert" — click text: "An area with limited access to
+       affordable, nutritious food, especially fresh produce"
+    4. "Relative Cost of Processed vs. Fresh Food" — click text: "Processed,
+       shelf-stable food is frequently cheaper per calorie than fresh produce"
+    5. "Household Food Choices Under Constraint" — click text: "Choices
+       families make when balancing cost, time, and access, not solely
+       preference"
+    6. "Dietary Pattern Over Time" — click text: "Cumulative years of intake
+       patterns, not any single meal"
+    7. "Chronic Disease Risk (Type 2 Diabetes, Hypertension, Cardiovascular
+       Disease)" — click text: "Long-term elevated risk linked to sustained
+       dietary patterns shaped by the factors above"
+    
+    Connections: linear chain 1→2→3→4→5→6→7, with a side branch from node 2
+    directly to node 5 labeled "Direct access effect" to show that access
+    alone (not just price) independently constrains choice
+    
+    Color coding: blue for structural/systemic nodes (1-4), orange for
+    individual/household nodes (5-6), red for the health outcome node (7)
+    
+    Interactive features: click any node for its infobox; hover any edge
+    label for a one-line description of the mechanism it represents
+    
+    Implementation: Mermaid.js flowchart with JavaScript click bindings to a
+    custom showInfo() function rendering a side panel
+    -->
+</body>
+</html>

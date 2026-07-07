@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>My Healthy Habits Tracker</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>My Healthy Habits Tracker</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> my-healthy-habits-tracker</p>
+            <p><strong>Library:</strong> Chart.js</p>
+            <p><strong>Bloom Level:</strong> Apply (L3)</p>
+            <p><strong>Learning Objective:</strong> Students demonstrate and track practices and behaviors that support health and wellbeing by checking off a simple weekly habit tracker and watching a bar chart grow, matching the Grade 1 benchmark on demonstrating and tracking health-supporting practices.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** my-healthy-habits-tracker<br/>
+    **Library:** Chart.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Apply (L3)
+    Bloom Taxonomy Verb: demonstrate, practice, track
+    
+    Learning objective: Students demonstrate and track practices and behaviors that support health and wellbeing by checking off a simple weekly habit tracker and watching a bar chart grow, matching the Grade 1 benchmark on demonstrating and tracking health-supporting practices.
+    
+    Canvas layout:
+    - Left area (450px): A 7-day-by-4-habit checklist grid (rows: "Brushed Teeth," "Drank Water," "Active Play," "Ate a Fruit or Vegetable"; columns: Monday through Sunday)
+    - Right area (150px): A live-updating bar chart showing total check marks per habit, plus an infobox
+    
+    Visual elements:
+    - Checklist grid with clickable checkboxes for each day/habit cell
+    - A bar chart with one bar per habit, height matching how many days that habit was checked this week
+    - A friendly weekly total counter ("You tracked 18 healthy habits this week!")
+    
+    Interactive controls:
+    - Click-to-toggle: student clicks a checkbox to mark a habit complete for a day
+    - Button: "New Week" (clears the grid to start tracking again)
+    - Hover on any bar to see the exact count and which days were checked
+    
+    Default parameters:
+    - All checkboxes start unchecked
+    - Chart updates immediately as boxes are checked
+    
+    Data Visibility Requirements:
+      Stage 1: Show the empty checklist grid and a bar chart with all bars at zero
+      Stage 2: Show a bar grow immediately each time a checkbox is clicked
+      Stage 3: Show the weekly total counter update with each new check mark
+    
+    Behavior:
+    - Every checkbox click immediately updates the corresponding bar in the chart, giving instant visible feedback
+    - Hovering a bar shows a tooltip with the exact number of days checked, reinforcing that hovering reveals more detail
+    
+    Instructional Rationale: This is an Apply-level (demonstrate/track) objective, so the MicroSim has students actively practice the real skill of tracking — checking boxes and watching a chart respond — rather than only reading about the idea of tracking, which directly rehearses the benchmark's call for demonstration.
+    
+    Implementation notes: Use Chart.js for the live bar chart paired with a simple HTML/CSS checklist grid. Teacher can use this as a model before students start a paper or take-home version of the same weekly tracker.
+    -->
+</body>
+</html>

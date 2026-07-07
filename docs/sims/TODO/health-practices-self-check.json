@@ -1,0 +1,15 @@
+{
+  "sim_id": "health-practices-self-check",
+  "diagram_name": "Health Practices Self-Check",
+  "chapter_number": 8,
+  "chapter_title": "Communication And Goals",
+  "chapter_dir": "08-communication-and-goals",
+  "chapter_rel_dir": "bands/grade-3/chapters/08-communication-and-goals",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, organize, compare",
+  "learning_objective": "Students examine a set of everyday health-supporting practices across multiple health categories and identify which ones they already do well and which they might want to improve.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** health-practices-self-check<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: examine, organize, compare\n\nLearning objective: Students examine a set of everyday health-supporting practices across multiple health categories and identify which ones they already do well and which they might want to improve.\n\nCanvas layout: A grid of eight practice cards spanning categories from across the book (Eating balanced meals, Staying active, Getting enough sleep, Washing hands, Using safety gear, Talking about feelings, Being kind to others, Following family safety plans). Each card has a simple three-option selector: \"Going Well,\" \"Could Improve,\" \"Not Sure.\"\n\nInteractive controls: Click a rating on each card; a \"See My Summary\" button.\n\nData Visibility Requirements: After all eight cards are rated, \"See My Summary\" displays a simple non-graded summary such as \"You marked 5 practices as Going Well and 2 as Could Improve,\" and highlights the \"Could Improve\" cards as candidates for a personal health goal.\n\nInstructional Rationale: Analyze-level objective requiring students to organize and compare their own practices across categories, so a self-rating grid with a reflective summary is appropriate — this is a private reflection tool, not a scored quiz.\n\nImplementation notes: Use p5.js. Keep the tone entirely non-judgmental; there is no \"wrong\" self-rating. This tool works well paired directly with the My Health Goal Planner MicroSim above."
+}

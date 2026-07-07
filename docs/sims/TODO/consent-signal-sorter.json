@@ -1,0 +1,15 @@
+{
+  "sim_id": "consent-signal-sorter",
+  "diagram_name": "Consent Signal Sorter",
+  "chapter_number": 6,
+  "chapter_title": "Personal Safety And Violence Prevention",
+  "chapter_dir": "06-personal-safety-and-violence-prevention",
+  "chapter_rel_dir": "bands/grade-5/chapters/06-personal-safety-and-violence-prevention",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "classify, interpret, distinguish",
+  "learning_objective": "Students classify everyday statements as showing real consent or not, reinforcing that consent must be freely given, specific, and reversible.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** consent-signal-sorter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: classify, interpret, distinguish\n\nLearning objective: Students classify everyday statements as showing real consent or not, reinforcing that consent must be freely given, specific, and reversible.\n\nCanvas layout: Left (450px) a deck of 10 statement cards; right (200px) two bins, \"Real Consent\" and \"Not Real Consent,\" plus a feedback panel.\n\nVisual elements: Statement cards such as \"Sure, you can borrow my pencil,\" \"Fine, take the picture, just stop asking me over and over,\" \"...I guess, whatever\" (walking away upset).\n\nInteractive controls: Click each card into the correct bin; \"Check My Sorting\" reveals correct/incorrect with a reason; \"New Round\" loads a new set of 10.\n\nBehavior: \"Sure, you can borrow my pencil\" sorts as Real Consent (\"Freely given, clear yes\"). \"Fine, take the picture, just stop asking\" sorts as Not Real Consent (\"Worn down by repeated pressure isn't free consent\").\n\nInstructional Rationale: Understand-level objective requiring interpretation of realistic phrasing, so the pattern is classification with concrete examples.\n\nImplementation notes: p5.js; statement objects with text, correct classification, and reason string."
+}

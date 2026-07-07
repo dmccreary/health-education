@@ -1,0 +1,15 @@
+{
+  "sim_id": "helper-or-not-sorting-health-influences",
+  "diagram_name": "Helper or Not? Sorting Health Influences",
+  "chapter_number": 6,
+  "chapter_title": "Making Healthy Choices",
+  "chapter_dir": "06-health-choices",
+  "chapter_rel_dir": "bands/kindergarten/chapters/06-health-choices",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "distinguish, sort, compare",
+  "learning_objective": "Students distinguish a positive health influence from a negative health influence by sorting illustrated scenario cards into two labeled bins, directly supporting benchmark 0.7.2.1.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** helper-or-not-sorting-health-influences<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: distinguish, sort, compare\n\nLearning objective: Students distinguish a positive health influence from a negative health influence by sorting illustrated scenario cards into two labeled bins, directly supporting benchmark 0.7.2.1.\n\nCanvas layout: Top area (250px) shows one scenario card at a time (e.g., a grown-up handing over a banana snack, a friend reminding you to wear a bike helmet, food left out and looking spoiled, a friend saying \"let's skip washing hands\"). Bottom area (200px): two bins, \"Helps My Health\" (green, sun icon) and \"Hurts My Health\" (gray, cloud icon). Bottom strip (50px): score display and Reset button.\n\nVisual elements: 6 scenario cards cycling one at a time, split 3 positive and 3 negative; bins glow when a card is dragged over them.\n\nInteractive controls: Drag-and-drop the card into the matching bin; Reset button; \"Next Scenario\" button after each placement.\n\nDefault parameters: First scenario is a grown-up offering a piece of fruit (Helps My Health); scenarios appear in a fixed, teacher-predictable order.\n\nBehavior: Correct placement glows green with a chime and rising score, plus a one-line infobox (\"Yes! A trusted adult offering fruit helps your health.\"). Incorrect placement slides back with a friendly explanation. After all 6: \"You know how to spot things that help your health and things that don't!\"\n\nInstructional Rationale: An Analyze-level objective because the child must examine a scenario and distinguish its category. Immediate, forgiving feedback with a spoken infobox keeps this appropriate for a pre-reader while requiring a genuine comparison judgment.\n\nImplementation notes: p5.js. Each scenario is an object with an illustration reference, correct category, and explanation string. Captions are one short, read-aloud sentence. No scary or graphic imagery — keep all \"negative\" examples mild and age-appropriate (spoiled food, skipped handwashing, skipped helmet)."
+}

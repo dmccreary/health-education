@@ -1,0 +1,22 @@
+{
+  "title": "Sugar Crash Story",
+  "description": "Students describe why limiting caffeinated and sugary drinks matters by interpreting a simple energy-over-time line chart comparing a sugary drink to water.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "sugar-crash-line-chart",
+  "library": "Chart.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "describe, explain, interpret",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Food And Nutrition",
+  "chapter_dir": "04-food-and-nutrition"
+}

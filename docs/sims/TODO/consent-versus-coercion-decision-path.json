@@ -1,0 +1,15 @@
+{
+  "sim_id": "consent-versus-coercion-decision-path",
+  "diagram_name": "Consent Versus Coercion Decision Path",
+  "chapter_number": 2,
+  "chapter_title": "Relationships, Boundaries, and Consent",
+  "chapter_dir": "02-relationships-boundaries-and-consent",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/02-relationships-boundaries-and-consent",
+  "library": "Mermaid",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "differentiate, examine, distinguish",
+  "learning_objective": "Students trace a request through a decision path to differentiate a consent-respecting response from a coercive one, based on how a \"no\" or hesitation is handled.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n**sim-id:** consent-versus-coercion-decision-path<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: differentiate, examine, distinguish\n\nLearning objective: Students trace a request through a decision path to differentiate a consent-respecting response from a coercive one, based on how a \"no\" or hesitation is handled.\n\nVisual style: Mermaid flowchart — start node (\"A Request Is Made\"), decision diamond (\"How Is a No or Hesitation Handled?\"), two branching outcome paths.\n\nSteps: (1) Start node, click reveals requests themselves are normal; (2) decision diamond, click reveals this moment determines the outcome; (3a) \"Consent\" branch, click reveals the answer is accepted without argument; (3b) \"Coercion\" branch, click reveals the answer is challenged or overridden; (4) end nodes \"Healthy Interaction\" and \"Warning Sign,\" each with a one-line takeaway.\n\nEvery node must have a Mermaid `click` directive calling an infobox function.\n\nColor coding: Green for the consent branch, orange/red for the coercion branch, neutral blue for shared starting nodes.\n\nImplementation: Mermaid flowchart syntax with `click NodeId call showInfo(\"key\")` for every node; infobox text in a JS lookup object."
+}

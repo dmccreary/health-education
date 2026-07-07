@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Who Can I Ask?</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Who Can I Ask?</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> who-can-i-ask-support-network</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Apply (L3)</p>
+            <p><strong>Learning Objective:</strong> Students identify trusted adults and practice using the skill of asking for help with body changes by exploring a support-network map centered on themselves.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: graph-model
+    **sim-id:** who-can-i-ask-support-network<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Apply (L3)
+    Bloom Taxonomy Verb: use, identify, demonstrate
+    
+    Learning objective: Students identify trusted adults and practice using the skill of asking for help with body changes by exploring a support-network map centered on themselves.
+    
+    Purpose: Show students a visual "map" of the trusted adults available to them for body-change questions, reinforcing that help is close by and that asking is always the right move.
+    
+    Node types:
+    1. Center node: "Me" (soft yellow circle)
+    2. Trusted adult nodes (soft blue circles) connected directly to "Me": Parent/Guardian, School Nurse, Teacher, Counselor, Doctor, Another Trusted Family Member
+    
+    Edge types:
+    - Single line connecting "Me" to each trusted adult, labeled with how that adult can help (e.g., "Can answer questions at home," "Can help at school," "Knows about bodies and health")
+    
+    Layout: Radial/hub layout with "Me" in the center and trusted adult nodes arranged around it
+    
+    Interactive features:
+    - Click any trusted adult node to reveal an infobox: who this person is, and one example question a student could ask them about body changes
+    - Click the center "Me" node to reveal the reminder: "You can ask more than one trusted adult, and you can ask the same question more than once."
+    - Drag nodes to rearrange the network; zoom and pan supported
+    
+    Visual styling: Warm, friendly color palette (soft yellow center, soft blue trusted-adult nodes); simple circle shapes, no realistic depictions of people
+    
+    Legend: Explains that the yellow center node represents the student, and blue nodes represent trusted adults who can help with questions about growing up
+    
+    Implementation: vis-network with click-to-reveal infobox panels; no anatomical content anywhere in this diagram — it is purely a support-network map.
+    -->
+</body>
+</html>

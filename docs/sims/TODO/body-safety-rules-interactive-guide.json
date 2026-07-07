@@ -1,0 +1,15 @@
+{
+  "sim_id": "body-safety-rules-interactive-guide",
+  "diagram_name": "Body Safety Rules Interactive Guide",
+  "chapter_number": 6,
+  "chapter_title": "Staying Safe at Home, School, and Online",
+  "chapter_dir": "06-personal-safety",
+  "chapter_rel_dir": "bands/grade-1/chapters/06-personal-safety",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, describe, recognize",
+  "learning_objective": "Students explain the three core body-safety rules (my body belongs to me, I can say no, I always tell a trusted adult) by exploring a calm, simple interactive guide.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** body-safety-rules-interactive-guide<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, describe, recognize\n\nLearning objective: Students explain the three core body-safety rules (my body belongs to me, I can say no, I always tell a trusted adult) by exploring a calm, simple interactive guide.\n\nPurpose: Reinforce the three body-safety rules in a warm, non-frightening way that a Grade 1 student and teacher can revisit together\n\nLayout: Three large, friendly panels arranged side by side, each with a simple icon: a heart over a body outline (\"My body belongs to me\"), a raised hand (\"I can say no\"), and a trusted adult figure with a speech bubble (\"I always tell a trusted adult\")\n\nInteractive elements:\n- Click each panel to reveal one calm sentence explaining the rule in simple words\n- Click a fourth \"What if?\" panel to reveal: \"If a touch ever feels confusing or wrong, remember: it is never your fault, and telling a trusted adult is always the right choice — you will not be in trouble for telling.\"\n- No panel contains frightening imagery; all illustrations are calm, warm, and reassuring\n\nVisual style: Soft, warm color palette; simple flat-style icons; generously spaced panels so the page never feels crowded or intense\nColor scheme: Soft blue and green tones throughout, avoiding any alarming colors like harsh red\n\nImplementation: p5.js or HTML/CSS with click-to-reveal panels; each reveal is text-only, no animation, to keep the tone calm and steady\n\nImplementation notes: This infographic must be reviewed for tone before publishing — every sentence should sound reassuring and empowering, never frightening. Teachers may want to pause on the \"What if?\" panel and read it aloud slowly."
+}

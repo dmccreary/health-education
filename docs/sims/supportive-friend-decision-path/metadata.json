@@ -1,0 +1,22 @@
+{
+  "title": "Supportive Friend Decision Path",
+  "description": "Students evaluate a series of short peer-support scenarios and judge which response best balances listening, respecting boundaries, and guiding the peer toward trusted-adult help.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "supportive-friend-decision-path",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "judge, assess, justify",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "Managing Emotions and Relationships",
+  "chapter_dir": "03-managing-emotions-and-relationships"
+}

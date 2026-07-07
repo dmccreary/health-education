@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Mood Before and After Movement Chart</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Mood Before and After Movement Chart</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> mood-before-after-movement-chart</p>
+            <p><strong>Library:</strong> Chart.js</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Students interpret survey-style data comparing self-reported mood before and after different physical activities, summarizing the mood-boosting effect of movement.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: chart
+    **sim-id:** mood-before-after-movement-chart<br/>
+    **Library:** Chart.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: interpret, summarize, compare
+    
+    Learning objective: Students interpret survey-style data comparing self-reported mood before and after different physical activities, summarizing the mood-boosting effect of movement.
+    
+    Chart type: Grouped bar chart
+    
+    Purpose: Show that self-reported mood scores rise after physical activity across several different activity types, including cultural traditions
+    
+    X-axis: Activity type (Recess Play, Community Dance, Team Sport Practice, Walking, Traditional Game)
+    
+    Y-axis: Average self-reported mood score (scale of 1-10, where 10 is "very happy and calm")
+    
+    Data series:
+    1. Before activity (blue bars):
+       - Recess Play: 6
+       - Community Dance: 6
+       - Team Sport Practice: 5
+       - Walking: 6
+       - Traditional Game: 6
+    
+    2. After activity (gold bars):
+       - Recess Play: 8
+       - Community Dance: 9
+       - Team Sport Practice: 8
+       - Walking: 7
+       - Traditional Game: 9
+    
+    Title: "How Mood Changes Before and After Physical Activity"
+    Legend: Position top-right, labeled "Before" and "After"
+    
+    Interactive features:
+    - Hover over any bar to see the exact score and a one-sentence explanation of that activity
+    - Click a legend entry to toggle the Before or After series on/off for easier comparison
+    
+    Annotations: Small label above the largest gains (Community Dance and Traditional Game) reading "Biggest mood boost"
+    
+    Implementation: Chart.js bar chart with tooltip callbacks and legend toggle enabled (legend.onClick default behavior).
+    -->
+</body>
+</html>

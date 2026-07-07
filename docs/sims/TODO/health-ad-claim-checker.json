@@ -1,0 +1,15 @@
+{
+  "sim_id": "health-ad-claim-checker",
+  "diagram_name": "Health Ad Claim Checker",
+  "chapter_number": 6,
+  "chapter_title": "Health Literacy and Goal Setting",
+  "chapter_dir": "06-health-literacy-and-goals",
+  "chapter_rel_dir": "bands/grade-4/chapters/06-health-literacy-and-goals",
+  "library": "Mermaid",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, distinguish, differentiate",
+  "learning_objective": "Students examine a health product advertisement claim step by step and distinguish trustworthy claims from manipulative sales tactics using a decision path.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n**sim-id:** health-ad-claim-checker<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: examine, distinguish, differentiate\n\nLearning objective: Students examine a health product advertisement claim step by step and distinguish trustworthy claims from manipulative sales tactics using a decision path.\n\nPurpose: Walk students through a repeatable question sequence for judging any health product or service claim\n\nVisual style: Top-down flowchart with decision diamonds\n\nSteps:\n1. Start: \"You see a health product ad\"\n   Hover text: \"This could be a supplement, gadget, app, or service promising a health benefit\"\n\n2. Decision: \"Does it promise instant or miracle results?\"\n   Hover text: \"Real health changes usually take consistent effort, not one product\"\n\n3a. If Yes: \"Warning sign — be skeptical\"\n   Hover text: \"Miracle claims are a major red flag for an unreliable product\"\n\n3b. If No: Continue to next question: \"Is the evidence a real study, or just testimonials?\"\n   Hover text: \"Testimonials are personal stories, not scientific proof\"\n\n4a. If Testimonials only: \"Warning sign — ask for real evidence\"\n   Hover text: \"A believable story is not the same as data from a study\"\n\n4b. If Real study cited: Continue to next question: \"Is there pressure to decide immediately?\"\n   Hover text: \"High-pressure tactics try to stop you from thinking it through\"\n\n5a. If Yes pressure: \"Warning sign — slow down\"\n   Hover text: \"Trustworthy products don't need to rush your decision\"\n\n5b. If No pressure: \"Ask a trusted adult before deciding\"\n   Hover text: \"Even claims that pass every check deserve a second opinion from an adult before money is spent\"\n\nEnd: \"Informed decision made\"\n   Hover text: \"You've used evidence, not pressure, to make the choice\"\n\nColor coding:\n- Yellow diamonds: decision points\n- Red boxes: warning sign outcomes\n- Green box: final informed-decision outcome\n\nInteractive features: Every node has a click directive opening an infobox with the hover text description shown above; nodes are colored to reinforce warning versus safe paths.\n\nImplementation: Mermaid flowchart with click bindings for every node routed to a JavaScript function that displays the node's explanation in a side panel."
+}

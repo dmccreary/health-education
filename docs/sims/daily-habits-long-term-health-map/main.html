@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Daily Habits and Long-Term Health Concept Map</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Daily Habits and Long-Term Health Concept Map</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> daily-habits-long-term-health-map</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students analyze how five categories of everyday personal behavior connect to and build toward long-term health.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: graph-model
+    **sim-id:** daily-habits-long-term-health-map<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: examine, organize, distinguish
+    
+    Learning objective: Students analyze how five categories of everyday personal behavior connect to and build toward long-term health.
+    
+    Purpose: Show five everyday behavior categories feeding into the central concept of long-term health, letting students explore each connection.
+    
+    Node types: Central node "Long-Term Health" (large green circle, center); five supporting nodes (medium blue circles): "Sleep Habits", "Physical Activity", "Recognizing Symptoms Early", "Managing Chronic Conditions", "Hygiene and Safe Food Handling".
+    
+    Edge types: Solid arrows from each supporting node pointing inward to "Long-Term Health", labeled "supports".
+    
+    Layout: Radial/hub layout, central node fixed in the middle, five supporting nodes spaced evenly around it.
+    
+    Interactive features: Hover any node for a one-sentence definition tooltip; click a supporting node to highlight its edge and show a daily-life example in a side panel; click the center node for a summary of all five behaviors; zoom with mouse wheel, pan by dragging background.
+    
+    Visual styling: Central node green and larger; supporting nodes blue; "supports" edges gray with arrowheads pointing inward.
+    
+    Legend: Green = combined outcome; Blue = contributing behavior category; Gray arrow = "supports" relationship.
+    
+    Implementation: vis-network library with a fixed dataset (6 nodes, 5 edges) and click/hover handlers tied to a definitions object. Canvas 650x450px, responsive to container width.
+    -->
+</body>
+</html>

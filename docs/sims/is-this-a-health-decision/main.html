@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Is This a Health Decision?</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Is This a Health Decision?</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> is-this-a-health-decision</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Students recognize when a health-related decision is needed by classifying everyday moments as "health decision" or "not a health decision," supporting benchmark 0.7.5.1.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: infographic
+    **sim-id:** is-this-a-health-decision<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: explain, classify
+    
+    Learning objective: Students recognize when a health-related decision is needed by classifying everyday moments as "health decision" or "not a health decision," supporting benchmark 0.7.5.1.
+    
+    Canvas layout: Full canvas (500px) shows one illustrated everyday moment at a time (choosing a snack, choosing a shirt color, deciding to wear a helmet, choosing a book, telling a trusted adult about a feeling). Bottom strip (80px): two large buttons, "Health Decision" and "Not a Health Decision," plus a Reset button.
+    
+    Visual elements: 5 moment cards cycling one at a time; selected button glows and reveals an infobox explaining why.
+    
+    Interactive controls: Click the button matching the child's guess; "Next Moment" cycles the cards; Reset restarts.
+    
+    Default parameters: Cards appear in a fixed teacher-predictable order, starting with "choosing a snack."
+    
+    Behavior: Correct answer glows green with an infobox, e.g., "Yes! What you eat is a health decision because it affects your body." Incorrect answer gently shakes with a kind explanation. After all 5: "You know how to notice when it's time to make a health decision!"
+    
+    Instructional Rationale: An Understand-level (explain/classify) objective, so the MicroSim uses a step-through pattern with one concrete moment shown at a time rather than continuous animation, letting a teacher pause and discuss each example aloud.
+    
+    Implementation notes: p5.js. Each moment is an object with an illustration reference, correct classification, and explanation string. Text large (24px+) for read-aloud use.
+    -->
+</body>
+</html>

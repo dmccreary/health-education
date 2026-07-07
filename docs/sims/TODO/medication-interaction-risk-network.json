@@ -1,0 +1,15 @@
+{
+  "sim_id": "medication-interaction-risk-network",
+  "diagram_name": "Medication Interaction Risk Network",
+  "chapter_number": 10,
+  "chapter_title": "Substances - Effects and Safer Choices",
+  "chapter_dir": "10-substances-effects-and-safer-choices",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/10-substances-effects-and-safer-choices",
+  "library": "vis-network",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, differentiate, organize",
+  "learning_objective": "Students examine documented interaction risks between",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n\n**sim-id:** medication-interaction-risk-network<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: examine, differentiate, organize\n\nLearning objective: Students examine documented interaction risks between\ncategories of medications and substances (alcohol, opioid pain relievers,\nanti-anxiety medications, antihistamines, unregulated/counterfeit pills)\nand differentiate low-risk combinations from documented high-risk\ncombinations, without any dosage or method information.\n\nNode types:\n1. Substance/medication category nodes (blue rectangles): \"Alcohol,\"\n   \"Opioid Pain Relievers,\" \"Anti-Anxiety Medications,\" \"Antihistamines,\"\n   \"Unregulated/Counterfeit Pills\"\n2. Risk-level edge labels connecting relevant pairs (not all pairs\n   connected): \"Documented High Risk\" (red), \"Use Caution — Ask\n   Pharmacist\" (yellow)\n\nEdge types:\n- \"Documented High Risk\" (red, thick): Alcohol—Opioid Pain Relievers,\n  Alcohol—Anti-Anxiety Medications, Opioid Pain Relievers—Anti-Anxiety\n  Medications, any category—Unregulated/Counterfeit Pills (labeled\n  \"Unknown Contents — Cannot Be Assessed\")\n- \"Use Caution — Ask Pharmacist\" (yellow, thin): Alcohol—Antihistamines\n\nLayout: Force-directed network with the five category nodes distributed\nevenly, edges colored and weighted by risk level\n\nInteractive features:\n- Hover any node: brief description of that medication/substance category\n- Click any node: highlights all its connected edges and dims the rest of\n  the network\n- Click any edge: infobox names the documented mechanism (e.g., \"Both\n  slow breathing; combined effect on the respiratory system is greater\n  than either alone\")\n- Drag, zoom, pan enabled\n\nLegend: color key for risk-level edges and a note that the\n\"Unregulated/Counterfeit Pills\" node connects to every other node at\n\"Documented High Risk\" because contents cannot be verified\n\nImplementation: vis-network JavaScript library, force-directed layout;\nedge and node data in a structured lookup object. Content restriction: no\nnode or edge describes a dosage amount, a method of combining substances,\nor how to obtain any substance — only documented interaction risk\ncategories and mechanisms."
+}

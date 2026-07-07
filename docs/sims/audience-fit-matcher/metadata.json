@@ -1,0 +1,22 @@
+{
+  "title": "Audience Fit Matcher",
+  "description": "Students judge which version of a health message best fits a given audience, and justify why the wording and format matter.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "audience-fit-matcher",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "judge, critique, recommend",
+  "completion_status": "scaffold",
+  "chapter_number": 7,
+  "chapter_title": "Health Skills And Goal Setting",
+  "chapter_dir": "07-health-skills-and-goal-setting"
+}

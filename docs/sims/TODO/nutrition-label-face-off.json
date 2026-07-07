@@ -1,0 +1,15 @@
+{
+  "sim_id": "nutrition-label-face-off",
+  "diagram_name": "Nutrition Label Face-Off",
+  "chapter_number": 2,
+  "chapter_title": "Food and Nutrition",
+  "chapter_dir": "02-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-5/chapters/02-food-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "compare, contrast, examine, differentiate",
+  "learning_objective": "Students compare two real nutrition labels side by side across multiple nutrients and determine which food is the healthier choice for a stated goal.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** nutrition-label-face-off<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: compare, contrast, examine, differentiate\n\nLearning objective: Students compare two real nutrition labels side by side across multiple nutrients and determine which food is the healthier choice for a stated goal.\n\nCanvas layout:\n- Left side (500px): Two nutrition labels displayed side by side, styled like real Nutrition Facts panels\n- Right side (200px): Control panel with food-pair selector and a goal selector, plus a comparison scorecard\n\nVisual elements:\n- Two label panels (Food A and Food B) each showing serving size, Calories, added sugar, fiber, sodium, and protein\n- A scorecard row beneath the labels that highlights, for each nutrient, which food is more favorable\n\nInteractive controls:\n- Dropdown: Choose a food pair (e.g., \"Cereal A vs Cereal B,\" \"Yogurt A vs Yogurt B,\" \"Bread A vs Bread B\")\n- Dropdown: Choose a comparison goal (\"Lower added sugar,\" \"More fiber,\" \"More protein,\" \"Lower sodium\")\n- Button: \"Reveal Winner\" — highlights the better food for the selected goal with a one-sentence explanation\n- Button: \"Reset\"\n\nDefault parameters:\n- Food pair: Cereal A vs Cereal B\n- Goal: Lower added sugar\n\nBehavior:\n- Selecting a new goal re-highlights which label wins that specific nutrient, showing that \"healthier\" can depend on what you're prioritizing\n- Reveal Winner shows a combined judgment across all four nutrients, noting when the answer is a clear win versus a trade-off\n\nInstructional Rationale: This is an Analyze-level compare/contrast task, so the pattern shows concrete label data side by side with a goal-driven highlight rather than an animation, letting students trace exactly which numbers drive the comparison.\n\nImplementation notes: Use p5.js. Store each food pair as an object with nutrient values for Food A and Food B; goal selection drives which nutrient row is highlighted and which food is marked favorable."
+}

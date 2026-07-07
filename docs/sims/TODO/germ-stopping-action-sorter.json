@@ -1,0 +1,15 @@
+{
+  "sim_id": "germ-stopping-action-sorter",
+  "diagram_name": "Germ-Stopping Action Sorter",
+  "chapter_number": 5,
+  "chapter_title": "Healthy Habits, Activity, and Germs",
+  "chapter_dir": "05-healthy-habits",
+  "chapter_rel_dir": "bands/grade-1/chapters/05-healthy-habits",
+  "library": "p5.js",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "judge, assess, prioritize",
+  "learning_objective": "Students evaluate short scenario cards showing a student's action and judge whether the action helps stop germs from spreading or could let germs spread, then rank a short list of actions from most to least helpful.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** germ-stopping-action-sorter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Evaluate (L5)\nBloom Taxonomy Verb: judge, assess, prioritize\n\nLearning objective: Students evaluate short scenario cards showing a student's action and judge whether the action helps stop germs from spreading or could let germs spread, then rank a short list of actions from most to least helpful.\n\nCanvas layout:\n- Left area (450px): One scenario card at a time (flat illustration plus one sentence, e.g., \"Diego sneezes into his elbow.\")\n- Right area (150px): Two bins labeled \"Stops Germs\" and \"Spreads Germs\" and an infobox\n\nVisual elements:\n- 8 scenario cards cycling one at a time, mixing good illness prevention actions (handwashing, covering coughs, not sharing cups) and risky actions (sneezing into bare hands, sharing a water bottle, touching face after recess)\n- Two labeled bins with friendly icons (a shield for \"Stops Germs,\" a small germ character for \"Spreads Germs\")\n\nInteractive controls:\n- Click-to-select: student clicks the bin that matches the scenario\n- Button: \"Next Scenario\"\n- Button: \"Reset\"\n\nDefault parameters:\n- First scenario: \"Maya washes her hands with soap before lunch\" (clearly stops germs, to build confidence)\n\nData Visibility Requirements:\n  Stage 1: Show the scenario card with no label\n  Stage 2: After the student clicks a bin, show whether it matches\n  Stage 3: Reveal a one-sentence explanation of why the action stops or spreads germs\n\nBehavior:\n- Correct match: bin glows, gentle chime, explanation caption appears\n- Incorrect match: gentle prompt, \"Think about where germs could travel next,\" correct bin glows softly as a hint\n\nInstructional Rationale: This is an Evaluate-level (judge/assess) objective, so the MicroSim asks students to weigh each action's consequence for germ spread and justify the classification, rather than simply recalling a definition; the concrete explanation after each answer supports that judgment without relying on continuous animation.\n\nImplementation notes: Use p5.js. Keep the \"Spreads Germs\" scenarios realistic and relatable (forgetting, not being careless on purpose) so no character feels blamed. Teacher reads each scenario and explanation aloud."
+}

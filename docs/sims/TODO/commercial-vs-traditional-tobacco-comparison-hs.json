@@ -1,0 +1,15 @@
+{
+  "sim_id": "commercial-vs-traditional-tobacco-comparison-hs",
+  "diagram_name": "Commercial Vs. Traditional Tobacco Comparison Tool",
+  "chapter_number": 10,
+  "chapter_title": "Substances - Effects and Safer Choices",
+  "chapter_dir": "10-substances-effects-and-safer-choices",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/10-substances-effects-and-safer-choices",
+  "library": "p5.js",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "evaluate, distinguish, justify",
+  "learning_objective": "Students evaluate why commercial tobacco addiction and",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n\n**sim-id:** commercial-vs-traditional-tobacco-comparison-hs<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Evaluate (L5)\nBloom Verb: evaluate, distinguish, justify\n\nLearning objective: Students evaluate why commercial tobacco addiction and\ntraditional/ceremonial tobacco use are distinct practices across purpose,\npreparation, frequency, and meaning, and justify why public health\nmessaging deliberately separates the two.\n\nLayout: Two side-by-side columns, \"Commercial Tobacco\" and \"Traditional\nTobacco/Plant Medicine,\" each with four clickable rows matching the\nchapter table (Purpose, Preparation, Frequency, Meaning), plus a closing\nreflection prompt\n\nInteractive features: Clicking a row opens a paired infobox with both\ncolumns' content shown together for direct comparison; a closing \"Why\nDoes Public Health Separate These?\" button reveals an infobox explaining\nthat the term \"commercial tobacco\" exists specifically to target\nmanufactured, addiction-engineered products without stigmatizing sacred\npractice; an optional short-response text box invites the learner to\njustify, in their own words, why conflating the two is inaccurate\n\nDefault state: No row selected; prompt reads \"Click a row to compare\ncommercial and traditional tobacco use.\"\n\nColor scheme: Left column in neutral gray-blue (manufactured/industrial\nassociation), right column in warm earth tones (cultural/ceremonial\nassociation); infobox text, not color, carries the evaluative nuance\n\nImplementation: p5.js with two columns of clickable rectangles; responsive\ncanvas that stacks columns vertically on narrow screens. Content\nrestriction: no depiction of tobacco products, smoking actions, vaping\ndevices, or ceremonial objects — text-based comparison only, to remain\nrespectful of the cultural practice being described."
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Bliss Point Snack Deconstructor",
+  "description": "Students analyze the sugar, sodium, and fat content of common snack foods to recognize the engineered combination pattern often called the \"bliss point.\"",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "bliss-point-snack-deconstructor",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "deconstruct, examine, organize, differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "Health Foundations and Nutrition",
+  "chapter_dir": "01-health-foundations-and-nutrition"
+}
