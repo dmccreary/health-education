@@ -5,7 +5,7 @@ description: Age-banded ideas for wide-landscape interactive infographic overlay
 
 # Interactive Infographic Poster Ideas
 
-This catalog draws on all 609 concepts in the eight age-band learning graphs. It complements the existing [Food Groups](./food-groups/) and [Plate Proportions](./plate-proportions/) posters rather than repeating them. Each idea is intended for a wide-landscape, high-quality illustrated poster with Explore and Quiz modes.
+This catalog draws on all 609 concepts in the eight age-band learning graphs. It complements the existing [Food Groups](./food-groups/index.md) and [Plate Proportions](./plate-proportions/index.md) posters rather than repeating them. Each idea is intended for a wide-landscape, high-quality illustrated poster with Explore and Quiz modes.
 
 ## Design key
 
@@ -47,7 +47,7 @@ This catalog draws on all 609 concepts in the eight age-band learning graphs. It
 | **The Conflict Toolbox** | Grid: 5 zones | Five oversized toolbox drawers hold calming strategies, I-statements, active listening, solution ideas, and repair actions. Students select the tool a scenario needs. | Conflict; healthy conflict resolution; strong emotions; I-statements; active listening; decision outcomes |
 | **Personal-Space Planets** | Callout: 9 markers | Children orbit in a whimsical playground solar system with differently sized “space bubbles.” Markers explore asking, noticing signals, playful interaction, teasing, and respectful adjustment. | Personal space; boundary; playful interaction; teasing; effects of teasing; peer relationships |
 | **Outdoor Health Shield** | Grid: 5 zones | A giant shield is divided into sun, sound, chemicals, water, and germs. Each illustrated zone shows a risk on one side and a protective action on the other. | Environmental health risks; sun and noise protection; unsafe chemicals and water; illness prevention |
-| **Safe Tech: Stop, Close, Tell** | Grid: 3 zones | Three bold panels turn a simple response into a visual sequence for pop-ups, unwanted messages, requests for information, and upsetting content. | Technology safety; unsafe technology situations; getting help; encouraging safe choices |
+| [**Safe Tech: Stop, Close, Tell**](./safe-tech-stop-close-tell/index.md) — **DONE** | Grid: 3 zones | Three bold panels turn a simple response into a visual sequence for pop-ups, unwanted messages, requests for information, and upsetting content. | Technology safety; unsafe technology situations; getting help; encouraging safe choices |
 | **Goal Trail Map** | Callout: 8 markers | A friendly trail map moves from choosing a goal through small actions, helpers, obstacles, check-ins, feelings, and celebration. | Goal setting; goal-supporting actions; reflection; health decision options and outcomes; positive modeling |
 
 ## Grade 3

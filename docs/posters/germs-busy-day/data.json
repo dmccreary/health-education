@@ -1,0 +1,119 @@
+{
+  "title": "The Germ's Busy Day",
+  "orientation": "landscape",
+  "image": "germs-busy-day.png",
+  "layout": "top-bottom",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "An Uncovered Cough",
+      "panel": "top",
+      "x": 12.0,
+      "y": 29.0,
+      "radius": 4,
+      "color": "#E74C3C",
+      "hint": "Find the child on the far left who is coughing into the open air.",
+      "description": "Everyone coughs sometimes. Covering a cough keeps tiny wet droplets from traveling into the air and onto nearby things."
+    },
+    {
+      "id": 2,
+      "label": "Germs Riding on Droplets",
+      "panel": "top",
+      "x": 18.0,
+      "y": 24.0,
+      "radius": 4,
+      "color": "#8E44AD",
+      "hint": "Find the tiny turquoise and purple specks floating near the coughing child.",
+      "description": "Germs are too small to see without special tools. A cough or sneeze can send germs riding through the air on tiny droplets."
+    },
+    {
+      "id": 3,
+      "label": "A Shared Doorknob",
+      "panel": "top",
+      "x": 27.5,
+      "y": 33.0,
+      "radius": 4,
+      "color": "#E67E22",
+      "hint": "Find the shiny round object touched by the child entering the classroom.",
+      "description": "Many hands touch a classroom doorknob. Germs can hitch a ride from a hand to the knob and then to the next hand."
+    },
+    {
+      "id": 4,
+      "label": "Shared Blocks",
+      "panel": "bottom",
+      "x": 34.5,
+      "y": 76.0,
+      "radius": 4,
+      "color": "#1ABC9C",
+      "hint": "Find the colorful building blocks on the low activity table.",
+      "description": "Sharing toys is fun. Because many children touch the same toys, washing hands after play helps stop germs from traveling farther."
+    },
+    {
+      "id": 5,
+      "label": "Germs on Hands",
+      "panel": "bottom",
+      "x": 42.5,
+      "y": 68.0,
+      "radius": 4,
+      "color": "#F39C12",
+      "hint": "Find the two hands resting near the shared toys in the center of the picture.",
+      "description": "Hands pick up germs when they touch shared objects. Hands can look clean and still need soap and water before eating or touching the face."
+    },
+    {
+      "id": 6,
+      "label": "Touching the Face",
+      "panel": "top",
+      "x": 61.0,
+      "y": 28.0,
+      "radius": 4,
+      "color": "#9B59B6",
+      "hint": "Find the child in the striped shirt with one finger near the nose.",
+      "description": "Hands often touch the eyes, nose, and mouth without us noticing. Clean hands help keep germs from reaching the face."
+    },
+    {
+      "id": 7,
+      "label": "Cough Into an Elbow",
+      "panel": "top",
+      "x": 77.0,
+      "y": 25.5,
+      "radius": 4,
+      "color": "#2ECC71",
+      "hint": "Find the child in purple covering a cough with a bent arm.",
+      "description": "Coughing or sneezing into the inside of an elbow helps keep droplets off hands, toys, and friends."
+    },
+    {
+      "id": 8,
+      "label": "Tissue Into the Trash",
+      "panel": "bottom",
+      "x": 82.5,
+      "y": 55.5,
+      "radius": 4,
+      "color": "#3498DB",
+      "hint": "Find the tissue being dropped into the wastebasket.",
+      "description": "A tissue can cover a cough or sneeze. Put the used tissue in the trash right away, then wash your hands."
+    },
+    {
+      "id": 9,
+      "label": "Soap",
+      "panel": "bottom",
+      "x": 92.5,
+      "y": 84.0,
+      "radius": 4,
+      "color": "#34495E",
+      "hint": "Find the blue pump bottle beside the sink.",
+      "description": "Soap helps loosen germs from hands so clean running water can rinse them away."
+    },
+    {
+      "id": 10,
+      "label": "Washing Hands",
+      "panel": "bottom",
+      "x": 80.0,
+      "y": 84.0,
+      "radius": 4,
+      "color": "#16A085",
+      "hint": "Find the hands covered in white bubbles under running water.",
+      "description": "Wet, add soap, scrub for about 20 seconds, rinse, and dry. Handwashing is one of the best ways to stop germs from spreading."
+    }
+  ]
+}
