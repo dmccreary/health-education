@@ -1,3 +1,7 @@
+---
+hide:
+    toc
+---
 # References
 
 Site-wide references used to ground this textbook's content in official
