@@ -1,0 +1,15 @@
+{
+  "sim_id": "nervousness-vs-anxiety-chart",
+  "diagram_name": "Everyday Nervousness vs. Clinical Anxiety Comparison Chart",
+  "chapter_number": 5,
+  "chapter_title": "Mental Health and Crisis Support",
+  "chapter_dir": "05-mental-health-and-crisis-support",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/05-mental-health-and-crisis-support",
+  "library": "Chart.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "compare, contrast, explain",
+  "learning_objective": "Students compare and contrast everyday, situational",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: chart\n\n**sim-id:** nervousness-vs-anxiety-chart<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Understand (L2)\nBloom Verb: compare, contrast, explain\n\nLearning objective: Students compare and contrast everyday, situational\nnervousness with clinical anxiety across duration, intensity, and impact\non functioning, building an accurate non-stigmatizing understanding of\nwhat makes anxiety a medical condition.\n\nChart type: Horizontal bar chart with two data series\n\nX-axis: Relative level (Low, Moderate, High) — categorical, not a numeric\nclinical score\n\nY-axis: Dimension (Duration, Intensity, Physical Symptoms, Effect on Daily\nFunctioning)\n\nData series:\n1. Everyday Nervousness (blue bars): Duration = Low, Intensity = Low to\n   Moderate, Physical Symptoms = Low, Effect on Functioning = Low\n2. Clinical Anxiety (gold bars): Duration = High, Intensity = High,\n   Physical Symptoms = High, Effect on Functioning = High\n\nInteractive features: Hovering a bar reveals a tooltip explaining what\nthat level means for that dimension in plain language; clicking a bar pins\nan expanded infobox with a one-sentence clinical explanation drawn from\nthe chapter text.\n\nTitle: \"How Clinical Anxiety Differs From Everyday Nervousness\"\n\nInstructional Rationale: Comparing and contrasting two related but\ndistinct conditions is an Understand-level objective, so a labeled\ncomparison chart with explanatory tooltips is used rather than a\ndiagnostic tool, keeping the framing informational and destigmatizing\nrather than prescriptive or diagnostic.\n\nImplementation notes: Chart.js horizontal bar chart; categorical axis;\ntooltip and click-to-pin text in a JS lookup object."
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Conflict Resolution Pathway",
+  "description": "Students apply the sequence of nonviolent conflict resolution steps to a realistic peer conflict, distinguishing situations that peers can resolve directly from situations that need adult involvement.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "conflict-resolution-pathway",
+  "library": "Mermaid",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "apply, demonstrate, use",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Emotional Well-Being and Mental Health",
+  "chapter_dir": "04-emotional-well-being-and-mental-health",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/04-emotional-well-being-and-mental-health"
+}

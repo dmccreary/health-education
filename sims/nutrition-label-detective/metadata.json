@@ -1,0 +1,23 @@
+{
+  "title": "Nutrition Label Detective",
+  "description": "Students locate specific nutrient information on a realistic nutrition label and use it to answer questions about a food product.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "nutrition-label-detective",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "use, demonstrate, locate",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "Food and Nutrition",
+  "chapter_dir": "01-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-4/chapters/01-food-and-nutrition"
+}

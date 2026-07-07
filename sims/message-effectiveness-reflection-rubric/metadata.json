@@ -1,0 +1,23 @@
+{
+  "title": "Message Effectiveness Reflection Rubric",
+  "description": "Students assess their own delivered health message (or a provided worked example) against four reflection criteria (audience understanding, realistic call to action, specific feedback gathered, planned improvement), justifying an overall effectiveness rating and recommending one specific change for next time.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "message-effectiveness-reflection-rubric",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "assess, justify, recommend",
+  "completion_status": "scaffold",
+  "chapter_number": 12,
+  "chapter_title": "Advocacy, Goal Setting, and Health Messaging",
+  "chapter_dir": "12-advocacy-goal-setting-and-health-messaging",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/12-advocacy-goal-setting-and-health-messaging"
+}

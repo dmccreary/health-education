@@ -1,0 +1,23 @@
+{
+  "title": "Life Stages Timeline",
+  "description": "Students explain that puberty is one normal life stage among several across a human lifespan, and describe its general place and range in that sequence.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "life-stages-timeline",
+  "library": "vis-timeline",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, describe, interpret",
+  "completion_status": "scaffold",
+  "chapter_number": 2,
+  "chapter_title": "Growth and Development Across Cultures",
+  "chapter_dir": "02-growth-and-development",
+  "chapter_rel_dir": "bands/grade-4/chapters/02-growth-and-development"
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Health Message Design Studio",
+  "description": "Students design a fact-supported health message by selecting a topic, audience, and format, then composing the message using the five design principles (audience-first opening, cited facts, matched tone/format, clear call to action, no unsupported scare tactics).",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "health-message-design-studio",
+  "library": "p5.js",
+  "bloomLevel": "Create (L6)",
+  "bloomVerb": "design, compose, formulate",
+  "completion_status": "scaffold",
+  "chapter_number": 12,
+  "chapter_title": "Advocacy, Goal Setting, and Health Messaging",
+  "chapter_dir": "12-advocacy-goal-setting-and-health-messaging",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/12-advocacy-goal-setting-and-health-messaging",
+  "educational": {
+    "gradeLevel": "Grades 6-8",
+    "subjectArea": "Health Education",
+    "topic": "Advocacy, Goal Setting, and Health Messaging",
+    "learningObjectives": [
+      "Students design a fact-supported health message by selecting a topic, audience, and format, then composing the message using the five design principles (audience-first opening, cited facts, matched tone/format, clear call to action, no unsupported scare tactics)."
+    ],
+    "bloomLevel": "Create (L6)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "design, compose, formulate",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Create-level objective through direct interaction rather than passive reading."
+  }
+}

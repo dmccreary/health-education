@@ -1,0 +1,23 @@
+{
+  "title": "Stigma Reduction Action Network",
+  "description": "Students explain how specific individual and community actions connect to reducing mental health stigma, and classify each action by the barrier it addresses.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "stigma-reduction-action-network",
+  "library": "vis-network",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, classify, summarize",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Stigma, Bias, and Brain Health",
+  "chapter_dir": "05-stigma-bias-and-brain-health",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/05-stigma-bias-and-brain-health"
+}

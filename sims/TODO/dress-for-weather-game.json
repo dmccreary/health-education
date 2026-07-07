@@ -1,0 +1,15 @@
+{
+  "sim_id": "dress-for-weather-game",
+  "diagram_name": "Dress for the Weather",
+  "chapter_number": 3,
+  "chapter_title": "Wellness And Activity",
+  "chapter_dir": "03-wellness-and-activity",
+  "chapter_rel_dir": "bands/grade-3/chapters/03-wellness-and-activity",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "use, demonstrate, apply",
+  "learning_objective": "Students apply knowledge of weather conditions by dressing a character correctly for four different weather scenes (sunny/hot, cold/dry, rainy, windy).",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** dress-for-weather-game<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: use, demonstrate, apply\n\nLearning objective: Students apply knowledge of weather conditions by dressing a character correctly for four different weather scenes (sunny/hot, cold/dry, rainy, windy).\n\nCanvas layout:\n- Left side (400px): A simple character figure and a weather scene backdrop (sun, snow, rain, or wind clouds)\n- Right side (200px): A closet of clickable clothing items (sunhat, sunglasses, t-shirt, shorts, thin layers, thick coat, raincoat, boots, windbreaker)\n\nVisual elements:\n- Character figure that visually updates as clothing items are dragged onto it\n- Weather scene backdrop that changes with a \"Change Weather\" button\n- Closet panel showing all available clothing icons\n\nInteractive controls:\n- Drag or click clothing items onto the character\n- Button: \"Change Weather\" (cycles through the four scenarios)\n- Button: \"Check My Outfit\"\n- Button: \"Reset\"\n\nDefault parameters:\n- Starting weather: sunny and hot\n\nData Visibility Requirements:\n  Stage 1: Show the weather scene and an undressed (base outfit) character\n  Stage 2: As items are added, show the character updating in real time\n  Stage 3: When \"Check My Outfit\" is clicked, reveal which items matched the weather well and a one-sentence reason for any mismatch (\"A thick coat traps too much heat on a sunny day — try light, loose clothing instead.\")\n\nBehavior:\n- Correct outfit: character looks comfortable, sun/snow/rain icon shows a happy face, success caption appears\n- Incorrect outfit: character shows a mild discomfort cue (shivering, sweating, or dripping), with a gentle explanation of what to change\n- Weather changes require the student to re-dress the character, reinforcing that clothing choices depend on conditions\n\nInstructional Rationale: This is an Apply-level objective (use, demonstrate), so the pattern is a hands-on parameter/scenario simulator where the student actively applies clothing choices to conditions and receives immediate feedback, rather than a passive explanation.\n\nImplementation notes: Use p5.js. Keep the character gender-neutral and simple. Limit clothing options to items clearly tied to the four weather categories being taught."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "emotion-weather-map",
+  "diagram_name": "Emotion Weather Map",
+  "chapter_number": 3,
+  "chapter_title": "Managing Emotions and Relationships",
+  "chapter_dir": "03-managing-emotions-and-relationships",
+  "chapter_rel_dir": "bands/grade-5/chapters/03-managing-emotions-and-relationships",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, distinguish, differentiate",
+  "learning_objective": "Students distinguish between a specific emotional trigger and a broader ongoing situation, and analyze how both combine to influence a person's reaction.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** emotion-weather-map<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: examine, distinguish, differentiate\n\nLearning objective: Students distinguish between a specific emotional trigger and a broader ongoing situation, and analyze how both combine to influence a person's reaction.\n\nCanvas layout:\n- Left side (450px): A \"weather map\" showing a character with a background weather condition (sunny, cloudy, stormy) representing their ongoing situation\n- Right side (200px): A trigger card selector and a resulting-reaction display\n\nVisual elements:\n- Character icon in the center with a weather backdrop that can be set to Sunny (well-rested, good week), Cloudy (average week, some stress), or Stormy (rough week, poor sleep, family stress)\n- A trigger card area showing one small triggering event (e.g., \"A friend cancels plans\")\n- A reaction meter showing how big the resulting emotional reaction is predicted to be\n\nInteractive controls:\n- Dropdown: Choose the background \"weather\" (Sunny, Cloudy, Stormy) representing the ongoing situation\n- Button: \"Add a Trigger\" — cycles through small trigger cards\n- Display: Reaction meter updates to show a small, medium, or large reaction based on the combination\n\nDefault parameters:\n- Weather: Sunny\n- Trigger: \"A friend cancels plans\"\n\nBehavior:\n- The same trigger produces a bigger predicted reaction when the background weather is Stormy than when it is Sunny, teaching that surrounding situations change how strongly a trigger lands\n- A short explanation panel updates each time, describing why the same event can hit differently depending on the situation\n\nInstructional Rationale: This is an Analyze-level objective requiring students to examine how two factors (situation and trigger) interact, so the pattern is a parameter explorer that makes the combination visible and concrete rather than a single passive animation.\n\nImplementation notes: Use p5.js. Store weather-to-reaction multipliers and trigger base-intensity values as simple lookup data; reaction meter recalculates from weather multiplier times trigger base intensity."
+}

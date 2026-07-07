@@ -1,0 +1,15 @@
+{
+  "sim_id": "who-can-i-ask-support-network",
+  "diagram_name": "Who Can I Ask?",
+  "chapter_number": 6,
+  "chapter_title": "Growth And Puberty",
+  "chapter_dir": "06-growth-and-puberty",
+  "chapter_rel_dir": "bands/grade-3/chapters/06-growth-and-puberty",
+  "library": "vis-network",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "use, identify, demonstrate",
+  "learning_objective": "Students identify trusted adults and practice using the skill of asking for help with body changes by exploring a support-network map centered on themselves.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n**sim-id:** who-can-i-ask-support-network<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: use, identify, demonstrate\n\nLearning objective: Students identify trusted adults and practice using the skill of asking for help with body changes by exploring a support-network map centered on themselves.\n\nPurpose: Show students a visual \"map\" of the trusted adults available to them for body-change questions, reinforcing that help is close by and that asking is always the right move.\n\nNode types:\n1. Center node: \"Me\" (soft yellow circle)\n2. Trusted adult nodes (soft blue circles) connected directly to \"Me\": Parent/Guardian, School Nurse, Teacher, Counselor, Doctor, Another Trusted Family Member\n\nEdge types:\n- Single line connecting \"Me\" to each trusted adult, labeled with how that adult can help (e.g., \"Can answer questions at home,\" \"Can help at school,\" \"Knows about bodies and health\")\n\nLayout: Radial/hub layout with \"Me\" in the center and trusted adult nodes arranged around it\n\nInteractive features:\n- Click any trusted adult node to reveal an infobox: who this person is, and one example question a student could ask them about body changes\n- Click the center \"Me\" node to reveal the reminder: \"You can ask more than one trusted adult, and you can ask the same question more than once.\"\n- Drag nodes to rearrange the network; zoom and pan supported\n\nVisual styling: Warm, friendly color palette (soft yellow center, soft blue trusted-adult nodes); simple circle shapes, no realistic depictions of people\n\nLegend: Explains that the yellow center node represents the student, and blue nodes represent trusted adults who can help with questions about growing up\n\nImplementation: vis-network with click-to-reveal infobox panels; no anatomical content anywhere in this diagram — it is purely a support-network map."
+}

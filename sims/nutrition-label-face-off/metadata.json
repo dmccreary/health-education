@@ -1,0 +1,23 @@
+{
+  "title": "Nutrition Label Face-Off",
+  "description": "Students compare two real nutrition labels side by side across multiple nutrients and determine which food is the healthier choice for a stated goal.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "nutrition-label-face-off",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "compare, contrast, examine, differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 2,
+  "chapter_title": "Food and Nutrition",
+  "chapter_dir": "02-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-5/chapters/02-food-and-nutrition"
+}

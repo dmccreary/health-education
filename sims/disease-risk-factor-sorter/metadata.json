@@ -1,0 +1,38 @@
+{
+  "title": "Disease Risk Factor Sorter",
+  "description": "Students differentiate and classify a mixed set of",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "disease-risk-factor-sorter",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "differentiate, organize, classify",
+  "completion_status": "scaffold",
+  "chapter_number": 8,
+  "chapter_title": "Health Equity and Disease Prevention",
+  "chapter_dir": "08-health-equity-and-disease-prevention",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/08-health-equity-and-disease-prevention",
+  "educational": {
+    "gradeLevel": "Grades 9-12",
+    "subjectArea": "Health Education",
+    "topic": "Health Equity and Disease Prevention",
+    "learningObjectives": [
+      "Students differentiate and classify a mixed set of"
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "differentiate, organize, classify",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
+}

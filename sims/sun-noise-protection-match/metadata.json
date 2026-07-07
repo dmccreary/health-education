@@ -1,0 +1,23 @@
+{
+  "title": "Match the Protection to the Risk",
+  "description": "Students apply the correct protective action to a sun-risk or noise-risk scenario by matching protection tools/habits to the situation shown.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "sun-noise-protection-match",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "use, demonstrate, practice",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Staying Healthy in Our Environment",
+  "chapter_dir": "04-staying-healthy-environment",
+  "chapter_rel_dir": "bands/grade-2/chapters/04-staying-healthy-environment"
+}

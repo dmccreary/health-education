@@ -1,0 +1,23 @@
+{
+  "title": "Emergency Response Priority Workflow",
+  "description": "Students examine an emergency scenario with multiple people needing help and prioritize response order based on severity, differentiating life-threatening conditions from less urgent ones.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "emergency-response-priority-workflow",
+  "library": "Mermaid",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine, prioritize, differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Sleep, Fitness, and Emergency Response",
+  "chapter_dir": "06-sleep-fitness-and-emergency-response",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/06-sleep-fitness-and-emergency-response"
+}

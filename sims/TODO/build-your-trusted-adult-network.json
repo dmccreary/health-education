@@ -1,0 +1,15 @@
+{
+  "sim_id": "build-your-trusted-adult-network",
+  "diagram_name": "Build Your Trusted Adult Network",
+  "chapter_number": 1,
+  "chapter_title": "Foundations and Trusted Adults",
+  "chapter_dir": "01-foundations-and-trusted-adults",
+  "chapter_rel_dir": "bands/grade-5/chapters/01-foundations-and-trusted-adults",
+  "library": "vis-network",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "judge, justify, prioritize, recommend",
+  "learning_objective": "Students evaluate which trusted adults and resources are best suited to different situation types and justify their choice using the qualities of a good trusted adult.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** build-your-trusted-adult-network<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy: Evaluate (L5)\nBloom Taxonomy Verb: judge, justify, prioritize, recommend\n\nLearning objective: Students evaluate which trusted adults and resources are best suited to different situation types and justify their choice using the qualities of a good trusted adult.\n\nPurpose: Help students build a personalized mental map of trusted adults matched to situation categories, reinforcing that different concerns may call for different people.\n\nNode types:\n1. Situation nodes (orange circles): \"Physical symptom,\" \"Friendship worry,\" \"Family stress,\" \"Online safety concern,\" \"Feeling unsafe,\" \"Question about my body\"\n2. Adult/resource nodes (blue squares): \"Parent/Guardian,\" \"School Nurse,\" \"School Counselor,\" \"Teacher,\" \"Grandparent/Relative,\" \"Coach\"\n\nEdge types:\n- CAN HELP WITH (dashed green line): connects an adult/resource node to situation nodes they are well-suited to help with\n\nSample data:\n- School Nurse — CAN HELP WITH → Physical symptom, Question about my body\n- School Counselor — CAN HELP WITH → Friendship worry, Family stress, Feeling unsafe\n- Parent/Guardian — CAN HELP WITH → all six situation types (shown with a distinct highlight color)\n- Teacher — CAN HELP WITH → Friendship worry, Online safety concern\n\nLayout: Force-directed, with situation nodes on the left and adult/resource nodes on the right\n\nInteractive features:\n- Hover any node to see its full description and, for adults, a reminder of the five qualities of a good trusted adult\n- Click a situation node to highlight every adult/resource connected to it and dim unrelated nodes\n- Drag nodes to rearrange the personal map; zoom and pan supported\n- A short reflection prompt appears after each click: \"Which of the five trusted-adult qualities does this person show for this situation?\"\n\nVisual styling: Situation nodes colored orange, adult/resource nodes colored blue, with edge thickness representing how strongly suited that adult is to that situation type\n\nLegend: Node shapes and colors explained; edge meaning explained\n\nImplementation: vis-network JavaScript library with click and hover event handlers driving an infobox panel.\nCanvas size: 700x500px"
+}

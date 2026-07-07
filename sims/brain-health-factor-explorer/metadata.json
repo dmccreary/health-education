@@ -1,0 +1,38 @@
+{
+  "title": "Brain Health Factor Explorer",
+  "description": "Students explain how five modifiable factors (physical",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "brain-health-factor-explorer",
+  "library": "vis-network",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, classify, exemplify",
+  "completion_status": "scaffold",
+  "chapter_number": 7,
+  "chapter_title": "Brain Health, Sleep, and Emergency Care",
+  "chapter_dir": "07-brain-health-sleep-and-emergency-care",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/07-brain-health-sleep-and-emergency-care",
+  "educational": {
+    "gradeLevel": "Grades 9-12",
+    "subjectArea": "Health Education",
+    "topic": "Brain Health, Sleep, and Emergency Care",
+    "learningObjectives": [
+      "Students explain how five modifiable factors (physical"
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "explain, classify, exemplify",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
+}

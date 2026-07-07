@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Youth-Friendly Provider Visit Workflow</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Youth-Friendly Provider Visit Workflow</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> youth-friendly-provider-workflow</p>
+            <p><strong>Library:</strong> Mermaid</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students examine the sequence of a youth-friendly</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: workflow
+    
+    **sim-id:** youth-friendly-provider-workflow<br/>
+    **Library:** Mermaid<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy Level: Analyze (L4)
+    Bloom Verb: examine, distinguish, differentiate
+    
+    Learning objective: Students examine the sequence of a youth-friendly
+    clinic visit and distinguish which specific provider behaviors at each
+    step meet or fail the youth-friendly standard.
+    
+    Visual style: Mermaid flowchart, top-to-bottom, click handlers on every
+    node (`click NodeId call showInfo("term")`)
+    
+    Nodes (all clickable):
+    1. "Check-In" — click text: "A youth-friendly clinic protects
+       confidentiality starting at check-in, not only during the exam room
+       conversation"
+    2. "Provider Introduces Confidentiality Limits" — click text: "States
+       clearly, up front, what stays private and the narrow exceptions
+       (such as serious safety risk) before any other conversation happens"
+    3. "Provider Talks Directly to the Patient" — click text: "Addresses the
+       adolescent as the primary person in the conversation, not only an
+       accompanying adult"
+    4. "Patient Asks a Question" — click text: "A youth-friendly provider
+       answers direct questions with direct, medically accurate information"
+    5. "Provider Explains Clearly and Checks Understanding" — click text:
+       "Uses plain language and confirms the patient actually understood,
+       rather than assuming"
+    6. "Provider Asks Permission Before Any Exam or Disclosure" — click text:
+       "Permission is asked before an exam, procedure, or sharing information
+       with anyone else, including a parent"
+    7. "Visit Concludes" — click text: "The patient leaves with clear next
+       steps and knows exactly what information was or was not shared"
+    
+    Connections: 1→2, 2→3, 3→4, 4→5, 5→6, 6→7
+    
+    Color coding: blue for process steps, gold for the two confidentiality-
+    related nodes (2 and 6)
+    
+    Interactive features: click any node for its infobox; pan/zoom not
+    required for a linear flowchart of this size
+    
+    Implementation: Mermaid.js flowchart with JavaScript click bindings to a
+    custom showInfo() function
+    -->
+</body>
+</html>

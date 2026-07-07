@@ -1,0 +1,15 @@
+{
+  "sim_id": "recognizing-bias-scenario-sorter",
+  "diagram_name": "Recognizing Bias in Everyday Scenarios",
+  "chapter_number": 3,
+  "chapter_title": "Mental and Emotional Health",
+  "chapter_dir": "03-mental-emotional-health",
+  "chapter_rel_dir": "bands/grade-4/chapters/03-mental-emotional-health",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, distinguish, differentiate",
+  "learning_objective": "Students analyze short, realistic classroom scenarios to distinguish between a fair, evidence-based judgment and a biased assumption made with limited information.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** recognizing-bias-scenario-sorter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: examine, distinguish, differentiate\n\nLearning objective: Students analyze short, realistic classroom scenarios to distinguish between a fair, evidence-based judgment and a biased assumption made with limited information.\n\nCanvas layout:\n- Top (400px): A scenario card describing a short classroom situation\n- Bottom (150px): Two labeled zones, \"Fair Judgment\" and \"Biased Assumption,\" and one scenario card that the student drags to the correct zone\n\nVisual elements:\n- Neutral scenario icons only (no depictions of specific people's appearance)\n- A calm color scheme: blue for \"Fair Judgment\" zone, soft amber for \"Biased Assumption\" zone (avoid red/wrong-answer coding, since the goal is reflection, not scorekeeping)\n\nInteractive controls:\n- Drag-and-drop scenario card into one of the two zones\n- Button: \"Next Scenario\"\n- Button: \"Why?\" to reveal an explanation after sorting\n\nDefault parameters:\n- 8 scenario cards total, presented one at a time in random order\n\nData Visibility Requirements:\n  Stage 1: Show the full scenario text\n  Stage 2: Show the two sorting zones\n  Stage 3: After sorting, show a calm explanation of why the scenario is a fair judgment (based on direct evidence) or a biased assumption (based on a stereotype or limited information)\n  Final: Show how many scenarios were correctly identified, with an option to review any missed ones\n\nBehavior:\n- Correct sort: brief affirming message plus the explanation\n- Incorrect sort: gentle correction plus the same explanation, framed as a learning moment rather than a failure\n\nInstructional Rationale: This is an Analyze-level objective requiring learners to examine scenarios and distinguish evidence-based judgments from biased assumptions. A sorting interaction with reflection-based feedback (rather than a scored quiz) keeps the tone appropriate for this sensitive topic.\n\nImplementation notes: Use p5.js. Keep all scenario text realistic, respectful, and focused on assumptions about ability, interests, or behavior rather than physical appearance or protected characteristics, to keep content classroom-appropriate for this age group."
+}

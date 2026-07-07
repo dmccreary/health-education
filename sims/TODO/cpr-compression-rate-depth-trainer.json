@@ -1,0 +1,15 @@
+{
+  "sim_id": "cpr-compression-rate-depth-trainer",
+  "diagram_name": "CPR Compression Rate and Depth Trainer",
+  "chapter_number": 7,
+  "chapter_title": "Brain Health, Sleep, and Emergency Care",
+  "chapter_dir": "07-brain-health-sleep-and-emergency-care",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/07-brain-health-sleep-and-emergency-care",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate, execute, apply",
+  "learning_objective": "Students apply correct chest compression rate (100-120",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n\n**sim-id:** cpr-compression-rate-depth-trainer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Apply (L3)\nBloom Verb: demonstrate, execute, apply\n\nLearning objective: Students apply correct chest compression rate (100-120\nper minute) and depth (at least 2 inches) by tapping in rhythm with visual\nfeedback, reinforcing the muscle-memory timing used in real CPR.\n\nCanvas layout:\n- Left (55%): a metronome-style visual beat indicator and a simple chest\n  compression depth gauge\n- Right (45%): a tap button (or spacebar target), rate readout in\n  compressions per minute, and a depth-simulation slider representing how\n  hard the student is \"pressing\"\n\nData Visibility Requirements:\n  Stage 1: Show the target rate zone (100-120 bpm) highlighted on a\n  visual tempo bar, alongside a real reference: the tempo of \"Stayin'\n  Alive\" by the Bee Gees, a widely used real-world memory aid for correct\n  CPR rate\n  Stage 2: Student taps the button repeatedly; the tool calculates their\n  actual tap rate in real time and displays whether they are too slow,\n  in range, or too fast\n  Stage 3: A separate depth slider requires the student to hold at least\n  a simulated \"2 inch\" mark before releasing, reinforcing that full\n  recoil matters as much as depth\n  Stage 4: After a 30-second trial, show a summary: average rate\n  achieved, percentage of compressions in the correct depth range, and a\n  persistent reminder that this is a rhythm-and-depth trainer, not a\n  substitute for certified hands-on practice\n\nInteractive controls:\n- Tap button / spacebar for compressions\n- Depth slider\n- Button: \"Start 30-Second Trial\"\n- Button: \"Reset\"\n\nDefault parameters: Target rate 100-120 bpm; target depth marked at 2\ninches on the slider scale\n\nInstructional Rationale: Correct compression rate and depth are Apply-level\npsychomotor skills that require rhythm practice, not just factual recall,\nso a tap-timing tool with immediate rate/depth feedback is used rather\nthan a static diagram of hand placement.\n\nImplementation notes: p5.js; rate calculated from timestamps between taps\nover a rolling window; persistent on-screen note: \"For awareness and\nrhythm practice only — get certified hands-on training from a course such\nas the American Heart Association or American Red Cross.\""
+}

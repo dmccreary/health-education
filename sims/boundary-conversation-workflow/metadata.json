@@ -1,0 +1,23 @@
+{
+  "title": "Boundary Conversation Before Sexual Activity",
+  "description": "Students apply the boundary-communication skill from",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "boundary-conversation-workflow",
+  "library": "Mermaid",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate, use, apply",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Healthcare Access and Sexual Health",
+  "chapter_dir": "04-healthcare-access-and-sexual-health",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/04-healthcare-access-and-sexual-health"
+}

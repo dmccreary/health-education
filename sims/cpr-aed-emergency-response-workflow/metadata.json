@@ -1,0 +1,23 @@
+{
+  "title": "CPR and AED Emergency Response Workflow",
+  "description": "Students apply the correct combined CPR and AED",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "cpr-aed-emergency-response-workflow",
+  "library": "Mermaid",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "apply, execute, demonstrate",
+  "completion_status": "scaffold",
+  "chapter_number": 7,
+  "chapter_title": "Brain Health, Sleep, and Emergency Care",
+  "chapter_dir": "07-brain-health-sleep-and-emergency-care",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/07-brain-health-sleep-and-emergency-care"
+}

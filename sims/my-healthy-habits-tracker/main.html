@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 540 -->
+<title>My Healthy Habits Tracker</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 20px; margin: 4px 0 2px; }
+  .subtitle { text-align: center; color: dimgray; font-size: 14px; margin-bottom: 8px; }
+
+  .layout { display: flex; gap: 10px; flex-wrap: wrap; align-items: stretch; }
+  .grid-box { flex: 1 1 440px; background: aliceblue; border: 1px solid silver; border-radius: 6px; padding: 8px; }
+  .chart-side { flex: 1 1 200px; display: flex; flex-direction: column; }
+  .chart-box { background: aliceblue; border: 1px solid silver; border-radius: 6px; padding: 8px; flex: 1; }
+  .chart-container { position: relative; width: 100%; height: 250px; }
+
+  table { border-collapse: collapse; width: 100%; }
+  th, td { text-align: center; padding: 3px 2px; font-size: 14px; }
+  th.habit, td.habit { text-align: left; font-weight: bold; color: navy; padding-left: 4px; white-space: nowrap; }
+  th.day { color: seagreen; font-size: 13px; }
+  tbody tr:nth-child(odd) { background: #eef5fb; }
+
+  .cell { width: 30px; height: 30px; border: 2px solid steelblue; border-radius: 6px;
+          background: white; cursor: pointer; font-size: 20px; line-height: 26px; color: seagreen;
+          font-weight: bold; padding: 0; transition: background 0.12s; }
+  .cell:hover { background: #d8ecff; }
+  .cell.checked { background: seagreen; color: white; border-color: seagreen; }
+
+  .counter { text-align: center; font-size: 16px; font-weight: bold; color: darkorange;
+             background: #fff7ec; border: 1px solid goldenrod; border-radius: 6px; padding: 8px; margin: 8px 0; }
+
+  .controls { text-align: center; margin: 8px 0; }
+  button { font-size: 15px; padding: 7px 16px; background: mediumpurple; color: white;
+           border: none; border-radius: 6px; cursor: pointer; }
+  button:hover { background: #7d5fc0; }
+
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px;
+             padding: 8px 10px; font-size: 14px; color: #334155; line-height: 1.45; min-height: 56px; }
+  .infobox strong { color: navy; }
+  .source { text-align: center; color: gray; font-size: 11px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <h3>My Healthy Habits Tracker</h3>
+  <div class="subtitle">Click a box each day you do a healthy habit. Watch your bars grow!</div>
+
+  <div class="counter" id="counter">You tracked 0 healthy habits this week!</div>
+
+  <div class="layout">
+    <div class="grid-box">
+      <table id="grid"></table>
+    </div>
+    <div class="chart-side">
+      <div class="chart-box">
+        <div class="chart-container"><canvas id="chart"></canvas></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button id="newWeek">New Week</button>
+  </div>
+
+  <div class="infobox" id="infobox">
+    Every box you check is a healthy choice you made. Hover over a bar to see how many days you did that habit.
+  </div>
+  <div class="source">A weekly practice tracker. Try the paper version at home too!</div>
+</main>
+<script>
+const habits = ['Brushed Teeth', 'Drank Water', 'Active Play', 'Ate a Fruit or Vegetable'];
+const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+const dayFull = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+const barColors = ['steelblue', 'seagreen', 'darkorange', 'mediumpurple'];
+
+// state[habitIndex][dayIndex] = true/false
+const state = habits.map(() => days.map(() => false));
+
+// Build the checklist grid
+const grid = document.getElementById('grid');
+let html = '<thead><tr><th class="habit">Habit</th>';
+days.forEach(d => { html += '<th class="day">' + d + '</th>'; });
+html += '</tr></thead><tbody>';
+habits.forEach((h, hi) => {
+  html += '<tr><td class="habit">' + h + '</td>';
+  days.forEach((d, di) => {
+    html += '<td><button class="cell" data-h="' + hi + '" data-d="' + di + '" ' +
+            'aria-label="' + h + ' on ' + dayFull[di] + '"></button></td>';
+  });
+  html += '</tr>';
+});
+html += '</tbody>';
+grid.innerHTML = html;
+
+// Chart.js bar chart: one bar per habit, height = days checked
+const shortLabels = ['Teeth', 'Water', 'Play', 'Fruit/Veg'];
+const ctx = document.getElementById('chart').getContext('2d');
+const chart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: shortLabels,
+    datasets: [{
+      label: 'Days Checked',
+      data: [0, 0, 0, 0],
+      backgroundColor: barColors,
+      borderColor: barColors,
+      borderWidth: 1
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    scales: {
+      y: { beginAtZero: true, max: 7, ticks: { stepSize: 1 }, title: { display: true, text: 'Days This Week' } },
+      x: { ticks: { font: { size: 12 } } }
+    },
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: {
+        title: items => habits[items[0].dataIndex],
+        label: c => {
+          const hi = c.dataIndex;
+          const checkedDays = days.filter((d, di) => state[hi][di]);
+          const count = c.parsed.y;
+          const line = count + (count === 1 ? ' day' : ' days');
+          return checkedDays.length ? line + ': ' + checkedDays.join(', ') : line;
+        }
+      }, bodyFont: { size: 12 }, titleFont: { size: 13 }, boxPadding: 4 }
+    }
+  }
+});
+
+const counterEl = document.getElementById('counter');
+const infobox = document.getElementById('infobox');
+
+function counts() { return state.map(row => row.filter(Boolean).length); }
+function total() { return counts().reduce((a, b) => a + b, 0); }
+
+function refresh() {
+  const c = counts();
+  chart.data.datasets[0].data = c;
+  chart.update();
+  const t = total();
+  counterEl.textContent = 'You tracked ' + t + (t === 1 ? ' healthy habit' : ' healthy habits') + ' this week!';
+}
+
+// Click-to-toggle a checkbox cell
+grid.addEventListener('click', e => {
+  const cell = e.target.closest('.cell');
+  if (!cell) return;
+  const hi = +cell.dataset.h, di = +cell.dataset.d;
+  state[hi][di] = !state[hi][di];
+  if (state[hi][di]) { cell.classList.add('checked'); cell.textContent = '✓'; }
+  else { cell.classList.remove('checked'); cell.textContent = ''; }
+  refresh();
+  const on = state[hi][di];
+  infobox.innerHTML = '<strong>' + habits[hi] + '</strong> &mdash; ' +
+    (on ? 'Great job! You did this on ' + dayFull[di] + '. Your bar just grew.'
+        : 'You unchecked ' + dayFull[di] + '. Your bar went down by one.');
+});
+
+// New Week button clears the grid
+document.getElementById('newWeek').addEventListener('click', () => {
+  for (let hi = 0; hi < habits.length; hi++) for (let di = 0; di < days.length; di++) state[hi][di] = false;
+  grid.querySelectorAll('.cell').forEach(cell => { cell.classList.remove('checked'); cell.textContent = ''; });
+  refresh();
+  infobox.innerHTML = 'A fresh new week! Check a box each day you do a healthy habit and watch your bars grow.';
+});
+</script>
+</body>
+</html>

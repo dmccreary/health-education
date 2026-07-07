@@ -1,0 +1,15 @@
+{
+  "sim_id": "symptom-visibility-testing-decision-path",
+  "diagram_name": "Symptom Visibility and Testing Decision Path",
+  "chapter_number": 3,
+  "chapter_title": "Healthcare Access and Sexual Health",
+  "chapter_dir": "03-healthcare-access-and-sexual-health",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/03-healthcare-access-and-sexual-health",
+  "library": "Mermaid",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, differentiate, distinguish",
+  "learning_objective": "Students analyze why the presence or absence of symptoms cannot reliably indicate STI status, concluding that routine testing is the only dependable path to an accurate answer.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n**sim-id:** symptom-visibility-testing-decision-path<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: examine, differentiate, distinguish\n\nLearning objective: Students analyze why the presence or absence of symptoms cannot reliably indicate STI status, concluding that routine testing is the only dependable path to an accurate answer.\n\nVisual style: Mermaid flowchart — start node (\"Person Is Sexually Active\"), decision diamond (\"Are Symptoms Present?\"), two branches that both route to the same end node.\n\nSteps: (1) Start node, click reveals this applies to any sexually active person; (2) decision diamond, click reveals many STIs cause no symptoms at all; (3a) \"Symptoms Present\" branch, click reveals symptoms alone still require testing to confirm which infection, if any; (3b) \"No Symptoms\" branch, click reveals absence of symptoms does not rule out an STI; (4) shared end node \"Routine Testing,\" click reveals testing is the only reliable way to know STI status regardless of symptoms.\n\nEvery node must have a Mermaid `click` directive calling an infobox function.\n\nColor coding: Blue for start/shared nodes, neutral gray for both branches (deliberately not color-coded as \"safe\" vs \"risk\" since both converge on the same recommendation).\n\nImplementation: Mermaid flowchart syntax with `click NodeId call showInfo(\"key\")` for every node; infobox text in a JS lookup object. No anatomical imagery — text-only nodes."
+}

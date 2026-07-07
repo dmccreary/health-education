@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 520 -->
+<title>Kindness for Every Ability Explorer</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 20px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 13px; margin-bottom: 8px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 320px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 9px; font-size: 12px; line-height: 1.5; color: #334155; }
+  .legend b { color: navy; }
+  .controls { text-align: center; margin-top: 8px; }
+  .controls button { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: white; background: mediumpurple; border: none; border-radius: 6px; padding: 8px 16px; cursor: pointer; }
+  .controls button:hover { background: #7a5fc0; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 5px solid seagreen; border-radius: 4px; padding: 10px 12px; font-size: 15px; color: #334155; line-height: 1.5; min-height: 70px; }
+  .infobox strong { color: navy; }
+</style>
+</head>
+<body>
+<main>
+  <h3>Kindness for Every Ability</h3>
+  <div class="subtitle">Click a classmate to learn one kind way to include them. We are all part of the same class.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <b>Tap a friend</b><br>
+      Each classmate is different,<br>
+      and each one belongs here.
+    </div>
+  </div>
+  <div class="controls">
+    <button id="sameBtn">What's the same for everyone?</button>
+  </div>
+  <div class="infobox" id="infobox">Everyone in our class is a little different, and that is a good thing. Click any classmate above to see one kind way to include them.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+
+// Each classmate: friendly color, short first-name label, hover line, and full click text.
+const mates = [
+  { id:'alex',   name:'Alex',   color:'#4f8fd0', border:'#2e5f8a',
+    hover:'Alex uses a wheelchair to get around.',
+    text:'Alex uses a wheelchair to get around. Ask how to include them, like choosing a game area that is easy to reach.' },
+  { id:'jordan', name:'Jordan', color:'#3aa76d', border:'#1f7a4a',
+    hover:'Jordan uses a hearing aid.',
+    text:'Jordan uses a hearing aid. Facing Jordan when you talk helps them hear and understand you.' },
+  { id:'sam',    name:'Sam',    color:'#e8913a', border:'#c06f18',
+    hover:'Sam is autistic.',
+    text:'Sam’s brain processes the world a little differently and may need quiet breaks. Knowing what helps is a strength, not a weakness.' },
+  { id:'riley',  name:'Riley',  color:'#d4a017', border:'#9c7400',
+    hover:'Riley has ADHD.',
+    text:'Riley has ADHD, which can make sitting still or focusing harder some days. Riley is not being lazy on purpose.' },
+  { id:'priya',  name:'Priya',  color:'#9575cd', border:'#6a4fa8',
+    hover:'Priya has dyslexia.',
+    text:'Priya has dyslexia, which makes reading take more effort. Priya is just as smart as any classmate.' },
+  { id:'casey',  name:'Casey',  color:'#c0655f', border:'#94413c',
+    hover:'Casey has no difference you can see.',
+    text:'Not every difference can be seen. Being kind to everyone, always, is the right choice.' }
+];
+
+const nodes = [];
+const edges = [];
+const info = {};
+
+// Central "Our Class" node at the top.
+nodes.push({ id:'class', label:'Our\nClass', shape:'ellipse', level:0,
+  color:{ background:'#5b9bd5', border:'#2e5f8a' },
+  font:{ color:'white', size:18, face:'Arial' }, borderWidth:3 });
+info['class'] = { title:'Our Class', text:'Every classmate belongs here. We include, respect, and treat everyone with kindness.' };
+
+// Six classmate nodes in a row below, each its own friendly color.
+mates.forEach(m => {
+  nodes.push({ id:m.id, label:m.name, shape:'dot', size:26, level:1,
+    color:{ background:m.color, border:m.border, highlight:{ background:m.color, border:'#222' } },
+    font:{ color:'#1a1a1a', size:16, face:'Arial', vadjust:0 }, borderWidth:3 });
+  edges.push({ from:'class', to:m.id, color:{ color:'#b7c4d1' }, width:2 });
+  info[m.id] = { title:m.name, text:m.text };
+  info[m.id + '_hover'] = m.hover + ' Click to learn a kind way to include them.';
+});
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  layout: { hierarchical: { direction:'UD', sortMethod:'directed', levelSeparation:110, nodeSpacing:120 } },
+  physics: false,
+  interaction: { hover:true, dragView:true, zoomView:false, navigationButtons:true, tooltipDelay:100000, selectConnectedEdges:false },
+  edges: { smooth:{ type:'cubicBezier', forceDirection:'vertical', roundness:0.5 } },
+  nodes: { shadow:true }
+};
+const network = new vis.Network(container, data, options);
+network.once('afterDrawing', () => network.fit());
+
+function panel(id){
+  const d = info[id];
+  if (d) box.innerHTML = '<strong>' + d.title + '</strong><br>' + d.text;
+}
+network.on('hoverNode', p => { const h = info[p.node + '_hover']; if (h) box.innerHTML = h; });
+network.on('click', p => { if (p.nodes.length) panel(p.nodes[0]); });
+
+document.getElementById('sameBtn').addEventListener('click', () => {
+  box.innerHTML = '<strong>The same for everyone</strong><br>Everyone wants to be included, respected, and treated kindly.';
+});
+</script>
+</body>
+</html>

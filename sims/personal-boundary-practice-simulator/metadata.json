@@ -1,0 +1,23 @@
+{
+  "title": "Practice Setting a Boundary",
+  "description": "Students practice using clear boundary-setting language by choosing the best response in short, everyday scenarios involving personal space or belongings.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "personal-boundary-practice-simulator",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "use, demonstrate, practice",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Relationships And Respect",
+  "chapter_dir": "05-relationships-and-respect",
+  "chapter_rel_dir": "bands/grade-3/chapters/05-relationships-and-respect"
+}

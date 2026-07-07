@@ -1,0 +1,15 @@
+{
+  "sim_id": "health-source-credibility-checklist",
+  "diagram_name": "Health Source Credibility Checklist",
+  "chapter_number": 11,
+  "chapter_title": "Health Influences and Information Literacy",
+  "chapter_dir": "11-health-influences-and-information-literacy",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/11-health-influences-and-information-literacy",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "identify, summarize, exemplify",
+  "learning_objective": "Students identify the five characteristics of a valid health information source (expertise-based, evidence-based, transparent funding, regularly updated, no product-selling conflict) and exemplify each with a realistic source type.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** health-source-credibility-checklist<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: identify, summarize, exemplify\n\nLearning objective: Students identify the five characteristics of a valid health information source (expertise-based, evidence-based, transparent funding, regularly updated, no product-selling conflict) and exemplify each with a realistic source type.\n\nLayout: Five labeled checklist cards, one per characteristic, each with a short icon; below, six example source cards (e.g., \"A government public health agency page,\" \"An influencer's paid product post,\" \"A hospital patient-education page,\" \"A blog selling a supplement it also recommends\").\n\nInteractive controls: Learner clicks an example source card, then clicks each checklist characteristic it does or does not meet; a running score panel shows how many characteristics that source meets; clicking a \"Reveal Verdict\" button shows a short explanation of whether the source is generally valid, generally not valid, or mixed, and why.\n\nDefault parameters: No source pre-selected; checklist criteria always visible at the top.\n\nInstructional Rationale: An Understand-level objective calls for concrete worked examples rather than animation; a checklist-and-verdict structure lets learners see the specific criteria applied step by step to real source types before making a judgment.\n\nImplementation notes: p5.js. Responsive canvas that stacks checklist cards above example cards on narrow screens."
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Steps for Saying No and Getting Help",
+  "description": "Students explain the sequence of actions to take when facing an unwanted touch, from saying no through telling a trusted adult.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "saying-no-getting-help-workflow",
+  "library": "Mermaid",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, describe, summarize",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Body Safety and Speaking Up",
+  "chapter_dir": "06-body-safety-speaking-up",
+  "chapter_rel_dir": "bands/grade-2/chapters/06-body-safety-speaking-up"
+}

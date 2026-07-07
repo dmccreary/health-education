@@ -1,0 +1,15 @@
+{
+  "sim_id": "bullying-vs-conflict-decision-guide",
+  "diagram_name": "Bullying vs. Conflict Decision Guide",
+  "chapter_number": 5,
+  "chapter_title": "Stigma, Bias, and Brain Health",
+  "chapter_dir": "05-stigma-bias-and-brain-health",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/05-stigma-bias-and-brain-health",
+  "library": "Mermaid",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "distinguish, differentiate, examine",
+  "learning_objective": "Students distinguish bullying from ordinary peer conflict by examining whether repetition and a power imbalance are present, and identify the appropriate response for each.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n**sim-id:** bullying-vs-conflict-decision-guide<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: distinguish, differentiate, examine\n\nLearning objective: Students distinguish bullying from ordinary peer conflict by examining whether repetition and a power imbalance are present, and identify the appropriate response for each.\n\nVisual style: Mermaid flowchart with a start node, one decision diamond, and two labeled end paths.\n\nSteps: (1) Start node \"A Peer Situation Feels Hurtful,\" click reveals this is the starting point for evaluating any hurtful peer situation; (2) decision diamond \"Is It Repeated, and Is There a Power Imbalance?\" click reveals what a power imbalance can look like (size, social status, group vs. individual); (3a) branch \"No\" leads to \"Likely Ordinary Conflict — Use Conflict-Resolution Skills,\" click reveals this connects to the communication and conflict-resolution skills from the previous chapter; (3b) branch \"Yes\" leads to \"This Is Bullying — Tell a Trusted Adult,\" click reveals that bullying should always be reported, not handled alone; both paths lead to a shared end node \"Situation Addressed Safely,\" click reveals that either path is about getting the right kind of help, not about handling everything alone.\n\nEvery node must have a Mermaid `click` directive calling an infobox function.\n\nColor coding: Blue for the start node, yellow for the decision diamond, green for both end paths and the shared final node.\n\nImplementation: Mermaid flowchart syntax with `click NodeId call showInfo(\"key\")` for every node; infobox text in a JS lookup object."
+}

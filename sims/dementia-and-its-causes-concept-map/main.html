@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 540 -->
+<title>Dementia and Its Causes Concept Map</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 400px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 8px; font-size: 11px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 12px; height: 12px; margin-right: 5px; vertical-align: middle; border: 1px solid #555; }
+  .legend .circle { border-radius: 50%; }
+  .legend .line { width: 16px; height: 0; border: none; border-top: 3px solid mediumseagreen; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid mediumpurple; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 70px; }
+  .infobox strong { color: navy; }
+</style>
+</head>
+<body>
+<main>
+  <h3>Dementia and Its Causes</h3>
+  <div class="subtitle">Hover a node for a quick label. Click any node to learn more. Scroll to zoom, drag the background to pan.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k circle" style="background:mediumpurple;"></span>Dementia (the pattern)<br>
+      <span class="k" style="background:steelblue;"></span>What can cause it<br>
+      <span class="k circle" style="background:seagreen;"></span>Habits that support brain health<br>
+      <span class="k line"></span>May support (not a cure)
+    </div>
+  </div>
+  <div class="infobox" id="infobox">Dementia is a name for a group of symptoms. Blue squares above show conditions that can cause it. Green circles below show everyday habits that may support brain health. Click any node to read more.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+
+// Fixed layout: central node in the middle, causes above, habits below.
+const CX = 0;
+
+// ---- Node data with per-node explanations ----
+const causes = [
+  { id:'alz', label:"Alzheimer's\nDisease", x:0, y:-190, w:3, size:22,
+    hover:"Alzheimer's disease is the most common cause of dementia.",
+    text:"Alzheimer's disease is the most common cause of dementia. It slowly changes the brain over many years, affecting memory and thinking. Doctors and scientists keep learning more about it every year." },
+  { id:'vasc', label:'Vascular\nConditions', x:-215, y:-95, w:2, size:16,
+    hover:'Problems with blood flow in the brain can lead to dementia.',
+    text:"Vascular conditions affect how blood flows to the brain. When brain cells do not get enough oxygen-rich blood, thinking and memory can be affected. This is another cause of dementia." },
+  { id:'other', label:'Other Brain\nDiseases', x:230, y:-150, w:2, size:16,
+    hover:'Several less-common brain diseases can also cause dementia.',
+    text:"A number of other, less-common brain diseases can also lead to dementia. Each one affects the brain in its own way. Together they make up a smaller share of dementia cases." }
+];
+
+const habits = [
+  { id:'sleep', label:'Quality\nSleep', x:-260, y:170,
+    hover:'Good sleep helps the brain rest and recover.',
+    text:"Getting good sleep gives the brain time to rest and recover. Healthy sleep habits are linked with better memory and mood. Habits like this may support brain health over time, though nothing can guarantee it." },
+  { id:'nutr', label:'Balanced\nNutrition', x:-130, y:200,
+    hover:'Nourishing foods give the brain what it needs.',
+    text:"Eating a balanced variety of foods gives the brain the nutrients it needs to work well. Diets rich in vegetables, whole grains, and healthy fats are associated with sharper thinking as people age. This may support brain health, but is not a cure." },
+  { id:'phys', label:'Physical\nActivity', x:0, y:210,
+    hover:'Moving your body supports a healthy brain.',
+    text:"Regular physical activity raises blood flow to the brain and helps keep the whole body healthy. It is linked with better memory and attention. Staying active may support long-term brain health." },
+  { id:'soc', label:'Social\nConnection', x:130, y:200,
+    hover:'Spending time with others supports the brain.',
+    text:"Spending time with family and friends keeps the mind engaged and lowers stress. People with strong social ties often keep sharper memory and mood as they age. Connection may support brain health, though it cannot prevent disease." },
+  { id:'mental', label:'Mental\nEngagement', x:260, y:170,
+    hover:'Challenging your mind keeps it flexible.',
+    text:"Learning new things, reading, and solving puzzles keep the mind active and flexible. Challenging your brain is linked with stronger thinking over time. This may support brain health, but does not promise to prevent dementia." }
+];
+
+const info = {
+  center: { title:'Dementia', text:"Dementia is a name for a group of symptoms that affect memory, thinking, and daily life. It becomes more common as people grow older, but it is NOT a normal or required part of aging. People living with dementia deserve the same dignity and respect as everyone else." }
+};
+
+const nodes = [];
+const edges = [];
+
+// Central node
+nodes.push({
+  id:'center', label:'Dementia\n(General Pattern\nof Symptoms)',
+  x:CX, y:0, shape:'ellipse',
+  color:{ background:'mediumpurple', border:'#5b3fa0', highlight:{ background:'#9a7fd6', border:'#5b3fa0' } },
+  font:{ color:'white', size:16, face:'Arial', bold:true }, borderWidth:3
+});
+
+// Cause nodes (blue squares) -> solid blue arrows to center
+causes.forEach(c => {
+  nodes.push({
+    id:c.id, label:c.label, x:c.x, y:c.y, shape:'box',
+    color:{ background:'steelblue', border:'#2c5578', highlight:{ background:'#5a8fbf', border:'#2c5578' } },
+    font:{ color:'white', size:14, face:'Arial' }, borderWidth:c.w, margin:9,
+    heightConstraint:{ minimum:c.size + 20 }
+  });
+  edges.push({
+    from:c.id, to:'center', label:'is a\ncause of',
+    font:{ size:10, color:'#2c5578', strokeWidth:3, strokeColor:'aliceblue' },
+    color:{ color:'steelblue', highlight:'navy' }, width:2.5,
+    arrows:{ to:{ enabled:true, scaleFactor:0.7 } }, smooth:{ type:'curvedCW', roundness:0.12 }
+  });
+  info[c.id] = { title:c.label.replace(/\n/g,' '), text:c.text };
+  info[c.id + '_hover'] = c.hover;
+});
+
+// Habit nodes (green circles) -> dashed green arrows to center
+habits.forEach(h => {
+  nodes.push({
+    id:h.id, label:h.label, x:h.x, y:h.y, shape:'circle',
+    color:{ background:'seagreen', border:'#256b4a', highlight:{ background:'#3ea073', border:'#256b4a' } },
+    font:{ color:'white', size:13, face:'Arial' }, borderWidth:2
+  });
+  edges.push({
+    from:h.id, to:'center', label:'may\nsupport',
+    font:{ size:9, color:'#256b4a', strokeWidth:3, strokeColor:'aliceblue' },
+    color:{ color:'mediumseagreen', highlight:'seagreen' }, width:2, dashes:[6,5],
+    arrows:{ to:{ enabled:true, scaleFactor:0.6 } }, smooth:{ type:'curvedCCW', roundness:0.1 }
+  });
+  info[h.id] = { title:h.label.replace(/\n/g,' '), text:h.text };
+  info[h.id + '_hover'] = h.hover;
+});
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  physics: false,
+  layout: { improvedLayout: false },
+  interaction: { hover: true, dragView: true, zoomView: true, navigationButtons: true, tooltipDelay: 100000 },
+  nodes: { shadow: true },
+  edges: { smooth: true }
+};
+const network = new vis.Network(container, data, options);
+network.once('afterDrawing', () => { network.fit({ animation: false }); });
+
+function panel(id){
+  const key = (id === 'center') ? 'center' : id;
+  const d = info[key];
+  if (d) box.innerHTML = '<strong>' + d.title + '</strong><br>' + d.text;
+}
+network.on('hoverNode', p => {
+  const h = info[p.node + '_hover'];
+  if (h) box.innerHTML = h;
+  else if (p.node === 'center') box.innerHTML = 'Dementia is a pattern of symptoms, not a single disease.';
+});
+network.on('click', p => { if (p.nodes.length) panel(p.nodes[0]); });
+</script>
+</body>
+</html>

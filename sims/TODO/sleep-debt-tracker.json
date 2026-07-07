@@ -1,0 +1,15 @@
+{
+  "sim_id": "sleep-debt-tracker",
+  "diagram_name": "Sleep Debt Tracker",
+  "chapter_number": 5,
+  "chapter_title": "Personal Health And Wellness",
+  "chapter_dir": "05-personal-health-and-wellness",
+  "chapter_rel_dir": "bands/grade-5/chapters/05-personal-health-and-wellness",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, summarize, interpret",
+  "learning_objective": "Students explain why adequate sleep matters for growth and learning by tracking a week of sleep hours against the 9-12 hour recommendation and observing the effects for each night.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** sleep-debt-tracker<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, summarize, interpret\n\nLearning objective: Students explain why adequate sleep matters for growth and learning by tracking a week of sleep hours against the 9-12 hour recommendation and observing the effects for each night.\n\nCanvas layout: Left (450px) 7-day bar chart of hours slept; right (200px) sliders and effects panel.\n\nVisual elements: Seven bars (Mon-Sun); shaded reference band for the healthy 9-12 hour range; effects panel with icons for learning, mood, growth, immune system.\n\nInteractive controls: Seven sliders (4-12 hours each, one per day); running \"sleep debt\" display; \"Reset to Healthy Week\" button (sets all sliders to 10).\n\nDefault parameters: Mon 7, Tue 6, Wed 9, Thu 7, Fri 10, Sat 11, Sun 8.\n\nBehavior: Bars below the healthy band dim and trigger notes like \"Less growth hormone released\"; bars in/above the band brighten and show notes like \"Memories get organized well.\" Sleep debt total updates live as sliders move.\n\nInstructional Rationale: Understand-level objective, so the design shows concrete per-night data next to plain-language effects rather than animation, letting students connect a number to a real consequence.\n\nImplementation notes: p5.js; store the healthy range as a constant; recompute bar color and effects text on slider change."
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Nonviolent Resolution Process Workflow",
+  "description": "Students apply the five-step nonviolent conflict",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "nonviolent-resolution-process-workflow",
+  "library": "Mermaid",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "apply, demonstrate, use",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Conflict Resolution and Inclusion",
+  "chapter_dir": "06-conflict-resolution-and-inclusion",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/06-conflict-resolution-and-inclusion"
+}

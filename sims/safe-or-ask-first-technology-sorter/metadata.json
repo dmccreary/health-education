@@ -1,0 +1,23 @@
+{
+  "title": "Safe or Ask First? Technology Sorter",
+  "description": "Students apply the rule of asking permission before sharing information by sorting a series of simple scenario cards into \"Safe to Do\" and \"Ask a Trusted Adult First\" bins.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "safe-or-ask-first-technology-sorter",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate, practice, apply",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Staying Safe at Home, School, and Online",
+  "chapter_dir": "06-personal-safety",
+  "chapter_rel_dir": "bands/grade-1/chapters/06-personal-safety"
+}

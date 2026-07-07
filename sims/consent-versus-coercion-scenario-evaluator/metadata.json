@@ -1,0 +1,38 @@
+{
+  "title": "Consent Versus Coercion Scenario Evaluator",
+  "description": "Students evaluate short scenarios and judge whether the outcome reflects genuine consent or coercion, justifying their reasoning.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "consent-versus-coercion-scenario-evaluator",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "judge, justify, assess",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Personal Safety And Violence Prevention",
+  "chapter_dir": "06-personal-safety-and-violence-prevention",
+  "chapter_rel_dir": "bands/grade-5/chapters/06-personal-safety-and-violence-prevention",
+  "educational": {
+    "gradeLevel": "Grade 5",
+    "subjectArea": "Health Education",
+    "topic": "Personal Safety And Violence Prevention",
+    "learningObjectives": [
+      "Students evaluate short scenarios and judge whether the outcome reflects genuine consent or coercion, justifying their reasoning."
+    ],
+    "bloomLevel": "Evaluate (L5)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "judge, justify, assess",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Evaluate-level objective through direct interaction rather than passive reading."
+  }
+}

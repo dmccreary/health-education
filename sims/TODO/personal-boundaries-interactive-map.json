@@ -1,0 +1,15 @@
+{
+  "sim_id": "personal-boundaries-interactive-map",
+  "diagram_name": "Personal Boundaries Interactive Map",
+  "chapter_number": 4,
+  "chapter_title": "Personal Safety and Refusal Skills",
+  "chapter_dir": "04-safety-and-refusal-skills",
+  "chapter_rel_dir": "bands/grade-4/chapters/04-safety-and-refusal-skills",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, exemplify, classify",
+  "learning_objective": "Students explain and classify examples of personal boundaries across four categories (physical, belongings, time, information) and connect each to an example boundary-setting phrase.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** personal-boundaries-interactive-map<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, exemplify, classify\n\nLearning objective: Students explain and classify examples of personal boundaries across four categories (physical, belongings, time, information) and connect each to an example boundary-setting phrase.\n\nPurpose: Reinforce the four boundary categories from the chapter and show a matching respectful phrase for each.\n\nLayout: A central circle labeled \"Personal Boundaries\" with four surrounding petal shapes labeled Physical, Belongings, Time, and Information\n\nInteractive elements:\n- Hover or click a petal to reveal: a one-sentence definition of that boundary type, one everyday example, and one example phrase for setting that boundary\n- Clicking the center circle reveals a summary: \"You have the right to set boundaries, and you also have the responsibility to respect other people's boundaries.\"\n\nData to display per petal:\n- Physical: \"Your body and personal space.\" Example: someone standing too close. Phrase: \"Please give me a little more space.\"\n- Belongings: \"Your things.\" Example: a classmate grabbing your pencil. Phrase: \"Please ask before you borrow my things.\"\n- Time: \"How you spend your time.\" Example: being pressured to stay longer at an activity. Phrase: \"I need to head home now.\"\n- Information: \"What you share about yourself.\" Example: being asked personal questions by someone you don't know well. Phrase: \"I'd rather not share that.\"\n\nColor coding: Each petal a distinct calm color (blue, green, purple, gold); center circle in warm neutral gray\n\nResponsive behavior: Petals rearrange into a vertical stack on narrow screens while keeping click/hover functionality\n\nImplementation: p5.js with clickable petal shapes and a text infobox panel that updates on interaction."
+}

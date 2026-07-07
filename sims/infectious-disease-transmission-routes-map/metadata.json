@@ -1,0 +1,23 @@
+{
+  "title": "Infectious Disease Transmission Routes Map",
+  "description": "Students explain the four major transmission routes for infectious disease and classify example diseases and prevention strategies under the correct route.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "infectious-disease-transmission-routes-map",
+  "library": "vis-network",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, classify, exemplify",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Sleep, Fitness, and Emergency Response",
+  "chapter_dir": "06-sleep-fitness-and-emergency-response",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/06-sleep-fitness-and-emergency-response"
+}

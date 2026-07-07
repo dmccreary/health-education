@@ -1,0 +1,23 @@
+{
+  "title": "Traditional and Conventional Healing Supports Map",
+  "description": "Students describe a range of traditional and conventional healing supports and explain that these approaches are complementary rather than competing.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "traditional-conventional-healing-supports-map",
+  "library": "vis-network",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, describe, classify",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Emotional Well-Being and Mental Health",
+  "chapter_dir": "04-emotional-well-being-and-mental-health",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/04-emotional-well-being-and-mental-health"
+}

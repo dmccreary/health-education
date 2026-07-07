@@ -1,0 +1,15 @@
+{
+  "sim_id": "health-influence-explorer",
+  "diagram_name": "Who Shapes My Health Choices?",
+  "chapter_number": 1,
+  "chapter_title": "Foundations Of Health",
+  "chapter_dir": "01-foundations-of-health",
+  "chapter_rel_dir": "bands/grade-3/chapters/01-foundations-of-health",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "classify, exemplify, explain",
+  "learning_objective": "Students classify everyday scenarios into the correct source of influence (family, friends, school, community, media, culture) and explain whether each example nudges a health behavior in a helpful or unhelpful direction.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** health-influence-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: classify, exemplify, explain\n\nLearning objective: Students classify everyday scenarios into the correct source of influence (family, friends, school, community, media, culture) and explain whether each example nudges a health behavior in a helpful or unhelpful direction.\n\nPurpose: Help students see that health choices come from many outside sources, and that noticing the source is the first step toward evaluating whether to follow it.\n\nLayout: A central child character surrounded by six labeled \"influence bubbles\" arranged in a ring: Family, Friends, School, Community, Media, Culture.\n\nInteractive elements:\n- Click a bubble: an infobox opens with a short definition and two example scenario cards for that influence\n- Each scenario card has a thumbs-up or thumbs-down icon the student can pick, revealing a one-sentence explanation of why the example is helpful or unhelpful for health\n- \"Show Another Example\" button cycles a fresh scenario into the open bubble\n- A running tally at the bottom shows how many helpful vs. unhelpful examples the student has reviewed\n\nVisual style: Flat, friendly illustration with the child character in the center and soft-colored bubbles radiating outward; diverse families and community settings represented.\n\nColor scheme: Each influence bubble has its own soft color (family: warm yellow, friends: light green, school: blue, community: purple, media: orange, culture: teal) used consistently with later chapters.\n\nResponsive behavior: Ring of bubbles collapses into a scrollable row on narrow screens; all bubbles remain tappable.\n\nImplementation: p5.js with an object array of influence data (name, color, definition, scenario list) driving click-to-reveal infoboxes."
+}

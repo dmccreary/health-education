@@ -1,0 +1,15 @@
+{
+  "sim_id": "boundary-conversation-workflow",
+  "diagram_name": "Boundary Conversation Before Sexual Activity",
+  "chapter_number": 4,
+  "chapter_title": "Healthcare Access and Sexual Health",
+  "chapter_dir": "04-healthcare-access-and-sexual-health",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/04-healthcare-access-and-sexual-health",
+  "library": "Mermaid",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate, use, apply",
+  "learning_objective": "Students apply the boundary-communication skill from",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n\n**sim-id:** boundary-conversation-workflow<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Apply (L3)\nBloom Verb: demonstrate, use, apply\n\nLearning objective: Students apply the boundary-communication skill from\nthe consent chapter to the specific context of discussing protection and\nprevention with a partner before sexual activity.\n\nVisual style: Mermaid flowchart, top-to-bottom, click handlers on every\nnode (`click NodeId call showInfo(\"term\")`)\n\nNodes (all clickable):\n1. \"Decide Personal Boundaries in Advance\" — click text: \"Think through\n   what protective conditions matter to you before a situation makes it\n   harder to think clearly\"\n2. \"State Boundaries Directly to a Partner\" — click text: \"Clear,\n   unambiguous statements, not hints — the same standard as any other\n   boundary communication\"\n3. \"Discuss Protection Method(s)\" — click text: \"Agree explicitly on which\n   method(s) will be used; assuming a shared understanding is not the\n   same as confirming one\"\n4. \"Discuss Testing History\" — click text: \"Sharing recent testing status\n   supports an informed, mutual decision for both partners\"\n5. \"Partner Response?\" (decision diamond) — click text: \"A partner's\n   willingness to have this conversation openly is itself meaningful\n   information\"\n6a. \"Partner Engages Respectfully\" — click text: \"Mutual respect means\n    both partners' health and comfort carry equal weight in the decision\"\n6b. \"Partner Resists or Dismisses the Conversation\" — click text: \"Refusal\n    to discuss protection is a boundary-relevant signal, not a minor\n    detail to overlook\"\n7. \"Informed, Mutual Decision\" — click text: \"The same five requirements\n   of consent from the previous chapter apply to this decision as much as\n   any other\"\n\nConnections: 1→2, 2→3, 3→4, 4→5, 5→6a, 5→6b, 6a→7\n\nColor coding: blue for preparation steps (1-4), gold for the decision\ndiamond, green for the respectful-response branch, orange for the\nresistance branch\n\nInteractive features: click any node for its infobox explaining the\nconcept and linking back to the consent framework from the previous\nchapter\n\nImplementation: Mermaid.js flowchart with JavaScript click bindings to a\ncustom showInfo() function"
+}

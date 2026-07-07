@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Supports and Barriers Planning Map</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Supports and Barriers Planning Map</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> supports-and-barriers-planning-map</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students organize example supports and barriers around a sample health goal, distinguishing which category each item belongs to and connecting each barrier to a planned response.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: graph-model
+    **sim-id:** supports-and-barriers-planning-map<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: organize, examine, distinguish
+    
+    Learning objective: Students organize example supports and barriers around a sample health goal, distinguishing which category each item belongs to and connecting each barrier to a planned response.
+    
+    Purpose: Show a sample health goal surrounded by its supports, barriers, and barrier-response plans as a connected network students can explore
+    
+    Node types:
+    1. Central node: the sample goal, "Walk to school 3 days this week" (large box)
+    2. Support nodes (green circles): "Walking buddy," "Comfortable shoes," "Parent's approved route," "Morning reminder chart"
+    3. Barrier nodes (red circles): "Rainy weather," "Forgetting in week one," "No walking buddy available that day"
+    4. Response nodes (blue circles, connected only to their matching barrier): "Do a 10-minute indoor movement video," "Set a phone reminder the night before," "Walk with a different neighbor or sibling instead"
+    
+    Edge types:
+    - "Helps reach" edges (solid green) connecting support nodes to the central goal
+    - "Threatens" edges (solid red) connecting barrier nodes to the central goal
+    - "Planned response" edges (dashed blue) connecting each barrier node to its specific response node
+    
+    Layout: Force-directed with the goal node fixed at the center
+    
+    Interactive features:
+    - Hover any node to see its full description
+    - Click a barrier node to highlight its connected response node and dim unrelated nodes
+    - Click the central goal node to reset the full view
+    - Drag nodes to rearrange; zoom with mouse wheel; pan by dragging background
+    
+    Visual styling:
+    - Central node: neutral gray box, larger than other nodes
+    - Support nodes: green, sized equally
+    - Barrier nodes: red, sized equally
+    - Response nodes: blue, connected only via dashed lines to their barrier
+    
+    Legend: Small panel explaining node colors (Goal, Support, Barrier, Planned Response)
+    
+    Responsive behavior: Graph auto-fits to container width on load and window resize
+    
+    Implementation: vis-network library with force-directed physics enabled and a click event listener that adjusts node/edge opacity to spotlight a selected barrier-response pair.
+    -->
+</body>
+</html>

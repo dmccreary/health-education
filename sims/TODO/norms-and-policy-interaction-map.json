@@ -1,0 +1,15 @@
+{
+  "sim_id": "norms-and-policy-interaction-map",
+  "diagram_name": "Norms And Policy Interaction Map",
+  "chapter_number": 11,
+  "chapter_title": "Health Influences and Information Literacy",
+  "chapter_dir": "11-health-influences-and-information-literacy",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/11-health-influences-and-information-literacy",
+  "library": "vis-network",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "organize, examine, compare",
+  "learning_objective": "Students examine and organize how public health policy and social norms interact to influence four real health issues (tobacco use, seatbelt use, handwashing, vaccination), comparing the two types of influence side by side.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n**sim-id:** norms-and-policy-interaction-map<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: organize, examine, compare\n\nLearning objective: Students examine and organize how public health policy and social norms interact to influence four real health issues (tobacco use, seatbelt use, handwashing, vaccination), comparing the two types of influence side by side.\n\nNode types: Four central issue nodes (gold circles): Tobacco Use, Seatbelt Use, Handwashing, Vaccination. Two influence-type nodes per issue (connected as neighbors): a blue square \"Social Norm\" node and an orange square \"Public Health Policy\" node.\n\nEdge types: \"Shapes\" (solid arrows from each Social Norm or Public Health Policy node to its issue node). \"Reinforces\" (dashed arrow connecting each issue's Social Norm node to its Public Health Policy node, showing they influence each other over time).\n\nLayout: Force-directed, four clusters (one per health issue), each cluster showing its norm and policy nodes.\n\nInteractive features: Hover any node for its label; click an issue node to open an infobox summarizing both influences on that issue; click a Social Norm or Public Health Policy node for a specific one-to-two sentence example from the chapter; zoom with mouse wheel, pan by dragging background.\n\nLegend: Color/shape key distinguishing issue nodes, norm nodes, and policy nodes.\n\nImplementation: vis-network JavaScript library; responsive canvas, default 800x500px."
+}

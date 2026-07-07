@@ -1,0 +1,15 @@
+{
+  "sim_id": "emotion-behavior-pathway-explorer",
+  "diagram_name": "Emotion-to-Behavior Pathway Explorer",
+  "chapter_number": 1,
+  "chapter_title": "Foundations and Trusted Adults",
+  "chapter_dir": "01-foundations-and-trusted-adults",
+  "chapter_rel_dir": "bands/grade-5/chapters/01-foundations-and-trusted-adults",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, describe, interpret",
+  "learning_objective": "Students explain how a triggering situation leads to an emotion, and how that emotion can lead to two different possible behaviors depending on whether the emotion is managed.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** emotion-behavior-pathway-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, describe, interpret\n\nLearning objective: Students explain how a triggering situation leads to an emotion, and how that emotion can lead to two different possible behaviors depending on whether the emotion is managed.\n\nCanvas layout:\n- Left side (150px): A trigger situation card (e.g., \"Being left out of a group chat\")\n- Center (150px): An emotion node showing the resulting feeling (e.g., \"Hurt / Left Out\")\n- Right side (300px): Two branching outcome cards — \"Unmanaged Behavior\" and \"Managed Behavior\" — shown side by side for comparison\n\nVisual elements:\n- A simple left-to-right flow diagram with arrows: Trigger → Emotion → Behavior (branching into two paths)\n- Six preset trigger scenarios selectable from a dropdown, covering common Grade 5 situations (being teased, doing well on a test, an argument with a sibling, being picked last for a team, a schedule change, receiving unexpected good news)\n\nInteractive controls:\n- Dropdown: Select trigger scenario\n- Button: \"Show Unmanaged Path\" — reveals a realistic impulsive behavior and its likely consequence\n- Button: \"Show Managed Path\" — reveals a realistic managed behavior (naming the feeling, pausing, asking for help, using a calming strategy) and its likely consequence\n- Step-through Next/Previous buttons to move between Trigger, Emotion, and Behavior stages\n\nData Visibility Requirements:\nStage 1: Show the trigger situation in plain language\nStage 2: Show the named emotion that situation commonly produces\nStage 3a: Show the unmanaged behavior and its likely short-term consequence\nStage 3b: Show the managed behavior and its likely short-term consequence\nFinal: Show both paths side by side for direct comparison\n\nInstructional Rationale: This is an Understand-level objective focused on explaining a causal chain, so the pattern uses step-through stages with concrete worked examples rather than continuous animation, which would obscure the distinct trigger-emotion-behavior stages the student needs to trace.\n\nImplementation notes: Use p5.js. Store each scenario as an object containing trigger text, emotion label, unmanaged behavior/consequence, and managed behavior/consequence, so switching the dropdown swaps all connected text."
+}

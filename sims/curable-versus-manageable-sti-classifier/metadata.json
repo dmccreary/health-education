@@ -1,0 +1,38 @@
+{
+  "title": "Curable Versus Manageable STI Classifier",
+  "description": "Students classify named STIs (by text label only, no imagery) as curable or manageable-but-not-curable, and justify each classification using the bacterial-versus-viral distinction.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "curable-versus-manageable-sti-classifier",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "classify, justify, differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "Healthcare Access and Sexual Health",
+  "chapter_dir": "03-healthcare-access-and-sexual-health",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/03-healthcare-access-and-sexual-health",
+  "educational": {
+    "gradeLevel": "Grades 6-8",
+    "subjectArea": "Health Education",
+    "topic": "Healthcare Access and Sexual Health",
+    "learningObjectives": [
+      "Students classify named STIs (by text label only, no imagery) as curable or manageable-but-not-curable, and justify each classification using the bacterial-versus-viral distinction."
+    ],
+    "bloomLevel": "Evaluate (L5)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "classify, justify, differentiate",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Evaluate-level objective through direct interaction rather than passive reading."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Substance-Free Benefits Explorer",
+  "description": "Students identify and explain specific, concrete benefits of remaining substance-free across sleep, athletics, academics, relationships, and brain development.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "substance-free-benefits-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, summarize, identify",
+  "completion_status": "scaffold",
+  "chapter_number": 9,
+  "chapter_title": "Substance Use Culture, Safety, and Risk",
+  "chapter_dir": "09-substance-use-culture-safety-and-risk",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/09-substance-use-culture-safety-and-risk"
+}

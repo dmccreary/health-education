@@ -1,0 +1,15 @@
+{
+  "sim_id": "dietary-guidelines-comparison-explorer",
+  "diagram_name": "Dietary Guidelines Comparison Explorer",
+  "chapter_number": 1,
+  "chapter_title": "Health Foundations and Nutrition",
+  "chapter_dir": "01-health-foundations-and-nutrition",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/01-health-foundations-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "compare, contrast, examine, differentiate",
+  "learning_objective": "Students analyze three real dietary guideline systems (USDA MyPlate, Canada's Food Guide, a traditional Indigenous seasonal food system) to differentiate shared nutritional principles from culturally specific presentation choices.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** dietary-guidelines-comparison-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: compare, contrast, examine, differentiate\n\nLearning objective: Students analyze three real dietary guideline systems (USDA MyPlate, Canada's Food Guide, a traditional Indigenous seasonal food system) to differentiate shared nutritional principles from culturally specific presentation choices.\n\nLayout: Three selectable tabs (one per guideline system), each showing a simplified plate/model graphic, above a persistent \"Shared Principles\" panel and a per-tab \"What's Different Here\" panel.\n\nVisual elements: MyPlate tab (four food-group sections plus dairy circle); Canada's Food Guide tab (three sections plus a water glass icon); Indigenous seasonal food system tab (a circular seasonal wheel showing wild rice, fish, venison, corn/beans/squash, and berries by harvest season).\n\nInteractive controls: Click tabs to switch systems; click any food-group icon for an infobox on that group plus one cultural/geographic reason for its presentation; toggle \"Show Shared Principles\" to highlight common science (variety, limiting added sugar, whole foods) across all three tabs at once.\n\nInstructional Rationale: Comparing structures and attributing differences to cultural/geographic causes is Analyze-level, so a tabbed comparison with an always-visible shared-principles panel keeps agreement and variation both in view simultaneously.\n\nImplementation notes: p5.js. Each guideline system stored as an object with an array of food-group sub-objects (label, icon, explanation); a shared principles array renders identically regardless of active tab."
+}

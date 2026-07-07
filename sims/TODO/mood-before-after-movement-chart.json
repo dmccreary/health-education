@@ -1,0 +1,15 @@
+{
+  "sim_id": "mood-before-after-movement-chart",
+  "diagram_name": "Mood Before and After Movement Chart",
+  "chapter_number": 5,
+  "chapter_title": "Wellness and Disease Prevention",
+  "chapter_dir": "05-wellness-and-disease-prevention",
+  "chapter_rel_dir": "bands/grade-4/chapters/05-wellness-and-disease-prevention",
+  "library": "Chart.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "interpret, summarize, compare",
+  "learning_objective": "Students interpret survey-style data comparing self-reported mood before and after different physical activities, summarizing the mood-boosting effect of movement.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: chart\n**sim-id:** mood-before-after-movement-chart<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: interpret, summarize, compare\n\nLearning objective: Students interpret survey-style data comparing self-reported mood before and after different physical activities, summarizing the mood-boosting effect of movement.\n\nChart type: Grouped bar chart\n\nPurpose: Show that self-reported mood scores rise after physical activity across several different activity types, including cultural traditions\n\nX-axis: Activity type (Recess Play, Community Dance, Team Sport Practice, Walking, Traditional Game)\n\nY-axis: Average self-reported mood score (scale of 1-10, where 10 is \"very happy and calm\")\n\nData series:\n1. Before activity (blue bars):\n   - Recess Play: 6\n   - Community Dance: 6\n   - Team Sport Practice: 5\n   - Walking: 6\n   - Traditional Game: 6\n\n2. After activity (gold bars):\n   - Recess Play: 8\n   - Community Dance: 9\n   - Team Sport Practice: 8\n   - Walking: 7\n   - Traditional Game: 9\n\nTitle: \"How Mood Changes Before and After Physical Activity\"\nLegend: Position top-right, labeled \"Before\" and \"After\"\n\nInteractive features:\n- Hover over any bar to see the exact score and a one-sentence explanation of that activity\n- Click a legend entry to toggle the Before or After series on/off for easier comparison\n\nAnnotations: Small label above the largest gains (Community Dance and Traditional Game) reading \"Biggest mood boost\"\n\nImplementation: Chart.js bar chart with tooltip callbacks and legend toggle enabled (legend.onClick default behavior)."
+}

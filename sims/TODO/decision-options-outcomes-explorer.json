@@ -1,0 +1,15 @@
+{
+  "sim_id": "decision-options-outcomes-explorer",
+  "diagram_name": "Decision Options and Outcomes Explorer",
+  "chapter_number": 7,
+  "chapter_title": "Influences, Decisions, and Personal Goals",
+  "chapter_dir": "07-influences-decisions-goals",
+  "chapter_rel_dir": "bands/grade-2/chapters/07-influences-decisions-goals",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "describe, explain, compare",
+  "learning_objective": "Students describe two or more options for a health-related decision and the likely outcome of each option.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** decision-options-outcomes-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: describe, explain, compare\n\nLearning objective: Students describe two or more options for a health-related decision and the likely outcome of each option.\n\nCanvas layout:\n- Top area (100px): A health-related scenario prompt selectable from a dropdown (e.g., \"You are offered a sugary drink at a party,\" \"A friend wants you to skip washing hands before snack,\" \"You are choosing how to spend recess time\")\n- Middle area (280px): Two or three option cards displayed side by side, each with a \"Show Outcome\" button beneath it\n- Bottom area (120px): Outcome panel showing the result text for the most recently clicked option\n\nInteractive controls:\n- Dropdown: Select scenario (3 total)\n- Button under each option card: \"Show Outcome\"\n- Button: \"Compare All Outcomes\" (reveals all outcome text at once, side by side)\n- Button: \"Reset\"\n\nDefault parameters:\n- Scenario: \"You are offered a sugary drink at a party\"\n- Options shown: \"Drink it,\" \"Ask for water instead,\" \"Have a little of both\"\n- No outcome revealed yet\n\nData Visibility Requirements:\n  Stage 1: Show scenario and unopened option cards, no outcomes visible\n  Stage 2: Student clicks \"Show Outcome\" under \"Drink it\" -- panel shows \"Tastes exciting now, but a lot of sugar can lead to a stomachache or low energy later.\"\n  Stage 3: Student clicks \"Show Outcome\" under \"Ask for water instead\" -- panel shows \"Less exciting in the moment, but your body feels steady afterward.\"\n  Stage 4: Student clicks \"Compare All Outcomes\" -- all outcome texts appear together so the student can weigh them side by side\n\nBehavior:\n- Every option always has a described outcome, calm and non-judgmental in tone -- no option is framed as \"bad,\" only as leading to a different result\n- Switching scenarios resets revealed outcomes\n\nInstructional Rationale: This is an Understand-level objective (\"describe options and potential outcomes\"), so the design emphasizes step-through data visibility of concrete outcome text for each option rather than animation, letting students compare real outcome language side by side.\n\nImplementation notes: Use p5.js. Keep all outcome language balanced and non-judgmental; avoid depicting any option as shameful."
+}

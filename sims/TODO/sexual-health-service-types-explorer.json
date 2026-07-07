@@ -1,0 +1,15 @@
+{
+  "sim_id": "sexual-health-service-types-explorer",
+  "diagram_name": "Sexual Health Service Types Explorer",
+  "chapter_number": 4,
+  "chapter_title": "Healthcare Access and Sexual Health",
+  "chapter_dir": "04-healthcare-access-and-sexual-health",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/04-healthcare-access-and-sexual-health",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "classify, summarize, exemplify",
+  "learning_objective": "Students classify which type of healthcare service\n(STI clinic, school-based health center, community health center, primary",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n\n**sim-id:** sexual-health-service-types-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Understand (L2)\nBloom Verb: classify, summarize, exemplify\n\nLearning objective: Students classify which type of healthcare service\n(STI clinic, school-based health center, community health center, primary\ncare, telehealth) best fits a given adolescent scenario, and summarize the\ndistinguishing features of each service type.\n\nCanvas layout:\n- Left (55%): five labeled service-type panels shown at once, each with a\n  one-sentence description\n- Right (45%): a scenario card describing a student's situation (e.g.,\n  \"needs a same-day confidential test result but has no transportation\")\n  and a set of five buttons, one per service type\n\nData Visibility Requirements:\n  Stage 1: Show all five service types and their descriptions as reference\n  Stage 2: Show one scenario from a bank of 10\n  Stage 3: After the learner selects a service type, show whether it is\n  the best fit and a one-line explanation of why\n  Stage 4: Track a running count of correctly matched scenarios\n\nInteractive controls:\n- Click a service-type panel to see an expanded description and example\n- Click one of five buttons to answer the current scenario\n- Button: \"Next Scenario\"\n\nDefault parameters: Scenario bank cycles without repetition until\nexhausted, then reshuffles\n\nInstructional Rationale: This is an Understand-level objective, so the\ndesign favors step-through matching with concrete scenarios rather than\nopen-ended search, helping students build a working mental map of which\nresource fits which situation.\n\nImplementation notes: p5.js with an object array of {scenario,\nbestServiceType, explanation}; correct/incorrect feedback shown through\ncolor change and text panel."
+}

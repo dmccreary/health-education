@@ -1,0 +1,23 @@
+{
+  "title": "Build Your Trusted Adult Network",
+  "description": "Students evaluate which trusted adults and resources are best suited to different situation types and justify their choice using the qualities of a good trusted adult.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "build-your-trusted-adult-network",
+  "library": "vis-network",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "judge, justify, prioritize, recommend",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "Foundations and Trusted Adults",
+  "chapter_dir": "01-foundations-and-trusted-adults",
+  "chapter_rel_dir": "bands/grade-5/chapters/01-foundations-and-trusted-adults"
+}

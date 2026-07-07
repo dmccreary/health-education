@@ -1,0 +1,15 @@
+{
+  "sim_id": "include-a-classmate-scenario-sorter",
+  "diagram_name": "Include-a-Classmate Scenario Sorter",
+  "chapter_number": 4,
+  "chapter_title": "Equity, Belonging, And Bystander Action",
+  "chapter_dir": "04-equity-belonging-and-bystander-action",
+  "chapter_rel_dir": "bands/grade-5/chapters/04-equity-belonging-and-bystander-action",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate, use, practice",
+  "learning_objective": "Students apply strategies for including and supporting others by choosing the most inclusive response to short school scenarios.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** include-a-classmate-scenario-sorter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: demonstrate, use, practice\n\nLearning objective: Students apply strategies for including and supporting others by choosing the most inclusive response to short school scenarios.\n\nCanvas layout:\n- Left side (450px): Scenario card describing a short classroom or playground situation\n- Right side (200px): Three response option buttons and a feedback panel\n\nVisual elements:\n- Scenario card with simple line-art icon (a lunch table, a group project, a playground game)\n- Three response cards worded as things a student could say or do\n- Feedback panel showing a short explanation after a choice is made\n\nInteractive controls:\n- Click one of three response cards to answer\n- Button: \"Why This Helps\" — reveals an explanation connecting the choice to inviting, making room, speaking up, checking in, or sharing information\n- Button: \"Next Scenario\" — cycles through a bank of 6 scenarios\n\nDefault parameters:\n- Starts on Scenario 1: \"A new student is standing alone at recess, watching a kickball game.\"\n\nBehavior:\n- Each scenario has one response that best demonstrates including and supporting others; the other two responses are either neutral (doing nothing) or mildly exclusionary\n- Feedback is encouraging and explains why the strongest response builds belonging, without shaming choices that were not ideal\n\nInstructional Rationale: This is an Apply-level objective, so the pattern is scenario-based practice with immediate feedback, letting students rehearse recognizing and choosing inclusive actions in realistic situations.\n\nImplementation notes: Use p5.js. Store scenarios as objects with a description, three response strings, a \"best\" flag, and an explanation string; keep artwork simple and warm in tone."
+}

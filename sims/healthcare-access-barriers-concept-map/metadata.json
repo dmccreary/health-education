@@ -1,0 +1,23 @@
+{
+  "title": "Healthcare Access Barriers Concept Map",
+  "description": "Students analyze how distinct barriers to healthcare access (cost, transportation, fear, stigma, lack of awareness of rights) can combine and reinforce each other for a given adolescent.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "healthcare-access-barriers-concept-map",
+  "library": "vis-network",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine, differentiate, organize",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "Healthcare Access and Sexual Health",
+  "chapter_dir": "03-healthcare-access-and-sexual-health",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/03-healthcare-access-and-sexual-health"
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "substance-law-category-explorer",
+  "diagram_name": "Substance Law Category Explorer",
+  "chapter_number": 12,
+  "chapter_title": "Substance Policy and Law",
+  "chapter_dir": "12-substance-policy-and-law",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/12-substance-policy-and-law",
+  "library": "vis-network",
+  "bloom_level": "Understand<br/>",
+  "bloom_verb": "classify",
+  "learning_objective": "Classify the four major categories of community",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: diagram\n\n**sim-id:** substance-law-category-explorer<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand<br/>\nBloom Taxonomy Verb: classify\n\nLearning objective: Classify the four major categories of community\nsubstance law (age restrictions, impaired driving, possession, sale and\ndistribution) and recognize which level of government (federal, state,\nlocal, tribal) typically sets each type of rule.\n\nComponents to show:\n- Central node: \"Community Substance Laws\"\n- Four category nodes branching out: \"Age Restrictions,\" \"Impaired\n  Driving,\" \"Possession,\" \"Sale & Distribution\"\n- Four government-level nodes: \"Federal,\" \"State,\" \"Local,\" \"Tribal\"\n- Edges connecting each category to the government level(s) that typically\n  regulate it\n\nConnections: Category nodes connect to the government-level node(s) most\nresponsible for that rule type (e.g., \"Impaired Driving\" connects mainly to\n\"State\"; \"Sale & Distribution\" connects to \"State,\" \"Local,\" and \"Tribal\").\n\nInteractive features:\n- Click any category node to open an infobox with a plain-language\n  definition and one concrete example\n- Click any government-level node to highlight all categories it regulates\n- Hover over an edge to see a one-line explanation of that relationship\n- Learner can drag nodes and zoom/pan the network\n\nVisual style: Force-directed network graph, central node larger than\ncategory nodes\n\nColor scheme: Category nodes in teal, government-level nodes in gold,\nhighlighted neighborhood in orange on click\n\nImplementation: vis-network JavaScript library"
+}

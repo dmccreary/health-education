@@ -1,0 +1,15 @@
+{
+  "sim_id": "how-physical-activity-helps-your-whole-day",
+  "diagram_name": "How Physical Activity Helps Your Whole Day",
+  "chapter_number": 5,
+  "chapter_title": "Healthy Habits, Activity, and Germs",
+  "chapter_dir": "05-healthy-habits",
+  "chapter_rel_dir": "bands/grade-1/chapters/05-healthy-habits",
+  "library": "Chart.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "recall, identify, name",
+  "learning_objective": "Students recall and identify the different benefits of physical activity by exploring a simple bar chart showing how many classmates in a pretend survey named each benefit.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: chart\n**sim-id:** how-physical-activity-helps-your-whole-day<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Remember (L1)\nBloom Taxonomy Verb: recall, identify, name\n\nLearning objective: Students recall and identify the different benefits of physical activity by exploring a simple bar chart showing how many classmates in a pretend survey named each benefit.\n\nChart type: Horizontal bar chart\n\nPurpose: Show, in kid-friendly terms, the variety of benefits physical activity provides, using a simple pretend classroom survey (\"What do you notice after you play outside?\")\n\nX-axis: Number of classmates who noticed this benefit (0-20, pretend survey of 20 students)\nY-axis: Benefit categories (icons plus short labels)\n\nData series (single series, one color per bar for visual variety):\n- \"I feel happier\" (green bar): 18\n- \"I have more energy\" (orange bar): 15\n- \"I focus better in class\" (blue bar): 12\n- \"I sleep better at night\" (purple bar): 10\n- \"My muscles feel stronger\" (red bar): 14\n\nTitle: \"What Grade 1 Friends Noticed After Being Active\"\nLegend: Not needed (single series with labeled bars)\n\nInteractive features:\n- Hover over each bar to reveal a tooltip with the exact number and a one-sentence explanation of that benefit\n- Click a bar to highlight it and show a matching simple icon animation (e.g., a sun icon for energy)\n\nAnnotations:\n- Small icon next to each bar label (heart for feelings, lightning bolt for energy, brain for focus, moon for sleep, muscle for strength)\n\nImplementation: Chart.js horizontal bar chart with tooltip callbacks; icons rendered as HTML labels next to axis ticks"
+}

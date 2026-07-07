@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 540 -->
+<title>Infectious Disease Transmission Routes Map</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 400px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 8px; font-size: 11px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 12px; height: 12px; margin-right: 5px; vertical-align: middle; border: 1px solid #555; }
+  .legend .circle { border-radius: 50%; }
+  .legend .diamond { transform: rotate(45deg); }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 66px; }
+  .infobox strong { color: navy; }
+</style>
+</head>
+<body>
+<main>
+  <h3>How Infectious Diseases Spread</h3>
+  <div class="subtitle">Hover a node to see its name. Click a route, disease, or prevention step to learn more.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k circle" style="background:indianred;"></span>Transmission (center)<br>
+      <span class="k" style="background:darkorange;"></span>Route<br>
+      <span class="k circle" style="background:#cfe6f7;"></span>Example disease<br>
+      <span class="k diamond" style="background:seagreen;"></span>Prevention
+    </div>
+  </div>
+  <div class="infobox" id="infobox">Germs spread from person to person in four main ways. Explore each route, the diseases it can cause, and how you can help stop it.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+
+// Four transmission routes. Each has examples (diseases) and one prevention step.
+const routes = [
+  {
+    id: 'air', label: 'Airborne /\nDroplet',
+    hover: 'Germs travel through the air in tiny droplets when people cough, sneeze, or talk.',
+    def: 'Airborne and droplet spread happens when tiny drops carrying germs float in the air after someone coughs, sneezes, or talks. You can breathe them in or they can land on you.',
+    examples: [
+      { label: 'Common\nCold', hover: 'A common cold spreads through the air.',
+        text: 'The common cold is a mild infection of the nose and throat. Typical signs include a runny or stuffy nose, sneezing, sore throat, and a mild cough.' },
+      { label: 'Flu', hover: 'The flu spreads through the air.',
+        text: 'The flu (influenza) affects the nose, throat, and lungs. It often brings fever, body aches, tiredness, cough, and a sore throat.' }
+    ],
+    prev: { label: 'Masking /\nDistancing', hover: 'Masks and space stop airborne germs.',
+      text: 'Wearing a mask and keeping space between people works because airborne germs travel in droplets. A mask traps the droplets, and distance gives them room to fall before you breathe them in.' }
+  },
+  {
+    id: 'contact', label: 'Direct\nContact',
+    hover: 'Germs pass by touching an infected person or a surface they touched.',
+    def: 'Direct contact spread happens when germs pass by touching an infected person, or by touching a surface they touched and then touching your eyes, nose, or mouth.',
+    examples: [
+      { label: 'Pinkeye', hover: 'Pinkeye spreads by touch.',
+        text: 'Pinkeye (conjunctivitis) is an infection of the thin layer over the eye. It can make the eye look red or pink, feel itchy, and become watery.' },
+      { label: 'Skin\nInfections', hover: 'Skin infections spread by touch.',
+        text: 'Skin infections happen when germs get into the skin, often through a small cut. The area may look red, feel warm or sore, and sometimes swell.' }
+    ],
+    prev: { label: 'Handwashing', hover: 'Washing hands removes germs.',
+      text: 'Washing your hands with soap and water works because contact germs collect on your hands. Scrubbing lifts the germs off your skin and rinses them down the drain before they can spread.' }
+  },
+  {
+    id: 'food', label: 'Foodborne /\nWaterborne',
+    hover: 'Germs spread through food or water that was not handled safely.',
+    def: 'Foodborne and waterborne spread happens when germs get into food or water that was not stored, cleaned, or cooked safely, and then someone eats or drinks it.',
+    examples: [
+      { label: 'Salmonella', hover: 'Salmonella spreads through food.',
+        text: 'Salmonella is a germ found in some undercooked or unclean food. It can upset the stomach and cause cramps, diarrhea, and sometimes a fever.' },
+      { label: 'E. coli', hover: 'E. coli spreads through food and water.',
+        text: 'Certain kinds of E. coli come from unclean food or water. They can cause stomach cramps and diarrhea until the body clears the germ.' }
+    ],
+    prev: { label: 'Safe Food\nHandling', hover: 'Clean, cook, and chill food.',
+      text: 'Handling food safely works because these germs live in food and water. Washing produce, cooking food fully, and keeping it cold stops the germs from growing or reaching your plate.' }
+  },
+  {
+    id: 'vector', label: 'Vector-\nBorne',
+    hover: 'Germs are carried by insects like ticks and mosquitoes.',
+    def: 'Vector-borne spread happens when a small animal, called a vector, carries germs from one living thing to another. Ticks and mosquitoes are common vectors that spread germs through their bites.',
+    examples: [
+      { label: 'Lyme\nDisease', hover: 'Lyme disease is spread by ticks.',
+        text: 'Lyme disease is carried by certain ticks. Early signs can include a spreading rash, tiredness, fever, and achy joints.' },
+      { label: 'West Nile\nVirus', hover: 'West Nile virus is spread by mosquitoes.',
+        text: 'West Nile virus is carried by some mosquitoes. Many people feel nothing, while others get a fever, headache, and body aches.' }
+    ],
+    prev: { label: 'Insect\nRepellent', hover: 'Repellent keeps biting insects away.',
+      text: 'Using insect repellent works because vector-borne germs travel in bites. Repellent keeps ticks and mosquitoes from landing and biting, so the germs never reach you.' }
+  }
+];
+
+const nodes = [], edges = [];
+const info = {};   // fuller text shown on click, keyed by node id
+const hovers = {}; // one-line text shown on hoverNode, keyed by node id
+
+// Central node
+nodes.push({
+  id: 'center', label: 'Infectious\nDisease\nTransmission', shape: 'ellipse',
+  color: { background: 'indianred', border: '#8b1a1a' },
+  font: { color: 'white', size: 15, face: 'Arial' }, borderWidth: 2
+});
+info['center'] = { title: 'Infectious Disease Transmission', text: 'Infectious diseases are caused by germs that pass from one living thing to another. There are four main routes they use to spread. Click each route to learn how it works.' };
+hovers['center'] = 'The four main ways germs spread from one living thing to another.';
+
+routes.forEach(r => {
+  // Route node (orange square/box)
+  nodes.push({
+    id: r.id, label: r.label, shape: 'box',
+    color: { background: 'darkorange', border: '#b5651d' },
+    font: { color: 'white', size: 13 }, borderWidth: 2, margin: 8
+  });
+  edges.push({
+    from: 'center', to: r.id, label: 'spreads via',
+    font: { size: 9, color: '#8b1a1a' }, color: { color: 'indianred' }, width: 2
+  });
+  info[r.id] = { title: r.label.replace(/\n/g, ' '), text: r.def };
+  hovers[r.id] = r.hover;
+
+  // Example disease nodes (light blue circles), dotted blue edges
+  r.examples.forEach((ex, i) => {
+    const eid = r.id + '_e' + i;
+    nodes.push({
+      id: eid, label: ex.label, shape: 'dot', size: 12,
+      color: { background: '#cfe6f7', border: 'steelblue' },
+      font: { size: 11, color: '#1f3a52' }
+    });
+    edges.push({
+      from: r.id, to: eid, label: 'example',
+      font: { size: 8, color: 'steelblue' },
+      color: { color: 'steelblue' }, dashes: true, width: 1
+    });
+    info[eid] = { title: ex.label.replace(/\n/g, ' '), text: ex.text };
+    hovers[eid] = ex.hover;
+  });
+
+  // Prevention node (green diamond), solid green edge
+  const pid = r.id + '_p';
+  nodes.push({
+    id: pid, label: r.prev.label, shape: 'diamond',
+    color: { background: 'seagreen', border: '#1e5631' },
+    font: { size: 11, color: 'white' }, size: 20
+  });
+  edges.push({
+    from: r.id, to: pid, label: 'prevented by',
+    font: { size: 9, color: '#1e5631' }, color: { color: 'seagreen' }, width: 2
+  });
+  info[pid] = { title: r.prev.label.replace(/\n/g, ' '), text: r.prev.text };
+  hovers[pid] = r.prev.hover;
+});
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  physics: {
+    solver: 'forceAtlas2Based',
+    forceAtlas2Based: { gravitationalConstant: -70, springLength: 95, avoidOverlap: 0.6 },
+    stabilization: { iterations: 350 }
+  },
+  interaction: { hover: true, dragView: true, zoomView: true, navigationButtons: true, tooltipDelay: 100000 },
+  edges: { smooth: { type: 'continuous' }, arrows: { to: { enabled: true, scaleFactor: 0.5 } } },
+  nodes: { shadow: true }
+};
+const network = new vis.Network(container, data, options);
+network.once('stabilizationIterationsDone', () => { network.setOptions({ physics: false }); network.fit(); });
+
+function panel(id) {
+  const d = info[id];
+  if (d) box.innerHTML = '<strong>' + d.title + '</strong><br>' + d.text;
+}
+network.on('hoverNode', p => { const h = hovers[p.node]; if (h) box.innerHTML = h; });
+network.on('click', p => { if (p.nodes.length) panel(p.nodes[0]); });
+</script>
+</body>
+</html>

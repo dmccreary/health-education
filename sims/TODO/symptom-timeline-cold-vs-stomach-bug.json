@@ -1,0 +1,15 @@
+{
+  "sim_id": "symptom-timeline-cold-vs-stomach-bug",
+  "diagram_name": "Symptom Timeline: Cold vs. Stomach Bug",
+  "chapter_number": 5,
+  "chapter_title": "Personal Health And Wellness",
+  "chapter_dir": "05-personal-health-and-wellness",
+  "chapter_rel_dir": "bands/grade-5/chapters/05-personal-health-and-wellness",
+  "library": "vis-timeline",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "compare, contrast, interpret",
+  "learning_objective": "Students compare how symptoms typically progress over several days for a common cold versus a stomach bug, to better recognize what their body might be experiencing.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: timeline\n**sim-id:** symptom-timeline-cold-vs-stomach-bug<br/>\n**Library:** vis-timeline<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: compare, contrast, interpret\n\nLearning objective: Students compare how symptoms typically progress over several days for a common cold versus a stomach bug, to better recognize what their body might be experiencing.\n\nTime period covered: Day 1 through Day 5 of illness for two example conditions.\n\nOrientation: Horizontal, two parallel rows (Cold, Stomach Bug).\n\nEvents (Cold row): Day 1 scratchy throat/mild tiredness; Day 2 runny nose, congestion begins; Day 3 cough develops; Day 4 symptoms peak, low fever possible; Day 5 slowly improves.\n\nEvents (Stomach Bug row): Day 1 sudden stomachache/nausea; Day 2 vomiting or diarrhea possible, low energy; Day 3 symptoms peak then ease; Day 4 appetite returns; Day 5 mostly back to normal.\n\nVisual style: Two color-coded horizontal rows with circular event markers (blue = Cold, orange = Stomach Bug).\n\nInteractive features: Click or hover any event marker for a short description and tip (e.g., \"Day 2 Stomach Bug: Rest and small sips of water are important now\"); zoom and pan across the 5-day window.\n\nImplementation: vis-timeline library with two grouped rows and a dataset of 10 events, each with a tooltip/click description."
+}

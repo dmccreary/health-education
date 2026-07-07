@@ -1,0 +1,15 @@
+{
+  "sim_id": "warning-sign-to-response-workflow",
+  "diagram_name": "Warning Sign to Response Workflow",
+  "chapter_number": 9,
+  "chapter_title": "Digital and School Safety",
+  "chapter_dir": "09-digital-and-school-safety",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/09-digital-and-school-safety",
+  "library": "Mermaid",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "apply, demonstrate, execute",
+  "learning_objective": "Students apply the correct sequence from noticing a",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n\n**sim-id:** warning-sign-to-response-workflow<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Apply (L3)\nBloom Verb: apply, demonstrate, execute\n\nLearning objective: Students apply the correct sequence from noticing a\nwarning sign in a peer to a trained adult responding, reinforcing that\nreporting — not personal judgment of severity — is the correct student\naction every time. No node describes any method, weapon, tactic, or\ntriggering event; every node addresses only warning-sign categories and\nthe reporting process.\n\nVisual style: Mermaid flowchart with a start node, three sequential\nprocess nodes, and an end node, all clickable\n\nNodes (all with `click NodeId call showInfo(\"term\")`):\n1. \"I Notice a Warning Sign Category\" — click reveals: \"This could be a\n   statement of intent, specific planning language, escalating fascination\n   with violence, or a sudden behavior change — noticing the pattern is\n   the first step.\"\n2. \"I Tell a Trusted Adult, Staff Member, or Tip Line\" — click reveals:\n   \"Report it every time, without deciding in advance whether it is\n   serious enough — that judgment belongs to trained adults.\"\n3. \"Trained Staff Assess the Concern\" — click reveals: \"School threat\n   assessment teams evaluate the report using a structured process\n   designed for exactly this situation.\"\n4. \"Appropriate Support or Intervention Follows\" — click reveals: \"Most\n   reported concerns are resolved through support, not punishment —\n   reporting early is what makes that possible.\"\nEnd node: \"The School Community Is Safer\" — click reveals: \"Prevention\nresearch consistently identifies students noticing and reporting concerns\nas one of the most effective safety measures that exists.\"\n\nConnections: 1 → 2 → 3 → 4 → End\n\nColor coding: orange for the noticing node, blue for the reporting node,\ngreen for the assessment and outcome nodes\n\nImplementation: Mermaid flowchart with click bindings to a showInfo()\nfunction; infobox text in a JS lookup object. Content restriction: no\nnode, label, or infobox text may reference a weapon, tactic, method, or\nany operational or triggering detail — only the warning-sign category and\nreporting/response process."
+}

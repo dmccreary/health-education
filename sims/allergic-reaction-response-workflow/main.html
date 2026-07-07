@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 986 -->
+<title>Allergic Reaction Response</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis', subGraphTitleMargin: { top: 10, bottom: 14 } } });
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+  main { display: flex; height: 100%; }
+  .diagram { flex: 2; background: aliceblue; display: flex; justify-content: center; align-items: center; overflow: hidden; padding: 8px; }
+  .diagram .mermaid { width: 100%; text-align: center; }
+  .diagram svg { max-width: 100%; height: auto; }
+  .info { flex: 1; background: #f8fafc; border-left: 1px solid #e2e8f0; padding: 10px; overflow: hidden; }
+  .info h3 { font-size: 14px; color: #1a3a6c; margin-bottom: 8px; }
+  #panel { font-size: 13px; color: #334155; line-height: 1.4; }
+  .node { cursor: pointer; }
+</style>
+</head>
+<body>
+<main>
+  <div class="diagram"><div class="mermaid">
+flowchart TD
+    Start("You notice a possible<br/>allergic reaction"):::startNode
+    Decision{"Emergency signs?<br/>swelling, trouble<br/>breathing, fainting"}:::decisionNode
+    Call911["Call 911 or get an adult<br/>to call immediately"]:::emergNode
+    Epi["Use epinephrine auto-injector<br/>if prescribed and an<br/>adult is trained"]:::emergNode
+    TellAdult["Tell a trusted adult<br/>right away"]:::mildNode
+    Avoid["Avoid further contact<br/>and watch closely"]:::mildNode
+    StayWith("Stay with the person;<br/>do not leave them alone"):::endNode
+
+    Start --> Decision
+    Decision -->|Yes| Call911 --> Epi --> Avoid
+    Decision -->|No, mild| TellAdult --> Avoid
+    Avoid --> StayWith
+
+    classDef startNode fill:#5b9bd5,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef processNode fill:#7e57c2,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#ffd54f,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef emergNode fill:#e57373,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef mildNode fill:#64b5f6,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef goodNode fill:#66bb6a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef endNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    linkStyle default stroke:#999,stroke-width:2px,font-size:14px
+  </div></div>
+  <div class="info"><h3>Allergic Reaction Response</h3><div id="panel">Hover or tap any step for details.</div></div>
+</main>
+<script>
+const nodeInfo = {
+  "Start": "Signs can include hives, swelling, coughing, or stomach upset.",
+  "Decision": "Emergency signs mean this could be anaphylaxis, a life-threatening reaction.",
+  "Call911": "Never wait to see if severe symptoms improve on their own.",
+  "Epi": "Only a person trained on that student's emergency plan should give this.",
+  "TellAdult": "Even mild signs should be reported immediately, since they can escalate.",
+  "Avoid": "Move away from the food or substance and keep observing.",
+  "StayWith": "Staying nearby means help arrives faster if things change."
+};
+const panel = document.getElementById('panel');
+function setup() {
+  document.querySelectorAll('.node').forEach(n => {
+    const id = n.id.replace('flowchart-', '').split('-')[0];
+    if (nodeInfo[id]) {
+      n.addEventListener('mouseenter', () => { panel.textContent = nodeInfo[id]; });
+      n.addEventListener('click', () => { panel.textContent = nodeInfo[id]; });
+    }
+  });
+}
+function wait() {
+  const m = document.querySelector('.mermaid');
+  if (m && m.querySelector('svg') && document.querySelectorAll('.node').length) setup();
+  else setTimeout(wait, 100);
+}
+setTimeout(wait, 150);
+</script>
+</body>
+</html>

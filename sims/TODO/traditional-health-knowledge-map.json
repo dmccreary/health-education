@@ -1,0 +1,15 @@
+{
+  "sim_id": "traditional-health-knowledge-map",
+  "diagram_name": "Traditional Health Knowledge Around the World",
+  "chapter_number": 3,
+  "chapter_title": "Wellness And Activity",
+  "chapter_dir": "03-wellness-and-activity",
+  "chapter_rel_dir": "bands/grade-3/chapters/03-wellness-and-activity",
+  "library": "Leaflet",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "describe, explain, compare",
+  "learning_objective": "Students describe how different cultures and communities use traditional knowledge to protect the body from the environment, comparing practices across regions.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: map\n**sim-id:** traditional-health-knowledge-map<br/>\n**Library:** Leaflet<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: describe, explain, compare\n\nLearning objective: Students describe how different cultures and communities use traditional knowledge to protect the body from the environment, comparing practices across regions.\n\nGeographic scope: World map with five highlighted regions\n\nLocations and markers:\n- West Africa: icon of a woven wide-brimmed hat — \"Woven hats and light cotton clothing protect from strong sun.\"\n- Arctic (Inuit communities): icon of layered fur clothing — \"Layered animal-skin clothing traps warm air against the body in extreme cold.\"\n- Latin America / Mediterranean: icon of a teacup — \"Herbal teas like mint, chamomile, and ginger soothe upset stomachs and help the body rest.\"\n- East Asia: icon of a soup bowl — \"Warm soups and rest support the body's healing during cold weather.\"\n- South Asia: icon of a glass of milk — \"Turmeric milk is a traditional comfort remedy for minor coughs and colds.\"\n\nLegend: Each marker icon matches a category — clothing, food/drink — shown in a small key in the corner\n\nInteractive features:\n- Click a region marker to open an infobox with the practice name, a description, and what part of the environment it protects against (sun, cold, upset stomach, general wellness)\n- Hover a marker for a one-line preview before clicking\n- A \"Compare Two Regions\" button lets a student pick two markers and see their infoboxes side by side\n\nColor scheme: Warm gold for sun/heat protection, cool blue for cold protection, green for food/drink remedies\n\nImplementation: Leaflet map with custom marker icons and popups; teacher-facing tool for read-aloud exploration, since Grade 3 students are still developing independent reading fluency"
+}

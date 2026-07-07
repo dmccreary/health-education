@@ -1,0 +1,23 @@
+{
+  "title": "Steps to Take If You're Worried About a Friend",
+  "description": "Students apply the correct sequence of response steps when a friend discloses thoughts of suicide or self-harm, ending every path at getting a trusted adult or the 988 Lifeline involved.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "steps-to-take-worried-about-friend",
+  "library": "Mermaid",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate, apply, use",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Emotional Well-Being and Mental Health",
+  "chapter_dir": "04-emotional-well-being-and-mental-health",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/04-emotional-well-being-and-mental-health"
+}

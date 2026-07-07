@@ -1,0 +1,15 @@
+{
+  "sim_id": "name-that-feeling",
+  "diagram_name": "Name That Feeling!",
+  "chapter_number": 3,
+  "chapter_title": "Feelings And Kindness",
+  "chapter_dir": "03-feelings-and-kindness",
+  "chapter_rel_dir": "bands/kindergarten/chapters/03-feelings-and-kindness",
+  "library": "p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "name, identify, recognize",
+  "learning_objective": "Students name a feeling shown on a large friendly face by clicking the matching word/icon button, building the skill of Naming Feelings and expanding their Emotions Vocabulary.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** name-that-feeling<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Remember (L1)\nBloom Taxonomy Verb: name, identify, recognize\n\nLearning objective: Students name a feeling shown on a large friendly face by clicking the matching word/icon button, building the skill of Naming Feelings and expanding their Emotions Vocabulary.\n\nCanvas layout:\n- Top area (280px): One large, simple, friendly cartoon face displayed at a time, showing a clear expression (big smile, tears, furrowed brow, wide eyes, or relaxed calm face)\n- Bottom area (170px): Five large buttons in a row, each with a word and a small matching icon: \"Happy,\" \"Sad,\" \"Mad,\" \"Scared,\" \"Calm\"\n- Bottom strip (50px): Score display (\"You named 3 feelings!\") and a Reset button\n\nVisual elements:\n- 10 faces cycling one at a time, covering all five feeling words at least twice, drawn in a warm, simple, non-scary cartoon style\n- Buttons highlight in a soft color when hovered: yellow for Happy, blue for Sad, red for Mad, purple for Scared, green for Calm\n\nInteractive controls:\n- Click: child taps the button matching the face's feeling\n- Button: \"Reset\" to start over\n- Button: \"Next Face\" appears automatically after each answer\n\nDefault parameters:\n- First face shown: a big smiling face (Happy)\n- Faces appear in a fixed friendly order so a teacher can predict what is coming next\n\nBehavior:\n- When the correct button is clicked, the face nods, a cheerful chime plays, and the score increases by one\n- When an incorrect button is clicked, the face gently shakes side to side and the correct button glows so the child can try again — no harsh error sound or red X\n- After all 10 faces are shown, display a celebration message: \"Great job! You know so many feeling words!\"\n\nInstructional Rationale: This is a Remember-level (name/identify) objective for pre-readers, so a simple click-to-match pattern with icon-supported buttons is appropriate — it does not require independent reading and gives immediate, forgiving feedback.\n\nImplementation notes: Use p5.js. Store each face as an image or vector drawing tagged with its correct feeling word. Keep all button text large (28px+) and pair every word with an icon since this is a read-aloud/pre-reader audience."
+}

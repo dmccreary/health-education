@@ -1,0 +1,15 @@
+{
+  "sim_id": "peer-pressure-situation-sorter",
+  "diagram_name": "Peer Pressure Situation Sorter",
+  "chapter_number": 4,
+  "chapter_title": "Personal Safety and Refusal Skills",
+  "chapter_dir": "04-safety-and-refusal-skills",
+  "chapter_rel_dir": "bands/grade-4/chapters/04-safety-and-refusal-skills",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, distinguish, differentiate",
+  "learning_objective": "Students analyze short peer-pressure scenarios to distinguish low-risk social pressure from pressure toward an unsafe or unhealthy choice, preparing them to decide when a refusal skill is needed.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** peer-pressure-situation-sorter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: examine, distinguish, differentiate\n\nLearning objective: Students analyze short peer-pressure scenarios to distinguish low-risk social pressure from pressure toward an unsafe or unhealthy choice, preparing them to decide when a refusal skill is needed.\n\nCanvas layout:\n- Top (350px): A scenario card describing peer pressure in a short, realistic situation\n- Bottom (200px): Two zones, \"Low-Risk Choice\" and \"Needs a Refusal Skill,\" and a \"Why?\" button\n\nVisual elements:\n- Neutral scenario icons (two speech bubbles representing friends talking)\n- Calm colors: green for \"Low-Risk Choice,\" amber for \"Needs a Refusal Skill\"\n\nInteractive controls:\n- Drag-and-drop scenario card into a zone\n- Button: \"Why?\" reveals explanation\n- Button: \"Next Scenario\"\n\nDefault parameters:\n- 8 scenarios presented one at a time in random order, mixing low-risk (trying a new snack, joining a new game) and higher-risk (skipping a bike helmet, going somewhere without telling an adult, being pressured to exclude a classmate) examples\n\nData Visibility Requirements:\n  Stage 1: Show the full scenario text\n  Stage 2: Show the two sorting zones\n  Stage 3: After sorting, show a short explanation and, for \"Needs a Refusal Skill\" scenarios, a reminder that the next section teaches exactly what to say\n  Final: Show how many scenarios were sorted, with an option to review any of them\n\nBehavior:\n- Every sort is followed by an explanation regardless of correctness, framed as learning rather than scoring\n- \"Needs a Refusal Skill\" scenarios link thematically forward to the Refusal Skill and Demonstrating Refusal Skills sections\n\nInstructional Rationale: This is an Analyze-level objective requiring learners to examine scenarios and distinguish types of peer pressure. Sorting with full explanations builds the judgment needed before practicing refusal scripts in the next sections.\n\nImplementation notes: Use p5.js. Keep all scenarios realistic and age-appropriate, focused on situations like activity choices, dares, and social exclusion rather than substance use, which is covered in a later band."
+}

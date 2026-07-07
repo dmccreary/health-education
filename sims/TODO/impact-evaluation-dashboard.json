@@ -1,0 +1,15 @@
+{
+  "sim_id": "impact-evaluation-dashboard",
+  "diagram_name": "Impact Evaluation Dashboard",
+  "chapter_number": 15,
+  "chapter_title": "Health Promotion and Behavior Change",
+  "chapter_dir": "15-health-promotion-and-behavior-change",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/15-health-promotion-and-behavior-change",
+  "library": "Chart.js",
+  "bloom_level": "Evaluate<br/>",
+  "bloom_verb": "assess, justify",
+  "learning_objective": "Evaluate the impact of an adapted health behavior over",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: chart\n\n**sim-id:** impact-evaluation-dashboard<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Evaluate<br/>\nBloom Taxonomy Verb: assess, justify\n\nLearning objective: Evaluate the impact of an adapted health behavior over\ntime using multiple outcome measures, distinguishing genuine improvement\nfrom noise or an unrelated factor.\n\nChart type: Multi-line chart, four weeks on the x-axis.\n\nPurpose: Show Jordan's four-week active-commute data across three tracked\nmeasures so learners must weigh mixed signals rather than one clean\nsuccess story.\n\nX-axis: Week (1-4). Y-axis: Three normalized scales — days walked (0-5),\nself-rated morning stress (1-10, lower is better), resting heart rate\n(beats per minute).\n\nData series: Days walked (gold line: 2, 4, 3, 4); morning stress (teal\nline: 7, 5, 6, 4); resting heart rate (navy line: 74, 72, 73, 70).\n\nInteractive elements: Hovering any point reveals the exact value and a\none-line note (e.g., week 3's dip in days walked annotated \"rainy week\");\na toggle lets the learner show/hide each series to isolate one measure at\na time; a text prompt below asks the learner to type a one-sentence\nevaluation of overall impact, encouraging them to weigh all three series\nrather than just one.\n\nTitle: \"Four-Week Impact of Jordan's Adapted Commute Plan\"\nLegend: Top-right, one entry per series with show/hide checkboxes.\n\nImplementation: Chart.js multi-line chart with dataset toggling enabled."
+}

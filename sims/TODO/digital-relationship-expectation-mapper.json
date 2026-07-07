@@ -1,0 +1,15 @@
+{
+  "sim_id": "digital-relationship-expectation-mapper",
+  "diagram_name": "Digital Relationship Expectation Mapper",
+  "chapter_number": 9,
+  "chapter_title": "Digital and School Safety",
+  "chapter_dir": "09-digital-and-school-safety",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/09-digital-and-school-safety",
+  "library": "vis-network",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "evaluate, judge, assess",
+  "learning_objective": "Students evaluate how specific digital behaviors\n(response-time expectations, tagging/posting norms, viewing likes and",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n\n**sim-id:** digital-relationship-expectation-mapper<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Evaluate (L5)\nBloom Verb: evaluate, judge, assess\n\nLearning objective: Students evaluate how specific digital behaviors\n(response-time expectations, tagging/posting norms, viewing likes and\ncomments from others, screenshotting) shape relationship expectations, and\njudge whether a given behavior reflects a healthy norm or an unhealthy\npressure.\n\nNode types:\n1. Central node (dark circle): \"Digital Behavior\"\n2. Behavior nodes (blue squares): \"Expecting Instant Replies,\" \"Posting\n   About the Relationship,\" \"Viewing a Partner's Likes/Comments,\"\n   \"Screenshotting Messages,\" \"Sharing a Location Live\"\n3. Effect nodes (two per behavior, light circles): one labeled \"Can Reflect\n   a Healthy Norm\" with a short realistic example, one labeled \"Can Become\n   an Unhealthy Pressure\" with a short realistic example\n\nEdge types:\n- \"Can Lead To\" (solid gray, behavior node to each effect node)\n\nLayout: Central node in the middle, five behavior nodes surrounding it,\neach with two effect nodes branching outward in contrasting colors (green\ntint for healthy, orange-red tint for unhealthy)\n\nInteractive features:\n- Hover any node: one-sentence plain-language description\n- Click a behavior node: side panel explains that the same behavior can\n  land in either category depending on context, frequency, and whether\n  both people agree to it\n- Click an effect node: side panel gives a concrete realistic example and,\n  for unhealthy-pressure nodes, names it as a boundary concern worth\n  addressing directly or with a trusted adult\n- Drag, zoom, and pan enabled\n\nLegend: color key distinguishing the central node, behaviors, and the two\neffect categories\n\nImplementation: vis-network, radial layout, click-triggered panel content\nstored in a JSON lookup keyed by node id; emphasize in all panel text that\ncontext and mutual agreement — not the behavior alone — determine whether\nit is healthy"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Nutrition Facts Label Decoder",
+  "description": "Students analyze a realistic Nutrition Facts label by identifying and interpreting serving size, %DV, added sugars, and ingredient order to reach an accurate conclusion about a product's nutritional content.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "nutrition-facts-label-decoder",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine, differentiate, deconstruct, organize",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "Health Foundations and Nutrition",
+  "chapter_dir": "01-health-foundations-and-nutrition",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/01-health-foundations-and-nutrition"
+}

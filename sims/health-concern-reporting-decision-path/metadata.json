@@ -1,0 +1,23 @@
+{
+  "title": "Health Concern Reporting Decision Path",
+  "description": "Students apply the health concern reporting process by tracing a decision path from noticing a concern to telling a trusted adult, for both self-concerns and friend-concerns.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "health-concern-reporting-decision-path",
+  "library": "Mermaid",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate, use, practice",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "Foundations and Trusted Adults",
+  "chapter_dir": "01-foundations-and-trusted-adults",
+  "chapter_rel_dir": "bands/grade-5/chapters/01-foundations-and-trusted-adults"
+}

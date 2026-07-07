@@ -1,0 +1,38 @@
+{
+  "title": "Equality vs. Equity Fence Explorer",
+  "description": "Students explain the difference between equality and equity by adjusting boxes given to three students of different heights standing behind a fence and observing who can see over it.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "equality-vs-equity-fence-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, compare, contrast",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Equity, Belonging, And Bystander Action",
+  "chapter_dir": "04-equity-belonging-and-bystander-action",
+  "chapter_rel_dir": "bands/grade-5/chapters/04-equity-belonging-and-bystander-action",
+  "educational": {
+    "gradeLevel": "Grade 5",
+    "subjectArea": "Health Education",
+    "topic": "Equity, Belonging, And Bystander Action",
+    "learningObjectives": [
+      "Students explain the difference between equality and equity by adjusting boxes given to three students of different heights standing behind a fence and observing who can see over it."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "explain, compare, contrast",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
+}

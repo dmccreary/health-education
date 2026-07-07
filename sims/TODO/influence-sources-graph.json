@@ -1,0 +1,15 @@
+{
+  "sim_id": "influence-sources-graph",
+  "diagram_name": "Family, School, and Media Influence Map",
+  "chapter_number": 7,
+  "chapter_title": "Influences, Decisions, and Personal Goals",
+  "chapter_dir": "07-influences-decisions-goals",
+  "chapter_rel_dir": "bands/grade-2/chapters/07-influences-decisions-goals",
+  "library": "vis-network",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, compare, classify",
+  "learning_objective": "Students explain how family, school, and media each influence health practices and behaviors, and compare how each source sends its message.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n**sim-id:** influence-sources-graph<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, compare, classify\n\nLearning objective: Students explain how family, school, and media each influence health practices and behaviors, and compare how each source sends its message.\n\nNode types:\n1. Center node \"My Health Choices\" (large gold circle)\n2. Source nodes (three medium circles): \"Family\" (green), \"School\" (blue), \"Media/Technology\" (orange)\n3. Example nodes (small squares, several per source): under Family -- \"Bedtime routine,\" \"Meals at home\"; under School -- \"Handwashing rule,\" \"Recess time\"; under Media -- \"Cereal commercial,\" \"App reminder\"\n\nEdge types:\n1. SHAPES (arrow from each source node to \"My Health Choices\") -- hover shows \"This source influences health choices through everyday routines and messages\"\n2. EXAMPLE_OF (line from each example node to its source node) -- hover shows a one-sentence description of that specific example\n\nLayout: Hierarchical, with \"My Health Choices\" in the center and the three sources arranged around it, examples branching outward from each source\n\nInteractive features:\n- Hover any node: show its short definition in a side panel\n- Click a source node: highlight only that source and its examples, dim the rest\n- Click an example node: infobox explains how that example influences behavior\n- Zoom with mouse wheel, pan by dragging background\n\nVisual styling:\n- Family = green, School = blue, Media/Technology = orange, matching the color key used elsewhere in this chapter\n- Center node larger than source nodes; source nodes larger than example nodes\n\nLegend: Color key explaining Family/School/Media colors and an icon key for the two edge types\n\nImplementation: vis-network JavaScript library, canvas size responsive, default 700x450px"
+}

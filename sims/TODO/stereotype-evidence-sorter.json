@@ -1,0 +1,15 @@
+{
+  "sim_id": "stereotype-evidence-sorter",
+  "diagram_name": "Stereotype vs. Evidence Sorter",
+  "chapter_number": 2,
+  "chapter_title": "Relationships and Respect",
+  "chapter_dir": "02-relationships-and-respect",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/02-relationships-and-respect",
+  "library": "p5.js",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "judge, critique, justify",
+  "learning_objective": "Students evaluate short relationship scenarios and",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n\n**sim-id:** stereotype-evidence-sorter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Evaluate (L5)\nBloom Verb: judge, critique, justify\n\nLearning objective: Students evaluate short relationship scenarios and\njudge whether a described reaction is based on evidence about the\nspecific relationship or on a stereotype about a group, then justify\ntheir judgment.\n\nCanvas layout:\n- Top: scenario card describing a relationship situation and someone's\n  reaction to it\n- Bottom: two drop zones labeled \"Evidence-Based\" and \"Stereotype-Based\"\n\nInteractive controls:\n- Drag-and-drop: drag each scenario card into the correct zone\n- Button: \"Check My Sorting\"\n- Button: \"Next Scenario\"\n- Button: \"Show Reasoning\" — reveals a justification explaining why the\n  correct classification applies\n\nDefault parameters: 10 preloaded scenarios spanning gender-role\nassumptions, LGBTQ+ bias, racial/ethnic stereotypes about relationships,\nand a healthcare-access bias example\n\nBehavior:\n- After sorting, correct placements highlight green and incorrect\n  placements highlight red with the reasoning shown\n- Running score displayed; scenarios can be reshuffled for repeat\n  practice\n\nInstructional Rationale: An Evaluate-level objective requires students to\njudge and justify, not just recall a definition. Sorting real scenarios\nwith justification-on-demand builds the habit of pausing to ask \"is this\nevidence about this relationship, or an assumption about a category\"\nbefore reacting.\n\nImplementation notes: p5.js drag-and-drop with card objects and zone\nbounding boxes; store scenario text and correct classification plus\njustification in a JSON array."
+}

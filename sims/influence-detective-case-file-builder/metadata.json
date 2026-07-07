@@ -1,0 +1,23 @@
+{
+  "title": "Influence Detective Case File Builder",
+  "description": "Students apply the five identification strategies (trace the source, ask who benefits, notice repetition, separate influence from decision, check for multiple sources) by working through a step-by-step decision flow for a realistic scenario.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "influence-detective-case-file-builder",
+  "library": "Mermaid",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "apply, use, practice",
+  "completion_status": "scaffold",
+  "chapter_number": 11,
+  "chapter_title": "Health Influences and Information Literacy",
+  "chapter_dir": "11-health-influences-and-information-literacy",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/11-health-influences-and-information-literacy"
+}

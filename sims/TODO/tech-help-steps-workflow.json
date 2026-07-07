@@ -1,0 +1,15 @@
+{
+  "sim_id": "tech-help-steps-workflow",
+  "diagram_name": "Steps for Getting Help With a Tech Situation",
+  "chapter_number": 5,
+  "chapter_title": "Technology, Community, and Emergency Safety",
+  "chapter_dir": "05-technology-community-emergency-safety",
+  "chapter_rel_dir": "bands/grade-2/chapters/05-technology-community-emergency-safety",
+  "library": "Mermaid",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, describe, summarize",
+  "learning_objective": "Students explain the correct order of steps to take when a technology situation feels unsafe or uncomfortable.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n**sim-id:** tech-help-steps-workflow<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, describe, summarize\n\nLearning objective: Students explain the correct order of steps to take when a technology situation feels unsafe or uncomfortable.\n\nPurpose: Show the four-step process for getting help with an unsafe technology situation as a simple, linear flowchart\n\nVisual style: Mermaid flowchart (graph TD), four boxes connected top to bottom, plain and calm in tone -- no scary imagery\n\nNodes (each must have a click handler opening an infobox with plain, sincere definition text):\n1. \"Something Feels Wrong\" (start node) -- click shows \"This is the moment you notice a message, request, or content that feels scary, confusing, or uncomfortable.\"\n2. \"Stop Using the Device\" -- click shows \"Close the app or step away from the screen. You do not need to answer or figure it out yourself.\"\n3. \"Do Not Respond\" -- click shows \"Do not reply, click, or share anything else. It is never your job to handle this alone.\"\n4. \"Tell a Trusted Adult\" -- click shows \"Tell a parent, guardian, teacher, or school counselor exactly what happened. They will help decide what to do next.\"\n\nConnections: Straight top-to-bottom arrows connecting node 1 to node 2, node 2 to node 3, and node 3 to node 4 -- no branches, since the same steps apply every time\n\nColor coding: Calm blue-gray tones throughout; no red or alarming colors, since the tone for this section stays plainly sincere rather than urgent-sounding\n\nInteractive features: click directive on every node in the Mermaid syntax, mapped to a JavaScript function that opens an infobox with the definition text above\n\nImplementation: Mermaid flowchart with click bindings; render inside a small wrapper page that displays the infobox below the diagram. Keep the visual plain and reassuring, matching the sincere tone required for personal-safety-adjacent content."
+}

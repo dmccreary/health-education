@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 540 -->
+<title>Cultural Wellness Practices Concept Map</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 400px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 8px; font-size: 11px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 5px; vertical-align: middle; border: 1px solid #555; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid seagreen; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 66px; }
+  .infobox strong { color: navy; }
+</style>
+</head>
+<body>
+<main>
+  <h3>Many Paths to Wellness</h3>
+  <div class="subtitle">Hover a circle for a quick note. Click a color category to spotlight its examples, or click the center to see everything again.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k" style="background:#9e9e8a;"></span>Central Idea<br>
+      <span class="k" style="background:#26a69a;"></span>Category<br>
+      <span class="k" style="background:#c8e6e2;"></span>Example
+    </div>
+  </div>
+  <div class="infobox" id="infobox">Wellness includes many caring cultural traditions <strong>alongside</strong> modern medicine, not instead of it. Explore four kinds of practices and real examples of each.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+
+// Four category branches. Each has a calm color, a lighter tint for its examples,
+// a hover note, a fuller click description, and 2-3 respectful real-world examples.
+const categories = [
+  {
+    id: 'herbal', label: 'Herbal\nTraditions',
+    color: '#26a69a', border: '#00796b', tint: '#c8e6e2', tintBorder: '#7cc4bc',
+    hover: 'Using plants like teas and herbs to feel better and stay well.',
+    desc: 'Many cultures pass down knowledge of plants and teas used to soothe everyday troubles. These gentle remedies are one caring part of whole-health, used together with a doctor’s advice.',
+    examples: [
+      { label: 'Ginger tea for an\nupset stomach', note: 'A warm ginger drink is a common way to settle a queasy tummy.' },
+      { label: 'Chamomile for\ncalm rest', note: 'Chamomile tea is often shared to help the body relax before sleep.' },
+      { label: 'Honey and lemon\nfor a sore throat', note: 'A soothing mix passed down in many families to comfort a scratchy throat.' }
+    ]
+  },
+  {
+    id: 'caregiving', label: 'Caregiving\nCustoms',
+    color: '#c9a227', border: '#9e7d0a', tint: '#f4e9c1', tintBorder: '#d8c27a',
+    hover: 'Ways families care for one another when someone is sick or resting.',
+    desc: 'Every culture has kind customs for looking after loved ones — checking in, cooking, and keeping company. Caregiving helps people heal and feel supported.',
+    examples: [
+      { label: 'Bringing soup to\nsomeone who is sick', note: 'Sharing warm, nourishing food is a caring tradition in many homes.' },
+      { label: 'Elders resting\nwith family near', note: 'Staying close to family brings comfort and helps people recover.' },
+      { label: 'Storytelling to\ncomfort a patient', note: 'Sharing stories can lift spirits and ease worry during illness.' }
+    ]
+  },
+  {
+    id: 'community', label: 'Community\nHealing',
+    color: '#8e6cc0', border: '#5e35a5', tint: '#e2d5f2', tintBorder: '#bda2df',
+    hover: 'When a whole community comes together to support health and healing.',
+    desc: 'Some traditions bring neighbors and community members together to support someone’s health. Belonging and shared care are important parts of feeling well.',
+    examples: [
+      { label: 'Neighbors sharing\ngarden food', note: 'Trading fresh vegetables helps everyone eat well and stay connected.' },
+      { label: 'Group walks or\ndances for health', note: 'Moving together keeps bodies active and builds friendships.' },
+      { label: 'Community meals\nthat welcome all', note: 'Shared meals nourish the body and remind people they belong.' }
+    ]
+  },
+  {
+    id: 'spiritual', label: 'Spiritual and\nCommunal Practices',
+    color: '#5c9e5c', border: '#357a35', tint: '#cfe8cf', tintBorder: '#9ccf9c',
+    hover: 'Calming and hopeful practices people share to care for the mind and heart.',
+    desc: 'Many cultures use quiet, hopeful, or shared practices to calm the mind and lift the spirit. Caring for feelings and hope is part of whole-health, too.',
+    examples: [
+      { label: 'Quiet reflection\nor prayer', note: 'A peaceful moment that helps many people feel calm and hopeful.' },
+      { label: 'Deep breathing\nand stillness', note: 'Slow breathing is a simple way to relax the body and mind.' },
+      { label: 'Gathering for\nsong or celebration', note: 'Coming together to sing or celebrate can bring joy and comfort.' }
+    ]
+  }
+];
+
+const nodes = [];
+const edges = [];
+const info = { center: { title: 'Cultural Wellness Perspectives', text: 'Wellness includes many valid cultural approaches <strong>alongside</strong> modern medicine — herbal traditions, caregiving, community healing, and spiritual practices all care for the whole person.' } };
+const hoverNotes = { center: 'The big idea: wellness includes many caring cultural traditions together with modern medicine.' };
+// Track which node ids belong to each category branch, for click highlighting.
+const branchOf = {};
+
+// Central node (level 0): neutral warm gray circle at the top.
+nodes.push({ id: 'center', level: 0, label: 'Cultural Wellness\nPerspectives', shape: 'ellipse',
+  color: { background: '#9e9e8a', border: '#6f6f5c' }, font: { color: 'white', size: 15, face: 'Arial' }, borderWidth: 2 });
+
+categories.forEach(c => {
+  // Category node (level 1): medium colored circle.
+  nodes.push({ id: c.id, level: 1, label: c.label, shape: 'ellipse',
+    color: { background: c.color, border: c.border }, font: { color: 'white', size: 13, face: 'Arial' }, borderWidth: 2 });
+  // "Includes" edge: solid gray line from center to category.
+  edges.push({ from: 'center', to: c.id, label: 'includes', font: { size: 10, color: '#777' },
+    color: { color: '#b0b0a8' }, width: 2 });
+  info[c.id] = { title: c.label.replace(/\n/g, ' '), text: c.desc };
+  hoverNotes[c.id] = c.hover;
+  branchOf[c.id] = c.id;
+
+  c.examples.forEach((ex, i) => {
+    const eid = c.id + '_e' + i;
+    // Example node (level 2): small circle in a lighter tint of the parent color.
+    nodes.push({ id: eid, level: 2, label: ex.label, shape: 'ellipse',
+      color: { background: c.tint, border: c.tintBorder }, font: { color: '#37474f', size: 11, face: 'Arial' }, borderWidth: 1 });
+    // "Example of" edge: thin colored line matching the category color.
+    edges.push({ from: c.id, to: eid, label: 'example', font: { size: 9, color: '#999' },
+      color: { color: c.border }, width: 1 });
+    info[eid] = { title: 'Example: ' + ex.label.replace(/\n/g, ' '), text: ex.note };
+    hoverNotes[eid] = ex.note;
+    branchOf[eid] = c.id;
+  });
+});
+
+const container = document.getElementById('network');
+const dataNodes = new vis.DataSet(nodes);
+const dataEdges = new vis.DataSet(edges);
+const data = { nodes: dataNodes, edges: dataEdges };
+const options = {
+  layout: { hierarchical: { enabled: true, direction: 'UD', sortMethod: 'directed',
+    levelSeparation: 120, nodeSpacing: 120, treeSpacing: 160 } },
+  physics: false,
+  interaction: { hover: true, dragView: true, zoomView: false, navigationButtons: true, tooltipDelay: 100000 },
+  edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical', roundness: 0.5 } },
+  nodes: { shadow: true }
+};
+const network = new vis.Network(container, data, options);
+network.once('afterDrawing', () => network.fit());
+window.addEventListener('resize', () => network.fit());
+
+function panel(id) {
+  const d = info[id];
+  if (d) box.innerHTML = '<strong>' + d.title + '</strong><br>' + d.text;
+}
+
+// Dim every node and edge not in the chosen category branch; spotlight the rest.
+function highlightBranch(catId) {
+  const nodeUpdates = nodes.map(n => {
+    const inBranch = n.id === 'center' || branchOf[n.id] === catId;
+    return { id: n.id, opacity: inBranch ? 1 : 0.18 };
+  });
+  const edgeUpdates = edges.map(e => {
+    const inBranch = e.from === 'center' ? (e.to === catId) : (branchOf[e.from] === catId);
+    return { id: e.id, hidden: false, color: Object.assign({}, e.color, { opacity: inBranch ? 1 : 0.12 }) };
+  });
+  dataNodes.update(nodeUpdates);
+  dataEdges.update(edgeUpdates);
+}
+
+// Restore the full, un-dimmed view.
+function resetView() {
+  dataNodes.update(nodes.map(n => ({ id: n.id, opacity: 1 })));
+  dataEdges.update(edges.map(e => ({ id: e.id, color: Object.assign({}, e.color, { opacity: 1 }) })));
+}
+
+network.on('hoverNode', p => { const h = hoverNotes[p.node]; if (h) box.innerHTML = h; });
+network.on('click', p => {
+  if (!p.nodes.length) return;
+  const id = p.nodes[0];
+  if (id === 'center') { resetView(); panel('center'); return; }
+  panel(id);
+  const cat = branchOf[id];      // clicking a category or one of its examples spotlights that branch
+  if (cat) highlightBranch(cat);
+});
+</script>
+</body>
+</html>

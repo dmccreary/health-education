@@ -1,0 +1,15 @@
+{
+  "sim_id": "vitamin-mineral-matcher",
+  "diagram_name": "Vitamin and Mineral Matcher",
+  "chapter_number": 1,
+  "chapter_title": "Food and Nutrition",
+  "chapter_dir": "01-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-4/chapters/01-food-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "recall, identify, match",
+  "learning_objective": "Students recall and match common vitamins and minerals to the body function each one supports.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** vitamin-mineral-matcher<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Remember (L1)\nBloom Taxonomy Verb: recall, identify, match\n\nLearning objective: Students recall and match common vitamins and minerals to the body function each one supports.\n\nCanvas layout:\n- Left column (250px): Six cards labeled Vitamin C, Vitamin D, Vitamin A, Calcium, Iron, Fiber\n- Right column (250px): Six shuffled function cards (\"Helps heal cuts and fight illness,\" \"Builds strong bones,\" \"Supports healthy eyes and skin,\" \"Builds strong bones and teeth,\" \"Helps blood carry oxygen,\" \"Helps digestion\")\n- Bottom strip (100px): Feedback caption and \"Check Matches\" / \"Reset\" buttons\n\nVisual elements:\n- Simple flat icons next to each nutrient name (orange slice for Vitamin C, sun for Vitamin D, carrot for Vitamin A, milk glass for Calcium, drop for Iron, grain stalk for Fiber)\n\nInteractive controls:\n- Click a nutrient card, then click the function card you think matches it — a line connects the pair\n- Button: \"Check Matches\" reveals which pairs are correct\n- Button: \"Reset\" clears all connections and starts over\n\nDefault parameters:\n- All six pairs unmatched at start; cards presented in shuffled, non-corresponding order\n\nBehavior:\n- Correct pair: green line and checkmark\n- Incorrect pair: red line with a gentle prompt to try again\n- After checking, a summary caption states how many were matched correctly out of six\n\nInstructional Rationale: This is a Remember-level objective (recall and match facts), so a straightforward matching-pairs pattern is appropriate rather than a complex simulation — the goal is confident recall of nutrient-function pairs, not exploration of a dynamic system.\n\nImplementation notes: Use p5.js. Keep function text short enough to read at a glance. Store nutrient-function pairs as an array of objects for easy reshuffling."
+}

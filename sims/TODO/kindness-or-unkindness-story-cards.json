@@ -1,0 +1,15 @@
+{
+  "sim_id": "kindness-or-unkindness-story-cards",
+  "diagram_name": "Kindness or Unkindness? Story Cards",
+  "chapter_number": 4,
+  "chapter_title": "Friendship, Uniqueness, and Belonging",
+  "chapter_dir": "04-friendship-and-belonging",
+  "chapter_rel_dir": "bands/grade-1/chapters/04-friendship-and-belonging",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "classify, explain, compare",
+  "learning_objective": "Students classify short story scenes as kindness or unkindness and explain how each action affects the way the other person feels, and how belonging is strengthened or weakened.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** kindness-or-unkindness-story-cards<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: classify, explain, compare\n\nLearning objective: Students classify short story scenes as kindness or unkindness and explain how each action affects the way the other person feels, and how belonging is strengthened or weakened.\n\nCanvas layout:\n- Left area (450px): One story scene at a time (flat illustration plus one or two sentences)\n- Right area (150px): Two large buttons, \"Kindness\" and \"Unkindness,\" plus an infobox\n\nVisual elements:\n- 8 story scenes cycling one at a time, mixing kindness moments (sharing, including, comforting) and unkindness moments (excluding, teasing, grabbing)\n- Feeling-face icon that appears on the character in the scene after the student answers\n\nInteractive controls:\n- Click-to-select: \"Kindness\" or \"Unkindness\" button\n- Button: \"Next Story\"\n- Button: \"Reset\"\n\nDefault parameters:\n- First scene: a child sharing crayons with a classmate who forgot theirs (clearly kindness, to build confidence)\n\nData Visibility Requirements:\n  Stage 1: Show the story scene with no label\n  Stage 2: After the student clicks a button, reveal whether it matches\n  Stage 3: Show the character's feeling-face and a one-sentence explanation of the effect (\"Sharing crayons helped Sam feel included and cared for.\")\n\nBehavior:\n- Correct match: button glows green, gentle chime, explanation and feeling-face appear\n- Incorrect match: gentle prompt, \"Think about how the other person might feel,\" correct answer glows softly as a hint\n\nInstructional Rationale: This is an Understand-level (explain/classify) objective, so the MicroSim reveals the emotional effect of each action with concrete captions rather than continuous animation, helping students connect specific actions to specific feelings and to belonging.\n\nImplementation notes: Use p5.js. Keep illustrations warm and non-shaming; unkindness scenes should show a fixable moment, never a scary one. Teacher reads each scene and explanation aloud."
+}

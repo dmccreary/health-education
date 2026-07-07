@@ -1,0 +1,38 @@
+{
+  "title": "Health Practices Self-Check",
+  "description": "Students examine a set of everyday health-supporting practices across multiple health categories and identify which ones they already do well and which they might want to improve.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "health-practices-self-check",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine, organize, compare",
+  "completion_status": "scaffold",
+  "chapter_number": 8,
+  "chapter_title": "Communication And Goals",
+  "chapter_dir": "08-communication-and-goals",
+  "chapter_rel_dir": "bands/grade-3/chapters/08-communication-and-goals",
+  "educational": {
+    "gradeLevel": "Grade 3",
+    "subjectArea": "Health Education",
+    "topic": "Communication And Goals",
+    "learningObjectives": [
+      "Students examine a set of everyday health-supporting practices across multiple health categories and identify which ones they already do well and which they might want to improve."
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "examine, organize, compare",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
+}

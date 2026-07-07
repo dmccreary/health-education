@@ -1,0 +1,15 @@
+{
+  "sim_id": "germ-spread-pathway-explorer",
+  "diagram_name": "Germ Spread Pathway Explorer",
+  "chapter_number": 5,
+  "chapter_title": "Wellness and Disease Prevention",
+  "chapter_dir": "05-wellness-and-disease-prevention",
+  "chapter_rel_dir": "bands/grade-4/chapters/05-wellness-and-disease-prevention",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, identify, describe",
+  "learning_objective": "Students identify and explain the five common pathways germs use to spread between people, surfaces, and hosts.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** germ-spread-pathway-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, identify, describe\n\nLearning objective: Students identify and explain the five common pathways germs use to spread between people, surfaces, and hosts.\n\nCanvas layout:\n- Left (450px): A central illustrated classroom/home scene with five labeled hotspots representing each pathway\n- Right (250px): Infobox panel showing pathway name, description, and one prevention tip\n\nVisual elements:\n- Hotspots: \"Direct Contact\" (two hands), \"Respiratory Droplets\" (a cough/sneeze icon), \"Contaminated Surfaces\" (a doorknob), \"Contaminated Food/Water\" (a glass and plate), \"Insect/Animal Bites\" (a mosquito icon)\n- Each hotspot glows softly when hovered to invite clicking\n\nInteractive controls:\n- Click each hotspot to reveal its pathway description and one matching prevention tip in the infobox\n- Button: \"Show All Pathways\" reveals a summary list after all five have been explored\n\nDefault parameters:\n- All 5 hotspots visible from the start; no required order\n\nData Visibility Requirements:\n  Stage 1: Show the full illustrated scene with all five hotspots\n  Stage 2: Show pathway name and description once a hotspot is clicked\n  Stage 3: Show one linked prevention tip for that specific pathway\n  Final: Show all five pathways together with their prevention tips once all have been explored\n\nBehavior:\n- Each hotspot always reveals the same information regardless of click order\n- The prevention tip shown for each pathway previews the Disease Prevention Strategies section that follows\n\nInstructional Rationale: This is an Understand-level objective, so the design uses concrete, click-to-reveal exploration of a static scene rather than animation, letting students connect each pathway to a specific real-world example at their own pace.\n\nImplementation notes: Use p5.js with simple flat illustrations. Keep the scene ordinary (classroom or kitchen) and non-alarming."
+}

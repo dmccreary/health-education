@@ -1,0 +1,15 @@
+{
+  "sim_id": "nicotine-and-the-reward-system",
+  "diagram_name": "Nicotine And The Reward System MicroSim",
+  "chapter_number": 8,
+  "chapter_title": "Substances and the Developing Brain",
+  "chapter_dir": "08-substances-and-the-developing-brain",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/08-substances-and-the-developing-brain",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, describe, summarize",
+  "learning_objective": "Students explain, using a step-through data view rather than continuous animation, how nicotine reaches and affects the brain's reward system faster and more intensely in an adolescent brain than an adult brain.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** nicotine-and-the-reward-system<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, describe, summarize\n\nLearning objective: Students explain, using a step-through data view rather than continuous animation, how nicotine reaches and affects the brain's reward system faster and more intensely in an adolescent brain than an adult brain.\n\nCanvas layout: Left side (450px) shows a simplified brain diagram with the reward pathway highlighted; right side (150px) shows step-through controls and a data readout panel.\n\nData Visibility Requirements:\nStage 1: Show a labeled diagram of the brain reward pathway at rest, with a readout \"Baseline reward activity: normal.\"\nStage 2: Show nicotine (represented as small labeled dots, not depicting any product) reaching the reward pathway, with a readout \"Nicotine reaches brain receptors within seconds.\"\nStage 3: Show the reward pathway activated, with a readout comparing \"Adult brain: reward response\" versus \"Adolescent brain: stronger, faster-forming reward response\" as two side-by-side bar readouts (illustrative relative values, not exact clinical figures).\nStage 4: Show a summary readout: \"Because the adolescent reward system is still forming, repeated nicotine exposure builds dependence more quickly than in a fully developed adult brain.\"\n\nInteraction: Step-through with \"Next\" and \"Previous\" buttons; a \"Compare Adult vs. Adolescent\" toggle at each stage.\n\nInstructional Rationale: This is an Understand-level objective requiring learners to trace a process with concrete data, so a step-through format with visible data at each stage is used rather than continuous animation, which would obscure the comparison and prevent the learner from pausing to absorb each stage.\n\nImplementation notes: p5.js. No depiction of any tobacco or vaping product, packaging, or method of use — only a labeled brain diagram and reward-pathway data readouts. Responsive canvas that reflows on window resize."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "food-system-disease-pathway",
+  "diagram_name": "Food System to Chronic Disease Pathway",
+  "chapter_number": 1,
+  "chapter_title": "Food and Nutrition",
+  "chapter_dir": "01-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/01-food-and-nutrition",
+  "library": "Mermaid",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, distinguish",
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n\n**sim-id:** food-system-disease-pathway<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: examine, distinguish\n\nPurpose: Show how upstream food-system factors connect to downstream\nchronic-disease risk through a chain of intermediate conditions, with\nevery node clickable for an explanation grounded in evidence.\n\nVisual style: Mermaid flowchart, top-to-bottom, with click handlers on\nevery node\n\nNodes (all must have `click NodeId call showInfo(\"term\")` handlers\nmapped to an infobox):\n1. \"Food System Structure\" — hover/click text: \"How food is grown,\n   distributed, priced, and marketed in a region\"\n2. \"Grocery Store Density\" — click text: \"Number of full-service grocery\n   stores relative to population in a given area\"\n3. \"Food Desert\" — click text: \"An area with limited access to\n   affordable, nutritious food, especially fresh produce\"\n4. \"Relative Cost of Processed vs. Fresh Food\" — click text: \"Processed,\n   shelf-stable food is frequently cheaper per calorie than fresh produce\"\n5. \"Household Food Choices Under Constraint\" — click text: \"Choices\n   families make when balancing cost, time, and access, not solely\n   preference\"\n6. \"Dietary Pattern Over Time\" — click text: \"Cumulative years of intake\n   patterns, not any single meal\"\n7. \"Chronic Disease Risk (Type 2 Diabetes, Hypertension, Cardiovascular\n   Disease)\" — click text: \"Long-term elevated risk linked to sustained\n   dietary patterns shaped by the factors above\"\n\nConnections: linear chain 1→2→3→4→5→6→7, with a side branch from node 2\ndirectly to node 5 labeled \"Direct access effect\" to show that access\nalone (not just price) independently constrains choice\n\nColor coding: blue for structural/systemic nodes (1-4), orange for\nindividual/household nodes (5-6), red for the health outcome node (7)\n\nInteractive features: click any node for its infobox; hover any edge\nlabel for a one-line description of the mechanism it represents\n\nImplementation: Mermaid.js flowchart with JavaScript click bindings to a\ncustom showInfo() function rendering a side panel"
+}

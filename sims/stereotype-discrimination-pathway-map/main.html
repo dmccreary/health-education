@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Stereotype-to-Discrimination Pathway Map</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Stereotype-to-Discrimination Pathway Map</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> stereotype-discrimination-pathway-map</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students examine how stereotypes lead to prejudice and</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: graph-model
+    
+    **sim-id:** stereotype-discrimination-pathway-map<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy Level: Analyze (L4)
+    Bloom Verb: examine, differentiate, distinguish
+    
+    Learning objective: Students examine how stereotypes lead to prejudice and
+    discrimination, and distinguish individual discrimination from systemic
+    discrimination, along with the intervention that most directly addresses
+    each.
+    
+    Node types:
+    1. Starting node: "Stereotype (Oversimplified Group Belief)" (orange
+       circle)
+    2. Intermediate node: "Prejudice (Negative Attitude Based on Stereotype)"
+       (orange circle)
+    3. Outcome nodes (red squares): "Individual Discrimination," "Systemic
+       (Institutional) Discrimination"
+    4. Intervention nodes (green circles): Interrupting Stereotypes Directly,
+       Genuine Contact and Accurate Information, Examining Policies for
+       Systemic Bias, Supporting People Who Experience Discrimination
+    
+    Edge types:
+    - "Leads To" (Stereotype → Prejudice → both Discrimination outcome nodes)
+    - "Most Directly Addresses" (arrows from each intervention node to the
+      outcome node it targets most — e.g., Examining Policies for Systemic
+      Bias → Systemic Discrimination; Genuine Contact → Individual
+      Discrimination and the underlying Stereotype node)
+    
+    Layout: Hierarchical, left to right, following the causal pathway from
+    stereotype to outcome to intervention
+    
+    Interactive features:
+    - Hover any node: shows a one-sentence definition
+    - Click "Individual Discrimination" or "Systemic (Institutional)
+      Discrimination": opens a panel with a concrete, realistic school-based
+      example distinguishing the two
+    - Click an intervention node: opens a panel explaining why that
+      intervention works and which part of the pathway it interrupts
+    - Drag, zoom, and pan enabled
+    
+    Legend: color/shape key for stereotype/prejudice nodes, discrimination
+    outcomes, and interventions
+    
+    Implementation: vis-network, hierarchical layout, click-triggered side
+    panel content stored in a JSON lookup keyed by node id
+    -->
+</body>
+</html>

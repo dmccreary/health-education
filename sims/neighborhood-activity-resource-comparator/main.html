@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 540 -->
+<title>Physical Activity Resources by Neighborhood Income Tier</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 4px 0 2px; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .controls { text-align: center; margin-bottom: 6px; font-size: 12px; color: #334155; }
+  .controls select { font-size: 12px; padding: 2px 4px; border: 1px solid silver; border-radius: 4px; color: navy; }
+  .chart-box { background: aliceblue; border: 1px solid silver; border-radius: 6px; padding: 8px; }
+  .chart-container { position: relative; width: 100%; height: 300px; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 66px; }
+  .infobox strong { color: navy; }
+  .frame { font-style: italic; color: seagreen; }
+  .source { text-align: center; color: gray; font-size: 11px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <h3>Physical Activity Resources by Neighborhood Income Tier</h3>
+  <div class="subtitle">Hover a bar for details, click a tier in the legend to hide it, or pick a category to highlight.</div>
+  <div class="controls">
+    Highlight one category:
+    <select id="catSelect">
+      <option value="-1">Show all categories</option>
+      <option value="0">Park Acreage per 1,000 Residents</option>
+      <option value="1">Percent Streets with Sidewalks</option>
+      <option value="2">Free / Low-Cost Recreation Programs</option>
+      <option value="3">Resident Safety Score</option>
+    </select>
+  </div>
+  <div class="chart-box">
+    <div class="chart-container"><canvas id="chart"></canvas></div>
+  </div>
+  <div class="infobox" id="infobox">
+    Each group of bars is one <strong>resource</strong> that helps people be active. The three colored bars
+    compare higher-, middle-, and lower-income neighborhoods on a shared 0&ndash;10 scale.
+    <span class="frame">Gaps come from investment decisions, not from how much residents want to move.</span>
+  </div>
+  <div class="source">Illustrative 0&ndash;10 scale. Composite figures based on published park-access and community-health research patterns.</div>
+</main>
+<script>
+// Four resource categories along the x-axis
+const categories = [
+  'Park Acreage per 1,000 Residents',
+  'Percent Streets with Sidewalks',
+  'Free / Low-Cost Recreation Programs',
+  'Resident Safety Score'
+];
+
+// Three income-tier data series, each with a value for the four categories
+const tiers = [
+  { label: 'Higher-Income Tier', data: [8, 9, 7, 8], fill: 'rgba(46,139,87,0.85)',  border: 'seagreen' },
+  { label: 'Middle-Income Tier', data: [5, 6, 4, 6], fill: 'rgba(218,165,32,0.85)', border: 'goldenrod' },
+  { label: 'Lower-Income Tier',  data: [2, 3, 2, 4], fill: 'rgba(205,92,92,0.85)',  border: 'indianred' }
+];
+
+// Plain-language meaning of each category value for tooltips
+const meaning = [
+  'park space per 1,000 residents — more acreage means more room to walk, run, and play.',
+  'share of streets with sidewalks — more sidewalks make it safer to walk or bike anywhere.',
+  'free or low-cost recreation programs — more programs mean more ways to be active without paying.',
+  'resident-reported safety score out of 10 — feeling safe makes people more likely to go outside and move.'
+];
+
+// Fuller explanation written to the infobox when a bar is clicked
+const detail = [
+  'Park acreage is space set aside for recreation. Higher-income areas often have far more park land per person. <span class="frame">Gaps like this are shaped by zoning and investment decisions, not resident preference.</span>',
+  'Sidewalks decide whether walking or biking feels safe. Neighborhoods with fewer sidewalks give people fewer safe routes to be active.',
+  'Free and low-cost programs — like open gyms, sports leagues, and rec centers — let families be active without a big cost. Fewer programs means fewer chances to join in.',
+  'When residents feel unsafe, they are less likely to walk, run, or let kids play outside, even when parks and sidewalks exist.'
+];
+
+const box = document.getElementById('infobox');
+function showDetail(catIndex) {
+  box.innerHTML = '<strong>' + categories[catIndex] + '</strong> &mdash; ' + detail[catIndex];
+}
+
+const ctx = document.getElementById('chart').getContext('2d');
+const chart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: categories,
+    datasets: tiers.map(t => ({
+      label: t.label,
+      data: t.data,
+      backgroundColor: t.fill,
+      borderColor: t.border,
+      borderWidth: 1
+    }))
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    onClick: (e, els) => { if (els.length) showDetail(els[0].index); },
+    scales: {
+      y: {
+        beginAtZero: true, max: 10,
+        ticks: { stepSize: 2 },
+        title: { display: true, text: 'Normalized Value (0–10)' }
+      },
+      x: {
+        ticks: { font: { size: 10 }, maxRotation: 20, minRotation: 0 },
+        title: { display: true, text: 'Resource Category' }
+      }
+    },
+    plugins: {
+      legend: {
+        position: 'top',
+        align: 'end',
+        labels: { font: { size: 11 }, boxWidth: 14 }
+      },
+      tooltip: {
+        callbacks: {
+          title: items => categories[items[0].dataIndex],
+          label: c => c.dataset.label + ': ' + c.parsed.y + ' / 10',
+          afterBody: items => 'This is the ' + meaning[items[0].dataIndex]
+        },
+        bodyFont: { size: 11 }, boxPadding: 4
+      }
+    }
+  }
+});
+
+// Dropdown: highlight one category across all three tiers by fading the others
+document.getElementById('catSelect').addEventListener('change', function () {
+  const sel = parseInt(this.value, 10);
+  chart.data.datasets.forEach((ds, di) => {
+    ds.backgroundColor = tiers[di].data.map((v, ci) => {
+      if (sel === -1 || ci === sel) return tiers[di].fill;
+      return 'rgba(200,200,200,0.35)';
+    });
+  });
+  chart.update();
+  if (sel === -1) {
+    box.innerHTML = 'Each group of bars is one <strong>resource</strong> that helps people be active. '
+      + 'The three colored bars compare higher-, middle-, and lower-income neighborhoods on a shared 0&ndash;10 scale. '
+      + '<span class="frame">Gaps come from investment decisions, not from how much residents want to move.</span>';
+  } else {
+    showDetail(sel);
+  }
+});
+</script>
+</body>
+</html>

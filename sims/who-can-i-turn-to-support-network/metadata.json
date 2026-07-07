@@ -1,0 +1,23 @@
+{
+  "title": "Who Can I Turn To Support Network",
+  "description": "Students identify multiple concrete people and resources they can turn to, immediately, if they or a friend are at risk, reinforcing that help is always available and never limited to a single option.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "who-can-i-turn-to-support-network",
+  "library": "vis-network",
+  "bloomLevel": "Remember (L1)",
+  "bloomVerb": "identify, list, recognize",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Emotional Well-Being and Mental Health",
+  "chapter_dir": "04-emotional-well-being-and-mental-health",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/04-emotional-well-being-and-mental-health"
+}

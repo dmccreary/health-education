@@ -1,0 +1,15 @@
+{
+  "sim_id": "school-drill-practice",
+  "diagram_name": "School Drill Practice",
+  "chapter_number": 5,
+  "chapter_title": "Staying Safe",
+  "chapter_dir": "05-staying-safe",
+  "chapter_rel_dir": "bands/kindergarten/chapters/05-staying-safe",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "practice, demonstrate",
+  "learning_objective": "Students practice the correct sequence of steps for a fire drill by following a step-through classroom scene, reinforcing the School Emergency concept.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** school-drill-practice<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: practice, demonstrate\n\nLearning objective: Students practice the correct sequence of steps for a fire drill by following a step-through classroom scene, reinforcing the School Emergency concept.\n\nCanvas layout: Top area (300px) shows an illustrated classroom scene with a teacher and children, advancing through three stages (alarm sounds, line up quietly, walk to the safe outdoor spot). Middle area (80px): three step icons that light up as the scene advances. Bottom strip (100px): \"Next Step\" and \"Reset\" buttons.\n\nVisual elements: Classroom scene changes at each stage; step icons are alarm, line-up, and outdoor safe-spot.\n\nInteractive controls: \"Next Step\" advances the drill sequence; \"Reset\" returns to the start; short caption displays under the scene naming the current step.\n\nDefault parameters: Starts at Stage 1 (alarm sounds); three total stages, each requiring a click to advance.\n\nBehavior: Stage 1: \"The alarm sounds. It's time for a fire drill!\" Stage 2: \"Everyone lines up quietly and listens to the teacher.\" Stage 3: \"The class walks calmly to the safe outdoor spot.\" After Stage 3: \"Great job practicing! Now everyone knows just what to do.\"\n\nInstructional Rationale: An Apply-level objective — practicing the correct sequence of a real routine — so a step-through pattern with teacher-controlled pacing is appropriate, letting a teacher narrate each stage aloud rather than relying on unstructured continuous animation.\n\nImplementation notes: p5.js. Each stage is an object with an illustration reference and a caption string. Text large (24px+) and calm in tone."
+}

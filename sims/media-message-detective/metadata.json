@@ -1,0 +1,38 @@
+{
+  "title": "Media Message Detective",
+  "description": "Students analyze short, realistic media examples (an ad, a game scene, a social post) to identify what the media is trying to influence and whether the influence supports or works against a healthy choice.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "media-message-detective",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine, distinguish, differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Personal Safety and Refusal Skills",
+  "chapter_dir": "04-safety-and-refusal-skills",
+  "chapter_rel_dir": "bands/grade-4/chapters/04-safety-and-refusal-skills",
+  "educational": {
+    "gradeLevel": "Grade 4",
+    "subjectArea": "Health Education",
+    "topic": "Personal Safety and Refusal Skills",
+    "learningObjectives": [
+      "Students analyze short, realistic media examples (an ad, a game scene, a social post) to identify what the media is trying to influence and whether the influence supports or works against a healthy choice."
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "examine, distinguish, differentiate",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
+}

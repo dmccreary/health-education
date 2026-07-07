@@ -1,0 +1,15 @@
+{
+  "sim_id": "cultural-wellbeing-practices-map",
+  "diagram_name": "Cultural Wellbeing Practices Concept Map",
+  "chapter_number": 6,
+  "chapter_title": "Conflict Resolution and Inclusion",
+  "chapter_dir": "06-conflict-resolution-and-inclusion",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/06-conflict-resolution-and-inclusion",
+  "library": "vis-network",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, exemplify, classify",
+  "learning_objective": "Students explain how distinct cultural teachings and",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n\n**sim-id:** cultural-wellbeing-practices-map<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Understand (L2)\nBloom Verb: explain, exemplify, classify\n\nLearning objective: Students explain how distinct cultural teachings and\npractices support wellbeing, and classify concrete examples under the\ncorrect category of cultural wellbeing practice.\n\nNode types:\n1. Central node: \"Cultural Teachings for Wellbeing\" (blue circle)\n2. Category nodes (green squares): Connection to Land and Community,\n   Storytelling, Spiritual and Ceremonial Practices, Extended Family and\n   Community Support\n3. Example nodes (light circles), 2-3 per category, drawn from the\n   chapter text (e.g., under Storytelling: \"Teaching stories about\n   resilience passed across generations\")\n\nEdge types:\n- \"Supports Wellbeing Through\" (arrows from central node to each category)\n- \"Example\" (arrows from each category to its example nodes)\n\nLayout: Radial, central node in the middle, categories surrounding it,\nexamples one ring further out\n\nInteractive features:\n- Hover any node: shows a one-sentence description\n- Click a category node: opens a panel explaining that category's\n  approach to wellbeing in respectful, specific terms\n- Click an example node: opens a panel with the concrete example and\n  which category it belongs to\n- Drag, zoom, and pan enabled\n\nLegend: color/shape key for the central node, categories, and examples\n\nImplementation: vis-network, radial layout, click-triggered side panel\ncontent stored in a JSON lookup keyed by node id"
+}

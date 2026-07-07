@@ -1,0 +1,38 @@
+{
+  "title": "Decision Consequence Explorer",
+  "description": "Students examine multiple options for a health-related situation and compare the likely short-term and long-term consequences of each.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "decision-consequence-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine, compare, differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 7,
+  "chapter_title": "Health Skills And Goal Setting",
+  "chapter_dir": "07-health-skills-and-goal-setting",
+  "chapter_rel_dir": "bands/grade-5/chapters/07-health-skills-and-goal-setting",
+  "educational": {
+    "gradeLevel": "Grade 5",
+    "subjectArea": "Health Education",
+    "topic": "Health Skills And Goal Setting",
+    "learningObjectives": [
+      "Students examine multiple options for a health-related situation and compare the likely short-term and long-term consequences of each."
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "examine, compare, differentiate",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
+}

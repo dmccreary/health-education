@@ -1,0 +1,23 @@
+{
+  "title": "Think Before You Share",
+  "description": "Students explain how sharing a message, image, or video could affect themselves or others by classifying short scenarios as \"safe to share,\" \"ask first,\" or \"don't share.\"",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "think-before-you-share",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, classify, exemplify",
+  "completion_status": "scaffold",
+  "chapter_number": 2,
+  "chapter_title": "Safety And Trusted Adults",
+  "chapter_dir": "02-safety-and-trusted-adults",
+  "chapter_rel_dir": "bands/grade-3/chapters/02-safety-and-trusted-adults"
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Community Food Access Network Map",
+  "description": "Students analyze a sample neighborhood map to differentiate food desert conditions from areas served by community food access initiatives, and examine which initiative types address which gaps.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "community-food-access-network-map",
+  "library": "Leaflet",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine, differentiate, organize",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "Health Foundations and Nutrition",
+  "chapter_dir": "01-health-foundations-and-nutrition",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/01-health-foundations-and-nutrition",
+  "educational": {
+    "gradeLevel": "Grades 6-8",
+    "subjectArea": "Health Education",
+    "topic": "Health Foundations and Nutrition",
+    "learningObjectives": [
+      "Students analyze a sample neighborhood map to differentiate food desert conditions from areas served by community food access initiatives, and examine which initiative types address which gaps."
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "examine, differentiate, organize",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
+}

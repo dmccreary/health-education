@@ -1,0 +1,23 @@
+{
+  "title": "What Matters Most to Me Right Now",
+  "description": "Students prioritize which health topics from across the book feel most personally relevant right now and justify their choice in a short reflection.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "what-matters-most-right-now",
+  "library": "vis-network",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "prioritize, judge, justify",
+  "completion_status": "scaffold",
+  "chapter_number": 8,
+  "chapter_title": "Communication And Goals",
+  "chapter_dir": "08-communication-and-goals",
+  "chapter_rel_dir": "bands/grade-3/chapters/08-communication-and-goals"
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "technology-safety-habit-checker",
+  "diagram_name": "Technology Safety Habit Checker",
+  "chapter_number": 6,
+  "chapter_title": "Personal Safety And Violence Prevention",
+  "chapter_dir": "06-personal-safety-and-violence-prevention",
+  "chapter_rel_dir": "bands/grade-5/chapters/06-personal-safety-and-violence-prevention",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "apply, demonstrate, practice",
+  "learning_objective": "Students apply technology harm prevention strategies by evaluating a mock settings screen and identifying which settings are safe versus risky.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** technology-safety-habit-checker<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: apply, demonstrate, practice\n\nLearning objective: Students apply technology harm prevention strategies by evaluating a mock settings screen and identifying which settings are safe versus risky.\n\nCanvas layout: Left (450px) mock app-settings screen with six toggles; right (200px) feedback panel and score.\n\nVisual elements: Six toggle switches (account privacy, location sharing, who can message you, bio info, screen time limit, unknown contact requests), each showing \"Safer\" (green) or \"Riskier\" (orange).\n\nInteractive controls: Click a toggle to flip it; \"Check My Settings\" reveals a score out of 6 with explanations; \"Try a New Scenario\" loads a new profile.\n\nDefault parameters: 3 safe and 3 risky settings pre-set.\n\nBehavior: Toggling \"location sharing\" off shows \"Strangers can't see where you are.\"\n\nInstructional Rationale: Apply-level objective, so students manipulate realistic settings and see immediate feedback.\n\nImplementation notes: p5.js; settings as objects with label, boolean state, and explanation strings."
+}

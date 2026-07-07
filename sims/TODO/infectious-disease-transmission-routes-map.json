@@ -1,0 +1,15 @@
+{
+  "sim_id": "infectious-disease-transmission-routes-map",
+  "diagram_name": "Infectious Disease Transmission Routes Map",
+  "chapter_number": 6,
+  "chapter_title": "Sleep, Fitness, and Emergency Response",
+  "chapter_dir": "06-sleep-fitness-and-emergency-response",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/06-sleep-fitness-and-emergency-response",
+  "library": "vis-network",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, classify, exemplify",
+  "learning_objective": "Students explain the four major transmission routes for infectious disease and classify example diseases and prevention strategies under the correct route.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n**sim-id:** infectious-disease-transmission-routes-map<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, classify, exemplify\n\nLearning objective: Students explain the four major transmission routes for infectious disease and classify example diseases and prevention strategies under the correct route.\n\nNode types: Central node \"Infectious Disease Transmission\" (dark red circle). Route nodes (orange squares): Airborne/Droplet, Direct Contact, Foodborne/Waterborne, Vector-Borne. Example nodes (light blue circles) linked to each route: common cold and flu (Airborne/Droplet); pinkeye and skin infections (Direct Contact); salmonella and E. coli (Foodborne/Waterborne); Lyme disease and West Nile virus (Vector-Borne). Prevention nodes (green diamonds) linked to each route: masking/distancing (Airborne/Droplet); handwashing (Direct Contact); safe food handling (Foodborne/Waterborne); insect repellent (Vector-Borne).\n\nEdge types: \"Spreads Via\" (solid red arrows from central node to each route node). \"Example\" (dotted blue arrows from route nodes to example disease nodes). \"Prevented By\" (solid green arrows from route nodes to prevention nodes).\n\nLayout: Central node in the middle, four route nodes arranged around it in a ring, with example and prevention nodes branching outward from each route.\n\nInteractive features: Hover any node to see its label; click a route node to open an infobox defining that transmission route; click an example node to open an infobox naming the disease and its typical symptoms in general terms; click a prevention node to open an infobox explaining why that strategy works against that specific route; zoom with mouse wheel, pan by dragging background.\n\nLegend: Color/shape key distinguishing the central node, routes, examples, and prevention strategies.\n\nImplementation: vis-network JavaScript library; canvas responsive, default 800x500px."
+}

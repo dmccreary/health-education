@@ -1,0 +1,15 @@
+{
+  "sim_id": "sleep-deprivation-impact-simulator",
+  "diagram_name": "Sleep Deprivation Impact Simulator",
+  "chapter_number": 7,
+  "chapter_title": "Brain Health, Sleep, and Emergency Care",
+  "chapter_dir": "07-brain-health-sleep-and-emergency-care",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/07-brain-health-sleep-and-emergency-care",
+  "library": "p5.js",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "assess, justify, evaluate",
+  "learning_objective": "Students evaluate how varying nightly sleep duration",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n\n**sim-id:** sleep-deprivation-impact-simulator<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Evaluate (L5)\nBloom Verb: assess, justify, evaluate\n\nLearning objective: Students evaluate how varying nightly sleep duration\naffects cognitive, emotional, immune, and metabolic outcomes, and justify\na recommended sleep target for a realistic student schedule.\n\nCanvas layout:\n- Left (55%): a slider-controlled \"sleep duration\" readout showing\n  simulated next-day effects across four dimensions (cognitive, emotional,\n  immune, metabolic), each as a simple bar gauge\n- Right (45%): a realistic student schedule scenario (school start time,\n  after-school job or activity, homework load) with a text prompt asking\n  the student to justify a target bedtime\n\nData Visibility Requirements:\n  Stage 1: Show baseline gauges at 8 hours of sleep (all four dimensions\n  in the healthy range)\n  Stage 2: Student drags the sleep-duration slider from 4 to 10 hours and\n  watches all four gauges shift in real time, based on research-informed\n  weighting (largest drop-off below 6 hours)\n  Stage 3: Student reads the schedule scenario and proposes a target\n  bedtime that would achieve at least 8 hours given the fixed wake time\n  Stage 4: Reveal a model answer showing the bedtime math and naming one\n  trade-off the student would need to negotiate (e.g., cutting a late\n  activity short)\n\nInteractive controls:\n- Slider: Sleep duration (4-10 hours)\n- Text input: proposed target bedtime\n- Button: \"Check My Reasoning\"\n- Button: \"Reset\"\n\nDefault parameters: Slider starts at 8 hours; scenario wake time fixed at\n6:30 a.m.\n\nInstructional Rationale: Justifying a specific sleep target against a\nrealistic, constrained schedule is an Evaluate-level task, so the\nsimulator pairs a parameter-exploration gauge (to build the evidence base)\nwith a justification prompt (to apply that evidence to a real decision),\nrather than only displaying facts about sleep.\n\nImplementation notes: p5.js; gauge values computed from a simple weighted\nfunction of sleep duration per dimension; schedule scenario data stored\nas an object with fixed wake time and variable evening commitments."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "supportive-vs-unhelpful-response-tool",
+  "diagram_name": "Supportive Vs. Unhelpful Response Comparison Tool",
+  "chapter_number": 11,
+  "chapter_title": "Substance Recovery and Resilience",
+  "chapter_dir": "11-substance-recovery-and-resilience",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/11-substance-recovery-and-resilience",
+  "library": "p5.js",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "assess, justify, critique",
+  "learning_objective": "Assess paired example statements (one judgmental, one",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n\n**sim-id:** supportive-vs-unhelpful-response-tool<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Evaluate (L5)\nBloom Verb: assess, justify, critique\n\nLearning objective: Assess paired example statements (one judgmental, one\nsupportive) responding to the same scenario involving a friend's\nsubstance use, and justify why the supportive version is more likely to\nencourage change, based on motivational-communication research.\n\nLayout: Five scenario rows (e.g., \"A friend seems to be vaping heavily\nbefore every stressful test\"), each with an \"Unhelpful\" and a \"Supportive\"\nresponse card side by side.\n\nInteractive features: Clicking either card opens an infobox on its likely\neffect, grounded in research; a \"Why This Matters\" button reveals a\none-sentence takeaway; a closing prompt invites the learner to write a\nsupportive response to a sixth, unpaired scenario.\n\nColor scheme: Muted red-gray on \"Unhelpful\" cards, warm green on\n\"Supportive\" cards; infobox text carries the evaluative reasoning.\n\nImplementation: p5.js clickable paired rectangles; responsive, stacks\nvertically on narrow screens. No scenario depicts a method of substance\nuse — only the social situation and the communication response."
+}

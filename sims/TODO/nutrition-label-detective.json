@@ -1,0 +1,15 @@
+{
+  "sim_id": "nutrition-label-detective",
+  "diagram_name": "Nutrition Label Detective",
+  "chapter_number": 1,
+  "chapter_title": "Food and Nutrition",
+  "chapter_dir": "01-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-4/chapters/01-food-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "use, demonstrate, locate",
+  "learning_objective": "Students locate specific nutrient information on a realistic nutrition label and use it to answer questions about a food product.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** nutrition-label-detective<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: use, demonstrate, locate\n\nLearning objective: Students locate specific nutrient information on a realistic nutrition label and use it to answer questions about a food product.\n\nCanvas layout:\n- Left side (300px): A realistic, clickable nutrition label graphic for a sample snack food\n- Right side (200px): One question at a time (e.g., \"How many grams of protein are in one serving?\") with a text-input answer box and \"Check Answer\" button\n\nVisual elements:\n- Full nutrition label with clearly separated rows: serving size, calories, total carbohydrates, sugars, protein, total fat, saturated fat, sodium, Vitamin D, calcium, iron, potassium\n\nInteractive controls:\n- Click any row on the label to highlight it and show a one-sentence explanation of what that row means\n- Input box: type a numeric answer to the current question\n- Button: \"Check Answer\"\n- Button: \"Next Question\" (cycles through 6 questions about the same label)\n\nDefault parameters:\n- Sample label: a granola bar with realistic values (serving size 1 bar, 140 calories, 22g carbohydrates, 9g sugars, 3g protein, 5g fat, 95mg sodium)\n\nData Visibility Requirements:\n  Stage 1: Show the full label with all values visible\n  Stage 2: Highlight the row relevant to the current question when clicked\n  Stage 3: Show whether the typed answer matches the highlighted value, with the correct value revealed either way\n\nBehavior:\n- Correct answer: green confirmation and brief encouragement\n- Incorrect answer: label row highlights again with a hint to re-read the value\n- After all 6 questions, a summary shows the score and reminds students that every packaged food has a label like this one\n\nInstructional Rationale: Locating and using specific values from a real-looking label is an Apply-level skill, so the pattern uses guided practice with a real (if simplified) nutrition label rather than an abstract animation — students need to practice the actual skill of finding and using label data.\n\nImplementation notes: Use p5.js. Render the label to resemble the real FDA/USDA nutrition facts format for authenticity. Store questions and answer keys as an array of objects."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "feeling-sentence-builder",
+  "diagram_name": "Feeling Sentence Builder",
+  "chapter_number": 3,
+  "chapter_title": "Understanding and Talking About Feelings",
+  "chapter_dir": "03-feelings",
+  "chapter_rel_dir": "bands/grade-1/chapters/03-feelings",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "use, practice, demonstrate",
+  "learning_objective": "Students practice communicating a feeling in a healthy way by assembling an \"I feel ___ because ___\" sentence from word/picture tiles for a given scenario.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** feeling-sentence-builder<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: use, practice, demonstrate\n\nLearning objective: Students practice communicating a feeling in a healthy way by assembling an \"I feel ___ because ___\" sentence from word/picture tiles for a given scenario.\n\nCanvas layout:\n- Top area (150px): One scenario picture at a time (e.g., a child whose block tower fell down)\n- Middle area (250px): Two rows of tiles to click in order — a feeling-word row (happy, sad, angry, scared, excited, calm) and a reason row (three short reason tiles matching the scenario)\n- Bottom strip (100px): Assembled sentence display and \"Say It!\" button\n\nLearning tiles:\n- Feeling tiles: happy, sad, angry, scared, excited, calm\n- Reason tiles change per scenario (e.g., for the block tower scene: \"because it fell down,\" \"because it's my favorite color,\" \"because it's time for lunch\")\n\nInteractive controls:\n- Click a feeling tile, then click a matching reason tile\n- Button: \"Say It!\" (assembles and displays the full sentence)\n- Button: \"Next Scenario\"\n\nDefault parameters:\n- First scenario: block tower falling down (a clear, relatable frustration, to build confidence)\n\nBehavior:\n- When a reasonable feeling + reason pair is assembled, the sentence appears in a speech bubble over the character, a gentle chime plays, and a caption affirms, \"Great job telling someone how you feel!\"\n- If a mismatched pair is chosen (e.g., \"happy\" with \"because it fell down\"), a calm caption asks, \"Does that feeling really match what happened? Try again.\"\n\nInstructional Rationale: This is an Apply-level (use/practice) objective, so students actively construct and \"say\" a feelings sentence rather than only recognize one, matching the Grade 1 skill benchmark of communicating feelings, wants, and needs in healthy ways.\n\nImplementation notes: Use p5.js. Keep tiles large and easy to click for early readers; include simple icons alongside each word. Teacher reads the assembled sentence aloud together with the class."
+}

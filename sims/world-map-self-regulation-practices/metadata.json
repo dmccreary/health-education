@@ -1,0 +1,23 @@
+{
+  "title": "World Map of Cultural Self-Regulation Practices",
+  "description": "Students describe and compare examples of cultural self-regulation practices from around the world, recognizing that calming strong emotions can be done in many valid, culturally rooted ways.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "world-map-self-regulation-practices",
+  "library": "Leaflet",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "describe, compare, exemplify",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "Mental and Emotional Health",
+  "chapter_dir": "03-mental-emotional-health",
+  "chapter_rel_dir": "bands/grade-4/chapters/03-mental-emotional-health"
+}

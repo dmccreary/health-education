@@ -1,0 +1,15 @@
+{
+  "sim_id": "recovery-pathway-network-hs",
+  "diagram_name": "Recovery Pathway Network",
+  "chapter_number": 11,
+  "chapter_title": "Substance Recovery and Resilience",
+  "chapter_dir": "11-substance-recovery-and-resilience",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/11-substance-recovery-and-resilience",
+  "library": "vis-network",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, organize, distinguish",
+  "learning_objective": "Examine how the five treatment and recovery approaches",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n\n**sim-id:** recovery-pathway-network-hs<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: examine, organize, distinguish\n\nLearning objective: Examine how the five treatment and recovery approaches\nconnect to and reinforce a shared recovery outcome, distinguishing when\neach is typically used.\n\nNode types: Central node (green circle) \"Sustained Recovery\"; five\napproach nodes (blue rectangles) — Medically Supervised Withdrawal\nManagement, Medication-Assisted Treatment, Counseling And Behavioral\nTherapy, Support Groups And Peer Recovery, Inpatient Or Outpatient\nPrograms; two context nodes (gold circles) — \"Relapse Is Common — Not\nFailure\" and \"Recovery Is a Realistic, Documented Outcome.\"\n\nEdge types: \"Supports\" (solid green, approach nodes to center);\n\"Reinforces\" (dashed gold, context nodes to center).\n\nLayout: Force-directed, central node in the middle, approach nodes evenly\ndistributed around it.\n\nInteractive features: Hover any node for a one-sentence description;\nclick an approach node for a two-to-three sentence infobox on what it\ninvolves and when it is used; click a context node to reinforce the\nrelapse/recovery framing; drag, zoom, and pan enabled.\n\nImplementation: vis-network force-directed layout; node/edge data in a\nstructured lookup object. No node names a specific medication, dosage, or\nclinical protocol — only documented treatment categories."
+}

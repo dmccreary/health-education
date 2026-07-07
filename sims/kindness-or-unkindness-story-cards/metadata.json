@@ -1,0 +1,38 @@
+{
+  "title": "Kindness or Unkindness? Story Cards",
+  "description": "Students classify short story scenes as kindness or unkindness and explain how each action affects the way the other person feels, and how belonging is strengthened or weakened.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "kindness-or-unkindness-story-cards",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "classify, explain, compare",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Friendship, Uniqueness, and Belonging",
+  "chapter_dir": "04-friendship-and-belonging",
+  "chapter_rel_dir": "bands/grade-1/chapters/04-friendship-and-belonging",
+  "educational": {
+    "gradeLevel": "Grade 1",
+    "subjectArea": "Health Education",
+    "topic": "Friendship, Uniqueness, and Belonging",
+    "learningObjectives": [
+      "Students classify short story scenes as kindness or unkindness and explain how each action affects the way the other person feels, and how belonging is strengthened or weakened."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "classify, explain, compare",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
+}

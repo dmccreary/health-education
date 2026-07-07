@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Health Concern Reporting Decision Path</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Health Concern Reporting Decision Path</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> health-concern-reporting-decision-path</p>
+            <p><strong>Library:</strong> Mermaid</p>
+            <p><strong>Bloom Level:</strong> Apply (L3)</p>
+            <p><strong>Learning Objective:</strong> Students apply the health concern reporting process by tracing a decision path from noticing a concern to telling a trusted adult, for both self-concerns and friend-concerns.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: workflow
+    **sim-id:** health-concern-reporting-decision-path<br/>
+    **Library:** Mermaid<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Apply (L3)
+    Bloom Taxonomy Verb: demonstrate, use, practice
+    
+    Learning objective: Students apply the health concern reporting process by tracing a decision path from noticing a concern to telling a trusted adult, for both self-concerns and friend-concerns.
+    
+    Purpose: Give students a repeatable decision path they can mentally reuse any time a health concern comes up, for themselves or a friend.
+    
+    Visual style: Mermaid flowchart with decision diamonds and process rectangles, every node clickable
+    
+    Steps:
+    1. Start: "Notice a health concern" — click reveals: "This could be a physical symptom, an emotional struggle, or something a friend told you."
+    2. Decision: "Is this about you or a friend?" — click reveals: "Both types of concerns deserve to be reported to a trusted adult — the path is nearly the same either way."
+    3a. Process (if you): "Name the concern clearly to yourself" — click reveals: "Put the concern into one clear sentence before you go find someone."
+    3b. Process (if friend): "Consider your friend's privacy, but remember safety comes first" — click reveals: "You can be kind about how you share it, but a real health concern should still be shared."
+    4. Process: "Choose a trusted adult suited to this concern" — click reveals: "Use the trusted adult qualities and network from earlier in this chapter."
+    5. Process: "Tell the trusted adult clearly, using an 'I' statement if it's your own concern" — click reveals: "State the concern directly rather than hinting."
+    6. Decision: "Did the adult respond helpfully?" — click reveals: "Most adults will, but if not, that doesn't mean the concern wasn't worth sharing."
+    7a. End (if yes): "Work with the adult on next steps" — click reveals: "This might mean a doctor visit, a conversation with a counselor, or simply ongoing support."
+    7b. Loop back (if no): "Try a different trusted adult" — click reveals: "Loops back to step 4 with a new adult in mind."
+    
+    Color coding:
+    - Blue: Noticing/identifying steps
+    - Yellow: Decision diamonds
+    - Green: Successful resolution steps
+    - Orange: Retry loop
+    
+    Implementation: Mermaid flowchart syntax with a `click` directive on every node calling a JavaScript function that opens an infobox with that node's explanation text.
+    -->
+</body>
+</html>

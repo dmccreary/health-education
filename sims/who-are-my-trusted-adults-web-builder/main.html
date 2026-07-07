@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Who Are My Trusted Adults? Web Builder</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Who Are My Trusted Adults? Web Builder</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> who-are-my-trusted-adults-web-builder</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Apply (L3)</p>
+            <p><strong>Learning Objective:</strong> Students apply their understanding of trusted adults by building a personal web of at least three trusted adults from home, school, and the community, reinforcing that there is always more than one person to tell.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** who-are-my-trusted-adults-web-builder<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Apply (L3)
+    Bloom Taxonomy Verb: apply, identify, construct
+    
+    Learning objective: Students apply their understanding of trusted adults by building a personal web of at least three trusted adults from home, school, and the community, reinforcing that there is always more than one person to tell.
+    
+    Canvas layout:
+    - Center node: a friendly icon labeled "Me"
+    - Surrounding candidate nodes arranged in a ring: family members (parent, grandparent, aunt/uncle), school adults (teacher, school counselor, principal), and community adults (coach, doctor, family friend)
+    - Right-side panel (150px): instructions and a running count of trusted adults added
+    
+    Visual elements:
+    - Center "Me" node in a warm color
+    - Candidate adult nodes shown as simple labeled circles grouped by setting (home, school, community), each a different soft color
+    - Connecting lines that appear once a node is selected, linking "Me" to that trusted adult
+    
+    Interactive controls:
+    - Click a candidate node to add it to "My Trusted Adults" web (line connects it to "Me")
+    - Click again to remove it
+    - Button: "Show My Web" (highlights all connected trusted adults)
+    - Button: "Reset"
+    
+    Default parameters:
+    - No adults connected at start; all candidate nodes visible and unselected
+    
+    Data Visibility Requirements:
+      Stage 1: Show the empty web with "Me" in the center and all candidate adults around it
+      Stage 2: As each adult is clicked, show the connecting line appear and the counter increase
+      Stage 3: Once 3 or more trusted adults are connected, show a caption: "You have more than one trusted adult! If one person can't help right away, you can always go to another."
+    
+    Behavior:
+    - The MicroSim accepts any combination of at least one adult from each setting (home, school, community) as a complete answer, since every family's trusted adults are different
+    - A gentle prompt appears if only one adult is selected, encouraging the student to think of at least one more
+    
+    Instructional Rationale: This is an Apply-level (identify/construct) objective, so the MicroSim has students actively build their own personal network rather than only reading a list, reinforcing the crucial backup rule that there is always more than one trusted adult to ask.
+    
+    Implementation notes: Use vis-network for the node-and-line web, styled with soft rounded nodes and gentle colors. Teacher should discuss real trusted adults from the students' own lives after the activity, since the MicroSim uses generic role labels rather than actual names.
+    -->
+</body>
+</html>

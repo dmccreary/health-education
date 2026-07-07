@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 540 -->
+<title>How Much Sugar and Salt Are Really in There?</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 4px 0 2px; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .controls { display: flex; justify-content: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+  .controls button {
+    font-family: inherit; font-size: 12px; padding: 5px 12px; border-radius: 14px;
+    border: 1px solid silver; background: #f1f5f9; color: #334155; cursor: pointer;
+  }
+  .controls button:hover { background: #e2e8f0; }
+  .controls button.active { background: navy; color: white; border-color: navy; }
+  .chart-box { background: aliceblue; border: 1px solid silver; border-radius: 6px; padding: 8px; }
+  .chart-container { position: relative; width: 100%; height: 300px; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid goldenrod; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 64px; }
+  .infobox strong { color: navy; }
+  .frame { font-style: italic; color: seagreen; }
+  .source { text-align: center; color: gray; font-size: 11px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <h3>How Much Sugar and Salt Are Really in There?</h3>
+  <div class="subtitle">Hover a bar for the amount, use the buttons to compare, or tap a food name to see if it is an everyday food or a treat.</div>
+  <div class="controls">
+    <button id="btnBoth" class="active">Show Both</button>
+    <button id="btnSugar">Only Sugar</button>
+    <button id="btnSodium">Only Sodium</button>
+  </div>
+  <div class="chart-box">
+    <div class="chart-container"><canvas id="chart"></canvas></div>
+  </div>
+  <div class="infobox" id="infobox">
+    Some foods and drinks have much more <strong>added sugar</strong> or <strong>salt (sodium)</strong> than they taste like they do.
+    Tap a food name below the chart to find out if it is a good <span class="frame">everyday</span> choice or an <span class="frame">occasional treat</span>.
+  </div>
+  <div class="source">Illustrative per-serving amounts for learning. Milk's natural sugar and fruit's natural sugar are not counted as added sugar.</div>
+</main>
+<script>
+const foods = ['Water','Milk','Apple','Soda','Sports Drink','Potato Chips','Canned Soup','Granola Bar','Candy Bar'];
+const sugar  = [0, 0, 0, 39, 21, 0, 1, 9, 24];      // grams of added sugar
+const sodium = [0, 105, 2, 45, 270, 170, 890, 95, 40]; // milligrams of sodium
+
+// One-sentence hover notes, keyed by food name
+const note = {
+  'Water': 'Plain water has no added sugar and no salt, so it is a great everyday drink.',
+  'Milk': 'Milk has a little natural sodium and its natural sugar is not counted as added sugar.',
+  'Apple': 'A fresh apple has no added sugar and almost no salt.',
+  'Soda': 'One can of soda can have about 39 grams of added sugar, close to 10 teaspoons.',
+  'Sports Drink': 'Sports drinks add both sugar and a lot of sodium, so they are meant for hard exercise, not everyday sipping.',
+  'Potato Chips': 'Chips have almost no sugar, but the salt on them adds up fast.',
+  'Canned Soup': 'Canned soup can be very high in sodium even though it does not taste very salty.',
+  'Granola Bar': 'Many granola bars have added sugar, so read the label to compare brands.',
+  'Candy Bar': 'A candy bar is mostly added sugar, which makes it an occasional treat.'
+};
+
+// Everyday vs. occasional treat caption shown on click
+const caption = {
+  'Water': ['everyday', 'Water is the best <strong>everyday</strong> drink because it has zero added sugar and zero salt.'],
+  'Milk': ['everyday', 'Milk is a good <strong>everyday</strong> choice. Its sugar is natural, and its sodium is low.'],
+  'Apple': ['everyday', 'An apple is a great <strong>everyday</strong> food with no added sugar and barely any salt.'],
+  'Soda': ['treat', 'Soda is an <strong>occasional treat</strong> because one can holds a huge amount of added sugar.'],
+  'Sports Drink': ['treat', 'A sports drink is an <strong>occasional treat</strong>, useful for long, sweaty exercise but high in both sugar and sodium.'],
+  'Potato Chips': ['treat', 'Chips are an <strong>occasional treat</strong> because the salt adds up quickly.'],
+  'Canned Soup': ['treat', 'Canned soup is best <strong>once in a while</strong> unless you choose a low-sodium can, because the salt is very high.'],
+  'Granola Bar': ['sometimes', 'A granola bar is a <strong>sometimes</strong> food. Compare labels and pick one lower in added sugar.'],
+  'Candy Bar': ['treat', 'A candy bar is an <strong>occasional treat</strong> made mostly of added sugar.']
+};
+
+const box = document.getElementById('infobox');
+function showFood(i){
+  const name = foods[i];
+  const c = caption[name];
+  box.innerHTML = '<strong>' + name + '</strong> &mdash; ' + c[1] +
+    ' <span class="frame">Added sugar: ' + sugar[i] + ' g &nbsp;|&nbsp; Sodium: ' + sodium[i] + ' mg.</span>';
+  highlight(i);
+}
+
+const GOLD = 'goldenrod', GOLD_HI = 'gold';
+const BLUE = 'steelblue', BLUE_HI = 'deepskyblue';
+let selected = -1;
+
+function sugarColors(){ return foods.map((f,i) => i === selected ? GOLD_HI : GOLD); }
+function sodiumColors(){ return foods.map((f,i) => i === selected ? BLUE_HI : BLUE); }
+
+function highlight(i){
+  selected = i;
+  chart.data.datasets[0].backgroundColor = sugarColors();
+  chart.data.datasets[1].backgroundColor = sodiumColors();
+  chart.update();
+}
+
+const ctx = document.getElementById('chart').getContext('2d');
+const chart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: foods,
+    datasets: [
+      { label: 'Added Sugar (g)', data: sugar, yAxisID: 'ySugar',
+        backgroundColor: sugarColors(), borderColor: 'darkgoldenrod', borderWidth: 1 },
+      { label: 'Sodium (mg)', data: sodium, yAxisID: 'ySodium',
+        backgroundColor: sodiumColors(), borderColor: 'navy', borderWidth: 1 }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    onClick: (e, els) => { if (els.length) showFood(els[0].index); },
+    interaction: { mode: 'index', intersect: false },
+    scales: {
+      x: { title: { display: true, text: 'Food or Drink' }, ticks: { font: { size: 10 } } },
+      ySugar: {
+        type: 'linear', position: 'left', beginAtZero: true, suggestedMax: 40,
+        title: { display: true, text: 'Added Sugar (grams)', color: 'darkgoldenrod' },
+        ticks: { color: 'darkgoldenrod' }, grid: { drawOnChartArea: true }
+      },
+      ySodium: {
+        type: 'linear', position: 'right', beginAtZero: true, suggestedMax: 900,
+        title: { display: true, text: 'Sodium (milligrams)', color: 'navy' },
+        ticks: { color: 'navy' }, grid: { drawOnChartArea: false }
+      }
+    },
+    plugins: {
+      legend: { position: 'top', align: 'end', labels: { font: { size: 11 }, boxWidth: 14 } },
+      tooltip: { callbacks: {
+        label: c => {
+          const unit = c.datasetIndex === 0 ? ' g added sugar' : ' mg sodium';
+          return c.dataset.label + ': ' + c.parsed.y + unit;
+        },
+        afterBody: items => note[foods[items[0].dataIndex]]
+      }, bodyFont: { size: 11 }, boxPadding: 4 }
+    }
+  }
+});
+
+// Toggle buttons control which series show
+const btnBoth = document.getElementById('btnBoth');
+const btnSugar = document.getElementById('btnSugar');
+const btnSodium = document.getElementById('btnSodium');
+function setActive(btn){ [btnBoth,btnSugar,btnSodium].forEach(b => b.classList.remove('active')); btn.classList.add('active'); }
+function setVisible(showSugar, showSodium){
+  chart.setDatasetVisibility(0, showSugar);
+  chart.setDatasetVisibility(1, showSodium);
+  chart.update();
+}
+btnBoth.onclick   = () => { setActive(btnBoth);   setVisible(true, true); };
+btnSugar.onclick  = () => { setActive(btnSugar);  setVisible(true, false); };
+btnSodium.onclick = () => { setActive(btnSodium); setVisible(false, true); };
+</script>
+</body>
+</html>

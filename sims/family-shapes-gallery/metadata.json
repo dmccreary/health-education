@@ -1,0 +1,38 @@
+{
+  "title": "Families Come in Many Shapes",
+  "description": "Students recognize that families come in a variety of structures and that every structure shown is a healthy, real family, connecting Family to Family Structure.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "family-shapes-gallery",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "recognize, connect, classify",
+  "completion_status": "scaffold",
+  "chapter_number": 2,
+  "chapter_title": "Family And Trusted Adults",
+  "chapter_dir": "02-family",
+  "chapter_rel_dir": "bands/kindergarten/chapters/02-family",
+  "educational": {
+    "gradeLevel": "Kindergarten",
+    "subjectArea": "Health Education",
+    "topic": "Family And Trusted Adults",
+    "learningObjectives": [
+      "Students recognize that families come in a variety of structures and that every structure shown is a healthy, real family, connecting Family to Family Structure."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "recognize, connect, classify",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
+}

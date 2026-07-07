@@ -1,0 +1,15 @@
+{
+  "sim_id": "disease-risk-factor-sorter",
+  "diagram_name": "Disease Risk Factor Sorter",
+  "chapter_number": 8,
+  "chapter_title": "Health Equity and Disease Prevention",
+  "chapter_dir": "08-health-equity-and-disease-prevention",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/08-health-equity-and-disease-prevention",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "differentiate, organize, classify",
+  "learning_objective": "Students differentiate and classify a mixed set of",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n\n**sim-id:** disease-risk-factor-sorter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: differentiate, organize, classify\n\nLearning objective: Students differentiate and classify a mixed set of\nrisk factors as primarily behavioral, primarily environmental, or\ninfluencing both chronic and infectious disease risk.\n\nCanvas layout:\n- Left (60%): a shuffled bank of 12 risk-factor cards (e.g., \"Diet high in\n  processed food,\" \"Overcrowded housing,\" \"Smoking,\" \"Poor ventilation in\n  shared spaces,\" \"Limited access to handwashing facilities,\" \"Sedentary\n  daily routine,\" \"Chronic air pollution exposure,\" \"Inconsistent\n  vaccination access\")\n- Right (40%): three labeled drop zones: \"Behavioral,\" \"Environmental,\"\n  \"Both/Interacts With Chronic and Infectious Risk\"\n\nData Visibility Requirements:\n  Stage 1: Show all 12 unsorted cards and the three empty drop zones\n  Stage 2: Student drags each card into a zone\n  Stage 3: On dropping a card, immediately reveal a one-sentence\n  explanation of why it belongs in that zone (or a gentle correction if\n  misplaced, still with the explanation)\n  Stage 4: Show a final summary tally and one synthesis sentence noting\n  that most environmental factors also shape how much control a person has\n  over the behavioral factors\n\nInteractive controls:\n- Drag-and-drop cards into zones\n- Button: \"Check All\"\n- Button: \"Reset\"\n\nDefault parameters: 12-card bank, shuffled order each session\n\nInstructional Rationale: Classifying diverse risk factors by category\nwhile recognizing overlap is an Analyze-level task, so a sorting\ninteraction with immediate explanatory feedback is used rather than a\nstatic labeled list.\n\nImplementation notes: p5.js drag-and-drop; card and explanation data\nstored as an array of {factor, correctZone, explanation} objects."
+}

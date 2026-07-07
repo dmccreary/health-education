@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 540 -->
+<title>Norms and Policy Interaction Map</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 400px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 8px; font-size: 11px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 12px; height: 12px; margin-right: 5px; vertical-align: middle; border: 1px solid #555; }
+  .legend .circle { border-radius: 50%; }
+  .legend .line { display: inline-block; width: 16px; margin-right: 5px; vertical-align: middle; border-top: 2px solid #777; }
+  .legend .dash { display: inline-block; width: 16px; margin-right: 5px; vertical-align: middle; border-top: 2px dashed #777; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 70px; }
+  .infobox strong { color: navy; }
+</style>
+</head>
+<body>
+<main>
+  <h3>How Norms and Policy Shape Health</h3>
+  <div class="subtitle">Hover a node for its name. Click a gold issue for both influences, or a blue/orange node for a real example.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k circle" style="background:goldenrod;"></span>Health issue<br>
+      <span class="k" style="background:steelblue;"></span>Social norm<br>
+      <span class="k" style="background:darkorange;"></span>Public health policy<br>
+      <span class="line"></span>Shapes the issue<br>
+      <span class="dash"></span>Reinforce each other
+    </div>
+  </div>
+  <div class="infobox" id="infobox">Two forces shape our health: <strong>social norms</strong> (what people around us treat as normal) and <strong>public health policy</strong> (rules and laws). Explore four real issues to see how they work together.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+
+// Four health issues. Each has a social-norm influence and a public-health-policy influence.
+const issues = [
+  {
+    id: 'tobacco', label: 'Tobacco\nUse',
+    hover: 'Tobacco use: shaped by both social norms and public health policy.',
+    summary: 'Fewer people use tobacco today because norms and policy pushed the same direction. It stopped being seen as normal, and laws limited where it could be sold and used.',
+    norm: {
+      hover: 'Social norm: smoking is no longer seen as cool or normal.',
+      example: 'Decades ago smoking was common in movies, offices, and restaurants. Today most people view it as unhealthy and out of place, so fewer teens start.'
+    },
+    policy: {
+      hover: 'Public health policy: age limits, taxes, and smoke-free spaces.',
+      example: 'Laws set a minimum age to buy tobacco, add taxes that raise the price, and ban smoking indoors in many public places.'
+    }
+  },
+  {
+    id: 'seatbelt', label: 'Seatbelt\nUse',
+    hover: 'Seatbelt use: shaped by both social norms and public health policy.',
+    summary: 'Buckling up went from rare to automatic. Seatbelt laws made it required, and over time "click it every time" became the normal thing to do.',
+    norm: {
+      hover: 'Social norm: buckling up is now the automatic, expected choice.',
+      example: 'Most people now buckle up without thinking and expect passengers to do the same. Not wearing a seatbelt feels unusual.'
+    },
+    policy: {
+      hover: 'Public health policy: seatbelt laws and reminders.',
+      example: 'Seatbelt laws require drivers and passengers to buckle up, and cars are built with chimes that remind you until you do.'
+    }
+  },
+  {
+    id: 'handwash', label: 'Hand-\nwashing',
+    hover: 'Handwashing: shaped by both social norms and public health policy.',
+    summary: 'Handwashing spreads best when both forces line up. Schools and workplaces set rules, and washing before eating became a shared habit people expect.',
+    norm: {
+      hover: 'Social norm: washing hands before eating is a shared habit.',
+      example: 'Families and friends remind each other to wash up before meals, so clean hands become a normal, expected part of daily life.'
+    },
+    policy: {
+      hover: 'Public health policy: handwashing rules and clean facilities.',
+      example: 'Schools and restaurants post handwashing rules and provide sinks, soap, and signs so people can easily follow through.'
+    }
+  },
+  {
+    id: 'vaccine', label: 'Vacci-\nnation',
+    hover: 'Vaccination: shaped by both social norms and public health policy.',
+    summary: 'Vaccination protects whole communities. School requirements set a baseline, and when neighbors treat it as the caring thing to do, more families take part.',
+    norm: {
+      hover: 'Social norm: getting vaccinated is seen as protecting others.',
+      example: 'When friends and neighbors treat vaccination as a normal way to keep the community safe, more families choose to take part.'
+    },
+    policy: {
+      hover: 'Public health policy: school vaccine requirements and clinics.',
+      example: 'Many schools require certain vaccines to enroll, and public clinics make them free or low-cost so they are easy to get.'
+    }
+  }
+];
+
+const nodes = [];
+const edges = [];
+const info = {};   // full text shown on click
+const hover = {};  // short line shown on hover
+
+issues.forEach(iss => {
+  const normId = iss.id + '_norm';
+  const polId  = iss.id + '_policy';
+
+  // Central health-issue node: gold circle
+  nodes.push({
+    id: iss.id, label: iss.label, shape: 'ellipse',
+    color: { background: 'goldenrod', border: '#8a6d00' },
+    font: { color: 'white', size: 15, face: 'Arial', bold: true }, borderWidth: 2
+  });
+  // Social norm node: blue square
+  nodes.push({
+    id: normId, label: 'Social\nNorm', shape: 'box',
+    color: { background: 'steelblue', border: '#2c5478' },
+    font: { color: 'white', size: 12 }, borderWidth: 2, margin: 7
+  });
+  // Public health policy node: orange square
+  nodes.push({
+    id: polId, label: 'Public\nHealth\nPolicy', shape: 'box',
+    color: { background: 'darkorange', border: '#a85a00' },
+    font: { color: 'white', size: 12 }, borderWidth: 2, margin: 7
+  });
+
+  // "Shapes" solid arrows from each influence to its issue
+  edges.push({ from: normId, to: iss.id, label: 'shapes',
+    font: { size: 9, color: '#555' }, color: { color: 'steelblue' }, width: 2 });
+  edges.push({ from: polId, to: iss.id, label: 'shapes',
+    font: { size: 9, color: '#555' }, color: { color: 'darkorange' }, width: 2 });
+  // "Reinforces" dashed arrow between the two influences
+  edges.push({ from: normId, to: polId, label: 'reinforces',
+    font: { size: 9, color: '#777' }, color: { color: 'seagreen' }, dashes: true, width: 2 });
+
+  hover[iss.id]   = iss.hover;
+  hover[normId]   = iss.norm.hover;
+  hover[polId]    = iss.policy.hover;
+
+  const name = iss.label.replace(/\n/g, '');
+  info[iss.id] = { title: name, text: iss.summary };
+  info[normId] = { title: 'Social Norm &mdash; ' + name, text: iss.norm.example };
+  info[polId]  = { title: 'Public Health Policy &mdash; ' + name, text: iss.policy.example };
+});
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  physics: {
+    solver: 'forceAtlas2Based',
+    forceAtlas2Based: { gravitationalConstant: -70, springLength: 95, springConstant: 0.08, avoidOverlap: 0.6 },
+    stabilization: { iterations: 320 }
+  },
+  interaction: { hover: true, dragView: true, zoomView: true, navigationButtons: true, tooltipDelay: 100000 },
+  edges: { smooth: { type: 'continuous' }, arrows: { to: { enabled: true, scaleFactor: 0.5 } } },
+  nodes: { shadow: true }
+};
+const network = new vis.Network(container, data, options);
+network.once('stabilizationIterationsDone', () => { network.setOptions({ physics: false }); network.fit(); });
+
+network.on('hoverNode', p => {
+  const h = hover[p.node];
+  if (h) box.innerHTML = h;
+});
+network.on('click', p => {
+  if (p.nodes.length) {
+    const d = info[p.nodes[0]];
+    if (d) box.innerHTML = '<strong>' + d.title + '</strong><br>' + d.text;
+  }
+});
+</script>
+</body>
+</html>

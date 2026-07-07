@@ -1,0 +1,15 @@
+{
+  "sim_id": "dementia-types-comparison-tool",
+  "diagram_name": "Dementia Types Comparison Tool",
+  "chapter_number": 7,
+  "chapter_title": "Brain Health, Sleep, and Emergency Care",
+  "chapter_dir": "07-brain-health-sleep-and-emergency-care",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/07-brain-health-sleep-and-emergency-care",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "differentiate, compare, examine",
+  "learning_objective": "Students differentiate Alzheimer's disease, vascular",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n\n**sim-id:** dementia-types-comparison-tool<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: differentiate, compare, examine\n\nLearning objective: Students differentiate Alzheimer's disease, vascular\ndementia, Lewy body dementia, and frontotemporal dementia by cause,\ntypical early symptoms, and progression pattern.\n\nLayout: Four labeled columns, one per dementia type, each with three rows:\nUnderlying Cause, Typical Early Symptoms, Progression Pattern\n\nData Visibility Requirements:\n  Stage 1: Show all four columns populated with the chapter's descriptions\n  Stage 2: Clicking a column header opens an infobox with one additional\n  respectful, factual detail about that type\n  Stage 3: A short scenario describing a person's symptoms is shown, and\n  the learner selects which dementia type it most closely resembles,\n  reinforcing the distinguishing features\n  Stage 4: Reveal explanation naming which specific detail in the\n  scenario pointed to that type\n\nInteractive controls: Click any column header for expanded detail; button\n\"Try a Scenario\" reveals a symptom description and answer options; button\n\"Next Scenario\" cycles through 3 scenarios\n\nInstructional Rationale: Differentiating several related conditions by\ntheir distinguishing features is an Analyze-level objective, so a\nstructured comparison with a scenario-matching check is used rather than\nsimple recall of a definition list.\n\nImplementation notes: p5.js; content written in respectful, non-alarmist\nlanguage; no graphic or frightening imagery; scenario data stored as an\narray of {symptoms, correctType, explanation} objects."
+}

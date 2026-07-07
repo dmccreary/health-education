@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Find Your Trusted Adults</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Find Your Trusted Adults</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> trusted-adult-network</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Remember (L1) / Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Students identify trusted adults across different settings (home, school, community) and describe what makes each one a good person to ask for help in a difficult or unsafe situation.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: graph-model
+    **sim-id:** trusted-adult-network<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Remember (L1) / Understand (L2)
+    Bloom Taxonomy Verb: identify, describe
+    
+    Learning objective: Students identify trusted adults across different settings (home, school, community) and describe what makes each one a good person to ask for help in a difficult or unsafe situation.
+    
+    Purpose: Help students build a concrete mental map of multiple trusted adults, rather than relying on only one, so they always have someone to ask.
+    
+    Node types:
+    1. Student (center node, blue circle) — the student themselves
+    2. Home trusted adults (green circles) — Example: "Parent/Guardian," "Grandparent"
+    3. School trusted adults (purple circles) — Example: "Teacher," "School Counselor," "School Nurse"
+    4. Community trusted adults (orange circles) — Example: "Coach," "Police Officer," "Faith Leader"
+    
+    Edge types:
+    1. "CAN ASK FOR HELP" (solid gray line) connecting the student to every trusted adult node
+    
+    Sample data:
+    - Student → Parent/Guardian
+    - Student → Teacher
+    - Student → School Counselor
+    - Student → Coach
+    - Student → Police Officer (emergency situations)
+    
+    Layout: Radial/force-directed, with the student node in the center and trusted adults arranged in a ring
+    
+    Interactive features:
+    - Hover a trusted adult node: shows a short description of that role and one example situation to bring to them
+    - Click a trusted adult node: highlights the connection back to the student and opens a side panel with "What to say" sentence starters, like "I need help because..."
+    - Drag nodes to rearrange; zoom and pan supported
+    - A "My Own Map" mode lets students (with a teacher's help) relabel generic nodes with the actual names of their own trusted adults
+    
+    Visual styling:
+    - Student node larger and centered
+    - Node color grouped by setting (home, school, community) as described above
+    - Edge thickness uniform, since every trusted adult is equally reachable
+    
+    Legend: Color key explaining home/school/community groupings and what the connecting line means
+    
+    Implementation: vis-network JavaScript library, force-directed layout, click and hover event handlers wired to an infobox panel
+    Canvas size: responsive, default 700x450px
+    -->
+</body>
+</html>

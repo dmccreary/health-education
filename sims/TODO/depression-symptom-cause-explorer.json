@@ -1,0 +1,15 @@
+{
+  "sim_id": "depression-symptom-cause-explorer",
+  "diagram_name": "Depression Symptom and Cause Explorer",
+  "chapter_number": 5,
+  "chapter_title": "Mental Health and Crisis Support",
+  "chapter_dir": "05-mental-health-and-crisis-support",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/05-mental-health-and-crisis-support",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, classify, summarize",
+  "learning_objective": "Students classify a set of realistic scenario",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n\n**sim-id:** depression-symptom-cause-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Understand (L2)\nBloom Verb: explain, classify, summarize\n\nLearning objective: Students classify a set of realistic scenario\ndescriptions as consistent with clinical depression symptoms versus\nordinary, temporary low mood, and explain which contributing factor\n(genetics, brain chemistry, life stressors, trauma, chronic illness) is\nmost relevant to a given scenario.\n\nCanvas layout:\n- Left (55%): seven labeled symptom cards (persistent sadness, loss of\n  interest, sleep changes, appetite changes, fatigue, concentration\n  difficulty, feelings of worthlessness) shown as reference material\n- Right (45%): a scenario card describing a short, realistic situation and\n  two buttons, \"Consistent With Depression\" and \"Ordinary, Temporary Low\n  Mood\"\n\nData Visibility Requirements:\n  Stage 1: Show all seven symptom cards with one-sentence clinical\n  definitions\n  Stage 2: Show one scenario from a bank of 12 (mixing genuine\n  multi-symptom, multi-week patterns with one-off disappointments)\n  Stage 3: After the learner classifies the scenario, show whether they\n  were correct, which symptoms are present if any, and which contributing\n  factor is most relevant\n  Stage 4: Track a running count of correctly classified scenarios\n\nInteractive controls:\n- Click any symptom card to see its expanded clinical definition\n- Button: \"Consistent With Depression\" / Button: \"Ordinary, Temporary Low\n  Mood\"\n- Button: \"Next Scenario\"\n\nDefault parameters: Scenario bank cycles without repetition until\nexhausted, then reshuffles\n\nInstructional Rationale: Classifying scenarios against a defined symptom\nset is an Understand-level objective, so step-through classification with\nconcrete scenarios is used rather than animation, helping students build\nan accurate, non-stigmatizing mental model of what depression clinically\nis and is not.\n\nImplementation notes: p5.js with an object array of {scenario,\ncorrectCategory, symptomsPresent, relevantFactor, explanation}; no imagery\ndepicting self-harm or crisis; text-based scenario cards only."
+}

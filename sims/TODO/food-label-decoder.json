@@ -1,0 +1,15 @@
+{
+  "sim_id": "food-label-decoder",
+  "diagram_name": "Food Label Decoder",
+  "chapter_number": 1,
+  "chapter_title": "Food and Nutrition",
+  "chapter_dir": "01-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/01-food-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, differentiate",
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n\n**sim-id:** food-label-decoder<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: examine, differentiate\n\nPurpose: Let students click each region of a realistic Nutrition Facts\nlabel to see what it means and how it's calculated, then compare two\nreal product labels side by side.\n\nLayout: Left panel shows a full Nutrition Facts label (serving size,\ncalories, %DV column, macronutrients, added sugars line, sodium,\nvitamins/minerals, ingredient list). Right panel allows loading a second\nproduct's label for comparison.\n\nInteractive elements:\n- Click any labeled region (serving size, calories, %DV, added sugars,\n  sodium, ingredient list) to open an infobox explaining what it means\n  and how to interpret it\n- Dropdown: choose from 6 preloaded real-world-style products (e.g.,\n  flavored yogurt, cereal, granola bar, soda, sparkling water, trail mix)\n- \"Compare\" button: places two chosen products side by side with\n  differences highlighted (e.g., added sugar difference highlighted in\n  orange)\n- Toggle: \"Per Serving\" vs \"Per Container\" recalculates all displayed\n  numbers live\n\nData to display: realistic nutrient values per product (calories, total\nfat, sodium, total carbohydrate, dietary fiber, total sugars, added\nsugars, protein, vitamin D, calcium, iron, potassium)\n\nColor coding: green highlight for nutrients where %DV is 20%+ and\nconsidered beneficial (fiber, vitamins), red highlight for 20%+ DV of\nnutrients to limit (saturated fat, sodium, added sugar)\n\nResponsive behavior: panels stack vertically on narrow screens\n\nImplementation: HTML/CSS/JavaScript with clickable SVG label regions"
+}

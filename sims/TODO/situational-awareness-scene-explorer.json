@@ -1,0 +1,15 @@
+{
+  "sim_id": "situational-awareness-scene-explorer",
+  "diagram_name": "Situational Awareness Scene Explorer",
+  "chapter_number": 4,
+  "chapter_title": "Personal Safety and Refusal Skills",
+  "chapter_dir": "04-safety-and-refusal-skills",
+  "chapter_rel_dir": "bands/grade-4/chapters/04-safety-and-refusal-skills",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "describe, identify, interpret",
+  "learning_objective": "Students describe and identify situational-awareness clues (people nearby, exits, mood, body signals) present in a still scene, building the habit of scanning surroundings calmly.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** situational-awareness-scene-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: describe, identify, interpret\n\nLearning objective: Students describe and identify situational-awareness clues (people nearby, exits, mood, body signals) present in a still scene, building the habit of scanning surroundings calmly.\n\nCanvas layout:\n- Left (450px): A simple, calm, illustrated scene (e.g., a park, a school hallway, a store) with four clickable hotspots\n- Right (250px): An infobox panel and a running checklist of clues found\n\nVisual elements:\n- Illustrated scene with hotspots marked by small circles: \"People Nearby,\" \"Exit/Way Out,\" \"Mood of the Room,\" \"How My Body Feels\"\n- Checklist panel that fills in as hotspots are clicked\n\nInteractive controls:\n- Click each hotspot to reveal its clue in the infobox\n- Button: \"New Scene\" loads a different illustrated setting\n- Button: \"Reset Checklist\"\n\nDefault parameters:\n- Scene 1: a school hallway between classes, all four hotspots present and calm/neutral\n\nData Visibility Requirements:\n  Stage 1: Show the full illustrated scene with all four hotspots visible\n  Stage 2: Show the clue text for each hotspot once clicked\n  Stage 3: Show the running checklist update after each click\n  Final: Show a short summary message once all four hotspots are found: \"You just practiced situational awareness — noticing people, exits, mood, and your own feelings.\"\n\nBehavior:\n- Each hotspot always reveals its clue when clicked, regardless of order\n- Scenes rotate between calm, everyday settings (classroom, park, bus stop, cafeteria); none depict danger directly — the sim teaches the scanning habit, not threat scenarios\n\nInstructional Rationale: This is an Understand-level objective, so the design uses concrete, step-through exploration of a static scene rather than animation, letting students see and name each clue at their own pace before applying the skill to real situations.\n\nImplementation notes: Use p5.js with simple flat illustrations. Keep all scenes ordinary and non-threatening; the goal is building the observation habit, not simulating danger."
+}

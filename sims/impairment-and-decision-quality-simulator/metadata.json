@@ -1,0 +1,38 @@
+{
+  "title": "Impairment And Decision Quality Simulator",
+  "description": "Students evaluate realistic decision scenarios under",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "impairment-and-decision-quality-simulator",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "evaluate, judge, assess, justify",
+  "completion_status": "scaffold",
+  "chapter_number": 10,
+  "chapter_title": "Substances - Effects and Safer Choices",
+  "chapter_dir": "10-substances-effects-and-safer-choices",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/10-substances-effects-and-safer-choices",
+  "educational": {
+    "gradeLevel": "Grades 9-12",
+    "subjectArea": "Health Education",
+    "topic": "Substances - Effects and Safer Choices",
+    "learningObjectives": [
+      "Students evaluate realistic decision scenarios under"
+    ],
+    "bloomLevel": "Evaluate (L5)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "evaluate, judge, assess, justify",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Evaluate-level objective through direct interaction rather than passive reading."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Health Promotion Levers Across Levels",
+  "description": "Examine how a single health-promotion goal can be",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "health-promotion-levers-map",
+  "library": "vis-network",
+  "bloomLevel": "Analyze<br/>",
+  "bloomVerb": "examine, differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 15,
+  "chapter_title": "Health Promotion and Behavior Change",
+  "chapter_dir": "15-health-promotion-and-behavior-change",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/15-health-promotion-and-behavior-change"
+}

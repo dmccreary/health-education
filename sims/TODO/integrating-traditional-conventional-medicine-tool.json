@@ -1,0 +1,15 @@
+{
+  "sim_id": "integrating-traditional-conventional-medicine-tool",
+  "diagram_name": "Integrating Traditional And Conventional Medicine Decision Tool",
+  "chapter_number": 10,
+  "chapter_title": "Substances - Effects and Safer Choices",
+  "chapter_dir": "10-substances-effects-and-safer-choices",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/10-substances-effects-and-safer-choices",
+  "library": "Mermaid",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "apply, demonstrate, execute",
+  "learning_objective": "Students apply the correct sequence of actions for",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n\n**sim-id:** integrating-traditional-conventional-medicine-tool<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Apply (L3)\nBloom Verb: apply, demonstrate, execute\n\nLearning objective: Students apply the correct sequence of actions for\nsafely integrating a traditional or plant-based remedy with conventional\nmedical care, reinforcing open communication with providers as the central\nsafety habit.\n\nVisual style: Mermaid flowchart with a start node, three sequential\nprocess nodes, and an end node, all clickable via `click NodeId call\nshowInfo(\"term\")`\n\nNodes:\n1. Start: \"I Am Using or Considering a Traditional/Plant-Based Remedy\n   Alongside Conventional Care\" — click reveals: \"This applies to\n   ceremonial medicine, herbal remedies, or other traditional practices\n   used alongside a doctor's care.\"\n2. \"Tell Every Healthcare Provider\" — click reveals: \"Disclose the\n   remedy the same way you would an over-the-counter supplement, so the\n   provider can check for interaction risk.\"\n3. \"Provider Checks for Known Interactions\" — click reveals: \"A\n   culturally safe provider works with you to check whether the remedy\n   and any prescribed medication interact, without dismissing the\n   traditional practice.\"\n4. \"Both Practices Are Coordinated Respectfully\" — click reveals: \"Many\n   healthcare systems today support integrating traditional and\n   conventional care when both are disclosed and coordinated.\"\nEnd: \"Safer, More Complete Care\" — click reveals: \"Open communication,\nnot choosing one system over the other, is what makes combining\ntraditional and conventional medicine safe.\"\n\nConnections: Start → 2 → 3 → 4 → End\n\nColor coding: gray for the start node, blue for the communication and\nprovider-check nodes, green for the coordinated-care and outcome nodes\n\nImplementation: Mermaid flowchart with click bindings to a showInfo()\nfunction; infobox text in a JS lookup object; content restriction: no node\nnames a specific plant, dosage, or preparation method — only the\ncommunication and coordination process."
+}

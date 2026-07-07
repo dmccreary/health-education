@@ -1,0 +1,38 @@
+{
+  "title": "Find the Safe Place",
+  "description": "Students identify the correct safe place for a given type of school emergency, reinforcing the Safe Place concept alongside School Emergency.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "find-the-safe-place",
+  "library": "p5.js",
+  "bloomLevel": "Remember (L1)",
+  "bloomVerb": "identify, recognize, locate",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Staying Safe",
+  "chapter_dir": "05-staying-safe",
+  "chapter_rel_dir": "bands/kindergarten/chapters/05-staying-safe",
+  "educational": {
+    "gradeLevel": "Kindergarten",
+    "subjectArea": "Health Education",
+    "topic": "Staying Safe",
+    "learningObjectives": [
+      "Students identify the correct safe place for a given type of school emergency, reinforcing the Safe Place concept alongside School Emergency."
+    ],
+    "bloomLevel": "Remember (L1)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "identify, recognize, locate",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Remember-level objective through direct interaction rather than passive reading."
+  }
+}

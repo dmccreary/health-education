@@ -1,0 +1,23 @@
+{
+  "title": "My Health Goal Planner",
+  "description": "Students examine candidate goal statements and distinguish specific, realistic, personal goals from vague or unrealistic ones, then build their own goal statement.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "my-health-goal-planner",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine, organize, distinguish",
+  "completion_status": "scaffold",
+  "chapter_number": 8,
+  "chapter_title": "Communication And Goals",
+  "chapter_dir": "08-communication-and-goals",
+  "chapter_rel_dir": "bands/grade-3/chapters/08-communication-and-goals"
+}

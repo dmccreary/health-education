@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Helping Without Losing Yourself Decision Tool</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Helping Without Losing Yourself Decision Tool</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> helping-without-losing-yourself-tool</p>
+            <p><strong>Library:</strong> Mermaid</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students distinguish healthy peer-support boundaries</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: workflow
+    
+    **sim-id:** helping-without-losing-yourself-tool<br/>
+    **Library:** Mermaid<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy Level: Analyze (L4)
+    Bloom Verb: distinguish, examine, differentiate
+    
+    Learning objective: Students distinguish healthy peer-support boundaries
+    from unsustainable or inappropriate ones, and examine when a helper should
+    involve additional adult or professional support for their own sake as
+    well as their friend's.
+    
+    Visual style: Mermaid flowchart, top-to-bottom, click handlers on every
+    node
+    
+    Nodes (all clickable):
+    1. "You Are Supporting a Friend's Ongoing Mental Health Challenge" — click
+       text: "This applies to ongoing support, distinct from an acute safety
+       crisis, which always requires immediate adult or 988 involvement"
+    2. "Are You Being Asked to Keep a Safety Risk Secret?" (decision diamond) —
+       click text: "This boundary is never optional — a safety secret is
+       always shared with a trusted adult"
+    3a. "Yes" → "Tell a Trusted Adult, Regardless of the Promise" — click
+       text: "This protects your friend's safety and your own wellbeing"
+    3b. "No" → "Is This Affecting Your Own Sleep, Mood, or Schoolwork?" — click
+       text: "Noticing this in yourself is not a sign you are a bad friend —
+       it is a sign you need support too"
+    4a. From 3b, "Yes" → "Tell Your Own Trusted Adult and Set Limits" — click
+       text: "Setting a limit on your own availability does not mean you have
+       abandoned your friend"
+    4b. From 3b, "No" → "Continue Supportive Listening and Encourage
+       Professional Help" — click text: "Ongoing encouragement toward
+       professional care remains the goal even when things feel manageable"
+    5. Shared end node "Friend Is Connected to Appropriate Support, and You
+       Remain Well" — click text: "A sustainable support role protects both
+       people, not just one"
+    
+    Connections: 1→2, 2→3a, 2→3b, 3b→4a, 3b→4b, 3a→5, 4a→5, 4b→5
+    
+    Color coding: gold for decision diamonds, blue for process steps, green
+    for the shared end node
+    
+    Interactive features: click any node for its infobox
+    
+    Implementation: Mermaid.js flowchart with JavaScript click bindings to a
+    custom showInfo() function
+    -->
+</body>
+</html>

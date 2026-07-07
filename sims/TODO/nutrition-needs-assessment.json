@@ -1,0 +1,15 @@
+{
+  "sim_id": "nutrition-needs-assessment",
+  "diagram_name": "Personal Nutrition Needs Assessment Tool",
+  "chapter_number": 1,
+  "chapter_title": "Food and Nutrition",
+  "chapter_dir": "01-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/01-food-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "calculate, demonstrate",
+  "learning_objective": "Students apply age, sex, height, weight, and activity",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n\n**sim-id:** nutrition-needs-assessment<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Apply (L3)\nBloom Verb: calculate, demonstrate\n\nLearning objective: Students apply age, sex, height, weight, and activity\nlevel inputs to calculate an estimated daily calorie need and a\nrecommended macronutrient range, then see which micronutrients are\nflagged as common risk areas for their profile.\n\nCanvas layout:\n- Left (60%): input form and results panel\n- Right (40%): horizontal bar output showing calorie estimate and\n  macronutrient range (grams of carbohydrate/protein/fat)\n\nInteractive controls:\n- Slider: Age (14-18)\n- Select (Dropdown): Biological sex (Female, Male) — used only for\n  standard reference-intake calculation, with a note explaining that\n  individual needs vary\n- Slider: Height (cm)\n- Slider: Weight (kg)\n- Select (Dropdown): Activity level (Sedentary, Moderately Active, Very\n  Active)\n- Checkbox list: Optional flags (Plays competitive sport, Menstruates,\n  Vegetarian/vegan)\n- Button: \"Calculate My Range\"\n- Button: \"Reset\"\n\nDefault parameters: Age 16, height 165cm, weight 60kg, Moderately Active\n\nBehavior:\n- On \"Calculate,\" compute an estimated daily calorie range using a\n  standard formula (e.g., simplified Mifflin-St Jeor combined with an\n  activity multiplier) and display it as a labeled bar\n- Show a stacked bar of recommended macronutrient grams (carbohydrate,\n  protein, fat) based on standard percentage ranges (45-65% carbs,\n  10-35% protein, 25-35% fat)\n- If \"Menstruates\" is checked, highlight iron as a flagged micronutrient\n  with a short explanation\n- If \"Vegetarian/vegan\" is checked, flag vitamin B12, iron, and zinc as\n  areas requiring deliberate planning\n- Display a plain-language summary sentence beneath the bars, e.g. \"For\n  this profile, aim for about 2,200-2,400 calories per day, with extra\n  attention to iron and calcium.\"\n\nInstructional Rationale: An Apply-level objective calls for a calculator\nthat lets students plug in their own real characteristics and get a\nconcrete, personally relevant number — not an animation. Seeing their own\nestimated range is what turns an abstract guideline into something they\ncan act on in the next section's plan design.\n\nImplementation notes: Use p5.js sliders and dropdowns; all calculations\nperformed client-side with a simple published formula; include a\ndisclaimer that results are educational estimates, not medical advice."
+}

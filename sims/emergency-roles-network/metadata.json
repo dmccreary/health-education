@@ -1,0 +1,23 @@
+{
+  "title": "Emergency Roles Network",
+  "description": "Students explain how individual, peer, and school-staff actions work together to reduce risk during a school emergency.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "emergency-roles-network",
+  "library": "vis-network",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, summarize, distinguish",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Personal Safety And Violence Prevention",
+  "chapter_dir": "06-personal-safety-and-violence-prevention",
+  "chapter_rel_dir": "bands/grade-5/chapters/06-personal-safety-and-violence-prevention"
+}

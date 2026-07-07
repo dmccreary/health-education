@@ -1,0 +1,15 @@
+{
+  "sim_id": "what-to-do-if-this-happens-workflow",
+  "diagram_name": "What To Do If This Happens Workflow",
+  "chapter_number": 7,
+  "chapter_title": "Digital Safety and School Safety",
+  "chapter_dir": "07-digital-safety-and-school-safety",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/07-digital-safety-and-school-safety",
+  "library": "Mermaid",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate, apply, execute",
+  "learning_objective": "Students apply the correct sequence of response steps if they or someone they know is pressured to share or is blackmailed over explicit content, reinforcing that the person pressured is a victim, not someone in trouble.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n**sim-id:** what-to-do-if-this-happens-workflow<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: demonstrate, apply, execute\n\nLearning objective: Students apply the correct sequence of response steps if they or someone they know is pressured to share or is blackmailed over explicit content, reinforcing that the person pressured is a victim, not someone in trouble.\n\nVisual style: Mermaid flowchart with a start node, four sequential process nodes, and an end node. No node depicts or describes explicit content itself — every node addresses only the response process.\n\nSteps: (1) Start node \"Someone Is Pressuring Me To Share, Or Is Threatening To Share, An Image,\" click reveals: \"This is exploitation, whether from a peer or a stranger — and it is not your fault.\"; (2) process \"Stop Responding To That Person,\" click reveals: \"Do not send anything else and do not pay or comply with new demands — compliance often increases pressure rather than ending it.\"; (3) process \"Save The Evidence,\" click reveals: \"Screenshot the messages, usernames, and any threats before blocking the person.\"; (4) process \"Tell A Trusted Adult Right Away,\" click reveals: \"A parent, school counselor, or teacher can help — you will not be treated as the person at fault.\"; (5) process \"Report It,\" click reveals: \"The NCMEC CyberTipline at report.cybertip.org is built for this exact situation, and a school counselor can also connect you with more support.\"; end node \"You Get Help, And The Pressure Stops,\" click reveals: \"Reporting quickly is what stops the situation from continuing or escalating.\"\n\nEvery node must have a Mermaid `click` directive calling an infobox function.\n\nColor coding: Red for the start node (the problem), blue for the four process/action nodes, green for the end node (resolution).\n\nImplementation: Mermaid flowchart syntax with `click NodeId call showInfo(\"key\")` for every node; infobox text in a JS lookup object. No explicit content is described, depicted, or referenced beyond \"an image\" or \"content.\""
+}

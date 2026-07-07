@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 540 -->
+<title>Family, School, and Media Influence Map</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 18px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 13px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 400px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid silver; border-radius: 5px; padding: 6px 9px; font-size: 12px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 13px; height: 13px; border-radius: 50%; margin-right: 6px; vertical-align: middle; border: 1px solid #555; }
+  .legend .box { border-radius: 3px; }
+  .legend .arrow { font-weight: bold; color: navy; margin-right: 4px; }
+  .legend .line { color: gray; margin-right: 4px; font-weight: bold; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 5px solid goldenrod; border-radius: 4px; padding: 9px 11px; font-size: 14px; color: #334155; line-height: 1.5; min-height: 64px; }
+  .infobox strong { color: navy; }
+</style>
+</head>
+<body>
+<main>
+  <h3>Family, School, and Media Influence Map</h3>
+  <div class="subtitle">Hover a bubble to learn about it. Click Family, School, or Media to see just what it teaches.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k" style="background:goldenrod;"></span>My health choices<br>
+      <span class="k" style="background:seagreen;"></span>Family<br>
+      <span class="k" style="background:steelblue;"></span>School<br>
+      <span class="k" style="background:darkorange;"></span>Media / Technology<br>
+      <span class="k box" style="background:#e8eef7;"></span>Example<br>
+      <span class="arrow">&rarr;</span>shapes my choices &nbsp; <span class="line">&mdash;</span>example of
+    </div>
+  </div>
+  <div class="infobox" id="infobox">Family, school, and media all send messages that shape your health choices. Explore each one to see how.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+
+// Three influence sources, each with a color, examples, and explanations.
+const sources = [
+  {
+    id: 'family', label: 'Family', color: 'seagreen', border: '#1f6b47',
+    hover: 'Your family shapes health habits at home every day.',
+    click: 'Family shapes your health choices through everyday routines at home, like when you sleep and what you eat together.',
+    examples: [
+      { id: 'fam_bed', label: 'Bedtime\nroutine',
+        hover: 'A set bedtime helps you get enough sleep.',
+        click: 'A family bedtime routine helps you get enough rest, so you feel awake and healthy the next day.' },
+      { id: 'fam_meal', label: 'Meals\nat home',
+        hover: 'Family meals help you eat healthy foods.',
+        click: 'Eating meals together at home means your family often chooses the healthy foods you grow up eating.' }
+    ]
+  },
+  {
+    id: 'school', label: 'School', color: 'steelblue', border: '#2c5d82',
+    hover: 'School teaches health rules and gives time to be active.',
+    click: 'School shapes your health choices through rules and habits you practice, like washing hands and taking time to move at recess.',
+    examples: [
+      { id: 'sch_wash', label: 'Handwashing\nrule',
+        hover: 'Washing hands at school helps stop germs.',
+        click: 'A handwashing rule at school teaches you to wash away germs, which helps keep everyone from getting sick.' },
+      { id: 'sch_recess', label: 'Recess\ntime',
+        hover: 'Recess gives you time to run and play.',
+        click: 'Recess gives you time to run and play, building the habit of being active and moving your body every day.' }
+    ]
+  },
+  {
+    id: 'media', label: 'Media /\nTechnology', color: 'darkorange', border: '#b35c00',
+    hover: 'Media and apps send messages that can shape your choices.',
+    click: 'Media and technology shape your health choices through messages you see and hear, like commercials and reminders from apps.',
+    examples: [
+      { id: 'med_ad', label: 'Cereal\ncommercial',
+        hover: 'Ads try to get you to want certain foods.',
+        click: 'A cereal commercial is a message that tries to make you want a food. Noticing ads helps you make your own healthy choice.' },
+      { id: 'med_app', label: 'App\nreminder',
+        hover: 'An app can remind you to build good habits.',
+        click: 'An app reminder can nudge you toward a healthy habit, like standing up, drinking water, or going to bed on time.' }
+    ]
+  }
+];
+
+const nodes = [], edges = [];
+const info = {};   // id -> { title, text } for click panel
+const hover = {};  // id -> one-line string for hover
+const groupOf = {}; // node id -> source id it belongs to ('center' belongs to none)
+
+// Center node (large gold ellipse)
+nodes.push({
+  id: 'center', label: 'My Health\nChoices', level: 1,
+  shape: 'ellipse', color: { background: 'goldenrod', border: '#9c7a10' },
+  font: { color: 'white', size: 20, face: 'Arial', bold: true }, borderWidth: 3
+});
+info['center'] = { title: 'My Health Choices', text: 'Family, school, and media each send messages and set routines that shape the health choices you make.' };
+hover['center'] = 'Your health choices are shaped by family, school, and media.';
+
+sources.forEach(s => {
+  // Source node (medium colored ellipse)
+  nodes.push({
+    id: s.id, label: s.label, level: 2,
+    shape: 'ellipse', color: { background: s.color, border: s.border },
+    font: { color: 'white', size: 16, face: 'Arial', bold: true }, borderWidth: 3
+  });
+  groupOf[s.id] = s.id;
+  info[s.id] = { title: s.label.replace(/\n/g, ' '), text: s.click };
+  hover[s.id] = s.hover;
+
+  // SHAPES edge: source -> center (arrow)
+  edges.push({
+    id: 'e_' + s.id, from: s.id, to: 'center', arrows: { to: { enabled: true, scaleFactor: 0.8 } },
+    color: { color: s.color }, width: 3, srcGroup: s.id
+  });
+  hover['e_' + s.id] = 'This source influences health choices through everyday routines and messages.';
+
+  // Example nodes (small boxes) with EXAMPLE_OF edges to their source
+  s.examples.forEach(ex => {
+    nodes.push({
+      id: ex.id, label: ex.label, level: 3,
+      shape: 'box', color: { background: '#e8eef7', border: s.color },
+      font: { color: '#2a3550', size: 13 }, borderWidth: 2, margin: 7, widthConstraint: { maximum: 90 }
+    });
+    groupOf[ex.id] = s.id;
+    info[ex.id] = { title: ex.label.replace(/\n/g, ' '), text: ex.click };
+    hover[ex.id] = ex.hover;
+    edges.push({
+      id: 'e_' + ex.id, from: ex.id, to: s.id, dashes: true,
+      color: { color: s.color }, width: 2, srcGroup: s.id
+    });
+  });
+});
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  layout: {
+    hierarchical: {
+      enabled: true, direction: 'DU', sortMethod: 'directed',
+      levelSeparation: 130, nodeSpacing: 120, treeSpacing: 160, blockShifting: true, parentCentralization: true
+    }
+  },
+  physics: false,
+  interaction: { hover: true, dragView: true, zoomView: true, navigationButtons: true, tooltipDelay: 100000 },
+  edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical', roundness: 0.5 } },
+  nodes: { shadow: true }
+};
+const network = new vis.Network(container, data, options);
+network.once('afterDrawing', () => network.fit());
+
+// --- highlight / dim helpers for click-on-source ---
+let activeSource = null;
+
+function setPanel(id) {
+  const d = info[id];
+  if (d) box.innerHTML = '<strong>' + d.title + '</strong><br>' + d.text;
+}
+
+function baseNodeColor(n) {
+  if (n.id === 'center') return { background: 'goldenrod', border: '#9c7a10' };
+  const s = sources.find(x => x.id === n.id);
+  if (s) return { background: s.color, border: s.border };
+  const g = groupOf[n.id];
+  const gs = sources.find(x => x.id === g);
+  return { background: '#e8eef7', border: gs ? gs.color : '#7fb0d8' };
+}
+
+function highlightSource(sid) {
+  activeSource = sid;
+  data.nodes.forEach(n => {
+    const inGroup = (n.id === sid) || (groupOf[n.id] === sid) || (n.id === 'center');
+    const base = baseNodeColor(n);
+    if (inGroup) {
+      data.nodes.update({ id: n.id, color: base, opacity: 1 });
+    } else {
+      data.nodes.update({ id: n.id, color: { background: '#eceff3', border: '#c9ced6' }, opacity: 0.35 });
+    }
+  });
+  data.edges.forEach(e => {
+    const on = e.srcGroup === sid;
+    const s = sources.find(x => x.id === e.srcGroup);
+    data.edges.update({ id: e.id, color: { color: on ? (s ? s.color : 'gray') : '#d7dbe0', opacity: on ? 1 : 0.35 } });
+  });
+}
+
+function clearHighlight() {
+  activeSource = null;
+  data.nodes.forEach(n => data.nodes.update({ id: n.id, color: baseNodeColor(n), opacity: 1 }));
+  data.edges.forEach(e => {
+    const s = sources.find(x => x.id === e.srcGroup);
+    data.edges.update({ id: e.id, color: { color: s ? s.color : 'gray', opacity: 1 } });
+  });
+}
+
+network.on('hoverNode', p => { const h = hover[p.node]; if (h) box.innerHTML = h; });
+network.on('hoverEdge', p => { const h = hover[p.edge]; if (h) box.innerHTML = h; });
+
+network.on('click', p => {
+  if (p.nodes.length) {
+    const id = p.nodes[0];
+    setPanel(id);
+    if (sources.find(x => x.id === id)) {
+      highlightSource(id);   // clicking a source highlights it and its examples
+    } else {
+      clearHighlight();      // clicking center or an example resets the dimming
+    }
+  } else {
+    // click on empty background resets everything
+    clearHighlight();
+    box.innerHTML = 'Family, school, and media all send messages that shape your health choices. Explore each one to see how.';
+  }
+});
+</script>
+</body>
+</html>

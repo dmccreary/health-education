@@ -1,0 +1,23 @@
+{
+  "title": "Supports and Barriers Planning Map",
+  "description": "Students organize example supports and barriers around a sample health goal, distinguishing which category each item belongs to and connecting each barrier to a planned response.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "supports-and-barriers-planning-map",
+  "library": "vis-network",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "organize, examine, distinguish",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Health Literacy and Goal Setting",
+  "chapter_dir": "06-health-literacy-and-goals",
+  "chapter_rel_dir": "bands/grade-4/chapters/06-health-literacy-and-goals"
+}

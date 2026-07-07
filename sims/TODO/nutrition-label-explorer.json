@@ -1,0 +1,15 @@
+{
+  "sim_id": "nutrition-label-explorer",
+  "diagram_name": "Explore a Nutrition Label",
+  "chapter_number": 4,
+  "chapter_title": "Food And Nutrition",
+  "chapter_dir": "04-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-3/chapters/04-food-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "use, demonstrate, practice",
+  "learning_objective": "Students practice reading a real-style nutrition label by clicking each section to reveal what it means, then apply that skill by comparing two sample labels.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** nutrition-label-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: use, demonstrate, practice\n\nLearning objective: Students practice reading a real-style nutrition label by clicking each section to reveal what it means, then apply that skill by comparing two sample labels.\n\nCanvas layout:\n- Left side (350px): A large, simplified Nutrition Facts label graphic with clickable rows (serving size, carbohydrates, protein, fats)\n- Right side (250px): An infobox panel and a \"Compare Labels\" toggle showing a second sample label (e.g., plain crackers vs. a granola bar)\n\nVisual elements:\n- Clickable label rows highlighted with a soft outline\n- Two sample food labels available for comparison mode\n\nInteractive controls:\n- Click any row on the label to reveal its meaning in the infobox\n- Toggle: \"Compare with a Second Label\"\n- Dropdown: choose which second food to compare (granola bar, crackers, yogurt)\n- Button: \"Reset\"\n\nDefault parameters:\n- Sample food: granola bar; no row selected at start\n\nData Visibility Requirements:\n  Stage 1: Show the blank-highlighted label with all rows visible but unexplained\n  Stage 2: Clicking a row shows its grams/amount and a one-sentence plain-language meaning (e.g., \"Protein: 4 grams — this food has some protein to help build and repair muscles.\")\n  Stage 3: In compare mode, show both labels side by side with the same row highlighted on each, so students can directly compare grams of the same nutrient\n\nBehavior:\n- Clicking a row updates the infobox instantly\n- Compare mode re-renders both labels whenever a new food is chosen from the dropdown\n- A short prompt asks, \"Which food has more protein?\" with an optional reveal button\n\nInstructional Rationale: This is an Apply-level objective (use, demonstrate, practice), so the design lets students actively interact with real label data and compare concrete values, rather than simply viewing a static picture of a label.\n\nImplementation notes: Use p5.js. Use realistic but simplified label formatting so it transfers to real packages students see at home. This MicroSim is the direct student practice activity for this K-3 chapter."
+}

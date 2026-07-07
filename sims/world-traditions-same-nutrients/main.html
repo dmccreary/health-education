@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 560 -->
+<title>World Traditions, Same Nutrients</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .toolbar { display: flex; justify-content: center; align-items: center; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+  .toolbar button { font-size: 12px; padding: 4px 10px; border: 1px solid steelblue; background: aliceblue; color: navy; border-radius: 5px; cursor: pointer; }
+  .toolbar button.active { background: steelblue; color: white; }
+  .toolbar .hint { font-size: 11.5px; color: dimgray; }
+  #map { width: 100%; height: 300px; border: 1px solid silver; border-radius: 6px; background: #dce7ef; }
+  .emoji-icon { text-align: center; text-shadow: 0 0 3px white, 0 0 3px white, 0 0 3px white; cursor: pointer; }
+  .leaflet-tooltip.region-label { background: white; color: navy; border: 1px solid #b8c4d0; border-radius: 4px; padding: 1px 6px; font-size: 11.5px; font-weight: bold; box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+  .legend { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; font-size: 12px; color: #334155; margin-top: 7px; }
+  .legend span { display: inline-flex; align-items: center; gap: 4px; }
+  .legend .sw { font-size: 15px; }
+  .infobox { margin-top: 7px; background: #f7fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 82px; }
+  .infobox strong { color: navy; }
+  .infobox .nut { color: seagreen; font-weight: bold; }
+  .compare { margin-top: 7px; display: none; }
+  .compare .cols { display: flex; gap: 8px; }
+  .compare .col { flex: 1; background: #f7fafc; border-top: 4px solid gray; border-radius: 4px; padding: 7px 9px; font-size: 12px; color: #334155; line-height: 1.4; }
+  .compare .col h4 { font-size: 13px; margin-bottom: 3px; }
+  .compare .col ul { margin: 0 0 0 15px; }
+  .compare .col li { margin-bottom: 2px; }
+  .compare .empty { color: dimgray; font-style: italic; }
+  .same-note { margin-top: 6px; background: #fff8ec; border-left: 4px solid goldenrod; border-radius: 4px; padding: 7px 10px; font-size: 12px; color: #5b4a1f; line-height: 1.4; text-align: center; }
+  .leaflet-container { font: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <h3>World Traditions, Same Nutrients</h3>
+  <div class="subtitle">Click a region to see its staple foods. Hover a food icon for what it gives your body.</div>
+  <div class="toolbar">
+    <button id="compareBtn">Compare Two Regions</button>
+    <span class="hint" id="compareHint">Off &mdash; click one region at a time.</span>
+  </div>
+  <div id="map"></div>
+  <div class="legend">
+    <span><span class="sw">🍚</span> Carbohydrate / energy</span>
+    <span><span class="sw">🐟</span> Protein</span>
+    <span><span class="sw">🥬</span> Vitamins / minerals</span>
+  </div>
+  <div class="infobox" id="infobox">Everyone's body needs the same things: <span class="nut">energy</span>, <span class="nut">protein</span>, and <span class="nut">vitamins and minerals</span>. Around the world, people use very different staple foods to get them. <strong>Click a region marker</strong> to explore one food tradition.</div>
+  <div class="compare" id="compare">
+    <div class="cols">
+      <div class="col" id="colA"><span class="empty">Pick a first region&hellip;</span></div>
+      <div class="col" id="colB"><span class="empty">Pick a second region&hellip;</span></div>
+    </div>
+    <div class="same-note">Different staple foods &mdash; but both traditions supply the same three needs: energy, protein, and vitamins &amp; minerals.</div>
+  </div>
+</main>
+<script>
+// ---- data: four regions, each with staple foods tagged by nutrient role ----
+// nutrient categories (neutral, no ranking colors): carb=energy, protein, vitmin=vitamins/minerals
+const NUT = {
+  carb:    { emoji: '🍚', label: 'carbohydrate / energy' },
+  protein: { emoji: '🐟', label: 'protein' },
+  vitmin:  { emoji: '🥬', label: 'vitamins / minerals' }
+};
+
+const REGIONS = {
+  japan: {
+    name: 'Japan', color: 'steelblue', center: [36, 138], dir: 'right',
+    foods: [
+      { emoji: '🍚', name: 'Rice',  nut: 'carb',    lat: 40,   lng: 140, desc: 'Rice is a grain that gives steady energy to power the day.' },
+      { emoji: '🐟', name: 'Fish',  nut: 'protein', lat: 34,   lng: 135, desc: 'Fish is a protein food that helps build and repair the body.' },
+      { emoji: '🫛', name: 'Tofu',  nut: 'protein', lat: 32,   lng: 141, desc: 'Tofu, made from soybeans, is a plant protein for growing strong.' }
+    ]
+  },
+  westafrica: {
+    name: 'West Africa', color: 'darkorange', center: [11, -4], dir: 'bottom',
+    foods: [
+      { emoji: '🌾', name: 'Millet',  nut: 'carb',    lat: 15, lng: 0,   desc: 'Millet is a hardy grain that supplies energy in dry regions.' },
+      { emoji: '🍠', name: 'Cassava', nut: 'carb',    lat: 7,  lng: -8,  desc: 'Cassava is a starchy root packed with energy.' },
+      { emoji: '🥜', name: 'Peanuts', nut: 'protein', lat: 15, lng: -9,  desc: 'Peanuts and beans are legumes that provide protein.' }
+    ]
+  },
+  mexico: {
+    name: 'Mexico', color: 'mediumpurple', center: [23, -102], dir: 'left',
+    foods: [
+      { emoji: '🌽', name: 'Corn',   nut: 'carb',    lat: 19, lng: -98,  desc: 'Corn, made into tortillas, is a grain that gives energy.' },
+      { emoji: '🫘', name: 'Beans',  nut: 'protein', lat: 27, lng: -104, desc: 'Beans are a plant protein that pairs with corn for a complete meal.' },
+      { emoji: '🌶️', name: 'Chili', nut: 'vitmin',  lat: 16, lng: -95,  desc: 'Chili peppers add flavor and vitamin C to meals.' }
+    ]
+  },
+  scandinavia: {
+    name: 'Scandinavia', color: 'seagreen', center: [63, 14], dir: 'right',
+    foods: [
+      { emoji: '🍞', name: 'Rye',    nut: 'carb',    lat: 59, lng: 17,  desc: 'Rye is a grain baked into hearty bread for energy.' },
+      { emoji: '🥛', name: 'Dairy',  nut: 'vitmin',  lat: 67, lng: 15,  desc: 'Milk and cheese supply calcium and vitamins for strong bones.' },
+      { emoji: '🐟', name: 'Salmon', nut: 'protein', lat: 65, lng: 9,   desc: 'Salmon is a fish rich in protein and healthy fats.' }
+    ]
+  }
+};
+
+const box = document.getElementById('infobox');
+const compareBtn = document.getElementById('compareBtn');
+const compareHint = document.getElementById('compareHint');
+const comparePanel = document.getElementById('compare');
+const colA = document.getElementById('colA');
+const colB = document.getElementById('colB');
+
+let compareMode = false;
+let picks = []; // region keys picked while comparing
+
+// ---- map (real, named places -> real muted tile layer) ----
+const map = L.map('map', { minZoom: 1, maxZoom: 6, worldCopyJump: true, attributionControl: false });
+map.setView([32, 5], 1);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  maxZoom: 8, subdomains: 'abcd'
+}).addTo(map);
+
+// push the permanent label a few extra pixels off the dot in its chosen direction
+function dirOffset(dir){
+  if (dir === 'left')   return [-8, 0];
+  if (dir === 'right')  return [8, 0];
+  if (dir === 'bottom') return [0, 8];
+  if (dir === 'top')    return [0, -8];
+  return [0, 0];
+}
+
+// build a foods -> nutrient summary line for a region
+function foodLine(f){
+  return f.emoji + ' <strong>' + f.name + '</strong> &rarr; <span class="nut">' + NUT[f.nut].label + '</span>';
+}
+function regionHtml(key){
+  const r = REGIONS[key];
+  return '<strong>' + r.name + '.</strong> Staple foods and what each one mainly gives the body:<br>'
+    + r.foods.map(foodLine).join('<br>');
+}
+function regionListItems(key){
+  const r = REGIONS[key];
+  return r.foods.map(f => '<li>' + f.emoji + ' <strong>' + f.name + '</strong> &ndash; ' + NUT[f.nut].label + '</li>').join('');
+}
+
+// ---- render region label pins + food icon clusters ----
+Object.keys(REGIONS).forEach(key => {
+  const r = REGIONS[key];
+
+  // region center dot with a permanent name tooltip (Leaflet handles pixel placement,
+  // so the label never collides with the food cluster regardless of world zoom)
+  const dot = L.circleMarker(r.center, {
+    radius: 6, color: 'white', weight: 2, fillColor: r.color, fillOpacity: 1
+  }).addTo(map);
+  dot.bindTooltip(r.name, {
+    permanent: true, direction: r.dir, offset: dirOffset(r.dir),
+    className: 'region-label', opacity: 1
+  });
+  dot.on('click', () => pickRegion(key));
+
+  // food icon cluster around the region
+  r.foods.forEach(f => {
+    const m = L.marker([f.lat, f.lng], { icon: L.divIcon({
+      className: 'emoji-icon',
+      html: '<span style="font-size:19px;">' + f.emoji + '</span>',
+      iconSize: [22, 22],
+      iconAnchor: [11, 11]
+    }) }).addTo(map);
+    m.bindTooltip('<strong>' + f.name + '</strong> &mdash; ' + f.desc, { direction: 'top', offset: [0, -10] });
+    m.on('click', () => pickRegion(key));
+  });
+});
+
+// ---- interaction ----
+function pickRegion(key){
+  if (!compareMode){
+    box.innerHTML = regionHtml(key);
+    return;
+  }
+  // compare mode: collect up to two distinct regions (most recent two)
+  picks = picks.filter(k => k !== key);
+  picks.push(key);
+  if (picks.length > 2) picks.shift();
+  renderCompare();
+}
+
+function renderCompare(){
+  const a = picks[0], b = picks[1];
+  colA.innerHTML = a
+    ? '<h4 style="color:' + REGIONS[a].color + ';">' + REGIONS[a].name + '</h4><ul>' + regionListItems(a) + '</ul>'
+    : '<span class="empty">Pick a first region&hellip;</span>';
+  colB.innerHTML = b
+    ? '<h4 style="color:' + REGIONS[b].color + ';">' + REGIONS[b].name + '</h4><ul>' + regionListItems(b) + '</ul>'
+    : '<span class="empty">Pick a second region&hellip;</span>';
+}
+
+compareBtn.addEventListener('click', () => {
+  compareMode = !compareMode;
+  compareBtn.classList.toggle('active', compareMode);
+  if (compareMode){
+    compareHint.textContent = 'On — click two regions to compare.';
+    comparePanel.style.display = 'block';
+    box.innerHTML = 'Compare mode is on. Click any two region markers to see their staple foods side by side.';
+    picks = [];
+    renderCompare();
+  } else {
+    compareHint.textContent = 'Off — click one region at a time.';
+    comparePanel.style.display = 'none';
+    box.innerHTML = 'Compare mode is off. <strong>Click a region marker</strong> to explore one food tradition.';
+  }
+});
+</script>
+</body>
+</html>

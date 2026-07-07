@@ -1,0 +1,15 @@
+{
+  "sim_id": "peer-support-response-simulator",
+  "diagram_name": "Peer Support Response Simulator",
+  "chapter_number": 5,
+  "chapter_title": "Mental Health and Crisis Support",
+  "chapter_dir": "05-mental-health-and-crisis-support",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/05-mental-health-and-crisis-support",
+  "library": "p5.js",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "judge, assess, justify",
+  "learning_objective": "Students evaluate a set of possible peer responses to",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n\n**sim-id:** peer-support-response-simulator<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Evaluate (L5)\nBloom Verb: judge, assess, justify\n\nLearning objective: Students evaluate a set of possible peer responses to\na friend disclosing ongoing depression or anxiety symptoms (not an acute\ncrisis disclosure, which is covered separately) and justify which response\nbest reflects supportive listening, validation, and appropriate referral.\n\nCanvas layout:\n- Left (55%): a short scenario describing a friend sharing that they have\n  been feeling persistently down or anxious for weeks\n- Right (45%): four possible response options to rate, each phrased as\n  something a peer might say\n\nData Visibility Requirements:\n  Stage 1: Show the scenario and four response options (e.g., a dismissive\n  response, an overly clinical response, a validating-and-referring\n  response, and a response that tries to \"fix\" the friend's feelings\n  immediately)\n  Stage 2: Student rates each response on a simple scale (Not Helpful,\n  Somewhat Helpful, Very Helpful)\n  Stage 3: Reveal the rationale for each rating, tied to the five-step\n  peer-support framework from the chapter text\n  Stage 4: Track how the student's ratings compare to the model rating set\n\nInteractive controls:\n- Rating buttons for each of the four response options\n- Button: \"Show Rationale\"\n- Button: \"New Scenario\" (3-4 scenario sets total, all non-crisis,\n  depression/anxiety-support scenarios)\n\nDefault parameters: Scenario bank cycles without repetition until\nexhausted, then reshuffles\n\nInstructional Rationale: Judging the quality of different response options\nagainst a defined standard is an Evaluate-level objective, so a rating\ntask with revealed rationale is used rather than a single correct/incorrect\nanswer, reflecting that real peer support involves judgment rather than\none fixed script.\n\nImplementation notes: p5.js with an object array of {scenario,\nresponseOptions, modelRatings, rationale}; content limited to ongoing\ndepression/anxiety support scenarios, not acute crisis disclosure, to keep\nthis diagram distinct from the crisis-response workflow above."
+}

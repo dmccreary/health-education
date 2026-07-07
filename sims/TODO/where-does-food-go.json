@@ -1,0 +1,15 @@
+{
+  "sim_id": "where-does-food-go",
+  "diagram_name": "Where Does This Food Go?",
+  "chapter_number": 2,
+  "chapter_title": "Food, Drinks, and Staying Safe in the Kitchen",
+  "chapter_dir": "02-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-1/chapters/02-food-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "recall, identify, locate",
+  "learning_objective": "Students recall safe practices for storing food by matching foods to the correct storage spot (refrigerator or cupboard).",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** where-does-food-go<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Remember (L1)\nBloom Taxonomy Verb: recall, identify, locate\n\nLearning objective: Students recall safe practices for storing food by matching foods to the correct storage spot (refrigerator or cupboard).\n\nCanvas layout:\n- Left area (450px): Two large storage areas side by side: a refrigerator illustration and a cupboard illustration\n- Right area (150px): A stack of 10 food picture cards to click through\n\nVisual elements:\n- Refrigerator and cupboard illustrations with open doors showing empty shelves\n- 10 food cards: milk, eggs, leftovers, grapes, bread, crackers, canned beans, cheese, cereal, yogurt\n\nInteractive controls:\n- Drag-and-drop or click-to-place: place each food card into the refrigerator or cupboard\n- Button: \"Next Food\"\n- Button: \"Reset\"\n\nDefault parameters:\n- First card: milk (clearly a refrigerator item, to build confidence)\n\nBehavior:\n- Correct placement: shelf glows, gentle chime, one-sentence reason appears (\"Milk needs to stay cold so it doesn't spoil.\")\n- Incorrect placement: gentle prompt, \"Look again — does this food need to stay cold?\"\n\nInstructional Rationale: This is a Remember-level (recall/identify) objective, so a simple matching pattern with an immediate explanation is appropriate — students are learning to locate the correct storage spot, not yet reasoning about spoilage science.\n\nImplementation notes: Use p5.js. Keep illustrations simple and friendly. Teacher reads each food name and reason aloud."
+}

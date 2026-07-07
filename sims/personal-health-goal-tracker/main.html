@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 520 -->
+<title>Personal Health Goal Tracker</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 4px 0 2px; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .layout { display: flex; gap: 8px; align-items: stretch; flex-wrap: wrap; }
+  .chart-box { background: aliceblue; border: 1px solid silver; border-radius: 6px; padding: 8px; flex: 1 1 440px; min-width: 300px; }
+  .chart-container { position: relative; width: 100%; height: 300px; }
+  .panel { flex: 0 0 210px; min-width: 190px; background: #f8fafc; border: 1px solid silver; border-radius: 6px; padding: 10px; }
+  .panel label { display: block; font-size: 12px; font-weight: bold; color: navy; margin-bottom: 3px; }
+  .panel select { width: 100%; font-size: 12px; padding: 5px; border: 1px solid silver; border-radius: 4px; margin-bottom: 10px; }
+  .counter { text-align: center; background: white; border: 1px solid silver; border-radius: 5px; padding: 6px; margin-bottom: 10px; }
+  .counter .num { font-size: 26px; font-weight: bold; color: seagreen; line-height: 1.1; }
+  .counter .lbl { font-size: 11px; color: dimgray; }
+  .btn-row { display: flex; gap: 6px; margin-bottom: 8px; }
+  button { flex: 1; font-size: 12px; padding: 6px 4px; border: none; border-radius: 4px; cursor: pointer; color: white; }
+  .reflect-btn { background: mediumpurple; }
+  .reflect-btn:disabled { background: silver; cursor: not-allowed; }
+  .reset-btn { background: steelblue; flex: 0 0 auto; padding: 6px 8px; }
+  .hint { font-size: 11px; color: dimgray; font-style: italic; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 60px; }
+  .infobox strong { color: navy; }
+  .frame { font-style: italic; color: seagreen; }
+  .source { text-align: center; color: gray; font-size: 11px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <h3>Personal Health Goal Tracker</h3>
+  <div class="subtitle">Pick a goal, then click each day's bar to mark it green (goal met) or gray (not met).</div>
+  <div class="layout">
+    <div class="chart-box">
+      <div class="chart-container"><canvas id="chart"></canvas></div>
+    </div>
+    <div class="panel">
+      <label for="goal">My health goal</label>
+      <select id="goal">
+        <option value="0">Drink water instead of soda at lunch</option>
+        <option value="1">Get 9 hours of sleep</option>
+        <option value="2">Walk or bike to school</option>
+        <option value="3">Eat a vegetable at dinner</option>
+      </select>
+      <div class="counter">
+        <div class="num" id="metNum">0</div>
+        <div class="lbl">days met out of 14</div>
+      </div>
+      <div class="btn-row">
+        <button class="reflect-btn" id="reflectBtn" disabled>Reflect</button>
+        <button class="reset-btn" id="resetBtn">Reset</button>
+      </div>
+      <div class="hint" id="hint">Log at least 7 days to unlock Reflect.</div>
+    </div>
+  </div>
+  <div class="infobox" id="infobox">
+    A <em>health goal</em> is one small, specific action you choose to practice. Click a day's bar to
+    record whether you met your goal that day. <span class="frame">Progress is about steady habits, not being perfect every single day.</span>
+  </div>
+  <div class="source">Educational tool. Sample data only &mdash; you decide which days you met your goal.</div>
+</main>
+<script>
+const goals = [
+  { label: 'Drink water instead of soda at lunch', desc: 'choosing water over soda at lunch' },
+  { label: 'Get 9 hours of sleep', desc: 'getting about 9 hours of sleep' },
+  { label: 'Walk or bike to school', desc: 'walking or biking to school' },
+  { label: 'Eat a vegetable at dinner', desc: 'eating a vegetable at dinner' }
+];
+
+// 14 days, all start "not met" (0)
+const days = Array.from({length: 14}, (_, i) => 'Day ' + (i + 1));
+let met = new Array(14).fill(0);
+let goalIndex = 0;
+
+const MET_COLOR = 'seagreen';
+const NOT_COLOR = 'gainsboro';
+
+const box = document.getElementById('infobox');
+const metNumEl = document.getElementById('metNum');
+const reflectBtn = document.getElementById('reflectBtn');
+const hintEl = document.getElementById('hint');
+
+function colors() { return met.map(v => v ? MET_COLOR : NOT_COLOR); }
+function borders() { return met.map(v => v ? 'darkgreen' : 'darkgray'); }
+function countMet() { return met.reduce((a, b) => a + b, 0); }
+
+function updateCounter() {
+  const n = countMet();
+  metNumEl.textContent = n;
+  // Reflect unlocks once at least 7 days are marked met (logged as successes)
+  if (n >= 7) {
+    reflectBtn.disabled = false;
+    hintEl.textContent = 'Ready! Click Reflect to think about your patterns.';
+  } else {
+    reflectBtn.disabled = true;
+    hintEl.textContent = 'Mark at least 7 days met to unlock Reflect (' + n + '/7).';
+  }
+}
+
+function toggle(index) {
+  met[index] = met[index] ? 0 : 1;
+  chart.data.datasets[0].backgroundColor = colors();
+  chart.data.datasets[0].borderColor = borders();
+  chart.update();
+  updateCounter();
+  const status = met[index] ? 'met' : 'not met';
+  box.innerHTML = '<strong>Day ' + (index + 1) + ':</strong> goal ' + status +
+    ' &mdash; ' + goals[goalIndex].desc + '. <span class="frame">Click again to change it.</span>';
+}
+
+function reflect() {
+  const n = countMet();
+  box.innerHTML = '<strong>Reflecting on your two weeks.</strong> You met your goal <strong>' + n +
+    ' out of 14 days</strong> (' + goals[goalIndex].label.toLowerCase() +
+    '). What helped on the days it worked? What got in the way on the days it did not? ' +
+    '<span class="frame">Noticing your own patterns is how you make a goal stick.</span>';
+}
+
+function reset() {
+  met = new Array(14).fill(0);
+  chart.data.datasets[0].backgroundColor = colors();
+  chart.data.datasets[0].borderColor = borders();
+  chart.update();
+  updateCounter();
+  box.innerHTML = 'Fresh start! Pick a goal and click each day’s bar to record whether you met it. ' +
+    '<span class="frame">Progress is about steady habits, not being perfect every single day.</span>';
+}
+
+const ctx = document.getElementById('chart').getContext('2d');
+const chart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: days,
+    datasets: [{
+      label: 'Goal met',
+      data: new Array(14).fill(1),   // uniform bar height; color carries the meaning
+      backgroundColor: colors(),
+      borderColor: borders(),
+      borderWidth: 1
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    onClick: (e, els) => { if (els.length) toggle(els[0].index); },
+    scales: {
+      y: { beginAtZero: true, max: 1, ticks: { stepSize: 1, callback: v => v ? 'Met' : 'Not met' }, title: { display: true, text: 'Daily status' } },
+      x: { title: { display: true, text: 'Day of the two-week goal window' }, ticks: { font: { size: 10 } } }
+    },
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: {
+        title: items => 'Day ' + (items[0].dataIndex + 1),
+        label: c => met[c.dataIndex] ? 'Goal met this day' : 'Goal not met this day'
+      }, bodyFont: { size: 12 }, boxPadding: 4 }
+    }
+  }
+});
+
+document.getElementById('goal').addEventListener('change', e => {
+  goalIndex = parseInt(e.target.value, 10);
+  box.innerHTML = '<strong>New goal:</strong> ' + goals[goalIndex].label + '. ' +
+    'Click each day’s bar to record whether you met it. <span class="frame">Small, specific goals are the easiest to keep.</span>';
+});
+reflectBtn.addEventListener('click', reflect);
+document.getElementById('resetBtn').addEventListener('click', reset);
+
+updateCounter();
+</script>
+</body>
+</html>

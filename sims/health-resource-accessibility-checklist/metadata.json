@@ -1,0 +1,38 @@
+{
+  "title": "Health Resource Accessibility Checklist",
+  "description": "Evaluate a given health resource scenario against six",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "health-resource-accessibility-checklist",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate<br/>",
+  "bloomVerb": "assess, judge",
+  "completion_status": "scaffold",
+  "chapter_number": 13,
+  "chapter_title": "Influences on Health Behavior",
+  "chapter_dir": "13-influences-on-health-behavior",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/13-influences-on-health-behavior",
+  "educational": {
+    "gradeLevel": "Grades 9-12",
+    "subjectArea": "Health Education",
+    "topic": "Influences on Health Behavior",
+    "learningObjectives": [
+      "Evaluate a given health resource scenario against six"
+    ],
+    "bloomLevel": "Evaluate<br/>",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "assess, judge",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Evaluate-level objective through direct interaction rather than passive reading."
+  }
+}

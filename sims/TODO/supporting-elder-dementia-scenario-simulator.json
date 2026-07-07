@@ -1,0 +1,15 @@
+{
+  "sim_id": "supporting-elder-dementia-scenario-simulator",
+  "diagram_name": "Supporting an Elder With Dementia Scenario Simulator",
+  "chapter_number": 7,
+  "chapter_title": "Brain Health, Sleep, and Emergency Care",
+  "chapter_dir": "07-brain-health-sleep-and-emergency-care",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/07-brain-health-sleep-and-emergency-care",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "apply, demonstrate, practice",
+  "learning_objective": "Students apply respectful support strategies\n(maintaining routine, adapting communication, patience with repetition,",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n\n**sim-id:** supporting-elder-dementia-scenario-simulator<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Apply (L3)\nBloom Verb: apply, demonstrate, practice\n\nLearning objective: Students apply respectful support strategies\n(maintaining routine, adapting communication, patience with repetition,\npreserving dignity, connecting with resources) to realistic family\nscenarios involving an elder with cognitive impairment.\n\nCanvas layout:\n- Left (55%): a short, respectful scenario (e.g., \"Your grandmother asks\n  where her late husband is for the third time this visit\")\n- Right (45%): four or five response-strategy cards the student selects\n  from, each naming a support strategy\n\nData Visibility Requirements:\n  Stage 1: Show the scenario and all response-strategy options\n  Stage 2: Student selects the response they believe is most supportive\n  Stage 3: Reveal an explanation of why that response supports dignity\n  and reduces distress, and, where more than one response is reasonable,\n  acknowledge that other compassionate responses may also work\n  Stage 4: Show a running count of scenarios completed out of a bank of 6\n\nInteractive controls:\n- Click to select a response card\n- Button: \"Show Explanation\"\n- Button: \"Next Scenario\"\n\nDefault parameters: Scenario bank of 6 realistic, respectful family\nsituations; feedback always explains the reasoning rather than only\nmarking right or wrong\n\nInstructional Rationale: Applying a specific support strategy to a\nrealistic family scenario is an Apply-level objective, so a\nscenario-response tool with explanatory feedback is used rather than a\npassive list of caregiving tips, since real application requires judgment\nabout which strategy fits a specific, emotionally sensitive moment.\n\nImplementation notes: p5.js; all scenario and feedback text written with\ndignity and compassion, avoiding fear-based or clinical-sounding language;\nobject array of {scenario, options, bestResponse, explanation}."
+}

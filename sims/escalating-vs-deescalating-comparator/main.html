@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 560 -->
+<title>Which Statement Is More Likely to De-escalate the Conflict?</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 4px 0 2px; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+
+  .scenario { text-align: center; font-size: 12px; color: #334155; margin: 2px 0 6px; }
+  .scenario strong { color: navy; }
+
+  .cards { display: flex; gap: 10px; }
+  .card {
+    flex: 1 1 0; background: aliceblue; border: 2px solid silver; border-radius: 8px;
+    padding: 9px 11px; cursor: pointer; min-height: 92px; transition: border-color .12s, background .12s;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .card:hover { border-color: steelblue; }
+  .card .tag { font-size: 10px; font-weight: bold; letter-spacing: .5px; color: dimgray; text-transform: uppercase; margin-bottom: 5px; }
+  .card .quote { font-size: 13px; color: #1e293b; line-height: 1.35; font-style: italic; }
+  .card .skill { font-size: 11px; color: mediumpurple; margin-top: 6px; min-height: 14px; }
+  .card.correct { border-color: seagreen; background: #eafaf0; }
+  .card.wrong { border-color: indianred; background: #fdecec; }
+  .card.disabled { cursor: default; }
+
+  .barwrap { background: aliceblue; border: 1px solid silver; border-radius: 6px; padding: 6px 8px 2px; margin-top: 8px; }
+  .chart-container { position: relative; width: 100%; height: 92px; }
+
+  .controls { text-align: center; margin-top: 8px; }
+  .controls button {
+    font-size: 13px; padding: 5px 14px; margin: 0 4px; border: 1px solid steelblue;
+    background: steelblue; color: white; border-radius: 5px; cursor: pointer;
+  }
+  .controls button.ghost { background: white; color: steelblue; }
+  .controls button:disabled { opacity: .4; cursor: default; }
+
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 62px; }
+  .infobox strong { color: navy; }
+  .frame { font-style: italic; color: seagreen; }
+  .source { text-align: center; color: gray; font-size: 11px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <h3>Which Statement Is More Likely to De-escalate the Conflict?</h3>
+  <div class="subtitle">Hover a card to preview its skill, then click the version that calms the disagreement.</div>
+
+  <div class="scenario" id="scenario"></div>
+
+  <div class="cards">
+    <div class="card" id="cardA" data-side="A">
+      <div class="tag">Option A</div>
+      <div class="quote" id="quoteA"></div>
+      <div class="skill" id="skillA"></div>
+    </div>
+    <div class="card" id="cardB" data-side="B">
+      <div class="tag">Option B</div>
+      <div class="quote" id="quoteB"></div>
+      <div class="skill" id="skillB"></div>
+    </div>
+  </div>
+
+  <div class="barwrap">
+    <div class="chart-container"><canvas id="chart"></canvas></div>
+  </div>
+
+  <div class="controls">
+    <button id="prevBtn" class="ghost">&#8592; Back</button>
+    <button id="nextBtn">Next Pair &#8594;</button>
+  </div>
+
+  <div class="infobox" id="infobox">
+    Every pair below says the same complaint two ways. One blames the other person; one shares your own feeling.
+    Pick the calmer version to see which listening or "I"-statement skill it uses.
+    <span class="frame">De-escalating means keeping the conversation safe so both people can be heard.</span>
+  </div>
+  <div class="source">Illustrative conflict-resolution examples for classroom practice (grades 9-12).</div>
+</main>
+<script>
+// Each pair: same underlying complaint, one accusatory ("you") version, one "I"-statement version.
+const pairs = [
+  {
+    scenario: 'A group project partner did not finish their part on time.',
+    accusatory: '"You never do your share and you ruined the whole project."',
+    iStatement: '"I feel stressed when the section is late, because it puts our grade at risk."',
+    skill: '"I" statement structure',
+    explanation: 'The calm version names a feeling and a reason instead of an attack. Starting with "I feel..." lets you raise a real concern without the other person feeling accused.'
+  },
+  {
+    scenario: 'A friend keeps checking their phone while you are talking.',
+    accusatory: '"You are so rude and you obviously do not care what I say."',
+    iStatement: '"I feel unheard when the phone comes out, and I would like to finish my thought."',
+    skill: '"I" statement structure',
+    explanation: 'Describing the effect on you ("I feel unheard") keeps the focus on the problem, not on the person\'s character, so they can respond without getting defensive.'
+  },
+  {
+    scenario: 'A teammate disagrees with your idea in a meeting.',
+    accusatory: '"You always shoot down everything I suggest."',
+    iStatement: '"I hear that you see a risk here. Can you tell me more about your concern?"',
+    skill: 'Active listening',
+    explanation: 'Reflecting back what you heard and asking a real question shows active listening. It invites the other person to explain instead of pushing them to argue.'
+  },
+  {
+    scenario: 'A sibling borrowed your charger without asking.',
+    accusatory: '"You are always taking my stuff and you never respect my things."',
+    iStatement: '"I get frustrated when my charger disappears. Could you ask me first next time?"',
+    skill: '"I" statement structure',
+    explanation: 'A clear feeling plus a simple request gives the other person an easy way to fix the problem, instead of a label ("always taking") that invites a fight.'
+  },
+  {
+    scenario: 'A classmate interrupted you during a presentation.',
+    accusatory: '"You cut me off on purpose to make me look bad."',
+    iStatement: '"It sounds like you were excited to add something. I would like to finish, then hear it."',
+    skill: 'Perspective-taking',
+    explanation: 'Guessing a positive reason for the other person\'s action ("excited to add something") is perspective-taking. It assumes good intent, which lowers tension.'
+  },
+  {
+    scenario: 'A friend forgot plans you had made together.',
+    accusatory: '"You clearly do not think I matter at all."',
+    iStatement: '"I was disappointed when the plan slipped. I know things get busy for you too."',
+    skill: 'Perspective-taking',
+    explanation: 'Naming your own disappointment while acknowledging the other person\'s busy life shows perspective-taking, so the talk stays about the mix-up rather than a verdict on the friendship.'
+  },
+  {
+    scenario: 'A teammate wants to solve a problem a different way than you.',
+    accusatory: '"You think your way is always the only right way."',
+    iStatement: '"So you think starting over would be faster? Help me understand how."',
+    skill: 'Active listening',
+    explanation: 'Restating their point as a question ("So you think...?") is active listening. It checks that you understood before you respond, which keeps the disagreement productive.'
+  },
+  {
+    scenario: 'A neighbor plays loud music late at night.',
+    accusatory: '"You are so inconsiderate and you never think about anyone else."',
+    iStatement: '"I have trouble sleeping when it is loud late. Could we agree on a quieter time?"',
+    skill: '"I" statement structure',
+    explanation: 'Explaining the impact ("I have trouble sleeping") and proposing a shared solution keeps the door open for agreement, unlike a global put-down ("never think about anyone").'
+  }
+];
+
+// randomize which side (A/B) holds the de-escalating "I" statement for each pair
+pairs.forEach(p => { p.iOnLeft = Math.random() < 0.5; });
+
+let idx = 0;
+const answered = new Array(pairs.length).fill(null); // null | true(correct) | false
+let score = 0;
+
+const el = id => document.getElementById(id);
+const cardA = el('cardA'), cardB = el('cardB');
+const box = el('infobox');
+const prevBtn = el('prevBtn'), nextBtn = el('nextBtn');
+
+// ---- score bar chart (Chart.js) ----
+const ctx = el('chart').getContext('2d');
+const chart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['Your Score'],
+    datasets: [
+      { label: 'Correct so far', data: [0], backgroundColor: 'rgba(46,139,87,0.85)', borderColor: 'seagreen', borderWidth: 1 },
+      { label: 'Still to try', data: [pairs.length], backgroundColor: 'rgba(200,200,200,0.55)', borderColor: 'silver', borderWidth: 1 }
+    ]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true, maintainAspectRatio: false,
+    scales: {
+      x: { stacked: true, beginAtZero: true, max: pairs.length, ticks: { stepSize: 1 }, title: { display: true, text: 'Pairs (out of ' + pairs.length + ')', font: { size: 10 } } },
+      y: { stacked: true, ticks: { display: false } }
+    },
+    plugins: {
+      legend: { position: 'top', labels: { font: { size: 11 }, boxWidth: 14 } },
+      tooltip: { callbacks: {
+        label: c => c.dataset.label + ': ' + c.parsed.x
+      }, bodyFont: { size: 11 }, boxPadding: 4 }
+    }
+  }
+});
+function updateChart(){
+  chart.data.datasets[0].data[0] = score;
+  chart.data.datasets[1].data[0] = pairs.length - score;
+  chart.update();
+}
+
+// ---- render one pair ----
+function skillLabel(text){ return '<span style="color:mediumpurple">Skill: ' + text + '</span>'; }
+
+function render(){
+  const p = pairs[idx];
+  el('scenario').innerHTML = '<strong>Pair ' + (idx+1) + ' of ' + pairs.length + '.</strong> ' + p.scenario;
+
+  // decide text for each side
+  const leftIsI = p.iOnLeft;
+  el('quoteA').textContent = leftIsI ? p.iStatement : p.accusatory;
+  el('quoteB').textContent = leftIsI ? p.accusatory : p.iStatement;
+
+  // reset card visual state
+  [cardA, cardB].forEach(c => { c.classList.remove('correct','wrong','disabled'); });
+  el('skillA').innerHTML = '';
+  el('skillB').innerHTML = '';
+
+  prevBtn.disabled = (idx === 0);
+  nextBtn.disabled = (idx === pairs.length - 1);
+
+  const state = answered[idx];
+  if (state === null) {
+    box.innerHTML = 'Which version is more likely to <strong>calm</strong> this disagreement? '
+      + 'Hover a card to preview its communication skill, then click your choice. '
+      + '<span class="frame">There is no gotcha &mdash; pick the wording that keeps both people safe to talk.</span>';
+  } else {
+    // already answered: re-show the resolved state
+    reveal(false);
+  }
+}
+
+// which visible side (A/B) currently holds the de-escalating statement
+function deescalatingSide(){ return pairs[idx].iOnLeft ? 'A' : 'B'; }
+
+function reveal(scoreThis, pickedSide){
+  const p = pairs[idx];
+  const good = deescalatingSide();
+  const goodCard = good === 'A' ? cardA : cardB;
+  const badCard  = good === 'A' ? cardB : cardA;
+
+  goodCard.classList.add('correct'); goodCard.classList.add('disabled');
+  badCard.classList.add('wrong'); badCard.classList.add('disabled');
+
+  (good === 'A' ? el('skillA') : el('skillB')).innerHTML = skillLabel(p.skill) + ' &mdash; de-escalates';
+  (good === 'A' ? el('skillB') : el('skillA')).innerHTML = '<span style="color:indianred">Accusatory "you" language &mdash; tends to escalate</span>';
+
+  const correct = (pickedSide === good);
+  let lead;
+  if (!scoreThis) {
+    lead = '<strong>Reviewed.</strong> ';
+  } else if (correct) {
+    lead = '<strong>Correct!</strong> ';
+  } else {
+    lead = '<strong>Good try.</strong> The calmer version is the other card. ';
+  }
+  box.innerHTML = lead + 'The de-escalating version uses <strong>' + p.skill + '</strong>. ' + p.explanation
+    + ' <span class="frame">Score: ' + score + ' of ' + pairs.length + '.</span>';
+}
+
+function choose(side){
+  if (answered[idx] !== null) return; // lock after first answer
+  const correct = (side === deescalatingSide());
+  answered[idx] = correct;
+  if (correct) score++;
+  updateChart();
+  reveal(true, side);
+  nextBtn.disabled = (idx === pairs.length - 1);
+}
+
+cardA.addEventListener('click', () => choose('A'));
+cardB.addEventListener('click', () => choose('B'));
+
+// hover preview of the skill category (before committing)
+function hoverPreview(side, on){
+  if (answered[idx] !== null) return;
+  const skillEl = side === 'A' ? el('skillA') : el('skillB');
+  if (!on) { skillEl.innerHTML = ''; return; }
+  const isI = (side === deescalatingSide());
+  skillEl.innerHTML = isI
+    ? skillLabel(pairs[idx].skill)
+    : '<span style="color:indianred">Blaming "you" language</span>';
+}
+cardA.addEventListener('mouseenter', () => hoverPreview('A', true));
+cardA.addEventListener('mouseleave', () => hoverPreview('A', false));
+cardB.addEventListener('mouseenter', () => hoverPreview('B', true));
+cardB.addEventListener('mouseleave', () => hoverPreview('B', false));
+
+prevBtn.addEventListener('click', () => { if (idx > 0) { idx--; render(); } });
+nextBtn.addEventListener('click', () => { if (idx < pairs.length - 1) { idx++; render(); } });
+
+render();
+updateChart();
+</script>
+</body>
+</html>

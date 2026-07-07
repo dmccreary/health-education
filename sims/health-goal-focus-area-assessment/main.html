@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 720 -->
+<title>Where Should My Health Goal Focus?</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; color: #212529; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 18px; margin: 4px 0 2px; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 8px; }
+  .layout { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start; }
+  .chart-box { background: aliceblue; border: 1px solid silver; border-radius: 6px; padding: 8px; flex: 1 1 320px; min-width: 300px; }
+  .chart-container { position: relative; width: 100%; height: 320px; }
+  .controls { flex: 1 1 300px; min-width: 280px; }
+  .ctrl-row { display: grid; grid-template-columns: 118px 1fr 1fr; gap: 6px; align-items: center; margin-bottom: 6px; }
+  .ctrl-head { display: grid; grid-template-columns: 118px 1fr 1fr; gap: 6px; font-size: 11px; font-weight: bold; color: navy; margin-bottom: 4px; }
+  .ctrl-head span:nth-child(2) { color: steelblue; }
+  .ctrl-head span:nth-child(3) { color: goldenrod; }
+  .dom-name { font-size: 12px; color: #334155; }
+  .slider-cell { display: flex; align-items: center; gap: 5px; }
+  .slider-cell input[type=range] { flex: 1; min-width: 0; }
+  .val { font-size: 12px; font-weight: bold; width: 14px; text-align: center; color: #334155; }
+  .imp-wrap { margin-top: 8px; padding-top: 6px; border-top: 1px dashed silver; }
+  .imp-row { display: grid; grid-template-columns: 118px 1fr; gap: 6px; align-items: center; margin-bottom: 5px; }
+  .imp-row input[type=range] { accent-color: mediumpurple; }
+  .imp-head { font-size: 11px; font-weight: bold; color: mediumpurple; margin-bottom: 4px; }
+  input[type=range] { accent-color: steelblue; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 54px; }
+  .infobox strong { color: navy; }
+  .ranked { margin-top: 8px; background: #fffdf5; border: 1px solid goldenrod; border-radius: 6px; padding: 8px 10px; }
+  .ranked h4 { font-size: 13px; color: darkorange; margin-bottom: 5px; }
+  .rank-item { display: grid; grid-template-columns: 20px 1fr 70px; gap: 8px; align-items: center; font-size: 12.5px; padding: 3px 0; border-bottom: 1px solid #f0e9d2; }
+  .rank-item:last-child { border-bottom: none; }
+  .rank-item.top { background: #fff4d6; border-radius: 4px; padding: 4px 6px; font-weight: bold; }
+  .rank-num { text-align: center; color: #94a3b8; font-weight: bold; }
+  .rank-item.top .rank-num { color: darkorange; }
+  .bar-cell { position: relative; height: 12px; background: #eee; border-radius: 6px; overflow: hidden; }
+  .bar-fill { position: absolute; left: 0; top: 0; bottom: 0; background: darkorange; border-radius: 6px; }
+  .reflect { margin-top: 8px; }
+  .reflect label { display: block; font-size: 12px; color: navy; font-weight: bold; margin-bottom: 3px; }
+  .reflect textarea { width: 100%; height: 46px; font-family: inherit; font-size: 12.5px; padding: 6px; border: 1px solid silver; border-radius: 4px; resize: vertical; color: #334155; }
+  .source { text-align: center; color: gray; font-size: 11px; margin-top: 8px; }
+</style>
+</head>
+<body>
+<main>
+  <h3>Where Should My Health Goal Focus?</h3>
+  <div class="subtitle">Rate where you are now (blue) and where you want to be (gold). Set how much each area matters. The list picks your top focus.</div>
+
+  <div class="layout">
+    <div class="chart-box">
+      <div class="chart-container"><canvas id="chart"></canvas></div>
+    </div>
+
+    <div class="controls">
+      <div class="ctrl-head"><span>Wellbeing Area</span><span>Now</span><span>Goal</span></div>
+      <div id="ratingRows"></div>
+
+      <div class="imp-wrap">
+        <div class="imp-head">How much does each area matter to me? (1 = a little, 5 = a lot)</div>
+        <div id="importRows"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="infobox" id="infobox">
+    A <strong>gap</strong> is the distance between where you are now and where you want to be. Hover a point on the chart, or move a slider, to see each area's gap. Bigger gaps in areas that matter more to you rise to the top of the focus list.
+  </div>
+
+  <div class="ranked">
+    <h4>Suggested focus order (gap &times; how much it matters)</h4>
+    <div id="rankList"></div>
+  </div>
+
+  <div class="reflect">
+    <label for="why">Do you agree with the top suggestion? Write why or why not:</label>
+    <textarea id="why" placeholder="Example: I agree because sleep affects everything else... / I disagree because right now nutrition feels more urgent for me."></textarea>
+  </div>
+
+  <div class="source">Self-assessment tool. Scores are your own honest ratings (1&ndash;5), not a medical measurement.</div>
+</main>
+<script>
+// Six wellbeing domains
+const domains = [
+  { key: 'activity',  label: 'Physical Activity', now: 3, goal: 4, imp: 3,
+    desc: 'Physical activity means moving your body in ways that make your heart and muscles work, like walking, sports, or dancing.' },
+  { key: 'nutrition', label: 'Nutrition', now: 3, goal: 4, imp: 3,
+    desc: 'Nutrition is about the balance of foods and drinks that give your body energy and the nutrients it needs to grow.' },
+  { key: 'sleep',     label: 'Sleep', now: 2, goal: 4, imp: 4,
+    desc: 'Sleep is the rest your brain and body need each night. Steady, good sleep helps mood, focus, and health.' },
+  { key: 'mental',    label: 'Mental / Emotional', now: 3, goal: 5, imp: 4,
+    desc: 'Mental and emotional health is how you handle feelings and stress. Talking to a trusted adult is a healthy way to get support.' },
+  { key: 'relation',  label: 'Relationships', now: 4, goal: 4, imp: 3,
+    desc: 'Relationships are your connections with family and friends. Kind, honest, respectful connections support your wellbeing.' },
+  { key: 'subfree',   label: 'Substance-Free', now: 4, goal: 5, imp: 3,
+    desc: 'Substance-free choices mean choosing not to use things like tobacco, vaping, or alcohol so your growing body and brain stay healthy.' }
+];
+
+const box = document.getElementById('infobox');
+
+// ---- Build rating sliders (Now + Goal per domain) ----
+const ratingRows = document.getElementById('ratingRows');
+const importRows = document.getElementById('importRows');
+domains.forEach((d, i) => {
+  const row = document.createElement('div');
+  row.className = 'ctrl-row';
+  row.innerHTML =
+    '<span class="dom-name">' + d.label + '</span>' +
+    '<span class="slider-cell"><input type="range" min="1" max="5" step="1" value="' + d.now + '" id="now' + i + '"><span class="val" id="nowv' + i + '">' + d.now + '</span></span>' +
+    '<span class="slider-cell"><input type="range" min="1" max="5" step="1" value="' + d.goal + '" id="goal' + i + '"><span class="val" id="goalv' + i + '">' + d.goal + '</span></span>';
+  ratingRows.appendChild(row);
+
+  const irow = document.createElement('div');
+  irow.className = 'imp-row';
+  irow.innerHTML =
+    '<span class="dom-name">' + d.label + '</span>' +
+    '<span class="slider-cell"><input type="range" min="1" max="5" step="1" value="' + d.imp + '" id="imp' + i + '"><span class="val" id="impv' + i + '">' + d.imp + '</span></span>';
+  importRows.appendChild(irow);
+});
+
+// ---- Chart ----
+const ctx = document.getElementById('chart').getContext('2d');
+const chart = new Chart(ctx, {
+  type: 'radar',
+  data: {
+    labels: domains.map(d => d.label),
+    datasets: [
+      { label: 'Where I am now', data: domains.map(d => d.now),
+        backgroundColor: 'rgba(70,130,180,0.35)', borderColor: 'steelblue',
+        pointBackgroundColor: 'steelblue', pointRadius: 4, borderWidth: 2 },
+      { label: 'Where I want to be', data: domains.map(d => d.goal),
+        backgroundColor: 'rgba(218,165,32,0.25)', borderColor: 'goldenrod',
+        pointBackgroundColor: 'goldenrod', pointRadius: 4, borderWidth: 2 }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    scales: {
+      r: {
+        min: 0, max: 5,
+        ticks: { stepSize: 1, backdropColor: 'transparent', color: '#94a3b8', font: { size: 10 } },
+        pointLabels: { font: { size: 11 }, color: '#334155' },
+        grid: { color: '#dbe4ef' }, angleLines: { color: '#dbe4ef' }
+      }
+    },
+    plugins: {
+      legend: { position: 'top', labels: { font: { size: 12 }, boxWidth: 14 } },
+      tooltip: { callbacks: {
+        title: items => domains[items[0].dataIndex].label,
+        label: c => c.dataset.label + ': ' + c.parsed.r,
+        afterBody: items => {
+          const i = items[0].dataIndex;
+          const gap = Math.max(0, domains[i].goal - domains[i].now);
+          return 'Gap (goal - now): ' + gap;
+        }
+      }, bodyFont: { size: 11 } }
+    },
+    onClick: (e, els) => { if (els.length) showDomain(els[0].index); }
+  }
+});
+
+function showDomain(i) {
+  const d = domains[i];
+  const gap = Math.max(0, d.goal - d.now);
+  box.innerHTML = '<strong>' + d.label + '</strong> &mdash; ' + d.desc +
+    ' Your gap here is <strong>' + gap + '</strong> and you rated its importance <strong>' + d.imp + '</strong>.';
+}
+
+// ---- Recompute everything on any slider move ----
+function recompute() {
+  domains.forEach((d, i) => {
+    d.now  = +document.getElementById('now'  + i).value;
+    d.goal = +document.getElementById('goal' + i).value;
+    d.imp  = +document.getElementById('imp'  + i).value;
+    document.getElementById('nowv'  + i).textContent = d.now;
+    document.getElementById('goalv' + i).textContent = d.goal;
+    document.getElementById('impv'  + i).textContent = d.imp;
+  });
+  // update chart
+  chart.data.datasets[0].data = domains.map(d => d.now);
+  chart.data.datasets[1].data = domains.map(d => d.goal);
+  chart.update();
+  renderRank();
+}
+
+// ---- Ranked priority list: score = gap * importance ----
+function renderRank() {
+  const scored = domains.map(d => {
+    const gap = Math.max(0, d.goal - d.now);
+    return { label: d.label, gap: gap, imp: d.imp, score: gap * d.imp };
+  });
+  scored.sort((a, b) => b.score - a.score);
+  const maxScore = Math.max(1, scored[0].score);
+  const list = document.getElementById('rankList');
+  list.innerHTML = '';
+  scored.forEach((s, idx) => {
+    const item = document.createElement('div');
+    item.className = 'rank-item' + (idx === 0 && s.score > 0 ? ' top' : '');
+    const pct = Math.round((s.score / maxScore) * 100);
+    const scoreTxt = s.score > 0 ? ('score ' + s.score) : 'no gap';
+    item.innerHTML =
+      '<span class="rank-num">' + (idx + 1) + '</span>' +
+      '<span>' + s.label + ' <span style="color:#94a3b8;">(gap ' + s.gap + ' &times; matters ' + s.imp + ')</span></span>' +
+      '<span style="text-align:right;">' + scoreTxt + '</span>';
+    list.appendChild(item);
+
+    const barRow = document.createElement('div');
+    barRow.className = 'rank-item';
+    barRow.style.gridTemplateColumns = '20px 1fr';
+    barRow.style.borderBottom = 'none';
+    barRow.style.paddingTop = '0';
+    barRow.innerHTML = '<span></span><span class="bar-cell"><span class="bar-fill" style="width:' + pct + '%;"></span></span>';
+    list.appendChild(barRow);
+  });
+
+  // Infobox suggestion when a clear top area exists
+  if (scored[0].score > 0) {
+    box.innerHTML = 'Your suggested focus area is <strong>' + scored[0].label +
+      '</strong>. It has the biggest gap in an area you said matters to you. A good goal is specific and something you can start this week.';
+  } else {
+    box.innerHTML = 'Right now every area is at or above your goal &mdash; nice work! Try raising a goal slider to challenge yourself, then see which area to focus on.';
+  }
+}
+
+// Wire up all sliders
+domains.forEach((d, i) => {
+  document.getElementById('now'  + i).addEventListener('input', recompute);
+  document.getElementById('goal' + i).addEventListener('input', recompute);
+  document.getElementById('imp'  + i).addEventListener('input', recompute);
+});
+
+renderRank();
+</script>
+</body>
+</html>

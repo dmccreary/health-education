@@ -1,0 +1,23 @@
+{
+  "title": "The Social Pain of Exclusion",
+  "description": "Students analyze a short scenario log of repeated exclusion and distinguish its cumulative mental health effects from a single isolated incident.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "social-pain-of-exclusion",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine, distinguish, differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Stigma, Bias, and Brain Health",
+  "chapter_dir": "05-stigma-bias-and-brain-health",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/05-stigma-bias-and-brain-health"
+}

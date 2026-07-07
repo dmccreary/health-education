@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>When To Seek Help Decision Sorter</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>When To Seek Help Decision Sorter</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> when-to-seek-help-decision-sorter</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
+            <p><strong>Learning Objective:</strong> Students evaluate a set of symptom scenarios and judge whether each calls for resting at home, telling an adult and seeing a doctor soon, or seeking emergency help immediately.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** when-to-seek-help-decision-sorter<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Evaluate (L5)
+    Bloom Taxonomy Verb: judge, assess, prioritize
+    
+    Learning objective: Students evaluate a set of symptom scenarios and judge whether each calls for resting at home, telling an adult and seeing a doctor soon, or seeking emergency help immediately.
+    
+    Canvas layout: Left (450px) scenario card; right (200px) three sorting buttons ("Rest At Home", "Tell An Adult Soon", "Emergency — Act Now") and a feedback panel.
+    
+    Visual elements: Scenario card with plain-language description; three response buttons; feedback panel with calm, reassuring reasoning after each choice.
+    
+    Interactive controls: Click a button to answer; "Why?" button reveals reasoning; "Next Scenario" cycles through a bank of 9 scenarios covering mild illness, worsening illness, chronic-condition flare-ups, and emergencies.
+    
+    Default parameters: Starts on "You have a mild runny nose and feel a little tired."
+    
+    Behavior: The runny-nose scenario sorted as "Rest At Home" reveals "Mild cold symptoms usually just need rest, fluids, and time — but still mention it to a trusted adult." A three-day worsening fever sorted as "Tell An Adult Soon" explains why prolonged symptoms need attention. A friend with asthma wheezing and unable to catch their breath sorted as "Emergency — Act Now" explains why a chronic condition suddenly out of control is an emergency.
+    
+    Instructional Rationale: Evaluate-level objective requiring judgment and prioritization, so the pattern is a judgment task with reasoning-based feedback rather than a timed game.
+    
+    Implementation notes: p5.js; scenarios stored as objects with description, correct category, and explanation string; tone stays calm and non-alarmist.
+    -->
+</body>
+</html>

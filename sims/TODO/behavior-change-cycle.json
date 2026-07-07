@@ -1,0 +1,15 @@
+{
+  "sim_id": "behavior-change-cycle",
+  "diagram_name": "The Behavior-Change Cycle",
+  "chapter_number": 15,
+  "chapter_title": "Health Promotion and Behavior Change",
+  "chapter_dir": "15-health-promotion-and-behavior-change",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/15-health-promotion-and-behavior-change",
+  "library": "Mermaid",
+  "bloom_level": "Apply<br/>",
+  "bloom_verb": "use, demonstrate",
+  "learning_objective": "Apply the four-step behavior-change cycle (evaluate",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n\n**sim-id:** behavior-change-cycle<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply<br/>\nBloom Taxonomy Verb: use, demonstrate\n\nLearning objective: Apply the four-step behavior-change cycle (evaluate\nsupports, evaluate barriers, adapt the behavior, evaluate impact) to a\nrealistic personal health practice, tracing how each step feeds the next.\n\nPurpose: Give learners a persistent visual anchor for the cycle, using\nJordan's active-commute scenario as the worked example at every step, and\nshowing the cycle looping rather than ending.\n\nVisual style: Mermaid flowchart, four sequential nodes arranged in a closed\nloop; every node has a click handler.\n\nSteps:\n1. \"Evaluate Supports\" — click: \"Jordan identifies what already helps: a\n   safe sidewalk for most of the route, a bike, a friend who lives nearby\n   and also wants to walk, and a school that allows early arrival.\"\n2. \"Evaluate Barriers\" — click: \"Jordan identifies what gets in the way:\n   one busy intersection with no crosswalk, mornings when it's raining,\n   and a heavier backpack on test days.\"\n3. \"Adapt the Behavior\" — click: \"Jordan changes the plan to work with\n   supports and around barriers: walk with the friend on clear days, get a\n   ride only on rain days, and leave a spare set of test-day materials at\n   school to lighten the backpack.\"\n4. \"Evaluate Impact\" — click: \"After three weeks, Jordan checks: did\n   stress before first period actually go down? Did the intersection\n   barrier cause any near-misses?\" Loops back to Evaluate Supports for the\n   next adjustment.\n\nColor coding: Four steps in four distinct colors (teal, orange, gold,\npurple) arranged in a circular flow to emphasize that behavior change is an\nongoing cycle, not a single decision.\n\nImplementation: Mermaid flowchart with `click` directives opening an\ninfobox reusing the text above for each node."
+}

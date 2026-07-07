@@ -1,0 +1,23 @@
+{
+  "title": "Safe vs. Unsafe Bystander Response Sorter",
+  "description": "Students evaluate a list of possible bystander responses to a fight or serious bullying situation and judge which responses are safe and effective versus which put the bystander at risk or cause harm.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "safe-bystander-response-sorter",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "judge, assess, justify",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Equity, Belonging, And Bystander Action",
+  "chapter_dir": "04-equity-belonging-and-bystander-action",
+  "chapter_rel_dir": "bands/grade-5/chapters/04-equity-belonging-and-bystander-action"
+}

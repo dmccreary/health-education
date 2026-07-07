@@ -1,0 +1,15 @@
+{
+  "sim_id": "world-map-self-regulation-practices",
+  "diagram_name": "World Map of Cultural Self-Regulation Practices",
+  "chapter_number": 3,
+  "chapter_title": "Mental and Emotional Health",
+  "chapter_dir": "03-mental-emotional-health",
+  "chapter_rel_dir": "bands/grade-4/chapters/03-mental-emotional-health",
+  "library": "Leaflet",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "describe, compare, exemplify",
+  "learning_objective": "Students describe and compare examples of cultural self-regulation practices from around the world, recognizing that calming strong emotions can be done in many valid, culturally rooted ways.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: map\n**sim-id:** world-map-self-regulation-practices<br/>\n**Library:** Leaflet<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: describe, compare, exemplify\n\nLearning objective: Students describe and compare examples of cultural self-regulation practices from around the world, recognizing that calming strong emotions can be done in many valid, culturally rooted ways.\n\nPurpose: Show a respectful sample of cultural self-regulation traditions across regions, reinforcing that no single tradition is the \"correct\" way to self-regulate.\n\nGeographic scope: World map with six marked regions/communities\n\nLocations and examples:\n- South/East Asia: mindfulness meditation traditions\n- West Africa: music and drumming for releasing tension\n- Northern Plains and other Indigenous nations of North America: storytelling and connection to nature\n- Latin America and the Pacific Islands: dance and movement traditions\n- Middle East, South Asia, and worldwide faith communities: prayer and quiet reflection\n- A general \"worldwide\" marker: family-specific blended practices\n\nLegend: A marker icon for each region labeled with the practice name\n\nInteractive features:\n- Click any marker to open an infobox with two to three respectful, factual sentences about that practice and how it helps calm strong emotions\n- A closing note visible after clicking any two markers: \"There are many more traditions than shown here. What matters is finding a calming practice that fits you and your family.\"\n\nColor scheme: Warm, neutral marker colors (soft teal and gold) with no stereotyped imagery\n\nImplementation: Leaflet map with custom markers and click-to-open infobox panels; content reviewed for respectful, non-stereotyping language before publication."
+}

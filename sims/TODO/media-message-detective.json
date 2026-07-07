@@ -1,0 +1,15 @@
+{
+  "sim_id": "media-message-detective",
+  "diagram_name": "Media Message Detective",
+  "chapter_number": 4,
+  "chapter_title": "Personal Safety and Refusal Skills",
+  "chapter_dir": "04-safety-and-refusal-skills",
+  "chapter_rel_dir": "bands/grade-4/chapters/04-safety-and-refusal-skills",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, distinguish, differentiate",
+  "learning_objective": "Students analyze short, realistic media examples (an ad, a game scene, a social post) to identify what the media is trying to influence and whether the influence supports or works against a healthy choice.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** media-message-detective<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: examine, distinguish, differentiate\n\nLearning objective: Students analyze short, realistic media examples (an ad, a game scene, a social post) to identify what the media is trying to influence and whether the influence supports or works against a healthy choice.\n\nCanvas layout:\n- Top (350px): A card showing a short text description of a media example (no real brand names or images, all fictional/generic)\n- Bottom (200px): Two labeled zones, \"Healthy Influence\" and \"Watch Out For This,\" plus a \"Why?\" button\n\nVisual elements:\n- Simple icon representing the media type (TV screen, phone, game controller)\n- Calm color scheme: teal for \"Healthy Influence,\" soft amber for \"Watch Out For This\"\n\nInteractive controls:\n- Drag-and-drop the example card into one of the two zones\n- Button: \"Why?\" reveals a short explanation after sorting\n- Button: \"Next Example\"\n\nDefault parameters:\n- 8 example cards, shown one at a time in random order\n\nData Visibility Requirements:\n  Stage 1: Show the media example text in full\n  Stage 2: Show the two sorting zones\n  Stage 3: After sorting, show a short explanation of what the media example was trying to influence and why it fits that zone\n  Final: Show how many examples were sorted, with an option to revisit any of them\n\nBehavior:\n- Every sort (correct or not) is followed by the explanation, framed as a learning moment rather than a scored test\n- Examples include: an ad making candy look exciting, a show where a character asks a trusted adult for advice, a game that encourages taking a break every hour, a post that makes staying up very late look \"normal\" and fun\n\nInstructional Rationale: This is an Analyze-level objective requiring learners to examine media examples and distinguish healthy influence from influence that undermines healthy choices. A sorting activity with an explanation for every answer keeps the focus on reasoning rather than memorized rules.\n\nImplementation notes: Use p5.js. Keep every example fictional and generic (no real brand, show, or platform names) so the activity stays evergreen and appropriate for classroom use."
+}

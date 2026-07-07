@@ -1,0 +1,15 @@
+{
+  "sim_id": "relationship-structure-mapper",
+  "diagram_name": "Mapping Your Relationship Structures",
+  "chapter_number": 2,
+  "chapter_title": "Relationships and Respect",
+  "chapter_dir": "02-relationships-and-respect",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/02-relationships-and-respect",
+  "library": "vis-network",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "classify, exemplify",
+  "learning_objective": "Students classify a set of example people into",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n\n**sim-id:** relationship-structure-mapper<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Understand (L2)\nBloom Verb: classify, exemplify\n\nLearning objective: Students classify a set of example people into\nrelationship-structure categories (friendship, chosen family, biological\nfamily, blended family, dating, committed partnership) and see how one\nperson can sit inside several structures at once.\n\nNode types:\n1. Central \"You\" node (gold circle, fixed position)\n2. Relationship nodes (colored by category: blue = friendship, green =\n   family, purple = romantic, orange = chosen family/mentor)\n\nEdge types:\n- Solid edge: currently active relationship\n- Dashed edge: distant or infrequent-contact relationship, still real\n\nSample data: 10 example relationship nodes (a best friend, a sibling, a\nstep-parent, a grandparent raising the student, a dating partner, a\nsame-sex partner example, a coach acting as mentor, an online friend, a\ncousin, a family friend treated as \"chosen family\")\n\nLayout: Force-directed, \"You\" node fixed at center\n\nInteractive features:\n- Hover a node: shows a short definition of that relationship category\n- Click a node: opens a side panel with a one-paragraph description of\n  that structure and why it counts as a legitimate relationship\n- Drag: nodes can be repositioned; layout re-settles\n- Zoom/pan enabled\n\nLegend: color key for the four category colors, line-style key for\nactive vs. distant relationships\n\nImplementation: vis-network with a fixed center node and physics-enabled\nchild nodes"
+}

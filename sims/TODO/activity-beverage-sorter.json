@@ -1,0 +1,15 @@
+{
+  "sim_id": "activity-beverage-sorter",
+  "diagram_name": "Choose the Right Drink",
+  "chapter_number": 4,
+  "chapter_title": "Food And Nutrition",
+  "chapter_dir": "04-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-3/chapters/04-food-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "apply, demonstrate, practice",
+  "learning_objective": "Students apply knowledge of beverages for physical activity by matching drink choices to activity scenarios (recess, long practice, after activity, everyday).",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** activity-beverage-sorter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: apply, demonstrate, practice\n\nLearning objective: Students apply knowledge of beverages for physical activity by matching drink choices to activity scenarios (recess, long practice, after activity, everyday).\n\nCanvas layout:\n- Left side (400px): Four scenario cards shown one at a time (recess/gym class, long hot-weather practice, after activity feeling hungry, just relaxing at home)\n- Right side (200px): Row of drink icons (water bottle, milk carton, sports drink, soda, energy drink)\n\nVisual elements:\n- Scenario illustration changes with each card\n- Drink icons remain constant across scenarios\n\nInteractive controls:\n- Click the drink icon that best matches the current scenario\n- Button: \"Next Scenario\"\n- Button: \"Reset\"\n\nDefault parameters:\n- Starts on the \"recess or gym class\" scenario\n\nData Visibility Requirements:\n  Stage 1: Show the scenario illustration and all drink icon options\n  Stage 2: After a choice is made, reveal whether it was the best choice and a one-sentence reason (e.g., \"Water is the best choice for regular recess — your body just needs its fluids back.\")\n  Stage 3: Advancing to the next scenario resets the choice and shows a new situation\n\nBehavior:\n- Best-choice selections get a checkmark and a short reason\n- Less ideal choices get a gentle explanation of why water (or milk, after activity) is usually better\n- After all four scenarios are complete, a \"Hydration Helper!\" caption appears\n\nInstructional Rationale: This is an Apply-level objective (apply, demonstrate), so the design uses a scenario-matching pattern where students actively apply the water-first principle to new situations, rather than just reading a rule.\n\nImplementation notes: Use p5.js. Keep scenario art simple and recognizable. This MicroSim is the direct student practice activity for this K-3 chapter."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "macronutrient-explorer",
+  "diagram_name": "Macronutrient Explorer",
+  "chapter_number": 1,
+  "chapter_title": "Food and Nutrition",
+  "chapter_dir": "01-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-4/chapters/01-food-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, classify, exemplify",
+  "learning_objective": "Students explain the job of each macronutrient (carbohydrates, protein, fats) and classify example foods under the correct macronutrient category.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** macronutrient-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, classify, exemplify\n\nLearning objective: Students explain the job of each macronutrient (carbohydrates, protein, fats) and classify example foods under the correct macronutrient category.\n\nPurpose: Help students connect each macronutrient's function in the body to real, familiar foods that supply it.\n\nLayout: Three large labeled columns — Carbohydrates, Protein, Fats — each topped with an icon (a wheat stalk, a muscle, a droplet).\n\nInteractive elements:\n- Click a column header to open an infobox describing that macronutrient's main job in the body in one or two sentences\n- A tray of 12 food icons (bread, rice, apple, chicken, egg, beans, fish, milk, avocado, nuts, olive oil, pasta) below the columns; drag or click each food onto the column it belongs to\n- Correct placement shows a short confirmation (\"Bread is a carbohydrate — it gives you fast energy!\"); incorrect placement gives a gentle hint and lets the student try again\n- A progress counter shows how many of the 12 foods have been correctly sorted\n\nVisual style: Flat, colorful icons with rounded column cards\n\nColor scheme: Carbohydrates = gold, Protein = red-orange, Fats = light green\n\nResponsive behavior: Columns stack vertically on narrow screens; food tray becomes a horizontal scroll strip\n\nImplementation: p5.js with an array of food objects (name, correct category, icon, fact) driving drag-and-drop or click-to-place sorting logic."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "peer-relationship-sorter",
+  "diagram_name": "Sort the Peer Relationship",
+  "chapter_number": 1,
+  "chapter_title": "Health Basics, Friendships, and Feelings",
+  "chapter_dir": "01-health-friendships-feelings",
+  "chapter_rel_dir": "bands/grade-2/chapters/01-health-friendships-feelings",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "classify, compare, contrast",
+  "learning_objective": "Students classify short everyday scenes into the correct type of peer relationship (classmate, friend, teammate, neighbor/cousin) and compare what makes each type similar or different.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** peer-relationship-sorter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: classify, compare, contrast\n\nLearning objective: Students classify short everyday scenes into the correct type of peer relationship (classmate, friend, teammate, neighbor/cousin) and compare what makes each type similar or different.\n\nCanvas layout:\n- Top area (150px): One short illustrated scene at a time (e.g., two children sharing a reading table, two children building a blanket fort together, a soccer team huddled before a game, two cousins playing at a family picnic)\n- Middle area (250px): Four labeled bins: \"Classmate,\" \"Friend,\" \"Teammate,\" \"Neighbor/Cousin\"\n- Bottom strip (100px): Explanation caption and \"Next Scene\" button\n\nVisual elements:\n- 8 simple scenes cycling one at a time, flat friendly illustration style, evenly covering all four relationship types\n\nInteractive controls:\n- Click or drag the scene into the matching bin\n- Button: \"Next Scene\"\n- Button: \"Reset\"\n\nDefault parameters:\n- First scene: two children sharing a classroom reading table (clear \"Classmate\" example, to build confidence)\n\nData Visibility Requirements:\n  Stage 1: Show the scene with no label\n  Stage 2: After the student picks a bin, show the correct label and a one-sentence reason\n  Stage 3: Show a short compare line such as \"A classmate shares your room. A friend is someone you also choose to be with.\"\n\nBehavior:\n- Correct placement: bin glows, gentle chime, reason caption appears\n- Incorrect placement: calm prompt, \"Look again — where do these two children usually spend time together?\"\n- After all scenes, a summary caption reminds students that one person can be more than one type of peer at the same time (a teammate can also be a friend)\n\nInstructional Rationale: Classifying and comparing types of peer relationships is an Understand-level task, so the pattern uses step-through scenes with a revealed reason and comparison line rather than animation. This matches the Grade 2 benchmark shift toward comparison, not just naming a single peer relationship.\n\nImplementation notes: Use p5.js. Keep scenes warm and inclusive of different family and cultural configurations (cousins, multigenerational households, blended families). Large text for read-aloud."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "neighborhood-activity-resource-comparator",
+  "diagram_name": "Neighborhood Physical Activity Resource Comparator",
+  "chapter_number": 8,
+  "chapter_title": "Health Equity and Disease Prevention",
+  "chapter_dir": "08-health-equity-and-disease-prevention",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/08-health-equity-and-disease-prevention",
+  "library": "Chart.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "compare, examine, differentiate",
+  "learning_objective": "Students compare physical activity infrastructure\n(park acreage, lit sidewalks, recreation programs, perceived safety) across",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: chart\n\n**sim-id:** neighborhood-activity-resource-comparator<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: compare, examine, differentiate\n\nLearning objective: Students compare physical activity infrastructure\n(park acreage, lit sidewalks, recreation programs, perceived safety) across\nthree representative neighborhood income tiers and analyze how the gaps\ntranslate into unequal opportunity.\n\nChart type: Grouped bar chart with a neighborhood-tier selector\n\nPurpose: Show how park acreage per 1,000 residents, percentage of streets\nwith sidewalks, number of free/low-cost recreation programs, and a\nresident-reported safety score differ across representative\nhigher-income, middle-income, and lower-income neighborhood tiers, using\nrealistic composite data drawn from published park-access and community\nhealth research patterns\n\nX-axis: Four resource categories (Park Acreage per 1,000 Residents,\nPercent Streets with Sidewalks, Free/Low-Cost Recreation Programs,\nResident Safety Score out of 10)\n\nY-axis: Normalized value per category (0-10 scale for comparability)\n\nData series (toggleable):\n1. Higher-Income Neighborhood Tier (green bars): Park acreage 8, sidewalks\n   9, programs 7, safety 8\n2. Middle-Income Neighborhood Tier (gold bars): Park acreage 5, sidewalks\n   6, programs 4, safety 6\n3. Lower-Income Neighborhood Tier (orange-red bars): Park acreage 2,\n   sidewalks 3, programs 2, safety 4\n\nTitle: \"Physical Activity Resources by Neighborhood Income Tier\"\nLegend: top-right, click a tier's legend entry to show/hide that series\n\nInteractive features:\n- Hover any bar: tooltip shows exact category, tier, and value with a\n  one-sentence explanation of what that value represents in real terms\n- Click a legend entry to toggle a tier on/off for direct comparison\n- Dropdown: highlight one category across all three tiers at once\n\nAnnotations: callout on the Park Acreage category noting \"Gaps like this\nare shaped by zoning and investment decisions, not resident preference\"\n\nImplementation: Chart.js grouped bar chart with legend-click toggling and\ncustom tooltip callback"
+}

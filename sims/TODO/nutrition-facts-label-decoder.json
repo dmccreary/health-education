@@ -1,0 +1,15 @@
+{
+  "sim_id": "nutrition-facts-label-decoder",
+  "diagram_name": "Nutrition Facts Label Decoder",
+  "chapter_number": 1,
+  "chapter_title": "Health Foundations and Nutrition",
+  "chapter_dir": "01-health-foundations-and-nutrition",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/01-health-foundations-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, differentiate, deconstruct, organize",
+  "learning_objective": "Students analyze a realistic Nutrition Facts label by identifying and interpreting serving size, %DV, added sugars, and ingredient order to reach an accurate conclusion about a product's nutritional content.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** nutrition-facts-label-decoder<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: examine, differentiate, deconstruct, organize\n\nLearning objective: Students analyze a realistic Nutrition Facts label by identifying and interpreting serving size, %DV, added sugars, and ingredient order to reach an accurate conclusion about a product's nutritional content.\n\nLayout: Left side shows a realistic Nutrition Facts label (serving size 2.5 servings per container, calories, %DV column, total sugars 22g versus added sugars 18g, ingredient list with high fructose corn syrup second); right side holds an infobox panel plus a running \"Decoding Checklist.\"\n\nInteractive controls: Click serving size for an infobox on per-serving math; click the %DV column for the 5%/20% high-low rule applied to this label's numbers; click the added sugars line for the 18-of-22-grams breakdown; click the ingredient list for weight-order explanation; button \"Reveal Full Picture\" combines all four insights once all are checked.\n\nInstructional Rationale: Deconstructing a label into parts and reasoning across them is Analyze-level, so click-to-reveal component analysis with a checklist is used instead of animation, keeping every number inspectable at the learner's pace.\n\nImplementation notes: p5.js. Label drawn as static shapes/text with clickable bounding-box regions; explanations stored in a lookup object keyed by region name."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "conflict-resolution-role-play-simulator",
+  "diagram_name": "Conflict Resolution Role-Play Simulator",
+  "chapter_number": 7,
+  "chapter_title": "Health Skills And Goal Setting",
+  "chapter_dir": "07-health-skills-and-goal-setting",
+  "chapter_rel_dir": "bands/grade-5/chapters/07-health-skills-and-goal-setting",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate, practice, use",
+  "learning_objective": "Students demonstrate the five-step conflict-resolution process by choosing the best response at each stage of a branching peer conflict scenario.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** conflict-resolution-role-play-simulator<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: demonstrate, practice, use\n\nLearning objective: Students demonstrate the five-step conflict-resolution process by choosing the best response at each stage of a branching peer conflict scenario.\n\nCanvas layout: Left (450px) scenario text and current stage; right (200px) 2-3 response choice buttons and a feedback panel showing which conflict-resolution step is in play.\n\nVisual elements: Scenario card (e.g., \"Two students both believe they were assigned the same job in a group project and are getting frustrated\"); stage indicator showing which of the 5 steps is active (Stay Calm, Say What Happened, Listen, Find a Solution, Follow Through).\n\nInteractive controls: Click a response choice at each stage; \"See Result\" advances to the next stage with feedback; \"Try Again\" restarts the same scenario; \"New Scenario\" loads one of 4 total conflict scenarios (group project, shared recess equipment, sibling chores, seating disagreement).\n\nDefault parameters: Scenario 1 loads first, Stage 1 active.\n\nBehavior: Choosing \"Take a breath and say 'let's figure this out'\" at Stage 1 advances with feedback \"Good — staying calm keeps the conflict from getting bigger.\" Choosing a blaming response shows \"This raises tension instead of resolving it — try again.\"\n\nInstructional Rationale: Apply-level objective, so the simulator has the student practice choosing and sequencing real responses rather than only reading about the steps.\n\nImplementation notes: p5.js; each scenario stored as a branching stage array with choices, correctness flags, and feedback text; track and display which of the 5 steps the student is currently demonstrating."
+}

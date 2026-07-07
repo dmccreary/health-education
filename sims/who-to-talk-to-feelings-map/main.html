@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Who Can I Talk To About My Feelings?</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Who Can I Talk To About My Feelings?</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> who-to-talk-to-feelings-map</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Remember (L1)</p>
+            <p><strong>Learning Objective:</strong> Students identify trusted people they can talk to about hard feelings by exploring a support-network map centered on themselves.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: graph-model
+    **sim-id:** who-to-talk-to-feelings-map<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Remember (L1)
+    Bloom Taxonomy Verb: identify, recall, recognize
+    
+    Learning objective: Students identify trusted people they can talk to about hard feelings by exploring a support-network map centered on themselves.
+    
+    Purpose: Reinforce that help for emotional struggles is close by, using the same hub-and-spoke pattern as the trusted-adult map from Chapter 2, now applied specifically to feelings.
+    
+    Node types: Center node "Me" (soft yellow circle); trusted-person nodes (soft blue circles) connected to "Me" — Parent/Guardian, Teacher, School Counselor, School Nurse, Another Trusted Family Member, Close Friend.
+    
+    Edge types: A line connecting "Me" to each trusted person, labeled with the kind of help offered (e.g., "Helps me think it through," "Knows calming strategies," "Listens without judging").
+    
+    Layout: Radial/hub layout with "Me" in the center.
+    
+    Interactive features: Click any trusted-person node to reveal an infobox naming who they are and an example thing to say to them. Click the center "Me" node to reveal: "You can talk to more than one person, more than once." Drag, zoom, and pan supported.
+    
+    Visual styling: Warm palette, simple circle shapes, no realistic depictions of people.
+    
+    Implementation: vis-network with click-to-reveal infobox panels.
+    -->
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "sim_id": "foods-around-the-world",
+  "diagram_name": "Foods Around the World",
+  "chapter_number": 1,
+  "chapter_title": "Health and Food",
+  "chapter_dir": "01-health-and-food",
+  "chapter_rel_dir": "bands/kindergarten/chapters/01-health-and-food",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "recognize, connect, classify",
+  "learning_objective": "Students recognize that foods from many cultural traditions belong to the same five food groups, connecting Cultural Food Tradition to Food Group.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** foods-around-the-world<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: recognize, connect, classify\n\nLearning objective: Students recognize that foods from many cultural traditions belong to the same five food groups, connecting Cultural Food Tradition to Food Group.\n\nPurpose and main message: Show six foods from different cultural traditions around a circle, with a click revealing which food group(s) each belongs to.\n\nLayout: A circle of six large, simple food illustrations (rice, tortilla, injera flatbread, lefse, dumpling, hummus with pita), each with a small flag or pattern motif hinting at its tradition of origin, arranged around a central image of a smiling family sharing a meal.\n\nInteractive elements:\n- Click or tap any food image to open a simple infobox with: the food's name, one sentence naming a culture/region connected to it, and which food group(s) it belongs to (shown as a colored badge matching the food-group colors used in the Food Group Sorting Game)\n- Hover highlights the food with a soft glow before clicking\n\nData to display per food:\n- Rice — many cultures worldwide — Grains Group\n- Tortilla — Mexican and Central American tradition — Grains Group\n- Injera — Ethiopian tradition — Grains Group\n- Lefse — Norwegian tradition — Grains Group\n- Dumpling — Chinese and Eastern European traditions — Grains Group and Protein Foods Group (meat-filled varieties)\n- Hummus with pita — Middle Eastern tradition — Protein Foods Group and Grains Group\n\nColor coding: Reuse the same food-group color key from the Food Group Sorting Game (tan for Grains, brown for Protein Foods) so the two MicroSims reinforce each other.\n\nResponsive behavior: Circle layout collapses to a vertical stack of food cards on narrow screens.\n\nImplementation: p5.js canvas with click-region detection for each food image; infobox rendered as a text panel below the circle."
+}

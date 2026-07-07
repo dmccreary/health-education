@@ -1,0 +1,23 @@
+{
+  "title": "How Physical Activity Helps Your Whole Day",
+  "description": "Students recall and identify the different benefits of physical activity by exploring a simple bar chart showing how many classmates in a pretend survey named each benefit.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "how-physical-activity-helps-your-whole-day",
+  "library": "Chart.js",
+  "bloomLevel": "Remember (L1)",
+  "bloomVerb": "recall, identify, name",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Healthy Habits, Activity, and Germs",
+  "chapter_dir": "05-healthy-habits",
+  "chapter_rel_dir": "bands/grade-1/chapters/05-healthy-habits"
+}

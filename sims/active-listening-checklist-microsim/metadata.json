@@ -1,0 +1,38 @@
+{
+  "title": "Are You Listening Actively?",
+  "description": "Students apply active listening behaviors by selecting which actions in a short scenario show active listening.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "active-listening-checklist-microsim",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate, practice, use",
+  "completion_status": "scaffold",
+  "chapter_number": 7,
+  "chapter_title": "Influences, Decisions, and Personal Goals",
+  "chapter_dir": "07-influences-decisions-goals",
+  "chapter_rel_dir": "bands/grade-2/chapters/07-influences-decisions-goals",
+  "educational": {
+    "gradeLevel": "Grade 2",
+    "subjectArea": "Health Education",
+    "topic": "Influences, Decisions, and Personal Goals",
+    "learningObjectives": [
+      "Students apply active listening behaviors by selecting which actions in a short scenario show active listening."
+    ],
+    "bloomLevel": "Apply (L3)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "demonstrate, practice, use",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Apply-level objective through direct interaction rather than passive reading."
+  }
+}

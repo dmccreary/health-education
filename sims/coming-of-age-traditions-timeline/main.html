@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 410 -->
+<title>Coming-of-Age Traditions Around the World</title>
+<script src="https://unpkg.com/vis-timeline@7.7.3/standalone/umd/vis-timeline-graph2d.min.js"></script>
+<link href="https://unpkg.com/vis-timeline@7.7.3/styles/vis-timeline-graph2d.min.css" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  #timeline { border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  /* One neutral color per tradition. No color implies ranking or preference. */
+  .vis-item.sunrise    { background-color: #f6d9b0; border-color: darkorange; color: #5a3410; }
+  .vis-item.mitzvah    { background-color: #bcd8f5; border-color: steelblue; color: #10314f; }
+  .vis-item.quince     { background-color: #f3c9cf; border-color: indianred; color: #5a1c24; }
+  .vis-item.elder      { background-color: #bfe3c0; border-color: seagreen; color: #12401a; }
+  .vis-item.family     { background-color: #d9cdf0; border-color: mediumpurple; color: #34215a; }
+  .vis-item { font-size: 12px; font-weight: bold; }
+  .vis-item.vis-dot { border-width: 9px; }
+  .vis-item.vis-line { border-width: 2px; }
+  .vis-labelset .vis-label { color: #334155; font-size: 11px; }
+  .row { display: flex; gap: 8px; margin-top: 8px; align-items: stretch; }
+  .infobox { flex: 2; background: #f8fafc; border-left: 4px solid seagreen; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 92px; }
+  .infobox strong { color: navy; }
+  .infobox .icon { font-size: 15px; }
+  .closing { flex: 1; background: #f4faf4; border: 1px dashed seagreen; border-radius: 4px; padding: 8px 10px; font-size: 12px; color: #2f4f4f; line-height: 1.4; display: flex; align-items: center; opacity: 0.45; transition: opacity 0.4s; }
+  .closing.shown { opacity: 1; }
+</style>
+</head>
+<body>
+<main>
+  <h3>Coming-of-Age Traditions Around the World</h3>
+  <div class="subtitle">Puberty happens to everyone. Different cultures welcome it in different ways. Click any marker to learn more.</div>
+  <div id="timeline"></div>
+  <div class="row">
+    <div class="infobox" id="infobox">Growing up is a life stage that every person around the world goes through. Many cultures mark it with a special tradition. Click a colored marker above to read about one, and see how they honor the same stage of life in their own way.</div>
+    <div class="closing" id="closing">Explore two or more traditions to reveal a closing thought.</div>
+  </div>
+</main>
+<script>
+// Map an age in years to a date so vis-timeline can plot it: age N -> Jan 1 of year 2000+N.
+function age(y){ return new Date(2000 + y, 0, 1); }
+
+// Neutral marker icons only: no religious symbols, clothing, or people.
+const info = {
+  sunrise:  '<span class="icon">&#9728;</span> <strong>Sunrise Ceremony (Apache)</strong> &mdash; usually around ages 12&ndash;13. A multi-day ceremony that honors a young woman coming of age. Family, community members, and traditional songs are all part of welcoming her into this new stage of life.',
+  mitzvah:  '<span class="icon">&#10022;</span> <strong>Bar / Bat Mitzvah (Jewish communities)</strong> &mdash; usually around ages 12&ndash;13. It marks new responsibilities in the community and often follows a period of study. Family and community gather to celebrate the young person taking on this new role.',
+  quince:   '<span class="icon">&#9733;</span> <strong>Quincea&ntilde;era (Latin American communities)</strong> &mdash; celebrated at age 15. Family and community come together to mark a young woman&rsquo;s fifteenth birthday and her step into a new stage of life.',
+  elder:    '<span class="icon">&#127807;</span> <strong>Elder mentorship (many Indigenous nations of North America)</strong> &mdash; the age can vary. Respected community elders share teachings and guidance, welcoming a young person into new responsibilities. The timing depends on the young person and the community.',
+  family:   '<span class="icon">&#9825;</span> <strong>A private family conversation (many cultures worldwide)</strong> &mdash; the age can vary. Some families choose a quieter approach with no public ceremony. A caring talk at home is just as meaningful a way to mark growing up.'
+};
+
+const closingText = 'Every one of these traditions honors the same universal life stage in its own meaningful way. Many families also choose a quiet, private approach, and that is just as meaningful.';
+
+const box = document.getElementById('infobox');
+const closing = document.getElementById('closing');
+const explored = new Set();
+
+// Each tradition gets its own row so markers never overlap. "Age varies" entries
+// are placed at a representative spot and labeled clearly as varying.
+const items = new vis.DataSet([
+  { id: 'sunrise', group: 0, content: 'Sunrise Ceremony', start: age(12.5), type: 'point', className: 'sunrise' },
+  { id: 'mitzvah', group: 1, content: 'Bar / Bat Mitzvah', start: age(12.5), type: 'point', className: 'mitzvah' },
+  { id: 'quince',  group: 2, content: 'Quinceañera',   start: age(15),   type: 'point', className: 'quince' },
+  { id: 'elder',   group: 3, content: 'Elder mentorship (age varies)', start: age(13), type: 'point', className: 'elder' },
+  { id: 'family',  group: 4, content: 'Private family talk (age varies)', start: age(13), type: 'point', className: 'family' }
+]);
+const groups = new vis.DataSet([
+  { id: 0, content: 'Apache' },
+  { id: 1, content: 'Jewish' },
+  { id: 2, content: 'Latin American' },
+  { id: 3, content: 'Indigenous nations' },
+  { id: 4, content: 'Many cultures' }
+]);
+const options = {
+  min: age(10), max: age(16), start: age(10), end: age(16),
+  zoomable: false, moveable: false, showCurrentTime: false, selectable: true, stack: false,
+  margin: { item: 8, axis: 12 },
+  format: { minorLabels: (d) => 'Age ' + (typeof d.getFullYear === 'function' ? d.getFullYear() : d.year()) % 100, majorLabels: () => '' },
+  timeAxis: { scale: 'year', step: 1 }
+};
+const tl = new vis.Timeline(document.getElementById('timeline'), items, groups, options);
+
+function reveal(id){
+  if (!info[id]) return;
+  box.innerHTML = info[id];
+  explored.add(id);
+  if (explored.size >= 2 && !closing.classList.contains('shown')) {
+    closing.textContent = closingText;
+    closing.classList.add('shown');
+  }
+}
+tl.on('select', (p) => { if (p.items.length) reveal(p.items[0]); });
+tl.on('click',  (p) => { if (p.item) reveal(p.item); });
+</script>
+</body>
+</html>

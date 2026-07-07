@@ -1,0 +1,38 @@
+{
+  "title": "Healthy Versus Unhealthy Pattern Sorter",
+  "description": "Students evaluate short relationship scenarios (family, friend, or romantic) to judge whether each reflects a healthy characteristic, an unhealthy pattern, or a single non-pattern moment.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "healthy-unhealthy-pattern-sorter",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "judge, assess, differentiate, justify",
+  "completion_status": "scaffold",
+  "chapter_number": 2,
+  "chapter_title": "Relationships, Boundaries, and Consent",
+  "chapter_dir": "02-relationships-boundaries-and-consent",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/02-relationships-boundaries-and-consent",
+  "educational": {
+    "gradeLevel": "Grades 6-8",
+    "subjectArea": "Health Education",
+    "topic": "Relationships, Boundaries, and Consent",
+    "learningObjectives": [
+      "Students evaluate short relationship scenarios (family, friend, or romantic) to judge whether each reflects a healthy characteristic, an unhealthy pattern, or a single non-pattern moment."
+    ],
+    "bloomLevel": "Evaluate (L5)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "judge, assess, differentiate, justify",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Evaluate-level objective through direct interaction rather than passive reading."
+  }
+}

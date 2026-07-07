@@ -1,0 +1,15 @@
+{
+  "sim_id": "brain-health-factor-explorer",
+  "diagram_name": "Brain Health Factor Explorer",
+  "chapter_number": 7,
+  "chapter_title": "Brain Health, Sleep, and Emergency Care",
+  "chapter_dir": "07-brain-health-sleep-and-emergency-care",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/07-brain-health-sleep-and-emergency-care",
+  "library": "vis-network",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, classify, exemplify",
+  "learning_objective": "Students explain how five modifiable factors (physical",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n\n**sim-id:** brain-health-factor-explorer<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Understand (L2)\nBloom Verb: explain, classify, exemplify\n\nLearning objective: Students explain how five modifiable factors (physical\nactivity, nutrition, cognitive engagement, social connection, avoiding\nharm) support brain health, and classify concrete habits under the correct\nfactor.\n\nNode types:\n1. Central node: \"Brain-Healthy Habits\" (blue circle)\n2. Factor nodes (green squares): Physical Activity, Nutrition, Cognitive\n   Engagement, Social Connection, Avoiding Harm\n3. Example nodes (light circles), 2-3 per factor, drawn from the chapter\n   text (e.g., under Cognitive Engagement: \"Learning a new language\",\n   \"Playing strategy games\")\n4. Mechanism nodes (orange diamonds), one per factor, describing the\n   biological pathway (e.g., \"Increases blood flow and neuron connections\"\n   for Physical Activity)\n\nEdge types:\n- \"Supports Brain Health Through\" (central node to each factor)\n- \"Works By\" (factor to its mechanism node)\n- \"Example\" (factor to its example nodes)\n\nLayout: Radial, central node in the middle, factors surrounding it,\nmechanisms and examples one ring further out\n\nInteractive features:\n- Hover any node: shows a one-sentence description\n- Click a factor node: opens a panel explaining that factor's evidence\n  base in plain language\n- Click a mechanism node: opens a panel explaining the underlying\n  biological pathway\n- Drag, zoom, and pan enabled\n\nLegend: color/shape key for central node, factors, mechanisms, examples\n\nImplementation: vis-network, radial layout, click-triggered side panel\ncontent stored in a JSON lookup keyed by node id"
+}

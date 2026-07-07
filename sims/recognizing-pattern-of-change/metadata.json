@@ -1,0 +1,23 @@
+{
+  "title": "Recognizing a Pattern of Change",
+  "description": "Students analyze short scenario descriptions of a friend's behavior over several weeks and distinguish between an ordinary bad day and a pattern of change that deserves a caring, serious response.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "recognizing-pattern-of-change",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine, distinguish, differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Emotional Well-Being and Mental Health",
+  "chapter_dir": "04-emotional-well-being-and-mental-health",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/04-emotional-well-being-and-mental-health"
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "retail-density-marketing-policy-map",
+  "diagram_name": "Retail Density and Marketing Policy Impact Map",
+  "chapter_number": 12,
+  "chapter_title": "Substance Policy and Law",
+  "chapter_dir": "12-substance-policy-and-law",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/12-substance-policy-and-law",
+  "library": "Leaflet",
+  "bloom_level": "Analyze<br/>",
+  "bloom_verb": "compare",
+  "learning_objective": "Compare hypothetical neighborhoods with differing",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: map\n\n**sim-id:** retail-density-marketing-policy-map<br/>\n**Library:** Leaflet<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze<br/>\nBloom Taxonomy Verb: compare\n\nLearning objective: Compare hypothetical neighborhoods with differing\nretail outlet density and marketing exposure to analyze how availability\npolicy correlates with community-level substance use risk.\n\nGeographic scope: Stylized single-city map with four illustrative\nneighborhoods (not a real city; labeled Neighborhood A-D for instructional\ncomparison)\n\nLocations:\n- Neighborhood A: low outlet density, strict local marketing ordinance\n  (green marker cluster)\n- Neighborhood B: moderate outlet density, standard state marketing rules\n  (yellow marker cluster)\n- Neighborhood C: high outlet density near a school zone, standard state\n  marketing rules (orange marker cluster)\n- Neighborhood D: high outlet density, weak local enforcement of marketing\n  placement rules (red marker cluster)\n\nData represented: Number of alcohol/tobacco retail outlets per square mile,\ndistance from nearest school, and a marketing-exposure index (illustrative\n0-10 scale) for each neighborhood\n\nLegend:\n- Marker color indicates overall risk profile (green = lower, red = higher)\n- Marker size scaled to number of outlets\n\nInteractive features:\n- Click a neighborhood marker cluster to open an infobox showing outlet\n  density, school distance, and marketing-exposure index with a one-sentence\n  policy explanation\n- Toggle layer: show/hide school-zone buffer rings\n- Compare mode: select two neighborhoods to see a side-by-side infobox\n  comparison\n\nColor scheme: Green-yellow-orange-red risk gradient\n\nImplementation: Leaflet.js with custom stylized (non-real-world) tile\noverlay and GeoJSON markers"
+}

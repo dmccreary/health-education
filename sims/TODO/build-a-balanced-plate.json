@@ -1,0 +1,15 @@
+{
+  "sim_id": "build-a-balanced-plate",
+  "diagram_name": "Build a Balanced Plate",
+  "chapter_number": 1,
+  "chapter_title": "Food and Nutrition",
+  "chapter_dir": "01-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-4/chapters/01-food-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Create (L6)",
+  "bloom_verb": "design, construct, plan",
+  "learning_objective": "Students design a balanced meal by selecting and placing foods from different food groups onto a plate, then evaluate whether their plate meets a balanced-meal target.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** build-a-balanced-plate<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Create (L6)\nBloom Taxonomy Verb: design, construct, plan\n\nLearning objective: Students design a balanced meal by selecting and placing foods from different food groups onto a plate, then evaluate whether their plate meets a balanced-meal target.\n\nCanvas layout:\n- Left side (300px): An empty circular plate outline divided into guide sections (vegetables/fruit, protein, grains) plus a small circle for dairy and a cup icon for water\n- Right side (200px): A scrollable tray of 20+ food icons across all food groups, plus a \"Check My Plate\" button\n\nVisual elements:\n- Food icons include: broccoli, carrots, apple, banana, grilled chicken, beans, egg, salmon, brown rice, whole-wheat bread, pasta, milk, yogurt, cheese, nuts, avocado, olive oil, water cup, soda can, candy bar\n\nInteractive controls:\n- Drag or click food icons onto the plate's sections\n- Button: \"Check My Plate\" — evaluates whether the plate includes a source from each major group in reasonable proportion\n- Button: \"Clear Plate\" to start over\n\nDefault parameters:\n- Empty plate at start; no foods pre-placed\n\nBehavior:\n- After \"Check My Plate,\" an infobox explains what the plate does well (\"Great protein choice!\") and what might be missing (\"Try adding a fruit or vegetable.\")\n- If a student places soda or candy as a main component, a gentle note explains that these can be occasional treats but are not part of the balanced-plate foundation\n- Students can keep adjusting and re-checking as many times as they like\n\nInstructional Rationale: Planning a balanced meal is Grade 4's first genuine Create-level benchmark, so the pattern uses an open-ended plate-building tool rather than a fixed right-answer quiz — students construct their own solution and receive formative feedback, matching the Create-level demand of designing an original plan.\n\nImplementation notes: Use p5.js. Keep the plate model flexible enough to accept multiple valid combinations rather than one \"correct\" plate. Store food-group tags on each icon to drive the evaluation logic."
+}

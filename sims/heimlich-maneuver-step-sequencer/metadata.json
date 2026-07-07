@@ -1,0 +1,38 @@
+{
+  "title": "Heimlich Maneuver Step Sequencer",
+  "description": "Students apply the correct sequence of steps for recognizing choking and performing the Heimlich maneuver by arranging steps in order and stepping through a worked scenario.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "heimlich-maneuver-step-sequencer",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate, execute, apply",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Sleep, Fitness, and Emergency Response",
+  "chapter_dir": "06-sleep-fitness-and-emergency-response",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/06-sleep-fitness-and-emergency-response",
+  "educational": {
+    "gradeLevel": "Grades 6-8",
+    "subjectArea": "Health Education",
+    "topic": "Sleep, Fitness, and Emergency Response",
+    "learningObjectives": [
+      "Students apply the correct sequence of steps for recognizing choking and performing the Heimlich maneuver by arranging steps in order and stepping through a worked scenario."
+    ],
+    "bloomLevel": "Apply (L3)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "demonstrate, execute, apply",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Apply-level objective through direct interaction rather than passive reading."
+  }
+}

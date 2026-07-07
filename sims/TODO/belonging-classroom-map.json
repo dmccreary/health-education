@@ -1,0 +1,15 @@
+{
+  "sim_id": "belonging-classroom-map",
+  "diagram_name": "Belonging Classroom Map",
+  "chapter_number": 4,
+  "chapter_title": "Friendship, Uniqueness, and Belonging",
+  "chapter_dir": "04-friendship-and-belonging",
+  "chapter_rel_dir": "bands/grade-1/chapters/04-friendship-and-belonging",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "identify, describe, infer",
+  "learning_objective": "Students identify visible signs that a classroom character feels a sense of belonging (or does not yet) and describe what caring relationship helped create that feeling.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** belonging-classroom-map<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: identify, describe, infer\n\nLearning objective: Students identify visible signs that a classroom character feels a sense of belonging (or does not yet) and describe what caring relationship helped create that feeling.\n\nCanvas layout:\n- Left area (450px): A simple classroom scene with six character icons scattered around tables, the reading corner, and the recess area\n- Right area (150px): Infobox and a \"Show Signs\" toggle button\n\nVisual elements:\n- Six character icons, each with a distinct posture/expression: relaxed and smiling (belonging), hesitating at the edge of a group (not yet belonging), etc.\n- A small \"caring connection\" line appears between a character and a peer or teacher when selected, if one is shown in the scene\n\nInteractive controls:\n- Click each character icon to reveal their belonging status and why\n- Button: \"Show Signs\" (highlights the specific body language/action clue on the selected character)\n- Button: \"Reset\"\n\nDefault parameters:\n- Scene opens with all six characters visible and unselected\n\nData Visibility Requirements:\n  Stage 1: Show the classroom scene with six characters, no labels\n  Stage 2: After a click, highlight the visible clue (posture, action, or expression)\n  Stage 3: Reveal a one-sentence explanation connecting the clue to belonging or to a caring relationship (\"Sam is smiling and sitting with friends — that caring friendship helps Sam feel like they belong.\")\n\nBehavior:\n- Each character reveals a short explanation in the infobox when clicked\n- Encouraging caption appears for \"not yet belonging\" characters describing one small kind action that could help, e.g., \"Inviting Priya to join the game could help her feel like she belongs too.\"\n\nInstructional Rationale: This is an Understand-level (identify/describe) objective, so the MicroSim uses static, clickable scenes with concrete captions rather than continuous animation, letting students infer belonging from visible clues and connect it to a specific caring relationship.\n\nImplementation notes: Use p5.js. Keep every character's situation gentle and fixable — no character should look excluded in a distressing way, only in a way that invites a kind next step. Teacher facilitates discussion after each reveal."
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Dietary Guidelines Comparison Explorer",
+  "description": "Students analyze three real dietary guideline systems (USDA MyPlate, Canada's Food Guide, a traditional Indigenous seasonal food system) to differentiate shared nutritional principles from culturally specific presentation choices.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "dietary-guidelines-comparison-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "compare, contrast, examine, differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "Health Foundations and Nutrition",
+  "chapter_dir": "01-health-foundations-and-nutrition",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/01-health-foundations-and-nutrition",
+  "educational": {
+    "gradeLevel": "Grades 6-8",
+    "subjectArea": "Health Education",
+    "topic": "Health Foundations and Nutrition",
+    "learningObjectives": [
+      "Students analyze three real dietary guideline systems (USDA MyPlate, Canada's Food Guide, a traditional Indigenous seasonal food system) to differentiate shared nutritional principles from culturally specific presentation choices."
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "compare, contrast, examine, differentiate",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
+}

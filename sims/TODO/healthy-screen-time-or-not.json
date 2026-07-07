@@ -1,0 +1,15 @@
+{
+  "sim_id": "healthy-screen-time-or-not",
+  "diagram_name": "Healthy Screen Time or Not?",
+  "chapter_number": 5,
+  "chapter_title": "Staying Safe",
+  "chapter_dir": "05-staying-safe",
+  "chapter_rel_dir": "bands/kindergarten/chapters/05-staying-safe",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "distinguish, sort, compare",
+  "learning_objective": "Students distinguish healthy, safe technology use from unsafe or unhealthy technology use by sorting illustrated scenario cards into two labeled bins, applying the Healthy Technology Use concept.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** healthy-screen-time-or-not<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: distinguish, sort, compare\n\nLearning objective: Students distinguish healthy, safe technology use from unsafe or unhealthy technology use by sorting illustrated scenario cards into two labeled bins, applying the Healthy Technology Use concept.\n\nCanvas layout: Top area (250px) shows one scenario card at a time (e.g., watching an approved show with a grown-up nearby, versus using a device alone for a very long time). Bottom area (200px): two bins, \"Healthy Screen Use\" (green, sun icon) and \"Ask a Trusted Adult\" (orange, raised-hand icon). Bottom strip (50px): score display and Reset button.\n\nVisual elements: 6 scenario cards cycling one at a time, split between healthy and \"needs a trusted adult\" situations; bins glow when a card is dragged over them.\n\nInteractive controls: Drag-and-drop the card into the matching bin; Reset button; \"Next Scenario\" button after each placement.\n\nDefault parameters: First scenario is watching an approved show with a grown-up nearby (Healthy Screen Use); scenarios appear in a fixed, teacher-predictable order.\n\nBehavior: Correct placement glows green with a chime and rising score. Incorrect placement slides back with a friendly reminder, e.g., \"If something on a screen feels confusing, that's a great time to ask a trusted adult for help.\" After all 6: \"You know how to use screens in healthy, safe ways!\"\n\nInstructional Rationale: An Analyze-level objective because the child must examine a scenario and distinguish its category. The forgiving retry with an explanatory infobox keeps this appropriate for a pre-reader while still requiring a real comparison judgment.\n\nImplementation notes: p5.js. Each scenario is an object with an illustration reference, correct category, and explanation string. Captions one short, read-aloud sentence."
+}

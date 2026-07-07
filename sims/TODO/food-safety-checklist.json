@@ -1,0 +1,15 @@
+{
+  "sim_id": "food-safety-checklist",
+  "diagram_name": "Food Safety Habit Checklist",
+  "chapter_number": 2,
+  "chapter_title": "Food, Drinks, and Staying Safe in the Kitchen",
+  "chapter_dir": "02-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-1/chapters/02-food-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "recall, identify, list",
+  "learning_objective": "Students recall safe practices for handling food by checking off food safety habits shown in short kitchen scenes.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** food-safety-checklist<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Remember (L1)\nBloom Taxonomy Verb: recall, identify, list\n\nLearning objective: Students recall safe practices for handling food by checking off food safety habits shown in short kitchen scenes.\n\nCanvas layout:\n- Top area (150px): One kitchen scene at a time (washing hands before a snack, rinsing an apple, picking up food that fell on the floor, asking an adult before touching a hot pan)\n- Middle area (250px): Two buttons: \"Safe Habit\" and \"Needs a Change\"\n- Bottom strip (100px): Explanation caption and \"Next Scene\" button\n\nVisual elements:\n- 8 simple kitchen scenes cycling one at a time, calm and non-graphic\n\nInteractive controls:\n- Button: \"Safe Habit\"\n- Button: \"Needs a Change\"\n- Button: \"Next Scene\"\n\nDefault parameters:\n- First scene: a child washing hands before snack time (clearly a safe habit, to build confidence)\n\nBehavior:\n- Correct answer: gentle chime, one-sentence reason appears (\"Washing hands removes germs before they can get on your food.\")\n- Incorrect answer: calm caption prompts, \"Look again — could this food make someone feel sick?\"\n\nInstructional Rationale: This is a Remember-level (recall/identify) objective, so the MicroSim uses simple scene recognition with an immediate one-sentence reason, keeping the tone practical and non-frightening rather than warning-heavy.\n\nImplementation notes: Use p5.js. Keep every scene calm and matter-of-fact — frame this as \"kitchen rules with a trusted adult,\" never as scary food-danger content. Large text for read-aloud."
+}

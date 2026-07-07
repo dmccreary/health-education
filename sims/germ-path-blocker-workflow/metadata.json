@@ -1,0 +1,23 @@
+{
+  "title": "Blocking the Path of Germs",
+  "description": "Students explain how cultural traditions and community practices prevent the spread of germs and why these practices work, by exploring each germ pathway and the matching cultural practice that blocks it.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "germ-path-blocker-workflow",
+  "library": "Mermaid",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, summarize",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "Wellness And Activity",
+  "chapter_dir": "03-wellness-and-activity",
+  "chapter_rel_dir": "bands/grade-3/chapters/03-wellness-and-activity"
+}

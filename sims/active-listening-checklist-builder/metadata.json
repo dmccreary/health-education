@@ -1,0 +1,38 @@
+{
+  "title": "Active Listening Checklist Builder",
+  "description": "Students demonstrate active listening behaviors by selecting the actions an active listener would take during a short animated conversation scenario.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "active-listening-checklist-builder",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate, practice, apply",
+  "completion_status": "scaffold",
+  "chapter_number": 8,
+  "chapter_title": "Communication And Goals",
+  "chapter_dir": "08-communication-and-goals",
+  "chapter_rel_dir": "bands/grade-3/chapters/08-communication-and-goals",
+  "educational": {
+    "gradeLevel": "Grade 3",
+    "subjectArea": "Health Education",
+    "topic": "Communication And Goals",
+    "learningObjectives": [
+      "Students demonstrate active listening behaviors by selecting the actions an active listener would take during a short animated conversation scenario."
+    ],
+    "bloomLevel": "Apply (L3)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "demonstrate, practice, apply",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Apply-level objective through direct interaction rather than passive reading."
+  }
+}

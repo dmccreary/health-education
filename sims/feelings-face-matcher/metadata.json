@@ -1,0 +1,38 @@
+{
+  "title": "Feelings Face Matcher",
+  "description": "Students identify a feeling from a facial expression and cartoon scene, then explain what likely caused that feeling, moving beyond simple naming toward reasoning about cause.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "feelings-face-matcher",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "identify, explain, classify",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "Understanding and Talking About Feelings",
+  "chapter_dir": "03-feelings",
+  "chapter_rel_dir": "bands/grade-1/chapters/03-feelings",
+  "educational": {
+    "gradeLevel": "Grade 1",
+    "subjectArea": "Health Education",
+    "topic": "Understanding and Talking About Feelings",
+    "learningObjectives": [
+      "Students identify a feeling from a facial expression and cartoon scene, then explain what likely caused that feeling, moving beyond simple naming toward reasoning about cause."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "identify, explain, classify",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
+}

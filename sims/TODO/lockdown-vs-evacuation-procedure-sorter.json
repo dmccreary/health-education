@@ -1,0 +1,15 @@
+{
+  "sim_id": "lockdown-vs-evacuation-procedure-sorter",
+  "diagram_name": "Lockdown Vs. Evacuation Procedure Sorter",
+  "chapter_number": 7,
+  "chapter_title": "Digital Safety and School Safety",
+  "chapter_dir": "07-digital-safety-and-school-safety",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/07-digital-safety-and-school-safety",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "classify, distinguish, exemplify",
+  "learning_objective": "Students classify correct student actions as belonging to lockdown or evacuation procedure, distinguishing the two standard school safety responses. No scenario content describes a triggering event — only the procedure and correct student actions.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** lockdown-vs-evacuation-procedure-sorter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: classify, distinguish, exemplify\n\nLearning objective: Students classify correct student actions as belonging to lockdown or evacuation procedure, distinguishing the two standard school safety responses. No scenario content describes a triggering event — only the procedure and correct student actions.\n\nLayout: A deck of 10 action cards describing standard procedural behavior (e.g., \"Stay quiet and move out of sight of the door,\" \"Follow staff to the designated outdoor meeting area,\" \"Wait for an official all-clear before moving,\" \"Walk calmly, do not run or push,\" \"Stay with your class group,\" \"Do not open the door for anyone other than following the all-clear signal\") with two click zones labeled \"Lockdown\" and \"Evacuation.\"\n\nInteractive controls: Click to sort each card; immediate feedback confirms the correct procedure and explains why that action matters for that procedure; \"Reset Deck\" button; running tally of correct sorts.\n\nDefault parameters: Deck order randomized each session; feedback panel starts empty until a card is sorted.\n\nInstructional Rationale: Classifying standard procedural actions under the correct safety procedure is an Understand-level task, so a sorting activity with rule-based feedback is used rather than a passive list, reinforcing the calm, correct response pattern for each procedure. This diagram depicts only standard drill procedure — it does not simulate, role-play, or reference any triggering event or attack scenario.\n\nImplementation notes: p5.js. Card data stored as an array of objects with action text, correct procedure, and explanation string. Responsive canvas that reflows cards on window resize. Content restriction: no card or feedback text may reference a specific threat, weapon, or triggering event — cards address only correct student behavior during each standard procedure."
+}

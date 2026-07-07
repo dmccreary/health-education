@@ -1,0 +1,15 @@
+{
+  "sim_id": "life-stages-timeline",
+  "diagram_name": "Life Stages Timeline",
+  "chapter_number": 2,
+  "chapter_title": "Growth and Development Across Cultures",
+  "chapter_dir": "02-growth-and-development",
+  "chapter_rel_dir": "bands/grade-4/chapters/02-growth-and-development",
+  "library": "vis-timeline",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, describe, interpret",
+  "learning_objective": "Students explain that puberty is one normal life stage among several across a human lifespan, and describe its general place and range in that sequence.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: timeline\n**sim-id:** life-stages-timeline<br/>\n**Library:** vis-timeline<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, describe, interpret\n\nLearning objective: Students explain that puberty is one normal life stage among several across a human lifespan, and describe its general place and range in that sequence.\n\nPurpose: Normalize puberty by placing it visually alongside other widely recognized life stages, with no anatomical imagery anywhere in the diagram.\n\nTime period: Birth through adulthood (ages 0-25, approximate)\n\nOrientation: Horizontal\n\nLife stage segments shown (labeled bands, not individual people):\n- Infancy (0-2)\n- Early Childhood (2-8)\n- Puberty / Adolescence (approximately 8-16, shown as a wide band to represent normal variation in timing)\n- Later Adolescence (approximately 15-19)\n- Adulthood (approximately 18+)\n\nVisual style: Horizontal band timeline with soft color blocks for each stage; the Puberty/Adolescence band is intentionally wide and shows a gradient edge rather than a hard line, visually reinforcing that its start and end vary by person\n\nColor coding: Each life stage has its own soft, calm color; no skin tones or body imagery anywhere\n\nInteractive features:\n- Click any life-stage band to open an infobox with a two-sentence, non-anatomical description of that stage\n- Click the Puberty/Adolescence band specifically to reveal: \"This band is wide on purpose — puberty can start anywhere in this range, and every starting point is normal.\"\n- Hover over the gradient edges of the Puberty/Adolescence band to see the note \"Exact start and end times are different for everyone.\"\n\nImplementation: vis-timeline with custom-styled bands and click-to-reveal infobox panels; no anatomical or body imagery of any kind — purely abstract colored bands and labels."
+}

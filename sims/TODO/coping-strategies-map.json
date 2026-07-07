@@ -1,0 +1,15 @@
+{
+  "sim_id": "coping-strategies-map",
+  "diagram_name": "Coping Strategies Around the World",
+  "chapter_number": 1,
+  "chapter_title": "Health Basics, Friendships, and Feelings",
+  "chapter_dir": "01-health-friendships-feelings",
+  "chapter_rel_dir": "bands/grade-2/chapters/01-health-friendships-feelings",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "describe, exemplify, explain",
+  "learning_objective": "Students describe a range of coping strategies, including cultural practices such as storytelling and ceremony, and explain how each one helps a person feel calmer or more supported.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** coping-strategies-map<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: describe, exemplify, explain\n\nLearning objective: Students describe a range of coping strategies, including cultural practices such as storytelling and ceremony, and explain how each one helps a person feel calmer or more supported.\n\nPurpose: Show a warm, inclusive gallery of coping strategies — both everyday strategies (breathing, drawing) and cultural practices (storytelling, ceremony, music, shared meals) — so students see coping as a wide, respected toolkit rather than one narrow method.\n\nLayout: A grid or gentle circle of 8 labeled picture-cards, each representing one coping strategy or cultural practice.\n\nCards to include:\n1. Deep Breathing\n2. Counting Calmly\n3. Drawing Feelings\n4. Quiet Hug Time\n5. Family Storytelling\n6. Community Ceremony\n7. Traditional Music and Dance\n8. Sharing a Meal Together\n\nInteractive elements:\n- Hover or tap a card: card enlarges slightly and an infobox appears explaining what the practice is and how it helps\n- Click a card: the infobox stays open with a simple explanation a teacher can read aloud, plus one example sentence (\"Some families gather for a ceremony to feel connected and supported.\")\n- \"Show Me Another Family's Way\" button cycles an optional second example for the cultural cards, reinforcing that many traditions exist\n\nVisual style: Warm, flat illustration style with diverse families and settings represented respectfully; no single culture singled out or stereotyped.\n\nColor scheme: Soft, calming colors (light blue, warm yellow, soft green) rather than bright primary colors, to reinforce a calm mood.\n\nResponsive behavior: Grid reflows from 4 columns to 2 columns on narrow screens; cards remain tappable at all sizes.\n\nImplementation: p5.js with an object array of card data (label, description, example) driving hover/click infobox display."
+}

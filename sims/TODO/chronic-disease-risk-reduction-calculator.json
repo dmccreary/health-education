@@ -1,0 +1,15 @@
+{
+  "sim_id": "chronic-disease-risk-reduction-calculator",
+  "diagram_name": "Chronic Disease Risk Reduction Calculator",
+  "chapter_number": 8,
+  "chapter_title": "Health Equity and Disease Prevention",
+  "chapter_dir": "08-health-equity-and-disease-prevention",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/08-health-equity-and-disease-prevention",
+  "library": "p5.js",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "assess, justify, recommend",
+  "learning_objective": "Students evaluate how combinations of prevention",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n\n**sim-id:** chronic-disease-risk-reduction-calculator<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Evaluate (L5)\nBloom Verb: assess, justify, recommend\n\nLearning objective: Students evaluate how combinations of prevention\nstrategies (nutrition quality, physical activity, tobacco/alcohol\navoidance, routine screening, stress/sleep management) affect a\nsimplified composite chronic disease risk indicator, and justify a\nrealistic personal prevention plan.\n\nCanvas layout:\n- Left (55%): five toggle switches, one per strategy, each with three\n  levels (Low, Moderate, Strong adherence)\n- Right (45%): a composite risk-indicator gauge (illustrative, not a\n  medical diagnostic tool) that updates as toggles change, plus a text box\n  for the student to justify their chosen combination\n\nData Visibility Requirements:\n  Stage 1: Show all five toggles at \"Low\" adherence with the composite\n  gauge at its highest illustrative risk level\n  Stage 2: Student adjusts toggles; the gauge recalculates in real time\n  using simple additive weighting, with a clear on-screen label: \"This\n  gauge illustrates relative risk patterns from population research — it\n  is not a personal medical prediction\"\n  Stage 3: Student writes a one-to-two sentence justification for a\n  realistic combination given a stated constraint (e.g., limited time for\n  exercise due to a part-time job)\n  Stage 4: Reveal a model justification highlighting that screening and\n  sleep are often the most overlooked, lowest-barrier strategies\n\nInteractive controls:\n- Five three-level toggle switches\n- Text input: justification\n- Button: \"Check My Reasoning\"\n- Button: \"Reset\"\n\nDefault parameters: All toggles start at Low adherence\n\nInstructional Rationale: Justifying a realistic combination of prevention\nstrategies under real constraints is an Evaluate-level task, so a\nparameter-exploration gauge paired with a justification prompt is used\nrather than a simple checklist of recommended behaviors.\n\nImplementation notes: p5.js; composite gauge computed from a transparent,\ndocumented weighted sum, explicitly labeled as illustrative; disclaimer\ntext persistent on screen."
+}

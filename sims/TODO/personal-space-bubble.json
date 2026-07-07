@@ -1,0 +1,15 @@
+{
+  "sim_id": "personal-space-bubble",
+  "diagram_name": "My Personal Space Bubble",
+  "chapter_number": 1,
+  "chapter_title": "Health Basics, Friendships, and Feelings",
+  "chapter_dir": "01-health-friendships-feelings",
+  "chapter_rel_dir": "bands/grade-2/chapters/01-health-friendships-feelings",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate, practice, apply",
+  "learning_objective": "Students apply the idea of personal space and boundaries by adjusting a visible \"bubble\" around a character and practicing a boundary sentence for different situations.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** personal-space-bubble<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: demonstrate, practice, apply\n\nLearning objective: Students apply the idea of personal space and boundaries by adjusting a visible \"bubble\" around a character and practicing a boundary sentence for different situations.\n\nCanvas layout:\n- Left/center area (450px): A friendly cartoon child character in the middle of the canvas with a circular \"bubble\" drawn around them showing personal space\n- Right/control area (150px): Slider and scenario buttons\n\nVisual elements:\n- Character in the center with a soft, translucent circle (the \"bubble\") around them\n- A second character figure that can be dragged closer or farther away\n- Scenario labels above (e.g., \"A classmate you just met,\" \"Your best friend,\" \"Someone offering a high-five\")\n\nInteractive controls:\n- Slider: \"Bubble Size\" (small, medium, large) representing that personal space can change based on comfort\n- Draggable second figure: moving it closer shows the bubble highlighting yellow when \"crowded,\" green when comfortable\n- Button: \"Try a Boundary Sentence\" — reveals one of the four example boundary sentences from the text, matched to the scenario\n- Button: \"Next Scenario\"\n\nDefault parameters:\n- Default bubble size: medium\n- First scenario: \"A classmate you just met\" approaching\n\nBehavior:\n- When the second figure enters the bubble and turns yellow, a caption prompts: \"This might feel crowded. What boundary sentence could you use?\"\n- Clicking \"Try a Boundary Sentence\" shows an example sentence appropriate to the scenario, read aloud by the teacher\n- Resetting returns the second figure to a comfortable distance and the bubble to green\n\nInstructional Rationale: This is an Apply-level (demonstrate/practice) objective, so the MicroSim requires the learner to actively adjust the scene and select/practice a boundary sentence rather than passively watch an animation. Direct manipulation of the \"bubble\" builds concrete understanding that personal space is real, visible, and adjustable.\n\nImplementation notes: Use p5.js. Keep character designs simple and neutral so any student can see themselves in the scene. Maintain a warm, non-alarming tone — this is about everyday comfort, not danger."
+}

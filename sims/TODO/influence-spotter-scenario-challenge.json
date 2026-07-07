@@ -1,0 +1,15 @@
+{
+  "sim_id": "influence-spotter-scenario-challenge",
+  "diagram_name": "Influence Spotter Scenario Challenge",
+  "chapter_number": 11,
+  "chapter_title": "Health Influences and Information Literacy",
+  "chapter_dir": "11-health-influences-and-information-literacy",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/11-health-influences-and-information-literacy",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, classify, distinguish",
+  "learning_objective": "Students examine 10 short scenarios and classify the primary source of health influence at work (Social Norm, Public Health Policy, Family/Culture, Peer, or Media), distinguishing between influences that can look similar on the surface.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** influence-spotter-scenario-challenge<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: examine, classify, distinguish\n\nLearning objective: Students examine 10 short scenarios and classify the primary source of health influence at work (Social Norm, Public Health Policy, Family/Culture, Peer, or Media), distinguishing between influences that can look similar on the surface.\n\nCanvas layout: Top area shows one scenario at a time in a text box; bottom area shows five labeled buttons, one per influence category.\n\nVisual elements: Scenario text box; five category buttons with simple icons (people for Social Norm, a gavel for Policy, a house for Family/Culture, two figures for Peer, a screen for Media); a progress bar showing scenario number out of 10; a feedback panel.\n\nInteractive controls: Learner reads the scenario and clicks the category button they believe fits best; feedback panel confirms correct/incorrect with a one-to-two sentence explanation and, for scenarios with more than one plausible influence, explicitly notes that overlap; \"Next\" button advances; \"Restart\" button resets the deck with a new random order.\n\nDefault parameters: Scenario order randomized each session; score displayed as \"X of 10 correct\" at the end.\n\nInstructional Rationale: This Analyze-level objective requires learners to examine and distinguish between five categories of influence that frequently overlap in real scenarios; immediate explanatory feedback teaches the distinguishing features of each category rather than only testing recall.\n\nImplementation notes: p5.js. Responsive canvas that reflows to a single-column layout on narrow screens."
+}

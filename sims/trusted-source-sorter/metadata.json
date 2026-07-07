@@ -1,0 +1,23 @@
+{
+  "title": "Trusted Source or Not?",
+  "description": "Students determine the validity and reliability of a simple health claim by evaluating its source and comparing it against what a trusted adult, doctor, or book would say.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "trusted-source-sorter",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "judge, assess, validate",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "Foundations Of Health",
+  "chapter_dir": "01-foundations-of-health",
+  "chapter_rel_dir": "bands/grade-3/chapters/01-foundations-of-health"
+}

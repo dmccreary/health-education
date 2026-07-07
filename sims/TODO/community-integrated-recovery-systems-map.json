@@ -1,0 +1,15 @@
+{
+  "sim_id": "community-integrated-recovery-systems-map",
+  "diagram_name": "Community-Integrated Recovery Systems Map",
+  "chapter_number": 11,
+  "chapter_title": "Substance Recovery and Resilience",
+  "chapter_dir": "11-substance-recovery-and-resilience",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/11-substance-recovery-and-resilience",
+  "library": "Mermaid",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "justify, assess, recommend",
+  "learning_objective": "Assess how a community-integrated recovery system",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n\n**sim-id:** community-integrated-recovery-systems-map<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Evaluate (L5)\nBloom Verb: justify, assess, recommend\n\nLearning objective: Assess how a community-integrated recovery system\nconnects clinical and cultural resources around a person in recovery, and\njustify why this model is associated with stronger outcomes than a purely\nclinical or purely informal approach alone.\n\nVisual style: Mermaid flowchart, central node with four surrounding\nprocess nodes, all clickable via `click NodeId call showInfo(\"term\")`.\n\nNodes:\n1. Central: \"Person Seeking Recovery Support\" — click reveals: \"This\n   integrated model starts from the person's full context, not just a\n   single symptom or appointment.\"\n2. \"Co-Located Cultural And Clinical Care\" — click reveals: \"Some tribal\n   health systems provide counseling, medical care, and traditional\n   healing practices within one coordinated system.\"\n3. \"Community-Based Recovery Housing And Networks\" — click reveals: \"Some\n   recovery environments build cultural practice and peer mentorship\n   directly into daily structure, not just scheduled appointments.\"\n4. \"Restorative, Whole-Community Approach\" — click reveals: \"Family,\n   elders, peers, and providers work together, treating recovery as a\n   shared community process.\"\n5. \"Tribal Sovereignty In Recovery Policy\" — click reveals: \"Many tribal\n   nations have the authority to design recovery systems reflecting their\n   own community's cultural practices and priorities.\"\nEnd: \"Stronger, More Durable Recovery\" — click reveals: \"Research\nassociates this whole-person, whole-community integration with better\nlong-term recovery outcomes than clinical or cultural approaches used in\nisolation.\"\n\nConnections: Central node connects outward to nodes 2, 3, 4, and 5; all\nfour converge into the End node\n\nColor coding: gray for the central node, blue for the four systems/models\nnodes, green for the outcome node\n\nImplementation: Mermaid flowchart with click bindings to a showInfo()\nfunction; infobox text in a JS lookup object. Content restriction: no\nnode names a specific tribal nation's private ceremonial practice in\ndetail — descriptions stay at the respectful, general level of \"cultural\npractice\" or \"traditional healing,\" consistent with how Chapter 10\nhandled this same sensitivity."
+}

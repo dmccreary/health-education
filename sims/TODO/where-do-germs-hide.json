@@ -1,0 +1,15 @@
+{
+  "sim_id": "where-do-germs-hide",
+  "diagram_name": "Where Do Germs Hide?",
+  "chapter_number": 4,
+  "chapter_title": "Staying Healthy Every Day",
+  "chapter_dir": "04-staying-healthy",
+  "chapter_rel_dir": "bands/kindergarten/chapters/04-staying-healthy",
+  "library": "p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "identify, recognize, locate",
+  "learning_objective": "Students identify everyday classroom objects and body parts where germs commonly collect, building foundational understanding of the Germs concept before learning the habits that remove them.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** where-do-germs-hide<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Remember (L1)\nBloom Taxonomy Verb: identify, recognize, locate\n\nLearning objective: Students identify everyday classroom objects and body parts where germs commonly collect, building foundational understanding of the Germs concept before learning the habits that remove them.\n\nCanvas layout:\n- Full canvas (500px): One large, friendly illustrated classroom scene (a desk, a doorknob, a tissue, hands, a shared toy bin, a drinking fountain)\n- Bottom strip (60px): Instruction text \"Click the spots where germs like to hide!\" and a Reset button\n\nVisual elements:\n- 6 hotspot icons glowing very faintly (a soft pulsing gold outline) over: hands, doorknob, shared toy, tissue, drinking fountain, desk surface\n- When clicked, a small friendly cartoon germ character pops up briefly over that spot with a label\n\nInteractive controls:\n- Click: child taps a hotspot to reveal whether germs like to hide there\n- Button: \"Reset\" to hide all revealed spots and try again\n- Display: running count \"You found 4 of 6 germ spots!\"\n\nDefault parameters:\n- All 6 hotspots start hidden/unrevealed\n- Hotspots can be clicked in any order\n\nBehavior:\n- Clicking a correct hotspot reveals a small infobox: \"Doorknobs are touched by many hands every day — that's a great place for germs to collect!\"\n- Once a spot is found it stays revealed (highlighted green) so the child can see progress\n- After all 6 spots are found, display a celebration message: \"You found every germ hideout! Now let's learn how to wash them away.\"\n\nInstructional Rationale: This is a Remember-level (identify/locate) objective appropriate for pre-readers, so a simple click-to-reveal hotspot pattern works well — it requires no reading and gives an immediate, encouraging infobox for every click.\n\nImplementation notes: Use p5.js. Store each hotspot as an object with an (x,y) region (relative/percentage-based, not fixed pixels, so the scene resizes responsively), a label, and an infobox string. Keep all text large (24px+) for read-aloud use."
+}

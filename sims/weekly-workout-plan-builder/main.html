@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Weekly Workout Plan Builder</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Weekly Workout Plan Builder</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> weekly-workout-plan-builder</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Create (L6)</p>
+            <p><strong>Learning Objective:</strong> Students design a complete seven-day workout plan by placing activities of each required type onto specific days, and receive feedback on whether the plan meets weekly guidelines.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** weekly-workout-plan-builder<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy: Create (L6)
+    Bloom Taxonomy Verb: design, construct, formulate
+    
+    Learning objective: Students design a complete seven-day workout plan by placing activities of each required type onto specific days, and receive feedback on whether the plan meets weekly guidelines.
+    
+    Canvas layout: Left side (450px) shows a 7-day weekly planner grid with drop zones for morning/afternoon/evening. Right side (150px) shows draggable activity tokens grouped by type (Moderate, Vigorous, Muscle-Strengthening, Bone-Strengthening) and a "Plan Completeness" checklist panel.
+    
+    Visual elements: Weekly grid, color-coded activity tokens (blue for moderate, red for vigorous, purple for muscle-strengthening, green for bone-strengthening), a checklist showing which required activity types are present in the week so far.
+    
+    Interactive controls: Drag activity tokens onto day/time slots; "Check My Plan" button evaluates whether the week includes at least 60 minutes most days, vigorous activity 3 days a week, and muscle- and bone-strengthening activity at least 3 days a week; "Reset Plan" button; "See Example Plan" button shows one sample balanced week.
+    
+    Default parameters: Empty planner grid at start; checklist items all unchecked until requirements are met.
+    
+    Instructional Rationale: Designing an original, personalized weekly plan that satisfies multiple constraints is a Create-level task, so a builder with constraint-checking feedback is used rather than a static checklist, letting students formulate their own valid solution.
+    
+    Implementation notes: p5.js. Activity and day data stored as arrays/objects; drag-and-drop interaction; responsive canvas that reflows on window resize.
+    -->
+</body>
+</html>

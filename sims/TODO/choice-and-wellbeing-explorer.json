@@ -1,0 +1,15 @@
+{
+  "sim_id": "choice-and-wellbeing-explorer",
+  "diagram_name": "Choice and Wellbeing Explorer",
+  "chapter_number": 7,
+  "chapter_title": "Mental And Emotional Health",
+  "chapter_dir": "07-mental-and-emotional-health",
+  "chapter_rel_dir": "bands/grade-3/chapters/07-mental-and-emotional-health",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, describe, interpret",
+  "learning_objective": "Students explain how everyday personal choices affect mental and emotional wellbeing by adjusting sliders for common daily choices and observing a simple wellbeing meter respond.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** choice-and-wellbeing-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, describe, interpret\n\nLearning objective: Students explain how everyday personal choices affect mental and emotional wellbeing by adjusting sliders for common daily choices and observing a simple wellbeing meter respond.\n\nCanvas layout: Left side (350px) has four labeled sliders — Hours of Sleep (4-10), Time Being Active (0-60 min), Time Talking With Someone Caring (0-30 min), Quiet Screen-Free Time (0-30 min). Right side (250px) shows a semicircle \"Wellbeing Meter\" gauge with a needle moving from \"Running on Empty\" (red) to \"Feeling Good\" (green), plus a short explanation text box.\n\nInteractive controls: Four draggable sliders; a \"Reset to Example Day\" button.\n\nDefault parameters: Sleep 7 hours, Active 20 min, Talking 10 min, Quiet time 10 min — meter starts in the middle \"Okay\" zone.\n\nData Visibility Requirements: As a student drags any slider up, the needle moves toward green and a one-sentence plain-language reason appears (e.g., \"More sleep helps your brain rest and reset.\"). Dragging down moves the needle toward red with a matching reason. No single slider can max the meter alone, reinforcing that wellbeing comes from combined healthy choices.\n\nInstructional Rationale: Understand-level objective, so the design favors direct manipulation with immediate, concrete feedback over any competitive or scored element.\n\nImplementation notes: Use p5.js. Keep reasons short, reassuring, and non-judgmental."
+}

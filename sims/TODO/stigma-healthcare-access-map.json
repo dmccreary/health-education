@@ -1,0 +1,15 @@
+{
+  "sim_id": "stigma-healthcare-access-map",
+  "diagram_name": "How Stigma Blocks Healthcare-Seeking",
+  "chapter_number": 4,
+  "chapter_title": "Healthcare Access and Sexual Health",
+  "chapter_dir": "04-healthcare-access-and-sexual-health",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/04-healthcare-access-and-sexual-health",
+  "library": "vis-network",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, differentiate, organize",
+  "learning_objective": "Students examine how four levels of stigma\n(internalized, interpersonal, community/cultural, institutional) can",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n\n**sim-id:** stigma-healthcare-access-map<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: examine, differentiate, organize\n\nLearning objective: Students examine how four levels of stigma\n(internalized, interpersonal, community/cultural, institutional) can\nindependently or jointly block healthcare-seeking, and analyze the\nresulting public-health consequence.\n\nNode types:\n1. Central node: \"Person With a Health Question\" (blue circle)\n2. Stigma-level nodes (orange squares): Internalized Stigma, Interpersonal\n   Stigma, Community/Cultural Stigma, Institutional Stigma\n3. Outcome node (red diamond): \"Delayed or Avoided Care\"\n4. Consequence node (gray hexagon): \"Undetected Health Complications and\n   Continued Transmission Risk\"\n\nEdge types:\n- \"Can Discourage Seeking Care\" (solid black arrows from each stigma-level\n  node to the central node)\n- \"Leads To\" (solid arrow from central node to \"Delayed or Avoided Care\")\n- \"Results In\" (solid arrow from \"Delayed or Avoided Care\" to the\n  consequence node)\n\nLayout: Hierarchical, stigma-level nodes at top, central node in middle,\noutcome and consequence nodes at bottom\n\nInteractive features:\n- Hover a stigma-level node: shows its definition\n- Click a stigma-level node: opens a side panel with a concrete example of\n  how that level of stigma shows up in a real scenario\n- Click the outcome or consequence node: opens a panel explaining the\n  public-health reasoning connecting delayed care to worse health outcomes\n- Drag, zoom, and pan enabled\n\nLegend: color key for stigma-level, outcome, and consequence node types\n\nImplementation: vis-network, hierarchical layout, click-triggered side\npanel content stored in a JSON lookup keyed by node id"
+}

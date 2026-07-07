@@ -1,0 +1,15 @@
+{
+  "sim_id": "community-sexual-health-programs-map",
+  "diagram_name": "Community-Based Sexual Health Program Types",
+  "chapter_number": 4,
+  "chapter_title": "Healthcare Access and Sexual Health",
+  "chapter_dir": "04-healthcare-access-and-sexual-health",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/04-healthcare-access-and-sexual-health",
+  "library": "vis-network",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "classify, exemplify, summarize",
+  "learning_objective": "Students classify four types of community-based",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n\n**sim-id:** community-sexual-health-programs-map<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Understand (L2)\nBloom Verb: classify, exemplify, summarize\n\nLearning objective: Students classify four types of community-based\nsexual health programs and exemplify how each lowers a barrier to care\ncompared to a standalone clinical visit.\n\nNode types:\n1. Central node: \"Community-Based Sexual Health Programs\" (blue circle)\n2. Program-type nodes (green squares): School-Based Health Centers,\n   Community Health Clinics, Peer Education Programs, Public Health\n   Department Initiatives\n\nEdge types:\n- \"Includes\" (solid arrows from central node to each program-type node)\n\nLayout: Radial, central node in the middle, program-type nodes surrounding\nit\n\nInteractive features:\n- Hover a program-type node: shows a one-sentence definition\n- Click a program-type node: opens a side panel with a concrete example\n  and explains which access barrier (cost, stigma, awareness, location)\n  it most directly reduces\n- Drag, zoom, and pan enabled\n\nLegend: color key distinguishing the central node from program-type nodes\n\nImplementation: vis-network, radial layout, click-triggered side panel\ncontent stored in a JSON lookup keyed by node id"
+}

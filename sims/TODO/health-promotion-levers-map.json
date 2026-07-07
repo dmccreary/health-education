@@ -1,0 +1,15 @@
+{
+  "sim_id": "health-promotion-levers-map",
+  "diagram_name": "Health Promotion Levers Across Levels",
+  "chapter_number": 15,
+  "chapter_title": "Health Promotion and Behavior Change",
+  "chapter_dir": "15-health-promotion-and-behavior-change",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/15-health-promotion-and-behavior-change",
+  "library": "vis-network",
+  "bloom_level": "Analyze<br/>",
+  "bloom_verb": "examine, differentiate",
+  "learning_objective": "Examine how a single health-promotion goal can be",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n\n**sim-id:** health-promotion-levers-map<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze<br/>\nBloom Taxonomy Verb: examine, differentiate\n\nLearning objective: Examine how a single health-promotion goal can be\npursued through distinct but reinforcing levers at the individual,\ninterpersonal, community, environmental, and policy levels.\n\nNode types: One central node \"Health Promotion Goal\" with a dropdown to\nselect a goal (reducing student stress, increasing physical activity,\nreducing vaping among teens). Five surrounding level nodes: Individual,\nInterpersonal, Community, Environmental, Policy.\n\nEdge types: An edge from the central goal to each level node, labeled with\na concrete promotion action at that level for the selected goal.\n\nSample data: For \"reducing vaping among teens\" — Individual: \"peer-led\nworkshop on nicotine's effects on the teen brain\"; Interpersonal: \"parents\ntrained to discuss vaping without shaming\"; Community: \"youth center offers\nvaping-cessation support group\"; Environmental: \"retailers required to\nstore vape products behind the counter\"; Policy: \"local ordinance raises\nminimum sale age enforcement and taxes flavored products.\"\n\nInteractive features: Clicking a level node opens an infobox with the\naction, plus a one-sentence note on how it reinforces at least one other\nlevel (e.g., the policy change makes retailers' environmental compliance\nenforceable). Learner can drag nodes, zoom, and pan. A \"Show\nreinforcement links\" toggle adds dashed edges between levels that support\neach other.\n\nLayout: Radial/star, goal at center, five levels surrounding it.\n\nColor scheme: Individual (gold), Interpersonal (blue), Community (teal),\nEnvironmental (green), Policy (navy) — consistent with the socio-ecological\ncolor coding introduced in Chapter 13."
+}

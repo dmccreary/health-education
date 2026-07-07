@@ -1,0 +1,15 @@
+{
+  "sim_id": "pick-your-active-play-adventure",
+  "diagram_name": "Pick Your Active Play Adventure",
+  "chapter_number": 5,
+  "chapter_title": "Healthy Habits, Activity, and Germs",
+  "chapter_dir": "05-healthy-habits",
+  "chapter_rel_dir": "bands/grade-1/chapters/05-healthy-habits",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate, practice, apply",
+  "learning_objective": "Students apply their understanding of daily active play by building a pretend weekly activity plan, choosing a different fun way to be active on each day.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** pick-your-active-play-adventure<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: demonstrate, practice, apply\n\nLearning objective: Students apply their understanding of daily active play by building a pretend weekly activity plan, choosing a different fun way to be active on each day.\n\nCanvas layout:\n- Left area (450px): Seven day slots (Sunday through Saturday) arranged in a row or grid\n- Right area (150px): A tray of eight active-play icons (tag, biking, dancing, playground, catch, jump rope, walking, swimming) and an infobox\n\nVisual elements:\n- Seven labeled day slots, each able to hold one activity icon\n- Eight colorful, friendly active-play icons in the tray\n\nInteractive controls:\n- Drag-and-drop: student drags an activity icon into a day slot\n- Button: \"Show My Week\"\n- Button: \"Reset\"\n\nDefault parameters:\n- All day slots start empty; all icons start in the tray\n\nData Visibility Requirements:\n  Stage 1: Show empty week grid and full icon tray\n  Stage 2: As icons are placed, show them snapped into day slots\n  Stage 3: After \"Show My Week\" is clicked, display a summary caption celebrating variety (\"You picked 5 different ways to move this week! Variety keeps active play fun.\")\n\nBehavior:\n- Any combination of activities is accepted, since enjoyment is personal\n- If the same activity is used every day, a gentle encouraging caption suggests trying something new for variety, without saying the choice was wrong\n\nInstructional Rationale: This is an Apply-level (practice/demonstrate) objective, so the MicroSim has students actively construct their own weekly plan with immediate summary feedback, rather than only viewing a list of examples.\n\nImplementation notes: Use p5.js. Keep icons simple, colorful, and inclusive of different ability levels (e.g., include a wheelchair basketball icon as one option). Teacher can discuss favorite choices as a class."
+}

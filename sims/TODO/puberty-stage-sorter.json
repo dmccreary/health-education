@@ -1,0 +1,15 @@
+{
+  "sim_id": "puberty-stage-sorter",
+  "diagram_name": "Sort the Stage",
+  "chapter_number": 6,
+  "chapter_title": "Growth And Puberty",
+  "chapter_dir": "06-growth-and-puberty",
+  "chapter_rel_dir": "bands/grade-3/chapters/06-growth-and-puberty",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "describe, classify, sequence",
+  "learning_objective": "Students recognize the general stages of puberty by sorting plain, non-anatomical statements into the correct simplified stage: Before Changes Start, Changes Beginning, or Changes Continuing.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** puberty-stage-sorter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: describe, classify, sequence\n\nLearning objective: Students recognize the general stages of puberty by sorting plain, non-anatomical statements into the correct simplified stage: Before Changes Start, Changes Beginning, or Changes Continuing.\n\nCanvas layout:\n- Left side (400px): Three labeled stage bins in order — \"Before Changes Start,\" \"Changes Beginning,\" \"Changes Continuing\"\n- Right side (200px): A stack of plain statement cards (e.g., \"Growing the same steady way I always have,\" \"Noticing I grow a little faster than last year,\" \"Having stronger feelings some days,\" \"My body shape is changing more than before\")\n\nVisual elements:\n- Three calm, evenly spaced bins with simple growth-arrow icons (small, medium, large arrow) rather than any body imagery\n- Statement cards in plain text only\n\nInteractive controls:\n- Click or drag each statement card into the stage bin where it belongs\n- Button: \"Check My Answers\"\n- Button: \"Reset\"\n\nDefault parameters:\n- All statement cards begin shuffled above the three bins\n\nData Visibility Requirements:\n  Stage 1: Show the shuffled statement cards and three empty labeled bins\n  Stage 2: As each card is sorted, show it snap into the chosen bin\n  Stage 3: When \"Check My Answers\" is clicked, reveal a calm one-sentence explanation for each card's correct stage\n\nBehavior:\n- Correctly sorted cards get a checkmark\n- Incorrectly sorted cards get a gentle, factual explanation of why the statement fits a different stage\n- A reassuring closing message appears once every card is sorted: \"Remember — everyone reaches these stages at a different age. That's normal!\"\n\nInstructional Rationale: This is an Understand-level objective (describe, classify), so the design uses a calm sorting-and-explanation pattern with plain, non-anatomical statements, keeping the focus on the general idea of ordered stages rather than any physical detail.\n\nImplementation notes: Use p5.js. No anatomical imagery or body silhouettes of any kind — use only arrow-size icons and plain text. Keep tone entirely reassuring and never suggest any stage is \"better\" or \"worse.\""
+}

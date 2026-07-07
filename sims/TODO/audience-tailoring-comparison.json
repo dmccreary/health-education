@@ -1,0 +1,15 @@
+{
+  "sim_id": "audience-tailoring-comparison",
+  "diagram_name": "Audience Tailoring Comparison Tool",
+  "chapter_number": 15,
+  "chapter_title": "Health Promotion and Behavior Change",
+  "chapter_dir": "15-health-promotion-and-behavior-change",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/15-health-promotion-and-behavior-change",
+  "library": "Chart.js",
+  "bloom_level": "Analyze<br/>",
+  "bloom_verb": "compare, contrast, distinguish",
+  "learning_objective": "Compare how the same justified health message is",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n\n**sim-id:** audience-tailoring-comparison<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze<br/>\nBloom Taxonomy Verb: compare, contrast, distinguish\n\nLearning objective: Compare how the same justified health message is\nadapted in tone, vocabulary, and channel across four different audiences,\nwhile the underlying factual claim remains constant.\n\nLayout: Four-column side-by-side comparison panel, one column per\naudience (younger students, peers, parents, school board), each showing:\nheadline version of the message, one leading fact, and recommended\nchannel icon.\n\nInteractive elements: Selecting a health issue from a dropdown (vaping\nprevention, hydration choices, mental health stigma) re-populates all four\ncolumns; hovering any column's fact reveals the full source citation used\nin the Justify stage; a \"Highlight what changed / what stayed the same\"\ntoggle color-highlights the shared factual core in gold across all four\ncolumns and the tailored language in a different color per audience.\n\nData to display: Four fully worked example messages (one per audience) for\neach of the three preset health issues.\n\nColor scheme: Shared factual core highlighted gold across all columns;\neach audience column otherwise in its own accent color.\n\nImplementation: Chart.js is used loosely here as a structured-panel\nrenderer with DOM overlay for the comparison highlighting logic."
+}

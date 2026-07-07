@@ -1,0 +1,38 @@
+{
+  "title": "Everyday Consent Moments Card Sort",
+  "description": "Students apply the concept of ongoing consent by sorting everyday relationship moments into \"Consent Respected\" and \"Consent Skipped\" categories across family, friend, and romantic contexts.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "everyday-consent-moments-card-sort",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate, apply, practice",
+  "completion_status": "scaffold",
+  "chapter_number": 2,
+  "chapter_title": "Relationships, Boundaries, and Consent",
+  "chapter_dir": "02-relationships-boundaries-and-consent",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/02-relationships-boundaries-and-consent",
+  "educational": {
+    "gradeLevel": "Grades 6-8",
+    "subjectArea": "Health Education",
+    "topic": "Relationships, Boundaries, and Consent",
+    "learningObjectives": [
+      "Students apply the concept of ongoing consent by sorting everyday relationship moments into \"Consent Respected\" and \"Consent Skipped\" categories across family, friend, and romantic contexts."
+    ],
+    "bloomLevel": "Apply (L3)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "demonstrate, apply, practice",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Apply-level objective through direct interaction rather than passive reading."
+  }
+}

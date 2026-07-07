@@ -1,0 +1,15 @@
+{
+  "sim_id": "healthy-friend-traits-sorter",
+  "diagram_name": "Healthy Friend Traits Sorter",
+  "chapter_number": 4,
+  "chapter_title": "Friendship, Uniqueness, and Belonging",
+  "chapter_dir": "04-friendship-and-belonging",
+  "chapter_rel_dir": "bands/grade-1/chapters/04-friendship-and-belonging",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "classify, identify, describe",
+  "learning_objective": "Students identify and classify short scenario cards as showing a healthy or unhealthy peer trait, then explain what makes each one healthy or unhealthy.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** healthy-friend-traits-sorter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: classify, identify, describe\n\nLearning objective: Students identify and classify short scenario cards as showing a healthy or unhealthy peer trait, then explain what makes each one healthy or unhealthy.\n\nCanvas layout:\n- Left area (450px): One scenario card at a time (simple flat illustration plus one sentence, e.g., \"Maya waits for her turn on the swings.\")\n- Right area (150px): Two bins labeled \"Healthy Trait\" and \"Not Yet Healthy\" and an infobox\n\nVisual elements:\n- 10 scenario cards cycling one at a time, showing both healthy examples (sharing, listening, including) and unhealthy examples (grabbing, interrupting, leaving someone out)\n- Two large, clearly labeled bins with friendly icons (a heart for \"Healthy Trait\", a thinking-face for \"Not Yet Healthy\")\n\nInteractive controls:\n- Click-to-select: student clicks the bin that matches the scenario\n- Button: \"Next Scenario\"\n- Button: \"Reset\"\n\nDefault parameters:\n- First scenario: \"Maya waits for her turn on the swings\" (clearly healthy, to build confidence)\n\nData Visibility Requirements:\n  Stage 1: Show the scenario card with no label\n  Stage 2: After the student clicks a bin, show whether it matches\n  Stage 3: Reveal a one-sentence explanation (\"Waiting your turn is a healthy trait because it's fair to everyone.\")\n\nBehavior:\n- Correct match: bin glows, gentle chime, explanation caption appears\n- Incorrect match: gentle prompt, \"Look again — how would this make the other person feel?\" and the correct bin glows softly as a hint\n\nInstructional Rationale: This is an Understand-level (identify/classify) objective, so the MicroSim reveals a concrete explanation after each answer rather than using continuous animation, helping students connect each scenario to the underlying trait it demonstrates.\n\nImplementation notes: Use p5.js. Large, simple, flat-style illustrations with diverse characters. Teacher reads each scenario and explanation aloud."
+}

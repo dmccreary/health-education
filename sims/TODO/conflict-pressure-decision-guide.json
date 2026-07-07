@@ -1,0 +1,15 @@
+{
+  "sim_id": "conflict-pressure-decision-guide",
+  "diagram_name": "Conflict or Pressure? A Decision Guide",
+  "chapter_number": 2,
+  "chapter_title": "Relationships and Respect",
+  "chapter_dir": "02-relationships-and-respect",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/02-relationships-and-respect",
+  "library": "Mermaid",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "differentiate, distinguish",
+  "learning_objective": "Students analyze a described relationship situation",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n\n**sim-id:** conflict-pressure-decision-guide<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: differentiate, distinguish\n\nLearning objective: Students analyze a described relationship situation\nand distinguish ordinary, healthy conflict from coercive pressure by\ntracing a decision path, with every node clickable for an explanation.\n\nVisual style: Mermaid flowchart, top-to-bottom, decision-diamond\nstructure, click handlers on every node\n\nNodes (all require `click NodeId call showInfo(\"term\")` handlers):\n1. Start: \"A disagreement or request has happened\"\n2. Decision: \"Has a boundary already been clearly stated?\" — click text:\n   \"Check whether one person has already said no or set a limit\"\n3. Branch (No): \"Ordinary Conflict\" — click text: \"Normal disagreement;\n   use direct communication and active listening to resolve it\"\n4. Branch (Yes): Decision: \"Is the request being repeated anyway?\" —\n   click text: \"Repetition after a clear boundary is the key warning\n   sign of pressure\"\n5. Branch (No, respected): \"Boundary Respected\" — click text: \"A healthy\n   response to a stated boundary; no further action needed\"\n6. Branch (Yes, repeated): Decision: \"Does it include guilt, threats, or\n   isolation from others?\" — click text: \"These tactics escalate simple\n   persistence into coercive pressure\"\n7. Branch (Yes): \"Coercive Pressure\" — click text: \"Seek outside support\n   from a trusted adult; this pattern is a signal to protect yourself,\n   not a communication gap to close alone\"\n8. Branch (No): \"Persistent but Non-Coercive — Still Address Directly\" —\n   click text: \"Restate the boundary plainly; repeated non-threatening\n   requests still deserve a firm, direct response\"\n\nConnections: 1→2, 2→3 (No), 2→4 (Yes), 4→5 (No), 4→6 (Yes), 6→7 (Yes),\n6→8 (No)\n\nColor coding: green for healthy-resolution end states, red for the\ncoercive-pressure end state, yellow for decision diamonds\n\nInteractive features: click any node for its infobox; the path taken\nduring an example walkthrough highlights in gold\n\nImplementation: Mermaid.js flowchart with JavaScript click bindings to a\ncustom showInfo() function rendering a side panel"
+}

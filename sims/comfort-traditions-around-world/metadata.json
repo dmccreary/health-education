@@ -1,0 +1,38 @@
+{
+  "title": "Comfort Traditions Around the World",
+  "description": "Students describe several different cultural and family practices used to offer comfort and support, recognizing that many caring approaches exist and all are respected.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "comfort-traditions-around-world",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "describe, exemplify, compare",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "Understanding and Talking About Feelings",
+  "chapter_dir": "03-feelings",
+  "chapter_rel_dir": "bands/grade-1/chapters/03-feelings",
+  "educational": {
+    "gradeLevel": "Grade 1",
+    "subjectArea": "Health Education",
+    "topic": "Understanding and Talking About Feelings",
+    "learningObjectives": [
+      "Students describe several different cultural and family practices used to offer comfort and support, recognizing that many caring approaches exist and all are respected."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "describe, exemplify, compare",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "goal-progress-tracker-chart",
+  "diagram_name": "My Goal Progress Tracker",
+  "chapter_number": 7,
+  "chapter_title": "Influences, Decisions, and Personal Goals",
+  "chapter_dir": "07-influences-decisions-goals",
+  "chapter_rel_dir": "bands/grade-2/chapters/07-influences-decisions-goals",
+  "library": "Chart.js",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "assess, judge, reflect",
+  "learning_objective": "Students reflect on the results of working toward a personal health-related goal by reviewing a week of sample progress data and judging what went well and what to change.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: chart\n**sim-id:** goal-progress-tracker-chart<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Evaluate (L5)\nBloom Taxonomy Verb: assess, judge, reflect\n\nLearning objective: Students reflect on the results of working toward a personal health-related goal by reviewing a week of sample progress data and judging what went well and what to change.\n\nChart type: Bar chart with a toggle to a simple weekly calendar view\n\nPurpose: Show a sample week of goal-tracking data (\"Drink water instead of soda\") so students can practice reflecting on progress rather than only setting goals\n\nX-axis: Day of the week (Mon-Sun)\nY-axis: Goal met? (Yes = full bar height, No = short bar height)\n\nData series:\n- Sample week: Mon (Yes), Tue (Yes), Wed (No), Thu (Yes), Fri (No), Sat (Yes), Sun (Yes)\n\nInteractive features (REQUIRED):\n- Hover any bar to see a tooltip with that day's result and a short reflection prompt, e.g., hovering Wednesday shows \"No -- what might have made this day harder? A busy afternoon? Forgetting the water bottle?\"\n- Click \"Toggle My Own Week\" button to let a student (via teacher-led class discussion) click each day to mark Yes/No and generate their own bar chart live\n- Button: \"Show Reflection Questions\" reveals three prompts below the chart: \"Which days were easiest? Which were hardest? What is one thing to try next week?\"\n\nTitle: \"My Goal Progress: Drink Water Instead of Soda\"\nLegend: Green bars = goal met, gray bars = not met that day\n\nColor scheme: Green for \"Yes,\" soft gray for \"No\" -- non-judgmental, no red or negative coloring\n\nAnnotations: Small star icon over the day with the longest streak\n\nImplementation: Chart.js bar chart with custom click handling to let a class build its own sample week interactively"
+}

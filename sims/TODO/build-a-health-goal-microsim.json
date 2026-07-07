@@ -1,0 +1,15 @@
+{
+  "sim_id": "build-a-health-goal-microsim",
+  "diagram_name": "Build a Health Goal",
+  "chapter_number": 7,
+  "chapter_title": "Influences, Decisions, and Personal Goals",
+  "chapter_dir": "07-influences-decisions-goals",
+  "chapter_rel_dir": "bands/grade-2/chapters/07-influences-decisions-goals",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "determine, organize, construct",
+  "learning_objective": "Students determine the components of a personal health-related goal by assembling a goal from a target behavior, a time frame, and a way to track progress.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** build-a-health-goal-microsim<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: determine, organize, construct\n\nLearning objective: Students determine the components of a personal health-related goal by assembling a goal from a target behavior, a time frame, and a way to track progress.\n\nCanvas layout:\n- Left side (350px): Three selection columns: \"Pick a Target\" (e.g., drink water, try a new food, play outside, sleep on time), \"Pick a Time Frame\" (this week, two weeks, this month), \"Pick a Tracker\" (calendar stickers, tally marks, checklist)\n- Right side (250px): A built \"My Goal\" card that assembles the three chosen pieces into one readable sentence\n\nVisual elements:\n- Three vertical lists of clickable option chips\n- A goal card that updates live as choices are made, styled like a simple certificate\n\nInteractive controls:\n- Click one chip from each of the three columns\n- Button: \"Build My Goal\" (finalizes the sentence on the card)\n- Button: \"Start Over\"\n\nDefault parameters:\n- No chips selected; goal card shows placeholder text \"Pick a target, a time frame, and a tracker to build your goal\"\n\nData Visibility Requirements:\n  Stage 1: Show three empty columns and placeholder goal card\n  Stage 2: Student picks \"drink water\" -- goal card updates to show \"My goal: drink water ___\"\n  Stage 3: Student picks \"this week\" -- goal card updates to \"My goal: drink water this week ___\"\n  Stage 4: Student picks \"calendar stickers\" -- goal card completes: \"My goal: drink water this week, and I'll track it with calendar stickers\"\n\nBehavior:\n- Goal card always reflects current selections live\n- \"Build My Goal\" locks in the sentence and shows a small celebration highlight (color flash, not sound) on the card\n\nInstructional Rationale: This is an Analyze-level objective (\"determine actions that support a personal health-related goal\"), so the design has students organize the separate components (target, time frame, tracker) into a coherent structure themselves rather than simply recalling a premade goal.\n\nImplementation notes: Use p5.js. Keep the interface simple with large clickable chips appropriate for early-elementary fine motor skills."
+}

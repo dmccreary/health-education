@@ -1,0 +1,15 @@
+{
+  "sim_id": "social-conditions-health-pathway-map",
+  "diagram_name": "Social Conditions to Health Outcomes Pathway Map",
+  "chapter_number": 8,
+  "chapter_title": "Health Equity and Disease Prevention",
+  "chapter_dir": "08-health-equity-and-disease-prevention",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/08-health-equity-and-disease-prevention",
+  "library": "vis-network",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, differentiate, organize",
+  "learning_objective": "Students examine how five social-condition categories\n(economic stability, neighborhood environment, food access, health care",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n\n**sim-id:** social-conditions-health-pathway-map<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: examine, differentiate, organize\n\nLearning objective: Students examine how five social-condition categories\n(economic stability, neighborhood environment, food access, health care\naccess, education/social context) connect to and compound each other on\nthe way to a health outcome, distinguishing systemic causes from individual\nbehavior.\n\nNode types:\n1. Central outcome nodes (dark circles): \"Chronic Disease Risk,\" \"Life\n   Expectancy Gap,\" \"Mental Health Burden\"\n2. Category nodes (blue squares): Economic Stability, Neighborhood/Physical\n   Environment, Food Access, Health Care Access, Education/Social Context\n3. Mechanism nodes (orange diamonds), 2 per category, naming a concrete\n   real-world pathway (e.g., under Food Access: \"Grocery store closes,\n   replaced by convenience stores\" and \"Fresh produce costs more per\n   calorie than processed food\")\n\nEdge types:\n- \"Compounds With\" (dashed gray, category to category, showing overlap)\n- \"Contributes To\" (solid black, mechanism to outcome node)\n- \"Shapes\" (category to its mechanism nodes)\n\nLayout: Force-directed network, outcome nodes anchored center-right,\ncategory nodes surrounding, mechanisms as outer leaves\n\nInteractive features:\n- Hover any node: one-sentence plain-language description\n- Click a category node: side panel explains that category and highlights\n  every category it compounds with, using the \"Compounds With\" edges\n- Click a mechanism node: side panel gives a concrete, real-world example\n- Drag, zoom, and pan enabled\n\nLegend: color/shape key for outcomes, categories, mechanisms; edge style\nkey distinguishing \"compounds with,\" \"contributes to,\" and \"shapes\"\n\nImplementation: vis-network, force-directed layout, click-triggered panel\ncontent stored in a JSON lookup keyed by node id; emphasize in all panel\ntext that these are systemic pathways, not verdicts about individuals"
+}

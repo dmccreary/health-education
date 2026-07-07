@@ -1,0 +1,15 @@
+{
+  "sim_id": "who-to-talk-to-feelings-map",
+  "diagram_name": "Who Can I Talk To About My Feelings?",
+  "chapter_number": 7,
+  "chapter_title": "Mental And Emotional Health",
+  "chapter_dir": "07-mental-and-emotional-health",
+  "chapter_rel_dir": "bands/grade-3/chapters/07-mental-and-emotional-health",
+  "library": "vis-network",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "identify, recall, recognize",
+  "learning_objective": "Students identify trusted people they can talk to about hard feelings by exploring a support-network map centered on themselves.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n**sim-id:** who-to-talk-to-feelings-map<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy: Remember (L1)\nBloom Taxonomy Verb: identify, recall, recognize\n\nLearning objective: Students identify trusted people they can talk to about hard feelings by exploring a support-network map centered on themselves.\n\nPurpose: Reinforce that help for emotional struggles is close by, using the same hub-and-spoke pattern as the trusted-adult map from Chapter 2, now applied specifically to feelings.\n\nNode types: Center node \"Me\" (soft yellow circle); trusted-person nodes (soft blue circles) connected to \"Me\" — Parent/Guardian, Teacher, School Counselor, School Nurse, Another Trusted Family Member, Close Friend.\n\nEdge types: A line connecting \"Me\" to each trusted person, labeled with the kind of help offered (e.g., \"Helps me think it through,\" \"Knows calming strategies,\" \"Listens without judging\").\n\nLayout: Radial/hub layout with \"Me\" in the center.\n\nInteractive features: Click any trusted-person node to reveal an infobox naming who they are and an example thing to say to them. Click the center \"Me\" node to reveal: \"You can talk to more than one person, more than once.\" Drag, zoom, and pan supported.\n\nVisual styling: Warm palette, simple circle shapes, no realistic depictions of people.\n\nImplementation: vis-network with click-to-reveal infobox panels."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "comprehensive-health-care-concept-map",
+  "diagram_name": "Comprehensive Health Care Concept Map",
+  "chapter_number": 3,
+  "chapter_title": "Healthcare Access and Sexual Health",
+  "chapter_dir": "03-healthcare-access-and-sexual-health",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/03-healthcare-access-and-sexual-health",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "describe, explain, classify",
+  "learning_objective": "Students describe the components of comprehensive adolescent health care and explain how they connect within a single system of care rather than existing as separate services.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** comprehensive-health-care-concept-map<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: describe, explain, classify\n\nLearning objective: Students describe the components of comprehensive adolescent health care and explain how they connect within a single system of care rather than existing as separate services.\n\nLayout: A central hub node labeled \"Comprehensive Health Care\" with four connected spokes: Preventive Care, Acute/Chronic Care, Mental and Emotional Health, Sexual and Reproductive Health.\n\nInteractive elements: Click each spoke to open an infobox describing what that component includes and one example of a visit or service; a \"Why Together?\" center button explains why integrated care improves outcomes compared to fragmented care.\n\nInstructional Rationale: Describing and classifying the components of a system is Understand-level, so a clickable concept map with explanatory infoboxes is used rather than an activity requiring judgment or synthesis.\n\nImplementation notes: p5.js. Each spoke stored as an object with label, description, and example; central button toggles a static explanatory panel."
+}

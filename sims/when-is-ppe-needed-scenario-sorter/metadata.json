@@ -1,0 +1,23 @@
+{
+  "title": "When Is PPE Needed? Scenario Sorter",
+  "description": "Students evaluate realistic scenarios to judge whether PPE is needed, and if so, which type, justifying the choice based on the transmission risk present.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "when-is-ppe-needed-scenario-sorter",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "judge, assess, justify",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Sleep, Fitness, and Emergency Response",
+  "chapter_dir": "06-sleep-fitness-and-emergency-response",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/06-sleep-fitness-and-emergency-response"
+}

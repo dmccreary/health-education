@@ -1,0 +1,23 @@
+{
+  "title": "Why Breakfast? Cause and Effect",
+  "description": "Students explain why eating breakfast is important by comparing two versions of the same student's morning — one with breakfast and one without.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "why-breakfast-matters",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, summarize, infer",
+  "completion_status": "scaffold",
+  "chapter_number": 2,
+  "chapter_title": "Food, Drinks, and Staying Safe in the Kitchen",
+  "chapter_dir": "02-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-1/chapters/02-food-and-nutrition"
+}

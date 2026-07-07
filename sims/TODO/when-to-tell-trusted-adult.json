@@ -1,0 +1,15 @@
+{
+  "sim_id": "when-to-tell-trusted-adult",
+  "diagram_name": "When to Tell a Trusted Adult",
+  "chapter_number": 3,
+  "chapter_title": "Understanding and Talking About Feelings",
+  "chapter_dir": "03-feelings",
+  "chapter_rel_dir": "bands/grade-1/chapters/03-feelings",
+  "library": "Mermaid",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "recall, identify, recognize",
+  "learning_objective": "Students recall common signs of emotional struggle and recognize that telling a trusted adult is always the right response.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n**sim-id:** when-to-tell-trusted-adult<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy: Remember (L1)\nBloom Taxonomy Verb: recall, identify, recognize\n\nLearning objective: Students recall common signs of emotional struggle and recognize that telling a trusted adult is always the right response.\n\nPurpose: Show a simple, reassuring decision path from noticing a sign to getting help\n\nVisual style: Simple vertical flowchart with rounded boxes, calm colors, no decision diamonds that could feel like a \"test\" — every path leads to the same caring outcome\n\nSteps:\n1. Start: \"I notice something\" — hover text: \"Maybe a friend seems very sad for many days, or doesn't want to play anymore, or says 'I don't feel good inside.'\"\n2. Process: \"I feel it myself, or I see it in someone else\" — hover text: \"It's just as important to notice this in yourself as it is to notice it in a friend.\"\n3. Process: \"I tell a trusted adult\" — hover text: \"A parent, teacher, school counselor, or another caring grown-up at home or school.\"\n4. End: \"The trusted adult helps\" — hover text: \"Trusted adults know how to help, or how to find more support — you don't have to solve it alone.\"\n\nEvery node includes a click handler opening an infobox with the hover text described above (Mermaid `click` directive on each node).\n\nColor coding:\n- Soft blue: noticing steps\n- Soft green: telling a trusted adult\n- Soft gold: getting help (end state)\n\nImplementation: Mermaid flowchart with `click NodeId call showInfo(\"text\")` directives on all four nodes, each opening an infobox with the corresponding hover text"
+}

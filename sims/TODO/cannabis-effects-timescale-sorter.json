@@ -1,0 +1,15 @@
+{
+  "sim_id": "cannabis-effects-timescale-sorter",
+  "diagram_name": "Cannabis Effects By Timescale Sorter",
+  "chapter_number": 11,
+  "chapter_title": "Substance Recovery and Resilience",
+  "chapter_dir": "11-substance-recovery-and-resilience",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/11-substance-recovery-and-resilience",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "classify, differentiate, organize",
+  "learning_objective": "Classify documented cannabis effects into short-term",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n\n**sim-id:** cannabis-effects-timescale-sorter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: classify, differentiate, organize\n\nLearning objective: Classify documented cannabis effects into short-term\nversus long-term categories and differentiate physical, mental, and\nrelational effects within each.\n\nLayout: Two zones (\"Short-Term: Minutes to Hours,\" \"Long-Term: Months to\nYears\") and a deck of 10 shuffled effect cards (e.g., \"Impaired short-term\nmemory during use,\" \"Cannabis use disorder with withdrawal symptoms\").\n\nInteractive controls: Drag or click each card into the correct zone;\nimmediate feedback confirms placement with a one-sentence explanation; an\noptional color tag toggles a physical/mental/relational layer; \"Reset\"\nreshuffles the deck.\n\nInstructional Rationale: Classifying along two dimensions at once is an\nAnalyze-level task; sorting with immediate feedback requires active\ndiscrimination rather than passive reading.\n\nImplementation notes: p5.js drag-and-drop with zone collision detection;\ndata grounded in NIDA/CDC summaries. No card depicts a method of use.\nResponsive, stacks vertically on narrow screens."
+}

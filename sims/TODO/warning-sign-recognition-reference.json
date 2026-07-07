@@ -1,0 +1,15 @@
+{
+  "sim_id": "warning-sign-recognition-reference",
+  "diagram_name": "Warning Sign Recognition Reference",
+  "chapter_number": 5,
+  "chapter_title": "Mental Health and Crisis Support",
+  "chapter_dir": "05-mental-health-and-crisis-support",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/05-mental-health-and-crisis-support",
+  "library": "p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "identify, recognize, list",
+  "learning_objective": "Students identify and recognize verbal, behavioral,",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n\n**sim-id:** warning-sign-recognition-reference<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Remember (L1)\nBloom Verb: identify, recognize, list\n\nLearning objective: Students identify and recognize verbal, behavioral,\nand emotional warning signs of suicide or self-harm risk, and recall the\n988 Suicide & Crisis Lifeline as an immediate resource.\n\nLayout: Three labeled columns — \"Verbal Signs,\" \"Behavioral Signs,\"\n\"Emotional Signs\" — each containing four short, plainly worded example\nphrases drawn directly from the chapter text. A persistent banner across\nthe top reads \"Call or text 988 — the Suicide & Crisis Lifeline is free,\nconfidential, and available 24/7.\"\n\nInteractive elements: Click any example phrase to open an infobox\nrestating the sign in supportive, non-diagnostic language and reminding\nthe student that noticing a sign calls for immediate, caring action, not\ndiagnosis. Click the banner to reveal one additional sentence: \"988 is\nappropriate whether you are worried about yourself or someone else.\"\n\nInstructional Rationale: Recognizing named categories of warning signs and\nrecalling the crisis resource is Remember-level, so a labeled,\nclick-to-reveal reference infographic is used rather than a scenario\nsimulation. No interactive element in this specification simulates,\nrole-plays, or depicts a suicide attempt or self-harm act; content is\nstrictly limited to naming recognizable signs and reinforcing the 988\nresource.\n\nImplementation notes: p5.js; sign text and supportive infobox copy stored\nas data objects; layout responsive to window resize; calm, plain visual\nstyle with no crisis imagery."
+}

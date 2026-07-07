@@ -1,0 +1,15 @@
+{
+  "sim_id": "sti-prevention-effectiveness-chart",
+  "diagram_name": "STI Prevention Methods Effectiveness Comparison",
+  "chapter_number": 4,
+  "chapter_title": "Healthcare Access and Sexual Health",
+  "chapter_dir": "04-healthcare-access-and-sexual-health",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/04-healthcare-access-and-sexual-health",
+  "library": "Chart.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, compare, summarize",
+  "learning_objective": "Students explain and compare the relative",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: chart\n\n**sim-id:** sti-prevention-effectiveness-chart<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Understand (L2)\nBloom Verb: explain, compare, summarize\n\nLearning objective: Students explain and compare the relative\nrisk-reduction mechanism of five evidence-based STI prevention methods,\npresented factually rather than as a recommendation ranking.\n\nChart type: Horizontal bar chart\n\nX-axis: Relative risk reduction (Full, Substantial, Partial, Indirect) —\ncategorical labels, not a numeric health-risk score, to avoid implying\nfalse precision\n\nY-axis: Prevention method (Abstinence, Vaccination, Barrier Methods,\nRegular Testing, Treatment Adherence)\n\nInteractive features: Hovering a bar reveals a tooltip explaining the\nspecific mechanism by which that method reduces risk, in the same factual\nlanguage as the chapter text; clicking a bar pins an expanded infobox\nbelow the chart with a one-sentence clinical explanation.\n\nTitle: \"Comparing STI Prevention Methods by Mechanism\"\n\nInstructional Rationale: Explaining and comparing methods at a factual\nlevel is an Understand-level objective, so a labeled comparison chart with\nexplanatory tooltips is used rather than a decision-making tool, keeping\nthe framing informational and non-prescriptive.\n\nImplementation notes: Chart.js horizontal bar chart; categorical x-axis;\ntooltip and click-to-pin text stored in a JS lookup object; no anatomical\nimagery, text and chart elements only."
+}

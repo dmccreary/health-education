@@ -1,0 +1,15 @@
+{
+  "sim_id": "online-harm-response-pathway",
+  "diagram_name": "Online Harm Response Pathway",
+  "chapter_number": 9,
+  "chapter_title": "Digital and School Safety",
+  "chapter_dir": "09-digital-and-school-safety",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/09-digital-and-school-safety",
+  "library": "Mermaid",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "apply, demonstrate, execute",
+  "learning_objective": "Students apply the correct five-step response sequence\n(stop responding, save evidence, report through platform, report to",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n\n**sim-id:** online-harm-response-pathway<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Apply (L3)\nBloom Verb: apply, demonstrate, execute\n\nLearning objective: Students apply the correct five-step response sequence\n(stop responding, save evidence, report through platform, report to\nNCMEC CyberTipline, tell a trusted adult) to three realistic categories of\nonline harm: harassment, doxxing, and non-consensual image sharing. No\nnode describes or depicts explicit content, harassment content, or private\ninformation itself.\n\nVisual style: Mermaid flowchart with a category-selector at the top\n(Harassment, Doxxing, Non-Consensual Image Sharing) feeding into a shared\nfive-step response chain, all nodes clickable\n\nNodes (all with `click NodeId call showInfo(\"term\")`):\n1. \"Stop Responding\" — click reveals: \"Engaging with the person responsible\n   rarely stops the behavior and can escalate it.\"\n2. \"Save Evidence\" — click reveals: \"Screenshot messages, usernames, posts,\n   and timestamps before blocking — this is what platforms, schools, and\n   law enforcement need to act.\"\n3. \"Report Through the Platform\" — click reveals: \"Every major platform\n   has a tool for reporting harassment, threats, or non-consensual\n   images.\"\n4. \"Report to NCMEC CyberTipline\" — click reveals: \"report.cybertip.org is\n   the national resource for any non-consensual image involving a minor.\"\n5. \"Tell a Trusted Adult\" — click reveals: \"A parent, counselor, or other\n   trusted adult can help evaluate next steps, including whether law\n   enforcement should be involved.\"\n\nCategory nodes at top (click reveals a one-sentence definition of that\nharm category without graphic detail): \"Harassment,\" \"Doxxing,\"\n\"Non-Consensual Image Sharing\"\n\nConnections: each category node → Step 1 → Step 2 → Step 3 → Step 4 →\nStep 5, with Step 4 shown as most critical when the category is\nNon-Consensual Image Sharing (highlighted branch)\n\nColor coding: gray for category selectors, blue for the five response\nsteps, green for the final \"Tell a Trusted Adult\" node\n\nImplementation: Mermaid flowchart with click bindings to a showInfo()\nfunction; category selection highlights the shared step chain rather than\ncreating separate chains, reinforcing that the response process is\nconsistent across harm types"
+}

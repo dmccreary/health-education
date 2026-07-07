@@ -1,0 +1,15 @@
+{
+  "sim_id": "impaired-reaction-time-simulator",
+  "diagram_name": "Impaired Reaction Time Simulator",
+  "chapter_number": 10,
+  "chapter_title": "Substance Use Disorder, Recovery, and Policy",
+  "chapter_dir": "10-substance-use-disorder-recovery-and-policy",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/10-substance-use-disorder-recovery-and-policy",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, compare, differentiate",
+  "learning_objective": "Students analyze how increasing impairment levels affect stopping distance by comparing reaction time and total stopping distance at several illustrative impairment levels, differentiating how much distance is added at each stage.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** impaired-reaction-time-simulator<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: examine, compare, differentiate\n\nLearning objective: Students analyze how increasing impairment levels affect stopping distance by comparing reaction time and total stopping distance at several illustrative impairment levels, differentiating how much distance is added at each stage.\n\nCanvas layout: Top area (300px) shows a simple top-down roadway with a car icon and a hazard marker at a fixed distance; bottom area (200px) shows a slider control and a data readout panel.\n\nVisual elements: A roadway with distance markers in feet; a car icon; a hazard icon appearing at a randomized point; a shaded \"reaction distance\" zone and a separate shaded \"braking distance\" zone that both extend as impairment increases.\n\nInteractive controls: A slider labeled \"Impairment Level\" with four labeled stops: None, Mild, Moderate, Significant (illustrative, educational categories, not tied to specific blood alcohol numbers); as the slider moves, the reaction-distance and braking-distance zones on the roadway resize accordingly and a data readout updates: \"Reaction Distance,\" \"Braking Distance,\" \"Total Stopping Distance.\"\n\nDefault parameters: Slider starts at \"None,\" showing baseline unimpaired stopping distance; hazard appears at a fixed distance so comparisons are consistent across slider positions.\n\nInstructional Rationale: An Analyze-level objective requires learners to examine and compare relationships between variables; a slider-driven data readout lets students directly compare how stopping distance grows with impairment level, which is more instructive than a single animated crash scenario because it makes the underlying relationship between impairment and distance visible and comparable.\n\nImplementation notes: p5.js. Illustrative relative values only, clearly labeled as educational estimates rather than exact clinical or legal figures. No depiction of a crash, injury, or graphic outcome — the simulator stops at showing stopping distances. Responsive canvas that reflows on window resize."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "goal-strategy-outcome-rubric",
+  "diagram_name": "Goal Strategy Outcome Evaluation Rubric",
+  "chapter_number": 14,
+  "chapter_title": "Health Decision-Making and Goal-Setting",
+  "chapter_dir": "14-health-decision-making-and-goal-setting",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/14-health-decision-making-and-goal-setting",
+  "library": "p5.js",
+  "bloom_level": "Evaluate<br/>",
+  "bloom_verb": "assess, critique, justify",
+  "learning_objective": "Evaluate a completed goal-setting scenario's process",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n\n**sim-id:** goal-strategy-outcome-rubric<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Evaluate<br/>\nBloom Taxonomy Verb: assess, critique, justify\n\nLearning objective: Evaluate a completed goal-setting scenario's process\nand outcome against a four-criterion rubric (data tracked, strategy\ncomponents functioned, goal partially/fully achieved, plan revision\nneeded), producing a written evaluation.\n\nPurpose: Give learners practice judging goal outcomes on process quality,\nnot just success/failure, echoing the process-vs-outcome distinction from\nthe decision-making evaluation earlier in the chapter.\n\nLayout: Left panel: one of three preset four-week goal scenarios (sleep,\nphysical activity, stress management) presented as a short checkpoint log\n(weekly entries with notes). Right panel: four-criterion rubric with a\n1-4 rating slider per criterion and a text box for justification.\n\nInteractive elements: Selecting a scenario loads its checkpoint log;\nrating each criterion unlocks a \"Compare to model evaluation\" button that\nreveals expert reasoning per criterion, similar in structure to the\nconflict-resolution rubric rater from Chapter 13 but applied to goal\noutcomes.\n\nData to display: Three four-week checkpoint logs with realistic mixed\nresults (partial success, one failed checkpoint, one component that\ndidn't work as planned) so learners must weigh genuine trade-offs rather\nthan rate a uniformly successful example.\n\nColor scheme: Neutral gray log panel; gold slider handles; green/red\ncomparison highlight after reveal.\n\nImplementation: p5.js with DOM text panels and a custom slider-rubric\nwidget."
+}

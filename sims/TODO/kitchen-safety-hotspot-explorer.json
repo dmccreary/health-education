@@ -1,0 +1,15 @@
+{
+  "sim_id": "kitchen-safety-hotspot-explorer",
+  "diagram_name": "Kitchen Safety Hotspot Explorer",
+  "chapter_number": 2,
+  "chapter_title": "Food and Nutrition",
+  "chapter_dir": "02-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-5/chapters/02-food-and-nutrition",
+  "library": "p5.js",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "judge, critique, assess",
+  "learning_objective": "Students evaluate a kitchen scene, identify unsafe food handling practices in progress, and judge what safer alternative should replace each one.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** kitchen-safety-hotspot-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Evaluate (L5)\nBloom Taxonomy Verb: judge, critique, assess\n\nLearning objective: Students evaluate a kitchen scene, identify unsafe food handling practices in progress, and judge what safer alternative should replace each one.\n\nPurpose: Help students practice spotting real unsafe food handling practices in a realistic setting, connecting each mistake to why it causes foodborne illness.\n\nLayout: A single illustrated kitchen scene with 6 clickable hotspots, each showing a small unsafe practice (raw chicken next to lettuce on the same board, a carton of milk left out on the counter, a family member about to eat without washing hands, a thermometer-free guess at whether chicken is cooked, unwashed strawberries in a bowl, a sponge used on both raw meat spill and countertop where food will be plated)\n\nInteractive elements:\n- Click any hotspot to open an infobox naming the unsafe practice, explaining why it's risky, and stating the safer alternative\n- After viewing all 6 hotspots, a \"Rate the Kitchen\" button asks the student to assign an overall safety rating (Safe / Needs Improvement / Unsafe) and justify it in one sentence\n- A checklist panel on the side fills in a checkmark for each hotspot the student has reviewed\n\nData to be displayed: 6 hotspot objects, each with practice name, risk explanation, and safer alternative text\n\nColor coding: Hotspots glow soft red until clicked, then turn green with a checkmark once reviewed\n\nResponsive behavior: Scene scales to container width; hotspot click targets remain a consistent minimum tap size on narrow screens\n\nImplementation: p5.js with an image background and an array of hotspot objects (x/y region, practice, risk, alternative) driving click detection and infobox display."
+}

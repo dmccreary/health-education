@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Social Conditions to Health Outcomes Pathway Map</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Social Conditions to Health Outcomes Pathway Map</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> social-conditions-health-pathway-map</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students examine how five social-condition categories
+(economic stability, neighborhood environment, food access, health care</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: graph-model
+    
+    **sim-id:** social-conditions-health-pathway-map<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    Bloom Taxonomy Level: Analyze (L4)
+    Bloom Verb: examine, differentiate, organize
+    
+    Learning objective: Students examine how five social-condition categories
+    (economic stability, neighborhood environment, food access, health care
+    access, education/social context) connect to and compound each other on
+    the way to a health outcome, distinguishing systemic causes from individual
+    behavior.
+    
+    Node types:
+    1. Central outcome nodes (dark circles): "Chronic Disease Risk," "Life
+       Expectancy Gap," "Mental Health Burden"
+    2. Category nodes (blue squares): Economic Stability, Neighborhood/Physical
+       Environment, Food Access, Health Care Access, Education/Social Context
+    3. Mechanism nodes (orange diamonds), 2 per category, naming a concrete
+       real-world pathway (e.g., under Food Access: "Grocery store closes,
+       replaced by convenience stores" and "Fresh produce costs more per
+       calorie than processed food")
+    
+    Edge types:
+    - "Compounds With" (dashed gray, category to category, showing overlap)
+    - "Contributes To" (solid black, mechanism to outcome node)
+    - "Shapes" (category to its mechanism nodes)
+    
+    Layout: Force-directed network, outcome nodes anchored center-right,
+    category nodes surrounding, mechanisms as outer leaves
+    
+    Interactive features:
+    - Hover any node: one-sentence plain-language description
+    - Click a category node: side panel explains that category and highlights
+      every category it compounds with, using the "Compounds With" edges
+    - Click a mechanism node: side panel gives a concrete, real-world example
+    - Drag, zoom, and pan enabled
+    
+    Legend: color/shape key for outcomes, categories, mechanisms; edge style
+    key distinguishing "compounds with," "contributes to," and "shapes"
+    
+    Implementation: vis-network, force-directed layout, click-triggered panel
+    content stored in a JSON lookup keyed by node id; emphasize in all panel
+    text that these are systemic pathways, not verdicts about individuals
+    -->
+</body>
+</html>

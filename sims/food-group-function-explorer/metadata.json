@@ -1,0 +1,38 @@
+{
+  "title": "What Each Food Group Does",
+  "description": "Students explain what each food group does for the body by clicking on a food group icon and seeing its job and example foods.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "food-group-function-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, describe, classify",
+  "completion_status": "scaffold",
+  "chapter_number": 2,
+  "chapter_title": "Food, Energy, and Safe Eating",
+  "chapter_dir": "02-food-energy-safe-eating",
+  "chapter_rel_dir": "bands/grade-2/chapters/02-food-energy-safe-eating",
+  "educational": {
+    "gradeLevel": "Grade 2",
+    "subjectArea": "Health Education",
+    "topic": "Food, Energy, and Safe Eating",
+    "learningObjectives": [
+      "Students explain what each food group does for the body by clicking on a food group icon and seeing its job and example foods."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "explain, describe, classify",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
+}

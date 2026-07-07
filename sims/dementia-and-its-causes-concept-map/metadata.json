@@ -1,0 +1,23 @@
+{
+  "title": "Dementia and Its Causes Concept Map",
+  "description": "Students explain the relationship between dementia as a general category and Alzheimer's disease as its most common specific cause, and connect brain-healthy habits to long-term brain health.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "dementia-and-its-causes-concept-map",
+  "library": "vis-network",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, classify, summarize",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Stigma, Bias, and Brain Health",
+  "chapter_dir": "05-stigma-bias-and-brain-health",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/05-stigma-bias-and-brain-health"
+}

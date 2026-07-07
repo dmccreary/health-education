@@ -1,0 +1,38 @@
+{
+  "title": "Build a Health Goal",
+  "description": "Students determine the components of a personal health-related goal by assembling a goal from a target behavior, a time frame, and a way to track progress.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "build-a-health-goal-microsim",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "determine, organize, construct",
+  "completion_status": "scaffold",
+  "chapter_number": 7,
+  "chapter_title": "Influences, Decisions, and Personal Goals",
+  "chapter_dir": "07-influences-decisions-goals",
+  "chapter_rel_dir": "bands/grade-2/chapters/07-influences-decisions-goals",
+  "educational": {
+    "gradeLevel": "Grade 2",
+    "subjectArea": "Health Education",
+    "topic": "Influences, Decisions, and Personal Goals",
+    "learningObjectives": [
+      "Students determine the components of a personal health-related goal by assembling a goal from a target behavior, a time frame, and a way to track progress."
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "determine, organize, construct",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
+}

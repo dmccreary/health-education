@@ -1,0 +1,23 @@
+{
+  "title": "STI Prevention Methods Effectiveness Explorer",
+  "description": "Students explain and compare the relative risk-reduction level of five evidence-based STI prevention methods without any method being framed as an instruction to act.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "sti-prevention-methods-effectiveness-explorer",
+  "library": "Chart.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, compare, summarize",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "Healthcare Access and Sexual Health",
+  "chapter_dir": "03-healthcare-access-and-sexual-health",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/03-healthcare-access-and-sexual-health"
+}

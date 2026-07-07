@@ -1,0 +1,23 @@
+{
+  "title": "Positive or Negative? Influence Sorter",
+  "description": "Students distinguish positive influences from negative influences by sorting simple, everyday scenario cards into two labeled bins, matching the Grade 1 benchmark on which people or situations positively or negatively influence a health behavior.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "positive-or-negative-influence-sorter",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "distinguish, examine, differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 7,
+  "chapter_title": "Getting Help and Making Healthy Choices",
+  "chapter_dir": "07-help-and-decisions",
+  "chapter_rel_dir": "bands/grade-1/chapters/07-help-and-decisions"
+}

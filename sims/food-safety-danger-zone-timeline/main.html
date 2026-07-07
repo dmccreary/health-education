@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 540 -->
+<title>Food Safety Danger Zone Timeline</title>
+<script src="https://unpkg.com/vis-timeline@7.7.3/standalone/umd/vis-timeline-graph2d.min.js"></script>
+<link href="https://unpkg.com/vis-timeline@7.7.3/styles/vis-timeline-graph2d.min.css" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  #timeline { border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+
+  /* Event marker colors keyed to the risk stage */
+  .vis-item { font-size: 12px; font-weight: bold; }
+  .vis-item.safe    { background-color: #bfe3c0; border-color: seagreen;    color: #12401a; }
+  .vis-item.warn    { background-color: #fbef9a; border-color: goldenrod;   color: #5a4a00; }
+  .vis-item.caution { background-color: #f6cfa0; border-color: darkorange;  color: #5a3410; }
+  .vis-item.danger  { background-color: #f2b5b0; border-color: indianred;   color: #5a1512; }
+  .vis-item.whatif  { background-color: #cfe9d0; border-color: seagreen;    color: #12401a; font-style: italic; }
+
+  /* Background risk-zone bands */
+  .vis-item.vis-background.zone-safe    { background-color: rgba(46,139,87,0.14); }
+  .vis-item.vis-background.zone-warn    { background-color: rgba(218,165,32,0.16); }
+  .vis-item.vis-background.zone-caution { background-color: rgba(255,140,0,0.16); }
+  .vis-item.vis-background.zone-danger  { background-color: rgba(205,92,92,0.18); }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 8px 0 2px; font-size: 11px; color: #334155; }
+  .legend span { display: inline-flex; align-items: center; gap: 4px; }
+  .sw { width: 12px; height: 12px; border-radius: 3px; display: inline-block; border: 1px solid; }
+  .sw.safe { background: #bfe3c0; border-color: seagreen; }
+  .sw.warn { background: #fbef9a; border-color: goldenrod; }
+  .sw.caution { background: #f6cfa0; border-color: darkorange; }
+  .sw.danger { background: #f2b5b0; border-color: indianred; }
+
+  .row { display: flex; gap: 8px; margin-top: 8px; align-items: stretch; }
+  .infobox { flex: 2; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 92px; }
+  .infobox strong { color: navy; }
+  .infobox .safe-txt { color: seagreen; font-weight: bold; }
+  .infobox .risk-txt { color: indianred; font-weight: bold; }
+  button { flex: 1; background: steelblue; color: white; border: none; border-radius: 5px; padding: 8px; font-size: 13px; font-weight: bold; cursor: pointer; }
+  button:hover { background: #34618a; }
+</style>
+</head>
+<body>
+<main>
+  <h3>The Food Safety "Danger Zone" Timeline</h3>
+  <div class="subtitle">Cooked chicken sits out at a picnic. Click any event &mdash; or the dashed "What if?" bar &mdash; to see the food safety principle.</div>
+  <div id="timeline"></div>
+  <div class="legend">
+    <span><i class="sw safe"></i>Safe</span>
+    <span><i class="sw warn"></i>Entering danger zone</span>
+    <span><i class="sw caution"></i>Extended time in zone</span>
+    <span><i class="sw danger"></i>High risk</span>
+  </div>
+  <div class="row">
+    <div class="infobox" id="infobox">The <strong>danger zone</strong> is 40&deg;F&ndash;140&deg;F, where bacteria on food grow fastest. Cooked food left in this range should not sit out longer than <strong>2 hours</strong>. Click an event to follow what happens hour by hour.</div>
+    <button id="cmpBtn">Compare the "What if?"</button>
+  </div>
+</main>
+<script>
+// Map a relative hour offset to a real timestamp so vis-timeline can plot it.
+// Hour 0 = Jan 1, 2000 midnight; each hour adds 3,600,000 ms.
+const H0 = new Date(2000, 0, 1, 0, 0, 0).getTime();
+function hr(h){ return new Date(H0 + h * 3600 * 1000); }
+
+const info = {
+  e0: '<strong>Hour 0 &mdash; <span class="safe-txt">Safe.</span></strong> The chicken just reached a safe internal temperature of 165&deg;F. Cooking to the right temperature kills harmful bacteria. Right now the food is safe to eat.',
+  e1: '<strong>Hour 1 &mdash; Entering the danger zone.</strong> The chicken is on the table in the sun and has cooled into the 40&deg;F&ndash;140&deg;F range. <span class="risk-txt">The 2-hour clock has started.</span> Best practice: refrigerate or keep it on ice now.',
+  e25: '<strong>Hour 2.5 &mdash; Danger zone warning.</strong> The food has been at room temperature for 90 minutes. Bacteria that were killed by cooking can regrow and multiply quickly. There is still a little time, but the food should be chilled or eaten soon.',
+  e4: '<strong>Hour 4 &mdash; <span class="risk-txt">High risk.</span></strong> The chicken has been unrefrigerated for over 2 hours &mdash; past the safe limit. Bacteria may have multiplied to unsafe levels. A food safety practice (refrigeration) was needed back at hour 1.',
+  e6: '<strong>Hour 6 &mdash; Decision point.</strong> Discard or eat? Because the food was in the danger zone for more than 2 hours, the rule is <span class="risk-txt">"When in doubt, throw it out."</span> You cannot see, smell, or taste most harmful bacteria, so timing &mdash; not appearance &mdash; is the safest guide.',
+  whatif: '<strong>What if it had been refrigerated at hour 1?</strong> That single choice keeps the food out of the danger zone. See the two paths compared below.',
+  compare:
+    '<strong>Two timelines, one difference:</strong><br>' +
+    '<span class="risk-txt">Actual path:</span> left out &rarr; over 2 hours in the danger zone &rarr; must be discarded at hour 6.<br>' +
+    '<span class="safe-txt">Safe "what if" path:</span> refrigerated at hour 1 &rarr; stays below 40&deg;F &rarr; still safe to eat at hour 6.<br>' +
+    'The safe practice &mdash; <strong>chill within 2 hours</strong> &mdash; is what separates the two outcomes.'
+};
+
+const box = document.getElementById('infobox');
+
+// Background risk-zone bands run along the whole timeline height.
+// Point/box events sit in group 1 (main line); the "what if" sits in group 0 (above).
+const items = new vis.DataSet([
+  // risk-zone background bands
+  { id: 'zSafe',    start: hr(0),   end: hr(1),   type: 'background', className: 'zone-safe' },
+  { id: 'zWarn',    start: hr(1),   end: hr(2.5), type: 'background', className: 'zone-warn' },
+  { id: 'zCaution', start: hr(2.5), end: hr(4),   type: 'background', className: 'zone-caution' },
+  { id: 'zDanger',  start: hr(4),   end: hr(6),   type: 'background', className: 'zone-danger' },
+
+  // branching "what if" comparison event (above the main line)
+  { id: 'whatif', group: 0, start: hr(1), content: 'What if? Refrigerate now', type: 'box', className: 'whatif' },
+
+  // main scenario events
+  { id: 'e0',  group: 1, start: hr(0),   content: 'Cooked to 165&deg;F', type: 'point', className: 'safe' },
+  { id: 'e1',  group: 1, start: hr(1),   content: 'On table in sun', type: 'point', className: 'warn' },
+  { id: 'e25', group: 1, start: hr(2.5), content: '90 min out', type: 'point', className: 'caution' },
+  { id: 'e4',  group: 1, start: hr(4),   content: 'Over 2 hours out', type: 'point', className: 'danger' },
+  { id: 'e6',  group: 1, start: hr(6),   content: 'Discard or eat?', type: 'box', className: 'danger' }
+]);
+
+const groups = new vis.DataSet([
+  { id: 0, content: 'What if?' },
+  { id: 1, content: 'Picnic' }
+]);
+
+const options = {
+  min: hr(-0.4), max: hr(7.0), start: hr(-0.4), end: hr(7.0),
+  zoomable: false, moveable: false, showCurrentTime: false, selectable: true, stack: false,
+  margin: { item: 10, axis: 12 },
+  orientation: { axis: 'bottom' },
+  format: {
+    minorLabels: (d) => {
+      const t = (d.valueOf() - H0) / (3600 * 1000);
+      const h = Math.round(t);
+      return (Math.abs(t - h) < 0.05) ? ('Hour ' + h) : '';
+    },
+    majorLabels: () => ''
+  },
+  timeAxis: { scale: 'hour', step: 1 }
+};
+
+const tl = new vis.Timeline(document.getElementById('timeline'), items, groups, options);
+tl.on('select', (p) => {
+  if (p.items.length && info[p.items[0]]) box.innerHTML = info[p.items[0]];
+});
+document.getElementById('cmpBtn').addEventListener('click', () => { box.innerHTML = info.compare; });
+</script>
+</body>
+</html>

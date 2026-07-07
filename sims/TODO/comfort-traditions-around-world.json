@@ -1,0 +1,15 @@
+{
+  "sim_id": "comfort-traditions-around-world",
+  "diagram_name": "Comfort Traditions Around the World",
+  "chapter_number": 3,
+  "chapter_title": "Understanding and Talking About Feelings",
+  "chapter_dir": "03-feelings",
+  "chapter_rel_dir": "bands/grade-1/chapters/03-feelings",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "describe, exemplify, compare",
+  "learning_objective": "Students describe several different cultural and family practices used to offer comfort and support, recognizing that many caring approaches exist and all are respected.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** comfort-traditions-around-world<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: describe, exemplify, compare\n\nLearning objective: Students describe several different cultural and family practices used to offer comfort and support, recognizing that many caring approaches exist and all are respected.\n\nPurpose: Show a warm, respectful gallery of six family/cultural comfort practices from diverse communities, helping students see the many valid ways people support each other\n\nLayout: A gentle circular or grid arrangement of six illustrated \"family scenes,\" each showing a different comfort practice, with a shared center label reading \"Ways Families Show They Care\"\n\nScenes to show:\n- A family sharing a comfort meal together at a table\n- A grandparent singing softly to a child\n- An elder telling a story to a group of children\n- An extended family gathered together in a living room\n- A parent and child on a quiet walk outside\n- A family saying a comforting phrase or blessing together\n\nInteractive elements:\n- Hover or click each scene to reveal a short caption naming the practice and explaining how it helps someone feel supported\n- No scene is marked as \"better\" than another; captions use equally warm, respectful language for each\n\nVisual style: Soft, warm color palette; flat-style illustrations showing diverse families (varied skin tones, clothing styles, and home settings)\nColor scheme: Warm neutral background with each scene highlighted in a different soft accent color when selected\n\nImplementation: p5.js with click regions mapped to caption reveals; alternatively HTML/CSS grid with JavaScript hover/click handlers"
+}

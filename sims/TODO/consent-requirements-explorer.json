@@ -1,0 +1,15 @@
+{
+  "sim_id": "consent-requirements-explorer",
+  "diagram_name": "The Five Requirements of Consent",
+  "chapter_number": 3,
+  "chapter_title": "Consent and Boundaries",
+  "chapter_dir": "03-consent-and-boundaries",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/03-consent-and-boundaries",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "classify, exemplify, interpret",
+  "learning_objective": "Students classify short example statements as meeting",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n\n**sim-id:** consent-requirements-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Understand (L2)\nBloom Verb: classify, exemplify, interpret\n\nLearning objective: Students classify short example statements as meeting\nor failing each of the five consent requirements (freely given, reversible,\ninformed, enthusiastic, specific), building a working, transferable\ndefinition of consent.\n\nCanvas layout:\n- Left (60%): five labeled panels arranged vertically, one per\n  requirement, each showing its one-sentence definition\n- Right (40%): an example card and two buttons, \"Meets This Requirement\"\n  and \"Fails This Requirement\"\n\nData Visibility Requirements:\n  Stage 1: Show the five requirement names and definitions all at once as\n  reference\n  Stage 2: Show one example statement drawn from a bank of 15 (covering\n  physical affection, image-sharing, and information-sharing contexts)\n  Stage 3: After the learner classifies it against the currently\n  highlighted requirement, show whether they were correct and a one-line\n  explanation\n  Stage 4: Track and display a running count of correctly classified\n  examples across all five requirements\n\nInteractive controls:\n- Click each of the five requirement panels to highlight it as the\n  \"active\" requirement being tested\n- Button: \"Meets This Requirement\" / \"Button: Fails This Requirement\"\n- Button: \"Next Example\"\n\nDefault parameters: Requirement 1 (Freely Given) active at start; example\nbank cycles without repetition until exhausted, then reshuffles\n\nInstructional Rationale: This is an Understand-level objective, so the\ndesign favors step-through classification with concrete, varied examples\nover animation. Seeing the same five requirements tested against very\ndifferent contexts (a hug, a shared photo, a forwarded text) is what\nbuilds the transferable, general model of consent the chapter requires,\nrather than a definition tied to one narrow scenario.\n\nImplementation notes: p5.js with an object array of {requirement, example,\ncorrectAnswer, explanation}; highlight active requirement panel in gold;\ncorrect/incorrect feedback shown via color change and text panel."
+}

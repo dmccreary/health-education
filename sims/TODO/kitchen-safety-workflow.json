@@ -1,0 +1,15 @@
+{
+  "sim_id": "kitchen-safety-workflow",
+  "diagram_name": "Kitchen Safety Checklist",
+  "chapter_number": 4,
+  "chapter_title": "Food And Nutrition",
+  "chapter_dir": "04-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-3/chapters/04-food-and-nutrition",
+  "library": "Mermaid",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "describe, explain, summarize",
+  "learning_objective": "Students describe food safety practices that promote healthy eating by exploring each step of a simple kitchen safety sequence and why it matters.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: workflow\n**sim-id:** kitchen-safety-workflow<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: describe, explain, summarize\n\nLearning objective: Students describe food safety practices that promote healthy eating by exploring each step of a simple kitchen safety sequence and why it matters.\n\nPurpose: Show the sequence of food safety habits from before cooking to after eating, with an explanation of why each step prevents illness.\n\nVisual style: Simple linear flowchart with six steps in sequence\n\nSteps (every node must have a Mermaid click directive opening an infobox):\n1. \"Wash Hands Before Cooking\" — Hover text: \"Hands pick up germs all day; washing them removes germs before they can get onto food.\"\n2. \"Wash Fruits and Vegetables\" — Hover text: \"Produce can carry dirt and germs from the farm or store, so rinsing it removes them before eating.\"\n3. \"Keep Raw Meat Separate\" — Hover text: \"Raw meat can carry germs that spread to other foods if they touch the same cutting board or utensils.\"\n4. \"Cook Food to a Safe Temperature\" — Hover text: \"Heat kills most harmful germs living in raw food.\"\n5. \"Keep Hot Foods Hot, Cold Foods Cold\" — Hover text: \"Germs grow fastest at room temperature, so foods are stored hot or cold to slow that growth.\"\n6. \"Wash Hands Again Before Eating\" — Hover text: \"A final hand wash removes any germs picked up while cooking or setting the table.\"\n\nColor coding:\n- Blue: Hand-washing steps\n- Green: Food preparation steps\n- Orange: Temperature-control steps\n\nImplementation: Mermaid flowchart with `click` directive on every node calling an infobox function that displays the hover text above; linear top-to-bottom sequence."
+}

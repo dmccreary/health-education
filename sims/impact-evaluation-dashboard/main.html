@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 560 -->
+<title>Four-Week Impact of Jordan's Adapted Commute Plan</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 4px 0 2px; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .chart-box { background: aliceblue; border: 1px solid silver; border-radius: 6px; padding: 8px; }
+  .chart-container { position: relative; width: 100%; height: 280px; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 62px; }
+  .infobox strong { color: navy; }
+  .frame { font-style: italic; color: seagreen; }
+  .prompt-box { margin-top: 8px; background: #fffdf5; border: 1px dashed goldenrod; border-radius: 4px; padding: 8px 10px; }
+  .prompt-box label { display: block; font-size: 12px; color: #5b4a1a; font-weight: bold; margin-bottom: 5px; }
+  .prompt-box textarea { width: 100%; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #333; border: 1px solid #d6c98a; border-radius: 4px; padding: 5px 6px; resize: vertical; min-height: 42px; }
+  .prompt-box .hint { display: block; font-size: 11px; color: #8a7a3a; margin-top: 4px; }
+  .source { text-align: center; color: gray; font-size: 11px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <h3>Four-Week Impact of Jordan's Adapted Commute Plan</h3>
+  <div class="subtitle">Hover any point for its value and note. Click a legend name to show or hide that measure.</div>
+  <div class="chart-box">
+    <div class="chart-container"><canvas id="chart"></canvas></div>
+  </div>
+  <div class="infobox" id="infobox">
+    Jordan started walking to work part of the way. Three measures were tracked for four weeks. Hover a point,
+    or hide two lines to study one at a time. <span class="frame">A real change should show up across measures, not in a single lucky week.</span>
+  </div>
+  <div class="prompt-box">
+    <label for="eval">Your turn: in one sentence, was the plan a genuine success? Weigh all three measures.</label>
+    <textarea id="eval" placeholder="Example: Stress and resting heart rate both improved steadily, so the plan looks like a real improvement even though days walked bounced around."></textarea>
+    <span class="hint">Tip: one good week is noise; a trend across measures is a signal.</span>
+  </div>
+  <div class="source">Illustrative student-tracking data. Lower morning stress (1&ndash;10) and lower resting heart rate (bpm) are better; more days walked (0&ndash;5) is better.</div>
+</main>
+<script>
+const weeks = ['Week 1', 'Week 2', 'Week 3', 'Week 4'];
+
+// Per-point notes keyed by "series|weekIndex"
+const notes = {
+  'walk|0': 'Getting used to the new routine.',
+  'walk|1': 'Best week; walked most mornings.',
+  'walk|2': 'Rainy week, so fewer walks.',
+  'walk|3': 'Back up again once the weather cleared.',
+  'stress|0': 'Mornings still felt rushed at first.',
+  'stress|1': 'Noticeably calmer start to the day.',
+  'stress|2': 'A big deadline nudged stress back up.',
+  'stress|3': 'Lowest stress of the month.',
+  'hr|0': 'Baseline resting heart rate.',
+  'hr|1': 'A little lower after more activity.',
+  'hr|2': 'Held roughly steady.',
+  'hr|3': 'Lowest of the month, a small healthy drop.'
+};
+
+const detail = {
+  walk: '<strong>Days walked</strong> is a behavior measure. It bounced (2, 4, 3, 4) and the week 3 dip was just rain, not a loss of motivation. <span class="frame">A noisy line like this is easy to over-read either way.</span>',
+  stress: '<strong>Morning stress</strong> is a self-report (1&ndash;10, lower is better). It fell overall (7, 5, 6, 4); the week 3 bump lines up with a deadline, an unrelated factor. <span class="frame">The trend is down even though one week rose.</span>',
+  hr: '<strong>Resting heart rate</strong> is a body measure (74, 72, 73, 70 bpm). It drifted down slowly and steadily. <span class="frame">A quiet, consistent trend like this is strong evidence of real change.</span>'
+};
+
+const box = document.getElementById('infobox');
+function showDetail(key){ box.innerHTML = detail[key]; }
+
+const ctx = document.getElementById('chart').getContext('2d');
+const chart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: weeks,
+    datasets: [
+      { label: 'Days walked (0-5)', seriesKey: 'walk', data: [2,4,3,4], yAxisID: 'yLeft',
+        borderColor: 'goldenrod', backgroundColor: 'goldenrod', borderWidth: 3, tension: 0.25,
+        pointRadius: 5, pointHoverRadius: 7, pointBackgroundColor: 'goldenrod' },
+      { label: 'Morning stress (1-10, lower better)', seriesKey: 'stress', data: [7,5,6,4], yAxisID: 'yLeft',
+        borderColor: 'teal', backgroundColor: 'teal', borderWidth: 3, tension: 0.25,
+        pointRadius: 5, pointHoverRadius: 7, pointBackgroundColor: 'teal' },
+      { label: 'Resting heart rate (bpm)', seriesKey: 'hr', data: [74,72,73,70], yAxisID: 'yRight',
+        borderColor: 'navy', backgroundColor: 'navy', borderWidth: 3, tension: 0.25,
+        pointRadius: 5, pointHoverRadius: 7, pointBackgroundColor: 'navy' }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    interaction: { mode: 'nearest', intersect: true },
+    layout: { padding: { top: 4, right: 4 } },
+    onClick: (e, els) => { if (els.length) showDetail(chart.data.datasets[els[0].datasetIndex].seriesKey); },
+    scales: {
+      x: { title: { display: true, text: 'Week' }, grid: { display: false } },
+      yLeft: { type: 'linear', position: 'left', beginAtZero: true, min: 0, max: 10,
+        title: { display: true, text: 'Days walked  /  Morning stress' },
+        ticks: { stepSize: 2 } },
+      yRight: { type: 'linear', position: 'right', min: 66, max: 78,
+        title: { display: true, text: 'Resting heart rate (bpm)' },
+        grid: { drawOnChartArea: false }, ticks: { stepSize: 2 } }
+    },
+    plugins: {
+      legend: { position: 'top', labels: { font: { size: 11 }, boxWidth: 22, usePointStyle: true, pointStyle: 'line' } },
+      tooltip: {
+        callbacks: {
+          label: c => c.dataset.label + ': ' + c.parsed.y,
+          afterLabel: c => {
+            const key = c.dataset.seriesKey + '|' + c.dataIndex;
+            return notes[key] ? '→ ' + notes[key] : '';
+          }
+        },
+        bodyFont: { size: 11 }, boxPadding: 4
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>

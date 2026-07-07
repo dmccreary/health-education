@@ -1,0 +1,15 @@
+{
+  "sim_id": "sugar-crash-line-chart",
+  "diagram_name": "Sugar Crash Story",
+  "chapter_number": 4,
+  "chapter_title": "Food And Nutrition",
+  "chapter_dir": "04-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-3/chapters/04-food-and-nutrition",
+  "library": "Chart.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "describe, explain, interpret",
+  "learning_objective": "Students describe why limiting caffeinated and sugary drinks matters by interpreting a simple energy-over-time line chart comparing a sugary drink to water.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: chart\n**sim-id:** sugar-crash-line-chart<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: describe, explain, interpret\n\nLearning objective: Students describe why limiting caffeinated and sugary drinks matters by interpreting a simple energy-over-time line chart comparing a sugary drink to water.\n\nChart type: Line chart\n\nPurpose: Show how energy level changes over the two hours after drinking a sugary soda compared to drinking water, illustrating the \"quick spike, then crash\" pattern.\n\nX-axis: Time after drinking (0, 15, 30, 45, 60, 90, 120 minutes)\nY-axis: Felt energy level (Low, Medium, High — simple 3-point scale)\n\nData series:\n1. Sugary drink (orange line):\n   - 0 min: Medium\n   - 15 min: High\n   - 30 min: High\n   - 45 min: Medium\n   - 60 min: Low\n   - 90 min: Low\n   - 120 min: Medium\n\n2. Water (blue line):\n   - 0 min: Medium\n   - 15 min: Medium\n   - 30 min: Medium\n   - 45 min: Medium\n   - 60 min: Medium\n   - 90 min: Medium\n   - 120 min: Medium\n\nTitle: \"Energy After a Sugary Drink vs. Water\"\nLegend: Position top-right\n\nInteractive features: Hovering any point on either line reveals the exact energy level and a one-sentence caption (e.g., \"30 minutes: sugary drinks often cause a quick burst of energy that doesn't last.\"); a toggle button lets students show or hide each line to compare them one at a time\n\nAnnotations:\n- Callout near the orange line's peak: \"Quick spike!\"\n- Callout near the orange line's dip: \"Energy crash\"\n- Callout on the blue line: \"Steady, no crash\"\n\nImplementation: Chart.js line chart with point hover tooltips and a toggle-series legend"
+}

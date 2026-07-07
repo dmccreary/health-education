@@ -1,0 +1,38 @@
+{
+  "title": "How Germs Travel Map",
+  "description": "Students identify and explain the common paths germs travel between people, surfaces, and objects in a classroom scene.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "how-germs-travel-map",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, identify, describe",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Healthy Habits, Activity, and Germs",
+  "chapter_dir": "05-healthy-habits",
+  "chapter_rel_dir": "bands/grade-1/chapters/05-healthy-habits",
+  "educational": {
+    "gradeLevel": "Grade 1",
+    "subjectArea": "Health Education",
+    "topic": "Healthy Habits, Activity, and Germs",
+    "learningObjectives": [
+      "Students identify and explain the common paths germs travel between people, surfaces, and objects in a classroom scene."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "explain, identify, describe",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Personal Health Behavior Self-Assessment Wheel",
+  "description": "Students examine their own current habits across six health areas and identify realistic goal-focus areas by rating themselves on a private, non-graded self-assessment wheel.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "personal-health-behavior-self-assessment-wheel",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine, assess, identify",
+  "completion_status": "scaffold",
+  "chapter_number": 12,
+  "chapter_title": "Advocacy, Goal Setting, and Health Messaging",
+  "chapter_dir": "12-advocacy-goal-setting-and-health-messaging",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/12-advocacy-goal-setting-and-health-messaging"
+}

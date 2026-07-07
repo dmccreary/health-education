@@ -1,0 +1,15 @@
+{
+  "sim_id": "mental-health-treatment-pathway-map",
+  "diagram_name": "Mental Health Treatment Pathway Map",
+  "chapter_number": 5,
+  "chapter_title": "Mental Health and Crisis Support",
+  "chapter_dir": "05-mental-health-and-crisis-support",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/05-mental-health-and-crisis-support",
+  "library": "vis-network",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, organize, differentiate",
+  "learning_objective": "Students examine how different treatment options\n(therapy types, medication, school-based support, community resources)",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n\n**sim-id:** mental-health-treatment-pathway-map<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: examine, organize, differentiate\n\nLearning objective: Students examine how different treatment options\n(therapy types, medication, school-based support, community resources)\nrelate to one another and organize which combination best fits a given\nscenario's needs and access constraints.\n\nNode types:\n1. Central node: \"Person Seeking Mental Health Support\" (blue circle)\n2. Treatment-category nodes (green squares): Talk Therapy, Medication,\n   School-Based Support, Community/Telehealth Resources\n3. Sub-nodes under Talk Therapy (light green circles): CBT, Interpersonal\n   Therapy, Group Therapy\n4. Access-point node (gold diamond): \"988 Suicide & Crisis Lifeline —\n   Immediate Support\"\n\nEdge types:\n- \"Can Access\" (solid arrows from central node to each treatment-category\n  node and the access-point node)\n- \"Includes\" (solid arrows from Talk Therapy to each therapy sub-node)\n\nLayout: Radial, central node in the middle, treatment categories\nsurrounding it, sub-nodes one ring further out\n\nInteractive features:\n- Hover any node: shows a one-sentence definition\n- Click a treatment-category node: opens a side panel describing what it\n  involves, who provides it, and a realistic access barrier and how to\n  address it\n- Click the 988 node: opens a panel emphasizing it is free, confidential,\n  available 24/7, and appropriate for both crisis and non-crisis support\n  questions\n- Drag, zoom, and pan enabled\n\nLegend: color/shape key for central node, treatment categories,\nsub-options, and the crisis-access node\n\nImplementation: vis-network, radial layout, click-triggered side panel\ncontent stored in a JSON lookup keyed by node id"
+}

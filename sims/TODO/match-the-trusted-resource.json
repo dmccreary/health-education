@@ -1,0 +1,15 @@
+{
+  "sim_id": "match-the-trusted-resource",
+  "diagram_name": "Match The Trusted Resource",
+  "chapter_number": 7,
+  "chapter_title": "Health Skills And Goal Setting",
+  "chapter_dir": "07-health-skills-and-goal-setting",
+  "chapter_rel_dir": "bands/grade-5/chapters/07-health-skills-and-goal-setting",
+  "library": "p5.js",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "determine, justify, recommend",
+  "learning_objective": "Students determine which trusted adult or resource is needed for a range of health situations and justify the choice.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** match-the-trusted-resource<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Evaluate (L5)\nBloom Taxonomy Verb: determine, justify, recommend\n\nLearning objective: Students determine which trusted adult or resource is needed for a range of health situations and justify the choice.\n\nCanvas layout: Left (450px) scenario card; right (200px) four resource buttons (School Nurse, Counselor, Parent/Guardian, Teacher) plus a \"Why?\" reveal panel.\n\nVisual elements: Scenario card (e.g., \"You've had a stomachache for three days and it's getting worse\"); four resource option buttons.\n\nInteractive controls: Click a resource button to answer; \"Why?\" reveals whether it was the best fit and explains the reasoning; \"Next Situation\" cycles through 8 scenarios spanning physical, emotional, relationship, and academic-safety situations.\n\nBehavior: Selecting \"School Nurse\" for the stomachache scenario reveals \"Right call — a school nurse can assess symptoms and help contact a parent or doctor if needed.\"\n\nInstructional Rationale: Evaluate-level objective, so students must weigh several plausible resources and justify which one truly fits, rather than simply recalling one correct name.\n\nImplementation notes: p5.js; scenario objects with best-fit resource id and justification string; allow partial credit reasoning for reasonable second-best choices."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "naming-body-parts-correctly",
+  "diagram_name": "Naming Body Parts Correctly",
+  "chapter_number": 5,
+  "chapter_title": "Staying Safe",
+  "chapter_dir": "05-staying-safe",
+  "chapter_rel_dir": "bands/kindergarten/chapters/05-staying-safe",
+  "library": "p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "identify, recognize, name",
+  "learning_objective": "Students identify and recall the correct name for common body parts, reinforcing the Body Parts and Correct Body Part Names concepts as a body-safety practice.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** naming-body-parts-correctly<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Remember (L1)\nBloom Taxonomy Verb: identify, recognize, name\n\nLearning objective: Students identify and recall the correct name for common body parts, reinforcing the Body Parts and Correct Body Part Names concepts as a body-safety practice.\n\nCanvas layout: Full canvas (500px) shows a simple, non-graphic, front-facing outline illustration of a child in everyday clothing (no undressed or graphic anatomical depiction), with labeled hotspots only over non-sensitive body parts (head, shoulder, elbow, knee, foot, ear). Bottom strip (60px): instructions and a Reset button.\n\nVisual elements: 6 hotspots over the outline illustration; clicking reveals the correct name in a calm, clear infobox.\n\nInteractive controls: Click reveals the correct name; Reset hides all revealed labels.\n\nDefault parameters: All 6 hotspots begin unlabeled and can be clicked in any order.\n\nBehavior: Clicking a hotspot reveals its correct name in plain text, e.g., \"This is your elbow.\" Labels stay visible for review. After all 6 are found: \"You know the correct names for these body parts! A trusted adult can always help if you have a question about any part of your body.\"\n\nInstructional Rationale: A Remember-level (identify/name) objective, so a calm click-to-reveal pattern is used. The illustration intentionally shows only non-sensitive body parts to keep the visual asset appropriate for a public-facing infographic; the teacher read-aloud text above carries the full instructional content regarding private body parts and how to name them with the same directness.\n\nImplementation notes: p5.js. Each hotspot is an object with a relative (x,y) region and its correct name string. Text large (24px+), plain, and calm — no playful sound effects or celebratory animation, in keeping with the sincere tone of this section."
+}

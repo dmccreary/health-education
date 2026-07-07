@@ -1,0 +1,23 @@
+{
+  "title": "When To Seek Help Decision Sorter",
+  "description": "Students evaluate a set of symptom scenarios and judge whether each calls for resting at home, telling an adult and seeing a doctor soon, or seeking emergency help immediately.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "when-to-seek-help-decision-sorter",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "judge, assess, prioritize",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Personal Health And Wellness",
+  "chapter_dir": "05-personal-health-and-wellness",
+  "chapter_rel_dir": "bands/grade-5/chapters/05-personal-health-and-wellness"
+}

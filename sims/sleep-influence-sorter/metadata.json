@@ -1,0 +1,23 @@
+{
+  "title": "Sleep Influence Sorter",
+  "description": "Students classify a set of realistic sleep influences as biological, environmental, or social, and distinguish which are within personal control versus largely outside personal control.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "sleep-influence-sorter",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "classify, distinguish, examine",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Sleep, Fitness, and Emergency Response",
+  "chapter_dir": "06-sleep-fitness-and-emergency-response",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/06-sleep-fitness-and-emergency-response"
+}

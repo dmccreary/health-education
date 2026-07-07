@@ -1,0 +1,38 @@
+{
+  "title": "Infectious vs Non-Infectious Sorter",
+  "description": "Students differentiate infectious from non-infectious diseases by sorting example illnesses into the correct category and reviewing the reasoning for each.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "infectious-vs-noninfectious-sorter",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "differentiate, classify, distinguish",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Wellness and Disease Prevention",
+  "chapter_dir": "05-wellness-and-disease-prevention",
+  "chapter_rel_dir": "bands/grade-4/chapters/05-wellness-and-disease-prevention",
+  "educational": {
+    "gradeLevel": "Grade 4",
+    "subjectArea": "Health Education",
+    "topic": "Wellness and Disease Prevention",
+    "learningObjectives": [
+      "Students differentiate infectious from non-infectious diseases by sorting example illnesses into the correct category and reviewing the reasoning for each."
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "differentiate, classify, distinguish",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
+}

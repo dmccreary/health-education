@@ -1,0 +1,38 @@
+{
+  "title": "Emotion-to-Behavior Pathway Explorer",
+  "description": "Students explain how a triggering situation leads to an emotion, and how that emotion can lead to two different possible behaviors depending on whether the emotion is managed.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "emotion-behavior-pathway-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, describe, interpret",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "Foundations and Trusted Adults",
+  "chapter_dir": "01-foundations-and-trusted-adults",
+  "chapter_rel_dir": "bands/grade-5/chapters/01-foundations-and-trusted-adults",
+  "educational": {
+    "gradeLevel": "Grade 5",
+    "subjectArea": "Health Education",
+    "topic": "Foundations and Trusted Adults",
+    "learningObjectives": [
+      "Students explain how a triggering situation leads to an emotion, and how that emotion can lead to two different possible behaviors depending on whether the emotion is managed."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "explain, describe, interpret",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
+}

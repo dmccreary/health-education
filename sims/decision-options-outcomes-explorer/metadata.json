@@ -1,0 +1,38 @@
+{
+  "title": "Decision Options and Outcomes Explorer",
+  "description": "Students describe two or more options for a health-related decision and the likely outcome of each option.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "decision-options-outcomes-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "describe, explain, compare",
+  "completion_status": "scaffold",
+  "chapter_number": 7,
+  "chapter_title": "Influences, Decisions, and Personal Goals",
+  "chapter_dir": "07-influences-decisions-goals",
+  "chapter_rel_dir": "bands/grade-2/chapters/07-influences-decisions-goals",
+  "educational": {
+    "gradeLevel": "Grade 2",
+    "subjectArea": "Health Education",
+    "topic": "Influences, Decisions, and Personal Goals",
+    "learningObjectives": [
+      "Students describe two or more options for a health-related decision and the likely outcome of each option."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "describe, explain, compare",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
+}

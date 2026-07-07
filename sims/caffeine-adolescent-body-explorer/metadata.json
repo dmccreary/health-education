@@ -1,0 +1,38 @@
+{
+  "title": "Caffeine and the Adolescent Body Explorer",
+  "description": "Students explain how caffeine affects four body systems (nervous system, sleep, cardiovascular system, mood) differently in adolescents compared to adults.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "caffeine-adolescent-body-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, describe, interpret",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "Health Foundations and Nutrition",
+  "chapter_dir": "01-health-foundations-and-nutrition",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/01-health-foundations-and-nutrition",
+  "educational": {
+    "gradeLevel": "Grades 6-8",
+    "subjectArea": "Health Education",
+    "topic": "Health Foundations and Nutrition",
+    "learningObjectives": [
+      "Students explain how caffeine affects four body systems (nervous system, sleep, cardiovascular system, mood) differently in adolescents compared to adults."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "explain, describe, interpret",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
+}

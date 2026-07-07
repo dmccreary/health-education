@@ -1,0 +1,15 @@
+{
+  "sim_id": "managing-strong-emotions-cooldown",
+  "diagram_name": "Cooling Down a Big Feeling",
+  "chapter_number": 3,
+  "chapter_title": "Handling Conflict and Kind Play",
+  "chapter_dir": "03-conflict-kind-play",
+  "chapter_rel_dir": "bands/grade-2/chapters/03-conflict-kind-play",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, describe",
+  "learning_objective": "Students explain how a calming strategy lowers a strong emotion over time by stepping through a \"feelings thermometer\" scenario.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** managing-strong-emotions-cooldown<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, describe\n\nLearning objective: Students explain how a calming strategy lowers a strong emotion over time by stepping through a \"feelings thermometer\" scenario.\n\nCanvas layout:\n- Left area (200px): A vertical \"feelings thermometer\" showing emotion intensity from calm (bottom, blue) to very upset (top, red)\n- Right area (400px): A step-through scene with a character and a caption box, plus Next/Back buttons\n\nVisual elements:\n- Thermometer with a marker that moves up or down\n- A simple cartoon character whose face changes expression (frustrated, calming, calm) at each stage\n- Caption box below the character\n\nInteractive controls:\n- Button: \"Next\" advances to the next stage of the scenario\n- Button: \"Back\" returns to the previous stage\n- Dropdown: Choose which calming strategy the character tries (deep breaths, counting to ten, walking away)\n\nDefault parameters:\n- Thermometer starts near the top (very upset) after a conflict scenario is described\n- Default strategy: \"deep breaths\"\n\nData Visibility Requirements:\n  Stage 1: Show thermometer high (red) with caption \"A friend took the last turn on the swing. This character feels really upset!\"\n  Stage 2: Show the chosen calming strategy happening, thermometer marker begins moving down, caption names the strategy: \"Taking three deep breaths...\"\n  Stage 3: Show thermometer lower (yellow), caption \"The feeling is getting smaller.\"\n  Stage 4: Show thermometer near bottom (blue/calm), caption \"Now the character feels calm enough to talk about what happened.\"\n\nBehavior:\n- Changing the strategy dropdown resets the scenario and shows a slightly different caption for each strategy, so students see that different strategies can all work\n- The thermometer marker animates smoothly between stages when Next/Back is clicked\n\nInstructional Rationale: This is an Understand-level (explain) objective about a cause-and-effect process, so the design uses a step-through thermometer with visible stages rather than continuous animation, letting students trace how a calming strategy causes the emotion to shrink over time.\n\nImplementation notes: Use p5.js. Keep the thermometer large and simple. Facial expressions should be easy to read from across a classroom."
+}

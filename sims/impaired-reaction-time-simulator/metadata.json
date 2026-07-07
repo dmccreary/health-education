@@ -1,0 +1,38 @@
+{
+  "title": "Impaired Reaction Time Simulator",
+  "description": "Students analyze how increasing impairment levels affect stopping distance by comparing reaction time and total stopping distance at several illustrative impairment levels, differentiating how much distance is added at each stage.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "impaired-reaction-time-simulator",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine, compare, differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 10,
+  "chapter_title": "Substance Use Disorder, Recovery, and Policy",
+  "chapter_dir": "10-substance-use-disorder-recovery-and-policy",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/10-substance-use-disorder-recovery-and-policy",
+  "educational": {
+    "gradeLevel": "Grades 6-8",
+    "subjectArea": "Health Education",
+    "topic": "Substance Use Disorder, Recovery, and Policy",
+    "learningObjectives": [
+      "Students analyze how increasing impairment levels affect stopping distance by comparing reaction time and total stopping distance at several illustrative impairment levels, differentiating how much distance is added at each stage."
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "examine, compare, differentiate",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
+}

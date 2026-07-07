@@ -1,0 +1,15 @@
+{
+  "sim_id": "report-or-emergency-decision-tool",
+  "diagram_name": "Report or Emergency Decision Tool",
+  "chapter_number": 9,
+  "chapter_title": "Digital and School Safety",
+  "chapter_dir": "09-digital-and-school-safety",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/09-digital-and-school-safety",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "differentiate, distinguish, examine",
+  "learning_objective": "Students differentiate online situations that call for",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n\n**sim-id:** report-or-emergency-decision-tool<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: differentiate, distinguish, examine\n\nLearning objective: Students differentiate online situations that call for\nstandard reporting/blocking from situations that require immediate\nemergency escalation, using the presence of a credible, specific threat of\nviolence as the deciding signal. No scenario describes graphic threat\ncontent, weapon types, or methods — only the presence or absence of a\nnamed target, location, and indication of intent.\n\nCanvas layout:\n- Left (60%): one scenario card at a time, drawn from a bank of 8 (e.g.,\n  \"A classmate posts a vague angry rant about the school with no named\n  person or plan,\" \"A former partner threatens to share a private photo\n  unless you get back together,\" \"A post names a specific classmate and\n  describes an intent to hurt them at a specific time\")\n- Right (40%): two large response buttons, \"Report/Block\" and \"Emergency —\n  Tell an Adult Now,\" plus a feedback panel\n\nData Visibility Requirements:\n  Stage 1: Show the scenario and both response buttons, neither selected\n  Stage 2: Student selects a response\n  Stage 3: Reveal feedback naming the specific signal that determined the\n  correct classification (presence or absence of a named target, location,\n  and specific intent), reinforcing that uncertainty should default to\n  telling a trusted adult\n  Stage 4: Running tally across the 8-scenario bank with a closing message\n  that both correct paths — reporting and emergency escalation — share the\n  same first move: telling someone\n\nInteractive controls:\n- Two response buttons\n- Button: \"Next Scenario\"\n\nDefault parameters: 8-scenario bank, shuffled order each session\n\nInstructional Rationale: Differentiating reportable harm from a genuine\nemergency requires examining specific situational signals, which is an\nAnalyze-level task; a scenario-based binary-choice tool with signal-based\nfeedback is used rather than a static rule list so students practice\napplying the distinguishing criteria themselves.\n\nImplementation notes: p5.js; scenario data stored as an array of\n{scenario, correctResponse, signal, explanation} objects; no scenario\nincludes graphic detail, weapon type, or method — only the presence or\nabsence of a named target/location/intent."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "boundary-setting-response-builder",
+  "diagram_name": "Boundary-Setting Response Builder",
+  "chapter_number": 7,
+  "chapter_title": "Digital Safety and School Safety",
+  "chapter_dir": "07-digital-safety-and-school-safety",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/07-digital-safety-and-school-safety",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate, practice, apply",
+  "learning_objective": "Students apply boundary-setting strategies by choosing and sequencing an effective response to a realistic peer-pressure scenario, including digital-pressure scenarios.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** boundary-setting-response-builder<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: demonstrate, practice, apply\n\nLearning objective: Students apply boundary-setting strategies by choosing and sequencing an effective response to a realistic peer-pressure scenario, including digital-pressure scenarios.\n\nCanvas layout: Left side (450px) shows a scenario prompt (e.g., \"A group chat keeps pressuring you to send a photo you don't want to send\") with a response-building area. Right side (150px) shows a palette of response-phrase tokens (e.g., \"No, I'm not doing that,\" \"I already said no,\" \"leave the group chat,\" \"tell a trusted adult,\" \"keep arguing until they stop\") and a feedback panel.\n\nInteractive controls: Drag response tokens into the response-building area in the order the student would use them; \"Check My Response\" button evaluates whether the sequence reflects sound boundary-setting strategy (clear statement, calm repetition if needed, use of digital tools or exit, and involving a trusted adult when appropriate); \"Reset\" button; \"See a Strong Example Response\" button.\n\nDefault parameters: Empty response area at start; six scenarios cycle through, ranging from in-person to digital-only pressure.\n\nInstructional Rationale: Applying boundary-setting strategy to a realistic pressure scenario by constructing a response sequence is an Apply-level task, so a response-builder with constraint feedback is used rather than a passive list of tips, letting students practice sequencing a real response.\n\nImplementation notes: p5.js. Scenario and token data stored as arrays of objects. Responsive canvas that reflows on window resize. No scenario content depicts explicit imagery or graphic threats."
+}

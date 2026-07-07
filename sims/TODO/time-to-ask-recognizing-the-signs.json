@@ -1,0 +1,15 @@
+{
+  "sim_id": "time-to-ask-recognizing-the-signs",
+  "diagram_name": "Time to Ask? Recognizing the Signs",
+  "chapter_number": 7,
+  "chapter_title": "Getting Help and Making Healthy Choices",
+  "chapter_dir": "07-help-and-decisions",
+  "chapter_rel_dir": "bands/grade-1/chapters/07-help-and-decisions",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "recognize, describe, explain",
+  "learning_objective": "Students recognize when help is needed and who can support a health-related decision by exploring everyday scenes and identifying the signal that it's time to seek help.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** time-to-ask-recognizing-the-signs<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: recognize, describe, explain\n\nLearning objective: Students recognize when help is needed and who can support a health-related decision by exploring everyday scenes and identifying the signal that it's time to seek help.\n\nPurpose: Help students connect a feeling or situation to the recognition that help is needed, reinforcing the Grade 1 benchmark on recognizing when help is needed and who can support a decision\n\nLayout: A single friendly scene with four clickable characters, each showing a different situation (a student stuck on a shoe tying, a student with a very big worried feeling before a test, a student who can't reach a high shelf, a student who notices a friend sitting alone and looking sad)\n\nInteractive elements:\n- Click each character to reveal a caption naming the sign (\"This task feels too hard alone,\" \"This feeling is very big,\" \"I can't do this safely by myself,\" \"My friend might need help too\") and a matching helper suggestion (family member, teacher, school staff, trusted friend)\n- A summary panel lists all four signs after all characters have been clicked\n\nVisual style: Warm, everyday classroom and home scenes in flat illustration style; no distressing imagery, just relatable Grade 1 moments\nColor scheme: Soft, warm palette consistent with the rest of the book\n\nImplementation: p5.js with clickable character hotspots mapped to caption reveals; a simple counter tracks how many of the four signs have been explored"
+}

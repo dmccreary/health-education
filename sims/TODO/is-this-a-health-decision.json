@@ -1,0 +1,15 @@
+{
+  "sim_id": "is-this-a-health-decision",
+  "diagram_name": "Is This a Health Decision?",
+  "chapter_number": 6,
+  "chapter_title": "Making Healthy Choices",
+  "chapter_dir": "06-health-choices",
+  "chapter_rel_dir": "bands/kindergarten/chapters/06-health-choices",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain, classify",
+  "learning_objective": "Students recognize when a health-related decision is needed by classifying everyday moments as \"health decision\" or \"not a health decision,\" supporting benchmark 0.7.5.1.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: infographic\n**sim-id:** is-this-a-health-decision<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain, classify\n\nLearning objective: Students recognize when a health-related decision is needed by classifying everyday moments as \"health decision\" or \"not a health decision,\" supporting benchmark 0.7.5.1.\n\nCanvas layout: Full canvas (500px) shows one illustrated everyday moment at a time (choosing a snack, choosing a shirt color, deciding to wear a helmet, choosing a book, telling a trusted adult about a feeling). Bottom strip (80px): two large buttons, \"Health Decision\" and \"Not a Health Decision,\" plus a Reset button.\n\nVisual elements: 5 moment cards cycling one at a time; selected button glows and reveals an infobox explaining why.\n\nInteractive controls: Click the button matching the child's guess; \"Next Moment\" cycles the cards; Reset restarts.\n\nDefault parameters: Cards appear in a fixed teacher-predictable order, starting with \"choosing a snack.\"\n\nBehavior: Correct answer glows green with an infobox, e.g., \"Yes! What you eat is a health decision because it affects your body.\" Incorrect answer gently shakes with a kind explanation. After all 5: \"You know how to notice when it's time to make a health decision!\"\n\nInstructional Rationale: An Understand-level (explain/classify) objective, so the MicroSim uses a step-through pattern with one concrete moment shown at a time rather than continuous animation, letting a teacher pause and discuss each example aloud.\n\nImplementation notes: p5.js. Each moment is an object with an illustration reference, correct classification, and explanation string. Text large (24px+) for read-aloud use."
+}

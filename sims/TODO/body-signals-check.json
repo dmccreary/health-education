@@ -1,0 +1,15 @@
+{
+  "sim_id": "body-signals-check",
+  "diagram_name": "My Body's Signals",
+  "chapter_number": 1,
+  "chapter_title": "Health and Food",
+  "chapter_dir": "01-health-and-food",
+  "chapter_rel_dir": "bands/kindergarten/chapters/01-health-and-food",
+  "library": "p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "identify, recognize, name",
+  "learning_objective": "Students identify body signals that mean \"I'm hungry,\" \"I'm thirsty,\" or \"I feel fine,\" matching a picture of a child showing a signal to the correct feeling label.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** body-signals-check<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Remember (L1)\nBloom Taxonomy Verb: identify, recognize, name\n\nLearning objective: Students identify body signals that mean \"I'm hungry,\" \"I'm thirsty,\" or \"I feel fine,\" matching a picture of a child showing a signal to the correct feeling label.\n\nCanvas layout:\n- Left side (60%): One large illustrated scene at a time showing a child exhibiting a signal (holding stomach with a wavy \"growl\" line, licking dry lips and reaching for a cup, or smiling and playing energetically)\n- Right side (40%): Three big labeled buttons: \"Hungry,\" \"Thirsty,\" \"Feeling Fine\"\n\nVisual elements:\n- 6 simple scenes cycling one at a time (2 hungry scenes, 2 thirsty scenes, 2 feeling-fine scenes)\n- Large, friendly, rounded character illustrations with exaggerated but gentle expressions\n\nInteractive controls:\n- Button: \"Hungry\"\n- Button: \"Thirsty\"\n- Button: \"Feeling Fine\"\n- Button: \"Next Scene\"\n\nDefault parameters:\n- First scene: child holding stomach (hungry signal)\n\nBehavior:\n- When the correct button is clicked, the scene character smiles bigger and a soft chime plays; a short caption appears explaining the signal (e.g., \"A growling tummy means it might be time for a healthy snack!\")\n- When an incorrect button is clicked, no penalty — a gentle prompt appears: \"Look again — what is the picture showing?\"\n- Teacher can click \"Next Scene\" any time to move on, regardless of whether the child answered\n\nInstructional Rationale: This is a Remember-level identify/recognize objective for pre-readers, so the pattern uses large pictures and big buttons rather than any text-based question. Immediate, low-stakes feedback supports a whole-class read-aloud format where the teacher calls on students to answer together.\n\nImplementation notes: Use p5.js. Keep all illustrations simple, flat, and friendly — avoid any imagery that could look like the child is in distress. Captions should be short enough for the teacher to read aloud in one breath."
+}

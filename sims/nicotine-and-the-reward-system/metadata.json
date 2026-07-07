@@ -1,0 +1,23 @@
+{
+  "title": "Nicotine And The Reward System MicroSim",
+  "description": "Students explain, using a step-through data view rather than continuous animation, how nicotine reaches and affects the brain's reward system faster and more intensely in an adolescent brain than an adult brain.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "nicotine-and-the-reward-system",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain, describe, summarize",
+  "completion_status": "scaffold",
+  "chapter_number": 8,
+  "chapter_title": "Substances and the Developing Brain",
+  "chapter_dir": "08-substances-and-the-developing-brain",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/08-substances-and-the-developing-brain"
+}

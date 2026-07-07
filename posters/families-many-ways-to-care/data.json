@@ -1,0 +1,97 @@
+{
+  "title": "Families: Many Ways to Care",
+  "orientation": "landscape",
+  "image": "families-many-ways-to-care.png",
+  "layout": "top-bottom",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Making a Place Together",
+      "panel": "bottom",
+      "x": 9.0,
+      "y": 65.0,
+      "radius": 4,
+      "color": "#E67E22",
+      "hint": "Find the adult and child spreading a colorful blanket on the grass.",
+      "description": "Families work together to make places where everyone can rest, eat, play, and feel included."
+    },
+    {
+      "id": 2,
+      "label": "Sharing Food and Traditions",
+      "panel": "bottom",
+      "x": 22.0,
+      "y": 54.0,
+      "radius": 4,
+      "color": "#F39C12",
+      "hint": "Find the low table filled with colorful foods shared by several people.",
+      "description": "Families can share foods, stories, and traditions that help children feel connected to the people and cultures they belong to."
+    },
+    {
+      "id": 3,
+      "label": "Listening to a Story",
+      "panel": "top",
+      "x": 38.0,
+      "y": 38.0,
+      "radius": 4,
+      "color": "#8E44AD",
+      "hint": "Find the older adult reading a blank picture book beneath the large tree.",
+      "description": "A caring adult gives children attention, listens to their ideas, and shares knowledge through stories."
+    },
+    {
+      "id": 4,
+      "label": "Sun Safety Together",
+      "panel": "bottom",
+      "x": 35.0,
+      "y": 72.0,
+      "radius": 4,
+      "color": "#3498DB",
+      "hint": "Find two adults helping a child with a sun hat and sunscreen.",
+      "description": "Care can be practical: trusted adults help children prepare for safe, comfortable outdoor play."
+    },
+    {
+      "id": 5,
+      "label": "Comfort and Listening",
+      "panel": "top",
+      "x": 55.5,
+      "y": 43.0,
+      "radius": 4,
+      "color": "#9B59B6",
+      "hint": "Find the adult kneeling beside a child near the center path.",
+      "description": "Trusted adults listen to small questions and worries, offer comfort, and help children feel safe."
+    },
+    {
+      "id": 6,
+      "label": "Everyone Joins the Game",
+      "panel": "bottom",
+      "x": 69.0,
+      "y": 71.0,
+      "radius": 4,
+      "color": "#2ECC71",
+      "hint": "Find three children playing with a bright ball, including a child using a wheelchair.",
+      "description": "Families and friends can adapt play so every child has a real way to join, contribute, and have fun."
+    },
+    {
+      "id": 7,
+      "label": "Offering Water",
+      "panel": "top",
+      "x": 79.0,
+      "y": 52.0,
+      "radius": 4,
+      "color": "#16A085",
+      "hint": "Find the adult pouring water from a clear pitcher at the picnic table.",
+      "description": "Care includes noticing what bodies need, such as water, food, rest, shade, and help."
+    },
+    {
+      "id": 8,
+      "label": "A Warm Welcome",
+      "panel": "top",
+      "x": 87.0,
+      "y": 32.0,
+      "radius": 4,
+      "color": "#E74C3C",
+      "hint": "Find two groups greeting one another beneath the shade canopy.",
+      "description": "Families can be big or small and organized in many ways. Welcoming others shows that every caring family belongs."
+    }
+  ]
+}

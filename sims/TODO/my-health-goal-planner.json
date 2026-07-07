@@ -1,0 +1,15 @@
+{
+  "sim_id": "my-health-goal-planner",
+  "diagram_name": "My Health Goal Planner",
+  "chapter_number": 8,
+  "chapter_title": "Communication And Goals",
+  "chapter_dir": "08-communication-and-goals",
+  "chapter_rel_dir": "bands/grade-3/chapters/08-communication-and-goals",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, organize, distinguish",
+  "learning_objective": "Students examine candidate goal statements and distinguish specific, realistic, personal goals from vague or unrealistic ones, then build their own goal statement.",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: microsim\n**sim-id:** my-health-goal-planner<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: examine, organize, distinguish\n\nLearning objective: Students examine candidate goal statements and distinguish specific, realistic, personal goals from vague or unrealistic ones, then build their own goal statement.\n\nCanvas layout: Left side (350px) shows five example goal cards to sort into two bins: \"Strong Goal\" and \"Needs Work\" (e.g., \"Be healthier\" vs. \"Drink a glass of water with lunch each day\"). Right side (250px) holds a simple goal-builder form: a text input for \"My goal is...\" plus three checkboxes the student self-checks — \"Specific,\" \"Realistic,\" \"Matters to me.\"\n\nInteractive controls: Drag or click to sort cards; text input field; three checkboxes; \"Save My Goal\" button.\n\nData Visibility Requirements: Sorting a card reveals a one-sentence reason it is strong or needs work (e.g., \"'Be healthier' doesn't say exactly what will change.\"). After typing a goal and checking all three boxes, \"Save My Goal\" displays the finished goal statement in a printable-looking card.\n\nInstructional Rationale: Analyze-level objective requiring students to examine goal statements against criteria, so a sort-then-build design lets students apply the criteria to examples before applying them to their own goal.\n\nImplementation notes: Use p5.js and a real HTML text input for the goal so it is easy to read and edit. This MicroSim is intended for guided, individual student use with a teacher or family member nearby to help, consistent with K-3 practice."
+}

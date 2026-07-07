@@ -1,0 +1,23 @@
+{
+  "title": "Weekly Workout Plan Builder",
+  "description": "Students design a complete seven-day workout plan by placing activities of each required type onto specific days, and receive feedback on whether the plan meets weekly guidelines.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-06",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "weekly-workout-plan-builder",
+  "library": "p5.js",
+  "bloomLevel": "Create (L6)",
+  "bloomVerb": "design, construct, formulate",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Sleep, Fitness, and Emergency Response",
+  "chapter_dir": "06-sleep-fitness-and-emergency-response",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/06-sleep-fitness-and-emergency-response"
+}

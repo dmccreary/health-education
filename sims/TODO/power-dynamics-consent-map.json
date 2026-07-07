@@ -1,0 +1,15 @@
+{
+  "sim_id": "power-dynamics-consent-map",
+  "diagram_name": "Mapping Power Imbalances in Relationships",
+  "chapter_number": 3,
+  "chapter_title": "Consent and Boundaries",
+  "chapter_dir": "03-consent-and-boundaries",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/03-consent-and-boundaries",
+  "library": "vis-network",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine, distinguish, attribute",
+  "learning_objective": "Students examine a set of relationship-pair examples",
+  "completion_status": "specified",
+  "extracted_date": "2026-07-06",
+  "specification": "Type: graph-model\n\n**sim-id:** power-dynamics-consent-map<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nBloom Taxonomy Level: Analyze (L4)\nBloom Verb: examine, distinguish, attribute\n\nLearning objective: Students examine a set of relationship-pair examples\nand attribute the type of power imbalance present (age gap, authority,\nincapacitation, dependence), analyzing why each undermines the\npossibility of genuine consent.\n\nNode types:\n1. Relationship-pair nodes (e.g., \"Teacher / Student,\" \"Coach / Athlete,\"\n   \"Employer / Employee,\" \"Adult / Much Younger Teen,\" \"Sober Person /\n   Intoxicated Person,\" \"Landlord-Dependent Tenant\") — gray rounded\n   rectangles\n2. Power-source category nodes (four fixed nodes: \"Age Gap,\" \"Authority,\"\n   \"Incapacitation,\" \"Dependence\") — colored circles, one color each\n\nEdge types:\n- Edge connects each relationship-pair node to the power-source\n  category(ies) that apply to it (some pairs connect to more than one\n  category)\n\nSample data: 6 relationship-pair nodes as listed above, each linked to\none or two of the four category nodes\n\nLayout: Hierarchical, four category nodes fixed at top, relationship-pair\nnodes below, connecting up\n\nInteractive features:\n- Hover a category node: shows its definition and why it undermines free\n  choice\n- Click a relationship-pair node: opens a side panel explaining\n  specifically why that pairing creates a power imbalance and why the law\n  or ethical framework treats it differently from a peer relationship\n- Drag and zoom/pan enabled\n\nLegend: color key for the four power-source categories\n\nImplementation: vis-network, hierarchical layout, click-triggered side\npanel content stored in a JSON lookup keyed by node id"
+}
