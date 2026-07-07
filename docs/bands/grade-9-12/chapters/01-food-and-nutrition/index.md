@@ -107,7 +107,7 @@ A rigorous assessment answers four questions:
    constrain what a "correct" plan can actually ask someone to do.
 
 #### Diagram: Personal Nutrition Needs Assessment Tool
-<iframe src="../../sims/nutrition-needs-assessment/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../../../sims/nutrition-needs-assessment/main.html" width="100%" height="600px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Personal Nutrition Needs Assessment Tool</summary>
 Type: microsim
@@ -202,7 +202,7 @@ idealized set of ingredients.
     a single food.
 
 #### Diagram: Nutrition Plan Builder
-<iframe src="../../sims/nutrition-plan-builder/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../../../sims/nutrition-plan-builder/main.html" width="100%" height="600px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Nutrition Plan Builder</summary>
 Type: microsim
@@ -289,7 +289,7 @@ Four label elements do most of the analytical work:
   front of the box is marketed.
 
 #### Diagram: Food Label Decoder
-<iframe src="../../sims/food-label-decoder/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/food-label-decoder/main.html" width="100%" height="550px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Food Label Decoder</summary>
 Type: infographic
@@ -390,7 +390,7 @@ caffeine active in your system at 10 p.m. — a leading, underestimated
 cause of difficulty falling asleep in adolescents.
 
 #### Chart: Beverage Comparison — Hydration, Sugar, and Caffeine
-<iframe src="../../sims/beverage-evidence-chart/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/beverage-evidence-chart/main.html" width="100%" height="550px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Beverage Comparison: Hydration, Sugar, and Caffeine</summary>
 Type: chart
@@ -546,7 +546,7 @@ avoid blaming individuals for outcomes substantially shaped by the system
 around them.
 
 #### Diagram: Food System to Chronic Disease Pathway
-<iframe src="../../sims/food-system-disease-pathway/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/food-system-disease-pathway/main.html" width="100%" height="550px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Food System to Chronic Disease Pathway</summary>
 Type: workflow
@@ -636,7 +636,7 @@ simultaneously — matching the same three-dimensional view of health this
 chapter opened with.
 
 #### Infographic: Community Nutrition Initiative Evaluator
-<iframe src="../../sims/community-initiative-evaluator/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/community-initiative-evaluator/main.html" width="100%" height="550px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Community Nutrition Initiative Evaluator</summary>
 Type: infographic

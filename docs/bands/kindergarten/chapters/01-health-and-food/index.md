@@ -80,7 +80,7 @@ The following table lists each food group with example foods a Kindergartner wil
 | Dairy Group | Helps build strong bones | Milk, cheese, yogurt |
 
 #### Diagram: Food Group Sorting Game
-<iframe src="../../../../../sims/food-group-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/food-group-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Food Group Sorting Game</summary>
 Type: microsim

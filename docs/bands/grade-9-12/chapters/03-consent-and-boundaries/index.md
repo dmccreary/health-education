@@ -130,7 +130,7 @@ a rule that only applies to one kind of situation.
 
 #### Diagram: The Five Requirements of Consent
 
-<iframe src="../../sims/consent-requirements-explorer/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/consent-requirements-explorer/main.html" width="100%" height="550px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>The Five Requirements of Consent</summary>
 Type: infographic
@@ -254,7 +254,7 @@ are is part of interpreting consent accurately rather than convenient.
 
 #### Diagram: Genuine Yes or Reluctant Compliance?
 
-<iframe src="../../sims/genuine-consent-signal-sorter/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/genuine-consent-signal-sorter/main.html" width="100%" height="550px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Genuine Yes or Reluctant Compliance?</summary>
 Type: microsim
@@ -390,7 +390,7 @@ frameworks covered next.
 
 #### Diagram: Mapping Power Imbalances in Relationships
 
-<iframe src="../../sims/power-dynamics-consent-map/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/power-dynamics-consent-map/main.html" width="100%" height="550px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Mapping Power Imbalances in Relationships</summary>
 Type: graph-model
@@ -494,7 +494,7 @@ rather than relying on this chapter for exact figures.
 
 #### Diagram: How Consent Law Maps to Ethical Principles
 
-<iframe src="../../sims/consent-law-principle-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/consent-law-principle-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>How Consent Law Maps to Ethical Principles</summary>
 Type: workflow
