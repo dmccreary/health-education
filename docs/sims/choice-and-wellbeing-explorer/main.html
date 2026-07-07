@@ -3,111 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Choice and Wellbeing Explorer</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Choice and Wellbeing Explorer MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="choice-and-wellbeing-explorer.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Choice and Wellbeing Explorer</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> choice-and-wellbeing-explorer</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students explain how everyday personal choices affect mental and emotional wellbeing by adjusting sliders for common daily choices and observing a simple wellbeing meter respond.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** choice-and-wellbeing-explorer<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain, describe, interpret
-    
-    Learning objective: Students explain how everyday personal choices affect mental and emotional wellbeing by adjusting sliders for common daily choices and observing a simple wellbeing meter respond.
-    
-    Canvas layout: Left side (350px) has four labeled sliders — Hours of Sleep (4-10), Time Being Active (0-60 min), Time Talking With Someone Caring (0-30 min), Quiet Screen-Free Time (0-30 min). Right side (250px) shows a semicircle "Wellbeing Meter" gauge with a needle moving from "Running on Empty" (red) to "Feeling Good" (green), plus a short explanation text box.
-    
-    Interactive controls: Four draggable sliders; a "Reset to Example Day" button.
-    
-    Default parameters: Sleep 7 hours, Active 20 min, Talking 10 min, Quiet time 10 min — meter starts in the middle "Okay" zone.
-    
-    Data Visibility Requirements: As a student drags any slider up, the needle moves toward green and a one-sentence plain-language reason appears (e.g., "More sleep helps your brain rest and reset."). Dragging down moves the needle toward red with a matching reason. No single slider can max the meter alone, reinforcing that wellbeing comes from combined healthy choices.
-    
-    Instructional Rationale: Understand-level objective, so the design favors direct manipulation with immediate, concrete feedback over any competitive or scored element.
-    
-    Implementation notes: Use p5.js. Keep reasons short, reassuring, and non-judgmental.
-    -->
+    <main></main>
 </body>
 </html>

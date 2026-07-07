@@ -19,5 +19,20 @@
   "chapter_number": 5,
   "chapter_title": "Mental Health and Crisis Support",
   "chapter_dir": "05-mental-health-and-crisis-support",
-  "chapter_rel_dir": "bands/grade-9-12/chapters/05-mental-health-and-crisis-support"
+  "chapter_rel_dir": "bands/grade-9-12/chapters/05-mental-health-and-crisis-support",
+  "educational": {
+    "gradeLevel": "Grades 9-12",
+    "subjectArea": "Health Education",
+    "topic": "Mental Health and Crisis Support",
+    "learningObjectives": [
+      "Students classify a set of realistic scenario"
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "explain, classify, summarize",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
 }

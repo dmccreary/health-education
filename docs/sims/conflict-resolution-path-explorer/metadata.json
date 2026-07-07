@@ -19,5 +19,20 @@
   "chapter_number": 2,
   "chapter_title": "Growth and Development Across Cultures",
   "chapter_dir": "02-growth-and-development",
-  "chapter_rel_dir": "bands/grade-4/chapters/02-growth-and-development"
+  "chapter_rel_dir": "bands/grade-4/chapters/02-growth-and-development",
+  "educational": {
+    "gradeLevel": "Grade 4",
+    "subjectArea": "Health Education",
+    "topic": "Growth and Development Across Cultures",
+    "learningObjectives": [
+      "Students apply the four-step conflict management pattern (pause, use an I-statement, listen, find a fair solution) to short realistic classroom and home scenarios by choosing the most respectful next step at each stage."
+    ],
+    "bloomLevel": "Apply (L3)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "use, demonstrate, practice",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Apply-level objective through direct interaction rather than passive reading."
+  }
 }

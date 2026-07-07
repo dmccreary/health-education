@@ -3,124 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Calm-Down Strategy Matcher</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Calm-Down Strategy Matcher MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="calm-down-strategy-matcher.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Calm-Down Strategy Matcher</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> calm-down-strategy-matcher</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students match a described emotional scenario to an appropriate restorative self-management strategy and see why it is a good fit.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** calm-down-strategy-matcher<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: use, demonstrate, practice
-    
-    Learning objective: Students match a described emotional scenario to an appropriate restorative self-management strategy and see why it is a good fit.
-    
-    Canvas layout:
-    - Left side (450px): A scenario card showing a short situation and the emotion it produces
-    - Right side (200px): Four strategy category buttons (Body-Calming, Expressing, Redirecting, Reflecting) and a feedback panel
-    
-    Visual elements:
-    - Scenario card with simple line-art icon representing the situation (e.g., a spilled backpack, a missed shot, a loud classroom)
-    - Four labeled strategy buttons, each showing 2-3 example actions when hovered
-    - Feedback panel that displays a green check or an encouraging note after a choice
-    
-    Interactive controls:
-    - Button: "New Scenario" — loads a new random scenario from a bank of 8 situations
-    - Click one of the four strategy category buttons to answer
-    - Button: "Why This Works" — reveals a one-sentence explanation tied to the scenario
-    
-    Default parameters:
-    - Starts on Scenario 1: "You struck out during a kickball game and feel embarrassed."
-    
-    Behavior:
-    - Any reasonable strategy choice is marked correct if it plausibly helps that scenario (this is not a single-right-answer quiz); feedback explains why the chosen category can help
-    - "Why This Works" always available regardless of the answer chosen, reinforcing the reasoning rather than just the score
-    
-    Instructional Rationale: This is an Apply-level objective, so the pattern is scenario-based practice with immediate, low-stakes feedback rather than passive animation, letting students rehearse matching strategies to real situations.
-    
-    Implementation notes: Use p5.js. Store scenarios as objects with a description and an array of acceptable strategy categories; feedback text pulled from a matching explanation string.
-    -->
+    <main></main>
 </body>
 </html>

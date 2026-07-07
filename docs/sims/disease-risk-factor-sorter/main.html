@@ -3,136 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Disease Risk Factor Sorter</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Disease Risk Factor Sorter MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="disease-risk-factor-sorter.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Disease Risk Factor Sorter</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> disease-risk-factor-sorter</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students differentiate and classify a mixed set of</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    
-    **sim-id:** disease-risk-factor-sorter<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy Level: Analyze (L4)
-    Bloom Verb: differentiate, organize, classify
-    
-    Learning objective: Students differentiate and classify a mixed set of
-    risk factors as primarily behavioral, primarily environmental, or
-    influencing both chronic and infectious disease risk.
-    
-    Canvas layout:
-    - Left (60%): a shuffled bank of 12 risk-factor cards (e.g., "Diet high in
-      processed food," "Overcrowded housing," "Smoking," "Poor ventilation in
-      shared spaces," "Limited access to handwashing facilities," "Sedentary
-      daily routine," "Chronic air pollution exposure," "Inconsistent
-      vaccination access")
-    - Right (40%): three labeled drop zones: "Behavioral," "Environmental,"
-      "Both/Interacts With Chronic and Infectious Risk"
-    
-    Data Visibility Requirements:
-      Stage 1: Show all 12 unsorted cards and the three empty drop zones
-      Stage 2: Student drags each card into a zone
-      Stage 3: On dropping a card, immediately reveal a one-sentence
-      explanation of why it belongs in that zone (or a gentle correction if
-      misplaced, still with the explanation)
-      Stage 4: Show a final summary tally and one synthesis sentence noting
-      that most environmental factors also shape how much control a person has
-      over the behavioral factors
-    
-    Interactive controls:
-    - Drag-and-drop cards into zones
-    - Button: "Check All"
-    - Button: "Reset"
-    
-    Default parameters: 12-card bank, shuffled order each session
-    
-    Instructional Rationale: Classifying diverse risk factors by category
-    while recognizing overlap is an Analyze-level task, so a sorting
-    interaction with immediate explanatory feedback is used rather than a
-    static labeled list.
-    
-    Implementation notes: p5.js drag-and-drop; card and explanation data
-    stored as an array of {factor, correctZone, explanation} objects.
-    -->
+    <main></main>
 </body>
 </html>

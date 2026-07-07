@@ -19,5 +19,20 @@
   "chapter_number": 8,
   "chapter_title": "Health Equity and Disease Prevention",
   "chapter_dir": "08-health-equity-and-disease-prevention",
-  "chapter_rel_dir": "bands/grade-9-12/chapters/08-health-equity-and-disease-prevention"
+  "chapter_rel_dir": "bands/grade-9-12/chapters/08-health-equity-and-disease-prevention",
+  "educational": {
+    "gradeLevel": "Grades 9-12",
+    "subjectArea": "Health Education",
+    "topic": "Health Equity and Disease Prevention",
+    "learningObjectives": [
+      "Students evaluate how combinations of prevention"
+    ],
+    "bloomLevel": "Evaluate (L5)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "assess, justify, recommend",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Evaluate-level objective through direct interaction rather than passive reading."
+  }
 }

@@ -3,109 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Comparing Media Portrayals of Mental Health</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Comparing Media Portrayals of Mental Health MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="comparing-media-portrayals-mental-health.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Comparing Media Portrayals of Mental Health</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> comparing-media-portrayals-mental-health</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
-            <p><strong>Learning Objective:</strong> Students evaluate short, fictional media description pairs (one harmful, one accurate/positive) portraying the same mental health topic and judge which elements support or undermine stigma reduction.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** comparing-media-portrayals-mental-health<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Evaluate (L5)
-    Bloom Taxonomy Verb: judge, assess, critique
-    
-    Learning objective: Students evaluate short, fictional media description pairs (one harmful, one accurate/positive) portraying the same mental health topic and judge which elements support or undermine stigma reduction.
-    
-    Layout: A deck of 5 paired scenario cards, each pair describing two fictional media clips about the same topic (e.g., anxiety, depression) — one written with harmful stereotypes, one written with accurate, respectful representation. A rating panel with a simple scale ("Reduces Stigma" to "Reinforces Stigma") appears below each description.
-    
-    Interactive controls: Student reads each description and drags a slider or clicks a rating; feedback reveals which specific words or portrayal choices in the description drove the harmful or positive framing; "Next Pair" button cycles through all 5 pairs.
-    
-    Default parameters: Deck order fixed to build from clearly contrasting pairs toward subtler ones; feedback text explains the specific stereotype or accurate detail in each description.
-    
-    Instructional Rationale: Judging portrayals against a stigma-reduction standard is Evaluate-level, so a rating task with specific, justified feedback is used rather than simple yes/no labeling.
-    
-    Implementation notes: p5.js. Scenario pairs and feedback text stored as data objects; slider or button-based rating input; responsive layout for window resize.
-    -->
+    <main></main>
 </body>
 </html>

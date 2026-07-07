@@ -19,5 +19,20 @@
   "chapter_number": 5,
   "chapter_title": "Staying Safe",
   "chapter_dir": "05-staying-safe",
-  "chapter_rel_dir": "bands/kindergarten/chapters/05-staying-safe"
+  "chapter_rel_dir": "bands/kindergarten/chapters/05-staying-safe",
+  "educational": {
+    "gradeLevel": "Kindergarten",
+    "subjectArea": "Health Education",
+    "topic": "Staying Safe",
+    "learningObjectives": [
+      "Students identify community helpers and the safety practice each one supports, reinforcing the Community Safety Practice concept."
+    ],
+    "bloomLevel": "Remember (L1)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "identify, recognize, name",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Remember-level objective through direct interaction rather than passive reading."
+  }
 }

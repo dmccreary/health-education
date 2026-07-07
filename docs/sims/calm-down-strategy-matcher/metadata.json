@@ -19,5 +19,20 @@
   "chapter_number": 3,
   "chapter_title": "Managing Emotions and Relationships",
   "chapter_dir": "03-managing-emotions-and-relationships",
-  "chapter_rel_dir": "bands/grade-5/chapters/03-managing-emotions-and-relationships"
+  "chapter_rel_dir": "bands/grade-5/chapters/03-managing-emotions-and-relationships",
+  "educational": {
+    "gradeLevel": "Grade 5",
+    "subjectArea": "Health Education",
+    "topic": "Managing Emotions and Relationships",
+    "learningObjectives": [
+      "Students match a described emotional scenario to an appropriate restorative self-management strategy and see why it is a good fit."
+    ],
+    "bloomLevel": "Apply (L3)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "use, demonstrate, practice",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Apply-level objective through direct interaction rather than passive reading."
+  }
 }

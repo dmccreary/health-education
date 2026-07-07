@@ -19,5 +19,20 @@
   "chapter_number": 3,
   "chapter_title": "Wellness And Activity",
   "chapter_dir": "03-wellness-and-activity",
-  "chapter_rel_dir": "bands/grade-3/chapters/03-wellness-and-activity"
+  "chapter_rel_dir": "bands/grade-3/chapters/03-wellness-and-activity",
+  "educational": {
+    "gradeLevel": "Grade 3",
+    "subjectArea": "Health Education",
+    "topic": "Wellness And Activity",
+    "learningObjectives": [
+      "Students apply knowledge of weather conditions by dressing a character correctly for four different weather scenes (sunny/hot, cold/dry, rainy, windy)."
+    ],
+    "bloomLevel": "Apply (L3)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "use, demonstrate, apply",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Apply-level objective through direct interaction rather than passive reading."
+  }
 }

@@ -19,5 +19,20 @@
   "chapter_number": 2,
   "chapter_title": "Relationships, Boundaries, and Consent",
   "chapter_dir": "02-relationships-boundaries-and-consent",
-  "chapter_rel_dir": "bands/grade-6-8/chapters/02-relationships-boundaries-and-consent"
+  "chapter_rel_dir": "bands/grade-6-8/chapters/02-relationships-boundaries-and-consent",
+  "educational": {
+    "gradeLevel": "Grades 6-8",
+    "subjectArea": "Health Education",
+    "topic": "Relationships, Boundaries, and Consent",
+    "learningObjectives": [
+      "Students analyze how individualist and collectivist orientations, and specific cultural concepts (reciprocity, filial respect, respeto), frame boundary-setting differently while protecting the same underlying need."
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "compare, contrast, examine, differentiate",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
 }

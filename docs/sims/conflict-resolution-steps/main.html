@@ -3,133 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Four Steps to Solve a Conflict</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Four Steps to Solve a Conflict MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="conflict-resolution-steps.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Four Steps to Solve a Conflict</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> conflict-resolution-steps</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students apply the four-step healthy conflict resolution process to a simple playground scenario by choosing what to do at each step.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** conflict-resolution-steps<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: demonstrate, use, practice
-    
-    Learning objective: Students apply the four-step healthy conflict resolution process to a simple playground scenario by choosing what to do at each step.
-    
-    Canvas layout:
-    - Top area (100px): A short scenario banner describing a conflict (e.g., "Two friends both want to use the only jump rope at recess.")
-    - Middle area (300px): Four large numbered step cards (Stop and Breathe, Say How You Feel, Listen, Find a Solution) arranged left to right
-    - Bottom area (100px): An infobox that shows feedback text
-    
-    Visual elements:
-    - Four step cards, each with a simple icon (a hand for "stop," a speech bubble for "say how you feel," an ear for "listen," a handshake for "find a solution")
-    - Two simple cartoon children shown at the top holding a jump rope
-    
-    Interactive controls:
-    - Click each step card in order to reveal what that step looks like in this scenario
-    - Button: "Try a New Scenario" — swaps in one of three preset conflict scenarios (jump rope, board game turn, group project idea)
-    - Button: "Reset"
-    
-    Default parameters:
-    - Scenario 1 (jump rope) selected at start
-    - No steps revealed yet; instructions read "Click Step 1 to begin!"
-    
-    Data Visibility Requirements:
-      Stage 1: Show the scenario banner and four unrevealed step cards
-      Stage 2: Click Step 1 -- show caption "Both friends stop and take a deep breath instead of grabbing the rope."
-      Stage 3: Click Step 2 -- show caption "One friend says, 'I feel left out when I don't get a turn.'"
-      Stage 4: Click Step 3 -- show caption "The other friend listens and says, 'I didn't know you felt that way.'"
-      Stage 5: Click Step 4 -- show caption "They agree to take turns every five minutes."
-    
-    Behavior:
-    - Steps must be revealed in order; clicking a later step before an earlier one shows a gentle reminder to go in order
-    - After all four steps are revealed, a checkmark appears over the scenario banner and the infobox reads "Conflict solved calmly!"
-    - "Try a New Scenario" resets all four steps to unrevealed and loads new scenario text
-    
-    Instructional Rationale: This is an Apply-level objective, so the design lets students practice choosing and sequencing the four steps in a concrete scenario rather than just watching an animation. Requiring steps in order reinforces that healthy conflict resolution is a repeatable process, not a random set of options.
-    
-    Implementation notes: Use p5.js. Keep text large enough for read-aloud. Icons should be simple and flat, matching the mascot's friendly visual style.
-    -->
+    <main></main>
 </body>
 </html>

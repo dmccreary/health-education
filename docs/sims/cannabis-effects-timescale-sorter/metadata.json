@@ -19,5 +19,20 @@
   "chapter_number": 11,
   "chapter_title": "Substance Recovery and Resilience",
   "chapter_dir": "11-substance-recovery-and-resilience",
-  "chapter_rel_dir": "bands/grade-9-12/chapters/11-substance-recovery-and-resilience"
+  "chapter_rel_dir": "bands/grade-9-12/chapters/11-substance-recovery-and-resilience",
+  "educational": {
+    "gradeLevel": "Grades 9-12",
+    "subjectArea": "Health Education",
+    "topic": "Substance Recovery and Resilience",
+    "learningObjectives": [
+      "Classify documented cannabis effects into short-term"
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "classify, differentiate, organize",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
 }

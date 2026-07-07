@@ -3,111 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Decision Consequence Explorer</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Decision Consequence Explorer MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="decision-consequence-explorer.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Decision Consequence Explorer</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> decision-consequence-explorer</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students examine multiple options for a health-related situation and compare the likely short-term and long-term consequences of each.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** decision-consequence-explorer<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: examine, compare, differentiate
-    
-    Learning objective: Students examine multiple options for a health-related situation and compare the likely short-term and long-term consequences of each.
-    
-    Canvas layout: Left (450px) situation card with a branching tree showing 2-3 options; right (200px) consequence panel that updates based on the selected branch.
-    
-    Visual elements: Situation card (e.g., "Your team invites you to walk instead of ride the bus home, but it means arriving 20 minutes later"); branch buttons for each option; consequence panel showing short-term and long-term effects.
-    
-    Interactive controls: Click an option branch to reveal its consequence panel; "Compare Both" shows both consequence panels side by side; "New Situation" cycles through 6 situations (sleep, screen time, food choices, physical activity, honesty with a trusted adult, managing a disagreement).
-    
-    Behavior: Selecting "walk with the team" reveals "Short-term: more physical activity and time with friends. Long-term: arriving later means less time for homework tonight."
-    
-    Instructional Rationale: Analyze-level objective, so the tool has students break down and compare consequences across branches rather than being told a single correct answer.
-    
-    Implementation notes: p5.js; situations stored as objects with an options array, each option containing short-term and long-term consequence text.
-    -->
+    <main></main>
 </body>
 </html>

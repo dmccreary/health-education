@@ -19,5 +19,20 @@
   "chapter_number": 1,
   "chapter_title": "Health Basics, Friendships, and Feelings",
   "chapter_dir": "01-health-friendships-feelings",
-  "chapter_rel_dir": "bands/grade-2/chapters/01-health-friendships-feelings"
+  "chapter_rel_dir": "bands/grade-2/chapters/01-health-friendships-feelings",
+  "educational": {
+    "gradeLevel": "Grade 2",
+    "subjectArea": "Health Education",
+    "topic": "Health Basics, Friendships, and Feelings",
+    "learningObjectives": [
+      "Students describe a range of coping strategies, including cultural practices such as storytelling and ceremony, and explain how each one helps a person feel calmer or more supported."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "describe, exemplify, explain",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
 }

@@ -19,5 +19,20 @@
   "chapter_number": 7,
   "chapter_title": "Health Skills And Goal Setting",
   "chapter_dir": "07-health-skills-and-goal-setting",
-  "chapter_rel_dir": "bands/grade-5/chapters/07-health-skills-and-goal-setting"
+  "chapter_rel_dir": "bands/grade-5/chapters/07-health-skills-and-goal-setting",
+  "educational": {
+    "gradeLevel": "Grade 5",
+    "subjectArea": "Health Education",
+    "topic": "Health Skills And Goal Setting",
+    "learningObjectives": [
+      "Students examine multiple options for a health-related situation and compare the likely short-term and long-term consequences of each."
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "examine, compare, differentiate",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
 }

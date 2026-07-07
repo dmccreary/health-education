@@ -19,5 +19,20 @@
   "chapter_number": 9,
   "chapter_title": "Substance Use Culture, Safety, and Risk",
   "chapter_dir": "09-substance-use-culture-safety-and-risk",
-  "chapter_rel_dir": "bands/grade-6-8/chapters/09-substance-use-culture-safety-and-risk"
+  "chapter_rel_dir": "bands/grade-6-8/chapters/09-substance-use-culture-safety-and-risk",
+  "educational": {
+    "gradeLevel": "Grades 6-8",
+    "subjectArea": "Health Education",
+    "topic": "Substance Use Culture, Safety, and Risk",
+    "learningObjectives": [
+      "Students differentiate commercial tobacco addiction from traditional/ceremonial tobacco use across purpose, preparation, frequency, and cultural meaning, correcting the common misconception that the two are the same practice."
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "differentiate, distinguish, compare",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
 }

@@ -19,5 +19,20 @@
   "chapter_number": 7,
   "chapter_title": "Mental And Emotional Health",
   "chapter_dir": "07-mental-and-emotional-health",
-  "chapter_rel_dir": "bands/grade-3/chapters/07-mental-and-emotional-health"
+  "chapter_rel_dir": "bands/grade-3/chapters/07-mental-and-emotional-health",
+  "educational": {
+    "gradeLevel": "Grade 3",
+    "subjectArea": "Health Education",
+    "topic": "Mental And Emotional Health",
+    "learningObjectives": [
+      "Students explain how everyday personal choices affect mental and emotional wellbeing by adjusting sliders for common daily choices and observing a simple wellbeing meter respond."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "explain, describe, interpret",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
 }

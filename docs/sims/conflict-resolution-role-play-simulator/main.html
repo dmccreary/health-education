@@ -3,113 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Conflict Resolution Role-Play Simulator</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Conflict Resolution Role-Play Simulator MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="conflict-resolution-role-play-simulator.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Conflict Resolution Role-Play Simulator</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> conflict-resolution-role-play-simulator</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students demonstrate the five-step conflict-resolution process by choosing the best response at each stage of a branching peer conflict scenario.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** conflict-resolution-role-play-simulator<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: demonstrate, practice, use
-    
-    Learning objective: Students demonstrate the five-step conflict-resolution process by choosing the best response at each stage of a branching peer conflict scenario.
-    
-    Canvas layout: Left (450px) scenario text and current stage; right (200px) 2-3 response choice buttons and a feedback panel showing which conflict-resolution step is in play.
-    
-    Visual elements: Scenario card (e.g., "Two students both believe they were assigned the same job in a group project and are getting frustrated"); stage indicator showing which of the 5 steps is active (Stay Calm, Say What Happened, Listen, Find a Solution, Follow Through).
-    
-    Interactive controls: Click a response choice at each stage; "See Result" advances to the next stage with feedback; "Try Again" restarts the same scenario; "New Scenario" loads one of 4 total conflict scenarios (group project, shared recess equipment, sibling chores, seating disagreement).
-    
-    Default parameters: Scenario 1 loads first, Stage 1 active.
-    
-    Behavior: Choosing "Take a breath and say 'let's figure this out'" at Stage 1 advances with feedback "Good — staying calm keeps the conflict from getting bigger." Choosing a blaming response shows "This raises tension instead of resolving it — try again."
-    
-    Instructional Rationale: Apply-level objective, so the simulator has the student practice choosing and sequencing real responses rather than only reading about the steps.
-    
-    Implementation notes: p5.js; each scenario stored as a branching stage array with choices, correctness flags, and feedback text; track and display which of the 5 steps the student is currently demonstrating.
-    -->
+    <main></main>
 </body>
 </html>

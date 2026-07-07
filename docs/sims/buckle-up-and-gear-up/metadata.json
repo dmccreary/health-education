@@ -19,5 +19,20 @@
   "chapter_number": 5,
   "chapter_title": "Staying Safe",
   "chapter_dir": "05-staying-safe",
-  "chapter_rel_dir": "bands/kindergarten/chapters/05-staying-safe"
+  "chapter_rel_dir": "bands/kindergarten/chapters/05-staying-safe",
+  "educational": {
+    "gradeLevel": "Kindergarten",
+    "subjectArea": "Health Education",
+    "topic": "Staying Safe",
+    "learningObjectives": [
+      "Students practice matching the correct injury-prevention gear to a given activity, reinforcing the Injury Prevention concept through hands-on drag-and-drop matching."
+    ],
+    "bloomLevel": "Apply (L3)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "practice, demonstrate",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Apply-level objective through direct interaction rather than passive reading."
+  }
 }

@@ -3,109 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Caffeine and the Adolescent Body Explorer</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Caffeine and the Adolescent Body Explorer MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="caffeine-adolescent-body-explorer.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Caffeine and the Adolescent Body Explorer</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> caffeine-adolescent-body-explorer</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students explain how caffeine affects four body systems (nervous system, sleep, cardiovascular system, mood) differently in adolescents compared to adults.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: infographic
-    **sim-id:** caffeine-adolescent-body-explorer<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain, describe, interpret
-    
-    Learning objective: Students explain how caffeine affects four body systems (nervous system, sleep, cardiovascular system, mood) differently in adolescents compared to adults.
-    
-    Layout: A body outline with four labeled hotspots — brain (nervous system/sleep), heart (cardiovascular), stomach (absorption/timing), and a mood icon near the head.
-    
-    Interactive elements: Click brain hotspot for the adenosine-blocking mechanism and the concrete detail that caffeine 6 hours before bed still reduces sleep quality; click heart hotspot for the heart-rate/blood-pressure effect and how added stimulants in energy drinks compound it; click mood icon for the anxiety/jitteriness explanation; slider "Hours Before Bedtime" (0-10) recalculates a sleep-quality indicator bar tied to the brain hotspot.
-    
-    Data Visibility Requirements: Stage 1 shows caffeine's plain-language mechanism; Stage 2 shows the bedtime-slider sleep impact; Stage 3 shows the cardiovascular explanation; Stage 4 shows the mood explanation; Final shows adolescent-versus-adult sensitivity at the same dose.
-    
-    Instructional Rationale: Explaining mechanisms and effects is Understand-level, so labeled hotspots with concrete, adjustable data (the sleep slider) are used instead of animation, keeping the physiology inspectable at the learner's own pace.
-    
-    Implementation notes: p5.js. Each hotspot's explanation stored as text; the slider implemented as a simple linear function mapping hours-before-bed to a sleep-quality percentage.
-    -->
+    <main></main>
 </body>
 </html>

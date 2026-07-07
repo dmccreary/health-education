@@ -3,131 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Dress for the Weather</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Dress for the Weather MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="dress-for-weather-game.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Dress for the Weather</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> dress-for-weather-game</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students apply knowledge of weather conditions by dressing a character correctly for four different weather scenes (sunny/hot, cold/dry, rainy, windy).</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** dress-for-weather-game<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: use, demonstrate, apply
-    
-    Learning objective: Students apply knowledge of weather conditions by dressing a character correctly for four different weather scenes (sunny/hot, cold/dry, rainy, windy).
-    
-    Canvas layout:
-    - Left side (400px): A simple character figure and a weather scene backdrop (sun, snow, rain, or wind clouds)
-    - Right side (200px): A closet of clickable clothing items (sunhat, sunglasses, t-shirt, shorts, thin layers, thick coat, raincoat, boots, windbreaker)
-    
-    Visual elements:
-    - Character figure that visually updates as clothing items are dragged onto it
-    - Weather scene backdrop that changes with a "Change Weather" button
-    - Closet panel showing all available clothing icons
-    
-    Interactive controls:
-    - Drag or click clothing items onto the character
-    - Button: "Change Weather" (cycles through the four scenarios)
-    - Button: "Check My Outfit"
-    - Button: "Reset"
-    
-    Default parameters:
-    - Starting weather: sunny and hot
-    
-    Data Visibility Requirements:
-      Stage 1: Show the weather scene and an undressed (base outfit) character
-      Stage 2: As items are added, show the character updating in real time
-      Stage 3: When "Check My Outfit" is clicked, reveal which items matched the weather well and a one-sentence reason for any mismatch ("A thick coat traps too much heat on a sunny day — try light, loose clothing instead.")
-    
-    Behavior:
-    - Correct outfit: character looks comfortable, sun/snow/rain icon shows a happy face, success caption appears
-    - Incorrect outfit: character shows a mild discomfort cue (shivering, sweating, or dripping), with a gentle explanation of what to change
-    - Weather changes require the student to re-dress the character, reinforcing that clothing choices depend on conditions
-    
-    Instructional Rationale: This is an Apply-level objective (use, demonstrate), so the pattern is a hands-on parameter/scenario simulator where the student actively applies clothing choices to conditions and receives immediate feedback, rather than a passive explanation.
-    
-    Implementation notes: Use p5.js. Keep the character gender-neutral and simple. Limit clothing options to items clearly tied to the four weather categories being taught.
-    -->
+    <main></main>
 </body>
 </html>

@@ -19,5 +19,20 @@
   "chapter_number": 1,
   "chapter_title": "Foundations of Health and Safe Habits",
   "chapter_dir": "01-foundations",
-  "chapter_rel_dir": "bands/grade-1/chapters/01-foundations"
+  "chapter_rel_dir": "bands/grade-1/chapters/01-foundations",
+  "educational": {
+    "gradeLevel": "Grade 1",
+    "subjectArea": "Health Education",
+    "topic": "Foundations of Health and Safe Habits",
+    "learningObjectives": [
+      "Students demonstrate communicating thoughts, feelings, wants, and needs in healthy ways by completing simple sentence-starter scenarios with the best available response."
+    ],
+    "bloomLevel": "Apply (L3)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "demonstrate, practice, use",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Apply-level objective through direct interaction rather than passive reading."
+  }
 }

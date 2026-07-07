@@ -19,5 +19,20 @@
   "chapter_number": 3,
   "chapter_title": "Handling Conflict and Kind Play",
   "chapter_dir": "03-conflict-kind-play",
-  "chapter_rel_dir": "bands/grade-2/chapters/03-conflict-kind-play"
+  "chapter_rel_dir": "bands/grade-2/chapters/03-conflict-kind-play",
+  "educational": {
+    "gradeLevel": "Grade 2",
+    "subjectArea": "Health Education",
+    "topic": "Handling Conflict and Kind Play",
+    "learningObjectives": [
+      "Students apply the four-step healthy conflict resolution process to a simple playground scenario by choosing what to do at each step."
+    ],
+    "bloomLevel": "Apply (L3)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "demonstrate, use, practice",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Apply-level objective through direct interaction rather than passive reading."
+  }
 }

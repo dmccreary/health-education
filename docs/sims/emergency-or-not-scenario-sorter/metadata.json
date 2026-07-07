@@ -19,5 +19,20 @@
   "chapter_number": 6,
   "chapter_title": "Sleep, Fitness, and Emergency Response",
   "chapter_dir": "06-sleep-fitness-and-emergency-response",
-  "chapter_rel_dir": "bands/grade-6-8/chapters/06-sleep-fitness-and-emergency-response"
+  "chapter_rel_dir": "bands/grade-6-8/chapters/06-sleep-fitness-and-emergency-response",
+  "educational": {
+    "gradeLevel": "Grades 6-8",
+    "subjectArea": "Health Education",
+    "topic": "Sleep, Fitness, and Emergency Response",
+    "learningObjectives": [
+      "Students apply warning-sign criteria to recognize which realistic scenarios are true emergencies requiring an immediate call for help, and which are not."
+    ],
+    "bloomLevel": "Apply (L3)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "demonstrate, apply, practice",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Apply-level objective through direct interaction rather than passive reading."
+  }
 }

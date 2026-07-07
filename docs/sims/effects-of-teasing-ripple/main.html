@@ -3,128 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>How Teasing Can Ripple Through a Group</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>How Teasing Can Ripple Through a Group MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="effects-of-teasing-ripple.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>How Teasing Can Ripple Through a Group</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> effects-of-teasing-ripple</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students examine how one instance of unwanted teasing can affect not only the person teased but also the feelings of others who witness it, distinguishing this from playful interaction that everyone enjoys.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** effects-of-teasing-ripple<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: examine, distinguish, compare
-    
-    Learning objective: Students examine how one instance of unwanted teasing can affect not only the person teased but also the feelings of others who witness it, distinguishing this from playful interaction that everyone enjoys.
-    
-    Canvas layout:
-    - Center area (300px): A simple classroom or playground scene with five small cartoon children arranged in a loose circle
-    - Right area (300px): An infobox panel that displays feeling-word text for whichever character is clicked
-    
-    Visual elements:
-    - Five simple, calm cartoon children figures, each a neutral color at the start
-    - A toggle switch at the top labeled "Kind Joke" / "Unwanted Teasing"
-    
-    Interactive controls:
-    - Toggle: Switch between "Kind Joke" scenario and "Unwanted Teasing" scenario
-    - Click any child figure to reveal how that character likely feels in the current scenario, shown in the infobox
-    
-    Default parameters:
-    - Toggle starts on "Kind Joke"
-    - No character selected at start; instructions read "Click a character to see how they feel."
-    
-    Data Visibility Requirements:
-      Stage 1 (Kind Joke toggle): All five figures shown smiling; clicking any one shows infobox text such as "This friend is laughing along -- everyone agreed the joke was funny."
-      Stage 2 (Unwanted Teasing toggle): The figure representing the teased child turns a muted color with a downturned expression; clicking it shows infobox text "This student feels embarrassed and left out."
-      Stage 3 (Unwanted Teasing toggle): Clicking one of the four onlooker figures shows infobox text such as "This classmate feels uneasy watching -- they wonder if it could happen to them next."
-    
-    Behavior:
-    - Switching the toggle immediately redraws all five figures' expressions and colors to match the selected scenario
-    - Every character is clickable in both scenarios, so students can compare how the same group of children feels differently depending on whether the interaction was a kind joke or unwanted teasing
-    
-    Instructional Rationale: This is an Analyze-level objective requiring students to distinguish between two situations and examine effects on multiple people, so the design uses a compare-toggle with clickable figures rather than a single animation, letting students directly contrast how kind play and unwanted teasing ripple differently through a group.
-    
-    Implementation notes: Use p5.js. Keep facial expressions simple, clear, and non-exaggerated so the emotional contrast is easy to read without being upsetting. Maintain a calm, caring visual tone throughout -- avoid cartoonish exaggeration of sadness.
-    -->
+    <main></main>
 </body>
 </html>
