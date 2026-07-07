@@ -19,5 +19,20 @@
   "chapter_number": 1,
   "chapter_title": "Health and Food",
   "chapter_dir": "01-health-and-food",
-  "chapter_rel_dir": "bands/kindergarten/chapters/01-health-and-food"
+  "chapter_rel_dir": "bands/kindergarten/chapters/01-health-and-food",
+  "educational": {
+    "gradeLevel": "Kindergarten",
+    "subjectArea": "Health Education",
+    "topic": "Health and Food",
+    "learningObjectives": [
+      "Students recognize that foods from many cultural traditions belong to the same five food groups, connecting Cultural Food Tradition to Food Group."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "recognize, connect, classify",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
 }

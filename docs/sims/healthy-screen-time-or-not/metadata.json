@@ -19,5 +19,20 @@
   "chapter_number": 5,
   "chapter_title": "Staying Safe",
   "chapter_dir": "05-staying-safe",
-  "chapter_rel_dir": "bands/kindergarten/chapters/05-staying-safe"
+  "chapter_rel_dir": "bands/kindergarten/chapters/05-staying-safe",
+  "educational": {
+    "gradeLevel": "Kindergarten",
+    "subjectArea": "Health Education",
+    "topic": "Staying Safe",
+    "learningObjectives": [
+      "Students distinguish healthy, safe technology use from unsafe or unhealthy technology use by sorting illustrated scenario cards into two labeled bins, applying the Healthy Technology Use concept."
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "distinguish, sort, compare",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
 }

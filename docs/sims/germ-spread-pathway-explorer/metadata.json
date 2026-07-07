@@ -19,5 +19,20 @@
   "chapter_number": 5,
   "chapter_title": "Wellness and Disease Prevention",
   "chapter_dir": "05-wellness-and-disease-prevention",
-  "chapter_rel_dir": "bands/grade-4/chapters/05-wellness-and-disease-prevention"
+  "chapter_rel_dir": "bands/grade-4/chapters/05-wellness-and-disease-prevention",
+  "educational": {
+    "gradeLevel": "Grade 4",
+    "subjectArea": "Health Education",
+    "topic": "Wellness and Disease Prevention",
+    "learningObjectives": [
+      "Students identify and explain the five common pathways germs use to spread between people, surfaces, and hosts."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "explain, identify, describe",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
 }

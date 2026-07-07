@@ -19,5 +19,20 @@
   "chapter_number": 2,
   "chapter_title": "Food, Drinks, and Staying Safe in the Kitchen",
   "chapter_dir": "02-food-and-nutrition",
-  "chapter_rel_dir": "bands/grade-1/chapters/02-food-and-nutrition"
+  "chapter_rel_dir": "bands/grade-1/chapters/02-food-and-nutrition",
+  "educational": {
+    "gradeLevel": "Grade 1",
+    "subjectArea": "Health Education",
+    "topic": "Food, Drinks, and Staying Safe in the Kitchen",
+    "learningObjectives": [
+      "Students recall safe practices for handling food by checking off food safety habits shown in short kitchen scenes."
+    ],
+    "bloomLevel": "Remember (L1)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "recall, identify, list",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Remember-level objective through direct interaction rather than passive reading."
+  }
 }

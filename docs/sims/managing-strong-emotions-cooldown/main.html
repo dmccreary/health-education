@@ -3,131 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Cooling Down a Big Feeling</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Cooling Down a Big Feeling MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="managing-strong-emotions-cooldown.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Cooling Down a Big Feeling</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> managing-strong-emotions-cooldown</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students explain how a calming strategy lowers a strong emotion over time by stepping through a "feelings thermometer" scenario.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** managing-strong-emotions-cooldown<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain, describe
-    
-    Learning objective: Students explain how a calming strategy lowers a strong emotion over time by stepping through a "feelings thermometer" scenario.
-    
-    Canvas layout:
-    - Left area (200px): A vertical "feelings thermometer" showing emotion intensity from calm (bottom, blue) to very upset (top, red)
-    - Right area (400px): A step-through scene with a character and a caption box, plus Next/Back buttons
-    
-    Visual elements:
-    - Thermometer with a marker that moves up or down
-    - A simple cartoon character whose face changes expression (frustrated, calming, calm) at each stage
-    - Caption box below the character
-    
-    Interactive controls:
-    - Button: "Next" advances to the next stage of the scenario
-    - Button: "Back" returns to the previous stage
-    - Dropdown: Choose which calming strategy the character tries (deep breaths, counting to ten, walking away)
-    
-    Default parameters:
-    - Thermometer starts near the top (very upset) after a conflict scenario is described
-    - Default strategy: "deep breaths"
-    
-    Data Visibility Requirements:
-      Stage 1: Show thermometer high (red) with caption "A friend took the last turn on the swing. This character feels really upset!"
-      Stage 2: Show the chosen calming strategy happening, thermometer marker begins moving down, caption names the strategy: "Taking three deep breaths..."
-      Stage 3: Show thermometer lower (yellow), caption "The feeling is getting smaller."
-      Stage 4: Show thermometer near bottom (blue/calm), caption "Now the character feels calm enough to talk about what happened."
-    
-    Behavior:
-    - Changing the strategy dropdown resets the scenario and shows a slightly different caption for each strategy, so students see that different strategies can all work
-    - The thermometer marker animates smoothly between stages when Next/Back is clicked
-    
-    Instructional Rationale: This is an Understand-level (explain) objective about a cause-and-effect process, so the design uses a step-through thermometer with visible stages rather than continuous animation, letting students trace how a calming strategy causes the emotion to shrink over time.
-    
-    Implementation notes: Use p5.js. Keep the thermometer large and simple. Facial expressions should be easy to read from across a classroom.
-    -->
+    <main></main>
 </body>
 </html>

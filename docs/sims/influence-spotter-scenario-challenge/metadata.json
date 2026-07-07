@@ -19,5 +19,20 @@
   "chapter_number": 11,
   "chapter_title": "Health Influences and Information Literacy",
   "chapter_dir": "11-health-influences-and-information-literacy",
-  "chapter_rel_dir": "bands/grade-6-8/chapters/11-health-influences-and-information-literacy"
+  "chapter_rel_dir": "bands/grade-6-8/chapters/11-health-influences-and-information-literacy",
+  "educational": {
+    "gradeLevel": "Grades 6-8",
+    "subjectArea": "Health Education",
+    "topic": "Health Influences and Information Literacy",
+    "learningObjectives": [
+      "Students examine 10 short scenarios and classify the primary source of health influence at work (Social Norm, Public Health Policy, Family/Culture, Peer, or Media), distinguishing between influences that can look similar on the surface."
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "examine, classify, distinguish",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
 }

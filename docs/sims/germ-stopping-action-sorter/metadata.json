@@ -19,5 +19,20 @@
   "chapter_number": 5,
   "chapter_title": "Healthy Habits, Activity, and Germs",
   "chapter_dir": "05-healthy-habits",
-  "chapter_rel_dir": "bands/grade-1/chapters/05-healthy-habits"
+  "chapter_rel_dir": "bands/grade-1/chapters/05-healthy-habits",
+  "educational": {
+    "gradeLevel": "Grade 1",
+    "subjectArea": "Health Education",
+    "topic": "Healthy Habits, Activity, and Germs",
+    "learningObjectives": [
+      "Students evaluate short scenario cards showing a student's action and judge whether the action helps stop germs from spreading or could let germs spread, then rank a short list of actions from most to least helpful."
+    ],
+    "bloomLevel": "Evaluate (L5)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "judge, assess, prioritize",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Evaluate-level objective through direct interaction rather than passive reading."
+  }
 }

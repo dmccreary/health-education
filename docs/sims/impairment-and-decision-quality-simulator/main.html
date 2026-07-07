@@ -3,146 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Impairment And Decision Quality Simulator</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Impairment And Decision Quality Simulator MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="impairment-and-decision-quality-simulator.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Impairment And Decision Quality Simulator</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> impairment-and-decision-quality-simulator</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
-            <p><strong>Learning Objective:</strong> Students evaluate realistic decision scenarios under</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    
-    **sim-id:** impairment-and-decision-quality-simulator<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy Level: Evaluate (L5)
-    Bloom Verb: evaluate, judge, assess, justify
-    
-    Learning objective: Students evaluate realistic decision scenarios under
-    three conditions (sober, mildly impaired, more heavily impaired) and judge
-    how impairment level changes risk assessment, impulse control, and
-    consideration of consequences, without depicting any method of
-    intoxication.
-    
-    Canvas layout:
-    - Left (55%): one decision scenario at a time (e.g., "Deciding whether to
-      get in a car with a driver who has been drinking," "Deciding whether to
-      try an unfamiliar pill offered at a party," "Deciding how to respond to
-      an escalating argument")
-    - Right (45%): an impairment-level selector (Sober, Mildly Impaired, More
-      Heavily Impaired) and a feedback panel
-    
-    Data Visibility Requirements:
-      Stage 1: Show the scenario with the impairment selector set to "Sober";
-      feedback panel shows the sober reasoning process (risk noticed, weighed,
-      consequence considered)
-      Stage 2: Learner selects "Mildly Impaired"; feedback panel shows how risk
-      assessment and impulse control measurably shift, grounded in the
-      documented cognitive effects covered in this section
-      Stage 3: Learner selects "More Heavily Impaired"; feedback panel shows
-      the further shift toward immediate reward and away from consequence
-      weighing
-      Stage 4: A "Why This Matters" closing panel connects the pattern to the
-      fentanyl-contamination fact and to consent, both covered in this chapter,
-      reinforcing that impairment does not just change mood — it changes the
-      decision itself
-    
-    Interactive controls:
-    - Impairment-level selector (three options)
-    - Scenario "Next" button
-    - Button: "Reset"
-    
-    Default parameters: Three-scenario bank; starts at Sober for each new
-    scenario
-    
-    Instructional Rationale: Judging how impairment changes the quality of a
-    decision across multiple realistic scenarios is an Evaluate-level task; a
-    selector-based comparison across impairment levels lets students construct
-    their own before/after judgment rather than being told the conclusion,
-    while avoiding any depiction of substance use itself.
-    
-    Implementation notes: p5.js; scenario and feedback text stored in a
-    structured object; no scenario depicts a method of obtaining, using, or
-    concealing a substance — scenarios describe only the decision point and
-    its context. Responsive canvas.
-    -->
+    <main></main>
 </body>
 </html>

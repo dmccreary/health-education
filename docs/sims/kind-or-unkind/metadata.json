@@ -19,5 +19,20 @@
   "chapter_number": 3,
   "chapter_title": "Feelings And Kindness",
   "chapter_dir": "03-feelings-and-kindness",
-  "chapter_rel_dir": "bands/kindergarten/chapters/03-feelings-and-kindness"
+  "chapter_rel_dir": "bands/kindergarten/chapters/03-feelings-and-kindness",
+  "educational": {
+    "gradeLevel": "Kindergarten",
+    "subjectArea": "Health Education",
+    "topic": "Feelings And Kindness",
+    "learningObjectives": [
+      "Students distinguish Kind Behavior from Unkind Behavior by sorting illustrated scenario cards into two labeled bins."
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "distinguish, sort, compare",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
 }

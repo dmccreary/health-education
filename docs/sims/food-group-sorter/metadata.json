@@ -19,5 +19,20 @@
   "chapter_number": 1,
   "chapter_title": "Health and Food",
   "chapter_dir": "01-health-and-food",
-  "chapter_rel_dir": "bands/kindergarten/chapters/01-health-and-food"
+  "chapter_rel_dir": "bands/kindergarten/chapters/01-health-and-food",
+  "educational": {
+    "gradeLevel": "Kindergarten",
+    "subjectArea": "Health Education",
+    "topic": "Health and Food",
+    "learningObjectives": [
+      "Students identify and name which of the five food groups a given food belongs to (Fruits, Vegetables, Grains, Protein Foods, Dairy) by dragging a food picture into the correct labeled bin."
+    ],
+    "bloomLevel": "Remember (L1)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "identify, name, sort",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Remember-level objective through direct interaction rather than passive reading."
+  }
 }

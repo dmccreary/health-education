@@ -19,5 +19,20 @@
   "chapter_number": 8,
   "chapter_title": "Communication And Goals",
   "chapter_dir": "08-communication-and-goals",
-  "chapter_rel_dir": "bands/grade-3/chapters/08-communication-and-goals"
+  "chapter_rel_dir": "bands/grade-3/chapters/08-communication-and-goals",
+  "educational": {
+    "gradeLevel": "Grade 3",
+    "subjectArea": "Health Education",
+    "topic": "Communication And Goals",
+    "learningObjectives": [
+      "Students practice constructing I-statements by assembling a feeling, a situation, and a request from a scenario prompt using the \"I feel ___ when ___, because ___. Could you ___?\" frame."
+    ],
+    "bloomLevel": "Apply (L3)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "use, construct, practice",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Apply-level objective through direct interaction rather than passive reading."
+  }
 }

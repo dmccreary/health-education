@@ -19,5 +19,18 @@
   "chapter_number": 1,
   "chapter_title": "Food and Nutrition",
   "chapter_dir": "01-food-and-nutrition",
-  "chapter_rel_dir": "bands/grade-9-12/chapters/01-food-and-nutrition"
+  "chapter_rel_dir": "bands/grade-9-12/chapters/01-food-and-nutrition",
+  "educational": {
+    "gradeLevel": "Grades 9-12",
+    "subjectArea": "Health Education",
+    "topic": "Food and Nutrition",
+    "learningObjectives": [],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "examine, differentiate",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
 }

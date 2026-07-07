@@ -19,5 +19,20 @@
   "chapter_number": 7,
   "chapter_title": "Getting Help and Making Healthy Choices",
   "chapter_dir": "07-help-and-decisions",
-  "chapter_rel_dir": "bands/grade-1/chapters/07-help-and-decisions"
+  "chapter_rel_dir": "bands/grade-1/chapters/07-help-and-decisions",
+  "educational": {
+    "gradeLevel": "Grade 1",
+    "subjectArea": "Health Education",
+    "topic": "Getting Help and Making Healthy Choices",
+    "learningObjectives": [
+      "Students explain the steps of making a health decision — noticing the influence, thinking about the choice, and asking for help if needed — using a step-through walkthrough with a concrete, relatable scenario."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "explain, describe, summarize",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
 }

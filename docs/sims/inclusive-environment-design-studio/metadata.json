@@ -19,5 +19,20 @@
   "chapter_number": 6,
   "chapter_title": "Conflict Resolution and Inclusion",
   "chapter_dir": "06-conflict-resolution-and-inclusion",
-  "chapter_rel_dir": "bands/grade-9-12/chapters/06-conflict-resolution-and-inclusion"
+  "chapter_rel_dir": "bands/grade-9-12/chapters/06-conflict-resolution-and-inclusion",
+  "educational": {
+    "gradeLevel": "Grades 9-12",
+    "subjectArea": "Health Education",
+    "topic": "Conflict Resolution and Inclusion",
+    "learningObjectives": [
+      "Students design a set of concrete policy, physical"
+    ],
+    "bloomLevel": "Create (L6)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "design, formulate, construct",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Create-level objective through direct interaction rather than passive reading."
+  }
 }

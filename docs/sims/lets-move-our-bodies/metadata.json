@@ -19,5 +19,20 @@
   "chapter_number": 4,
   "chapter_title": "Staying Healthy Every Day",
   "chapter_dir": "04-staying-healthy",
-  "chapter_rel_dir": "bands/kindergarten/chapters/04-staying-healthy"
+  "chapter_rel_dir": "bands/kindergarten/chapters/04-staying-healthy",
+  "educational": {
+    "gradeLevel": "Kindergarten",
+    "subjectArea": "Health Education",
+    "topic": "Staying Healthy Every Day",
+    "learningObjectives": [
+      "Students explain why daily movement helps the body feel good and stay healthy by following along with a simple animated character performing different movement activities and seeing a \"happy energy\" meter respond."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "explain, demonstrate",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
 }

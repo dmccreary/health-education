@@ -19,5 +19,20 @@
   "chapter_number": 10,
   "chapter_title": "Substance Use Disorder, Recovery, and Policy",
   "chapter_dir": "10-substance-use-disorder-recovery-and-policy",
-  "chapter_rel_dir": "bands/grade-6-8/chapters/10-substance-use-disorder-recovery-and-policy"
+  "chapter_rel_dir": "bands/grade-6-8/chapters/10-substance-use-disorder-recovery-and-policy",
+  "educational": {
+    "gradeLevel": "Grades 6-8",
+    "subjectArea": "Health Education",
+    "topic": "Substance Use Disorder, Recovery, and Policy",
+    "learningObjectives": [
+      "Students analyze how increasing impairment levels affect stopping distance by comparing reaction time and total stopping distance at several illustrative impairment levels, differentiating how much distance is added at each stage."
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "examine, compare, differentiate",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
 }

@@ -19,5 +19,20 @@
   "chapter_number": 1,
   "chapter_title": "Food and Nutrition",
   "chapter_dir": "01-food-and-nutrition",
-  "chapter_rel_dir": "bands/grade-4/chapters/01-food-and-nutrition"
+  "chapter_rel_dir": "bands/grade-4/chapters/01-food-and-nutrition",
+  "educational": {
+    "gradeLevel": "Grade 4",
+    "subjectArea": "Health Education",
+    "topic": "Food and Nutrition",
+    "learningObjectives": [
+      "Students explain the job of each macronutrient (carbohydrates, protein, fats) and classify example foods under the correct macronutrient category."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "explain, classify, exemplify",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
 }

@@ -19,5 +19,20 @@
   "chapter_number": 3,
   "chapter_title": "Handling Conflict and Kind Play",
   "chapter_dir": "03-conflict-kind-play",
-  "chapter_rel_dir": "bands/grade-2/chapters/03-conflict-kind-play"
+  "chapter_rel_dir": "bands/grade-2/chapters/03-conflict-kind-play",
+  "educational": {
+    "gradeLevel": "Grade 2",
+    "subjectArea": "Health Education",
+    "topic": "Handling Conflict and Kind Play",
+    "learningObjectives": [
+      "Students explain how a calming strategy lowers a strong emotion over time by stepping through a \"feelings thermometer\" scenario."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "explain, describe",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
 }

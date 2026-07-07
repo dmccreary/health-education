@@ -19,5 +19,20 @@
   "chapter_number": 1,
   "chapter_title": "Foundations of Health and Safe Habits",
   "chapter_dir": "01-foundations",
-  "chapter_rel_dir": "bands/grade-1/chapters/01-foundations"
+  "chapter_rel_dir": "bands/grade-1/chapters/01-foundations",
+  "educational": {
+    "gradeLevel": "Grade 1",
+    "subjectArea": "Health Education",
+    "topic": "Foundations of Health and Safe Habits",
+    "learningObjectives": [
+      "Students distinguish which people or situations positively or negatively influence a health practice or behavior, using short, everyday examples."
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "distinguish, examine",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
 }

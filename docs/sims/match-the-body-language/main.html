@@ -3,111 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Match the Body Language</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Match the Body Language MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="match-the-body-language.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Match the Body Language</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> match-the-body-language</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Remember (L1)</p>
-            <p><strong>Learning Objective:</strong> Students identify the feeling behind common nonverbal cues by matching simple cartoon body-language poses to the feeling they most likely show.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** match-the-body-language<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Remember (L1)
-    Bloom Taxonomy Verb: identify, recognize, name
-    
-    Learning objective: Students identify the feeling behind common nonverbal cues by matching simple cartoon body-language poses to the feeling they most likely show.
-    
-    Canvas layout: Left side (350px) shows one large cartoon figure at a time in a clear pose (arms crossed and frowning, shoulders slumped and looking down, wide smile with open arms, tense shoulders with clenched fists). Right side (250px) shows four feeling-word buttons (e.g., "Frustrated," "Sad," "Happy," "Angry") plus a feedback box.
-    
-    Interactive controls: Click a feeling-word button to answer; "Next Pose" and "Reset" buttons.
-    
-    Default parameters: Starts on pose 1 of 6 prepared poses, presented in random order each reset.
-    
-    Behavior: Clicking a feeling reveals whether it matches the pose and a one-sentence explanation of the specific cue (e.g., "Crossed arms and a frown often mean someone feels frustrated or closed off.").
-    
-    Instructional Rationale: Remember-level objective calling for straightforward recognition, so simple matching with immediate feedback is appropriate — no timer or scoring pressure.
-    
-    Implementation notes: Use p5.js with simple flat cartoon figures, no realistic faces. Keep the tone neutral; note that body language is a clue, not a certainty, since people can feel one way and look another.
-    -->
+    <main></main>
 </body>
 </html>

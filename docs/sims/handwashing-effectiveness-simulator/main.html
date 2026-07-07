@@ -3,113 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Handwashing Effectiveness Simulator</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Handwashing Effectiveness Simulator MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="handwashing-effectiveness-simulator.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Handwashing Effectiveness Simulator</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> handwashing-effectiveness-simulator</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students apply correct handwashing technique parameters (duration, soap use, coverage) and observe how each factor affects a simplified germ-removal outcome.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** handwashing-effectiveness-simulator<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: demonstrate, calculate, apply
-    
-    Learning objective: Students apply correct handwashing technique parameters (duration, soap use, coverage) and observe how each factor affects a simplified germ-removal outcome.
-    
-    Canvas layout: Left side (450px) shows an illustrated pair of hands with a "germ count" indicator. Right side (150px) shows controls and a results readout.
-    
-    Visual elements: Animated hand illustration showing germ dots decreasing as washing proceeds; a germ-count number; a technique score.
-    
-    Interactive controls: Slider for wash duration (0-30 seconds); checkbox for "used soap"; checkbox for "scrubbed between fingers and under nails"; "Wash Hands" button to run the simulation; "Reset" button.
-    
-    Default parameters: Duration starts at 5 seconds, soap unchecked, scrubbing unchecked — producing a low germ-removal result to motivate adjusting the parameters.
-    
-    Behavior: Germ count drops most with duration ≥ 20 seconds AND soap checked AND scrubbing checked; missing any one factor substantially reduces effectiveness, shown numerically and visually.
-    
-    Instructional Rationale: Applying correct technique parameters and observing the resulting outcome is an Apply-level task, so a parameter-adjustable simulation is used rather than a passive instructional list, letting students discover which factors matter most through experimentation.
-    
-    Implementation notes: p5.js. Germ-removal calculation as a simple weighted function of the three parameters. Responsive canvas that reflows on window resize.
-    -->
+    <main></main>
 </body>
 </html>

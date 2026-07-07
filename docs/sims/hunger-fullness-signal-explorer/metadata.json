@@ -19,5 +19,20 @@
   "chapter_number": 4,
   "chapter_title": "Food And Nutrition",
   "chapter_dir": "04-food-and-nutrition",
-  "chapter_rel_dir": "bands/grade-3/chapters/04-food-and-nutrition"
+  "chapter_rel_dir": "bands/grade-3/chapters/04-food-and-nutrition",
+  "educational": {
+    "gradeLevel": "Grade 3",
+    "subjectArea": "Health Education",
+    "topic": "Food And Nutrition",
+    "learningObjectives": [
+      "Students recall and identify body signals for hunger and fullness by matching feeling-cards to a labeled body figure."
+    ],
+    "bloomLevel": "Remember (L1)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "recall, identify, recognize",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Remember-level objective through direct interaction rather than passive reading."
+  }
 }

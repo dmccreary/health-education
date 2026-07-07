@@ -3,126 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Let's Move Our Bodies!</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Let's Move Our Bodies! MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="lets-move-our-bodies.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Let's Move Our Bodies!</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> lets-move-our-bodies</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students explain why daily movement helps the body feel good and stay healthy by following along with a simple animated character performing different movement activities and seeing a "happy energy" meter respond.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** lets-move-our-bodies<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain, demonstrate
-    
-    Learning objective: Students explain why daily movement helps the body feel good and stay healthy by following along with a simple animated character performing different movement activities and seeing a "happy energy" meter respond.
-    
-    Canvas layout:
-    - Top area (300px): A friendly cartoon character that performs a movement (running, jumping, dancing, climbing) when a matching button is pressed
-    - Middle area (100px): A large, simple "Happy Energy Meter" bar that fills up as the character moves
-    - Bottom strip (100px): Four large buttons: "Run," "Jump," "Dance," "Climb," plus a Reset button
-    
-    Visual elements:
-    - Character animates distinctly for each of the four movement types
-    - Happy Energy Meter fills with a warm gold color and a small sun icon appears at full
-    
-    Interactive controls:
-    - Click: child selects a movement button to watch the character perform it
-    - Button: "Reset" empties the meter and starts over
-    - Display: meter level and a short read-aloud caption after each movement, e.g., "Running makes your heart beat faster and gives you energy!"
-    
-    Default parameters:
-    - Meter starts empty
-    - Each movement button adds a fixed amount to the meter; after all four movements are tried once, the meter is full
-    
-    Behavior:
-    - Clicking a movement button plays the character's animation and reveals a caption explaining that specific benefit (heart health, strong muscles, happy feelings, better sleep)
-    - When the meter becomes full, a celebration message appears: "You moved your body four different ways — that's a great healthy day!"
-    - Children may click the same button multiple times to watch the animation again; only the first click per movement adds to the meter
-    
-    Instructional Rationale: This is an Understand-level objective (explain why movement helps), so the sim uses a step-through pattern where each movement reveals a concrete, spoken benefit rather than relying on decorative continuous animation. Showing the meter fill in direct response to specific movements makes the cause-and-effect connection between activity and feeling good visible and concrete.
-    
-    Implementation notes: Use p5.js. Store each movement as an object with an animation reference, a meter increment value, and a caption string. Keep all captions short enough to read aloud in one breath.
-    -->
+    <main></main>
 </body>
 </html>

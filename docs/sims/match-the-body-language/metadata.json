@@ -19,5 +19,20 @@
   "chapter_number": 8,
   "chapter_title": "Communication And Goals",
   "chapter_dir": "08-communication-and-goals",
-  "chapter_rel_dir": "bands/grade-3/chapters/08-communication-and-goals"
+  "chapter_rel_dir": "bands/grade-3/chapters/08-communication-and-goals",
+  "educational": {
+    "gradeLevel": "Grade 3",
+    "subjectArea": "Health Education",
+    "topic": "Communication And Goals",
+    "learningObjectives": [
+      "Students identify the feeling behind common nonverbal cues by matching simple cartoon body-language poses to the feeling they most likely show."
+    ],
+    "bloomLevel": "Remember (L1)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "identify, recognize, name",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Remember-level objective through direct interaction rather than passive reading."
+  }
 }

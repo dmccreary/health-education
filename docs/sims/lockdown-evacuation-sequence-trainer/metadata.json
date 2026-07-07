@@ -19,5 +19,20 @@
   "chapter_number": 9,
   "chapter_title": "Digital and School Safety",
   "chapter_dir": "09-digital-and-school-safety",
-  "chapter_rel_dir": "bands/grade-9-12/chapters/09-digital-and-school-safety"
+  "chapter_rel_dir": "bands/grade-9-12/chapters/09-digital-and-school-safety",
+  "educational": {
+    "gradeLevel": "Grades 9-12",
+    "subjectArea": "Health Education",
+    "topic": "Digital and School Safety",
+    "learningObjectives": [
+      "Students classify standard procedural actions as"
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "classify, distinguish, sequence",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
 }

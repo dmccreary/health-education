@@ -19,5 +19,20 @@
   "chapter_number": 2,
   "chapter_title": "Food, Drinks, and Staying Safe in the Kitchen",
   "chapter_dir": "02-food-and-nutrition",
-  "chapter_rel_dir": "bands/grade-1/chapters/02-food-and-nutrition"
+  "chapter_rel_dir": "bands/grade-1/chapters/02-food-and-nutrition",
+  "educational": {
+    "gradeLevel": "Grade 1",
+    "subjectArea": "Health Education",
+    "topic": "Food, Drinks, and Staying Safe in the Kitchen",
+    "learningObjectives": [
+      "Students classify kitchen tasks as \"safe for me to help with\" or \"grown-up-only job,\" and explain why each grown-up-only job needs an adult."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "classify, explain, distinguish",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
 }

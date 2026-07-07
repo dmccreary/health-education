@@ -19,5 +19,20 @@
   "chapter_number": 1,
   "chapter_title": "Foundations Of Health",
   "chapter_dir": "01-foundations-of-health",
-  "chapter_rel_dir": "bands/grade-3/chapters/01-foundations-of-health"
+  "chapter_rel_dir": "bands/grade-3/chapters/01-foundations-of-health",
+  "educational": {
+    "gradeLevel": "Grade 3",
+    "subjectArea": "Health Education",
+    "topic": "Foundations Of Health",
+    "learningObjectives": [
+      "Students classify everyday scenarios into the correct source of influence (family, friends, school, community, media, culture) and explain whether each example nudges a health behavior in a helpful or unhelpful direction."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "classify, exemplify, explain",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
 }

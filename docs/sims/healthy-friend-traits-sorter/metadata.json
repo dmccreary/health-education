@@ -19,5 +19,20 @@
   "chapter_number": 4,
   "chapter_title": "Friendship, Uniqueness, and Belonging",
   "chapter_dir": "04-friendship-and-belonging",
-  "chapter_rel_dir": "bands/grade-1/chapters/04-friendship-and-belonging"
+  "chapter_rel_dir": "bands/grade-1/chapters/04-friendship-and-belonging",
+  "educational": {
+    "gradeLevel": "Grade 1",
+    "subjectArea": "Health Education",
+    "topic": "Friendship, Uniqueness, and Belonging",
+    "learningObjectives": [
+      "Students identify and classify short scenario cards as showing a healthy or unhealthy peer trait, then explain what makes each one healthy or unhealthy."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "classify, identify, describe",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
 }

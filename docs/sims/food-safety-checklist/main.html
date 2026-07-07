@@ -3,123 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Food Safety Habit Checklist</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Food Safety Habit Checklist MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="food-safety-checklist.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Food Safety Habit Checklist</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> food-safety-checklist</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Remember (L1)</p>
-            <p><strong>Learning Objective:</strong> Students recall safe practices for handling food by checking off food safety habits shown in short kitchen scenes.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** food-safety-checklist<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Remember (L1)
-    Bloom Taxonomy Verb: recall, identify, list
-    
-    Learning objective: Students recall safe practices for handling food by checking off food safety habits shown in short kitchen scenes.
-    
-    Canvas layout:
-    - Top area (150px): One kitchen scene at a time (washing hands before a snack, rinsing an apple, picking up food that fell on the floor, asking an adult before touching a hot pan)
-    - Middle area (250px): Two buttons: "Safe Habit" and "Needs a Change"
-    - Bottom strip (100px): Explanation caption and "Next Scene" button
-    
-    Visual elements:
-    - 8 simple kitchen scenes cycling one at a time, calm and non-graphic
-    
-    Interactive controls:
-    - Button: "Safe Habit"
-    - Button: "Needs a Change"
-    - Button: "Next Scene"
-    
-    Default parameters:
-    - First scene: a child washing hands before snack time (clearly a safe habit, to build confidence)
-    
-    Behavior:
-    - Correct answer: gentle chime, one-sentence reason appears ("Washing hands removes germs before they can get on your food.")
-    - Incorrect answer: calm caption prompts, "Look again — could this food make someone feel sick?"
-    
-    Instructional Rationale: This is a Remember-level (recall/identify) objective, so the MicroSim uses simple scene recognition with an immediate one-sentence reason, keeping the tone practical and non-frightening rather than warning-heavy.
-    
-    Implementation notes: Use p5.js. Keep every scene calm and matter-of-fact — frame this as "kitchen rules with a trusted adult," never as scary food-danger content. Large text for read-aloud.
-    -->
+    <main></main>
 </body>
 </html>

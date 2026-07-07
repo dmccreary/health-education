@@ -3,109 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Marketing Claims Fact-Checker</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Marketing Claims Fact-Checker MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="marketing-claims-fact-checker.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Marketing Claims Fact-Checker</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> marketing-claims-fact-checker</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
-            <p><strong>Learning Objective:</strong> Students evaluate real marketing claims against actual label data to judge whether each claim is misleading, technically true but incomplete, or genuinely informative.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** marketing-claims-fact-checker<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Evaluate (L5)
-    Bloom Taxonomy Verb: judge, critique, assess, justify
-    
-    Learning objective: Students evaluate real marketing claims against actual label data to judge whether each claim is misleading, technically true but incomplete, or genuinely informative.
-    
-    Layout: Package mockup with a large front-of-package claim on top, its matching Nutrition Facts panel below, then three judgment buttons — "Misleading," "Technically True But Incomplete," "Genuinely Informative" — plus feedback caption and "Next Product" button.
-    
-    Visual elements: 6 paired product examples, e.g. a "made with real fruit" snack whose label shows fruit puree as the 5th ingredient; a "no added sugar" juice box whose label shows 24g of naturally occurring sugar; plain water with no claims as a contrast case.
-    
-    Behavior: After a judgment is submitted, feedback explains the reasoning using that product's specific label numbers, reinforcing the general pattern (technical truth versus broader impression) rather than just marking right/wrong.
-    
-    Instructional Rationale: Judging honesty and completeness is Evaluate-level, so classification-with-justification is used rather than passive reading, requiring the learner to weigh evidence before committing to a judgment.
-    
-    Implementation notes: p5.js. Each product stored as an object with claim text, label data fields, correct judgment category, and explanation string.
-    -->
+    <main></main>
 </body>
 </html>

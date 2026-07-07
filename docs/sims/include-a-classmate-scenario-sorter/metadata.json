@@ -19,5 +19,20 @@
   "chapter_number": 4,
   "chapter_title": "Equity, Belonging, And Bystander Action",
   "chapter_dir": "04-equity-belonging-and-bystander-action",
-  "chapter_rel_dir": "bands/grade-5/chapters/04-equity-belonging-and-bystander-action"
+  "chapter_rel_dir": "bands/grade-5/chapters/04-equity-belonging-and-bystander-action",
+  "educational": {
+    "gradeLevel": "Grade 5",
+    "subjectArea": "Health Education",
+    "topic": "Equity, Belonging, And Bystander Action",
+    "learningObjectives": [
+      "Students apply strategies for including and supporting others by choosing the most inclusive response to short school scenarios."
+    ],
+    "bloomLevel": "Apply (L3)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "demonstrate, use, practice",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Apply-level objective through direct interaction rather than passive reading."
+  }
 }

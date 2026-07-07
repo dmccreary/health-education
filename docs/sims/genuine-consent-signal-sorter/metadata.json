@@ -19,5 +19,20 @@
   "chapter_number": 3,
   "chapter_title": "Consent and Boundaries",
   "chapter_dir": "03-consent-and-boundaries",
-  "chapter_rel_dir": "bands/grade-9-12/chapters/03-consent-and-boundaries"
+  "chapter_rel_dir": "bands/grade-9-12/chapters/03-consent-and-boundaries",
+  "educational": {
+    "gradeLevel": "Grades 9-12",
+    "subjectArea": "Health Education",
+    "topic": "Consent and Boundaries",
+    "learningObjectives": [
+      "Students analyze short described interactions\n(verbal response, body language, tone, and context together) and"
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "differentiate, distinguish, examine",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
 }

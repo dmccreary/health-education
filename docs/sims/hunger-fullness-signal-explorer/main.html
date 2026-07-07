@@ -3,130 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Reading Your Body's Signals</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Reading Your Body's Signals MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="hunger-fullness-signal-explorer.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Reading Your Body's Signals</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> hunger-fullness-signal-explorer</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Remember (L1)</p>
-            <p><strong>Learning Objective:</strong> Students recall and identify body signals for hunger and fullness by matching feeling-cards to a labeled body figure.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** hunger-fullness-signal-explorer<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Remember (L1)
-    Bloom Taxonomy Verb: recall, identify, recognize
-    
-    Learning objective: Students recall and identify body signals for hunger and fullness by matching feeling-cards to a labeled body figure.
-    
-    Canvas layout:
-    - Left side (400px): A simple, friendly body figure with a highlighted stomach/belly zone
-    - Right side (200px): A stack of clickable feeling-cards (e.g., "rumbling tummy," "hard to focus," "comfortably full," "food tastes less exciting")
-    
-    Visual elements:
-    - Body figure with a gentle glow around the belly area
-    - Feeling-cards in two color groups: hunger cards (light orange) and fullness cards (light green)
-    - A simple two-column sorting area labeled "Hungry" and "Full"
-    
-    Interactive controls:
-    - Click and drag (or click to select, then click a column) each feeling-card into the "Hungry" or "Full" column
-    - Button: "Check My Answers"
-    - Button: "Reset"
-    
-    Default parameters:
-    - All feeling-cards start in a shuffled pile above the two columns
-    
-    Data Visibility Requirements:
-      Stage 1: Show the shuffled pile of feeling-cards above two empty columns
-      Stage 2: As each card is sorted, show it snap into the chosen column
-      Stage 3: When "Check My Answers" is clicked, show a checkmark or gentle "try again" cue on each card, with the correct column highlighted for any that were misplaced
-    
-    Behavior:
-    - Correctly sorted cards get a small checkmark and the body figure smiles
-    - Incorrectly sorted cards get a gentle nudge with a one-sentence explanation of which signal group they belong to
-    - A "You found them all!" caption appears once every card is correctly sorted
-    
-    Instructional Rationale: This is a Remember-level objective (recall, identify), so the design uses a flashcard-style sorting activity rather than a complex simulation — students need to recognize and recall signals, which a simple sort-and-check pattern supports directly.
-    
-    Implementation notes: Use p5.js. Keep the body figure simple and gender-neutral. Because this is a K-3 band, this MicroSim is the direct student-facing practice activity; the surrounding body text remains teacher-facing read-aloud material.
-    -->
+    <main></main>
 </body>
 </html>

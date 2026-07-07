@@ -19,5 +19,20 @@
   "chapter_number": 2,
   "chapter_title": "Food and Nutrition",
   "chapter_dir": "02-food-and-nutrition",
-  "chapter_rel_dir": "bands/grade-5/chapters/02-food-and-nutrition"
+  "chapter_rel_dir": "bands/grade-5/chapters/02-food-and-nutrition",
+  "educational": {
+    "gradeLevel": "Grade 5",
+    "subjectArea": "Health Education",
+    "topic": "Food and Nutrition",
+    "learningObjectives": [
+      "Students evaluate a kitchen scene, identify unsafe food handling practices in progress, and judge what safer alternative should replace each one."
+    ],
+    "bloomLevel": "Evaluate (L5)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "judge, critique, assess",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Evaluate-level objective through direct interaction rather than passive reading."
+  }
 }
