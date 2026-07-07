@@ -9,6 +9,24 @@ These wide-landscape posters turn key health concepts into visual, classroom-rea
 
 ## Interactive infographic
 
+[![Families: Many Ways to Care](./families-many-ways-to-care/families-many-ways-to-care.png)](./families-many-ways-to-care/index.md)
+
+### [Families: Many Ways to Care](./families-many-ways-to-care/index.md)
+
+A Kindergarten Callout poster that explores family through observable acts of care, inclusion, comfort, safety, and welcome.
+
+[![Needs, Wants & Healthy Choices](./needs-wants-healthy-choices/needs-wants-healthy-choices.png)](./needs-wants-healthy-choices/index.md)
+
+### [Needs, Wants & Healthy Choices](./needs-wants-healthy-choices/index.md)
+
+A Kindergarten Grid poster that distinguishes body needs, enjoyable wants, and one small healthy choice.
+
+[![Where Is My Safe Place?](./where-is-my-safe-place/where-is-my-safe-place.png)](./where-is-my-safe-place/index.md)
+
+### [Where Is My Safe Place?](./where-is-my-safe-place/index.md)
+
+A Kindergarten Explore-and-Quiz poster about safety rules, trusted adults, and planned safe places at home, school, the playground, and in the community.
+
 [![The Germ's Busy Day](./germs-busy-day/germs-busy-day.png)](./germs-busy-day/index.md)
 
 ### [The Germ's Busy Day](./germs-busy-day/index.md)

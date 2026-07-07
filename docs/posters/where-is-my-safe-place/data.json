@@ -1,0 +1,95 @@
+{
+  "title": "Where Is My Safe Place?",
+  "image": "where-is-my-safe-place.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": ["#E65E44", "#3B82C4", "#23A8B5", "#8E62B3"],
+  "zones": [
+    {
+      "id": "home",
+      "label": "Home",
+      "color": "#E65E44",
+      "x1": 0.6,
+      "y1": 11.7,
+      "x2": 24.9,
+      "y2": 98.8,
+      "summary": "At home, a trusted adult can teach the family's safety rules and meeting place.",
+      "facts": [
+        "Stay with a trusted adult and listen carefully.",
+        "Use safety helpers such as stair handrails every time.",
+        "Families can choose a meeting place outside the home.",
+        "Every home plan can look a little different."
+      ]
+    },
+    {
+      "id": "school",
+      "label": "School",
+      "color": "#3B82C4",
+      "x1": 25.5,
+      "y1": 11.7,
+      "x2": 49.9,
+      "y2": 98.8,
+      "summary": "At school, teachers help children follow the practiced plan and reach the class safe place.",
+      "facts": [
+        "Stay with the teacher and class.",
+        "Listen for calm directions.",
+        "Walk together to the place the school has planned.",
+        "Drills help everyone practice before an emergency."
+      ]
+    },
+    {
+      "id": "playground",
+      "label": "Playground",
+      "color": "#23A8B5",
+      "x1": 50.5,
+      "y1": 11.7,
+      "x2": 74.9,
+      "y2": 98.8,
+      "summary": "At the playground, find the supervising adult when help or a safe check-in is needed.",
+      "facts": [
+        "Know which adult is supervising the play area.",
+        "Use equipment the safe way and take turns.",
+        "Tell the adult if someone is hurt or feels unsafe.",
+        "Stay inside the playground boundaries."
+      ]
+    },
+    {
+      "id": "community",
+      "label": "Community",
+      "color": "#8E62B3",
+      "x1": 75.5,
+      "y1": 11.7,
+      "x2": 99.4,
+      "y2": 98.8,
+      "summary": "In the community, stay with a trusted adult and follow helpers such as crossing guards.",
+      "facts": [
+        "Wait safely at the curb before crossing.",
+        "Use the crosswalk and listen to the crossing guard.",
+        "Hold a trusted adult's hand in a busy place.",
+        "Community helpers work with everyone to keep shared places safe."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which place shows a family and trusted adult beside their home meeting place?",
+      "correct_zone": "home",
+      "explanation": "A family can choose a familiar meeting place and practice how to reach it safely."
+    },
+    {
+      "question": "Which place shows children staying together with their teacher at a class gathering spot?",
+      "correct_zone": "school",
+      "explanation": "At school, children stay with their teacher and follow the practiced plan."
+    },
+    {
+      "question": "Which place shows a child checking in with the adult who watches the play area?",
+      "correct_zone": "playground",
+      "explanation": "A playground supervisor is a trusted adult who can help when something feels unsafe."
+    },
+    {
+      "question": "Which place shows a crossing guard helping a child and adult at a crosswalk?",
+      "correct_zone": "community",
+      "explanation": "Crossing guards help everyone follow a shared community safety practice."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Needs, Wants & Healthy Choices",
+  "image": "needs-wants-healthy-choices.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": ["#42A9D6", "#F2B91F", "#79B83A", "#7650A8"],
+  "zones": [
+    {
+      "id": "needs",
+      "label": "My Body Needs",
+      "color": "#42A9D6",
+      "x1": 0.6,
+      "y1": 13.5,
+      "x2": 33.1,
+      "y2": 98.8,
+      "summary": "Needs are things the body must have to stay healthy, safe, and cared for.",
+      "facts": [
+        "Bodies need water and nourishing food.",
+        "Bodies need sleep, movement, and safety.",
+        "Children need love and care from trusted adults.",
+        "A need is not optional for staying healthy over time."
+      ]
+    },
+    {
+      "id": "wants",
+      "label": "Things I Want",
+      "color": "#F2B91F",
+      "x1": 33.8,
+      "y1": 13.5,
+      "x2": 66.3,
+      "y2": 98.8,
+      "summary": "Wants are enjoyable things a person would like but does not need for health.",
+      "facts": [
+        "Toys, art supplies, treats, and games can be wants.",
+        "Wants can bring fun and joy.",
+        "Wants are not bad or wrong.",
+        "Sometimes a want and a need can overlap, such as wanting a favorite nourishing food."
+      ]
+    },
+    {
+      "id": "healthy-choice",
+      "label": "A Healthy Choice",
+      "color": "#79B83A",
+      "x1": 67.0,
+      "y1": 13.5,
+      "x2": 99.4,
+      "y2": 98.8,
+      "summary": "A healthy choice is one small action that helps the body, feelings, or safety.",
+      "facts": [
+        "Pause and notice when a choice can affect health.",
+        "A trusted adult can help with health decisions.",
+        "Choose one clear action, such as packing water or wearing a helmet.",
+        "A personal health goal is a small healthy habit to practice."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section shows water, nourishing food, rest, safety, and loving care?",
+      "correct_zone": "needs",
+      "explanation": "These are needs because bodies depend on them to stay healthy."
+    },
+    {
+      "question": "Which section shows enjoyable toys, art supplies, games, and a treat?",
+      "correct_zone": "wants",
+      "explanation": "These are wants: enjoyable things that are not required for health."
+    },
+    {
+      "question": "Which section shows a child packing water and food, wearing a helmet, and choosing a health goal?",
+      "correct_zone": "healthy-choice",
+      "explanation": "A healthy choice is a small action that supports health or safety."
+    }
+  ]
+}
