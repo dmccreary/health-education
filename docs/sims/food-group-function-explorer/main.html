@@ -3,128 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>What Each Food Group Does</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>What Each Food Group Does MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="food-group-function-explorer.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>What Each Food Group Does</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> food-group-function-explorer</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students explain what each food group does for the body by clicking on a food group icon and seeing its job and example foods.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** food-group-function-explorer<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain, describe, classify
-    
-    Learning objective: Students explain what each food group does for the body by clicking on a food group icon and seeing its job and example foods.
-    
-    Canvas layout:
-    - Left area (450px): Five large tappable food-group icons arranged in a row or wheel (Grains, Vegetables, Fruits, Protein, Dairy)
-    - Right area (150px): Infobox panel showing the selected group's job and example foods
-    
-    Visual elements:
-    - Flat, friendly icons for each food group (a wheat stalk, a carrot, an apple, a drumstick/bean pod, a milk carton)
-    - A simple cartoon child character in the center who "reacts" (stretches, flexes, smiles) based on which group is selected
-    
-    Interactive controls:
-    - Click a food-group icon to select it
-    - Button: "Show Me a Meal" — displays a simple plate containing one example from each group
-    
-    Default parameters:
-    - No group selected at start; instructions read "Tap a food group to see its job!"
-    
-    Data Visibility Requirements:
-      Stage 1: Show five icons with no explanation
-      Stage 2: On click, show the group name and its one-sentence job ("Grains give you energy to run and play!")
-      Stage 3: Show 2-3 example foods for that group
-      Stage 4: The character animation matches the job (flexes for protein, stretches for grains)
-    
-    Behavior:
-    - Clicking a new icon updates the infobox and character animation immediately
-    - "Show Me a Meal" button highlights one food from each group on a plate graphic to reinforce that a healthy meal uses several groups together
-    
-    Instructional Rationale: This is an Understand-level (explain/describe) objective, so the design uses direct click-to-reveal information rather than animation for its own sake. Concrete text and example foods are visible at every stage so a teacher can read them aloud.
-    
-    Implementation notes: Use p5.js. Keep icons large and simple for read-aloud pointing. Ensure text is large enough to read from the front of a classroom.
-    -->
+    <main></main>
 </body>
 </html>

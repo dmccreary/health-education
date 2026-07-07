@@ -19,5 +19,20 @@
   "chapter_number": 5,
   "chapter_title": "Technology, Community, and Emergency Safety",
   "chapter_dir": "05-technology-community-emergency-safety",
-  "chapter_rel_dir": "bands/grade-2/chapters/05-technology-community-emergency-safety"
+  "chapter_rel_dir": "bands/grade-2/chapters/05-technology-community-emergency-safety",
+  "educational": {
+    "gradeLevel": "Grade 2",
+    "subjectArea": "Health Education",
+    "topic": "Technology, Community, and Emergency Safety",
+    "learningObjectives": [
+      "Students locate and identify school and community health helpers and describe the role each one plays."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "locate, identify, describe",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
 }

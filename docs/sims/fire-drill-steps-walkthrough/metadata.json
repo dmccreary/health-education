@@ -19,5 +19,20 @@
   "chapter_number": 6,
   "chapter_title": "Staying Safe at Home, School, and Online",
   "chapter_dir": "06-personal-safety",
-  "chapter_rel_dir": "bands/grade-1/chapters/06-personal-safety"
+  "chapter_rel_dir": "bands/grade-1/chapters/06-personal-safety",
+  "educational": {
+    "gradeLevel": "Grade 1",
+    "subjectArea": "Health Education",
+    "topic": "Staying Safe at Home, School, and Online",
+    "learningObjectives": [
+      "Students explain the steps of a school fire drill in order, using a step-through walkthrough with concrete classroom scenes at each stage."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "explain, describe, summarize",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
 }

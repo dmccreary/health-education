@@ -3,128 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Equality vs. Equity Fence Explorer</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Equality vs. Equity Fence Explorer MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="equality-vs-equity-fence-explorer.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Equality vs. Equity Fence Explorer</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> equality-vs-equity-fence-explorer</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students explain the difference between equality and equity by adjusting boxes given to three students of different heights standing behind a fence and observing who can see over it.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** equality-vs-equity-fence-explorer<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain, compare, contrast
-    
-    Learning objective: Students explain the difference between equality and equity by adjusting boxes given to three students of different heights standing behind a fence and observing who can see over it.
-    
-    Canvas layout:
-    - Left side (450px): Drawing area showing a fence with three student characters of different heights (short, medium, tall) standing behind it
-    - Right side (200px): Mode toggle and box-count display
-    
-    Visual elements:
-    - A solid fence drawn across the middle of the canvas at a fixed height
-    - Three simple character icons of different heights standing behind the fence
-    - Stackable box icons that can be added under each character
-    - A "sight line" indicator (small eye icon) showing whether each character can see over the fence
-    
-    Interactive controls:
-    - Toggle switch: "Equality Mode" vs "Equity Mode"
-    - In Equality Mode: one button "Give Everyone 1 Box" — all three characters receive the same number of boxes
-    - In Equity Mode: three separate plus/minus steppers, one per character, letting the student assign a different number of boxes to each person
-    - Display: for each character, shows whether they can now see over the fence (yes/no)
-    
-    Default parameters:
-    - Starts in Equality Mode with 0 boxes for all three characters
-    - Fence height fixed; short student needs 3 boxes, medium student needs 2 boxes, tall student needs 0 boxes to see over
-    
-    Behavior:
-    - In Equality Mode, giving everyone the same number of boxes shows that the short student still cannot see even when the tall student already can
-    - In Equity Mode, the student can assign different amounts so that all three characters end up able to see over the fence with the fewest total boxes
-    - A text panel below updates with "Equal boxes, but not everyone can see" vs "Different boxes, but now everyone can see"
-    
-    Instructional Rationale: This is an Understand-level objective, so the pattern uses a concrete, step-through manipulation with visible outcomes for each character rather than a continuous animation, letting students directly compare the two approaches side by side.
-    
-    Implementation notes: Use p5.js. Store each character's height-to-box-requirement as a simple lookup value; recompute the sight-line indicator whenever box counts change; keep visuals simple and flat with no distracting motion.
-    -->
+    <main></main>
 </body>
 </html>

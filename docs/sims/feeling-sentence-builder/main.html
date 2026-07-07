@@ -3,124 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Feeling Sentence Builder</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Feeling Sentence Builder MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="feeling-sentence-builder.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Feeling Sentence Builder</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> feeling-sentence-builder</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students practice communicating a feeling in a healthy way by assembling an "I feel ___ because ___" sentence from word/picture tiles for a given scenario.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** feeling-sentence-builder<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: use, practice, demonstrate
-    
-    Learning objective: Students practice communicating a feeling in a healthy way by assembling an "I feel ___ because ___" sentence from word/picture tiles for a given scenario.
-    
-    Canvas layout:
-    - Top area (150px): One scenario picture at a time (e.g., a child whose block tower fell down)
-    - Middle area (250px): Two rows of tiles to click in order — a feeling-word row (happy, sad, angry, scared, excited, calm) and a reason row (three short reason tiles matching the scenario)
-    - Bottom strip (100px): Assembled sentence display and "Say It!" button
-    
-    Learning tiles:
-    - Feeling tiles: happy, sad, angry, scared, excited, calm
-    - Reason tiles change per scenario (e.g., for the block tower scene: "because it fell down," "because it's my favorite color," "because it's time for lunch")
-    
-    Interactive controls:
-    - Click a feeling tile, then click a matching reason tile
-    - Button: "Say It!" (assembles and displays the full sentence)
-    - Button: "Next Scenario"
-    
-    Default parameters:
-    - First scenario: block tower falling down (a clear, relatable frustration, to build confidence)
-    
-    Behavior:
-    - When a reasonable feeling + reason pair is assembled, the sentence appears in a speech bubble over the character, a gentle chime plays, and a caption affirms, "Great job telling someone how you feel!"
-    - If a mismatched pair is chosen (e.g., "happy" with "because it fell down"), a calm caption asks, "Does that feeling really match what happened? Try again."
-    
-    Instructional Rationale: This is an Apply-level (use/practice) objective, so students actively construct and "say" a feelings sentence rather than only recognize one, matching the Grade 1 skill benchmark of communicating feelings, wants, and needs in healthy ways.
-    
-    Implementation notes: Use p5.js. Keep tiles large and easy to click for early readers; include simple icons alongside each word. Teacher reads the assembled sentence aloud together with the class.
-    -->
+    <main></main>
 </body>
 </html>

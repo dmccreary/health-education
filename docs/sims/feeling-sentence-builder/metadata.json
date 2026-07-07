@@ -19,5 +19,20 @@
   "chapter_number": 3,
   "chapter_title": "Understanding and Talking About Feelings",
   "chapter_dir": "03-feelings",
-  "chapter_rel_dir": "bands/grade-1/chapters/03-feelings"
+  "chapter_rel_dir": "bands/grade-1/chapters/03-feelings",
+  "educational": {
+    "gradeLevel": "Grade 1",
+    "subjectArea": "Health Education",
+    "topic": "Understanding and Talking About Feelings",
+    "learningObjectives": [
+      "Students practice communicating a feeling in a healthy way by assembling an \"I feel ___ because ___\" sentence from word/picture tiles for a given scenario."
+    ],
+    "bloomLevel": "Apply (L3)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "use, practice, demonstrate",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Apply-level objective through direct interaction rather than passive reading."
+  }
 }

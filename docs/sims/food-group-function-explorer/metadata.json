@@ -19,5 +19,20 @@
   "chapter_number": 2,
   "chapter_title": "Food, Energy, and Safe Eating",
   "chapter_dir": "02-food-energy-safe-eating",
-  "chapter_rel_dir": "bands/grade-2/chapters/02-food-energy-safe-eating"
+  "chapter_rel_dir": "bands/grade-2/chapters/02-food-energy-safe-eating",
+  "educational": {
+    "gradeLevel": "Grade 2",
+    "subjectArea": "Health Education",
+    "topic": "Food, Energy, and Safe Eating",
+    "learningObjectives": [
+      "Students explain what each food group does for the body by clicking on a food group icon and seeing its job and example foods."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "explain, describe, classify",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
 }

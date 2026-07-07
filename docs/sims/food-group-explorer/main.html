@@ -3,128 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Food Group Explorer</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Food Group Explorer MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="food-group-explorer.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Food Group Explorer</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> food-group-explorer</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students explain which food group a given food belongs to and summarize what job that food group does in the body, moving beyond simple naming toward reasoning about purpose.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** food-group-explorer<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain, classify, summarize
-    
-    Learning objective: Students explain which food group a given food belongs to and summarize what job that food group does in the body, moving beyond simple naming toward reasoning about purpose.
-    
-    Canvas layout:
-    - Left area (450px): A large plate illustration divided into five colored sections, one per food group
-    - Right area (150px): A stack of food picture cards to click through, plus an infobox
-    
-    Visual elements:
-    - Five plate sections labeled Fruits (red), Vegetables (green), Grains (tan), Protein Foods (purple), Dairy (light blue)
-    - 15 food picture cards cycling through (3 per group): apple, banana, strawberry / carrot, broccoli, spinach / bread, rice, oatmeal / beans, egg, chicken / milk, cheese, yogurt
-    
-    Interactive controls:
-    - Button: "Show Next Food Card"
-    - Click-to-place: student clicks the plate section where they think the food belongs
-    - Button: "Reset"
-    
-    Default parameters:
-    - First card: apple (a clear, familiar example to build confidence)
-    
-    Data Visibility Requirements:
-      Stage 1: Show the food card with no label
-      Stage 2: After the student clicks a plate section, show whether it matches
-      Stage 3: Reveal a one-sentence explanation of the food group's job ("Apples are a fruit. Fruits have vitamins that help your body fight getting sick.")
-    
-    Behavior:
-    - Correct placement: plate section glows, gentle chime, explanation caption appears
-    - Incorrect placement: gentle prompt, "Look again — what job does this food group do?" and the correct section glows softly as a hint
-    
-    Instructional Rationale: This is an Understand-level (explain/classify) objective, so the MicroSim reveals the food group's purpose after each answer rather than using continuous animation, letting students connect each food to a concrete reason it belongs in that group.
-    
-    Implementation notes: Use p5.js. Large, simple, flat-style food illustrations. Teacher reads each food name and explanation aloud.
-    -->
+    <main></main>
 </body>
 </html>

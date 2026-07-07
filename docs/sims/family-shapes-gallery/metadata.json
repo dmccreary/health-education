@@ -19,5 +19,20 @@
   "chapter_number": 2,
   "chapter_title": "Family And Trusted Adults",
   "chapter_dir": "02-family",
-  "chapter_rel_dir": "bands/kindergarten/chapters/02-family"
+  "chapter_rel_dir": "bands/kindergarten/chapters/02-family",
+  "educational": {
+    "gradeLevel": "Kindergarten",
+    "subjectArea": "Health Education",
+    "topic": "Family And Trusted Adults",
+    "learningObjectives": [
+      "Students recognize that families come in a variety of structures and that every structure shown is a healthy, real family, connecting Family to Family Structure."
+    ],
+    "bloomLevel": "Understand (L2)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "recognize, connect, classify",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Understand-level objective through direct interaction rather than passive reading."
+  }
 }

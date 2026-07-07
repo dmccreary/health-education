@@ -19,5 +19,20 @@
   "chapter_number": 7,
   "chapter_title": "Mental And Emotional Health",
   "chapter_dir": "07-mental-and-emotional-health",
-  "chapter_rel_dir": "bands/grade-3/chapters/07-mental-and-emotional-health"
+  "chapter_rel_dir": "bands/grade-3/chapters/07-mental-and-emotional-health",
+  "educational": {
+    "gradeLevel": "Grade 3",
+    "subjectArea": "Health Education",
+    "topic": "Mental And Emotional Health",
+    "learningObjectives": [
+      "Students differentiate between healthy and unhealthy ways of expressing emotions by sorting example statements and actions into the correct category."
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "differentiate, examine, distinguish",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
 }

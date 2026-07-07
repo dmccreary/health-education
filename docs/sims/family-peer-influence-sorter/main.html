@@ -3,125 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Family and Peer Influence Sorter</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Family and Peer Influence Sorter MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="family-peer-influence-sorter.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Family and Peer Influence Sorter</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> family-peer-influence-sorter</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students analyze short scenarios and differentiate whether a decision is being influenced mainly by family, mainly by peers, or by both, and examine whether the influence pushes the decision toward or away from health.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** family-peer-influence-sorter<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: compare, contrast, differentiate, examine
-    
-    Learning objective: Students analyze short scenarios and differentiate whether a decision is being influenced mainly by family, mainly by peers, or by both, and examine whether the influence pushes the decision toward or away from health.
-    
-    Canvas layout:
-    - Top area (400x150): One scenario shown at a time in a speech-bubble style card
-    - Middle area (400x120): Two labeled drop zones side by side — "Family Influence" and "Peer Influence" — with a smaller overlapping zone labeled "Both"
-    - Bottom area (400x100): A second choice after sorting — buttons "Toward Health" and "Away From Health" — plus "Next Scenario" and feedback caption
-    
-    Visual elements:
-    - 10 scenario cards, such as: "Your older sister always packs a water bottle, so you started doing it too," "Your friends dared you to try a vape at a party," "Your family walks the dog together every evening," "A classmate convinced the group to leave someone out at recess," "Your parents ask about your day at dinner, which helps you talk through feelings"
-    
-    Interactive controls:
-    - Click-and-drag or click-to-select the scenario card into the Family, Peer, or Both zone
-    - After sorting, click "Toward Health" or "Away From Health" to judge the direction of the influence
-    - Button: "Next Scenario"
-    - Button: "Reset" to start the set over
-    
-    Default parameters:
-    - Scenarios presented in shuffled order; no pre-sorted answers shown at start
-    
-    Behavior:
-    - Correct source classification shows a green highlight with a one-sentence explanation of why that source applies
-    - Correct direction judgment shows a brief note connecting it back to the health definition from earlier in the chapter
-    - A running score tracker shows scenarios completed and correct out of 10
-    
-    Instructional Rationale: Differentiating between influence sources and judging their direction is an Analyze-level task, so the pattern uses a sorting-and-classifying interaction with immediate explanatory feedback rather than a passive animation, which keeps students actively comparing sources rather than watching a demonstration.
-    
-    Implementation notes: Use p5.js. Store scenarios as an array of objects with fields for text, correct source (family/peer/both), and correct direction (toward/away), enabling easy reshuffling and scoring.
-    -->
+    <main></main>
 </body>
 </html>

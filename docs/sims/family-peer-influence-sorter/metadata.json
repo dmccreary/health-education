@@ -19,5 +19,20 @@
   "chapter_number": 1,
   "chapter_title": "Foundations and Trusted Adults",
   "chapter_dir": "01-foundations-and-trusted-adults",
-  "chapter_rel_dir": "bands/grade-5/chapters/01-foundations-and-trusted-adults"
+  "chapter_rel_dir": "bands/grade-5/chapters/01-foundations-and-trusted-adults",
+  "educational": {
+    "gradeLevel": "Grade 5",
+    "subjectArea": "Health Education",
+    "topic": "Foundations and Trusted Adults",
+    "learningObjectives": [
+      "Students analyze short scenarios and differentiate whether a decision is being influenced mainly by family, mainly by peers, or by both, and examine whether the influence pushes the decision toward or away from health."
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "compare, contrast, differentiate, examine",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
 }

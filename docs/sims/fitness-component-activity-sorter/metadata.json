@@ -19,5 +19,20 @@
   "chapter_number": 5,
   "chapter_title": "Personal Health And Wellness",
   "chapter_dir": "05-personal-health-and-wellness",
-  "chapter_rel_dir": "bands/grade-5/chapters/05-personal-health-and-wellness"
+  "chapter_rel_dir": "bands/grade-5/chapters/05-personal-health-and-wellness",
+  "educational": {
+    "gradeLevel": "Grade 5",
+    "subjectArea": "Health Education",
+    "topic": "Personal Health And Wellness",
+    "learningObjectives": [
+      "Students classify physical activities into the fitness component (cardiovascular endurance, muscular strength, flexibility, balance and coordination) each one primarily builds."
+    ],
+    "bloomLevel": "Analyze (L4)",
+    "duration": "5-15 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "classify, distinguish, organize",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports a Analyze-level objective through direct interaction rather than passive reading."
+  }
 }
