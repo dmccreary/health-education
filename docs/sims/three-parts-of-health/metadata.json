@@ -18,5 +18,6 @@
   "completion_status": "scaffold",
   "chapter_number": 1,
   "chapter_title": "Foundations and Trusted Adults",
-  "chapter_dir": "01-foundations-and-trusted-adults"
+  "chapter_dir": "01-foundations-and-trusted-adults",
+  "chapter_rel_dir": "bands/grade-5/chapters/01-foundations-and-trusted-adults"
 }

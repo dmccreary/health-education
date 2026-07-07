@@ -18,5 +18,6 @@
   "completion_status": "scaffold",
   "chapter_number": 4,
   "chapter_title": "Food And Nutrition",
-  "chapter_dir": "04-food-and-nutrition"
+  "chapter_dir": "04-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-3/chapters/04-food-and-nutrition"
 }

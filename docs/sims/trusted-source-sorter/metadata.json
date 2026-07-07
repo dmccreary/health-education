@@ -18,5 +18,6 @@
   "completion_status": "scaffold",
   "chapter_number": 1,
   "chapter_title": "Foundations Of Health",
-  "chapter_dir": "01-foundations-of-health"
+  "chapter_dir": "01-foundations-of-health",
+  "chapter_rel_dir": "bands/grade-3/chapters/01-foundations-of-health"
 }

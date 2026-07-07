@@ -18,5 +18,6 @@
   "completion_status": "scaffold",
   "chapter_number": 1,
   "chapter_title": "Foundations of Health and Safe Habits",
-  "chapter_dir": "01-foundations"
+  "chapter_dir": "01-foundations",
+  "chapter_rel_dir": "bands/grade-1/chapters/01-foundations"
 }

@@ -18,5 +18,6 @@
   "completion_status": "scaffold",
   "chapter_number": 3,
   "chapter_title": "Mental and Emotional Health",
-  "chapter_dir": "03-mental-emotional-health"
+  "chapter_dir": "03-mental-emotional-health",
+  "chapter_rel_dir": "bands/grade-4/chapters/03-mental-emotional-health"
 }
