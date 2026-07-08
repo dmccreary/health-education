@@ -15,7 +15,7 @@
       "panel": "bottom",
       "hint": "A child coughs into open air at the lower left.",
       "description": "Droplets from an uncovered cough can carry germs through the air and onto nearby surfaces.",
-      "ap_tip": "Turn away and cover with an elbow or tissue."
+      "tip": "Turn away and cover with an elbow or tissue."
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
       "panel": "top",
       "hint": "A child touches their nose and mouth.",
       "description": "Hands can move germs from a surface to the eyes, nose, or mouth.",
-      "ap_tip": "Clean hands and fewer face touches interrupt this route."
+      "tip": "Clean hands and fewer face touches interrupt this route."
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "panel": "bottom",
       "hint": "Several children pass and build with the same blocks.",
       "description": "Shared items can pick up germs from one hand and carry them to another.",
-      "ap_tip": "Handwashing before food and after nose care helps."
+      "tip": "Handwashing before food and after nose care helps."
     },
     {
       "id": 4,
@@ -51,7 +51,7 @@
       "panel": "top",
       "hint": "Several children touch the same door hardware.",
       "description": "Many hands touch doorknobs, so germs can collect even when the knob looks clean.",
-      "ap_tip": "Wash hands regularly instead of trying to see germs."
+      "tip": "Wash hands regularly instead of trying to see germs."
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "panel": "bottom",
       "hint": "Children share crayons across a table.",
       "description": "Hands, desks, and shared supplies can form a chain that moves germs.",
-      "ap_tip": "Cleaning and handwashing create breaks in the chain."
+      "tip": "Cleaning and handwashing create breaks in the chain."
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "panel": "top",
       "hint": "A child handles a snack near a lunchbox.",
       "description": "Germs on hands can reach food and then the mouth.",
-      "ap_tip": "Wash hands before eating."
+      "tip": "Wash hands before eating."
     },
     {
       "id": 7,
@@ -87,7 +87,7 @@
       "panel": "bottom",
       "hint": "A used tissue goes directly into a lined trash bin.",
       "description": "A tissue catches droplets; throwing it away keeps those droplets off hands and tables.",
-      "ap_tip": "Wash hands after blowing your nose."
+      "tip": "Wash hands after blowing your nose."
     },
     {
       "id": 8,
@@ -99,7 +99,7 @@
       "panel": "top",
       "hint": "A child coughs into the inside of an elbow.",
       "description": "An elbow cover blocks many droplets and keeps them off the hands.",
-      "ap_tip": "Use your elbow when a tissue is not ready."
+      "tip": "Use your elbow when a tissue is not ready."
     },
     {
       "id": 9,
@@ -111,7 +111,7 @@
       "panel": "bottom",
       "hint": "Hands scrub under running water with soap.",
       "description": "Soap and running water remove germs from all parts of the hands.",
-      "ap_tip": "Scrub palms, backs, between fingers, and around nails."
+      "tip": "Scrub palms, backs, between fingers, and around nails."
     },
     {
       "id": 10,
@@ -123,7 +123,7 @@
       "panel": "top",
       "hint": "An adult cleans a commonly touched table.",
       "description": "Cleaning shared surfaces is a community health practice that reduces germ routes.",
-      "ap_tip": "Healthy classrooms use several roadblocks together."
+      "tip": "Healthy classrooms use several roadblocks together."
     }
   ]
 }

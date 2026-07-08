@@ -15,7 +15,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents medical treatment.",
       "description": "Healthcare can address withdrawal, cravings, co-occurring conditions, and overall health.",
-      "ap_tip": "Evidence-based medication may be part of treatment. Care should be individualized and respectful."
+      "tip": "Evidence-based medication may be part of treatment. Care should be individualized and respectful."
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents counseling.",
       "description": "Counseling can build coping, insight, skills, and a plan for difficult moments.",
-      "ap_tip": "Different approaches fit different people. Trust and cultural safety matter."
+      "tip": "Different approaches fit different people. Trust and cultural safety matter."
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents peer support.",
       "description": "People with lived experience can offer understanding, hope, and practical wisdom.",
-      "ap_tip": "Peer support complements rather than replaces needed clinical care. Groups vary; finding a good fit matters."
+      "tip": "Peer support complements rather than replaces needed clinical care. Groups vary; finding a good fit matters."
     },
     {
       "id": 4,
@@ -51,7 +51,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents family and chosen family.",
       "description": "Supportive relationships can provide stability, encouragement, and accountability.",
-      "ap_tip": "Families may need education and support too. Chosen family can be an important source of care."
+      "tip": "Families may need education and support too. Chosen family can be an important source of care."
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents culture and community.",
       "description": "Cultural identity, ceremony, faith, language, and community can strengthen belonging.",
-      "ap_tip": "Recovery should respect the person’s values. Community strengths are health resources."
+      "tip": "Recovery should respect the person’s values. Community strengths are health resources."
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents school and work.",
       "description": "Flexible, supportive school or work settings can restore routine and purpose.",
-      "ap_tip": "Accommodations may reduce barriers. Recovery is compatible with learning and contribution."
+      "tip": "Accommodations may reduce barriers. Recovery is compatible with learning and contribution."
     },
     {
       "id": 7,
@@ -87,7 +87,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents healthy coping.",
       "description": "Sleep, movement, creativity, connection, and other coping skills support wellbeing.",
-      "ap_tip": "Skills are practiced, not perfected. A plan can include several options."
+      "tip": "Skills are practiced, not perfected. A plan can include several options."
     },
     {
       "id": 8,
@@ -99,7 +99,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents safe housing.",
       "description": "Stable housing can make treatment, sleep, safety, and routines more possible.",
-      "ap_tip": "Housing is a health condition, not a reward. Community services can help address barriers."
+      "tip": "Housing is a health condition, not a reward. Community services can help address barriers."
     },
     {
       "id": 9,
@@ -111,7 +111,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents supportive policy.",
       "description": "Policies affect access, stigma, treatment, housing, school, and employment.",
-      "ap_tip": "Recovery is shaped by systems as well as individual choices. Community action can change those systems."
+      "tip": "Recovery is shaped by systems as well as individual choices. Community action can change those systems."
     },
     {
       "id": 10,
@@ -123,7 +123,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents relapse response.",
       "description": "A return to use signals a need to reassess safety and support, not moral failure.",
-      "ap_tip": "Overdose risk may rise after reduced tolerance. Respond quickly and revise the care plan."
+      "tip": "Overdose risk may rise after reduced tolerance. Respond quickly and revise the care plan."
     },
     {
       "id": 11,
@@ -135,7 +135,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents renewed goals.",
       "description": "Recovery can reconnect a person with relationships, learning, creativity, and purpose.",
-      "ap_tip": "Goals can be small and flexible. The person defines what progress means."
+      "tip": "Goals can be small and flexible. The person defines what progress means."
     },
     {
       "id": 12,
@@ -147,7 +147,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents long-term recovery.",
       "description": "Recovery can be an ongoing process with changing needs over time.",
-      "ap_tip": "Continued support is normal. Hope and realistic planning can coexist."
+      "tip": "Continued support is normal. Hope and realistic planning can coexist."
     }
   ]
 }

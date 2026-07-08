@@ -15,7 +15,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents post.",
       "description": "A post can be copied, interpreted, and seen beyond its intended moment.",
-      "ap_tip": "Pause before sharing. Remove private details and get permission for other people\u2019s images."
+      "tip": "Pause before sharing. Remove private details and get permission for other people\u2019s images."
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents comment.",
       "description": "Comments contribute to a lasting social and data trail.",
-      "ap_tip": "Tone can be misread. Repair harm rather than piling on."
+      "tip": "Tone can be misread. Repair harm rather than piling on."
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents like and react.",
       "description": "Reactions can signal approval and shape what systems show next.",
-      "ap_tip": "A quick tap still communicates. Avoid rewarding harmful content."
+      "tip": "A quick tap still communicates. Avoid rewarding harmful content."
     },
     {
       "id": 4,
@@ -51,7 +51,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents location clues.",
       "description": "Photos and settings can reveal routines or location even without a location tag.",
-      "ap_tip": "Check backgrounds and metadata. Share plans only with appropriate people."
+      "tip": "Check backgrounds and metadata. Share plans only with appropriate people."
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents copied screenshots.",
       "description": "Deleted content may survive as screenshots or downloads.",
-      "ap_tip": "Do not rely on deletion as the only safety plan. Preserve evidence without resharing harmful content."
+      "tip": "Do not rely on deletion as the only safety plan. Preserve evidence without resharing harmful content."
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents expanded audience.",
       "description": "Friends can forward content to audiences you did not choose.",
-      "ap_tip": "Privacy settings reduce but do not eliminate risk. Assume the audience may grow."
+      "tip": "Privacy settings reduce but do not eliminate risk. Assume the audience may grow."
     },
     {
       "id": 7,
@@ -87,7 +87,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents data and algorithms.",
       "description": "Platforms may use behavior to predict interests and shape recommendations.",
-      "ap_tip": "Algorithms have goals and blind spots. Attention is part of the exchange."
+      "tip": "Algorithms have goals and blind spots. Attention is part of the exchange."
     },
     {
       "id": 8,
@@ -99,7 +99,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents future context.",
       "description": "A post may be interpreted differently later or by a new audience.",
-      "ap_tip": "Context can disappear. A digital mistake does not define a person forever."
+      "tip": "Context can disappear. A digital mistake does not define a person forever."
     },
     {
       "id": 9,
@@ -111,7 +111,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents privacy and reporting.",
       "description": "Use privacy, blocking, and reporting controls intentionally.",
-      "ap_tip": "Review settings after updates. Platform tools may need adult or school follow-up."
+      "tip": "Review settings after updates. Platform tools may need adult or school follow-up."
     },
     {
       "id": 10,
@@ -123,7 +123,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents trusted support.",
       "description": "Tell a trusted adult when contact, threats, exploitation, or content feels unsafe.",
-      "ap_tip": "Keep evidence when safe. Urgent threats require immediate help."
+      "tip": "Keep evidence when safe. Urgent threats require immediate help."
     }
   ]
 }

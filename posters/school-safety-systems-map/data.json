@@ -15,7 +15,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents welcoming climate.",
       "description": "Belonging, respect, and predictable routines support prevention and reporting.",
-      "ap_tip": "Climate is built through daily behavior and fair systems. Students should not have to earn dignity."
+      "tip": "Climate is built through daily behavior and fair systems. Students should not have to earn dignity."
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents trusted reporting.",
       "description": "Students need clear, accessible ways to report concerns without retaliation.",
-      "ap_tip": "Take every report seriously. Protect privacy as far as safety permits."
+      "tip": "Take every report seriously. Protect privacy as far as safety permits."
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents mental health support.",
       "description": "Counselors and referral pathways support early help and crisis response.",
-      "ap_tip": "Care should be culturally safe and accessible. Peers are connectors, not sole responders."
+      "tip": "Care should be culturally safe and accessible. Peers are connectors, not sole responders."
     },
     {
       "id": 4,
@@ -51,7 +51,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents accessible design.",
       "description": "Entrances, routes, alarms, information, and procedures must include people with varied disabilities.",
-      "ap_tip": "Plan access before an emergency. Include users in design."
+      "tip": "Plan access before an emergency. Include users in design."
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents emergency communication.",
       "description": "Clear, redundant communication helps people act during changing conditions.",
-      "ap_tip": "Use visual, auditory, and accessible channels. Rumor control matters."
+      "tip": "Use visual, auditory, and accessible channels. Rumor control matters."
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents trained staff.",
       "description": "Staff need role-specific practice for prevention, first aid, evacuation, shelter, and reunification.",
-      "ap_tip": "Training should be realistic without traumatizing students. Review after drills and events."
+      "tip": "Training should be realistic without traumatizing students. Review after drills and events."
     },
     {
       "id": 7,
@@ -87,7 +87,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents first aid and aed.",
       "description": "Accessible supplies and trained responders improve emergency readiness.",
-      "ap_tip": "Maintain equipment and clear access. Follow current certified guidance."
+      "tip": "Maintain equipment and clear access. Follow current certified guidance."
     },
     {
       "id": 8,
@@ -99,7 +99,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents evacuation.",
       "description": "Evacuation plans use safe routes, accountability, accessibility, and alternate options.",
-      "ap_tip": "Do not block responder access. Conditions determine whether evacuation is appropriate."
+      "tip": "Do not block responder access. Conditions determine whether evacuation is appropriate."
     },
     {
       "id": 9,
@@ -111,7 +111,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents shelter procedures.",
       "description": "Some hazards require sheltering rather than leaving.",
-      "ap_tip": "Procedures differ by hazard. Follow official instructions and support access needs."
+      "tip": "Procedures differ by hazard. Follow official instructions and support access needs."
     },
     {
       "id": 10,
@@ -123,7 +123,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents reunification.",
       "description": "A reunification plan connects students with authorized caregivers safely and accurately.",
-      "ap_tip": "Communication reduces confusion. Plan for language and disability access."
+      "tip": "Communication reduces confusion. Plan for language and disability access."
     },
     {
       "id": 11,
@@ -135,7 +135,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents digital safety.",
       "description": "Secure systems, privacy practices, reporting, and media literacy reduce digital harm.",
-      "ap_tip": "Preserve evidence when safe. Coordinate technology and human support."
+      "tip": "Preserve evidence when safe. Coordinate technology and human support."
     },
     {
       "id": 12,
@@ -147,7 +147,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents student voice.",
       "description": "Students notice barriers and can improve plans, climate, and communication.",
-      "ap_tip": "Participation should be meaningful, not symbolic. Share decisions and feedback."
+      "tip": "Participation should be meaningful, not symbolic. Share decisions and feedback."
     }
   ]
 }

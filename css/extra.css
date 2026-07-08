@@ -14,6 +14,25 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);*/
 }
 
+/* ==========================================================================
+   Poster gallery — docs/posters/index.md
+   Renders poster thumbnails as a three-column grid of clickable cards.
+   Overrides Material's default card grid (auto-fill, 16rem minimum column)
+   with three columns about 175px wide. Both the thumbnail and the title link
+   to the poster page. Requires the `md_in_html` + `attr_list` extensions.
+   ========================================================================== */
+.md-typeset .grid.poster-grid,
+.md-typeset .grid.poster-grid > ul {
+    grid-template-columns: repeat(3, minmax(0, 600px));
+}
+
+/* Thumbnails fill the card width and keep their landscape aspect ratio. */
+.md-typeset .grid.poster-grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /* Container to control the iframe size and scaling */
 .iframe-container {
     width: 100%;

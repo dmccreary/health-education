@@ -15,7 +15,7 @@
       "panel": "bottom",
       "hint": "The child notices a softly rumbling stomach before eating.",
       "description": "A growling or empty-feeling stomach can be one hunger signal.",
-      "ap_tip": "No single signal appears the same way for everyone."
+      "tip": "No single signal appears the same way for everyone."
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
       "panel": "top",
       "hint": "The same child feels low energy and distracted at a desk.",
       "description": "Hunger may show as lower energy, headache, irritability, or difficulty concentrating.",
-      "ap_tip": "These clues can also have other causes, so check the whole situation."
+      "tip": "These clues can also have other causes, so check the whole situation."
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "panel": "top",
       "hint": "Icon-only thoughts show water, rest, feelings, play, and food.",
       "description": "A pause can distinguish hunger from thirst, tiredness, boredom, or emotion.",
-      "ap_tip": "Different needs can happen at the same time."
+      "tip": "Different needs can happen at the same time."
     },
     {
       "id": 4,
@@ -51,7 +51,7 @@
       "panel": "top",
       "hint": "The child starts a varied meal calmly.",
       "description": "Attention to taste, smell, and body comfort makes internal signals easier to notice.",
-      "ap_tip": "There is no required pace or perfect meal."
+      "tip": "There is no required pace or perfect meal."
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "panel": "top",
       "hint": "The utensil rests while the child checks comfort.",
       "description": "A midway pause is information, not a rule to stop.",
-      "ap_tip": "Ask: Has hunger changed? Does eating still feel comfortable?"
+      "tip": "Ask: Has hunger changed? Does eating still feel comfortable?"
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "panel": "bottom",
       "hint": "A downward gauge and relaxed expression show hunger becoming gentler.",
       "description": "Hunger usually shifts gradually as food is eaten.",
-      "ap_tip": "Signals can change before the plate is empty."
+      "tip": "Signals can change before the plate is empty."
     },
     {
       "id": 7,
@@ -87,7 +87,7 @@
       "panel": "bottom",
       "hint": "The child leans back comfortably with relaxed shoulders.",
       "description": "Comfortable fullness may feel satisfied, steady, and no longer interested in more food.",
-      "ap_tip": "Fullness is not the same as painful overstuffing."
+      "tip": "Fullness is not the same as painful overstuffing."
     },
     {
       "id": 8,
@@ -99,7 +99,7 @@
       "panel": "bottom",
       "hint": "A screen, package, or peer offer appears beside the child.",
       "description": "Large packages, screens, schedules, and social cues can influence eating even when body signals differ.",
-      "ap_tip": "Notice the prompt without blaming yourself."
+      "tip": "Notice the prompt without blaming yourself."
     },
     {
       "id": 9,
@@ -111,7 +111,7 @@
       "panel": "top",
       "hint": "The child notices steady energy and comfort after the meal.",
       "description": "Reflection can help connect choices with wellbeing over time.",
-      "ap_tip": "The goal is curiosity, not judging the amount eaten."
+      "tip": "The goal is curiosity, not judging the amount eaten."
     }
   ]
 }

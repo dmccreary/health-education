@@ -15,7 +15,7 @@
       "panel": "top",
       "hint": "The blank ruled panel on the tall blue package at the far left.",
       "description": "On a real package, serving information tells what amount the rest of the label describes.",
-      "ap_tip": "If a person eats a different amount, the nutrient totals change too."
+      "tip": "If a person eats a different amount, the nutrient totals change too."
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
       "panel": "bottom",
       "hint": "The large seeded loaf in the front-left foreground.",
       "description": "Whole-grain foods can provide carbohydrates for energy along with fiber.",
-      "ap_tip": "Balance is about a mix of jobs, not one perfect food."
+      "tip": "Balance is about a mix of jobs, not one perfect food."
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "panel": "bottom",
       "hint": "The large crate of varied vegetables across the left foreground.",
       "description": "Fruits and vegetables can contribute fiber, vitamins, minerals, color, and texture.",
-      "ap_tip": "Cultural and seasonal choices can fill this role in many ways."
+      "tip": "Cultural and seasonal choices can fill this role in many ways."
     },
     {
       "id": 4,
@@ -51,7 +51,7 @@
       "panel": "bottom",
       "hint": "The small bowl of multicolored beans near the front center.",
       "description": "Beans and lentils can contribute protein, carbohydrate, fiber, vitamins, and minerals.",
-      "ap_tip": "One food can support more than one nutrient job."
+      "tip": "One food can support more than one nutrient job."
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "panel": "top",
       "hint": "The white bowl near the center-left of the counter.",
       "description": "Dairy foods and fortified alternatives can contribute calcium and other nutrients.",
-      "ap_tip": "Labels help compare alternatives because products vary."
+      "tip": "Labels help compare alternatives because products vary."
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "panel": "bottom",
       "hint": "The walnuts and avocado on the wooden board in the center.",
       "description": "Nuts, seeds, avocado, and oils provide fats that support energy storage, protection, and vitamin absorption.",
-      "ap_tip": "The body needs fats; the goal is variety and balance."
+      "tip": "The body needs fats; the goal is variety and balance."
     },
     {
       "id": 7,
@@ -87,7 +87,7 @@
       "panel": "top",
       "hint": "The clear water pitcher near the center-right.",
       "description": "Water supports temperature control, transport, joints, and waste removal.",
-      "ap_tip": "It is a useful everyday beverage before, during, and after activity."
+      "tip": "It is a useful everyday beverage before, during, and after activity."
     },
     {
       "id": 8,
@@ -99,7 +99,7 @@
       "panel": "top",
       "hint": "The brown bowl of cooked grains behind the water pitcher.",
       "description": "Rice, oats, corn, breads, noodles, and other grains can be part of a balanced meal.",
-      "ap_tip": "A balanced meal does not need to match one culture or one picture."
+      "tip": "A balanced meal does not need to match one culture or one picture."
     },
     {
       "id": 9,
@@ -111,7 +111,7 @@
       "panel": "top",
       "hint": "The fish and tofu plate on the right side of the table.",
       "description": "Fish, tofu, eggs, beans, lentils, meat, nuts, dairy, and alternatives can contribute protein.",
-      "ap_tip": "Different families build protein choices in different ways."
+      "tip": "Different families build protein choices in different ways."
     },
     {
       "id": 10,
@@ -123,7 +123,7 @@
       "panel": "bottom",
       "hint": "The colorful shared bowl at the lower right.",
       "description": "A variety of fruits and vegetables brings different tastes, textures, and micronutrients.",
-      "ap_tip": "Variety across time matters more than making every plate identical."
+      "tip": "Variety across time matters more than making every plate identical."
     },
     {
       "id": 11,
@@ -135,7 +135,7 @@
       "panel": "bottom",
       "hint": "The small square dessert at the far lower-right edge.",
       "description": "A treat can be part of eating without becoming the foundation of the meal.",
-      "ap_tip": "Health education should support flexible choices rather than guilt."
+      "tip": "Health education should support flexible choices rather than guilt."
     },
     {
       "id": 12,
@@ -147,7 +147,7 @@
       "panel": "top",
       "hint": "The child and trusted adult comparing two packages in the center.",
       "description": "Labels are evidence tools, and a trusted adult can help interpret unfamiliar ingredients or claims.",
-      "ap_tip": "Use evidence together with family needs, culture, access, allergies, and preferences."
+      "tip": "Use evidence together with family needs, culture, access, allergies, and preferences."
     }
   ]
 }

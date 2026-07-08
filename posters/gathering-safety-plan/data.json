@@ -15,7 +15,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents plan with a trusted adult.",
       "description": "Share where you will be, who is present, and how to get help.",
-      "ap_tip": "Agree on check-in and pickup options. A safety plan should allow asking for help without fear."
+      "tip": "Agree on check-in and pickup options. A safety plan should allow asking for help without fear."
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents charge the phone.",
       "description": "A charged phone supports contact, navigation, and emergency calls.",
-      "ap_tip": "Bring a safe power option. Know important contacts beyond the device."
+      "tip": "Bring a safe power option. Know important contacts beyond the device."
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents use a buddy check-in.",
       "description": "Friends can agree to check in and leave together.",
-      "ap_tip": "Do not make one peer solely responsible. Respect when someone wants to go."
+      "tip": "Do not make one peer solely responsible. Respect when someone wants to go."
     },
     {
       "id": 4,
@@ -51,7 +51,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents know the exits.",
       "description": "Notice safe exits, adult hosts, and calmer spaces.",
-      "ap_tip": "Leave early if the situation changes. Do not enter isolated or unsafe areas."
+      "tip": "Leave early if the situation changes. Do not enter isolated or unsafe areas."
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents keep personal items in sight.",
       "description": "Keep beverages, medication, and belongings under your control.",
-      "ap_tip": "Do not accept an opened item when you are uncertain. Ask an adult for help if tampering is suspected."
+      "tip": "Do not accept an opened item when you are uncertain. Ask an adult for help if tampering is suspected."
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents refuse pressure.",
       "description": "Use a clear refusal, repeat it, change location, or involve support.",
-      "ap_tip": "You do not owe an explanation. Pressure is the responsibility of the person applying it."
+      "tip": "You do not owe an explanation. Pressure is the responsibility of the person applying it."
     },
     {
       "id": 7,
@@ -87,7 +87,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents choose a sober ride.",
       "description": "Never ride with an impaired driver.",
-      "ap_tip": "Use a trusted adult, sober driver, transit, or safe place to stay. Plan more than one option."
+      "tip": "Use a trusted adult, sober driver, transit, or safe place to stay. Plan more than one option."
     },
     {
       "id": 8,
@@ -99,7 +99,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents help a sick friend.",
       "description": "Stay nearby when safe and involve an adult.",
-      "ap_tip": "Do not assume the person can sleep it off. Monitor breathing while emergency help is coming."
+      "tip": "Do not assume the person can sleep it off. Monitor breathing while emergency help is coming."
     },
     {
       "id": 9,
@@ -111,7 +111,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents call emergency help.",
       "description": "Unresponsiveness, breathing trouble, seizure, serious injury, or immediate danger require emergency services.",
-      "ap_tip": "Give the location and known facts. Do not delay because of fear of trouble."
+      "tip": "Give the location and known facts. Do not delay because of fear of trouble."
     },
     {
       "id": 10,
@@ -123,7 +123,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents check in afterward.",
       "description": "Confirm a safe return and talk about any concerning event.",
-      "ap_tip": "Preserve evidence when needed. Seek medical, counseling, or school support after harm."
+      "tip": "Preserve evidence when needed. Seek medical, counseling, or school support after harm."
     }
   ]
 }

@@ -15,7 +15,7 @@
       "panel": "bottom",
       "hint": "Two children holding one watering can together.",
       "description": "Healthy friends share materials and make sure both people can participate.",
-      "ap_tip": "Ask before taking and return tools when finished."
+      "tip": "Ask before taking and return tools when finished."
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
       "panel": "top",
       "hint": "One child speaks while the other faces them and listens.",
       "description": "Listening shows that a friend’s ideas and feelings matter.",
-      "ap_tip": "Eyes, body position, and patient waiting can all show listening."
+      "tip": "Eyes, body position, and patient waiting can all show listening."
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "panel": "top",
       "hint": "A child holds the garden gate open and greets a newcomer.",
       "description": "A friendly welcome helps a new person feel that they belong.",
-      "ap_tip": "Offer information without assuming the new person needs everything explained."
+      "tip": "Offer information without assuming the new person needs everything explained."
     },
     {
       "id": 4,
@@ -51,7 +51,7 @@
       "panel": "bottom",
       "hint": "Two children compare different seedlings with equal interest.",
       "description": "Friends can like different plants, games, foods, and ideas and still care for each other.",
-      "ap_tip": "Difference is part of every healthy group."
+      "tip": "Difference is part of every healthy group."
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "panel": "top",
       "hint": "A child uses a calm open-hand gesture while a friend pauses.",
       "description": "Healthy boundaries let people say when they need more room or quiet.",
-      "ap_tip": "A respectful friend listens and adjusts."
+      "tip": "A respectful friend listens and adjusts."
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "panel": "bottom",
       "hint": "Two children exchange a garden trowel beside a raised bed.",
       "description": "Taking turns gives each person a fair chance to contribute.",
-      "ap_tip": "Waiting can be part of cooperation."
+      "tip": "Waiting can be part of cooperation."
     },
     {
       "id": 7,
@@ -87,7 +87,7 @@
       "panel": "top",
       "hint": "Two children lift a spilled seed tray together.",
       "description": "Everyone makes mistakes. Healthy friends notice harm, apologize, and help repair it.",
-      "ap_tip": "Focus on what can be fixed next."
+      "tip": "Focus on what can be fixed next."
     },
     {
       "id": 8,
@@ -99,7 +99,7 @@
       "panel": "bottom",
       "hint": "Friends work at an accessible raised bed beside a wheelchair.",
       "description": "Belonging means changing the activity so every person has a meaningful way to join.",
-      "ap_tip": "Follow the person’s lead instead of assuming what help they want."
+      "tip": "Follow the person’s lead instead of assuming what help they want."
     },
     {
       "id": 9,
@@ -111,7 +111,7 @@
       "panel": "top",
       "hint": "Children smile and applaud a friend holding flowers.",
       "description": "Healthy friends can feel happy about another person’s effort and success.",
-      "ap_tip": "Celebration does not need a winner."
+      "tip": "Celebration does not need a winner."
     },
     {
       "id": 10,
@@ -123,7 +123,7 @@
       "panel": "bottom",
       "hint": "A child sits beside a discouraged friend and offers support.",
       "description": "Checking in can sound like “Are you okay?” or “Would you like company?”",
-      "ap_tip": "Listen to the answer and seek adult help when needed."
+      "tip": "Listen to the answer and seek adult help when needed."
     }
   ]
 }

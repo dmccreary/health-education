@@ -15,7 +15,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents scene safety.",
       "description": "Check for hazards before approaching.",
-      "ap_tip": "Protect yourself and others. Move only when the scene itself is dangerous and training supports it."
+      "tip": "Protect yourself and others. Move only when the scene itself is dangerous and training supports it."
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents check responsiveness.",
       "description": "Tap and shout as taught to see whether the person responds.",
-      "ap_tip": "Look for normal breathing. Gasping is not normal breathing."
+      "tip": "Look for normal breathing. Gasping is not normal breathing."
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents activate emergency response.",
       "description": "Call emergency services or direct a specific person to call.",
-      "ap_tip": "Use speakerphone when practical. Give the exact location."
+      "tip": "Use speakerphone when practical. Give the exact location."
     },
     {
       "id": 4,
@@ -51,7 +51,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents retrieve the aed.",
       "description": "Send someone to get an AED while help is activated.",
-      "ap_tip": "AEDs are designed to guide users. Start care promptly rather than waiting beside the device location."
+      "tip": "AEDs are designed to guide users. Start care promptly rather than waiting beside the device location."
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents hand position.",
       "description": "Use the hand position taught in current certified training.",
-      "ap_tip": "Technique varies with age and situation. Practice on a manikin, never forcefully on a classmate."
+      "tip": "Technique varies with age and situation. Practice on a manikin, never forcefully on a classmate."
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents chest compressions.",
       "description": "High-quality compressions help circulate blood until advanced care arrives.",
-      "ap_tip": "Follow current dispatcher or certified-training guidance for rate and depth. Allow full recoil and minimize interruptions."
+      "tip": "Follow current dispatcher or certified-training guidance for rate and depth. Allow full recoil and minimize interruptions."
     },
     {
       "id": 7,
@@ -87,7 +87,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents open the aed.",
       "description": "Turn on or open the AED and follow its spoken and visual prompts.",
-      "ap_tip": "Expose and prepare the chest as directed while preserving dignity. Do not improvise beyond training and device prompts."
+      "tip": "Expose and prepare the chest as directed while preserving dignity. Do not improvise beyond training and device prompts."
     },
     {
       "id": 8,
@@ -99,7 +99,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents place pads.",
       "description": "Place pads exactly as the diagrams on the pads show.",
-      "ap_tip": "Pads need good contact with dry skin. Use pediatric equipment when directed and available."
+      "tip": "Pads need good contact with dry skin. Use pediatric equipment when directed and available."
     },
     {
       "id": 9,
@@ -111,7 +111,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents clear for analysis.",
       "description": "Make sure no one touches the person while the AED analyzes.",
-      "ap_tip": "Say and visually check that everyone is clear. Motion can interfere with analysis."
+      "tip": "Say and visually check that everyone is clear. Motion can interfere with analysis."
     },
     {
       "id": 10,
@@ -123,7 +123,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents shock if advised.",
       "description": "Deliver a shock only when the AED instructs it.",
-      "ap_tip": "Confirm everyone is clear first. An AED will not advise every person to be shocked."
+      "tip": "Confirm everyone is clear first. An AED will not advise every person to be shocked."
     },
     {
       "id": 11,
@@ -135,7 +135,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents resume cpr.",
       "description": "Resume compressions promptly after analysis or a shock as directed.",
-      "ap_tip": "Continue following AED and dispatcher prompts. Switch compressors when trained help is available and fatigue affects quality."
+      "tip": "Continue following AED and dispatcher prompts. Switch compressors when trained help is available and fatigue affects quality."
     },
     {
       "id": 12,
@@ -147,7 +147,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents professional handoff.",
       "description": "Continue until the person responds, the scene becomes unsafe, or trained responders take over.",
-      "ap_tip": "Share what happened and what care was given. This poster is not a substitute for certified CPR/AED training."
+      "tip": "Share what happened and what care was given. This poster is not a substitute for certified CPR/AED training."
     }
   ]
 }

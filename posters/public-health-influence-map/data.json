@@ -15,7 +15,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents family and culture.",
       "description": "Families and cultures shape routines, meanings, knowledge, food, care, and support.",
-      "ap_tip": "Influence is not the same as control. Avoid treating one cultural pattern as universal."
+      "tip": "Influence is not the same as control. Avoid treating one cultural pattern as universal."
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents peers.",
       "description": "Peers can model norms, provide belonging, share information, or apply pressure.",
-      "ap_tip": "Peer influence can be protective or harmful. Supportive groups make healthy choices more possible."
+      "tip": "Peer influence can be protective or harmful. Supportive groups make healthy choices more possible."
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents school.",
       "description": "School policies, curriculum, climate, meals, activity, care, and belonging affect health.",
-      "ap_tip": "Resources and experiences are not equal across schools. Students can help improve school conditions."
+      "tip": "Resources and experiences are not equal across schools. Students can help improve school conditions."
     },
     {
       "id": 4,
@@ -51,7 +51,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents media.",
       "description": "Media shape attention, norms, emotion, identity, and perceived choices.",
-      "ap_tip": "Algorithms and advertising have goals. Media literacy creates a pause for evaluation."
+      "tip": "Algorithms and advertising have goals. Media literacy creates a pause for evaluation."
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents healthcare.",
       "description": "Care affects prevention, diagnosis, treatment, trust, and navigation.",
-      "ap_tip": "Access depends on cost, location, language, culture, time, and policy. Quality includes respect and shared decisions."
+      "tip": "Access depends on cost, location, language, culture, time, and policy. Quality includes respect and shared decisions."
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents neighborhood.",
       "description": "Design, safety, housing, recreation, and social connection affect daily opportunity.",
-      "ap_tip": "Place reflects investment and policy. Residents hold expertise about local needs."
+      "tip": "Place reflects investment and policy. Residents hold expertise about local needs."
     },
     {
       "id": 7,
@@ -87,7 +87,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents transportation.",
       "description": "Transportation determines which opportunities are reachable and at what cost in time and money.",
-      "ap_tip": "Safe options support independence. Accessibility should include varied mobility."
+      "tip": "Safe options support independence. Accessibility should include varied mobility."
     },
     {
       "id": 8,
@@ -99,7 +99,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents food access.",
       "description": "Price, availability, quality, culture, time, and transportation shape food choices.",
-      "ap_tip": "Information alone cannot create missing access. Food sovereignty includes community power."
+      "tip": "Information alone cannot create missing access. Food sovereignty includes community power."
     },
     {
       "id": 9,
@@ -111,7 +111,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents policy.",
       "description": "Rules and budgets shape products, environments, care, education, work, and safety.",
-      "ap_tip": "Policy effects can differ across groups. Evidence and community voice should inform decisions."
+      "tip": "Policy effects can differ across groups. Evidence and community voice should inform decisions."
     },
     {
       "id": 10,
@@ -123,7 +123,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents economic resources.",
       "description": "Income, wealth, work conditions, and time affect housing, food, care, rest, and stress.",
-      "ap_tip": "Resources are distributed through systems. Economic supports can be health interventions."
+      "tip": "Resources are distributed through systems. Economic supports can be health interventions."
     },
     {
       "id": 11,
@@ -135,7 +135,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents natural environment.",
       "description": "Air, water, heat, climate, green space, and hazards affect health.",
-      "ap_tip": "Exposure is not evenly distributed. Prevention can require collective action."
+      "tip": "Exposure is not evenly distributed. Prevention can require collective action."
     },
     {
       "id": 12,
@@ -147,7 +147,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents community advocacy.",
       "description": "Organized community voice can identify priorities, build solutions, and shift power.",
-      "ap_tip": "Participation should be accessible and compensated when possible. Partnership means sharing decisions."
+      "tip": "Participation should be accessible and compensated when possible. Partnership means sharing decisions."
     }
   ]
 }

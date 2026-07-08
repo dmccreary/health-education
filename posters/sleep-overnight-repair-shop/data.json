@@ -15,7 +15,7 @@
       "panel": "top",
       "hint": "The quiet bedroom at upper left with dim light and a settled child.",
       "description": "A predictable wind-down helps the brain and body shift toward sleep.",
-      "ap_tip": "Gentle routines work best when they fit the family and child."
+      "tip": "Gentle routines work best when they fit the family and child."
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
       "panel": "top",
       "hint": "The large moon-faced clock with hands and no numerals.",
       "description": "Similar sleep and wake timing helps the body organize its daily rhythm.",
-      "ap_tip": "Perfection is not required; patterns can be adjusted gradually."
+      "tip": "Perfection is not required; patterns can be adjusted gradually."
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "panel": "top",
       "hint": "The glowing brain library filled with picture cards.",
       "description": "During sleep, the brain organizes and strengthens learning and memories.",
-      "ap_tip": "Sleep supports practice; it does not replace studying or experience."
+      "tip": "Sleep supports practice; it does not replace studying or experience."
     },
     {
       "id": 4,
@@ -51,7 +51,7 @@
       "panel": "top",
       "hint": "The control room between storm clouds and clearing sky.",
       "description": "Sleep helps emotion systems recover and improves the ability to pause before reacting.",
-      "ap_tip": "Poor sleep can make ordinary challenges feel harder."
+      "tip": "Poor sleep can make ordinary challenges feel harder."
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "panel": "top",
       "hint": "The golden growing figure under careful workshop lights.",
       "description": "Sleep supports growth signals and tissue repair in a growing body.",
-      "ap_tip": "Growth happens across time, not in one single night."
+      "tip": "Growth happens across time, not in one single night."
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "panel": "bottom",
       "hint": "The bright shield workshop in the lower-left room.",
       "description": "Sleep supports immune defenses that help the body respond to illness.",
-      "ap_tip": "Sleep is one support, alongside hygiene, food, movement, and healthcare."
+      "tip": "Sleep is one support, alongside hygiene, food, movement, and healthcare."
     },
     {
       "id": 7,
@@ -87,7 +87,7 @@
       "panel": "bottom",
       "hint": "The glowing blue energy chamber in the lower middle-left.",
       "description": "Rest restores alertness and physical energy for the next day.",
-      "ap_tip": "Morning fatigue can be a useful clue to review sleep routines."
+      "tip": "Morning fatigue can be a useful clue to review sleep routines."
     },
     {
       "id": 8,
@@ -99,7 +99,7 @@
       "panel": "bottom",
       "hint": "The cool blue chamber with a snowflake-like symbol.",
       "description": "Body temperature naturally shifts as part of the sleep-wake rhythm.",
-      "ap_tip": "A comfortable environment can make sleep easier."
+      "tip": "A comfortable environment can make sleep easier."
     },
     {
       "id": 9,
@@ -111,7 +111,7 @@
       "panel": "bottom",
       "hint": "The operator restoring bright stars in the lower middle-right.",
       "description": "Adequate sleep supports attention, decision-making, and learning.",
-      "ap_tip": "Sleepy brains may miss details or react more slowly."
+      "tip": "Sleepy brains may miss details or react more slowly."
     },
     {
       "id": 10,
@@ -123,7 +123,7 @@
       "panel": "bottom",
       "hint": "The calm sunrise bedroom at lower right.",
       "description": "A safe, quiet, comfortable sleep space supports rest.",
-      "ap_tip": "Families can reduce light, noise, or device interruptions in ways that fit their home."
+      "tip": "Families can reduce light, noise, or device interruptions in ways that fit their home."
     }
   ]
 }
