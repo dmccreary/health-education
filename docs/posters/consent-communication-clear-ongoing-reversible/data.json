@@ -89,23 +89,23 @@
   ],
   "quiz": [
     {
-      "question": "Which section focuses on clear consent is voluntary, specific, and comfortable.",
+      "question": "Which scenario shows a voluntary, specific, and comfortable agreement?",
       "correct_zone": "agreement"
     },
     {
-      "question": "Which section focuses on consent is ongoing, so respectful people check in as circumstances change.",
+      "question": "Which scenario shows pausing to ask again when circumstances change?",
       "correct_zone": "check-in"
     },
     {
-      "question": "Which section focuses on unclear, hesitant, frozen, or mixed responses mean stop.",
+      "question": "Which scenario shows that hesitation or mixed signals mean stop?",
       "correct_zone": "uncertainty"
     },
     {
-      "question": "Which section focuses on a person can change their mind and withdraw consent at any time.",
+      "question": "Which scenario shows someone changing their mind and the activity stopping?",
       "correct_zone": "withdrawal"
     },
     {
-      "question": "Which section focuses on threats, guilt, persistence, secrecy, or power pressure invalidate consent.",
+      "question": "Which scenario shows threats, guilt, persistence, secrecy, or a power imbalance?",
       "correct_zone": "coercion"
     }
   ]

@@ -89,23 +89,23 @@
   ],
   "quiz": [
     {
-      "question": "Which section focuses on protect passwords, location, personal details, and image-sharing permission.",
+      "question": "Which bay protects passwords, location, personal details, and image permission?",
       "correct_zone": "privacy"
     },
     {
-      "question": "Which section focuses on repeated demands, secrecy, and urgency can signal unhealthy control.",
+      "question": "Which bay identifies repeated demands, secrecy, and unhealthy urgency?",
       "correct_zone": "pressure"
     },
     {
-      "question": "Which section focuses on online harm can include exclusion, rumors, impersonation, threats, or unwanted sharing.",
+      "question": "Which bay covers rumors, impersonation, threats, exclusion, or unwanted sharing?",
       "correct_zone": "harm"
     },
     {
-      "question": "Which section focuses on reporting can connect evidence with adults, schools, platforms, or emergency help.",
+      "question": "Which bay connects evidence with trusted adults, schools, platforms, or emergency help?",
       "correct_zone": "report"
     },
     {
-      "question": "Which section focuses on block, mute, leave, adjust settings, and connect with supportive people.",
+      "question": "Which bay covers blocking, leaving, settings changes, and supportive people?",
       "correct_zone": "exit"
     }
   ]

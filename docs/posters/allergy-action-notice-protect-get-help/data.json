@@ -73,19 +73,19 @@
   ],
   "quiz": [
     {
-      "question": "Which section focuses on possible allergy signs can affect skin, eyes, breathing, or digestion.",
+      "question": "Which panel shows possible skin, eye, breathing, or digestive clues?",
       "correct_zone": "notice"
     },
     {
-      "question": "Which section focuses on move away from the possible allergen and do not eat or touch more.",
+      "question": "Which panel shows moving away from a possible allergen?",
       "correct_zone": "protect"
     },
     {
-      "question": "Which section focuses on tell a trusted, trained adult immediately about possible symptoms.",
+      "question": "Which panel shows telling a trusted trained adult immediately?",
       "correct_zone": "adult"
     },
     {
-      "question": "Which section focuses on trouble breathing or swelling of the face or throat needs emergency action now.",
+      "question": "Which panel shows the response to trouble breathing or face or throat swelling?",
       "correct_zone": "emergency"
     }
   ]

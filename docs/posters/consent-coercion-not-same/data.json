@@ -73,19 +73,19 @@
   ],
   "quiz": [
     {
-      "question": "Which section focuses on consent is a clear, voluntary, comfortable agreement without pressure.",
+      "question": "Which panel shows a clear voluntary and comfortable agreement?",
       "correct_zone": "yes"
     },
     {
-      "question": "Which section focuses on hesitation or mixed signals mean stop and check in.",
+      "question": "Which panel shows that hesitation means stop and check in?",
       "correct_zone": "pause"
     },
     {
-      "question": "Which section focuses on no, stop, or a changed mind must be respected immediately.",
+      "question": "Which panel shows a no or changed mind being respected immediately?",
       "correct_zone": "boundary"
     },
     {
-      "question": "Which section focuses on pressure, guilt, threats, secrecy, or misuse of power are not consent.",
+      "question": "Which panel shows pressure, guilt, secrecy, or misuse of power?",
       "correct_zone": "coercion"
     }
   ]

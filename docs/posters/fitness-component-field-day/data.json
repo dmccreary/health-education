@@ -73,19 +73,19 @@
   ],
   "quiz": [
     {
-      "question": "Which section focuses on endurance helps the heart and lungs support activity over time.",
+      "question": "Which station builds the ability of the heart and lungs to support activity over time?",
       "correct_zone": "endurance"
     },
     {
-      "question": "Which section focuses on muscular strength is the ability of muscles to produce force.",
+      "question": "Which station practices muscles producing force?",
       "correct_zone": "strength"
     },
     {
-      "question": "Which section focuses on flexibility is the comfortable range of motion around joints.",
+      "question": "Which station practices comfortable range of motion around joints?",
       "correct_zone": "flexibility"
     },
     {
-      "question": "Which section focuses on balance controls body position; coordination organizes movements together.",
+      "question": "Which station practices body position and organizing movements together?",
       "correct_zone": "balance-coordination"
     }
   ]

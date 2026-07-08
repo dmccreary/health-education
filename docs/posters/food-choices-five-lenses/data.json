@@ -89,23 +89,23 @@
   ],
   "quiz": [
     {
-      "question": "Which section focuses on labels provide structured evidence about a packaged food.",
+      "question": "Which lens examines serving information and nutrient amounts?",
       "correct_zone": "label"
     },
     {
-      "question": "Which section focuses on marketing shapes attention and expectations, but it is not neutral evidence.",
+      "question": "Which lens examines packaging, persuasion, and who benefits?",
       "correct_zone": "marketing"
     },
     {
-      "question": "Which section focuses on family and cultural traditions carry knowledge, identity, taste, and patterns of balance.",
+      "question": "Which lens considers family knowledge, tradition, taste, and identity?",
       "correct_zone": "culture"
     },
     {
-      "question": "Which section focuses on cost, transportation, time, availability, storage, and kitchens shape practical choices.",
+      "question": "Which lens considers cost, transportation, time, availability, and kitchen resources?",
       "correct_zone": "access"
     },
     {
-      "question": "Which section focuses on food sovereignty concerns communities’ power to shape their own food systems.",
+      "question": "Which lens examines community power over land, seeds, knowledge, and food-system decisions?",
       "correct_zone": "sovereignty"
     }
   ]
