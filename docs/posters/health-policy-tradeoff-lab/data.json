@@ -1,0 +1,107 @@
+{
+  "title": "Health Policy Tradeoff Lab",
+  "image": "health-policy-tradeoff-lab.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343"
+  ],
+  "zones": [
+    {
+      "id": "goal",
+      "label": "Goal",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 19.75,
+      "y2": 99.7,
+      "summary": "Define the health problem, desired outcome, population, and decision authority.",
+      "facts": [
+        "Distinguish values from measurable claims.",
+        "Include affected communities in defining success."
+      ]
+    },
+    {
+      "id": "evidence",
+      "label": "Evidence",
+      "color": "#5D953B",
+      "x1": 20.25,
+      "y1": 0.3,
+      "x2": 39.75,
+      "y2": 99.7,
+      "summary": "Assess quality, relevance, uncertainty, feasibility, and alternatives.",
+      "facts": [
+        "Evidence includes research and lived experience.",
+        "Avoid claiming more than the data support."
+      ]
+    },
+    {
+      "id": "who-benefits",
+      "label": "Who Benefits",
+      "color": "#D39B1C",
+      "x1": 40.25,
+      "y1": 0.3,
+      "x2": 59.75,
+      "y2": 99.7,
+      "summary": "Examine how benefits and burdens are distributed across groups and places.",
+      "facts": [
+        "Average effects can hide disparities.",
+        "Access determines who can benefit."
+      ]
+    },
+    {
+      "id": "possible-harms",
+      "label": "Possible Harms",
+      "color": "#7453A1",
+      "x1": 60.25,
+      "y1": 0.3,
+      "x2": 79.75,
+      "y2": 99.7,
+      "summary": "Anticipate stigma, exclusion, privacy loss, cost, displacement, or unintended behavior.",
+      "facts": [
+        "A good goal does not guarantee a harmless method.",
+        "Use the least restrictive effective approach."
+      ]
+    },
+    {
+      "id": "revise-and-monitor",
+      "label": "Revise and Monitor",
+      "color": "#C95343",
+      "x1": 80.25,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Track implementation, outcomes, equity, and unintended effects over time.",
+      "facts": [
+        "Create feedback and accountability.",
+        "Revise or stop policies that cause avoidable harm."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on define the health problem, desired outcome, population, and decision authority.",
+      "correct_zone": "goal"
+    },
+    {
+      "question": "Which section focuses on assess quality, relevance, uncertainty, feasibility, and alternatives.",
+      "correct_zone": "evidence"
+    },
+    {
+      "question": "Which section focuses on examine how benefits and burdens are distributed across groups and places.",
+      "correct_zone": "who-benefits"
+    },
+    {
+      "question": "Which section focuses on anticipate stigma, exclusion, privacy loss, cost, displacement, or unintended behavior.",
+      "correct_zone": "possible-harms"
+    },
+    {
+      "question": "Which section focuses on track implementation, outcomes, equity, and unintended effects over time.",
+      "correct_zone": "revise-and-monitor"
+    }
+  ]
+}

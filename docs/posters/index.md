@@ -401,6 +401,128 @@ A Grades 9–12 Grid tool for analyzing mental-health representation, evidence, 
 
 A Grades 9–12 Callout loop for adaptive, evidence-informed health goals.
 
+## More Grades 6–8 and 9–12 posters
+
+[![Nutrition Claim Courtroom](./nutrition-claim-courtroom/nutrition-claim-courtroom.png)](./nutrition-claim-courtroom/index.md)
+
+### [Nutrition Claim Courtroom](./nutrition-claim-courtroom/index.md)
+
+Five evidence tests turn a persuasive nutrition claim into a reasoned verdict.
+
+[![Boundary Repair Workshop](./boundary-repair-workshop/boundary-repair-workshop.png)](./boundary-repair-workshop/index.md)
+
+### [Boundary Repair Workshop](./boundary-repair-workshop/index.md)
+
+Five workshop stages distinguish accountability and repair from excuses or forced forgiveness.
+
+[![Sexual Health Prevention Toolbox](./sexual-health-prevention-toolbox/sexual-health-prevention-toolbox.png)](./sexual-health-prevention-toolbox/index.md)
+
+### [Sexual Health Prevention Toolbox](./sexual-health-prevention-toolbox/index.md)
+
+Five age-appropriate supports connect information, consent, prevention, care, and trusted help.
+
+[![Emotional Regulation Control Panel](./emotional-regulation-control-panel/emotional-regulation-control-panel.png)](./emotional-regulation-control-panel/index.md)
+
+### [Emotional Regulation Control Panel](./emotional-regulation-control-panel/index.md)
+
+Six control-room stations turn emotional awareness into flexible action and reflection.
+
+[![Bias and the Brain Shortcut Lab](./bias-brain-shortcut-lab/bias-brain-shortcut-lab.png)](./bias-brain-shortcut-lab/index.md)
+
+### [Bias and the Brain Shortcut Lab](./bias-brain-shortcut-lab/index.md)
+
+Five social-science steps interrupt snap judgments before they become unfair actions.
+
+[![Digital Footprint Iceberg](./digital-footprint-iceberg/digital-footprint-iceberg.png)](./digital-footprint-iceberg/index.md)
+
+### [Digital Footprint Iceberg](./digital-footprint-iceberg/index.md)
+
+Ten iceberg clues reveal visible posts and the less-visible trails, audiences, and future contexts beneath them.
+
+[![Substance Combination Risk Lab](./substance-combination-risk-lab/substance-combination-risk-lab.png)](./substance-combination-risk-lab/index.md)
+
+### [Substance Combination Risk Lab](./substance-combination-risk-lab/index.md)
+
+Five laboratory panels explain why unknown strength and mixed effects make combinations unpredictable.
+
+[![Gathering Safety Plan](./gathering-safety-plan/gathering-safety-plan.png)](./gathering-safety-plan/index.md)
+
+### [Gathering Safety Plan](./gathering-safety-plan/index.md)
+
+Ten scenes move from advance planning through pressure refusal, emergency help, and a safe return.
+
+[![Health Information Source Ladder](./health-information-source-ladder/health-information-source-ladder.png)](./health-information-source-ladder/index.md)
+
+### [Health Information Source Ladder](./health-information-source-ladder/index.md)
+
+Five source types show what each can contribute and what students still need to verify.
+
+[![Youth Advocacy Message Studio](./youth-advocacy-message-studio/youth-advocacy-message-studio.png)](./youth-advocacy-message-studio/index.md)
+
+### [Youth Advocacy Message Studio](./youth-advocacy-message-studio/index.md)
+
+Five civic-design panels turn a concern into a specific, evidence-backed, revisable request.
+
+[![Relationship Health Spectrum](./relationship-health-spectrum/relationship-health-spectrum.png)](./relationship-health-spectrum/index.md)
+
+### [Relationship Health Spectrum](./relationship-health-spectrum/index.md)
+
+Six relationship panels distinguish mutual respect from concerning patterns, control, and the need for support.
+
+[![Conflict De-escalation Lab](./conflict-deescalation-lab/conflict-deescalation-lab.png)](./conflict-deescalation-lab/index.md)
+
+### [Conflict De-escalation Lab](./conflict-deescalation-lab/index.md)
+
+Five restorative-practice panels prioritize safety, regulation, needs, options, and a supported exit.
+
+[![Layered Sexual Health Prevention](./layered-sexual-health-prevention/layered-sexual-health-prevention.png)](./layered-sexual-health-prevention/index.md)
+
+### [Layered Sexual Health Prevention](./layered-sexual-health-prevention/index.md)
+
+Five clinical panels show how communication, methods, testing, vaccination, and follow-up work together.
+
+[![Chain of Infection](./chain-of-infection/chain-of-infection.png)](./chain-of-infection/index.md)
+
+### [Chain of Infection](./chain-of-infection/index.md)
+
+Six public-health columns trace infectious spread and the prevention opportunities at every link.
+
+[![School Safety Systems Map](./school-safety-systems-map/school-safety-systems-map.png)](./school-safety-systems-map/index.md)
+
+### [School Safety Systems Map](./school-safety-systems-map/index.md)
+
+Twelve campus systems show safety as climate, access, preparation, communication, care, and student participation.
+
+[![Substance Interaction Matrix](./substance-interaction-matrix/substance-interaction-matrix.png)](./substance-interaction-matrix/index.md)
+
+### [Substance Interaction Matrix](./substance-interaction-matrix/index.md)
+
+Six science-museum columns compare body effects while emphasizing variability and interaction uncertainty.
+
+[![Resilience Protective-Factors Garden](./resilience-protective-factors-garden/resilience-protective-factors-garden.png)](./resilience-protective-factors-garden/index.md)
+
+### [Resilience Protective-Factors Garden](./resilience-protective-factors-garden/index.md)
+
+Twelve garden landmarks show resilience as supports and resources, not an expectation to endure harm alone.
+
+[![Health Policy Tradeoff Lab](./health-policy-tradeoff-lab/health-policy-tradeoff-lab.png)](./health-policy-tradeoff-lab/index.md)
+
+### [Health Policy Tradeoff Lab](./health-policy-tradeoff-lab/index.md)
+
+Five policy-analysis panels balance goals, evidence, equity, possible harms, and revision.
+
+[![Behavior-Change Levers](./behavior-change-levers/behavior-change-levers.png)](./behavior-change-levers/index.md)
+
+### [Behavior-Change Levers](./behavior-change-levers/index.md)
+
+Six systems levers show why durable health change requires more than information or willpower.
+
+[![Health Intervention Evaluation](./health-intervention-evaluation/health-intervention-evaluation.png)](./health-intervention-evaluation/index.md)
+
+### [Health Intervention Evaluation](./health-intervention-evaluation/index.md)
+
+Five evaluation panels ask whether a health intervention reached people, worked well, improved outcomes equitably, and caused surprises.
+
 ## Additional posters
 
 - [Food Groups](./food-groups/index.md)

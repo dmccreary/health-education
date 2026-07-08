@@ -1,0 +1,126 @@
+{
+  "title": "Relationship Health Spectrum",
+  "image": "relationship-health-spectrum.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343",
+    "#087A8A"
+  ],
+  "zones": [
+    {
+      "id": "mutual-respect",
+      "label": "Mutual Respect",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 16.42,
+      "y2": 99.7,
+      "summary": "People value each other\u2019s dignity, choices, identity, time, and goals.",
+      "facts": [
+        "Disagreement can exist with respect.",
+        "Care is not ownership."
+      ]
+    },
+    {
+      "id": "open-communication",
+      "label": "Open Communication",
+      "color": "#5D953B",
+      "x1": 16.92,
+      "y1": 0.3,
+      "x2": 33.08,
+      "y2": 99.7,
+      "summary": "People can speak honestly, listen, and repair misunderstandings.",
+      "facts": [
+        "Privacy and autonomy remain important.",
+        "Communication should not be demanded at all times."
+      ]
+    },
+    {
+      "id": "boundaries",
+      "label": "Boundaries",
+      "color": "#D39B1C",
+      "x1": 33.58,
+      "y1": 0.3,
+      "x2": 49.75,
+      "y2": 99.7,
+      "summary": "Clear limits are communicated and respected without punishment.",
+      "facts": [
+        "Consent is specific and reversible.",
+        "Each person can maintain relationships and interests outside the relationship."
+      ]
+    },
+    {
+      "id": "concerning-patterns",
+      "label": "Concerning Patterns",
+      "color": "#7453A1",
+      "x1": 50.25,
+      "y1": 0.3,
+      "x2": 66.42,
+      "y2": 99.7,
+      "summary": "Jealousy, repeated pressure, monitoring, humiliation, or isolation are warning signs.",
+      "facts": [
+        "Patterns matter more than a single imperfect moment.",
+        "Take discomfort seriously."
+      ]
+    },
+    {
+      "id": "control",
+      "label": "Control",
+      "color": "#C95343",
+      "x1": 66.92,
+      "y1": 0.3,
+      "x2": 83.08,
+      "y2": 99.7,
+      "summary": "Threats, coercion, stalking, forced access, isolation, or violence are unsafe.",
+      "facts": [
+        "Abuse is the responsibility of the person choosing it.",
+        "Leaving can increase risk and may require a safety plan."
+      ]
+    },
+    {
+      "id": "get-support",
+      "label": "Get Support",
+      "color": "#087A8A",
+      "x1": 83.58,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Trusted people and specialized services can help assess options and safety.",
+      "facts": [
+        "Do not confront a controlling person on someone else\u2019s behalf without a plan.",
+        "Urgent danger requires emergency help."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on people value each other\u2019s dignity, choices, identity, time, and goals.",
+      "correct_zone": "mutual-respect"
+    },
+    {
+      "question": "Which section focuses on people can speak honestly, listen, and repair misunderstandings.",
+      "correct_zone": "open-communication"
+    },
+    {
+      "question": "Which section focuses on clear limits are communicated and respected without punishment.",
+      "correct_zone": "boundaries"
+    },
+    {
+      "question": "Which section focuses on jealousy, repeated pressure, monitoring, humiliation, or isolation are warning signs.",
+      "correct_zone": "concerning-patterns"
+    },
+    {
+      "question": "Which section focuses on threats, coercion, stalking, forced access, isolation, or violence are unsafe.",
+      "correct_zone": "control"
+    },
+    {
+      "question": "Which section focuses on trusted people and specialized services can help assess options and safety.",
+      "correct_zone": "get-support"
+    }
+  ]
+}

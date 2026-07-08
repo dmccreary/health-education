@@ -1,0 +1,107 @@
+{
+  "title": "Health Intervention Evaluation",
+  "image": "health-intervention-evaluation.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343"
+  ],
+  "zones": [
+    {
+      "id": "reach",
+      "label": "Reach",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 19.75,
+      "y2": 99.7,
+      "summary": "Identify who participated, who did not, and why.",
+      "facts": [
+        "Count access as well as exposure.",
+        "High reach can still exclude important groups."
+      ]
+    },
+    {
+      "id": "quality",
+      "label": "Quality",
+      "color": "#5D953B",
+      "x1": 20.25,
+      "y1": 0.3,
+      "x2": 39.75,
+      "y2": 99.7,
+      "summary": "Assess whether the intervention was delivered as intended and respectfully.",
+      "facts": [
+        "Measure training, fidelity, adaptation, and participant experience.",
+        "Quality includes cultural and disability access."
+      ]
+    },
+    {
+      "id": "outcomes",
+      "label": "Outcomes",
+      "color": "#D39B1C",
+      "x1": 40.25,
+      "y1": 0.3,
+      "x2": 59.75,
+      "y2": 99.7,
+      "summary": "Measure meaningful short- and long-term changes linked to the goal.",
+      "facts": [
+        "Distinguish activity counts from health outcomes.",
+        "Use multiple evidence sources when appropriate."
+      ]
+    },
+    {
+      "id": "equity",
+      "label": "Equity",
+      "color": "#7453A1",
+      "x1": 60.25,
+      "y1": 0.3,
+      "x2": 79.75,
+      "y2": 99.7,
+      "summary": "Compare access, experience, benefits, and burdens across groups.",
+      "facts": [
+        "Do not treat identity as the cause of disparity.",
+        "Revise barriers revealed by the data."
+      ]
+    },
+    {
+      "id": "unintended-effects",
+      "label": "Unintended Effects",
+      "color": "#C95343",
+      "x1": 80.25,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Look for unexpected benefits, harms, displacement, stigma, or behavior changes.",
+      "facts": [
+        "Invite open feedback.",
+        "Stop or revise avoidable harm quickly."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on identify who participated, who did not, and why.",
+      "correct_zone": "reach"
+    },
+    {
+      "question": "Which section focuses on assess whether the intervention was delivered as intended and respectfully.",
+      "correct_zone": "quality"
+    },
+    {
+      "question": "Which section focuses on measure meaningful short- and long-term changes linked to the goal.",
+      "correct_zone": "outcomes"
+    },
+    {
+      "question": "Which section focuses on compare access, experience, benefits, and burdens across groups.",
+      "correct_zone": "equity"
+    },
+    {
+      "question": "Which section focuses on look for unexpected benefits, harms, displacement, stigma, or behavior changes.",
+      "correct_zone": "unintended-effects"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "title": "Behavior-Change Levers",
+  "image": "behavior-change-levers.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343",
+    "#087A8A"
+  ],
+  "zones": [
+    {
+      "id": "knowledge",
+      "label": "Knowledge",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 16.42,
+      "y2": 99.7,
+      "summary": "Accurate understandable information supports informed choices.",
+      "facts": [
+        "Information alone may not overcome barriers.",
+        "Tailor language and format without distorting evidence."
+      ]
+    },
+    {
+      "id": "skills",
+      "label": "Skills",
+      "color": "#5D953B",
+      "x1": 16.92,
+      "y1": 0.3,
+      "x2": 33.08,
+      "y2": 99.7,
+      "summary": "Practice turns intention into usable ability.",
+      "facts": [
+        "Feedback and repetition matter.",
+        "Design practice for real contexts."
+      ]
+    },
+    {
+      "id": "social-support",
+      "label": "Social Support",
+      "color": "#D39B1C",
+      "x1": 33.58,
+      "y1": 0.3,
+      "x2": 49.75,
+      "y2": 99.7,
+      "summary": "Encouragement, modeling, accountability, and practical help can sustain change.",
+      "facts": [
+        "Support should respect autonomy.",
+        "Norms can protect or undermine health."
+      ]
+    },
+    {
+      "id": "environment",
+      "label": "Environment",
+      "color": "#7453A1",
+      "x1": 50.25,
+      "y1": 0.3,
+      "x2": 66.42,
+      "y2": 99.7,
+      "summary": "Availability, defaults, design, time, transportation, and safety shape what is easy.",
+      "facts": [
+        "Change the setting, not only the person.",
+        "Accessible design expands participation."
+      ]
+    },
+    {
+      "id": "incentives",
+      "label": "Incentives",
+      "color": "#C95343",
+      "x1": 66.92,
+      "y1": 0.3,
+      "x2": 83.08,
+      "y2": 99.7,
+      "summary": "Rewards, costs, and feedback influence behavior.",
+      "facts": [
+        "Ethical incentives avoid coercion and inequity.",
+        "Short-term response may not equal lasting change."
+      ]
+    },
+    {
+      "id": "policy",
+      "label": "Policy",
+      "color": "#087A8A",
+      "x1": 83.58,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Rules, budgets, standards, and protections shape opportunity at scale.",
+      "facts": [
+        "Assess equity and unintended effects.",
+        "Combine policy with resources and implementation support."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on accurate understandable information supports informed choices.",
+      "correct_zone": "knowledge"
+    },
+    {
+      "question": "Which section focuses on practice turns intention into usable ability.",
+      "correct_zone": "skills"
+    },
+    {
+      "question": "Which section focuses on encouragement, modeling, accountability, and practical help can sustain change.",
+      "correct_zone": "social-support"
+    },
+    {
+      "question": "Which section focuses on availability, defaults, design, time, transportation, and safety shape what is easy.",
+      "correct_zone": "environment"
+    },
+    {
+      "question": "Which section focuses on rewards, costs, and feedback influence behavior.",
+      "correct_zone": "incentives"
+    },
+    {
+      "question": "Which section focuses on rules, budgets, standards, and protections shape opportunity at scale.",
+      "correct_zone": "policy"
+    }
+  ]
+}

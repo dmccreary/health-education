@@ -1,0 +1,126 @@
+{
+  "title": "Substance Interaction Matrix",
+  "image": "substance-interaction-matrix.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343",
+    "#087A8A"
+  ],
+  "zones": [
+    {
+      "id": "alcohol",
+      "label": "Alcohol",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 16.42,
+      "y2": 99.7,
+      "summary": "Alcohol can impair judgment, coordination, memory, and breathing at high exposure.",
+      "facts": [
+        "It interacts with many medicines and drugs.",
+        "No quick method removes impairment."
+      ]
+    },
+    {
+      "id": "nicotine",
+      "label": "Nicotine",
+      "color": "#5D953B",
+      "x1": 16.92,
+      "y1": 0.3,
+      "x2": 33.08,
+      "y2": 99.7,
+      "summary": "Nicotine can increase heart rate, affect attention and mood, and produce dependence.",
+      "facts": [
+        "Delivery products add different exposures.",
+        "Evidence-based quit support is available."
+      ]
+    },
+    {
+      "id": "cannabis",
+      "label": "Cannabis",
+      "color": "#D39B1C",
+      "x1": 33.58,
+      "y1": 0.3,
+      "x2": 49.75,
+      "y2": 99.7,
+      "summary": "Cannabis can affect memory, attention, coordination, judgment, and anxiety.",
+      "facts": [
+        "Potency and effects vary.",
+        "Combining it with other impairing substances increases risk."
+      ]
+    },
+    {
+      "id": "stimulants",
+      "label": "Stimulants",
+      "color": "#7453A1",
+      "x1": 50.25,
+      "y1": 0.3,
+      "x2": 66.42,
+      "y2": 99.7,
+      "summary": "Stimulants can increase alertness, heart rate, temperature, anxiety, and sleep disruption.",
+      "facts": [
+        "Medical use and misuse are different.",
+        "Unknown products may contain unexpected substances."
+      ]
+    },
+    {
+      "id": "opioids",
+      "label": "Opioids",
+      "color": "#C95343",
+      "x1": 66.92,
+      "y1": 0.3,
+      "x2": 83.08,
+      "y2": 99.7,
+      "summary": "Opioids can relieve pain but can also slow breathing and cause dependence or overdose.",
+      "facts": [
+        "Risk rises with sedatives or reduced tolerance.",
+        "Naloxone can temporarily reverse opioid overdose while emergency help is called."
+      ]
+    },
+    {
+      "id": "medications",
+      "label": "Medications",
+      "color": "#087A8A",
+      "x1": 83.58,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Medicines have intended effects, side effects, and interaction risks.",
+      "facts": [
+        "Use only as directed for the correct person.",
+        "Ask a pharmacist before combining substances."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on alcohol can impair judgment, coordination, memory, and breathing at high exposure.",
+      "correct_zone": "alcohol"
+    },
+    {
+      "question": "Which section focuses on nicotine can increase heart rate, affect attention and mood, and produce dependence.",
+      "correct_zone": "nicotine"
+    },
+    {
+      "question": "Which section focuses on cannabis can affect memory, attention, coordination, judgment, and anxiety.",
+      "correct_zone": "cannabis"
+    },
+    {
+      "question": "Which section focuses on stimulants can increase alertness, heart rate, temperature, anxiety, and sleep disruption.",
+      "correct_zone": "stimulants"
+    },
+    {
+      "question": "Which section focuses on opioids can relieve pain but can also slow breathing and cause dependence or overdose.",
+      "correct_zone": "opioids"
+    },
+    {
+      "question": "Which section focuses on medicines have intended effects, side effects, and interaction risks.",
+      "correct_zone": "medications"
+    }
+  ]
+}

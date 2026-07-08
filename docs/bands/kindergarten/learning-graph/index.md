@@ -28,6 +28,17 @@ are narrow, identify/name-level content for 5-6 year olds (see the
 [Course Description Assessment](./course-description-assessment.md) for the
 rationale).
 
+## Explore the Interactive Learning Graph
+
+Use the interactive viewer to explore this band's concepts and their
+dependencies. Drag to pan, scroll to zoom, and click a concept to highlight
+its connections. The viewer opens with the Kindergarten graph loaded; you can
+switch to any other grade band from the dropdown.
+
+[Open the Kindergarten Learning Graph Viewer](../../../sims/graph-viewer/main.html?band=kindergarten){ .md-button .md-button--primary }
+
+<iframe src="../../../sims/graph-viewer/main.html?band=kindergarten" width="100%" height="600px" frameborder="0"></iframe>
+
 ## Course Description
 
 We use the [Course Description](../course-description.md) as

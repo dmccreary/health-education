@@ -1,0 +1,107 @@
+{
+  "title": "Conflict De-escalation Lab",
+  "image": "conflict-deescalation-lab.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343"
+  ],
+  "zones": [
+    {
+      "id": "read-the-situation",
+      "label": "Read the Situation",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 19.75,
+      "y2": 99.7,
+      "summary": "Assess safety, power, escalation, exits, and whether dialogue is appropriate.",
+      "facts": [
+        "Not every conflict should be mediated.",
+        "Immediate danger requires distance and help."
+      ]
+    },
+    {
+      "id": "lower-the-heat",
+      "label": "Lower the Heat",
+      "color": "#5D953B",
+      "x1": 20.25,
+      "y1": 0.3,
+      "x2": 39.75,
+      "y2": 99.7,
+      "summary": "Use calmer tone, more space, fewer spectators, and a pause when possible.",
+      "facts": [
+        "Regulate your own body first.",
+        "Do not use de-escalation to tolerate abuse."
+      ]
+    },
+    {
+      "id": "listen-for-needs",
+      "label": "Listen for Needs",
+      "color": "#D39B1C",
+      "x1": 40.25,
+      "y1": 0.3,
+      "x2": 59.75,
+      "y2": 99.7,
+      "summary": "Listen for interests, fears, values, and unmet needs beneath positions.",
+      "facts": [
+        "Reflect without automatically agreeing.",
+        "Each person deserves a chance to speak when safe."
+      ]
+    },
+    {
+      "id": "create-options",
+      "label": "Create Options",
+      "color": "#7453A1",
+      "x1": 60.25,
+      "y1": 0.3,
+      "x2": 79.75,
+      "y2": 99.7,
+      "summary": "Generate choices that protect safety, dignity, and practical needs.",
+      "facts": [
+        "Compare likely consequences.",
+        "A neutral facilitator can help."
+      ]
+    },
+    {
+      "id": "exit-or-get-help",
+      "label": "Exit or Get Help",
+      "color": "#C95343",
+      "x1": 80.25,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Leave, set a boundary, or involve trusted adults, staff, or emergency help when unsafe.",
+      "facts": [
+        "You are not required to solve every conflict.",
+        "Document and report serious patterns."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on assess safety, power, escalation, exits, and whether dialogue is appropriate.",
+      "correct_zone": "read-the-situation"
+    },
+    {
+      "question": "Which section focuses on use calmer tone, more space, fewer spectators, and a pause when possible.",
+      "correct_zone": "lower-the-heat"
+    },
+    {
+      "question": "Which section focuses on listen for interests, fears, values, and unmet needs beneath positions.",
+      "correct_zone": "listen-for-needs"
+    },
+    {
+      "question": "Which section focuses on generate choices that protect safety, dignity, and practical needs.",
+      "correct_zone": "create-options"
+    },
+    {
+      "question": "Which section focuses on leave, set a boundary, or involve trusted adults, staff, or emergency help when unsafe.",
+      "correct_zone": "exit-or-get-help"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "title": "Sexual Health Prevention Toolbox",
+  "image": "sexual-health-prevention-toolbox.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343"
+  ],
+  "zones": [
+    {
+      "id": "accurate-information",
+      "label": "Accurate Information",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 19.75,
+      "y2": 99.7,
+      "summary": "Use medically accurate, age-appropriate sources rather than rumors.",
+      "facts": [
+        "Check authorship and date.",
+        "A clinician can answer personal health questions."
+      ]
+    },
+    {
+      "id": "boundaries-and-consent",
+      "label": "Boundaries and Consent",
+      "color": "#5D953B",
+      "x1": 20.25,
+      "y1": 0.3,
+      "x2": 39.75,
+      "y2": 99.7,
+      "summary": "Clear, voluntary, ongoing consent and respected boundaries support safety.",
+      "facts": [
+        "Uncertainty means pause.",
+        "Pressure and coercion are not consent."
+      ]
+    },
+    {
+      "id": "barrier-methods",
+      "label": "Barrier Methods",
+      "color": "#D39B1C",
+      "x1": 40.25,
+      "y1": 0.3,
+      "x2": 59.75,
+      "y2": 99.7,
+      "summary": "Barrier methods can reduce some infection and pregnancy risks when used correctly.",
+      "facts": [
+        "Methods differ in what they help prevent.",
+        "A professional can explain options without shame."
+      ]
+    },
+    {
+      "id": "testing-and-care",
+      "label": "Testing and Care",
+      "color": "#7453A1",
+      "x1": 60.25,
+      "y1": 0.3,
+      "x2": 79.75,
+      "y2": 99.7,
+      "summary": "Testing and timely care help identify and treat infections.",
+      "facts": [
+        "Many infections have no obvious symptoms.",
+        "Privacy rules and services vary by location."
+      ]
+    },
+    {
+      "id": "trusted-support",
+      "label": "Trusted Support",
+      "color": "#C95343",
+      "x1": 80.25,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Trusted adults and qualified professionals can help with questions, access, and safety.",
+      "facts": [
+        "Choose someone respectful and reliable.",
+        "Keep seeking help if the first person does not respond."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on use medically accurate, age-appropriate sources rather than rumors.",
+      "correct_zone": "accurate-information"
+    },
+    {
+      "question": "Which section focuses on clear, voluntary, ongoing consent and respected boundaries support safety.",
+      "correct_zone": "boundaries-and-consent"
+    },
+    {
+      "question": "Which section focuses on barrier methods can reduce some infection and pregnancy risks when used correctly.",
+      "correct_zone": "barrier-methods"
+    },
+    {
+      "question": "Which section focuses on testing and timely care help identify and treat infections.",
+      "correct_zone": "testing-and-care"
+    },
+    {
+      "question": "Which section focuses on trusted adults and qualified professionals can help with questions, access, and safety.",
+      "correct_zone": "trusted-support"
+    }
+  ]
+}

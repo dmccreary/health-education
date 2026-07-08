@@ -1,0 +1,107 @@
+{
+  "title": "Bias and the Brain Shortcut Lab",
+  "image": "bias-brain-shortcut-lab.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343"
+  ],
+  "zones": [
+    {
+      "id": "notice-the-snap-judgment",
+      "label": "Notice the Snap Judgment",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 19.75,
+      "y2": 99.7,
+      "summary": "Recognize the quick assumption before treating it as fact.",
+      "facts": [
+        "Automatic thoughts can reflect repeated messages and past experience.",
+        "Having a thought is not the same as choosing an action."
+      ]
+    },
+    {
+      "id": "pause",
+      "label": "Pause",
+      "color": "#5D953B",
+      "x1": 20.25,
+      "y1": 0.3,
+      "x2": 39.75,
+      "y2": 99.7,
+      "summary": "Slow the move from assumption to decision.",
+      "facts": [
+        "Curiosity creates room for correction.",
+        "A pause is especially useful when power or consequences are involved."
+      ]
+    },
+    {
+      "id": "check-evidence",
+      "label": "Check Evidence",
+      "color": "#D39B1C",
+      "x1": 40.25,
+      "y1": 0.3,
+      "x2": 59.75,
+      "y2": 99.7,
+      "summary": "Ask what you actually know and what you inferred.",
+      "facts": [
+        "Seek counterexamples and missing context.",
+        "Confidence is not evidence."
+      ]
+    },
+    {
+      "id": "seek-perspective",
+      "label": "Seek Perspective",
+      "color": "#7453A1",
+      "x1": 60.25,
+      "y1": 0.3,
+      "x2": 79.75,
+      "y2": 99.7,
+      "summary": "Listen to people affected and consider viewpoints beyond your own.",
+      "facts": [
+        "Do not demand that one person represent a whole group.",
+        "Credible history and data add context."
+      ]
+    },
+    {
+      "id": "choose-fair-action",
+      "label": "Choose Fair Action",
+      "color": "#C95343",
+      "x1": 80.25,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Make a choice that protects dignity, access, and consistent standards.",
+      "facts": [
+        "Correct harm when it occurs.",
+        "Fair systems reduce reliance on individual perfection."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on recognize the quick assumption before treating it as fact.",
+      "correct_zone": "notice-the-snap-judgment"
+    },
+    {
+      "question": "Which section focuses on slow the move from assumption to decision.",
+      "correct_zone": "pause"
+    },
+    {
+      "question": "Which section focuses on ask what you actually know and what you inferred.",
+      "correct_zone": "check-evidence"
+    },
+    {
+      "question": "Which section focuses on listen to people affected and consider viewpoints beyond your own.",
+      "correct_zone": "seek-perspective"
+    },
+    {
+      "question": "Which section focuses on make a choice that protects dignity, access, and consistent standards.",
+      "correct_zone": "choose-fair-action"
+    }
+  ]
+}

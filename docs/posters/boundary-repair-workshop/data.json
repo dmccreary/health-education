@@ -1,0 +1,107 @@
+{
+  "title": "Boundary Repair Workshop",
+  "image": "boundary-repair-workshop.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343"
+  ],
+  "zones": [
+    {
+      "id": "notice-harm",
+      "label": "Notice Harm",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 19.75,
+      "y2": 99.7,
+      "summary": "Recognize the action, crossed boundary, and effect on the other person.",
+      "facts": [
+        "Intent does not erase impact.",
+        "Safety comes before repairing the relationship."
+      ]
+    },
+    {
+      "id": "take-responsibility",
+      "label": "Take Responsibility",
+      "color": "#5D953B",
+      "x1": 20.25,
+      "y1": 0.3,
+      "x2": 39.75,
+      "y2": 99.7,
+      "summary": "Name what you did without blaming the other person.",
+      "facts": [
+        "Avoid excuses disguised as apologies.",
+        "Accept that consequences may remain."
+      ]
+    },
+    {
+      "id": "listen",
+      "label": "Listen",
+      "color": "#D39B1C",
+      "x1": 40.25,
+      "y1": 0.3,
+      "x2": 59.75,
+      "y2": 99.7,
+      "summary": "Hear the other person\u2019s experience and needs without arguing.",
+      "facts": [
+        "Do not demand emotional labor or immediate forgiveness.",
+        "Respect a request for space."
+      ]
+    },
+    {
+      "id": "repair",
+      "label": "Repair",
+      "color": "#7453A1",
+      "x1": 60.25,
+      "y1": 0.3,
+      "x2": 79.75,
+      "y2": 99.7,
+      "summary": "Offer a concrete action that addresses the harm when possible.",
+      "facts": [
+        "Ask what would be useful rather than assuming.",
+        "Some harm requires adult or professional help."
+      ]
+    },
+    {
+      "id": "rebuild-trust",
+      "label": "Rebuild Trust",
+      "color": "#C95343",
+      "x1": 80.25,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Trust returns through consistent behavior over time, if the other person chooses.",
+      "facts": [
+        "Forgiveness cannot be forced.",
+        "A relationship may change or end after a boundary violation."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on recognize the action, crossed boundary, and effect on the other person.",
+      "correct_zone": "notice-harm"
+    },
+    {
+      "question": "Which section focuses on name what you did without blaming the other person.",
+      "correct_zone": "take-responsibility"
+    },
+    {
+      "question": "Which section focuses on hear the other person\u2019s experience and needs without arguing.",
+      "correct_zone": "listen"
+    },
+    {
+      "question": "Which section focuses on offer a concrete action that addresses the harm when possible.",
+      "correct_zone": "repair"
+    },
+    {
+      "question": "Which section focuses on trust returns through consistent behavior over time, if the other person chooses.",
+      "correct_zone": "rebuild-trust"
+    }
+  ]
+}

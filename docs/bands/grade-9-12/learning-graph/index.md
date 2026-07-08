@@ -33,6 +33,17 @@ reasoning that defines this band: designing and evaluating personal plans,
 analyzing policy and systemic factors, and reasoning about cultural safety,
 Indigenous perspectives, and tribal sovereignty.
 
+## Explore the Interactive Learning Graph
+
+Use the interactive viewer to explore this band's concepts and their
+dependencies. Drag to pan, scroll to zoom, and click a concept to highlight
+its connections. The viewer opens with the Grade 9-12 graph loaded; you can
+switch to any other grade band from the dropdown.
+
+[Open the Grade 9-12 Learning Graph Viewer](../../../sims/graph-viewer/main.html?band=grade-9-12){ .md-button .md-button--primary }
+
+<iframe src="../../../sims/graph-viewer/main.html?band=grade-9-12" width="100%" height="600px" frameborder="0"></iframe>
+
 ## Course Description
 
 We use the [Course Description](../course-description.md) as

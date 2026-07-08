@@ -33,6 +33,17 @@ graphs for the five strands they share, and introduces genuinely new content
 for Sexual Health and Substance Use Awareness, which have no true prior-band
 bridge.
 
+## Explore the Interactive Learning Graph
+
+Use the interactive viewer to explore this band's concepts and their
+dependencies. Drag to pan, scroll to zoom, and click a concept to highlight
+its connections. The viewer opens with the Grade 6-8 graph loaded; you can
+switch to any other grade band from the dropdown.
+
+[Open the Grade 6-8 Learning Graph Viewer](../../../sims/graph-viewer/main.html?band=grade-6-8){ .md-button .md-button--primary }
+
+<iframe src="../../../sims/graph-viewer/main.html?band=grade-6-8" width="100%" height="600px" frameborder="0"></iframe>
+
 ## Course Description
 
 We use the [Course Description](../course-description.md) as

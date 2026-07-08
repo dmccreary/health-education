@@ -27,12 +27,22 @@ function bandLabel(slug) {
     return rest ? `${firstWord} ${rest}` : firstWord;
 }
 
+// Determine which band to show first. A `?band=<slug>` query parameter
+// (e.g. main.html?band=grade-3) overrides the default so each grade's
+// learning-graph page can deep-link straight to its own graph. Unknown or
+// missing values fall back to the first band (Kindergarten).
+function getInitialBand() {
+    const params = new URLSearchParams(window.location.search);
+    const requested = params.get('band');
+    return BANDS.includes(requested) ? requested : BANDS[0];
+}
+
 let network = null;
 let allNodes = [];
 let allEdges = [];
 let groups = {};
 let visibleGroups = new Set();
-let currentBand = BANDS[0];
+let currentBand = getInitialBand();
 
 // Precomputed once per band load — never change until the band changes
 let nodesWithDeps = new Set(); // set of node IDs that have outgoing edges
