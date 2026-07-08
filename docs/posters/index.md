@@ -279,6 +279,128 @@ A Kindergarten Explore-and-Quiz poster about how germs move through shared space
 
 A Grade 2 Explore-and-Quiz poster for practicing what to do when something online feels unsafe, confusing, or uncomfortable.
 
+## New Grades 6–8 and 9–12 posters
+
+[![Stress Signal to Support Network](./stress-signal-support-network/stress-signal-support-network.png)](./stress-signal-support-network/index.md)
+
+### [Stress Signal to Support Network](./stress-signal-support-network/index.md)
+
+A Grades 6–8 Callout journey connecting stress signals with coping, trusted people, professional support, and crisis help.
+
+[![The Developing Brain Under Different Influences](./developing-brain-different-influences/developing-brain-different-influences.png)](./developing-brain-different-influences/index.md)
+
+### [The Developing Brain Under Different Influences](./developing-brain-different-influences/index.md)
+
+A Grades 6–8 Grid comparison of brain-healthy habits and substance influences.
+
+[![Emergency Response Field Guide](./emergency-response-field-guide/emergency-response-field-guide.png)](./emergency-response-field-guide/index.md)
+
+### [Emergency Response Field Guide](./emergency-response-field-guide/index.md)
+
+A Grades 6–8 Grid guide to scene safety, emergency recognition, getting help, choking response, and emergency medication.
+
+[![Recovery Is an Ecosystem](./recovery-is-an-ecosystem/recovery-is-an-ecosystem.png)](./recovery-is-an-ecosystem/index.md)
+
+### [Recovery Is an Ecosystem](./recovery-is-an-ecosystem/index.md)
+
+A Grades 6–8 Callout watershed showing recovery as connected medical, relational, cultural, community, and policy supports.
+
+[![Sleep Pattern Influences Lab](./sleep-pattern-influences-lab/sleep-pattern-influences-lab.png)](./sleep-pattern-influences-lab/index.md)
+
+### [Sleep Pattern Influences Lab](./sleep-pattern-influences-lab/index.md)
+
+A Grades 6–8 Grid lab for body-clock, light, schedule, substance, and environmental influences on sleep.
+
+[![Medication Safety Cabinet](./medication-safety-cabinet/medication-safety-cabinet.png)](./medication-safety-cabinet/index.md)
+
+### [Medication Safety Cabinet](./medication-safety-cabinet/index.md)
+
+A Grades 6–8 Callout guide to safer medicine use, storage, disposal, and emergency help.
+
+[![Digital Boundary Checkpoints](./digital-boundary-checkpoints/digital-boundary-checkpoints.png)](./digital-boundary-checkpoints/index.md)
+
+### [Digital Boundary Checkpoints](./digital-boundary-checkpoints/index.md)
+
+A Grades 6–8 Grid response for pressure, boundaries, evidence, reporting, and trusted support.
+
+[![Stigma to Support](./stigma-to-support/stigma-to-support.png)](./stigma-to-support/index.md)
+
+### [Stigma to Support](./stigma-to-support/index.md)
+
+A Grades 6–8 Grid pathway from recognizing mental-health stigma to building belonging.
+
+[![Workout Design Studio](./workout-design-studio/workout-design-studio.png)](./workout-design-studio/index.md)
+
+### [Workout Design Studio](./workout-design-studio/index.md)
+
+A Grades 6–8 Grid studio for personal goals, endurance, strength, mobility, recovery, and revision.
+
+[![Impaired Driving Risk Web](./impaired-driving-risk-web/impaired-driving-risk-web.png)](./impaired-driving-risk-web/index.md)
+
+### [Impaired Driving Risk Web](./impaired-driving-risk-web/index.md)
+
+A Grades 6–8 Callout journey from impairment risk to safer rides and emergency help.
+
+[![Personal Nutrition Design Studio](./personal-nutrition-design-studio/personal-nutrition-design-studio.png)](./personal-nutrition-design-studio/index.md)
+
+### [Personal Nutrition Design Studio](./personal-nutrition-design-studio/index.md)
+
+A Grades 9–12 Grid studio for evidence-based, culturally meaningful nutrition planning.
+
+[![Health Opportunity](./health-opportunity-neighborhood/health-opportunity-neighborhood.png)](./health-opportunity-neighborhood/index.md)
+
+### [Health Opportunity: What a Neighborhood Makes Easier or Harder](./health-opportunity-neighborhood/index.md)
+
+A Grades 9–12 Callout cityscape revealing how systems shape health opportunity.
+
+[![Youth-Friendly Care](./youth-friendly-care/youth-friendly-care.png)](./youth-friendly-care/index.md)
+
+### [Youth-Friendly Care: Rights, Respect, and Access](./youth-friendly-care/index.md)
+
+A Grades 9–12 Grid guide to privacy, cultural safety, sexual and mental healthcare, and access support.
+
+[![Consent in Context](./consent-in-context/consent-in-context.png)](./consent-in-context/index.md)
+
+### [Consent in Context](./consent-in-context/index.md)
+
+A Grades 9–12 Grid analysis of communication, ambiguity, withdrawal, power, digital choices, and law.
+
+[![Support Without Carrying It Alone](./support-without-carrying-it-alone/support-without-carrying-it-alone.png)](./support-without-carrying-it-alone/index.md)
+
+### [Support Without Carrying It Alone](./support-without-carrying-it-alone/index.md)
+
+A Grades 9–12 Callout journey balancing peer care, urgent help, boundaries, and follow-up.
+
+[![CPR, AED, and the Chain of Survival](./cpr-aed-chain-of-survival/cpr-aed-chain-of-survival.png)](./cpr-aed-chain-of-survival/index.md)
+
+### [CPR, AED, and the Chain of Survival](./cpr-aed-chain-of-survival/index.md)
+
+A Grades 9–12 Callout orientation to the CPR/AED sequence and professional handoff.
+
+[![From Evidence to Health Action](./from-evidence-to-health-action/from-evidence-to-health-action.png)](./from-evidence-to-health-action/index.md)
+
+### [From Evidence to Health Action](./from-evidence-to-health-action/index.md)
+
+A Grades 9–12 Grid studio for ethical, evidence-backed health action.
+
+[![Public Health Influence Map](./public-health-influence-map/public-health-influence-map.png)](./public-health-influence-map/index.md)
+
+### [Public Health Influence Map](./public-health-influence-map/index.md)
+
+A Grades 9–12 Callout systems map of relationships, institutions, place, economics, policy, and advocacy.
+
+[![Mental Health Media Decoder](./mental-health-media-decoder/mental-health-media-decoder.png)](./mental-health-media-decoder/index.md)
+
+### [Mental Health Media Decoder](./mental-health-media-decoder/index.md)
+
+A Grades 9–12 Grid tool for analyzing mental-health representation, evidence, impact, and better messages.
+
+[![Health Goal Feedback Loop](./health-goal-feedback-loop/health-goal-feedback-loop.png)](./health-goal-feedback-loop/index.md)
+
+### [Health Goal Feedback Loop](./health-goal-feedback-loop/index.md)
+
+A Grades 9–12 Callout loop for adaptive, evidence-informed health goals.
+
 ## Additional posters
 
 - [Food Groups](./food-groups/index.md)

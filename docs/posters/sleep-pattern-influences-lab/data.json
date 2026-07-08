@@ -1,0 +1,107 @@
+{
+  "title": "Sleep Pattern Influences Lab",
+  "image": "sleep-pattern-influences-lab.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343"
+  ],
+  "zones": [
+    {
+      "id": "body-clock",
+      "label": "Body Clock",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 19.75,
+      "y2": 99.7,
+      "summary": "The circadian system helps coordinate sleepiness and alertness across the day.",
+      "facts": [
+        "Morning light can help anchor timing.",
+        "Teen sleep timing often shifts later during development."
+      ]
+    },
+    {
+      "id": "light-and-screens",
+      "label": "Light and Screens",
+      "color": "#5D953B",
+      "x1": 20.25,
+      "y1": 0.3,
+      "x2": 39.75,
+      "y2": 99.7,
+      "summary": "Bright evening light can delay signals that support sleep.",
+      "facts": [
+        "Content and notifications can also keep the brain alert.",
+        "A wind-down plan can reduce both light and stimulation."
+      ]
+    },
+    {
+      "id": "schedule-and-stress",
+      "label": "Schedule and Stress",
+      "color": "#D39B1C",
+      "x1": 40.25,
+      "y1": 0.3,
+      "x2": 59.75,
+      "y2": 99.7,
+      "summary": "Irregular schedules, heavy demands, and worry can disrupt sleep.",
+      "facts": [
+        "A realistic routine is more useful than perfection.",
+        "Support may be needed to change school, work, or caregiving barriers."
+      ]
+    },
+    {
+      "id": "caffeine-and-substances",
+      "label": "Caffeine and Substances",
+      "color": "#7453A1",
+      "x1": 60.25,
+      "y1": 0.3,
+      "x2": 79.75,
+      "y2": 99.7,
+      "summary": "Caffeine and other substances can alter alertness and sleep quality.",
+      "facts": [
+        "Effects vary by person, timing, amount, and product.",
+        "Avoid using substances as a substitute for needed sleep."
+      ]
+    },
+    {
+      "id": "sleep-environment",
+      "label": "Sleep Environment",
+      "color": "#C95343",
+      "x1": 80.25,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Light, sound, temperature, comfort, safety, and interruptions affect sleep.",
+      "facts": [
+        "People do not have equal control over their environment.",
+        "Small feasible changes and family support can help."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on the circadian system helps coordinate sleepiness and alertness across the day.",
+      "correct_zone": "body-clock"
+    },
+    {
+      "question": "Which section focuses on bright evening light can delay signals that support sleep.",
+      "correct_zone": "light-and-screens"
+    },
+    {
+      "question": "Which section focuses on irregular schedules, heavy demands, and worry can disrupt sleep.",
+      "correct_zone": "schedule-and-stress"
+    },
+    {
+      "question": "Which section focuses on caffeine and other substances can alter alertness and sleep quality.",
+      "correct_zone": "caffeine-and-substances"
+    },
+    {
+      "question": "Which section focuses on light, sound, temperature, comfort, safety, and interruptions affect sleep.",
+      "correct_zone": "sleep-environment"
+    }
+  ]
+}

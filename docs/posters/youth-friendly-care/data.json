@@ -1,0 +1,107 @@
+{
+  "title": "Youth-Friendly Care: Rights, Respect, and Access",
+  "image": "youth-friendly-care.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343"
+  ],
+  "zones": [
+    {
+      "id": "rights-and-privacy",
+      "label": "Rights and Privacy",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 19.75,
+      "y2": 99.7,
+      "summary": "Youth-friendly care explains privacy, consent, records, and any limits clearly.",
+      "facts": [
+        "Rules vary by age, service, location, and situation.",
+        "Ask the provider what is confidential before sharing."
+      ]
+    },
+    {
+      "id": "culturally-safe-care",
+      "label": "Culturally Safe Care",
+      "color": "#5D953B",
+      "x1": 20.25,
+      "y1": 0.3,
+      "x2": 39.75,
+      "y2": 99.7,
+      "summary": "Respectful care makes room for identity, language, culture, family, and lived experience.",
+      "facts": [
+        "Interpreters should support privacy and accuracy.",
+        "A patient can ask questions or seek a better fit."
+      ]
+    },
+    {
+      "id": "sexual-health",
+      "label": "Sexual Health",
+      "color": "#D39B1C",
+      "x1": 40.25,
+      "y1": 0.3,
+      "x2": 59.75,
+      "y2": 99.7,
+      "summary": "Youth-friendly sexual healthcare is factual, nonjudgmental, inclusive, and private within applicable rules.",
+      "facts": [
+        "Services may include testing, prevention, contraception, or counseling.",
+        "Local rules and access differ."
+      ]
+    },
+    {
+      "id": "mental-health",
+      "label": "Mental Health",
+      "color": "#7453A1",
+      "x1": 60.25,
+      "y1": 0.3,
+      "x2": 79.75,
+      "y2": 99.7,
+      "summary": "Mental-health care can include screening, counseling, treatment, crisis support, and referrals.",
+      "facts": [
+        "Care should explain choices and involve the young person.",
+        "Urgent safety concerns may limit confidentiality."
+      ]
+    },
+    {
+      "id": "access-supports",
+      "label": "Access Supports",
+      "color": "#C95343",
+      "x1": 80.25,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Transportation, cost, hours, disability access, language, telehealth, and navigation affect access.",
+      "facts": [
+        "A school or community navigator may help.",
+        "If one route fails, another support may exist."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on youth-friendly care explains privacy, consent, records, and any limits clearly.",
+      "correct_zone": "rights-and-privacy"
+    },
+    {
+      "question": "Which section focuses on respectful care makes room for identity, language, culture, family, and lived experience.",
+      "correct_zone": "culturally-safe-care"
+    },
+    {
+      "question": "Which section focuses on youth-friendly sexual healthcare is factual, nonjudgmental, inclusive, and private within applicable rules.",
+      "correct_zone": "sexual-health"
+    },
+    {
+      "question": "Which section focuses on mental-health care can include screening, counseling, treatment, crisis support, and referrals.",
+      "correct_zone": "mental-health"
+    },
+    {
+      "question": "Which section focuses on transportation, cost, hours, disability access, language, telehealth, and navigation affect access.",
+      "correct_zone": "access-supports"
+    }
+  ]
+}

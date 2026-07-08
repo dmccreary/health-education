@@ -1,0 +1,107 @@
+{
+  "title": "Digital Boundary Checkpoints",
+  "image": "digital-boundary-checkpoints.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343"
+  ],
+  "zones": [
+    {
+      "id": "notice-pressure",
+      "label": "Notice Pressure",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 19.75,
+      "y2": 99.7,
+      "summary": "Pressure may use urgency, guilt, threats, flattery, secrecy, or repeated requests.",
+      "facts": [
+        "Discomfort is enough reason to pause.",
+        "Manipulation is the responsibility of the person using it."
+      ]
+    },
+    {
+      "id": "state-a-boundary",
+      "label": "State a Boundary",
+      "color": "#5D953B",
+      "x1": 20.25,
+      "y1": 0.3,
+      "x2": 39.75,
+      "y2": 99.7,
+      "summary": "Use a clear statement such as no, stop, or I am not sharing that.",
+      "facts": [
+        "You do not owe a long explanation.",
+        "Leave the conversation when it is safer to do so."
+      ]
+    },
+    {
+      "id": "save-evidence",
+      "label": "Save Evidence",
+      "color": "#D39B1C",
+      "x1": 40.25,
+      "y1": 0.3,
+      "x2": 59.75,
+      "y2": 99.7,
+      "summary": "Preserve relevant messages, usernames, dates, or screenshots when safe.",
+      "facts": [
+        "Do not forward harmful or private content to peers.",
+        "A trusted adult can help preserve evidence appropriately."
+      ]
+    },
+    {
+      "id": "block-or-report",
+      "label": "Block or Report",
+      "color": "#7453A1",
+      "x1": 60.25,
+      "y1": 0.3,
+      "x2": 79.75,
+      "y2": 99.7,
+      "summary": "Use platform, school, or device controls to reduce contact and report abuse.",
+      "facts": [
+        "Blocking is a safety tool, not rudeness.",
+        "A report may need follow-up through another channel."
+      ]
+    },
+    {
+      "id": "get-support",
+      "label": "Get Support",
+      "color": "#C95343",
+      "x1": 80.25,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Tell a trusted adult, school professional, caregiver, or appropriate authority.",
+      "facts": [
+        "Keep telling until someone helps.",
+        "Immediate threats or exploitation require urgent help."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on pressure may use urgency, guilt, threats, flattery, secrecy, or repeated requests.",
+      "correct_zone": "notice-pressure"
+    },
+    {
+      "question": "Which section focuses on use a clear statement such as no, stop, or I am not sharing that.",
+      "correct_zone": "state-a-boundary"
+    },
+    {
+      "question": "Which section focuses on preserve relevant messages, usernames, dates, or screenshots when safe.",
+      "correct_zone": "save-evidence"
+    },
+    {
+      "question": "Which section focuses on use platform, school, or device controls to reduce contact and report abuse.",
+      "correct_zone": "block-or-report"
+    },
+    {
+      "question": "Which section focuses on tell a trusted adult, school professional, caregiver, or appropriate authority.",
+      "correct_zone": "get-support"
+    }
+  ]
+}

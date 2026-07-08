@@ -1,0 +1,153 @@
+{
+  "title": "Stress Signal to Support Network",
+  "orientation": "landscape",
+  "image": "stress-signal-support-network.png",
+  "layout": "top-bottom",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Sleep Changes",
+      "x": 10,
+      "y": 18,
+      "radius": 3.7,
+      "color": "#2468A2",
+      "panel": "top",
+      "hint": "Find the scene that best represents sleep changes.",
+      "description": "Stress can change sleep length, timing, or quality.",
+      "ap_tip": "One change alone does not diagnose a condition. Notice patterns that continue or disrupt daily life."
+    },
+    {
+      "id": 2,
+      "label": "Body Tension",
+      "x": 30,
+      "y": 16,
+      "radius": 3.7,
+      "color": "#5D953B",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents body tension.",
+      "description": "Headaches, tight muscles, or stomach discomfort can accompany stress.",
+      "ap_tip": "Body signals deserve care, not dismissal. A health professional can assess persistent symptoms."
+    },
+    {
+      "id": 3,
+      "label": "Racing Thoughts",
+      "x": 51,
+      "y": 16,
+      "radius": 3.7,
+      "color": "#D39B1C",
+      "panel": "top",
+      "hint": "Find the scene that best represents racing thoughts.",
+      "description": "Worry can make thoughts feel fast, repetitive, or hard to pause.",
+      "ap_tip": "Grounding or paced breathing may create a little space. Support is useful when worry feels unmanageable."
+    },
+    {
+      "id": 4,
+      "label": "Pulling Away",
+      "x": 72,
+      "y": 17,
+      "radius": 3.7,
+      "color": "#7453A1",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents pulling away.",
+      "description": "Withdrawing from usual people or activities can signal distress.",
+      "ap_tip": "Check in with curiosity rather than assumptions. Connection can be gentle and low-pressure."
+    },
+    {
+      "id": 5,
+      "label": "Concentration Difficulty",
+      "x": 91,
+      "y": 21,
+      "radius": 3.7,
+      "color": "#C95343",
+      "panel": "top",
+      "hint": "Find the scene that best represents concentration difficulty.",
+      "description": "Stress can make schoolwork and decisions harder.",
+      "ap_tip": "Smaller steps and fewer distractions can help. Ask for academic support when needed."
+    },
+    {
+      "id": 6,
+      "label": "Mood Changes",
+      "x": 17,
+      "y": 45,
+      "radius": 3.7,
+      "color": "#087A8A",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents mood changes.",
+      "description": "Irritability, sadness, or feeling numb may be stress signals.",
+      "ap_tip": "Feelings are information, not character flaws. Sudden or lasting changes merit support."
+    },
+    {
+      "id": 7,
+      "label": "Restorative Practice",
+      "x": 39,
+      "y": 43,
+      "radius": 3.7,
+      "color": "#2468A2",
+      "panel": "top",
+      "hint": "Find the scene that best represents restorative practice.",
+      "description": "Movement, rest, art, breathing, or time outdoors can support regulation.",
+      "ap_tip": "No single practice works for everyone. Choose safe practices that fit the person and culture."
+    },
+    {
+      "id": 8,
+      "label": "Cultural Healing",
+      "x": 62,
+      "y": 44,
+      "radius": 3.7,
+      "color": "#5D953B",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents cultural healing.",
+      "description": "Cultural traditions and community practices can strengthen coping and belonging.",
+      "ap_tip": "Respect the meaning of a practice to the person. Cultural support can complement professional care."
+    },
+    {
+      "id": 9,
+      "label": "Peer Listening",
+      "x": 84,
+      "y": 47,
+      "radius": 3.7,
+      "color": "#D39B1C",
+      "panel": "top",
+      "hint": "Find the scene that best represents peer listening.",
+      "description": "A peer can listen, validate, and help connect someone to support.",
+      "ap_tip": "Peers do not have to solve the problem. Do not promise secrecy when safety may be at risk."
+    },
+    {
+      "id": 10,
+      "label": "Trusted Adult",
+      "x": 15,
+      "y": 76,
+      "radius": 3.7,
+      "color": "#7453A1",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents trusted adult.",
+      "description": "A trusted adult can help assess needs and take next steps.",
+      "ap_tip": "Keep telling safe adults until someone responds. Examples include family, school, cultural, or community adults."
+    },
+    {
+      "id": 11,
+      "label": "Professional Support",
+      "x": 48,
+      "y": 78,
+      "radius": 3.7,
+      "color": "#C95343",
+      "panel": "top",
+      "hint": "Find the scene that best represents professional support.",
+      "description": "Counselors and health professionals can offer assessment and treatment.",
+      "ap_tip": "Getting help is a strength. A good fit may take more than one attempt."
+    },
+    {
+      "id": 12,
+      "label": "Urgent Crisis Help",
+      "x": 82,
+      "y": 76,
+      "radius": 3.7,
+      "color": "#087A8A",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents urgent crisis help.",
+      "description": "Immediate danger or thoughts of suicide require urgent adult and emergency support.",
+      "ap_tip": "Stay with the person when it is safe to do so. Use local emergency or crisis resources; do not manage it alone."
+    }
+  ]
+}

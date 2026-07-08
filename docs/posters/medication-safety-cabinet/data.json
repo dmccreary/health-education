@@ -1,0 +1,129 @@
+{
+  "title": "Medication Safety Cabinet",
+  "orientation": "landscape",
+  "image": "medication-safety-cabinet.png",
+  "layout": "top-bottom",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Read the Label",
+      "x": 14,
+      "y": 19,
+      "radius": 3.7,
+      "color": "#2468A2",
+      "panel": "top",
+      "hint": "Find the scene that best represents read the label.",
+      "description": "Read the medicine label and directions with a trusted adult when appropriate.",
+      "ap_tip": "Check warnings and active ingredients. Ask a pharmacist about anything unclear."
+    },
+    {
+      "id": 2,
+      "label": "Correct Person",
+      "x": 38,
+      "y": 17,
+      "radius": 3.7,
+      "color": "#5D953B",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents correct person.",
+      "description": "Use only medicine intended for the named person.",
+      "ap_tip": "Bodies and conditions differ. Never use someone else’s prescription."
+    },
+    {
+      "id": 3,
+      "label": "Correct Timing",
+      "x": 67,
+      "y": 18,
+      "radius": 3.7,
+      "color": "#D39B1C",
+      "panel": "top",
+      "hint": "Find the scene that best represents correct timing.",
+      "description": "Follow the prescribed or labeled schedule.",
+      "ap_tip": "Do not double a missed dose unless a professional directs it. Use a safe reminder system."
+    },
+    {
+      "id": 4,
+      "label": "Check Allergies and Interactions",
+      "x": 87,
+      "y": 24,
+      "radius": 3.7,
+      "color": "#7453A1",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents check allergies and interactions.",
+      "description": "Medicines can interact with allergies, other drugs, supplements, alcohol, or health conditions.",
+      "ap_tip": "Share an accurate list with the pharmacist or clinician. Seek help for unexpected reactions."
+    },
+    {
+      "id": 5,
+      "label": "Ask a Professional",
+      "x": 26,
+      "y": 42,
+      "radius": 3.7,
+      "color": "#C95343",
+      "panel": "top",
+      "hint": "Find the scene that best represents ask a professional.",
+      "description": "Pharmacists and clinicians can explain purpose, use, storage, and side effects.",
+      "ap_tip": "Bring questions before starting or stopping medicine. Do not change a prescription on your own."
+    },
+    {
+      "id": 6,
+      "label": "Secure Storage",
+      "x": 51,
+      "y": 45,
+      "radius": 3.7,
+      "color": "#087A8A",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents secure storage.",
+      "description": "Store medicine away from children, pets, and people for whom it was not prescribed.",
+      "ap_tip": "Use locked storage when risk requires it. Follow temperature and moisture directions."
+    },
+    {
+      "id": 7,
+      "label": "Original Container",
+      "x": 76,
+      "y": 46,
+      "radius": 3.7,
+      "color": "#2468A2",
+      "panel": "top",
+      "hint": "Find the scene that best represents original container.",
+      "description": "Keep medicine in its original labeled container unless a professional-approved organizer is used.",
+      "ap_tip": "The label helps identify the medicine and instructions. Avoid loose, unidentified pills."
+    },
+    {
+      "id": 8,
+      "label": "Do Not Share",
+      "x": 16,
+      "y": 74,
+      "radius": 3.7,
+      "color": "#5D953B",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents do not share.",
+      "description": "Do not offer or accept prescription medicine.",
+      "ap_tip": "Sharing can cause harm and may be illegal. Support a friend by connecting them with care."
+    },
+    {
+      "id": 9,
+      "label": "Safe Disposal",
+      "x": 48,
+      "y": 79,
+      "radius": 3.7,
+      "color": "#D39B1C",
+      "panel": "top",
+      "hint": "Find the scene that best represents safe disposal.",
+      "description": "Use a take-back location or local disposal guidance for unused medicine.",
+      "ap_tip": "Do not flush medicine unless official instructions specifically say to. Remove personal information from discarded packaging."
+    },
+    {
+      "id": 10,
+      "label": "Poison or Emergency Help",
+      "x": 82,
+      "y": 76,
+      "radius": 3.7,
+      "color": "#7453A1",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents poison or emergency help.",
+      "description": "Call poison control or emergency services for a suspected overdose, severe reaction, or dangerous mistake.",
+      "ap_tip": "Do not wait for symptoms when advised to call. Bring the container or label information when safe."
+    }
+  ]
+}

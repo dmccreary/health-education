@@ -1,0 +1,126 @@
+{
+  "title": "Consent in Context",
+  "image": "consent-in-context.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343",
+    "#087A8A"
+  ],
+  "zones": [
+    {
+      "id": "clear-communication",
+      "label": "Clear Communication",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 16.42,
+      "y2": 99.7,
+      "summary": "Consent is a clear, voluntary, informed, and specific agreement.",
+      "facts": [
+        "Checking in supports mutual understanding.",
+        "Agreement to one thing is not agreement to everything."
+      ]
+    },
+    {
+      "id": "ambiguity",
+      "label": "Ambiguity",
+      "color": "#5D953B",
+      "x1": 16.92,
+      "y1": 0.3,
+      "x2": 33.08,
+      "y2": 99.7,
+      "summary": "Silence, freezing, uncertainty, or mixed signals are reasons to pause.",
+      "facts": [
+        "Do not guess or pressure.",
+        "Ask clearly and accept no or uncertainty."
+      ]
+    },
+    {
+      "id": "withdrawal",
+      "label": "Withdrawal",
+      "color": "#D39B1C",
+      "x1": 33.58,
+      "y1": 0.3,
+      "x2": 49.75,
+      "y2": 99.7,
+      "summary": "A person can change their mind at any time.",
+      "facts": [
+        "Stopping when consent is withdrawn is required.",
+        "Past agreement does not override a current boundary."
+      ]
+    },
+    {
+      "id": "power-difference",
+      "label": "Power Difference",
+      "color": "#7453A1",
+      "x1": 50.25,
+      "y1": 0.3,
+      "x2": 66.42,
+      "y2": 99.7,
+      "summary": "Authority, age, dependence, status, or fear can limit free choice.",
+      "facts": [
+        "The person with more power has greater responsibility to avoid pressure.",
+        "Seek support when a situation feels unsafe or coercive."
+      ]
+    },
+    {
+      "id": "digital-context",
+      "label": "Digital Context",
+      "color": "#C95343",
+      "x1": 66.92,
+      "y1": 0.3,
+      "x2": 83.08,
+      "y2": 99.7,
+      "summary": "Sharing messages or images requires permission and respect for privacy.",
+      "facts": [
+        "Consent to create is not consent to forward.",
+        "Save evidence and seek help if someone threatens or pressures."
+      ]
+    },
+    {
+      "id": "legal-context",
+      "label": "Legal Context",
+      "color": "#087A8A",
+      "x1": 83.58,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Laws vary by age, relationship, activity, and jurisdiction.",
+      "facts": [
+        "A trusted qualified source can explain local law.",
+        "Ethical respect and clear communication remain essential."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on consent is a clear, voluntary, informed, and specific agreement.",
+      "correct_zone": "clear-communication"
+    },
+    {
+      "question": "Which section focuses on silence, freezing, uncertainty, or mixed signals are reasons to pause.",
+      "correct_zone": "ambiguity"
+    },
+    {
+      "question": "Which section focuses on a person can change their mind at any time.",
+      "correct_zone": "withdrawal"
+    },
+    {
+      "question": "Which section focuses on authority, age, dependence, status, or fear can limit free choice.",
+      "correct_zone": "power-difference"
+    },
+    {
+      "question": "Which section focuses on sharing messages or images requires permission and respect for privacy.",
+      "correct_zone": "digital-context"
+    },
+    {
+      "question": "Which section focuses on laws vary by age, relationship, activity, and jurisdiction.",
+      "correct_zone": "legal-context"
+    }
+  ]
+}

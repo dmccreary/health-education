@@ -1,0 +1,107 @@
+{
+  "title": "Emergency Response Field Guide",
+  "image": "emergency-response-field-guide.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343"
+  ],
+  "zones": [
+    {
+      "id": "check-the-scene",
+      "label": "Check the Scene",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 19.75,
+      "y2": 99.7,
+      "summary": "Pause long enough to notice hazards before approaching.",
+      "facts": [
+        "Protect yourself from traffic, fire, electricity, chemicals, or violence.",
+        "Get an adult and keep others back when the scene is unsafe."
+      ]
+    },
+    {
+      "id": "recognize",
+      "label": "Recognize",
+      "color": "#5D953B",
+      "x1": 20.25,
+      "y1": 0.3,
+      "x2": 39.75,
+      "y2": 99.7,
+      "summary": "Look for unresponsiveness, breathing trouble, severe bleeding, choking, or other urgent signs.",
+      "facts": [
+        "Do not delay help while trying to name the exact condition.",
+        "Use calm observation and share what you see."
+      ]
+    },
+    {
+      "id": "call-for-help",
+      "label": "Call for Help",
+      "color": "#D39B1C",
+      "x1": 40.25,
+      "y1": 0.3,
+      "x2": 59.75,
+      "y2": 99.7,
+      "summary": "Activate a trusted adult and emergency services quickly.",
+      "facts": [
+        "Give the location and describe what is happening.",
+        "Follow dispatcher instructions and send someone to guide responders."
+      ]
+    },
+    {
+      "id": "choking-response",
+      "label": "Choking Response",
+      "color": "#7453A1",
+      "x1": 60.25,
+      "y1": 0.3,
+      "x2": 79.75,
+      "y2": 99.7,
+      "summary": "Severe choking requires immediate trained action and emergency activation.",
+      "facts": [
+        "Age and condition affect the correct response.",
+        "Practice only with qualified instruction; never rehearse forcefully on a person."
+      ]
+    },
+    {
+      "id": "emergency-medication",
+      "label": "Emergency Medication",
+      "color": "#C95343",
+      "x1": 80.25,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Emergency medication should follow the person’s plan and trained adult guidance.",
+      "facts": [
+        "Examples may include epinephrine or rescue inhalers.",
+        "Call emergency services when the plan or symptoms require it."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on pause long enough to notice hazards before approaching.",
+      "correct_zone": "check-the-scene"
+    },
+    {
+      "question": "Which section focuses on look for unresponsiveness, breathing trouble, severe bleeding, choking, or other urgent signs.",
+      "correct_zone": "recognize"
+    },
+    {
+      "question": "Which section focuses on activate a trusted adult and emergency services quickly.",
+      "correct_zone": "call-for-help"
+    },
+    {
+      "question": "Which section focuses on severe choking requires immediate trained action and emergency activation.",
+      "correct_zone": "choking-response"
+    },
+    {
+      "question": "Which section focuses on emergency medication should follow the person’s plan and trained adult guidance.",
+      "correct_zone": "emergency-medication"
+    }
+  ]
+}

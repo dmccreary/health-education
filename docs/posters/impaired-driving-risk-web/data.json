@@ -1,0 +1,129 @@
+{
+  "title": "Impaired Driving Risk Web",
+  "orientation": "landscape",
+  "image": "impaired-driving-risk-web.png",
+  "layout": "top-bottom",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Substance Impairment",
+      "x": 14,
+      "y": 19,
+      "radius": 3.7,
+      "color": "#2468A2",
+      "panel": "top",
+      "hint": "Find the scene that best represents substance impairment.",
+      "description": "Alcohol, cannabis, some medicines, and other drugs can impair driving.",
+      "ap_tip": "Feeling okay does not prove safe driving ability. Mixing substances increases uncertainty."
+    },
+    {
+      "id": 2,
+      "label": "Attention",
+      "x": 38,
+      "y": 17,
+      "radius": 3.7,
+      "color": "#5D953B",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents attention.",
+      "description": "Impairment can narrow, divide, or disrupt attention.",
+      "ap_tip": "Driving requires monitoring several things at once. Distraction and impairment can compound risk."
+    },
+    {
+      "id": 3,
+      "label": "Reaction Time",
+      "x": 67,
+      "y": 18,
+      "radius": 3.7,
+      "color": "#D39B1C",
+      "panel": "top",
+      "hint": "Find the scene that best represents reaction time.",
+      "description": "Impairment can slow the time between noticing a hazard and responding.",
+      "ap_tip": "Road conditions leave little margin for delay. No trick instantly restores safe reaction time."
+    },
+    {
+      "id": 4,
+      "label": "Judgment",
+      "x": 87,
+      "y": 24,
+      "radius": 3.7,
+      "color": "#7453A1",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents judgment.",
+      "description": "Impairment can increase confidence while reducing accurate risk assessment.",
+      "ap_tip": "Plans made before substance use are more reliable. Do not negotiate with an impaired driver."
+    },
+    {
+      "id": 5,
+      "label": "Passenger Influence",
+      "x": 26,
+      "y": 42,
+      "radius": 3.7,
+      "color": "#C95343",
+      "panel": "top",
+      "hint": "Find the scene that best represents passenger influence.",
+      "description": "Passengers can increase pressure or help stop an unsafe trip.",
+      "ap_tip": "Speak up early and recruit others. Do not get into a vehicle with an impaired driver."
+    },
+    {
+      "id": 6,
+      "label": "Seatbelts",
+      "x": 51,
+      "y": 45,
+      "radius": 3.7,
+      "color": "#087A8A",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents seatbelts.",
+      "description": "Every occupant should use a seatbelt on every trip.",
+      "ap_tip": "Seatbelts reduce injury risk but do not make impaired driving safe. Choose the correct restraint for the rider."
+    },
+    {
+      "id": 7,
+      "label": "Alternate Ride",
+      "x": 76,
+      "y": 46,
+      "radius": 3.7,
+      "color": "#2468A2",
+      "panel": "top",
+      "hint": "Find the scene that best represents alternate ride.",
+      "description": "Use a sober driver, caregiver, taxi or rideshare, transit, or a safe place to stay.",
+      "ap_tip": "Plan options and payment before an event. A temporary inconvenience is safer than an impaired trip."
+    },
+    {
+      "id": 8,
+      "label": "Hold the Keys Safely",
+      "x": 16,
+      "y": 74,
+      "radius": 3.7,
+      "color": "#5D953B",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents hold the keys safely.",
+      "description": "A sober friend or adult may help prevent access to a vehicle when it can be done safely.",
+      "ap_tip": "Avoid physical confrontation. Get adult or emergency help if the person may drive anyway."
+    },
+    {
+      "id": 9,
+      "label": "Community and Legal Consequences",
+      "x": 48,
+      "y": 79,
+      "radius": 3.7,
+      "color": "#D39B1C",
+      "panel": "top",
+      "hint": "Find the scene that best represents community and legal consequences.",
+      "description": "Impaired driving can harm people and bring school, family, financial, and legal consequences.",
+      "ap_tip": "Laws vary by jurisdiction. Prevention focuses on safety, not shame."
+    },
+    {
+      "id": 10,
+      "label": "Emergency Response",
+      "x": 82,
+      "y": 76,
+      "radius": 3.7,
+      "color": "#7453A1",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents emergency response.",
+      "description": "Call emergency services for a crash, unresponsive person, breathing danger, or immediate threat on the road.",
+      "ap_tip": "Give location and vehicle information when safe. Do not follow or confront dangerously."
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "title": "Workout Design Studio",
+  "image": "workout-design-studio.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343"
+  ],
+  "zones": [
+    {
+      "id": "goal-and-baseline",
+      "label": "Goal and Baseline",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 19.75,
+      "y2": 99.7,
+      "summary": "Choose a meaningful goal and notice the current starting point.",
+      "facts": [
+        "Goals can focus on skill, energy, consistency, function, or enjoyment.",
+        "Avoid comparing bodies or starting points."
+      ]
+    },
+    {
+      "id": "endurance",
+      "label": "Endurance",
+      "color": "#5D953B",
+      "x1": 20.25,
+      "y1": 0.3,
+      "x2": 39.75,
+      "y2": 99.7,
+      "summary": "Endurance activities challenge the heart, lungs, and sustained movement.",
+      "facts": [
+        "Walking, wheeling, dancing, cycling, swimming, and games can count.",
+        "Increase time or challenge gradually."
+      ]
+    },
+    {
+      "id": "strength",
+      "label": "Strength",
+      "color": "#D39B1C",
+      "x1": 40.25,
+      "y1": 0.3,
+      "x2": 59.75,
+      "y2": 99.7,
+      "summary": "Strength work helps muscles, bones, movement, and daily function.",
+      "facts": [
+        "Technique, supervision, and appropriate resistance matter.",
+        "Extreme loads are not needed for progress."
+      ]
+    },
+    {
+      "id": "mobility",
+      "label": "Mobility",
+      "color": "#7453A1",
+      "x1": 60.25,
+      "y1": 0.3,
+      "x2": 79.75,
+      "y2": 99.7,
+      "summary": "Mobility combines usable range of motion, control, and comfort.",
+      "facts": [
+        "Warm up with movement that fits the activity.",
+        "Stretching should not be forced through pain."
+      ]
+    },
+    {
+      "id": "recovery-and-revision",
+      "label": "Recovery and Revision",
+      "color": "#C95343",
+      "x1": 80.25,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Rest, sleep, nutrition, hydration, and easier days support adaptation.",
+      "facts": [
+        "Pain, illness, fatigue, or schedule changes may require revision.",
+        "A sustainable plan can change."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on choose a meaningful goal and notice the current starting point.",
+      "correct_zone": "goal-and-baseline"
+    },
+    {
+      "question": "Which section focuses on endurance activities challenge the heart, lungs, and sustained movement.",
+      "correct_zone": "endurance"
+    },
+    {
+      "question": "Which section focuses on strength work helps muscles, bones, movement, and daily function.",
+      "correct_zone": "strength"
+    },
+    {
+      "question": "Which section focuses on mobility combines usable range of motion, control, and comfort.",
+      "correct_zone": "mobility"
+    },
+    {
+      "question": "Which section focuses on rest, sleep, nutrition, hydration, and easier days support adaptation.",
+      "correct_zone": "recovery-and-revision"
+    }
+  ]
+}
