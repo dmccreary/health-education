@@ -551,7 +551,7 @@ These interactive infographic posters turn key health concepts into visual, clas
 
     A balanced-plate guide to how much of each food group fills a healthy plate.
 
--   [![Gut Microbiome & Plant Diversity](./gut-microbiome-plants/gut-microbiome-plants.jpg)](./gut-microbiome-plants/index.md)
+-   [![Gut Microbiome & Plant Diversity](./gut-microbiome-plants/gut-microbiome-plants.png)](./gut-microbiome-plants/index.md)
 
     **[Gut Microbiome & Plant Diversity](./gut-microbiome-plants/index.md)**
 
