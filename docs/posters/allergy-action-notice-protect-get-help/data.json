@@ -1,0 +1,92 @@
+{
+  "title": "Allergy Action: Notice, Protect, Get Help",
+  "image": "allergy-action-notice-protect-get-help.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#326A8B",
+    "#4F8A48",
+    "#D68A08",
+    "#C94A36"
+  ],
+  "zones": [
+    {
+      "id": "notice",
+      "label": "Notice Signs",
+      "color": "#326A8B",
+      "x1": 0.3,
+      "y1": 0.3,
+      "x2": 24.7,
+      "y2": 99.5,
+      "summary": "Possible allergy signs can affect skin, eyes, breathing, or digestion.",
+      "facts": [
+        "Itchy eyes, hives, swelling, cough, wheeze, or stomach symptoms deserve attention.",
+        "Students should tell an adult rather than diagnose the cause themselves.",
+        "Symptoms can differ from one person or exposure to another."
+      ]
+    },
+    {
+      "id": "protect",
+      "label": "Stop Exposure",
+      "color": "#4F8A48",
+      "x1": 25.3,
+      "y1": 0.3,
+      "x2": 49.7,
+      "y2": 99.5,
+      "summary": "Move away from the possible allergen and do not eat or touch more.",
+      "facts": [
+        "Set questionable food aside and avoid sharing it.",
+        "Leave an insect area safely after a sting.",
+        "Follow the person’s established allergy plan."
+      ]
+    },
+    {
+      "id": "adult",
+      "label": "Get an Adult",
+      "color": "#D68A08",
+      "x1": 50.3,
+      "y1": 0.3,
+      "x2": 74.7,
+      "y2": 99.5,
+      "summary": "Tell a trusted, trained adult immediately about possible symptoms.",
+      "facts": [
+        "Do not wait to see whether symptoms become severe.",
+        "Share what was eaten, touched, or noticed if known.",
+        "An adult can follow the individual care plan and contact family or professionals."
+      ]
+    },
+    {
+      "id": "emergency",
+      "label": "Emergency Help",
+      "color": "#C94A36",
+      "x1": 75.3,
+      "y1": 0.3,
+      "x2": 99.7,
+      "y2": 99.5,
+      "summary": "Trouble breathing or swelling of the face or throat needs emergency action now.",
+      "facts": [
+        "Get trained adult and emergency help immediately.",
+        "Prescribed emergency medication should be used according to the person’s plan.",
+        "Never leave a person with severe symptoms alone."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on possible allergy signs can affect skin, eyes, breathing, or digestion.",
+      "correct_zone": "notice"
+    },
+    {
+      "question": "Which section focuses on move away from the possible allergen and do not eat or touch more.",
+      "correct_zone": "protect"
+    },
+    {
+      "question": "Which section focuses on tell a trusted, trained adult immediately about possible symptoms.",
+      "correct_zone": "adult"
+    },
+    {
+      "question": "Which section focuses on trouble breathing or swelling of the face or throat needs emergency action now.",
+      "correct_zone": "emergency"
+    }
+  ]
+}

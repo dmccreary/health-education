@@ -1,0 +1,92 @@
+{
+  "title": "From Bias to Belonging",
+  "image": "from-bias-to-belonging.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#326A8B",
+    "#D68A08",
+    "#C95B4A",
+    "#5D8A25"
+  ],
+  "zones": [
+    {
+      "id": "recognize",
+      "label": "Recognize Bias",
+      "color": "#326A8B",
+      "x1": 0.3,
+      "y1": 0.3,
+      "x2": 24.7,
+      "y2": 99.5,
+      "summary": "Notice when a judgment rests on an assumption instead of real evidence.",
+      "facts": [
+        "Bias can be quick and unintentional.",
+        "An assumption about ability or interests may come from very limited information.",
+        "Recognition is for learning and correction, not shame."
+      ]
+    },
+    {
+      "id": "question",
+      "label": "Question Prejudice",
+      "color": "#D68A08",
+      "x1": 25.3,
+      "y1": 0.3,
+      "x2": 49.7,
+      "y2": 99.5,
+      "summary": "Challenge fixed negative opinions by seeking facts and knowing people as individuals.",
+      "facts": [
+        "Prejudice is stronger and more fixed than a quick bias.",
+        "Ask what evidence is missing or ignored.",
+        "Real stories and relationships can correct oversimplified beliefs."
+      ]
+    },
+    {
+      "id": "interrupt",
+      "label": "Interrupt Harm",
+      "color": "#C95B4A",
+      "x1": 50.3,
+      "y1": 0.3,
+      "x2": 74.7,
+      "y2": 99.5,
+      "summary": "Respond safely when assumptions become teasing, exclusion, or bullying.",
+      "facts": [
+        "A calm interruption or distraction can help when it is safe.",
+        "Include the person targeted and get trusted-adult support.",
+        "Bullying should always be reported; students do not have to solve it alone."
+      ]
+    },
+    {
+      "id": "belonging",
+      "label": "Create Belonging",
+      "color": "#5D8A25",
+      "x1": 75.3,
+      "y1": 0.3,
+      "x2": 99.7,
+      "y2": 99.5,
+      "summary": "Design spaces and activities where different people can participate and be valued.",
+      "facts": [
+        "Accessibility is part of inclusion, not an afterthought.",
+        "Curiosity and respect make room for cultural differences.",
+        "Belonging grows through repeated choices, shared voice, and fair treatment."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Where do you first notice that a judgment lacks real evidence?",
+      "correct_zone": "recognize"
+    },
+    {
+      "question": "Where do you challenge a fixed negative opinion with facts and individual stories?",
+      "correct_zone": "question"
+    },
+    {
+      "question": "Where do you respond safely to teasing, exclusion, or bullying?",
+      "correct_zone": "interrupt"
+    },
+    {
+      "question": "Where do you intentionally design participation and shared voice?",
+      "correct_zone": "belonging"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "title": "The Empathy Bridge",
+  "image": "empathy-bridge.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#C94A36",
+    "#D68A08",
+    "#087A8A",
+    "#60439A"
+  ],
+  "zones": [
+    {
+      "id": "notice",
+      "label": "Notice",
+      "color": "#C94A36",
+      "x1": 0.3,
+      "y1": 0.3,
+      "x2": 24.7,
+      "y2": 99.5,
+      "summary": "Noticing is the first step: pay attention to who may need connection.",
+      "facts": [
+        "Look for facial expressions, posture, and who is sitting apart.",
+        "Notice without assuming you already know the whole story.",
+        "A quiet change can be worth a kind check-in."
+      ]
+    },
+    {
+      "id": "imagine",
+      "label": "Imagine",
+      "color": "#D68A08",
+      "x1": 25.3,
+      "y1": 0.3,
+      "x2": 49.7,
+      "y2": 99.5,
+      "summary": "Pause to consider how the situation might feel from another point of view.",
+      "facts": [
+        "Empathy means trying to understand, not claiming to know exactly.",
+        "Your first guess may be incomplete, so stay curious.",
+        "Different people can feel differently in the same situation."
+      ]
+    },
+    {
+      "id": "ask-listen",
+      "label": "Ask and Listen",
+      "color": "#087A8A",
+      "x1": 50.3,
+      "y1": 0.3,
+      "x2": 74.7,
+      "y2": 99.5,
+      "summary": "A respectful question and genuine listening replace guesses with understanding.",
+      "facts": [
+        "Try: “Would you like to tell me what happened?”",
+        "Listen without interrupting or rushing to fix everything.",
+        "Words, tone, and body language can all offer clues."
+      ]
+    },
+    {
+      "id": "include-act",
+      "label": "Include and Act",
+      "color": "#60439A",
+      "x1": 75.3,
+      "y1": 0.3,
+      "x2": 99.7,
+      "y2": 99.5,
+      "summary": "Use what you learned to include, support, or connect someone with help.",
+      "facts": [
+        "Invite rather than pressure.",
+        "Make activities accessible and welcome different ways of participating.",
+        "Bullying, repeated exclusion, or safety concerns belong with a trusted adult."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which stage begins by observing who might need connection?",
+      "correct_zone": "notice"
+    },
+    {
+      "question": "Which stage asks you to consider another point of view?",
+      "correct_zone": "imagine"
+    },
+    {
+      "question": "Which stage replaces guessing with a respectful question?",
+      "correct_zone": "ask-listen"
+    },
+    {
+      "question": "Which stage turns caring into welcoming or helpful action?",
+      "correct_zone": "include-act"
+    }
+  ]
+}

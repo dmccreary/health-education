@@ -1,0 +1,112 @@
+{
+  "title": "Calm Is More Than One Thing",
+  "image": "calm-more-than-one-thing.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#326A8B",
+    "#C95B4A",
+    "#7B4F9D",
+    "#4F8A48",
+    "#C88A21"
+  ],
+  "zones": [
+    {
+      "id": "breathing",
+      "label": "Breathing",
+      "color": "#326A8B",
+      "x1": 0.3,
+      "y1": 0.3,
+      "x2": 19.7,
+      "y2": 99.5,
+      "summary": "Slow breathing can give the body and thinking brain a moment to settle.",
+      "facts": [
+        "Notice the feeling rather than hiding it.",
+        "A few comfortable, unforced breaths can slow the rush to react.",
+        "Breathing is one option, not a test everyone must do the same way."
+      ]
+    },
+    {
+      "id": "movement",
+      "label": "Movement",
+      "color": "#C95B4A",
+      "x1": 20.3,
+      "y1": 0.3,
+      "x2": 39.7,
+      "y2": 99.5,
+      "summary": "Walking, stretching, dance, sport, or other movement can help release tension.",
+      "facts": [
+        "Choose movement that is safe and accessible for your body.",
+        "Some people prefer energetic movement; others prefer gentle motion.",
+        "Movement traditions can also connect people with culture and community."
+      ]
+    },
+    {
+      "id": "art-music",
+      "label": "Art and Music",
+      "color": "#7B4F9D",
+      "x1": 40.3,
+      "y1": 0.3,
+      "x2": 59.7,
+      "y2": 99.5,
+      "summary": "Drawing, making rhythm, singing, or listening can give feelings a safe form.",
+      "facts": [
+        "Art can express something before words are ready.",
+        "Rhythm and music are calming practices in many communities.",
+        "The goal is expression and regulation, not artistic perfection."
+      ]
+    },
+    {
+      "id": "nature",
+      "label": "Nature",
+      "color": "#4F8A48",
+      "x1": 60.3,
+      "y1": 0.3,
+      "x2": 79.7,
+      "y2": 99.5,
+      "summary": "Outdoor time can create sensory space for reflection and grounding.",
+      "facts": [
+        "Trees, water, gardens, and fresh air can help attention reset.",
+        "Connection to land carries deep meaning in many cultures.",
+        "Choose a safe place and a practice that fits your family."
+      ]
+    },
+    {
+      "id": "connection",
+      "label": "Connection",
+      "color": "#C88A21",
+      "x1": 80.3,
+      "y1": 0.3,
+      "x2": 99.7,
+      "y2": 99.5,
+      "summary": "Supportive people, shared traditions, prayer, reflection, and community can restore steadiness.",
+      "facts": [
+        "Talking with a trusted person can reduce isolation.",
+        "Family and cultural practices are valid sources of coping and belonging.",
+        "If distress keeps interfering with daily life, culturally respectful professional help can join the support network."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which room uses comfortable breaths to make space before reacting?",
+      "correct_zone": "breathing"
+    },
+    {
+      "question": "Which room includes walking, stretching, dance, or sport?",
+      "correct_zone": "movement"
+    },
+    {
+      "question": "Which room gives feelings form through drawing, rhythm, or listening?",
+      "correct_zone": "art-music"
+    },
+    {
+      "question": "Which room uses safe outdoor sensory space for grounding?",
+      "correct_zone": "nature"
+    },
+    {
+      "question": "Which room includes trusted people, traditions, prayer, or community support?",
+      "correct_zone": "connection"
+    }
+  ]
+}

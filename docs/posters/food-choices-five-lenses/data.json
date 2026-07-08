@@ -1,0 +1,112 @@
+{
+  "title": "Food Choices Through Five Lenses",
+  "image": "food-choices-five-lenses.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#123B63",
+    "#4B294F",
+    "#B74B0E",
+    "#087A8A",
+    "#3F6F20"
+  ],
+  "zones": [
+    {
+      "id": "label",
+      "label": "Label Evidence",
+      "color": "#123B63",
+      "x1": 0.3,
+      "y1": 0.3,
+      "x2": 19.7,
+      "y2": 99.5,
+      "summary": "Labels provide structured evidence about a packaged food.",
+      "facts": [
+        "Start with serving information before comparing nutrient amounts.",
+        "Added sugars, sodium, fats, protein, and micronutrients can answer different questions.",
+        "A label describes the product; it does not decide the whole meal."
+      ]
+    },
+    {
+      "id": "marketing",
+      "label": "Marketing Claims",
+      "color": "#4B294F",
+      "x1": 20.3,
+      "y1": 0.3,
+      "x2": 39.7,
+      "y2": 99.5,
+      "summary": "Marketing shapes attention and expectations, but it is not neutral evidence.",
+      "facts": [
+        "Packaging can use color, placement, health halos, and testimonials.",
+        "Check specific claims against the label and reliable sources.",
+        "Ask who benefits if the claim changes your purchase."
+      ]
+    },
+    {
+      "id": "culture",
+      "label": "Cultural Guidance",
+      "color": "#B74B0E",
+      "x1": 40.3,
+      "y1": 0.3,
+      "x2": 59.7,
+      "y2": 99.5,
+      "summary": "Family and cultural traditions carry knowledge, identity, taste, and patterns of balance.",
+      "facts": [
+        "Dietary guidance takes many valid forms.",
+        "One meal can connect people with family and community.",
+        "Avoid judging traditions through a single universal plate."
+      ]
+    },
+    {
+      "id": "access",
+      "label": "Food Access",
+      "color": "#087A8A",
+      "x1": 60.3,
+      "y1": 0.3,
+      "x2": 79.7,
+      "y2": 99.5,
+      "summary": "Cost, transportation, time, availability, storage, and kitchens shape practical choices.",
+      "facts": [
+        "A choice cannot be separated from what is reachable and affordable.",
+        "Community initiatives can reduce barriers.",
+        "Health education should inform without blaming people for constraints."
+      ]
+    },
+    {
+      "id": "sovereignty",
+      "label": "Food Sovereignty",
+      "color": "#3F6F20",
+      "x1": 80.3,
+      "y1": 0.3,
+      "x2": 99.7,
+      "y2": 99.5,
+      "summary": "Food sovereignty concerns communities’ power to shape their own food systems.",
+      "facts": [
+        "It includes land, water, seeds, traditional knowledge, and decision-making.",
+        "It is deeper than simply choosing local food.",
+        "Indigenous and community leadership should define their own priorities."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on labels provide structured evidence about a packaged food.",
+      "correct_zone": "label"
+    },
+    {
+      "question": "Which section focuses on marketing shapes attention and expectations, but it is not neutral evidence.",
+      "correct_zone": "marketing"
+    },
+    {
+      "question": "Which section focuses on family and cultural traditions carry knowledge, identity, taste, and patterns of balance.",
+      "correct_zone": "culture"
+    },
+    {
+      "question": "Which section focuses on cost, transportation, time, availability, storage, and kitchens shape practical choices.",
+      "correct_zone": "access"
+    },
+    {
+      "question": "Which section focuses on food sovereignty concerns communities’ power to shape their own food systems.",
+      "correct_zone": "sovereignty"
+    }
+  ]
+}

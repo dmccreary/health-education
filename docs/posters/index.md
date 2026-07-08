@@ -9,6 +9,126 @@ These wide-landscape posters turn key health concepts into visual, classroom-rea
 
 ## Interactive infographic
 
+[![Sleep: The Overnight Repair Shop](./sleep-overnight-repair-shop/sleep-overnight-repair-shop.png)](./sleep-overnight-repair-shop/index.md)
+
+### [Sleep: The Overnight Repair Shop](./sleep-overnight-repair-shop/index.md)
+
+A Grade 5 Callout cutaway connecting sleep with memory, growth, emotion, immunity, energy, and attention.
+
+[![The Fitness Component Field Day](./fitness-component-field-day/fitness-component-field-day.png)](./fitness-component-field-day/index.md)
+
+### [The Fitness Component Field Day](./fitness-component-field-day/index.md)
+
+A Grade 5 Grid field day comparing endurance, strength, flexibility, and balance and coordination.
+
+[![Allergy Action: Notice, Protect, Get Help](./allergy-action-notice-protect-get-help/allergy-action-notice-protect-get-help.png)](./allergy-action-notice-protect-get-help/index.md)
+
+### [Allergy Action: Notice, Protect, Get Help](./allergy-action-notice-protect-get-help/index.md)
+
+A Grade 5 Grid response guide for recognizing symptoms, reducing exposure, getting an adult, and treating breathing trouble as urgent.
+
+[![Consent and Coercion Are Not the Same](./consent-coercion-not-same/consent-coercion-not-same.png)](./consent-coercion-not-same/index.md)
+
+### [Consent and Coercion Are Not the Same](./consent-coercion-not-same/index.md)
+
+A Grade 5 Grid comparison of voluntary agreement, uncertainty, boundaries, and pressure.
+
+[![Upstander Pathways](./upstander-pathways/upstander-pathways.png)](./upstander-pathways/index.md)
+
+### [Upstander Pathways](./upstander-pathways/index.md)
+
+A Grade 5 Callout panorama of safe ways to include, interrupt, redirect, report, and support afterward.
+
+[![Digital Relationship Control Room](./digital-relationship-control-room/digital-relationship-control-room.png)](./digital-relationship-control-room/index.md)
+
+### [Digital Relationship Control Room](./digital-relationship-control-room/index.md)
+
+A Grade 5 Grid control room covering privacy, pressure, harm, reporting, and safe exit and support.
+
+[![Choices, Consequences, and Course Corrections](./choices-consequences-course-corrections/choices-consequences-course-corrections.png)](./choices-consequences-course-corrections/index.md)
+
+### [Choices, Consequences, and Course Corrections](./choices-consequences-course-corrections/index.md)
+
+A Grade 5 Callout trail map connecting influences, options, consequences, reflection, and flexible goals.
+
+[![Food Choices Through Five Lenses](./food-choices-five-lenses/food-choices-five-lenses.png)](./food-choices-five-lenses/index.md)
+
+### [Food Choices Through Five Lenses](./food-choices-five-lenses/index.md)
+
+A Grades 6–8 Grid analysis of label evidence, marketing, culture, access, and food sovereignty.
+
+[![Consent Communication: Clear, Ongoing, Reversible](./consent-communication-clear-ongoing-reversible/consent-communication-clear-ongoing-reversible.png)](./consent-communication-clear-ongoing-reversible/index.md)
+
+### [Consent Communication: Clear, Ongoing, Reversible](./consent-communication-clear-ongoing-reversible/index.md)
+
+A Grades 6–8 Grid comparison of clear agreement, check-ins, uncertainty, withdrawal, and coercion.
+
+[![A Teen's Map to Health Care](./teen-map-health-care/teen-map-health-care.png)](./teen-map-health-care/index.md)
+
+### [A Teen's Map to Health Care](./teen-map-health-care/index.md)
+
+A Grades 6–8 Callout town map connecting services with transportation, language, cost, access, and follow-up support.
+
+[![The Empathy Bridge](./empathy-bridge/empathy-bridge.png)](./empathy-bridge/index.md)
+
+### [The Empathy Bridge](./empathy-bridge/index.md)
+
+A Grade 3 Grid poster that moves from noticing and imagining to listening and inclusive action.
+
+[![Before You Send](./before-you-send/before-you-send.png)](./before-you-send/index.md)
+
+### [Before You Send](./before-you-send/index.md)
+
+A Grade 3 Grid checkpoint for privacy, impact, permission, and thoughtful digital choices.
+
+[![Health Information Detective Desk](./health-information-detective-desk/health-information-detective-desk.png)](./health-information-detective-desk/index.md)
+
+### [Health Information Detective Desk](./health-information-detective-desk/index.md)
+
+A Grade 3 Grid investigation of expertise, accountability, evidence, motive, date, and context.
+
+[![Nutrient Crew: Different Jobs, One Body](./nutrient-crew-different-jobs-one-body/nutrient-crew-different-jobs-one-body.png)](./nutrient-crew-different-jobs-one-body/index.md)
+
+### [Nutrient Crew: Different Jobs, One Body](./nutrient-crew-different-jobs-one-body/index.md)
+
+A Grade 4 Grid body-city where carbohydrates, protein, fats, micronutrients, and water work together.
+
+[![Build a Balanced Meal from Label Clues](./build-balanced-meal-label-clues/build-balanced-meal-label-clues.png)](./build-balanced-meal-label-clues/index.md)
+
+### [Build a Balanced Meal from Label Clues](./build-balanced-meal-label-clues/index.md)
+
+A Grade 4 Callout panorama linking package evidence with varied foods, hydration, culture, and flexible balance.
+
+[![Three Kinds of Health Defense](./three-kinds-health-defense/three-kinds-health-defense.png)](./three-kinds-health-defense/index.md)
+
+### [Three Kinds of Health Defense](./three-kinds-health-defense/index.md)
+
+A Grade 4 Grid comparison of infectious disease prevention, non-infectious condition support, and allergy safety.
+
+[![Pressure Escape Route](./pressure-escape-route/pressure-escape-route.png)](./pressure-escape-route/index.md)
+
+### [Pressure Escape Route](./pressure-escape-route/index.md)
+
+A Grade 4 Callout route through awareness, refusal choices, public exits, and trusted support.
+
+[![From Bias to Belonging](./from-bias-to-belonging/from-bias-to-belonging.png)](./from-bias-to-belonging/index.md)
+
+### [From Bias to Belonging](./from-bias-to-belonging/index.md)
+
+A Grade 4 Grid journey from recognizing unfair assumptions to interrupting harm and designing inclusion.
+
+[![Calm Is More Than One Thing](./calm-more-than-one-thing/calm-more-than-one-thing.png)](./calm-more-than-one-thing/index.md)
+
+### [Calm Is More Than One Thing](./calm-more-than-one-thing/index.md)
+
+A Grade 4 Grid pavilion honoring breathing, movement, creative expression, nature, and connection.
+
+[![Can I Trust This Health Claim?](./can-i-trust-this-health-claim/can-i-trust-this-health-claim.png)](./can-i-trust-this-health-claim/index.md)
+
+### [Can I Trust This Health Claim?](./can-i-trust-this-health-claim/index.md)
+
+A Grade 4 Grid testing studio for evidence, expertise, sales motive, recency, and personal fit.
+
 [![Drink Detective Lab](./drink-detective-lab/drink-detective-lab.png)](./drink-detective-lab/index.md)
 
 ### [Drink Detective Lab](./drink-detective-lab/index.md)

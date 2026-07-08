@@ -1,0 +1,92 @@
+{
+  "title": "Consent and Coercion Are Not the Same",
+  "image": "consent-coercion-not-same.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#4F8A48",
+    "#D68A08",
+    "#087A8A",
+    "#60439A"
+  ],
+  "zones": [
+    {
+      "id": "yes",
+      "label": "Freely Given Yes",
+      "color": "#4F8A48",
+      "x1": 0.3,
+      "y1": 0.3,
+      "x2": 24.7,
+      "y2": 99.5,
+      "summary": "Consent is a clear, voluntary, comfortable agreement without pressure.",
+      "facts": [
+        "Enthusiasm and participation can show comfort.",
+        "A yes applies to the specific activity and moment.",
+        "Consent remains valid only while the person continues to agree freely."
+      ]
+    },
+    {
+      "id": "pause",
+      "label": "Uncertain or Paused",
+      "color": "#D68A08",
+      "x1": 25.3,
+      "y1": 0.3,
+      "x2": 49.7,
+      "y2": 99.5,
+      "summary": "Hesitation or mixed signals mean stop and check in.",
+      "facts": [
+        "Silence is not permission.",
+        "A respectful person makes room for a real choice.",
+        "When the answer is unclear, pause the activity."
+      ]
+    },
+    {
+      "id": "boundary",
+      "label": "Clear Boundary",
+      "color": "#087A8A",
+      "x1": 50.3,
+      "y1": 0.3,
+      "x2": 74.7,
+      "y2": 99.5,
+      "summary": "No, stop, or a changed mind must be respected immediately.",
+      "facts": [
+        "A boundary does not need an explanation.",
+        "Anyone can change their mind at any time.",
+        "Respecting a boundary protects trust and safety."
+      ]
+    },
+    {
+      "id": "coercion",
+      "label": "Pressure or Coercion",
+      "color": "#60439A",
+      "x1": 75.3,
+      "y1": 0.3,
+      "x2": 99.7,
+      "y2": 99.5,
+      "summary": "Pressure, guilt, threats, secrecy, or misuse of power are not consent.",
+      "facts": [
+        "Repeated asking after no is pressure.",
+        "Coercion removes the freedom needed for genuine agreement.",
+        "Leave when possible and connect with a trusted adult."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on consent is a clear, voluntary, comfortable agreement without pressure.",
+      "correct_zone": "yes"
+    },
+    {
+      "question": "Which section focuses on hesitation or mixed signals mean stop and check in.",
+      "correct_zone": "pause"
+    },
+    {
+      "question": "Which section focuses on no, stop, or a changed mind must be respected immediately.",
+      "correct_zone": "boundary"
+    },
+    {
+      "question": "Which section focuses on pressure, guilt, threats, secrecy, or misuse of power are not consent.",
+      "correct_zone": "coercion"
+    }
+  ]
+}

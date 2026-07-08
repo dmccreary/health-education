@@ -1,0 +1,112 @@
+{
+  "title": "Nutrient Crew: Different Jobs, One Body",
+  "image": "nutrient-crew-different-jobs-one-body.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#D68A08",
+    "#C94A36",
+    "#5D8A25",
+    "#087A8A",
+    "#168CC8"
+  ],
+  "zones": [
+    {
+      "id": "carbohydrates",
+      "label": "Carbohydrates",
+      "color": "#D68A08",
+      "x1": 0.3,
+      "y1": 0.3,
+      "x2": 19.7,
+      "y2": 99.5,
+      "summary": "Carbohydrates are the body’s first source of quick, usable energy.",
+      "facts": [
+        "The brain and active muscles rely heavily on glucose from carbohydrates.",
+        "Whole grains, fruits, vegetables, rice, oats, and pasta are familiar sources.",
+        "Fiber-rich carbohydrate foods also support digestion and lasting fullness."
+      ]
+    },
+    {
+      "id": "protein",
+      "label": "Protein",
+      "color": "#C94A36",
+      "x1": 20.3,
+      "y1": 0.3,
+      "x2": 39.7,
+      "y2": 99.5,
+      "summary": "Protein supplies building blocks for growth and repair.",
+      "facts": [
+        "Amino acids help build new cells and repair tissue.",
+        "Beans, lentils, eggs, fish, poultry, nuts, dairy, and alternatives can provide protein.",
+        "Protein is construction material as well as a nutrient—not the body’s first quick fuel."
+      ]
+    },
+    {
+      "id": "fats",
+      "label": "Fats",
+      "color": "#5D8A25",
+      "x1": 40.3,
+      "y1": 0.3,
+      "x2": 59.7,
+      "y2": 99.5,
+      "summary": "Fats provide long-lasting energy, protection, warmth, and vitamin absorption.",
+      "facts": [
+        "The body needs fat; it is not a nutrient to eliminate.",
+        "Nuts, seeds, avocado, oils, and fatty fish provide useful fats.",
+        "Balance and variety matter more than labeling one food good or bad."
+      ]
+    },
+    {
+      "id": "vitamins-minerals",
+      "label": "Vitamins and Minerals",
+      "color": "#087A8A",
+      "x1": 60.3,
+      "y1": 0.3,
+      "x2": 79.7,
+      "y2": 99.5,
+      "summary": "Micronutrients are needed in small amounts for many specialized body jobs.",
+      "facts": [
+        "Calcium supports bones and teeth; iron helps blood carry oxygen.",
+        "Different vitamins support healing, immunity, eyes, skin, and more.",
+        "Variety across fruits, vegetables, grains, dairy, and alternatives helps cover needs."
+      ]
+    },
+    {
+      "id": "water",
+      "label": "Water",
+      "color": "#168CC8",
+      "x1": 80.3,
+      "y1": 0.3,
+      "x2": 99.7,
+      "y2": 99.5,
+      "summary": "Water supports nearly every body system.",
+      "facts": [
+        "It helps regulate temperature and transport nutrients.",
+        "Water cushions joints and helps remove waste.",
+        "Regular drinking is especially useful before and after active play."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which department is the first source of quick usable energy?",
+      "correct_zone": "carbohydrates"
+    },
+    {
+      "question": "Which department supplies building blocks for growth and repair?",
+      "correct_zone": "protein"
+    },
+    {
+      "question": "Which department supports long-lasting energy, protection, and vitamin absorption?",
+      "correct_zone": "fats"
+    },
+    {
+      "question": "Which department includes calcium and iron for specialized jobs?",
+      "correct_zone": "vitamins-minerals"
+    },
+    {
+      "question": "Which department cools, transports, cushions, and helps remove waste?",
+      "correct_zone": "water"
+    }
+  ]
+}

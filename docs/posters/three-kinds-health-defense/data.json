@@ -1,0 +1,72 @@
+{
+  "title": "Three Kinds of Health Defense",
+  "image": "three-kinds-health-defense.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#087A8A",
+    "#60439A",
+    "#D68A08"
+  ],
+  "zones": [
+    {
+      "id": "infectious",
+      "label": "Infectious",
+      "color": "#087A8A",
+      "x1": 0.3,
+      "y1": 0.3,
+      "x2": 33,
+      "y2": 99.5,
+      "summary": "Infectious diseases are caused by germs and can spread between hosts.",
+      "facts": [
+        "Handwashing, covered coughs, ventilation, safe food, and staying home when ill can block spread.",
+        "Vaccines help the immune system recognize specific germs.",
+        "The useful question is: what pathway could carry this germ?"
+      ]
+    },
+    {
+      "id": "non-infectious",
+      "label": "Non-Infectious",
+      "color": "#60439A",
+      "x1": 33.6,
+      "y1": 0.3,
+      "x2": 66.4,
+      "y2": 99.5,
+      "summary": "Non-infectious conditions are not caused by germs and cannot be caught from another person.",
+      "facts": [
+        "Causes may involve genetics, environment, health behaviors, or a combination.",
+        "Support can include movement, food, sleep, monitoring, and medical management.",
+        "A classmate’s asthma or diabetes is never contagious."
+      ]
+    },
+    {
+      "id": "allergies",
+      "label": "Allergies",
+      "color": "#D68A08",
+      "x1": 67,
+      "y1": 0.3,
+      "x2": 99.7,
+      "y2": 99.5,
+      "summary": "Allergy safety combines avoiding known allergens, following a plan, and getting help for symptoms.",
+      "facts": [
+        "Read labels and respect school allergy plans.",
+        "Tell a trusted adult about possible symptoms.",
+        "Trouble breathing or face or throat swelling needs emergency help immediately."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which bay focuses on blocking pathways used by germs?",
+      "correct_zone": "infectious"
+    },
+    {
+      "question": "Which bay covers conditions that cannot spread from person to person?",
+      "correct_zone": "non-infectious"
+    },
+    {
+      "question": "Which bay includes avoiding known triggers and recognizing urgent breathing symptoms?",
+      "correct_zone": "allergies"
+    }
+  ]
+}
