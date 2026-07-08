@@ -1,0 +1,105 @@
+{
+  "title": "Goal Trail Map",
+  "orientation": "landscape",
+  "image": "goal-trail-map.png",
+  "layout": "top-bottom",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Choose One Goal",
+      "x": 8,
+      "y": 37,
+      "radius": 4,
+      "color": "#2D8A4E",
+      "panel": "bottom",
+      "hint": "A child studies several icon-only trail choices at the starting point.",
+      "description": "A useful personal goal is specific, realistic, and connected to something the student values.",
+      "ap_tip": "Choose one focus instead of changing everything at once."
+    },
+    {
+      "id": 2,
+      "label": "Take a Small First Action",
+      "x": 23,
+      "y": 73,
+      "radius": 4,
+      "color": "#1389A6",
+      "panel": "top",
+      "hint": "The child prepares a water bottle and walking shoes beside the stream.",
+      "description": "Small repeatable actions make a goal easier to begin.",
+      "ap_tip": "A first step should be possible today or this week."
+    },
+    {
+      "id": 3,
+      "label": "Invite a Helper",
+      "x": 33,
+      "y": 30,
+      "radius": 4,
+      "color": "#E07B39",
+      "panel": "bottom",
+      "hint": "A supportive family member joins the trail.",
+      "description": "Trusted adults, family, and friends can remind, model, listen, or make time.",
+      "ap_tip": "Ask for the kind of support you actually want."
+    },
+    {
+      "id": 4,
+      "label": "Adjust Around Obstacles",
+      "x": 43,
+      "y": 69,
+      "radius": 4,
+      "color": "#6A3FB5",
+      "panel": "top",
+      "hint": "A fallen log blocks one route while another safe path remains open.",
+      "description": "Obstacles are information, not proof that a goal failed.",
+      "ap_tip": "Change the plan while keeping the purpose."
+    },
+    {
+      "id": 5,
+      "label": "Check Progress",
+      "x": 58,
+      "y": 29,
+      "radius": 4,
+      "color": "#C7164E",
+      "panel": "bottom",
+      "hint": "The child reviews an icon-only check-in board at an overlook.",
+      "description": "A check-in asks what happened, what helped, and what needs adjustment.",
+      "ap_tip": "Progress can be uneven and still be real."
+    },
+    {
+      "id": 6,
+      "label": "Notice Feelings",
+      "x": 63,
+      "y": 68,
+      "radius": 4,
+      "color": "#168A7A",
+      "panel": "top",
+      "hint": "The child pauses among symbols of frustration, pride, and renewed calm.",
+      "description": "Goals can bring mixed feelings. Naming them helps students respond rather than quit automatically.",
+      "ap_tip": "Share strong or lasting feelings with a trusted adult."
+    },
+    {
+      "id": 7,
+      "label": "Learn from Positive Models",
+      "x": 82,
+      "y": 30,
+      "radius": 4,
+      "color": "#D19319",
+      "panel": "bottom",
+      "hint": "A trusted adult demonstrates and encourages without taking over.",
+      "description": "Positive models show what a healthy action can look like.",
+      "ap_tip": "A model supports choice; they do not control the goal."
+    },
+    {
+      "id": 8,
+      "label": "Celebrate and Choose the Next Step",
+      "x": 88,
+      "y": 68,
+      "radius": 4,
+      "color": "#3A66A7",
+      "panel": "top",
+      "hint": "The child celebrates effort beside several icon stones for what comes next.",
+      "description": "Celebration recognizes effort, learning, and support—not just a perfect finish.",
+      "ap_tip": "Reflect, then keep, revise, or replace the next action."
+    }
+  ]
+}

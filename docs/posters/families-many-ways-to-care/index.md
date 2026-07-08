@@ -1,6 +1,7 @@
 ---
 title: Families — Many Ways to Care
 description: A Kindergarten interactive poster showing varied families through acts of care, safety, inclusion, comfort, and belonging.
+image: posters/families-many-ways-to-care/families-many-ways-to-care.png
 hide:
   - toc
 ---

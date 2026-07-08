@@ -9,6 +9,66 @@ These wide-landscape posters turn key health concepts into visual, classroom-rea
 
 ## Interactive infographic
 
+[![Drink Detective Lab](./drink-detective-lab/drink-detective-lab.png)](./drink-detective-lab/index.md)
+
+### [Drink Detective Lab](./drink-detective-lab/index.md)
+
+A Grade 2 Grid investigation of water, nourishing drinks, added sugar, and caffeine.
+
+[![Kitchen-to-Lunchbox Safety Chain](./kitchen-lunchbox-safety-chain/kitchen-lunchbox-safety-chain.png)](./kitchen-lunchbox-safety-chain/index.md)
+
+### [Kitchen-to-Lunchbox Safety Chain](./kitchen-lunchbox-safety-chain/index.md)
+
+A Grade 2 Callout panorama following twelve food-safety practices from preparation through lunch.
+
+[![The Conflict Toolbox](./conflict-toolbox/conflict-toolbox.png)](./conflict-toolbox/index.md)
+
+### [The Conflict Toolbox](./conflict-toolbox/index.md)
+
+A Grade 2 Grid poster with restorative tools for calming, speaking, listening, solving, and repairing.
+
+[![Personal-Space Planets](./personal-space-planets/personal-space-planets.png)](./personal-space-planets/index.md)
+
+### [Personal-Space Planets](./personal-space-planets/index.md)
+
+A Grade 2 Callout playground about permission, changing signals, teasing, adjustment, and trusted help.
+
+[![Outdoor Health Shield](./outdoor-health-shield/outdoor-health-shield.png)](./outdoor-health-shield/index.md)
+
+### [Outdoor Health Shield](./outdoor-health-shield/index.md)
+
+A Grade 2 Grid poster pairing five environmental risks with practical protective actions.
+
+[![Goal Trail Map](./goal-trail-map/goal-trail-map.png)](./goal-trail-map/index.md)
+
+### [Goal Trail Map](./goal-trail-map/index.md)
+
+A Grade 2 Callout journey through flexible goals, small actions, support, reflection, and celebration.
+
+[![The Body Fuel Team](./body-fuel-team/body-fuel-team.png)](./body-fuel-team/index.md)
+
+### [The Body Fuel Team](./body-fuel-team/index.md)
+
+A Grade 3 Grid poster comparing the distinct jobs of carbohydrates, protein, fats, and hydration.
+
+[![Hunger and Fullness Dashboard](./hunger-fullness-dashboard/hunger-fullness-dashboard.png)](./hunger-fullness-dashboard/index.md)
+
+### [Hunger and Fullness Dashboard](./hunger-fullness-dashboard/index.md)
+
+A Grade 3 Callout poster for noticing body signals and outside prompts without prescribing portions.
+
+[![Read the Label, Solve the Snack](./read-label-solve-snack/read-label-solve-snack.png)](./read-label-solve-snack/index.md)
+
+### [Read the Label, Solve the Snack](./read-label-solve-snack/index.md)
+
+A Grade 3 Callout investigation connecting label structure with school-day and active-outing contexts.
+
+[![Growing Up: Everyone's Timeline Is Different](./growing-up-everyones-timeline/growing-up-everyones-timeline.png)](./growing-up-everyones-timeline/index.md)
+
+### [Growing Up: Everyone's Timeline Is Different](./growing-up-everyones-timeline/index.md)
+
+A respectful Grade 3 Callout panorama about varied growth timing, mixed feelings, privacy, and trusted support.
+
 [![My Body's Daily Helpers](./my-bodys-daily-helpers/my-bodys-daily-helpers.png)](./my-bodys-daily-helpers/index.md)
 
 ### [My Body's Daily Helpers](./my-bodys-daily-helpers/index.md)
