@@ -958,7 +958,7 @@ extra:
   textbook_name: 'Health Education'
   textbook_version: '0.1'
 
-  # Google Analytics — uncomment once a property ID exists:
-  # analytics:
-  #   provider: google
-  #   property: G-XXXXXXXXXX
+  # Google Analytics — The id is G-D3TM0VNXBB
+  analytics:
+     provider: google
+     property: G-D3TM0VNXBB
