@@ -241,6 +241,21 @@ Examples of daily active play:
 
 There's no single "right" activity — what matters is finding something active that a student genuinely enjoys, so it becomes something they want to do every day, not something they're told to do.
 
+#### Diagram: Active Play Adventure Park
+
+<iframe src="../../../../posters/active-play-adventure-park/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Active Play Adventure Park Interactive Poster</summary>
+Type: infographic
+**poster-id:** active-play-adventure-park<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Nine inclusive activity stations showing strength, balance, focus, teamwork, joy, and recovery.
+
+Use **Explore** mode to select a numbered marker and learn more. Use **Quiz** mode to practice finding each idea in the illustration.
+</details>
+
 #### Diagram: Pick Your Active Play Adventure
 
 <iframe src="../../../../sims/pick-your-active-play-adventure/main.html" width="100%" height="500px" scrolling="no"></iframe>
@@ -313,6 +328,21 @@ Common ways germs spread:
 !!! mascot-warning "Common Mistake"
     ![Scout with a warning pose](../../../../img/mascot/warning.png){ class="mascot-admonition-img" }
     A cough or sneeze can send germs flying much farther than you'd think! That's why covering your mouth with your elbow — not your bare hand — helps stop germs from spreading to doorknobs and other surfaces.
+
+#### Diagram: Germ Highway and Roadblocks
+
+<iframe src="../../../../posters/germ-highway-roadblocks/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Germ Highway and Roadblocks Interactive Poster</summary>
+Type: infographic
+**poster-id:** germ-highway-roadblocks<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Ten classroom routes and roadblocks that explain how germs spread and how people interrupt the route.
+
+Use **Explore** mode to select a numbered marker and learn more. Use **Quiz** mode to practice finding each idea in the illustration.
+</details>
 
 #### Diagram: How Germs Travel Map
 

@@ -315,6 +315,21 @@ Instructional Rationale: This is an Analyze-level objective requiring learners t
 Implementation notes: Use p5.js. Keep illness descriptions simple and non-alarming; focus on the cause-and-spread distinction rather than detailed medical symptoms.
 </details>
 
+#### Diagram: Three Kinds of Health Defense
+
+<iframe src="../../../../posters/three-kinds-health-defense/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Three Kinds of Health Defense Interactive Poster</summary>
+Type: infographic
+**poster-id:** three-kinds-health-defense<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Three shield bays compare prevention and management strategies for different health needs.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea.
+</details>
+
 ## How Germs Spread
 
 Understanding that infectious diseases come from germs raises an important next question: exactly how does a germ get from one person to another?

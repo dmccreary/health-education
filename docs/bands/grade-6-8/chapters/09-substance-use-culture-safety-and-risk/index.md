@@ -145,6 +145,21 @@ Instructional Rationale: Apply-level objectives require learners to practice a s
 Implementation notes: p5.js. Label content is entirely fictional/generic (no real product names or brands). Responsive canvas that stacks the label and question panel vertically on narrow screens.
 </details>
 
+#### Diagram: Medication Safety Cabinet
+
+<iframe src="../../../../posters/medication-safety-cabinet/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Medication Safety Cabinet Interactive Poster</summary>
+Type: infographic
+**poster-id:** medication-safety-cabinet<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Ten home-to-pharmacy callouts practice safe use, storage, sharing, disposal, and emergency help.
+
+Use **Explore** mode to select a marker or section and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Traditional Plant Medicine Practices
 
 Medication safety in a modern household is one form of care for the body; many cultures also maintain a much older tradition of healing knowledge. **Traditional plant medicine practices** are the knowledge systems, developed and passed down over generations, that use specific plants for healing, wellness, and ceremonial purposes within a cultural or community context.
@@ -246,6 +261,21 @@ The remainder of this chapter addresses a serious topic directly and honestly: h
 Impairment affects the body in specific, measurable ways: reaction time slows, balance and coordination become less reliable, and judgment about risk — such as how fast is too fast, or how high is too high to jump from — becomes less accurate. Public health data consistently shows that these effects translate into real-world consequences, including a higher rate of falls, accidents, and injuries among people who are impaired compared to people who are not. This is one clear reason impaired driving, discussed in the previous chapter, is treated as a leading preventable cause of injury among teenagers specifically.
 
 It is important to understand this connection accurately: injury risk rises because of documented, physical impairment — not because something is inherently wrong with a person who has used a substance. If you are ever in a situation where you or someone else has been using a substance and an injury occurs or feels likely, getting a trusted adult involved immediately is the safest and most protective response, and it is never the wrong choice to ask for help.
+
+#### Diagram: Gathering Safety Plan
+
+<iframe src="../../../../posters/gathering-safety-plan/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Gathering Safety Plan Interactive Poster</summary>
+Type: infographic
+**poster-id:** gathering-safety-plan<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Ten scenes move from advance planning through pressure refusal, emergency help, and a safe return.
+
+Use **Explore** mode to select a marker or section. Use **Quiz** mode to practice finding each idea.
+</details>
 
 ## Substance Use And Violence Risk
 

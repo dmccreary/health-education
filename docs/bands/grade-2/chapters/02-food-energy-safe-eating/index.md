@@ -269,6 +269,21 @@ Implementation: Chart.js grouped bar chart with a button group wired to dataset 
 
 Comparing drinks is like being a detective — look at the sugar, look at the caffeine, and then decide which drink is the better everyday choice for every day.
 
+#### Diagram: Drink Detective Lab
+
+<iframe src="../../../../posters/drink-detective-lab/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Drink Detective Lab Interactive Poster</summary>
+Type: infographic
+**poster-id:** drink-detective-lab<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Four investigation stations compare hydration, nourishment, added sugar, and caffeine without moral labels.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea.
+</details>
+
 ### Why Food Safety Matters
 
 Choosing healthy foods and drinks is only part of the picture — keeping food safe is just as important. Food that is not stored, prepared, or handled safely can make people sick, even if the food itself is healthy.
@@ -353,6 +368,21 @@ Color coding:
 Interactive features: Every node in the Mermaid diagram has a `click NodeId call showInfo("nodeName")` handler that opens an infobox with the safety rule text above, matching the glossary definition for that concept.
 
 Implementation: Mermaid flowchart syntax with click directives bound to a small JavaScript showInfo() function that displays the infobox panel beneath the diagram.
+</details>
+
+#### Diagram: Kitchen-to-Lunchbox Safety Chain
+
+<iframe src="../../../../posters/kitchen-lunchbox-safety-chain/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Kitchen-to-Lunchbox Safety Chain Interactive Poster</summary>
+Type: infographic
+**poster-id:** kitchen-lunchbox-safety-chain<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Twelve connected food-safety practices follow food from a kitchen sink to a packed lunch.
+
+Use **Explore** mode to select a numbered marker and learn more. Use **Quiz** mode to practice finding each idea.
 </details>
 
 !!! mascot-celebration "Chapter Complete!"

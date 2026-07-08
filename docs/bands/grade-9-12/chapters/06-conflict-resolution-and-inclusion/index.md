@@ -222,6 +222,22 @@ Implementation: Mermaid.js flowchart with JavaScript click bindings to a
 custom showInfo() function
 </details>
 
+#### Diagram: Conflict De-escalation Lab
+
+<iframe src="../../../../posters/conflict-deescalation-lab/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Conflict De-escalation Lab Interactive Poster</summary>
+Type: infographic
+
+**poster-id:** conflict-deescalation-lab<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five restorative-practice panels prioritize safety, regulation, needs, options, and a supported exit.
+
+Use **Explore** mode to select a marker or section. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Indigenous Restorative Justice Approaches
 
 Nonviolent conflict resolution has deep roots in traditions that predate

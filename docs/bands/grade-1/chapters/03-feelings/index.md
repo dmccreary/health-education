@@ -120,6 +120,21 @@ Simple ways a Grade 1 student can talk about feelings:
     ![Scout giving a tip](../../../../img/mascot/tip.png){ class="mascot-admonition-img" }
     A good sentence starter: "I feel ___ because ___." Filling in those blanks helps you and the person listening understand exactly what's going on!
 
+#### Diagram: From Feeling to Words
+
+<iframe src="../../../../posters/from-feeling-to-words/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>From Feeling to Words Interactive Poster</summary>
+Type: infographic
+**poster-id:** from-feeling-to-words<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+A four-step path from an event and body clues to helpful words and trusted support.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea in the illustration.
+</details>
+
 #### Diagram: Feeling Sentence Builder
 
 <iframe src="../../../../sims/feeling-sentence-builder/main.html" width="100%" height="500px" scrolling="no"></iframe>

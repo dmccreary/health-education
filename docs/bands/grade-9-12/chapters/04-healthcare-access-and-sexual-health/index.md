@@ -303,6 +303,22 @@ custom showInfo() function
     permission is not meeting the youth-friendly standard. That is a signal
     to seek care elsewhere when possible, and to say so to a trusted adult.
 
+#### Diagram: Youth-Friendly Care: Rights, Respect, and Access
+
+<iframe src="../../../../posters/youth-friendly-care/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Youth-Friendly Care: Rights, Respect, and Access Interactive Poster</summary>
+Type: infographic
+
+**poster-id:** youth-friendly-care<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five clinic doors explore privacy, cultural safety, sexual health, mental health, and access supports.
+
+Use **Explore** mode to select a marker or section and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Stigma Effects on Healthcare Access
 
 Rights and youth-friendly standards can exist on paper and still go unused
@@ -486,6 +502,22 @@ imagery, text and chart elements only.
     Testing and treatment, whatever the result, are always the responsible
     next steps — not something to fear or delay out of outdated
     assumptions.
+
+#### Diagram: Layered Sexual Health Prevention
+
+<iframe src="../../../../posters/layered-sexual-health-prevention/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Layered Sexual Health Prevention Interactive Poster</summary>
+Type: infographic
+
+**poster-id:** layered-sexual-health-prevention<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five clinical panels show how communication, methods, testing, vaccination, and follow-up work together.
+
+Use **Explore** mode to select a marker or section. Use **Quiz** mode to practice finding each idea.
+</details>
 
 ## Culturally Safe STI Care
 

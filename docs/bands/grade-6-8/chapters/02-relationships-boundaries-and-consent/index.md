@@ -187,6 +187,21 @@ Instructional Rationale: Demonstrating a communication skill in realistic scenar
 Implementation notes: p5.js. Scenario/sentence-starter data as arrays; assembled script rendered as plain text; keyword check (hedging words like "maybe") drives feedback.
 </details>
 
+#### Diagram: Boundary Repair Workshop
+
+<iframe src="../../../../posters/boundary-repair-workshop/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Boundary Repair Workshop Interactive Poster</summary>
+Type: infographic
+**poster-id:** boundary-repair-workshop<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five workshop stages distinguish accountability and repair from excuses or forced forgiveness.
+
+Use **Explore** mode to select a marker or section. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Cultural Values Of Respect And Balance
 
 Boundary-setting does not happen in a vacuum — it happens inside a person's cultural context, and different cultures frame relational respect in genuinely different, valuable ways. **Cultural values of respect and balance** are the specific cultural frameworks and concepts — such as collectivist and individualist orientations toward relationships — that shape how people understand respect, boundaries, and reciprocity.
@@ -361,6 +376,21 @@ Interactive controls: Click-to-sort each card; immediate feedback confirms place
 Instructional Rationale: Applying the ongoing-consent concept to new scenarios is Apply-level, so a sorting task with explanatory feedback is used rather than passive reading, giving repeated practice recognizing consent in familiar situations.
 
 Implementation notes: p5.js. Scenario cards as objects with text, correct category, and explanation string.
+</details>
+
+#### Diagram: Consent Communication: Clear, Ongoing, Reversible
+
+<iframe src="../../../../posters/consent-communication-clear-ongoing-reversible/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Consent Communication: Clear, Ongoing, Reversible Interactive Poster</summary>
+Type: infographic
+**poster-id:** consent-communication-clear-ongoing-reversible<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five nonsexual everyday scenarios compare clear agreement, check-ins, uncertainty, withdrawal, and coercion.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea.
 </details>
 
 ## Responding To Coercion

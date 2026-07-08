@@ -98,6 +98,21 @@ Instructional Rationale: This is an Understand-level objective (explain, classif
 Implementation notes: Use p5.js. Keep scenario text short and readable aloud. Avoid naming specific apps; keep language general so it applies to any device or platform.
 </details>
 
+#### Diagram: Before You Send
+
+<iframe src="../../../../posters/before-you-send/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Before You Send Interactive Poster</summary>
+Type: infographic
+**poster-id:** before-you-send<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+A four-step pause helps students protect privacy, consider impact, and make a thoughtful sharing choice.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea.
+</details>
+
 ## The Risks of Sharing Personal Information
 
 Some information is riskier to share than a photo or a joke — it is information that could let a stranger find, contact, or pretend to be someone. This is where students need extra care.

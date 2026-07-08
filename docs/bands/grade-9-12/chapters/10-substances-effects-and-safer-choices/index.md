@@ -883,6 +883,22 @@ or how to obtain any substance — only documented interaction risk
 categories and mechanisms.
 </details>
 
+#### Diagram: Substance Interaction Matrix
+
+<iframe src="../../../../posters/substance-interaction-matrix/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Substance Interaction Matrix Interactive Poster</summary>
+Type: infographic
+
+**poster-id:** substance-interaction-matrix<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Six science-museum columns compare body effects while emphasizing variability and interaction uncertainty.
+
+Use **Explore** mode to select a marker or section. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Safe Medication Practices
 
 Understanding interaction risk leads directly to a set of practical,

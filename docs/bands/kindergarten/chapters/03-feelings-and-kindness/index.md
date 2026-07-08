@@ -53,6 +53,21 @@ Talking points for read-aloud:
     ![Scout thinking](../../../../img/mascot/thinking.png){ class="mascot-admonition-img" }
     Feelings are like weather inside of you — sunny, stormy, cloudy, calm. Weather always changes, and so do feelings!
 
+#### Diagram: Feelings Weather Station
+
+<iframe src="../../../../posters/feelings-weather-station/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Feelings Weather Station Interactive Poster</summary>
+Type: infographic
+**poster-id:** feelings-weather-station<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Eight weather-like feelings, body clues, and moments when a trusted adult can help.
+
+Use **Explore** mode to select a numbered marker and learn more. Use **Quiz** mode to practice finding each idea in the illustration.
+</details>
+
 ### Naming Feelings
 
 **Naming feelings** means putting a word to what you feel inside, like saying "I feel happy" or "I feel frustrated." Naming a feeling out loud helps a child calm down and helps a trusted adult understand how to help.
@@ -334,6 +349,21 @@ A short list of ways to include others, useful for classroom modeling:
 - Making room in a circle or at a table for one more friend
 - Choosing teams so that everyone gets picked kindly, not left for last
 - Asking a new student to sit together at lunch
+
+#### Diagram: Kindness Makes Room
+
+<iframe src="../../../../posters/kindness-makes-room/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Kindness Makes Room Interactive Poster</summary>
+Type: infographic
+**poster-id:** kindness-makes-room<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+A four-step playground story about noticing, inviting, including, and repairing.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea in the illustration.
+</details>
 
 !!! mascot-celebration "Chapter Complete!"
     ![Scout celebrating with a party hat](../../../../img/mascot/celebration.png){ class="mascot-admonition-img" }

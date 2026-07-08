@@ -192,6 +192,21 @@ Instructional Rationale: A Remember-level (identify/name) objective, so a simple
 Implementation notes: p5.js. Each item is an object with an illustration reference, correct category, and explanation string. Text large (24px+) for read-aloud use.
 </details>
 
+#### Diagram: Needs, Wants, and Healthy Choices
+
+<iframe src="../../../../posters/needs-wants-healthy-choices/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Needs, Wants, and Healthy Choices Interactive Poster</summary>
+Type: infographic
+**poster-id:** needs-wants-healthy-choices<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+A Kindergarten interactive poster for distinguishing health needs, enjoyable wants, and small healthy choices.
+
+Use **Explore** mode to select a column and learn about it. Use **Quiz Me** to practice recognizing needs, wants, and healthy choices.
+</details>
+
 !!! mascot-encourage "Needs and Wants Can Feel Tricky"
     ![Scout offering encouragement](../../../../img/mascot/encouraging.png){ class="mascot-admonition-img" }
     It's okay if needs and wants feel a little mixed up at first — even grown-ups think about this! The important thing is starting to notice the difference, one item at a time.

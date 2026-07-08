@@ -212,6 +212,21 @@ Instructional Rationale: This is an Analyze-level objective because the child mu
 Implementation notes: Use p5.js. Represent each scenario as an object with an illustration reference, a correct category, and an explanation string. Keep all captions read-aloud length (one short sentence).
 </details>
 
+#### Diagram: The Germ's Busy Day
+
+<iframe src="../../../../posters/germs-busy-day/main.html" width="100%" height="960px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>The Germ's Busy Day Interactive Poster</summary>
+Type: infographic
+**poster-id:** germs-busy-day<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+A Kindergarten interactive poster for exploring how germs move through a classroom and how healthy habits stop their spread.
+
+Use **Explore** mode to hover over or select a numbered marker. Use **Quiz** mode to listen to or read a visual hint and find the matching place in the classroom.
+</details>
+
 ### Personal Care Practice
 
 A **personal care practice** is any daily habit a person does to take care of their own body and health, like handwashing and covering coughs. Personal care practices can look a little different across families and communities, but the goal is always the same: staying healthy.
@@ -232,6 +247,21 @@ A short list of daily personal care practices a Kindergartner can name:
 - Covering coughs and sneezes with an elbow or tissue
 - Brushing teeth in the morning and at night
 - Washing hands after playing outside or petting an animal
+
+#### Diagram: My Body's Daily Helpers
+
+<iframe src="../../../../posters/my-bodys-daily-helpers/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>My Body's Daily Helpers Interactive Poster</summary>
+Type: infographic
+**poster-id:** my-bodys-daily-helpers<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five daily habits that help bodies feel ready to learn, move, rest, and grow.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea in the illustration.
+</details>
 
 ### Physical Activity
 

@@ -680,6 +680,22 @@ custom showInfo() function; infobox text includes a persistent reminder
 that this is educational awareness, not certified training
 </details>
 
+#### Diagram: CPR, AED, and the Chain of Survival
+
+<iframe src="../../../../posters/cpr-aed-chain-of-survival/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>CPR, AED, and the Chain of Survival Interactive Poster</summary>
+Type: infographic
+
+**poster-id:** cpr-aed-chain-of-survival<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Twelve training-scene markers orient students to the CPR/AED response sequence and professional handoff.
+
+Use **Explore** mode to select a marker or section and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
+
 Every part of this sequence — from checking responsiveness through
 continued CPR-AED cycles — is designed to be learnable by anyone, not only
 healthcare professionals, which is exactly why CPR/AED training is

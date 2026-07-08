@@ -427,6 +427,21 @@ Instructional Rationale: A Create-level objective requires learners to compose a
 Implementation notes: p5.js or HTML form elements in a p5.js canvas wrapper. Responsive layout that stacks the two areas vertically on narrow screens.
 </details>
 
+#### Diagram: Youth Advocacy Message Studio
+
+<iframe src="../../../../posters/youth-advocacy-message-studio/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Youth Advocacy Message Studio Interactive Poster</summary>
+Type: infographic
+**poster-id:** youth-advocacy-message-studio<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five civic-design panels turn a concern into a specific, evidence-backed, revisable request.
+
+Use **Explore** mode to select a marker or section. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ### Delivering Health Messages To Audiences
 
 A designed message still needs to reach real people. **Delivering health messages to audiences** is the skill of presenting a health message effectively to a specific, real audience, adjusting delivery based on the setting and the audience's response.

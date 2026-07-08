@@ -119,6 +119,21 @@ Instructional Rationale: This is an Apply-level objective, so the design lets st
 Implementation notes: Use p5.js. Keep text large enough for read-aloud. Icons should be simple and flat, matching the mascot's friendly visual style.
 </details>
 
+#### Diagram: The Conflict Toolbox
+
+<iframe src="../../../../posters/conflict-toolbox/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>The Conflict Toolbox Interactive Poster</summary>
+Type: infographic
+**poster-id:** conflict-toolbox<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five restorative tool drawers support calming, I-statements, listening, solutions, and repair.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea.
+</details>
+
 !!! mascot-tip "Helpful Tip"
     ![Scout giving a tip](../../../../img/mascot/tip.png){ class="mascot-admonition-img" }
     A trusted adult can always help if a conflict feels too big to solve alone. Asking for help is part of solving the problem, not giving up on it.
@@ -218,6 +233,21 @@ Kind, playful interaction usually shares a few features:
 | Words build people up | Jokes are about silly situations, not about a person's body, family, or abilities |
 
 This table sums up a pattern worth remembering: kind, playful interaction always leaves everyone feeling included, not just some of the people involved. Playful interaction is meant to bring people closer together — if a "joke" pushes someone away or makes them feel small, it has stopped being playful.
+
+#### Diagram: Personal-Space Planets
+
+<iframe src="../../../../posters/personal-space-planets/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Personal-Space Planets Interactive Poster</summary>
+Type: infographic
+**poster-id:** personal-space-planets<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Nine playground-space moments explore permission, signals, teasing, adjustment, and trusted help.
+
+Use **Explore** mode to select a numbered marker and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
 
 ### Teasing
 

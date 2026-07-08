@@ -345,6 +345,21 @@ Instructional Rationale: Designing an original combination and evaluating the re
 Implementation notes: p5.js. Food items stored as objects with calorie/protein/sugar/sodium/fiber fields; selected items sum live; the balance meter applies threshold logic over the totals.
 </details>
 
+#### Diagram: Gut Microbiome & Plant Diversity
+
+<iframe src="../../../../posters/gut-microbiome-plants/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Gut Microbiome & Plant Diversity Interactive Poster</summary>
+Type: infographic
+**poster-id:** gut-microbiome-plants<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Explore a cutaway gut ecosystem and thirty plant foods that illustrate dietary variety.
+
+Use **Explore** mode to select a marker and examine the gut ecosystem or a plant-food group. Use **Quiz** mode to practice finding all fifteen callouts.
+</details>
+
 ## Food Sovereignty
 
 Meal planning assumes something important: that a variety of healthy foods is actually available to plan with. That assumption doesn't hold everywhere equally, which brings us to a bigger, structural question. **Food sovereignty** is the right of communities and peoples to define their own food and agriculture systems — what is grown, how it is grown, and how it is distributed — rather than having those choices dictated entirely by outside markets, corporations, or governments.
@@ -420,6 +435,21 @@ Locations: 2 full-service grocery stores (green markers) near downtown; 1 food d
 Interactive features: Click the shaded food desert zone for an infobox defining food desert conditions with this map's specific distances; click any marker for an infobox on that initiative type and which access gap it helps close; toggle layer control to show/hide each initiative type independently.
 
 Implementation: Leaflet.js with custom marker icons and a toggleable GeoJSON layer for the food desert shading and mobile market route.
+</details>
+
+#### Diagram: Food Choices Through Five Lenses
+
+<iframe src="../../../../posters/food-choices-five-lenses/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Food Choices Through Five Lenses Interactive Poster</summary>
+Type: infographic
+**poster-id:** food-choices-five-lenses<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+The same meal is examined through label evidence, marketing, culture, access, and food sovereignty.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea.
 </details>
 
 This chapter moved in one continuous line: from health as a whole-person idea, to reading and questioning what's on a package, to understanding what specific ingredients do inside your body, to planning real meals, and finally to recognizing that not everyone starts with equal access to the foods this chapter has analyzed. That last point matters — these analytical skills are most powerful paired with awareness that food access is a community and systems-level issue, not just a personal choice.

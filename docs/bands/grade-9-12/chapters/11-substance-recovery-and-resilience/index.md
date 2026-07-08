@@ -712,6 +712,22 @@ strongest recovery plans often combine both.
     professional treatment with cultural and community connection produces
     stronger, more durable recovery than either one alone.
 
+#### Diagram: Resilience Protective-Factors Garden
+
+<iframe src="../../../../posters/resilience-protective-factors-garden/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Resilience Protective-Factors Garden Interactive Poster</summary>
+Type: infographic
+
+**poster-id:** resilience-protective-factors-garden<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Twelve garden landmarks show resilience as supports and resources, not an expectation to endure harm alone.
+
+Use **Explore** mode to select a marker or section. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Community Integration Of Cultural Recovery Practices
 
 The final concept in this chapter examines how these ideas function at

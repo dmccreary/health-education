@@ -296,6 +296,21 @@ An important overlap deserves attention: some methods (like condoms) reduce risk
     ![Scout offering a helpful tip](../../../../img/mascot/tip.png){ class="mascot-admonition-img" }
     A method that prevents pregnancy does not automatically prevent STIs, and vice versa. A healthcare provider can explain, accurately and confidentially, which methods address which risk.
 
+#### Diagram: Sexual Health Prevention Toolbox
+
+<iframe src="../../../../posters/sexual-health-prevention-toolbox/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Sexual Health Prevention Toolbox Interactive Poster</summary>
+Type: infographic
+**poster-id:** sexual-health-prevention-toolbox<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five age-appropriate supports connect information, consent, prevention, care, and trusted help.
+
+Use **Explore** mode to select a marker or section. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Healthcare Access Barriers
 
 Knowing that comprehensive care and confidential services exist does not guarantee every adolescent can easily reach them. **Healthcare access barriers** are the obstacles — cost, transportation, fear, stigma, and lack of awareness of one's rights — that prevent people, including adolescents, from obtaining the health care they need.
@@ -383,6 +398,21 @@ Every node must have a Mermaid `click` directive calling an infobox function.
 Color coding: Blue for start/decision nodes, orange for barrier-specific branches, green for the shared end node
 
 Implementation: Mermaid flowchart syntax with `click NodeId call showInfo("key")` for every node; infobox text in a JS lookup object.
+</details>
+
+#### Diagram: A Teen's Map to Health Care
+
+<iframe src="../../../../posters/teen-map-health-care/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>A Teen's Map to Health Care Interactive Poster</summary>
+Type: infographic
+**poster-id:** teen-map-health-care<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Twelve town landmarks connect adolescents with healthcare services and practical access supports.
+
+Use **Explore** mode to select a numbered marker and learn more. Use **Quiz** mode to practice finding each idea.
 </details>
 
 ## Bringing It All Together

@@ -331,6 +331,21 @@ Think of it this way: a peer relationship becomes healthier through kindness, un
     ![Scout giving a tip](../../../../img/mascot/tip.png){ class="mascot-admonition-img" }
     Next time you're not sure what to do, ask yourself: "Will this help someone feel like they belong?" If the answer is yes, that's a kind choice!
 
+#### Diagram: Friendship Garden
+
+<iframe src="../../../../posters/friendship-garden/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Friendship Garden Interactive Poster</summary>
+Type: infographic
+**poster-id:** friendship-garden<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Ten visible friendship actions growing across an inclusive community garden.
+
+Use **Explore** mode to select a numbered marker and learn more. Use **Quiz** mode to practice finding each idea in the illustration.
+</details>
+
 #### Diagram: Building Belonging Chain Reaction
 
 <iframe src="../../../../sims/building-belonging-chain-reaction/main.html" width="100%" height="500px" scrolling="no"></iframe>

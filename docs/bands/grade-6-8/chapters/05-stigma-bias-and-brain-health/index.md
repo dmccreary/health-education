@@ -71,6 +71,21 @@ Instructional Rationale: Classifying scenarios into named categories is Understa
 Implementation notes: p5.js. Scenario data stored as an array of objects with text, correct category, and explanation string. Responsive canvas that reflows cards on window resize.
 </details>
 
+#### Diagram: Bias and the Brain Shortcut Lab
+
+<iframe src="../../../../posters/bias-brain-shortcut-lab/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Bias and the Brain Shortcut Lab Interactive Poster</summary>
+Type: infographic
+**poster-id:** bias-brain-shortcut-lab<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five social-science steps interrupt snap judgments before they become unfair actions.
+
+Use **Explore** mode to select a marker or section. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Exclusion And Bias Effects On Mental Health
 
 Unfair treatment often shows up specifically as being left out. **Exclusion and bias effects on mental health** refers to the harm caused to a person's mental health and sense of belonging when they are left out of a group, activity, or community because of bias — an unfair preference for or against a person or group, often based on limited or inaccurate information.
@@ -255,6 +270,21 @@ Implementation: vis-network JavaScript library; canvas responsive, default 800x5
     ![Scout offering a helpful tip](../../../../img/mascot/tip.png){ class="mascot-admonition-img" }
     Watching a show that portrays a mental health condition honestly, or gently correcting a friend who tosses around a clinical term as a joke, are both small actions — and both genuinely count as stigma reduction.
 
+#### Diagram: Stigma to Support
+
+<iframe src="../../../../posters/stigma-to-support/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Stigma to Support Interactive Poster</summary>
+Type: infographic
+**poster-id:** stigma-to-support<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five social steps replace mental-health stigma with respectful language, help, and belonging.
+
+Use **Explore** mode to select a marker or section and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Brain-Healthy Habits
 
 The chapter now shifts from how people treat each other to a related, practical topic: how to take care of the organ responsible for thinking, feeling, and remembering in the first place. **Brain-healthy habits** are everyday behaviors — including quality sleep, balanced nutrition, regular physical activity, social connection, and mental engagement — that support healthy brain function across a person's lifetime.
@@ -300,6 +330,21 @@ Implementation notes: p5.js. Habit and day data stored as arrays/objects; drag-a
 !!! mascot-tip "Worth Remembering"
     ![Scout offering a helpful tip](../../../../img/mascot/tip.png){ class="mascot-admonition-img" }
     None of these five habits need to be perfect. A brain-healthy week is about consistently covering all five areas reasonably well, not about maxing out any single one.
+
+#### Diagram: The Developing Brain Under Different Influences
+
+<iframe src="../../../../posters/developing-brain-different-influences/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>The Developing Brain Under Different Influences Interactive Poster</summary>
+Type: infographic
+**poster-id:** developing-brain-different-influences<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Six evidence-focused columns compare habits and substances that can influence a developing brain.
+
+Use **Explore** mode to select a marker or section and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
 
 ## Alzheimer's Disease
 

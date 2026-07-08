@@ -113,6 +113,21 @@ Because digital communication removes so many in-person cues, healthy digital re
     ![Scout offering a helpful tip](../../../../img/mascot/tip.png){ class="mascot-admonition-img" }
     If a text message makes you feel confused or upset about someone's tone, it is fair to ask directly: "I can't tell how you meant that — can we talk about it?" A short conversation can prevent a long misunderstanding.
 
+#### Diagram: Digital Footprint Iceberg
+
+<iframe src="../../../../posters/digital-footprint-iceberg/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Digital Footprint Iceberg Interactive Poster</summary>
+Type: infographic
+**poster-id:** digital-footprint-iceberg<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Ten iceberg clues reveal visible posts and the less-visible trails, audiences, and future contexts beneath them.
+
+Use **Explore** mode to select a marker or section. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Harmful Or Explicit Content Sharing
 
 With power dynamics, peer pressure, and digital communication as background, the chapter now turns to one of the most serious digital safety issues middle schoolers face. **Harmful or explicit content sharing** is the sending, forwarding, or posting of sexual images or messages, most often through texting or social media — sometimes called "sexting" — and it affects behavior, relationships, and personal values in ways that are difficult to undo.
@@ -212,6 +227,21 @@ Default parameters: Empty response area at start; six scenarios cycle through, r
 Instructional Rationale: Applying boundary-setting strategy to a realistic pressure scenario by constructing a response sequence is an Apply-level task, so a response-builder with constraint feedback is used rather than a passive list of tips, letting students practice sequencing a real response.
 
 Implementation notes: p5.js. Scenario and token data stored as arrays of objects. Responsive canvas that reflows on window resize. No scenario content depicts explicit imagery or graphic threats.
+</details>
+
+#### Diagram: Digital Boundary Checkpoints
+
+<iframe src="../../../../posters/digital-boundary-checkpoints/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Digital Boundary Checkpoints Interactive Poster</summary>
+Type: infographic
+**poster-id:** digital-boundary-checkpoints<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five digital-safety checkpoints move from noticing pressure to preserving evidence and getting support.
+
+Use **Explore** mode to select a marker or section and learn more. Use **Quiz** mode to practice finding each idea.
 </details>
 
 ## Seeking Support For Relationship Safety

@@ -167,6 +167,21 @@ Interactive features: click directive on every node in the Mermaid syntax, mappe
 Implementation: Mermaid flowchart with click bindings; render inside a small wrapper page that displays the infobox below the diagram. Keep the visual plain and reassuring, matching the sincere tone required for personal-safety-adjacent content.
 </details>
 
+#### Diagram: Safe Tech — Stop, Close, Tell
+
+<iframe src="../../../../posters/safe-tech-stop-close-tell/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Safe Tech — Stop, Close, Tell Interactive Poster</summary>
+Type: infographic
+**poster-id:** safe-tech-stop-close-tell<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+An interactive Grade 2 infographic for responding safely to an uncomfortable or unsafe technology situation.
+
+Use **Explore** mode to select a column and learn about the action. Use **Quiz Me** to practice choosing the correct step for a technology-safety situation.
+</details>
+
 Before moving to the next topic, it helps to notice something reassuring: the four steps above work for almost any unsafe technology situation a Grade 2 student might encounter, because the goal is always the same — stop, don't respond, and tell a trusted adult.
 
 ### Encouraging Safe Choices

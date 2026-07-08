@@ -453,6 +453,21 @@ Instructional Rationale: This is an Evaluate-level objective requiring students 
 Implementation notes: Use p5.js. Store each response as an object with text, correct category, and an explanation string; keep all visuals calm and flat with no celebratory animation, consistent with the serious subject matter.
 </details>
 
+#### Diagram: Upstander Pathways
+
+<iframe src="../../../../posters/upstander-pathways/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Upstander Pathways Interactive Poster</summary>
+Type: infographic
+**poster-id:** upstander-pathways<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Ten safe pathways show how students can include, interrupt, distract, get help, report, and support afterward.
+
+Use **Explore** mode to select a numbered marker and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Bringing It All Together
 
 This chapter connected two big ideas that both come down to how we treat the people around us. **Equity** means giving each person what they specifically need for a fair chance, and **belonging** means feeling valued and welcome as your true self. **Including and supporting others** turns those ideas into everyday action, and **ability-inclusive kindness** makes sure that action reaches classmates of every ability — physical, sensory, learning, or neurological. Together, these build **inclusive environments** where everyone can fully participate.

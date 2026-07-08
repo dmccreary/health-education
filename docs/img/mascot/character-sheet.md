@@ -68,7 +68,7 @@ consistency.
 | Encouraging | `encouraging.png` | Difficult content / struggle |
 | Celebration | `celebration.png` | End of chapter / achievements |
 
-See [`image-prompts.md`](image-prompts.md) for the full text of each pose
+See [`mascot-image-prompts.md`](./mascot-image-prompts.md) for the full text of each pose
 prompt. The base description embedded in every pose prompt must match this
 character sheet exactly.
 

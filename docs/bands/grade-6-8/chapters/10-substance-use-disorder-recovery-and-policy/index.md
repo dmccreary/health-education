@@ -170,6 +170,21 @@ Implementation: vis-network JavaScript library; canvas responsive, default 800x5
     ![Scout offering quiet, steady support](../../../../img/mascot/encouraging.png){ class="mascot-admonition-img" }
     Whether through counseling, a support group, cultural and ceremonial practice, or family involvement, recovery is a realistic outcome that real people achieve every day. No single path works for everyone, and that is exactly why so many supports exist.
 
+#### Diagram: Recovery Is an Ecosystem
+
+<iframe src="../../../../posters/recovery-is-an-ecosystem/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Recovery Is an Ecosystem Interactive Poster</summary>
+Type: infographic
+**poster-id:** recovery-is-an-ecosystem<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+A watershed metaphor shows recovery as many connected supports rather than one universal path.
+
+Use **Explore** mode to select a marker or section and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
+
 You have now covered the medical and community side of substance use disorder and recovery. The chapter turns next to a different kind of risk analysis: the documented dangers of impaired driving, and the laws designed to prevent it.
 
 ## Impaired Driving Risk
@@ -219,6 +234,21 @@ Default parameters: Slider starts at "None," showing baseline unimpaired stoppin
 Instructional Rationale: An Analyze-level objective requires learners to examine and compare relationships between variables; a slider-driven data readout lets students directly compare how stopping distance grows with impairment level, which is more instructive than a single animated crash scenario because it makes the underlying relationship between impairment and distance visible and comparable.
 
 Implementation notes: p5.js. Illustrative relative values only, clearly labeled as educational estimates rather than exact clinical or legal figures. No depiction of a crash, injury, or graphic outcome — the simulator stops at showing stopping distances. Responsive canvas that reflows on window resize.
+</details>
+
+#### Diagram: Impaired Driving Risk Web
+
+<iframe src="../../../../posters/impaired-driving-risk-web/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Impaired Driving Risk Web Interactive Poster</summary>
+Type: infographic
+**poster-id:** impaired-driving-risk-web<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Ten dusk-to-safe-arrival scenes connect impairment risks with seatbelts, alternate rides, intervention, and help.
+
+Use **Explore** mode to select a marker or section and learn more. Use **Quiz** mode to practice finding each idea.
 </details>
 
 ## Laws On Impaired Driving

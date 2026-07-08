@@ -153,6 +153,21 @@ This table shows a pattern worth remembering: a water source is safe when a trus
     ![Scout warning](../../../../img/mascot/warning.png){ class="mascot-admonition-img" }
     If you find a bottle, spray, or container you don't recognize, don't touch it, smell it, or taste it. Go tell a trusted adult right away.
 
+#### Diagram: Outdoor Health Shield
+
+<iframe src="../../../../posters/outdoor-health-shield/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Outdoor Health Shield Interactive Poster</summary>
+Type: infographic
+**poster-id:** outdoor-health-shield<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five shield sections pair environmental risks with practical protective actions.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea.
+</details>
+
 ### Physical Activity
 
 **Physical activity** is any movement of the body that uses energy and helps a person stay healthy and strong — running, jumping, dancing, swimming, biking, and playing active games all count. Physical activity supports the body in many ways at once.

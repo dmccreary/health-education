@@ -302,6 +302,21 @@ Instructional Rationale: A Remember-level (identify/locate) objective appropriat
 Implementation notes: p5.js. Each emergency type is an object with a prompt string, correct location id, and confirmation string. Text large (24px+) for read-aloud use.
 </details>
 
+#### Diagram: Where Is My Safe Place?
+
+<iframe src="../../../../posters/where-is-my-safe-place/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Where Is My Safe Place? Interactive Poster</summary>
+Type: infographic
+**poster-id:** where-is-my-safe-place<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+A Kindergarten interactive poster for exploring safety rules, trusted adults, and planned safe places at home, school, the playground, and in the community.
+
+Use **Explore** mode to select a setting and learn about its safety rules and helpers. Use **Quiz Me** to practice finding the setting described in each question.
+</details>
+
 ### Body Parts and Correct Body Part Names
 
 !!! note "A Note for Teachers Before You Begin"

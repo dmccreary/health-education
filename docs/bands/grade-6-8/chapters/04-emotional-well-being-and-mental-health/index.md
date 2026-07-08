@@ -146,6 +146,21 @@ The skill is not eliminating uncomfortable emotions — anger, sadness, worry, a
     ![Scout offering a helpful tip](../../../../img/mascot/tip.png){ class="mascot-admonition-img" }
     No single strategy works for every emotion or every person. Having two or three different tools ready — naming the feeling, pausing, moving your body, or talking to someone — means you're never stuck with only one option that might not fit the moment.
 
+#### Diagram: Emotional Regulation Control Panel
+
+<iframe src="../../../../posters/emotional-regulation-control-panel/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Emotional Regulation Control Panel Interactive Poster</summary>
+Type: infographic
+**poster-id:** emotional-regulation-control-panel<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Six control-room stations turn emotional awareness into flexible action and reflection.
+
+Use **Explore** mode to select a marker or section. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Indigenous And Traditional Healing Approaches
 
 Emotion management and restorative practices are not new inventions — many communities have practiced them, in culturally specific forms, for generations. **Indigenous and traditional healing approaches** are culturally rooted practices — including talking circles, connection to land and nature, ceremony, elder guidance, and storytelling — that support emotional and mental well-being as valid, time-tested complements to conventional mental health support.
@@ -256,6 +271,21 @@ A trusted adult does not need to have all the answers. Their job is to listen wi
 - A school nurse
 
 Identifying a trusted adult in advance is a small, concrete action with a large payoff: it turns "I don't know who to talk to" into "I already know exactly who to call."
+
+#### Diagram: Stress Signal to Support Network
+
+<iframe src="../../../../posters/stress-signal-support-network/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Stress Signal to Support Network Interactive Poster</summary>
+Type: infographic
+**poster-id:** stress-signal-support-network<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Twelve stress signals and support choices connect body awareness with practical help-seeking.
+
+Use **Explore** mode to select a marker or section and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
 
 ## Suicide And Self-Harm Warning Signs
 

@@ -201,6 +201,21 @@ Interactive features: Every node has a click directive opening an infobox with t
 Implementation: Mermaid flowchart with click bindings for every node routed to a JavaScript function that displays the node's explanation in a side panel.
 </details>
 
+#### Diagram: Can I Trust This Health Claim?
+
+<iframe src="../../../../posters/can-i-trust-this-health-claim/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Can I Trust This Health Claim? Interactive Poster</summary>
+Type: infographic
+**poster-id:** can-i-trust-this-health-claim<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five testing bays help students evaluate evidence, expertise, motive, recency, and fit.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea.
+</details>
+
 ## Using Research For A Position
 
 So far, this chapter has focused on judging information other people give you. This next skill flips that around: using good research to build and support your *own* view on a health topic.

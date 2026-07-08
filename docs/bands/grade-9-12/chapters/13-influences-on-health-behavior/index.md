@@ -313,6 +313,22 @@ safety (school safety funding and requirements).
     something ordinary, like a warning label, a school bell schedule, or a
     tax line on a receipt.
 
+#### Diagram: Public Health Influence Map
+
+<iframe src="../../../../posters/public-health-influence-map/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Public Health Influence Map Interactive Poster</summary>
+Type: infographic
+
+**poster-id:** public-health-influence-map<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Twelve connected settings show health behavior as an ecosystem of relationships, institutions, place, and policy.
+
+Use **Explore** mode to select a marker or section and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Evaluating Health Resources and Information
 
 Understanding *why* a behavior happens is only half of this chapter's

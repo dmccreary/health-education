@@ -80,6 +80,21 @@ Instructional Rationale: Classifying influences along two independent dimensions
 Implementation notes: p5.js. Card data stored as an array of objects with text, category, and controllability fields. Responsive canvas that reflows cards on window resize.
 </details>
 
+#### Diagram: Sleep Pattern Influences Lab
+
+<iframe src="../../../../posters/sleep-pattern-influences-lab/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Sleep Pattern Influences Lab Interactive Poster</summary>
+Type: infographic
+**poster-id:** sleep-pattern-influences-lab<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five luminous lab stations reveal how biology, light, schedules, substances, and environment influence sleep.
+
+Use **Explore** mode to select a marker or section and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Cultural Sleep Practices
 
 Sleep influences don't just vary by individual — they vary by culture and community too. **Cultural sleep practices** are sleep-related customs and traditions — such as shared family sleeping spaces, rest periods built into the day, or seasonal schedule changes — shaped by cultural traditions, community practices, and social conditions.
@@ -136,6 +151,21 @@ Default parameters: Empty planner grid at start; checklist items all unchecked u
 Instructional Rationale: Designing an original, personalized weekly plan that satisfies multiple constraints is a Create-level task, so a builder with constraint-checking feedback is used rather than a static checklist, letting students formulate their own valid solution.
 
 Implementation notes: p5.js. Activity and day data stored as arrays/objects; drag-and-drop interaction; responsive canvas that reflows on window resize.
+</details>
+
+#### Diagram: Workout Design Studio
+
+<iframe src="../../../../posters/workout-design-studio/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Workout Design Studio Interactive Poster</summary>
+Type: infographic
+**poster-id:** workout-design-studio<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five sports-science stations turn a personal goal into balanced activity, recovery, and revision.
+
+Use **Explore** mode to select a marker or section and learn more. Use **Quiz** mode to practice finding each idea.
 </details>
 
 ## Moderate And Vigorous Activity
@@ -404,6 +434,21 @@ Every node must have a Mermaid `click` directive calling an infobox function.
 Color coding: Blue for start/process nodes, yellow for the decision diamond, green for both resolution paths and the shared end node.
 
 Implementation: Mermaid flowchart syntax with `click NodeId call showInfo("key")` for every node; infobox text in a JS lookup object. No graphic injury imagery or detail in infobox text.
+</details>
+
+#### Diagram: Emergency Response Field Guide
+
+<iframe src="../../../../posters/emergency-response-field-guide/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Emergency Response Field Guide Interactive Poster</summary>
+Type: infographic
+**poster-id:** emergency-response-field-guide<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five response cards build a safe sequence from scene awareness to trained emergency action.
+
+Use **Explore** mode to select a marker or section and learn more. Use **Quiz** mode to practice finding each idea.
 </details>
 
 ## Infectious Disease Transmission

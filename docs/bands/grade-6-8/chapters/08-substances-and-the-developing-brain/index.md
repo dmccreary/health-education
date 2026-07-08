@@ -342,6 +342,21 @@ Implementation: Chart.js horizontal bar chart with tooltip callbacks and a custo
 
 Across every substance covered in this chapter, researchers have documented that substance use does not only affect the user's own body and brain — it increases risk in several connected areas of life. These include a higher risk of physical injury due to impaired judgment and coordination, an increased risk of involvement in violence (as either a person affected by it or, in some cases, a person who causes it), a documented increase in risk of self-harm, and harm to sexual health, including a reduced ability to consent or recognize risk while impaired. This is one reason health researchers and educators treat substance-use prevention as connected to nearly every other strand in this course, from mental health to relationship safety.
 
+#### Diagram: Substance Combination Risk Lab
+
+<iframe src="../../../../posters/substance-combination-risk-lab/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Substance Combination Risk Lab Interactive Poster</summary>
+Type: infographic
+**poster-id:** substance-combination-risk-lab<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five laboratory panels explain why unknown strength and mixed effects make combinations unpredictable.
+
+Use **Explore** mode to select a marker or section. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Cultural Teachings That Protect Youth
 
 This chapter closes by turning from risk to protection. **Cultural teachings that protect youth** are the cultural values, community structures, and traditional practices that research identifies as genuine protective factors — meaning they measurably lower the likelihood that a young person will develop a substance use problem.

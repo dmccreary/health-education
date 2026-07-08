@@ -95,6 +95,21 @@ Color scheme: Soft, warm, non-clinical colors (light green, light blue, soft yel
 Implementation notes: Absolutely no anatomical imagery — this is an abstract timeline of labeled bars and markers only, similar to a project-planning timeline. The purpose is purely to teach the concept "different people, different timing, all normal." Use vis-timeline or an equivalent bar-based rendering.
 </details>
 
+#### Diagram: Growing Up: Everyone's Timeline Is Different
+
+<iframe src="../../../../posters/growing-up-everyones-timeline/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Growing Up: Everyone's Timeline Is Different Interactive Poster</summary>
+Type: infographic
+**poster-id:** growing-up-everyones-timeline<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Ten non-anatomical moments normalize varied growth timing, mixed feelings, privacy, and trusted support.
+
+Use **Explore** mode to select a numbered marker and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
+
 Now that puberty itself makes sense as a normal, healthy stage of growth, it helps to know that this stage usually unfolds in a general order, rather than all at once.
 
 ## Stages Of Puberty

@@ -262,6 +262,21 @@ Useful reflection questions include:
 
 Reflection isn't about judging yourself harshly for a decision that didn't work out — it's about collecting information you can actually use next time a similar situation comes up. Even a decision with a rough outcome becomes useful once you've reflected on it.
 
+#### Diagram: Choices, Consequences, and Course Corrections
+
+<iframe src="../../../../posters/choices-consequences-course-corrections/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Choices, Consequences, and Course Corrections Interactive Poster</summary>
+Type: infographic
+**poster-id:** choices-consequences-course-corrections<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Nine trail points connect influences, options, consequences, support, reflection, and changing course.
+
+Use **Explore** mode to select a numbered marker and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Personal Health Goal Tracking
 
 Reflection works especially well when it's connected to something you're actively working toward. **Personal health goal tracking** means checking in regularly on a health goal you've set for yourself and noting your progress over time.

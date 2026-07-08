@@ -141,6 +141,22 @@ content stored in a JSON lookup keyed by node id; emphasize in all panel
 text that these are systemic pathways, not verdicts about individuals
 </details>
 
+#### Diagram: Health Opportunity: What a Neighborhood Makes Easier or Harder
+
+<iframe src="../../../../posters/health-opportunity-neighborhood/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Health Opportunity: What a Neighborhood Makes Easier or Harder Interactive Poster</summary>
+Type: infographic
+
+**poster-id:** health-opportunity-neighborhood<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Fifteen neighborhood features reveal how systems shape health opportunity without blaming residents.
+
+Use **Explore** mode to select a marker or section and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Systemic Inequity In Health Opportunity
 
 Health disparities describe the *outcome gap*. **Systemic inequity in
@@ -679,6 +695,22 @@ environment: reliable access to soap and clean water, paid sick leave that
 makes staying home possible, and ventilation in shared spaces are all
 structural conditions that determine how much individual hygiene behavior
 can actually accomplish.
+
+#### Diagram: Chain of Infection
+
+<iframe src="../../../../posters/chain-of-infection/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Chain of Infection Interactive Poster</summary>
+Type: infographic
+
+**poster-id:** chain-of-infection<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Six public-health columns trace infectious spread and the prevention opportunities at every link.
+
+Use **Explore** mode to select a marker or section. Use **Quiz** mode to practice finding each idea.
+</details>
 
 ??? note "Quick Check — Click to expand"
     Question: A community is deciding how to respond to a new respiratory

@@ -670,6 +670,22 @@ depression/anxiety support scenarios, not acute crisis disclosure, to keep
 this diagram distinct from the crisis-response workflow above.
 </details>
 
+#### Diagram: Support Without Carrying It Alone
+
+<iframe src="../../../../posters/support-without-carrying-it-alone/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Support Without Carrying It Alone Interactive Poster</summary>
+Type: infographic
+
+**poster-id:** support-without-carrying-it-alone<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+A compassionate peer-support journey balances listening, urgent help, healthy boundaries, and follow-up.
+
+Use **Explore** mode to select a marker or section and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Maintaining Boundaries While Helping Others
 
 Supporting a friend well requires knowing the limits of that role as
@@ -983,6 +999,22 @@ appropriate for this closing section.
 Implementation notes: p5.js with an object array of {description,
 criteriaMet, modelAssessment}; strictly text-based scenario content, no
 depiction of crisis or self-harm.
+</details>
+
+#### Diagram: Mental Health Media Decoder
+
+<iframe src="../../../../posters/mental-health-media-decoder/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Mental Health Media Decoder Interactive Poster</summary>
+Type: infographic
+
+**poster-id:** mental-health-media-decoder<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five media-literacy columns examine portrayal, words, evidence, audience impact, and redesign.
+
+Use **Explore** mode to select a marker or section and learn more. Use **Quiz** mode to practice finding each idea.
 </details>
 
 This chapter's own approach reflects the criteria described above: it

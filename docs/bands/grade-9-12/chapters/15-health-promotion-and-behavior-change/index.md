@@ -386,6 +386,22 @@ policy support asks individuals to resist alone what the whole surrounding
 system may still be making easy or normal. Effective health promotion
 usually stacks levers rather than relying on just one.
 
+#### Diagram: Behavior-Change Levers
+
+<iframe src="../../../../posters/behavior-change-levers/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Behavior-Change Levers Interactive Poster</summary>
+Type: infographic
+
+**poster-id:** behavior-change-levers<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Six systems levers show why durable health change requires more than information or willpower.
+
+Use **Explore** mode to select a marker or section. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Capstone Project: Designing a Fact-Based Health Message
 
 Everything in this course — media literacy, evaluating information,
@@ -498,6 +514,22 @@ than exaggerated ones.
     individually — one exaggerated or unsupported statement can undo the
     trust built by five accurate ones.
 
+#### Diagram: From Evidence to Health Action
+
+<iframe src="../../../../posters/from-evidence-to-health-action/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>From Evidence to Health Action Interactive Poster</summary>
+Type: infographic
+
+**poster-id:** from-evidence-to-health-action<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Six campaign-studio columns show how health evidence becomes an ethical, testable action.
+
+Use **Explore** mode to select a marker or section and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ### Tailoring Messages To Audiences
 
 The same justified message needs a different shape depending on **who is
@@ -595,6 +627,22 @@ through this final project.
     can be widely seen and still fail to shift knowledge, attitude, or
     behavior. Evaluating effectiveness requires checking the actual
     outcome the message was meant to produce, not just its reach.
+
+#### Diagram: Health Intervention Evaluation
+
+<iframe src="../../../../posters/health-intervention-evaluation/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Health Intervention Evaluation Interactive Poster</summary>
+Type: infographic
+
+**poster-id:** health-intervention-evaluation<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five evaluation panels ask whether a health intervention reached people, worked well, improved outcomes equitably, and caused surprises.
+
+Use **Explore** mode to select a marker or section. Use **Quiz** mode to practice finding each idea.
+</details>
 
 ## Bringing It Together
 

@@ -96,6 +96,21 @@ Instructional Rationale: Understand-level objective, so the design shows concret
 Implementation notes: p5.js; store the healthy range as a constant; recompute bar color and effects text on slider change.
 </details>
 
+#### Diagram: Sleep: The Overnight Repair Shop
+
+<iframe src="../../../../posters/sleep-overnight-repair-shop/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Sleep: The Overnight Repair Shop Interactive Poster</summary>
+Type: infographic
+**poster-id:** sleep-overnight-repair-shop<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Ten workshop stations show how sleep supports memory, growth, emotion, immunity, energy, and attention.
+
+Use **Explore** mode to select a numbered marker and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
+
 !!! mascot-thinking "Key Idea"
     ![Scout thinking](../../../../img/mascot/thinking.png){ class="mascot-admonition-img" }
     Sleep is when your body grows and your brain organizes what you learned. Skipping sleep doesn't just make you tired — it slows down growth, learning, mood, and even how well you fight off germs.
@@ -152,6 +167,21 @@ Behavior: Correct placements highlight green, incorrect orange with a one-line h
 Instructional Rationale: Analyze-level objective requiring classification, so the pattern is an active sorting task with clear category feedback rather than passive viewing.
 
 Implementation notes: p5.js; store activities as objects with name, icon, and one or two correct component tags; drag detection via mouseIsPressed and bounding boxes.
+</details>
+
+#### Diagram: The Fitness Component Field Day
+
+<iframe src="../../../../posters/fitness-component-field-day/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>The Fitness Component Field Day Interactive Poster</summary>
+Type: infographic
+**poster-id:** fitness-component-field-day<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Four inclusive field-day stations connect activities with endurance, strength, flexibility, and balance and coordination.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea.
 </details>
 
 ## Allergic Reaction
@@ -253,6 +283,21 @@ Steps:
 Color coding: Red for emergency-path steps, yellow for the decision diamond, blue for mild-path steps, gray for the ending step.
 
 Implementation: Mermaid flowchart with a `click` directive on every node opening an infobox with that node's explanation text. Tone stays calm and clear, avoiding alarmism while conveying urgency for emergency signs.
+</details>
+
+#### Diagram: Allergy Action: Notice, Protect, Get Help
+
+<iframe src="../../../../posters/allergy-action-notice-protect-get-help/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Allergy Action: Notice, Protect, Get Help Interactive Poster</summary>
+Type: infographic
+**poster-id:** allergy-action-notice-protect-get-help<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Four clear panels teach allergy signs, exposure reduction, adult help, and emergency recognition.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea.
 </details>
 
 ## Chronic Condition

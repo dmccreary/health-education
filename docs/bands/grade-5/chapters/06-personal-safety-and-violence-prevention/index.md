@@ -143,6 +143,21 @@ Color coding: Blue for personal actions, yellow for the decision diamond, green 
 Implementation: Mermaid flowchart with a `click` directive on every node opening an infobox.
 </details>
 
+#### Diagram: Digital Relationship Control Room
+
+<iframe src="../../../../posters/digital-relationship-control-room/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Digital Relationship Control Room Interactive Poster</summary>
+Type: infographic
+**poster-id:** digital-relationship-control-room<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five control-room bays cover privacy, pressure, harm, reporting, and safe exit and support.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea.
+</details>
+
 ## Unhealthy Relationship Recognition
 
 Not every friendship stays healthy all the time, and it helps to know what an unhealthy one looks like. **Unhealthy relationship recognition** means noticing signs that a friendship has become controlling, disrespectful, or harmful — rather than assuming that's just "how friendships are."
@@ -329,6 +344,21 @@ Behavior: Selecting "Coercion" reveals "Jordan only agreed after repeated asking
 Instructional Rationale: Evaluate-level objective requiring justified judgment rather than passive reading.
 
 Implementation notes: p5.js; scenario objects with text, correct judgment, and justification string.
+</details>
+
+#### Diagram: Consent and Coercion Are Not the Same
+
+<iframe src="../../../../posters/consent-coercion-not-same/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Consent and Coercion Are Not the Same Interactive Poster</summary>
+Type: infographic
+**poster-id:** consent-coercion-not-same<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Four everyday scenarios distinguish freely given agreement, uncertainty, boundaries, and coercion.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea.
 </details>
 
 ## Emergency Risk Reduction

@@ -423,6 +423,21 @@ Implementation: Chart.js bar chart with custom click handling to let a class bui
     ![Scout with a helpful tip](../../../../img/mascot/tip.png){ class="mascot-admonition-img" }
     You don't need a perfect week to make progress. Looking back at what worked — and what didn't — is how a goal turns into a habit.
 
+#### Diagram: Goal Trail Map
+
+<iframe src="../../../../posters/goal-trail-map/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Goal Trail Map Interactive Poster</summary>
+Type: infographic
+**poster-id:** goal-trail-map<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Eight flexible waypoints connect goal choice, small actions, support, obstacles, reflection, and celebration.
+
+Use **Explore** mode to select a numbered marker and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ### Modeling Positive Health Choices
 
 The chapter's final concept brings everything full circle. **Modeling positive health choices** means showing healthy behavior through one's own actions so that other people — younger students, classmates, or family members — see it and are influenced by it, the same way this chapter opened with family and school influencing a Grade 2 student. A student who chooses water at lunch, speaks kindly during a disagreement, or wears a helmet while biking is not just making a private choice — they are quietly becoming an influence for someone else, just like the influences described at the start of this chapter.

@@ -446,6 +446,21 @@ Instructional Rationale: This is an Apply-level objective requiring learners to 
 Implementation notes: Use p5.js with a simple state-machine structure for dialogue branches. Store each scenario as a small tree of nodes (prompt, response options, follow-up nodes). Keep all peer characters, settings, and pressure scenarios ordinary and age-appropriate (helmets, group games, telling an adult where you're going) rather than involving strangers or graphic danger, which are covered elsewhere in this chapter.
 </details>
 
+#### Diagram: Pressure Escape Route
+
+<iframe src="../../../../posters/pressure-escape-route/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Pressure Escape Route Interactive Poster</summary>
+Type: infographic
+**poster-id:** pressure-escape-route<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Ten callouts connect calm awareness, refusal choices, safe exits, and trusted support across an ordinary community route.
+
+Use **Explore** mode to select a numbered marker and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
+
 Practicing refusal skills, even when nothing is currently wrong, is like a fire drill: it builds the habit before you ever need it for real. The more you say these scripts out loud — at home, with a trusted adult, or even alone in your room — the more naturally they will come out when you actually need them.
 
 The table below reviews all five refusal-skill scripts from this chapter together, so you can pick the one that fits a situation:

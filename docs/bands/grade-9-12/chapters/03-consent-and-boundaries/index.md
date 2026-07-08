@@ -191,6 +191,22 @@ correct/incorrect feedback shown via color change and text panel.
     enthusiastic one. A genuine yes does not require interpretation — it
     is clear enough that you would not need to check.
 
+#### Diagram: Consent in Context
+
+<iframe src="../../../../posters/consent-in-context/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Consent in Context Interactive Poster</summary>
+Type: infographic
+
+**poster-id:** consent-in-context<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Six fully clothed social scenarios examine communication, uncertainty, withdrawal, power, digital choices, and law.
+
+Use **Explore** mode to select a marker or section and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Personal Boundary Communication
 
 Consent depends on boundaries actually being communicated, which means

@@ -180,6 +180,21 @@ A quick comparison for read-aloud time:
 | Do all families look the same? | No — families come in many healthy structures |
 | Who can you go to for help? | A trusted adult at home, school, or in the community |
 
+#### Diagram: Families: Many Ways to Care
+
+<iframe src="../../../../posters/families-many-ways-to-care/main.html" width="100%" height="960px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Families: Many Ways to Care Interactive Poster</summary>
+Type: infographic
+**poster-id:** families-many-ways-to-care<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+A Kindergarten interactive poster showing varied families through acts of care, safety, inclusion, comfort, and belonging.
+
+Use **Explore** mode to select a numbered action. Use **Quiz** mode to find the act of care named in each question.
+</details>
+
 ### Wrap-Up for Teachers
 
 By the end of this chapter, most Kindergartners should be able to name at least one trusted adult at home, at school, and in the community, and recall that families come in a variety of structures — all of them healthy and real. These are Remember- and early Understand-level goals — no multi-step reasoning is expected yet.

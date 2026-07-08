@@ -236,6 +236,21 @@ Simple reasons breakfast helps a Grade 1 student's day:
 - Helps keep moods steady so mornings feel less cranky.
 - Refuels the body after many hours of sleep with no food.
 
+#### Diagram: Breakfast Around the Table
+
+<iframe src="../../../../posters/breakfast-around-the-table/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Breakfast Around the Table Interactive Poster</summary>
+Type: infographic
+**poster-id:** breakfast-around-the-table<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five varied breakfast traditions showing food variety, nourishing drinks, and food safety.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea in the illustration.
+</details>
+
 #### Diagram: Why Breakfast? Cause and Effect
 <iframe src="../../../../sims/why-breakfast-matters/main.html" width="100%" height="500px" scrolling="no"></iframe>
 <details markdown="1">

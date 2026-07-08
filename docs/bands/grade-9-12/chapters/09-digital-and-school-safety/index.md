@@ -573,6 +573,22 @@ event — only named policy practices and evaluation criteria.
     those systems work, the same analytical skill you would use to
     evaluate any public policy.
 
+#### Diagram: School Safety Systems Map
+
+<iframe src="../../../../posters/school-safety-systems-map/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>School Safety Systems Map Interactive Poster</summary>
+Type: infographic
+
+**poster-id:** school-safety-systems-map<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Twelve campus systems show safety as climate, access, preparation, communication, care, and student participation.
+
+Use **Explore** mode to select a marker or section. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## School Shooting Preparedness
 
 School safety practices exist because schools prepare seriously for a

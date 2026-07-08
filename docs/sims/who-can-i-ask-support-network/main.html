@@ -1,123 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Who Can I Ask?</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 500 -->
+<title>Who Can I Ask?</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 18px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 356px; border: 1px solid silver; border-radius: 6px; background: #fbfdff; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 9px; font-size: 11px; line-height: 1.8; }
+  .legend .k { display: inline-block; width: 14px; height: 14px; margin-right: 6px; vertical-align: middle; border: 2px solid #555; border-radius: 50%; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid #3a7ca5; border-radius: 4px; padding: 9px 11px; font-size: 13px; color: #334155; line-height: 1.5; min-height: 74px; }
+  .infobox strong { color: navy; }
+  .infobox em { color: #3a7ca5; font-style: italic; }
+  .infobox .ask { display: block; margin-top: 5px; color: #2f6a3f; font-weight: bold; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Who Can I Ask?</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> who-can-i-ask-support-network</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students identify trusted adults and practice using the skill of asking for help with body changes by exploring a support-network map centered on themselves.</p>
-        </div>
+<main>
+  <h3>Who Can I Ask?</h3>
+  <div class="subtitle">This is your support map. Click any circle to learn more. You can drag the circles, and zoom or pan to explore.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k" style="background:#ffdf7e;border-color:#e0a500;"></span>You
+      <span class="k" style="background:#acd5f2;border-color:#3a7ca5;margin-left:12px;"></span>A trusted adult who can help
     </div>
+  </div>
+  <div class="infobox" id="infobox"></div>
+</main>
+<script>
+const box = document.getElementById('infobox');
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+const DEFAULT_MSG =
+  'The yellow circle in the middle is <strong>you</strong>. The blue circles are ' +
+  'trusted adults who can help with questions about growing up. ' +
+  'Click any circle to learn who they are and a question you could ask them.';
 
-    Type: graph-model
-    **sim-id:** who-can-i-ask-support-network<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: use, identify, demonstrate
-    
-    Learning objective: Students identify trusted adults and practice using the skill of asking for help with body changes by exploring a support-network map centered on themselves.
-    
-    Purpose: Show students a visual "map" of the trusted adults available to them for body-change questions, reinforcing that help is close by and that asking is always the right move.
-    
-    Node types:
-    1. Center node: "Me" (soft yellow circle)
-    2. Trusted adult nodes (soft blue circles) connected directly to "Me": Parent/Guardian, School Nurse, Teacher, Counselor, Doctor, Another Trusted Family Member
-    
-    Edge types:
-    - Single line connecting "Me" to each trusted adult, labeled with how that adult can help (e.g., "Can answer questions at home," "Can help at school," "Knows about bodies and health")
-    
-    Layout: Radial/hub layout with "Me" in the center and trusted adult nodes arranged around it
-    
-    Interactive features:
-    - Click any trusted adult node to reveal an infobox: who this person is, and one example question a student could ask them about body changes
-    - Click the center "Me" node to reveal the reminder: "You can ask more than one trusted adult, and you can ask the same question more than once."
-    - Drag nodes to rearrange the network; zoom and pan supported
-    
-    Visual styling: Warm, friendly color palette (soft yellow center, soft blue trusted-adult nodes); simple circle shapes, no realistic depictions of people
-    
-    Legend: Explains that the yellow center node represents the student, and blue nodes represent trusted adults who can help with questions about growing up
-    
-    Implementation: vis-network with click-to-reveal infobox panels; no anatomical content anywhere in this diagram — it is purely a support-network map.
-    -->
+// Trusted adults arranged in a hexagon around "Me".
+// Positions avoid perfectly horizontal spokes (top/bottom are vertical; the
+// rest are diagonal) so edge labels render correctly on first load.
+const R = 300;
+const adults = [
+  { id:'parent',  label:'Parent /\nGuardian',    x:0,    y:-R,
+    edge:'Answers questions at home',
+    who:'The grown-up who takes care of you at home.',
+    ask:'"Can I ask you something about my body?"' },
+  { id:'nurse',   label:'School\nNurse',          x:260,  y:-150,
+    edge:'Knows about bodies & health',
+    who:'The health helper at your school.',
+    ask:'"I noticed my body doing something new. Is that normal?"' },
+  { id:'doctor',  label:'Doctor',                 x:260,  y:150,
+    edge:'Knows about bodies & health',
+    who:'Someone who knows all about how bodies grow and stay healthy.',
+    ask:'"My friend already started changing and I haven\'t. Is something wrong with me?"' },
+  { id:'teacher', label:'Teacher',                x:0,    y:R,
+    edge:'Helps at school',
+    who:'A trusted adult you see at school every day.',
+    ask:'"I have a question about growing up. Can we talk?"' },
+  { id:'counsel', label:'School\nCounselor',      x:-260, y:150,
+    edge:'Helps with big feelings',
+    who:'A school helper for big feelings and worries.',
+    ask:'"Some days I feel like crying for no reason. Is that okay?"' },
+  { id:'family',  label:'Trusted\nFamily Member', x:-260, y:-150,
+    edge:'A caring family member',
+    who:'A grandparent, aunt, uncle, or other family member who cares about you.',
+    ask:'"I feel nervous about growing up. Can we talk about it?"' }
+];
+
+const byId = {};
+adults.forEach(a => { byId[a.id] = { title: a.label.replace(/\n/g,' '), who: a.who, ask: a.ask }; });
+
+const nodes = [], edges = [];
+
+// Center "Me" node (soft yellow circle)
+nodes.push({
+  id:'me', label:'Me', x:0, y:0, shape:'circle',
+  color:{ background:'#ffdf7e', border:'#e0a500', highlight:{ background:'#ffe9a3', border:'#e0a500' } },
+  font:{ size:22, color:'#5a4600', face:'Arial' },
+  borderWidth:3, widthConstraint:{ minimum:56 }, shadow:true
+});
+
+// Trusted-adult nodes (soft blue circles) + labeled spoke to "Me"
+adults.forEach(a => {
+  nodes.push({
+    id:a.id, label:a.label, x:a.x, y:a.y, shape:'circle',
+    color:{ background:'#acd5f2', border:'#3a7ca5', highlight:{ background:'#c6e3f8', border:'#3a7ca5' } },
+    font:{ size:14, color:'#123a52', face:'Arial' },
+    borderWidth:2, widthConstraint:{ minimum:72, maximum:120 }, shadow:true
+  });
+  edges.push({
+    from:'me', to:a.id, label:a.edge,
+    font:{ size:11, color:'#37637f', face:'Arial', strokeWidth:5, strokeColor:'#eef6fb', align:'horizontal' },
+    color:{ color:'#a9c2d4', highlight:'#3a7ca5', hover:'#3a7ca5' },
+    width:2, selectionWidth:2, smooth:false
+  });
+});
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  physics:false,
+  interaction:{ hover:true, dragNodes:true, dragView:true, zoomView:true,
+    navigationButtons:true, keyboard:false, tooltipDelay:100000, selectConnectedEdges:false },
+  nodes:{ shape:'circle' }
+};
+const network = new vis.Network(container, data, options);
+
+// Fit once, then zoom out slightly so the top node clears the legend on
+// narrow (mobile) widths and the whole map has a little breathing room.
+let fitted = false;
+network.on('afterDrawing', () => {
+  if (!fitted) { fitted = true; network.fit(); network.moveTo({ scale: network.getScale() * 0.86 }); }
+});
+
+let selected = null;
+
+function fill(id, full){
+  if (id === 'me'){
+    box.innerHTML = full
+      ? '<strong>That\'s you!</strong> You can ask more than one trusted adult, and you can ask ' +
+        'the same question more than once. There is no such thing as a silly question about growing up.'
+      : '<strong>That\'s you.</strong> <em>Click to see a reminder about asking for help.</em>';
+    return;
+  }
+  const a = byId[id];
+  if (!a) return;
+  box.innerHTML = full
+    ? '<strong>' + a.title + '</strong> ' + a.who + '<span class="ask">A question you could ask: ' + a.ask + '</span>'
+    : '<strong>' + a.title + '</strong> ' + a.who + ' <em>Click to see a question you could ask.</em>';
+}
+
+network.on('click', p => {
+  if (p.nodes.length){ selected = p.nodes[0]; fill(selected, true); }
+  else { selected = null; box.innerHTML = DEFAULT_MSG; }
+});
+network.on('hoverNode', p => { if (!selected) fill(p.node, false); });
+network.on('blurNode', () => { if (!selected) box.innerHTML = DEFAULT_MSG; });
+
+box.innerHTML = DEFAULT_MSG;
+</script>
 </body>
 </html>

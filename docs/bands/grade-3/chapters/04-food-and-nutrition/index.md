@@ -106,6 +106,21 @@ Instructional Rationale: This is a Remember-level objective (recall, identify), 
 Implementation notes: Use p5.js. Keep the body figure simple and gender-neutral. Because this is a K-3 band, this MicroSim is the direct student-facing practice activity; the surrounding body text remains teacher-facing read-aloud material.
 </details>
 
+#### Diagram: Hunger and Fullness Dashboard
+
+<iframe src="../../../../posters/hunger-fullness-dashboard/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Hunger and Fullness Dashboard Interactive Poster</summary>
+Type: infographic
+**poster-id:** hunger-fullness-dashboard<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Nine gentle checkpoints distinguish internal body signals from outside prompts before, during, and after eating.
+
+Use **Explore** mode to select a numbered marker and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
+
 Paying attention to hunger and fullness signals helps a person eat in a way that feels good — not too little, not too much — and builds trust in the body's own wisdom. This same body awareness becomes even more useful once students start learning *what* is actually inside their food, which is where nutrition labels come in.
 
 ## Carbohydrates, Protein, and Fats
@@ -171,6 +186,21 @@ Instructional Rationale: This is an Understand-level objective (explain, classif
 Implementation notes: Use p5.js. Keep icons simple, flat, and easy to tell apart. This MicroSim is the direct student practice activity for this K-3 chapter.
 </details>
 
+#### Diagram: The Body Fuel Team
+
+<iframe src="../../../../posters/body-fuel-team/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>The Body Fuel Team Interactive Poster</summary>
+Type: infographic
+**poster-id:** body-fuel-team<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Four team stations explain ready energy, body repair, longer-lasting energy, and hydration.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea.
+</details>
+
 ## Reading a Nutrition Label
 
 Once students know what carbohydrates, protein, and fats do, the next skill is finding them on a real food package. Nearly every packaged food and drink sold in a store has a **Nutrition Facts label** printed somewhere on it, and learning to read one is a practical, lifelong skill.
@@ -234,6 +264,21 @@ Behavior:
 Instructional Rationale: This is an Apply-level objective (use, demonstrate, practice), so the design lets students actively interact with real label data and compare concrete values, rather than simply viewing a static picture of a label.
 
 Implementation notes: Use p5.js. Use realistic but simplified label formatting so it transfers to real packages students see at home. This MicroSim is the direct student practice activity for this K-3 chapter.
+</details>
+
+#### Diagram: Read the Label, Solve the Snack
+
+<iframe src="../../../../posters/read-label-solve-snack/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Read the Label, Solve the Snack Interactive Poster</summary>
+Type: infographic
+**poster-id:** read-label-solve-snack<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Ten detective targets connect label structure with three everyday snack contexts.
+
+Use **Explore** mode to select a numbered marker and learn more. Use **Quiz** mode to practice finding each idea.
 </details>
 
 Carbohydrates, protein, fats, and the nutrition label that lists them are the foundation for understanding food — but drinks matter just as much as food, which is where the chapter turns next.

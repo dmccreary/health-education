@@ -388,6 +388,22 @@ Implementation: Leaflet.js with custom stylized (non-real-world) tile
 overlay and GeoJSON markers
 </details>
 
+#### Diagram: Health Policy Tradeoff Lab
+
+<iframe src="../../../../posters/health-policy-tradeoff-lab/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Health Policy Tradeoff Lab Interactive Poster</summary>
+Type: infographic
+
+**poster-id:** health-policy-tradeoff-lab<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five policy-analysis panels balance goals, evidence, equity, possible harms, and revision.
+
+Use **Explore** mode to select a marker or section. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Substance-Related Health Disparities
 
 **Substance-related health disparities** are documented differences in

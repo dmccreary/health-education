@@ -258,6 +258,22 @@ objects and slot bounding boxes; store food nutrient data in a JSON
 array; keep the interface usable on both mouse and touch.
 </details>
 
+#### Diagram: Personal Nutrition Design Studio
+
+<iframe src="../../../../posters/personal-nutrition-design-studio/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Personal Nutrition Design Studio Interactive Poster</summary>
+Type: infographic
+
+**poster-id:** personal-nutrition-design-studio<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Six design panels turn nutrition evidence into a flexible, culturally meaningful personal plan.
+
+Use **Explore** mode to select a marker or section and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Reading the Evidence: Food Label Analysis
 
 A nutrition plan is only as good as the information behind it, and the

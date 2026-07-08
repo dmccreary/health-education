@@ -310,6 +310,21 @@ Color scheme: Center circle in soft blue, middle ring in soft teal, outer ring i
 Implementation: p5.js infographic with click-to-reveal infobox panels for each ring; ends every path with the reminder that trusted adults can help.
 </details>
 
+#### Diagram: The Empathy Bridge
+
+<iframe src="../../../../posters/empathy-bridge/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>The Empathy Bridge Interactive Poster</summary>
+Type: infographic
+**poster-id:** empathy-bridge<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Four bridge stages turn noticing another person into inclusive, helpful action.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea.
+</details>
+
 !!! mascot-encourage "You've Got This"
     ![Scout encouraging](../../../../img/mascot/encouraging.png){ class="mascot-admonition-img" }
     Learning about the effects of bullying and exclusion can feel heavy, but understanding them is exactly what helps students choose kindness and know when to ask a trusted adult for help.

@@ -161,6 +161,22 @@ repaired, to sustained patterns of control that constitute abuse.
     the rest of this chapter — collapsing them into one is where a lot of
     faulty reasoning about relationships starts.
 
+#### Diagram: Relationship Health Spectrum
+
+<iframe src="../../../../posters/relationship-health-spectrum/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Relationship Health Spectrum Interactive Poster</summary>
+Type: infographic
+
+**poster-id:** relationship-health-spectrum<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Six relationship panels distinguish mutual respect from concerning patterns, control, and the need for support.
+
+Use **Explore** mode to select a marker or section. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Where Do Our Relationship Expectations Come From?
 
 Nobody invents their relationship expectations from scratch. **Cultural

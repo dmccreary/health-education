@@ -62,6 +62,21 @@ Talking points for read-aloud:
 
 A Grade 1 student doesn't need to memorize every kind of personal information. The simple rule is: if you're not sure whether something is safe to share, stop and ask a trusted adult first. A good habit to build: if a screen ever asks for a name, address, or a picture, that's the signal to pause and ask a trusted adult before doing anything else.
 
+#### Diagram: Pause Before You Share
+
+<iframe src="../../../../posters/pause-before-you-share/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Pause Before You Share Interactive Poster</summary>
+Type: infographic
+**poster-id:** pause-before-you-share<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Four device situations for learning, balanced play, private information, and adult help.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea in the illustration.
+</details>
+
 #### Diagram: Safe or Ask First? Technology Sorter
 
 <iframe src="../../../../sims/safe-or-ask-first-technology-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
@@ -306,6 +321,21 @@ A student never needs a perfect reason to say no to a touch that doesn't feel ri
 !!! mascot-encourage "You Can Practice This"
     ![Scout encouraging](../../../../img/mascot/encouraging.png){ class="mascot-admonition-img" }
     Saying "no" in a strong, clear voice can feel hard to practice at first — that's normal. The more you practice it here, in a safe place, the easier it becomes to use when you really need it.
+
+#### Diagram: My Safety Voice
+
+<iframe src="../../../../posters/my-safety-voice/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>My Safety Voice Interactive Poster</summary>
+Type: infographic
+**poster-id:** my-safety-voice<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+A calm four-step sequence for noticing discomfort, saying no, moving away, and telling.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea in the illustration.
+</details>
 
 #### Diagram: Practice Saying No Role-Play Simulator
 

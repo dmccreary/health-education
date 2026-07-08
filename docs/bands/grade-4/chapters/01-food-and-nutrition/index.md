@@ -109,6 +109,21 @@ Responsive behavior: Columns stack vertically on narrow screens; food tray becom
 Implementation: p5.js with an array of food objects (name, correct category, icon, fact) driving drag-and-drop or click-to-place sorting logic.
 </details>
 
+#### Diagram: Nutrient Crew: Different Jobs, One Body
+
+<iframe src="../../../../posters/nutrient-crew-different-jobs-one-body/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Nutrient Crew: Different Jobs, One Body Interactive Poster</summary>
+Type: infographic
+**poster-id:** nutrient-crew-different-jobs-one-body<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five body-city departments show why carbohydrates, protein, fats, micronutrients, and water all matter.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea.
+</details>
+
 ## Carbohydrates: Quick Energy
 
 **Carbohydrates** are the nutrient your body breaks down first for quick, usable energy. When you eat bread, rice, oats, pasta, fruit, or vegetables, your body converts the carbohydrates into a sugar called glucose, which travels through your blood and powers your cells — especially your brain and muscles.
@@ -288,6 +303,21 @@ Behavior:
 Instructional Rationale: Planning a balanced meal is Grade 4's first genuine Create-level benchmark, so the pattern uses an open-ended plate-building tool rather than a fixed right-answer quiz — students construct their own solution and receive formative feedback, matching the Create-level demand of designing an original plan.
 
 Implementation notes: Use p5.js. Keep the plate model flexible enough to accept multiple valid combinations rather than one "correct" plate. Store food-group tags on each icon to drive the evaluation logic.
+</details>
+
+#### Diagram: Build a Balanced Meal from Label Clues
+
+<iframe src="../../../../posters/build-balanced-meal-label-clues/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Build a Balanced Meal from Label Clues Interactive Poster</summary>
+Type: infographic
+**poster-id:** build-balanced-meal-label-clues<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Twelve market-to-table clues connect package evidence, varied foods, hydration, and flexible meal planning.
+
+Use **Explore** mode to select a numbered marker and learn more. Use **Quiz** mode to practice finding each idea.
 </details>
 
 !!! mascot-encourage "Every Plate Looks Different"

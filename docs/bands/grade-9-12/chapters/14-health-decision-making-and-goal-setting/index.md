@@ -718,6 +718,22 @@ Implementation: p5.js with DOM text panels and a custom slider-rubric
 widget.
 </details>
 
+#### Diagram: Health Goal Feedback Loop
+
+<iframe src="../../../../posters/health-goal-feedback-loop/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Health Goal Feedback Loop Interactive Poster</summary>
+Type: infographic
+
+**poster-id:** health-goal-feedback-loop<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Nine circular stations show health goals as a flexible feedback process rather than a pass-or-fail test.
+
+Use **Explore** mode to select a marker or section and learn more. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Bringing It Together
 
 Every concept in this chapter is one step of a single repeatable process,

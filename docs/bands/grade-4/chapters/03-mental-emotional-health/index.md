@@ -165,6 +165,21 @@ Color scheme: Warm, neutral marker colors (soft teal and gold) with no stereotyp
 Implementation: Leaflet map with custom markers and click-to-open infobox panels; content reviewed for respectful, non-stereotyping language before publication.
 </details>
 
+#### Diagram: Calm Is More Than One Thing
+
+<iframe src="../../../../posters/calm-more-than-one-thing/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Calm Is More Than One Thing Interactive Poster</summary>
+Type: infographic
+**poster-id:** calm-more-than-one-thing<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five garden rooms honor different healthy and culturally rooted ways to find steadiness.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea.
+</details>
+
 ## Mental Health Benefits Of Culture
 
 Cultural self-regulation practices do more than calm a single tough moment — over time, staying connected to culture can support mental health in an ongoing way.
@@ -493,6 +508,21 @@ Bullying is different from a single disagreement or moment of teasing because it
 | Power | Roughly equal between students | One person has more power over the other |
 | First response | Calm statement of feelings often helps | Get to safety and tell a trusted adult right away |
 | Reporting | Tell an adult if it continues | Always tell a trusted adult, every time |
+
+#### Diagram: From Bias to Belonging
+
+<iframe src="../../../../posters/from-bias-to-belonging/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>From Bias to Belonging Interactive Poster</summary>
+Type: infographic
+**poster-id:** from-bias-to-belonging<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Four classroom scenes move from noticing unfair assumptions to creating an inclusive community.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea.
+</details>
 
 !!! mascot-celebration "Chapter Complete!"
     ![Scout celebrating with a party hat](../../../../img/mascot/celebration.png){ class="mascot-admonition-img" }

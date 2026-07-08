@@ -190,6 +190,21 @@ Notice that a single source, like a favorite book from the library, can be relia
     ![Scout encouraging](../../../../img/mascot/encouraging.png){ class="mascot-admonition-img" }
     Learning to question a health claim is a brand-new skill this year, and it might feel a little strange to "doubt" something at first. That's completely normal — asking good questions is not being rude, it's being smart. You've got this!
 
+#### Diagram: Health Information Detective Desk
+
+<iframe src="../../../../posters/health-information-detective-desk/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Health Information Detective Desk Interactive Poster</summary>
+Type: infographic
+**poster-id:** health-information-detective-desk<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five evidence folders help students compare source expertise, accountability, motive, date, and fit.
+
+Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to practice finding each idea.
+</details>
+
 ## Bringing It All Together
 
 Health is the big idea this whole book explores: how well a person's body and mind are working, growing, and feeling. This chapter showed that health behaviors don't happen in isolation — family, friends, school, community, media, and culture all shape the choices a student makes every day, sometimes helpfully and sometimes not. Because messages about health come from so many places, students are now ready to ask two connected questions about any health claim: is it **valid** (actually true), and does it come from a **reliable** source (one that can be trusted again and again)?

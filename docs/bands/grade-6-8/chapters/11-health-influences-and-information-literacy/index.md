@@ -278,6 +278,21 @@ Instructional Rationale: An Understand-level objective calls for concrete worked
 Implementation notes: p5.js. Responsive canvas that stacks checklist cards above example cards on narrow screens.
 </details>
 
+#### Diagram: Health Information Source Ladder
+
+<iframe src="../../../../posters/health-information-source-ladder/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Health Information Source Ladder Interactive Poster</summary>
+Type: infographic
+**poster-id:** health-information-source-ladder<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five source types show what each can contribute and what students still need to verify.
+
+Use **Explore** mode to select a marker or section. Use **Quiz** mode to practice finding each idea.
+</details>
+
 ## Evaluating Validity Of Health Information
 
 Knowing what a valid source looks like in general leads directly to the next skill: applying that knowledge to a specific, real piece of health information. **Evaluating validity of health information** is the process of locating a specific health claim, product, or service and systematically assessing whether it meets the standards of a valid source before trusting or acting on it.
@@ -325,6 +340,21 @@ Implementation notes: p5.js. All six claims and sources are fictionalized compos
 !!! mascot-warning "Common Mistake"
     ![Scout with a cautionary expression](../../../../img/mascot/warning.png){ class="mascot-admonition-img" }
     A polished video or a confident tone is not evidence. The most convincing-sounding post and the most accurate one are sometimes the same thing — but only checking the rubric tells you which is which.
+
+#### Diagram: Nutrition Claim Courtroom
+
+<iframe src="../../../../posters/nutrition-claim-courtroom/main.html" width="100%" height="980px" scrolling="no"></iframe>
+<details markdown="1">
+<summary>Nutrition Claim Courtroom Interactive Poster</summary>
+Type: infographic
+**poster-id:** nutrition-claim-courtroom<br/>
+**Library:** p5.js<br/>
+**Status:** Published
+
+Five evidence tests turn a persuasive nutrition claim into a reasoned verdict.
+
+Use **Explore** mode to select a marker or section. Use **Quiz** mode to practice finding each idea.
+</details>
 
 ## Situations Needing Professional Support
 
