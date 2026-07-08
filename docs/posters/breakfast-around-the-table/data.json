@@ -1,0 +1,112 @@
+{
+  "title": "Breakfast Around the Table",
+  "image": "breakfast-around-the-table.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#6E4B86",
+    "#4B7F2B",
+    "#C85B17",
+    "#176B9A",
+    "#A43E1F"
+  ],
+  "zones": [
+    {
+      "id": "oatmeal-berries",
+      "label": "Oatmeal & Berries",
+      "color": "#6E4B86",
+      "x1": 0.3,
+      "y1": 15.1,
+      "x2": 20.8,
+      "y2": 99.4,
+      "summary": "Whole grains, fruit, seeds, and water can make a varied start.",
+      "facts": [
+        "Oatmeal is a grain food.",
+        "Berries add fruit variety.",
+        "Clean containers help keep prepared food safe."
+      ]
+    },
+    {
+      "id": "rice-eggs",
+      "label": "Rice & Eggs",
+      "color": "#4B7F2B",
+      "x1": 21.1,
+      "y1": 15.1,
+      "x2": 40,
+      "y2": 99.4,
+      "summary": "Rice, egg, vegetables, fruit, and water each add something different.",
+      "facts": [
+        "Rice belongs to the grain group.",
+        "Egg provides protein.",
+        "Cold foods stay safer when kept cool."
+      ]
+    },
+    {
+      "id": "beans-tortilla",
+      "label": "Beans & Tortilla",
+      "color": "#C85B17",
+      "x1": 40.3,
+      "y1": 15.1,
+      "x2": 60.1,
+      "y2": 99.4,
+      "summary": "Beans, tortilla, avocado, tomato, fruit, and a nourishing drink create variety.",
+      "facts": [
+        "Beans are a protein food.",
+        "Corn tortilla is a grain food.",
+        "Families build healthy meals in many traditions."
+      ]
+    },
+    {
+      "id": "yogurt-flatbread",
+      "label": "Yogurt & Flatbread",
+      "color": "#176B9A",
+      "x1": 60.4,
+      "y1": 15.1,
+      "x2": 80.1,
+      "y2": 99.4,
+      "summary": "Yogurt, bread, vegetables, olives, and water offer several food groups.",
+      "facts": [
+        "Yogurt is a dairy food or can have a nourishing alternative.",
+        "Flatbread is a grain food.",
+        "Reusable covered containers protect food during storage."
+      ]
+    },
+    {
+      "id": "soup-grains",
+      "label": "Soup & Grains",
+      "color": "#A43E1F",
+      "x1": 80.4,
+      "y1": 15.1,
+      "x2": 99.7,
+      "y2": 99.4,
+      "summary": "Warm soup, vegetables, protein food, grains, and fruit can be breakfast too.",
+      "facts": [
+        "Breakfast foods differ across families and cultures.",
+        "An adult helps handle hot food safely.",
+        "Covered leftovers should be cooled and stored safely."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which table shows oatmeal as its main grain food?",
+      "correct_zone": "oatmeal-berries"
+    },
+    {
+      "question": "Which table pairs rice with egg and vegetables?",
+      "correct_zone": "rice-eggs"
+    },
+    {
+      "question": "Which table shows beans with a corn tortilla?",
+      "correct_zone": "beans-tortilla"
+    },
+    {
+      "question": "Which table includes yogurt and flatbread?",
+      "correct_zone": "yogurt-flatbread"
+    },
+    {
+      "question": "Which table reminds us that warm soup can be a breakfast food?",
+      "correct_zone": "soup-grains"
+    }
+  ]
+}

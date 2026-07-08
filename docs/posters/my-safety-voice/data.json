@@ -1,0 +1,92 @@
+{
+  "title": "My Safety Voice",
+  "image": "my-safety-voice.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#E5A311",
+    "#E45B47",
+    "#269C95",
+    "#4B5399"
+  ],
+  "zones": [
+    {
+      "id": "notice",
+      "label": "Notice",
+      "color": "#E5A311",
+      "x1": 0.4,
+      "y1": 14.8,
+      "x2": 24.6,
+      "y2": 99.3,
+      "summary": "Body clues can signal that something feels wrong, confusing, or unwanted.",
+      "facts": [
+        "Notice tight muscles, a worried tummy, or wanting to step back.",
+        "You do not need to explain a feeling before seeking safety.",
+        "Your body belongs to you."
+      ]
+    },
+    {
+      "id": "say-no",
+      "label": "Say No",
+      "color": "#E45B47",
+      "x1": 25,
+      "y1": 14.8,
+      "x2": 49.4,
+      "y2": 99.3,
+      "summary": "A strong, clear “No” or “Stop” communicates a boundary.",
+      "facts": [
+        "Use a firm voice when it is safe to do so.",
+        "A stop-hand gesture can add a visual signal.",
+        "You are allowed to refuse unwanted touch."
+      ]
+    },
+    {
+      "id": "move-away",
+      "label": "Move Away",
+      "color": "#269C95",
+      "x1": 49.9,
+      "y1": 14.8,
+      "x2": 74.4,
+      "y2": 99.3,
+      "summary": "Moving toward a safer place or other people creates distance.",
+      "facts": [
+        "Go toward a classroom, family area, or trusted adult.",
+        "Safety matters more than politeness.",
+        "If you cannot move away, call for help."
+      ]
+    },
+    {
+      "id": "tell-adult",
+      "label": "Tell a Trusted Adult",
+      "color": "#4B5399",
+      "x1": 74.8,
+      "y1": 14.8,
+      "x2": 99.6,
+      "y2": 99.3,
+      "summary": "Tell a trusted adult what happened and how you feel.",
+      "facts": [
+        "Keep telling until someone helps.",
+        "You will not be in trouble for telling.",
+        "Trusted adults should listen, protect, and get more help when needed."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which step asks you to pay attention to body clues?",
+      "correct_zone": "notice"
+    },
+    {
+      "question": "Which step uses a strong voice or stop-hand signal?",
+      "correct_zone": "say-no"
+    },
+    {
+      "question": "Which step creates distance and heads toward safety?",
+      "correct_zone": "move-away"
+    },
+    {
+      "question": "Which step should continue until a trusted person helps?",
+      "correct_zone": "tell-adult"
+    }
+  ]
+}

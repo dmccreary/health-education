@@ -1,0 +1,92 @@
+{
+  "title": "From Feeling to Words",
+  "image": "from-feeling-to-words.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#E75B32",
+    "#168B84",
+    "#E39B18",
+    "#70499A"
+  ],
+  "zones": [
+    {
+      "id": "what-happened",
+      "label": "What Happened?",
+      "color": "#E75B32",
+      "x1": 0.5,
+      "y1": 16.2,
+      "x2": 25.6,
+      "y2": 99.2,
+      "summary": "Start with the event: describe what happened without blaming.",
+      "facts": [
+        "Notice the facts you can see.",
+        "Separate the action from guesses about intent.",
+        "A clear description helps other people understand."
+      ]
+    },
+    {
+      "id": "what-i-feel",
+      "label": "What I Feel",
+      "color": "#168B84",
+      "x1": 26,
+      "y1": 16.2,
+      "x2": 49.6,
+      "y2": 99.2,
+      "summary": "Name the feeling and notice clues in the body.",
+      "facts": [
+        "Feelings may show in the face, shoulders, tummy, or breathing.",
+        "More than one feeling can happen at once.",
+        "Naming a feeling can make it easier to choose words."
+      ]
+    },
+    {
+      "id": "what-i-can-say",
+      "label": "What I Can Say",
+      "color": "#E39B18",
+      "x1": 50,
+      "y1": 16.2,
+      "x2": 73.1,
+      "y2": 99.2,
+      "summary": "Use a calm I-statement to share the feeling and need.",
+      "facts": [
+        "Try: “I feel upset when the blocks fall.”",
+        "Add a need or request: “Please help me rebuild.”",
+        "A strong voice can still be respectful."
+      ]
+    },
+    {
+      "id": "who-can-help",
+      "label": "Who Can Help?",
+      "color": "#70499A",
+      "x1": 73.5,
+      "y1": 16.2,
+      "x2": 99.5,
+      "y2": 99.2,
+      "summary": "A trusted adult can listen when words are hard or a problem continues.",
+      "facts": [
+        "Teachers, caregivers, and other trusted adults can help.",
+        "Asking for help is a healthy choice.",
+        "Help can include safety, calming, or finding a fair solution."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which step focuses on facts before blame?",
+      "correct_zone": "what-happened"
+    },
+    {
+      "question": "Which step asks you to notice body clues and name an emotion?",
+      "correct_zone": "what-i-feel"
+    },
+    {
+      "question": "Which step can include an I-statement and a clear request?",
+      "correct_zone": "what-i-can-say"
+    },
+    {
+      "question": "Which step is useful when a problem continues or feels too big?",
+      "correct_zone": "who-can-help"
+    }
+  ]
+}

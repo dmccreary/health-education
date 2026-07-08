@@ -1,0 +1,92 @@
+{
+  "title": "Pause Before You Share",
+  "image": "pause-before-you-share.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#176BC0",
+    "#4C9A27",
+    "#D94B28",
+    "#7042A0"
+  ],
+  "zones": [
+    {
+      "id": "learn",
+      "label": "Learn",
+      "color": "#176BC0",
+      "x1": 0.2,
+      "y1": 17.6,
+      "x2": 24.5,
+      "y2": 99.4,
+      "summary": "Technology can support learning when a trusted adult approves the activity.",
+      "facts": [
+        "Use apps and sites a trusted adult knows about.",
+        "Learning tools should not ask a young child to share private details alone.",
+        "Tell an adult if anything feels confusing or uncomfortable."
+      ]
+    },
+    {
+      "id": "play",
+      "label": "Play",
+      "color": "#4C9A27",
+      "x1": 24.9,
+      "y1": 17.6,
+      "x2": 49.4,
+      "y2": 99.4,
+      "summary": "Healthy technology use balances screen play with movement, rest, and people.",
+      "facts": [
+        "Approved games can be one enjoyable activity.",
+        "Bodies also need active play and sleep.",
+        "A trusted adult can help choose when to stop."
+      ]
+    },
+    {
+      "id": "private-information",
+      "label": "Private Information",
+      "color": "#D94B28",
+      "x1": 49.9,
+      "y1": 17.6,
+      "x2": 74.4,
+      "y2": 99.4,
+      "summary": "Names, addresses, schools, phone numbers, and photos should not be shared without permission.",
+      "facts": [
+        "Pause when a screen asks for personal details.",
+        "Do not type an answer just because a form appears.",
+        "Private information belongs to the child and family."
+      ]
+    },
+    {
+      "id": "ask-an-adult",
+      "label": "Ask an Adult",
+      "color": "#7042A0",
+      "x1": 74.8,
+      "y1": 17.6,
+      "x2": 99.7,
+      "y2": 99.4,
+      "summary": "When unsure, stop and bring the device to a trusted adult.",
+      "facts": [
+        "Asking is a smart safety action.",
+        "Show the adult what appeared on screen.",
+        "A trusted adult can help close, report, or choose safely."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which panel shows an adult-approved school activity?",
+      "correct_zone": "learn"
+    },
+    {
+      "question": "Which panel reminds us that screens are only one part of a balanced day?",
+      "correct_zone": "play"
+    },
+    {
+      "question": "Which panel includes details such as a name, address, school, or photo?",
+      "correct_zone": "private-information"
+    },
+    {
+      "question": "Which panel is the best choice whenever you are unsure?",
+      "correct_zone": "ask-an-adult"
+    }
+  ]
+}

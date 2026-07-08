@@ -1,0 +1,92 @@
+{
+  "title": "Kindness Makes Room",
+  "image": "kindness-makes-room.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#D95642",
+    "#E4A713",
+    "#4D9B3C",
+    "#2689B2"
+  ],
+  "zones": [
+    {
+      "id": "notice",
+      "label": "Notice",
+      "color": "#D95642",
+      "x1": 0.2,
+      "y1": 14.7,
+      "x2": 24.9,
+      "y2": 99.4,
+      "summary": "Kindness often starts by noticing how someone else may be feeling.",
+      "facts": [
+        "Look for a person sitting alone or having trouble joining.",
+        "Pause before rushing past.",
+        "Noticing is the first step toward helping someone belong."
+      ]
+    },
+    {
+      "id": "invite",
+      "label": "Invite",
+      "color": "#E4A713",
+      "x1": 25.2,
+      "y1": 14.7,
+      "x2": 49.9,
+      "y2": 99.4,
+      "summary": "A simple invitation can open a place in the group.",
+      "facts": [
+        "Use friendly words such as “Would you like to play?”",
+        "Give the other person time to answer.",
+        "An invitation is kind even when the person chooses something else."
+      ]
+    },
+    {
+      "id": "play-together",
+      "label": "Play Together",
+      "color": "#4D9B3C",
+      "x1": 50.2,
+      "y1": 14.7,
+      "x2": 74.8,
+      "y2": 99.4,
+      "summary": "Including others means everyone has a real way to contribute.",
+      "facts": [
+        "Share materials and ideas.",
+        "Listen to different ways of playing.",
+        "Make space for different bodies, skills, and interests."
+      ]
+    },
+    {
+      "id": "help-repair",
+      "label": "Help Repair",
+      "color": "#2689B2",
+      "x1": 75.1,
+      "y1": 14.7,
+      "x2": 99.7,
+      "y2": 99.4,
+      "summary": "Mistakes can become kind moments when people help fix what happened.",
+      "facts": [
+        "Say sorry when your action caused harm.",
+        "Help rebuild, clean up, or try again.",
+        "Repair is about caring for the person and the problem."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which step begins when you see someone sitting alone?",
+      "correct_zone": "notice"
+    },
+    {
+      "question": "Which step uses friendly words to open the game to someone?",
+      "correct_zone": "invite"
+    },
+    {
+      "question": "Which step gives every person a meaningful role?",
+      "correct_zone": "play-together"
+    },
+    {
+      "question": "Which step includes apologizing and helping rebuild?",
+      "correct_zone": "help-repair"
+    }
+  ]
+}
