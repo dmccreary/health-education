@@ -36,7 +36,7 @@
       "y": 30,
       "radius": 4,
       "color": "#E07B39",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "A child holds the garden gate open and greets a newcomer.",
       "description": "A friendly welcome helps a new person feel that they belong.",
       "ap_tip": "Offer information without assuming the new person needs everything explained."
@@ -48,7 +48,7 @@
       "y": 65,
       "radius": 4,
       "color": "#6A3FB5",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Two children compare different seedlings with equal interest.",
       "description": "Friends can like different plants, games, foods, and ideas and still care for each other.",
       "ap_tip": "Difference is part of every healthy group."
@@ -60,7 +60,7 @@
       "y": 27,
       "radius": 4,
       "color": "#C7164E",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "A child uses a calm open-hand gesture while a friend pauses.",
       "description": "Healthy boundaries let people say when they need more room or quiet.",
       "ap_tip": "A respectful friend listens and adjusts."
@@ -72,7 +72,7 @@
       "y": 69,
       "radius": 4,
       "color": "#168A7A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Two children exchange a garden trowel beside a raised bed.",
       "description": "Taking turns gives each person a fair chance to contribute.",
       "ap_tip": "Waiting can be part of cooperation."
@@ -84,7 +84,7 @@
       "y": 45,
       "radius": 4,
       "color": "#D19319",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Two children lift a spilled seed tray together.",
       "description": "Everyone makes mistakes. Healthy friends notice harm, apologize, and help repair it.",
       "ap_tip": "Focus on what can be fixed next."
@@ -96,7 +96,7 @@
       "y": 69,
       "radius": 4,
       "color": "#3A66A7",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Friends work at an accessible raised bed beside a wheelchair.",
       "description": "Belonging means changing the activity so every person has a meaningful way to join.",
       "ap_tip": "Follow the person’s lead instead of assuming what help they want."
@@ -108,7 +108,7 @@
       "y": 30,
       "radius": 4,
       "color": "#A64D79",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Children smile and applaud a friend holding flowers.",
       "description": "Healthy friends can feel happy about another person’s effort and success.",
       "ap_tip": "Celebration does not need a winner."
@@ -120,7 +120,7 @@
       "y": 69,
       "radius": 4,
       "color": "#4F6B38",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "A child sits beside a discouraged friend and offers support.",
       "description": "Checking in can sound like “Are you okay?” or “Would you like company?”",
       "ap_tip": "Listen to the answer and seek adult help when needed."

@@ -1,0 +1,153 @@
+{
+  "title": "Resilience Protective-Factors Garden",
+  "orientation": "landscape",
+  "image": "resilience-protective-factors-garden.png",
+  "layout": "top-bottom",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Safe Relationships",
+      "x": 10,
+      "y": 18,
+      "radius": 3.7,
+      "color": "#2468A2",
+      "panel": "top",
+      "hint": "Find the scene that best represents safe relationships.",
+      "description": "Reliable caring relationships provide connection, perspective, and practical help.",
+      "ap_tip": "Safety and trust matter more than relationship labels. Several supports create a stronger network."
+    },
+    {
+      "id": 2,
+      "label": "Coping Skills",
+      "x": 30,
+      "y": 16,
+      "radius": 3.7,
+      "color": "#5D953B",
+      "panel": "top",
+      "hint": "Find the scene that best represents coping skills.",
+      "description": "Flexible coping skills help manage emotion, stress, and difficult situations.",
+      "ap_tip": "Skills can be learned and practiced. Coping should not replace changing harmful conditions."
+    },
+    {
+      "id": 3,
+      "label": "Cultural Roots",
+      "x": 51,
+      "y": 16,
+      "radius": 3.7,
+      "color": "#D39B1C",
+      "panel": "top",
+      "hint": "Find the scene that best represents cultural roots.",
+      "description": "Culture, identity, language, spirituality, and community can strengthen meaning and belonging.",
+      "ap_tip": "The person defines what is supportive. Cultural strengths can complement clinical care."
+    },
+    {
+      "id": 4,
+      "label": "Sleep and Rest",
+      "x": 72,
+      "y": 17,
+      "radius": 3.7,
+      "color": "#7453A1",
+      "panel": "top",
+      "hint": "Find the scene that best represents sleep and rest.",
+      "description": "Rest supports regulation, learning, immunity, and recovery.",
+      "ap_tip": "Unequal schedules and environments affect sleep opportunity. Persistent sleep problems deserve support."
+    },
+    {
+      "id": 5,
+      "label": "Movement",
+      "x": 91,
+      "y": 21,
+      "radius": 3.7,
+      "color": "#C95343",
+      "panel": "top",
+      "hint": "Find the scene that best represents movement.",
+      "description": "Movement can support mood, sleep, connection, and physical health.",
+      "ap_tip": "Choose accessible enjoyable activity. Rest is part of movement planning."
+    },
+    {
+      "id": 6,
+      "label": "Meaningful Goals",
+      "x": 17,
+      "y": 45,
+      "radius": 3.7,
+      "color": "#087A8A",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents meaningful goals.",
+      "description": "Purpose and realistic goals can organize effort and hope.",
+      "ap_tip": "Goals may change after setbacks. Small steps count."
+    },
+    {
+      "id": 7,
+      "label": "Healthcare",
+      "x": 39,
+      "y": 43,
+      "radius": 3.7,
+      "color": "#2468A2",
+      "panel": "top",
+      "hint": "Find the scene that best represents healthcare.",
+      "description": "Accessible respectful healthcare supports prevention, treatment, and recovery.",
+      "ap_tip": "A good care fit matters. Systems should reduce cost, language, and access barriers."
+    },
+    {
+      "id": 8,
+      "label": "Peer Support",
+      "x": 62,
+      "y": 44,
+      "radius": 3.7,
+      "color": "#5D953B",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents peer support.",
+      "description": "Peers can offer understanding, companionship, and lived-experience wisdom.",
+      "ap_tip": "Peers need boundaries and support too. Urgent risk requires adult or professional help."
+    },
+    {
+      "id": 9,
+      "label": "School and Work Support",
+      "x": 84,
+      "y": 47,
+      "radius": 3.7,
+      "color": "#D39B1C",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents school and work support.",
+      "description": "Flexible policies, accommodations, mentorship, and fair opportunity strengthen stability.",
+      "ap_tip": "Performance is not the measure of human worth. Institutions share responsibility for access."
+    },
+    {
+      "id": 10,
+      "label": "Stable Housing",
+      "x": 15,
+      "y": 76,
+      "radius": 3.7,
+      "color": "#7453A1",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents stable housing.",
+      "description": "Safe stable housing supports sleep, routines, care, and reduced stress.",
+      "ap_tip": "Housing is a health condition. Community resources and policy matter."
+    },
+    {
+      "id": 11,
+      "label": "Community Resources",
+      "x": 48,
+      "y": 78,
+      "radius": 3.7,
+      "color": "#C95343",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents community resources.",
+      "description": "Food, transportation, recreation, care, and mutual aid expand practical options.",
+      "ap_tip": "Resources should be accessible and culturally safe. Community members hold design expertise."
+    },
+    {
+      "id": 12,
+      "label": "Hope and New Growth",
+      "x": 82,
+      "y": 76,
+      "radius": 3.7,
+      "color": "#087A8A",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents hope and new growth.",
+      "description": "Hope can coexist with grief, uncertainty, and slow progress.",
+      "ap_tip": "Resilience is not invulnerability. People deserve support before, during, and after hardship."
+    }
+  ]
+}

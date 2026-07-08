@@ -1,0 +1,126 @@
+{
+  "title": "Personal Nutrition Design Studio",
+  "image": "personal-nutrition-design-studio.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343",
+    "#087A8A"
+  ],
+  "zones": [
+    {
+      "id": "personal-needs",
+      "label": "Personal Needs",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 16.42,
+      "y2": 99.7,
+      "summary": "Nutrition needs vary with age, health, activity, access, preferences, and goals.",
+      "facts": [
+        "Start with the person rather than a universal menu.",
+        "Qualified professionals can help with medical needs."
+      ]
+    },
+    {
+      "id": "label-evidence",
+      "label": "Label Evidence",
+      "color": "#5D953B",
+      "x1": 16.92,
+      "y1": 0.3,
+      "x2": 33.08,
+      "y2": 99.7,
+      "summary": "Labels help compare serving information, nutrients, and ingredients.",
+      "facts": [
+        "A single number does not define a food.",
+        "Use label evidence with context and eating patterns."
+      ]
+    },
+    {
+      "id": "beverage-evidence",
+      "label": "Beverage Evidence",
+      "color": "#D39B1C",
+      "x1": 33.58,
+      "y1": 0.3,
+      "x2": 49.75,
+      "y2": 99.7,
+      "summary": "Beverages can contribute hydration, nutrients, caffeine, sugar, or alcohol.",
+      "facts": [
+        "Context and frequency matter.",
+        "Water is a useful everyday option for many situations."
+      ]
+    },
+    {
+      "id": "meal-timing",
+      "label": "Meal Timing",
+      "color": "#7453A1",
+      "x1": 50.25,
+      "y1": 0.3,
+      "x2": 66.42,
+      "y2": 99.7,
+      "summary": "Timing can interact with hunger, schedules, sleep, activity, culture, and medication.",
+      "facts": [
+        "Rigid schedules are not practical for everyone.",
+        "Plan for realistic access and routines."
+      ]
+    },
+    {
+      "id": "cultural-traditions",
+      "label": "Cultural Traditions",
+      "color": "#C95343",
+      "x1": 66.92,
+      "y1": 0.3,
+      "x2": 83.08,
+      "y2": 99.7,
+      "summary": "Cultural foods carry identity, connection, knowledge, and nourishment.",
+      "facts": [
+        "A healthy plan should not require cultural erasure.",
+        "Traditions can adapt while keeping meaning."
+      ]
+    },
+    {
+      "id": "revise-the-plan",
+      "label": "Revise the Plan",
+      "color": "#087A8A",
+      "x1": 83.58,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "A useful plan changes when needs, evidence, resources, or results change.",
+      "facts": [
+        "Track how the plan works in real life.",
+        "Revision is learning, not failure."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on nutrition needs vary with age, health, activity, access, preferences, and goals.",
+      "correct_zone": "personal-needs"
+    },
+    {
+      "question": "Which section focuses on labels help compare serving information, nutrients, and ingredients.",
+      "correct_zone": "label-evidence"
+    },
+    {
+      "question": "Which section focuses on beverages can contribute hydration, nutrients, caffeine, sugar, or alcohol.",
+      "correct_zone": "beverage-evidence"
+    },
+    {
+      "question": "Which section focuses on timing can interact with hunger, schedules, sleep, activity, culture, and medication.",
+      "correct_zone": "meal-timing"
+    },
+    {
+      "question": "Which section focuses on cultural foods carry identity, connection, knowledge, and nourishment.",
+      "correct_zone": "cultural-traditions"
+    },
+    {
+      "question": "Which section focuses on a useful plan changes when needs, evidence, resources, or results change.",
+      "correct_zone": "revise-the-plan"
+    }
+  ]
+}

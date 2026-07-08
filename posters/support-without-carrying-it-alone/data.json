@@ -1,0 +1,153 @@
+{
+  "title": "Support Without Carrying It Alone",
+  "orientation": "landscape",
+  "image": "support-without-carrying-it-alone.png",
+  "layout": "top-bottom",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Notice a Change",
+      "x": 10,
+      "y": 18,
+      "radius": 3.7,
+      "color": "#2468A2",
+      "panel": "top",
+      "hint": "Find the scene that best represents notice a change.",
+      "description": "Pay attention to changes in mood, behavior, connection, sleep, or functioning.",
+      "ap_tip": "One sign does not prove a diagnosis. Take concerning patterns seriously."
+    },
+    {
+      "id": 2,
+      "label": "Choose Time and Place",
+      "x": 30,
+      "y": 16,
+      "radius": 3.7,
+      "color": "#5D953B",
+      "panel": "top",
+      "hint": "Find the scene that best represents choose time and place.",
+      "description": "A private, calm moment can make conversation easier.",
+      "ap_tip": "Do not wait for a perfect script. Safety takes priority over privacy."
+    },
+    {
+      "id": 3,
+      "label": "Listen",
+      "x": 51,
+      "y": 16,
+      "radius": 3.7,
+      "color": "#D39B1C",
+      "panel": "top",
+      "hint": "Find the scene that best represents listen.",
+      "description": "Give attention without rushing to fix, debate, or compare.",
+      "ap_tip": "Reflect what you hear. Let pauses happen."
+    },
+    {
+      "id": 4,
+      "label": "Ask Directly About Safety",
+      "x": 72,
+      "y": 17,
+      "radius": 3.7,
+      "color": "#7453A1",
+      "panel": "top",
+      "hint": "Find the scene that best represents ask directly about safety.",
+      "description": "If you are worried about suicide or self-harm, ask clearly and calmly.",
+      "ap_tip": "Asking does not plant the idea. A yes, maybe, or unclear answer needs adult and professional help."
+    },
+    {
+      "id": 5,
+      "label": "Validate",
+      "x": 91,
+      "y": 21,
+      "radius": 3.7,
+      "color": "#C95343",
+      "panel": "top",
+      "hint": "Find the scene that best represents validate.",
+      "description": "Acknowledge that the person’s feelings and experience matter.",
+      "ap_tip": "Validation is not agreement with every conclusion. Avoid minimizing or promising a quick fix."
+    },
+    {
+      "id": 6,
+      "label": "Connect a Trusted Adult",
+      "x": 17,
+      "y": 45,
+      "radius": 3.7,
+      "color": "#087A8A",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents connect a trusted adult.",
+      "description": "Bring in a safe adult who can help assess and act.",
+      "ap_tip": "Do not promise secrecy about serious safety concerns. Keep reaching out until someone responds."
+    },
+    {
+      "id": 7,
+      "label": "Connect Professional Help",
+      "x": 39,
+      "y": 43,
+      "radius": 3.7,
+      "color": "#2468A2",
+      "panel": "top",
+      "hint": "Find the scene that best represents connect professional help.",
+      "description": "Counselors, clinicians, and crisis professionals can assess risk and provide care.",
+      "ap_tip": "Offer to help make contact. Treatment may involve several kinds of support."
+    },
+    {
+      "id": 8,
+      "label": "Respond to Urgent Crisis",
+      "x": 62,
+      "y": 44,
+      "radius": 3.7,
+      "color": "#5D953B",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents respond to urgent crisis.",
+      "description": "Immediate danger requires emergency or crisis help now.",
+      "ap_tip": "Stay nearby when safe and reduce access to immediate danger with adult help. Follow local emergency guidance."
+    },
+    {
+      "id": 9,
+      "label": "Keep Boundaries",
+      "x": 84,
+      "y": 47,
+      "radius": 3.7,
+      "color": "#D39B1C",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents keep boundaries.",
+      "description": "A caring friend is not a therapist or sole safety plan.",
+      "ap_tip": "Share responsibility with adults and professionals. It is okay to rest and say what you can do."
+    },
+    {
+      "id": 10,
+      "label": "Follow Up",
+      "x": 15,
+      "y": 76,
+      "radius": 3.7,
+      "color": "#7453A1",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents follow up.",
+      "description": "A later message or conversation shows that care continues.",
+      "ap_tip": "Ask how the support plan is working. Recovery is rarely one conversation."
+    },
+    {
+      "id": 11,
+      "label": "Care for Yourself",
+      "x": 48,
+      "y": 78,
+      "radius": 3.7,
+      "color": "#C95343",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents care for yourself.",
+      "description": "Supporting someone can be emotionally demanding.",
+      "ap_tip": "Talk with a trusted adult or counselor. Your wellbeing matters too."
+    },
+    {
+      "id": 12,
+      "label": "Build a Support Team",
+      "x": 82,
+      "y": 76,
+      "radius": 3.7,
+      "color": "#087A8A",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents build a support team.",
+      "description": "Several caring people and services create a stronger safety net.",
+      "ap_tip": "The person should be included in planning when possible. Shared support reduces isolation."
+    }
+  ]
+}

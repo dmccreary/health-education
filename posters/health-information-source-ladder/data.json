@@ -1,0 +1,107 @@
+{
+  "title": "Health Information Source Ladder",
+  "image": "health-information-source-ladder.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343"
+  ],
+  "zones": [
+    {
+      "id": "expert-guidance",
+      "label": "Expert Guidance",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 19.75,
+      "y2": 99.7,
+      "summary": "Qualified professionals can apply training to a specific question.",
+      "facts": [
+        "Check credentials and scope.",
+        "Good experts explain uncertainty and options."
+      ]
+    },
+    {
+      "id": "public-health-source",
+      "label": "Public Health Source",
+      "color": "#5D953B",
+      "x1": 20.25,
+      "y1": 0.3,
+      "x2": 39.75,
+      "y2": 99.7,
+      "summary": "Accountable agencies can synthesize evidence and issue population guidance.",
+      "facts": [
+        "Check jurisdiction and update date.",
+        "Guidance may change as evidence changes."
+      ]
+    },
+    {
+      "id": "research-evidence",
+      "label": "Research Evidence",
+      "color": "#D39B1C",
+      "x1": 40.25,
+      "y1": 0.3,
+      "x2": 59.75,
+      "y2": 99.7,
+      "summary": "Research can test claims systematically.",
+      "facts": [
+        "Study design, sample, replication, and peer review matter.",
+        "One paper is not the whole evidence base."
+      ]
+    },
+    {
+      "id": "personal-story",
+      "label": "Personal Story",
+      "color": "#7453A1",
+      "x1": 60.25,
+      "y1": 0.3,
+      "x2": 79.75,
+      "y2": 99.7,
+      "summary": "Lived experience provides meaning, context, and questions that data may miss.",
+      "facts": [
+        "One story may not generalize.",
+        "Respect stories without treating them as universal proof."
+      ]
+    },
+    {
+      "id": "ad-or-influencer",
+      "label": "Ad or Influencer",
+      "color": "#C95343",
+      "x1": 80.25,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Promotional content may be engaging but has a goal and possible conflicts.",
+      "facts": [
+        "Look for sponsorship and missing risks.",
+        "Verify health claims elsewhere before acting."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on qualified professionals can apply training to a specific question.",
+      "correct_zone": "expert-guidance"
+    },
+    {
+      "question": "Which section focuses on accountable agencies can synthesize evidence and issue population guidance.",
+      "correct_zone": "public-health-source"
+    },
+    {
+      "question": "Which section focuses on research can test claims systematically.",
+      "correct_zone": "research-evidence"
+    },
+    {
+      "question": "Which section focuses on lived experience provides meaning, context, and questions that data may miss.",
+      "correct_zone": "personal-story"
+    },
+    {
+      "question": "Which section focuses on promotional content may be engaging but has a goal and possible conflicts.",
+      "correct_zone": "ad-or-influencer"
+    }
+  ]
+}

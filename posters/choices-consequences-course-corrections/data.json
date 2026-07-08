@@ -24,7 +24,7 @@
       "y": 18,
       "radius": 4,
       "color": "#D68A08",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The family, peers, media, and mentor thought bubbles across the upper-left ridge.",
       "description": "Family, peers, culture, media, emotions, and access can shape a choice.",
       "ap_tip": "Influence is information, not automatic control."
@@ -48,7 +48,7 @@
       "y": 25,
       "radius": 4,
       "color": "#C94A36",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The nearby fork where riders meet immediate terrain changes.",
       "description": "Short-term consequences happen soon after a choice.",
       "ap_tip": "Convenience, feelings, cost, and immediate safety can all matter."
@@ -84,7 +84,7 @@
       "y": 77,
       "radius": 4,
       "color": "#326A8B",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The cyclist beside the reflective pond at lower left.",
       "description": "Reflection asks what happened, what helped, and what needs adjustment.",
       "ap_tip": "The purpose is learning, not shame."
@@ -108,7 +108,7 @@
       "y": 76,
       "radius": 4,
       "color": "#60439A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The inclusive group celebrating near the lower-right compass.",
       "description": "Ownership means choosing the next realistic action and tracking it.",
       "ap_tip": "Celebrate progress while remaining flexible."

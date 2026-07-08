@@ -1,0 +1,107 @@
+{
+  "title": "Youth Advocacy Message Studio",
+  "image": "youth-advocacy-message-studio.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343"
+  ],
+  "zones": [
+    {
+      "id": "define-the-issue",
+      "label": "Define the Issue",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 19.75,
+      "y2": 99.7,
+      "summary": "Describe the health issue, affected people, causes, and desired change.",
+      "facts": [
+        "Avoid defining people as the problem.",
+        "Use community knowledge to set priorities."
+      ]
+    },
+    {
+      "id": "know-the-audience",
+      "label": "Know the Audience",
+      "color": "#5D953B",
+      "x1": 20.25,
+      "y1": 0.3,
+      "x2": 39.75,
+      "y2": 99.7,
+      "summary": "Identify who can influence the decision and what they need to understand.",
+      "facts": [
+        "Different audiences need different channels.",
+        "Respectful tailoring is not manipulation."
+      ]
+    },
+    {
+      "id": "use-evidence",
+      "label": "Use Evidence",
+      "color": "#D39B1C",
+      "x1": 40.25,
+      "y1": 0.3,
+      "x2": 59.75,
+      "y2": 99.7,
+      "summary": "Select credible facts and relevant lived experience.",
+      "facts": [
+        "Be accurate about uncertainty.",
+        "Do not invent numbers for impact."
+      ]
+    },
+    {
+      "id": "make-the-ask",
+      "label": "Make the Ask",
+      "color": "#7453A1",
+      "x1": 60.25,
+      "y1": 0.3,
+      "x2": 79.75,
+      "y2": 99.7,
+      "summary": "Request a specific feasible action and explain why it matters.",
+      "facts": [
+        "Name who can act and by when.",
+        "Offer a way to respond."
+      ]
+    },
+    {
+      "id": "listen-and-revise",
+      "label": "Listen and Revise",
+      "color": "#C95343",
+      "x1": 80.25,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Invite feedback, notice missing voices, and improve the message or plan.",
+      "facts": [
+        "Listening does not require abandoning evidence or values.",
+        "Advocacy is an iterative process."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on describe the health issue, affected people, causes, and desired change.",
+      "correct_zone": "define-the-issue"
+    },
+    {
+      "question": "Which section focuses on identify who can influence the decision and what they need to understand.",
+      "correct_zone": "know-the-audience"
+    },
+    {
+      "question": "Which section focuses on select credible facts and relevant lived experience.",
+      "correct_zone": "use-evidence"
+    },
+    {
+      "question": "Which section focuses on request a specific feasible action and explain why it matters.",
+      "correct_zone": "make-the-ask"
+    },
+    {
+      "question": "Which section focuses on invite feedback, notice missing voices, and improve the message or plan.",
+      "correct_zone": "listen-and-revise"
+    }
+  ]
+}

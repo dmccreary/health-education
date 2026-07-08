@@ -585,7 +585,7 @@ class DiagramSim {
 
     const tipEl = document.getElementById('infobox-ap-tip');
     if (callout.ap_tip) {
-      tipEl.innerHTML    = '<strong>college placement Exam Tip:</strong> ' + callout.ap_tip;
+      tipEl.innerHTML    = '<strong>Tip:</strong> ' + callout.ap_tip;
       tipEl.style.display = 'block';
     } else {
       tipEl.style.display = 'none';
@@ -683,7 +683,7 @@ class DiagramSim {
 
       const tipEl = document.getElementById('infobox-ap-tip');
       if (target.ap_tip) {
-        tipEl.innerHTML    = '<strong>college placement Exam Tip:</strong> ' + target.ap_tip;
+        tipEl.innerHTML    = '<strong>Tip:</strong> ' + target.ap_tip;
         tipEl.style.display = 'block';
       }
 

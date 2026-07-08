@@ -1,0 +1,126 @@
+{
+  "title": "The Developing Brain Under Different Influences",
+  "image": "developing-brain-different-influences.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343",
+    "#087A8A"
+  ],
+  "zones": [
+    {
+      "id": "sleep",
+      "label": "Sleep",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 16.42,
+      "y2": 99.7,
+      "summary": "Sleep supports attention, learning, mood regulation, and physical recovery.",
+      "facts": [
+        "Consistent timing can support the body clock.",
+        "Persistent sleep problems deserve adult or professional help."
+      ]
+    },
+    {
+      "id": "exercise",
+      "label": "Exercise",
+      "color": "#5D953B",
+      "x1": 16.92,
+      "y1": 0.3,
+      "x2": 33.08,
+      "y2": 99.7,
+      "summary": "Regular movement supports brain health, mood, sleep, and stress regulation.",
+      "facts": [
+        "Different activities can provide different benefits.",
+        "Build gradually and include recovery."
+      ]
+    },
+    {
+      "id": "alcohol",
+      "label": "Alcohol",
+      "color": "#D39B1C",
+      "x1": 33.58,
+      "y1": 0.3,
+      "x2": 49.75,
+      "y2": 99.7,
+      "summary": "Alcohol can impair judgment, coordination, memory, and reaction time.",
+      "facts": [
+        "A developing brain is still building decision and self-control systems.",
+        "Avoid riding with an impaired driver and seek help in emergencies."
+      ]
+    },
+    {
+      "id": "nicotine",
+      "label": "Nicotine",
+      "color": "#7453A1",
+      "x1": 50.25,
+      "y1": 0.3,
+      "x2": 66.42,
+      "y2": 99.7,
+      "summary": "Nicotine is addictive and can affect attention, learning, mood, and impulse control.",
+      "facts": [
+        "Commercial tobacco and vaping products can deliver nicotine.",
+        "Support is available for quitting; shame is not treatment."
+      ]
+    },
+    {
+      "id": "cannabis",
+      "label": "Cannabis",
+      "color": "#C95343",
+      "x1": 66.92,
+      "y1": 0.3,
+      "x2": 83.08,
+      "y2": 99.7,
+      "summary": "Cannabis can affect attention, memory, coordination, and judgment.",
+      "facts": [
+        "Effects vary with potency, dose, route, person, and context.",
+        "Mixing substances increases uncertainty and risk."
+      ]
+    },
+    {
+      "id": "medication-misuse",
+      "label": "Medication Misuse",
+      "color": "#087A8A",
+      "x1": 83.58,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Using medication differently than directed or using someone else’s medicine can cause serious harm.",
+      "facts": [
+        "Prescription use and misuse are not the same.",
+        "Ask a trusted adult, pharmacist, or clinician when unsure."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on sleep supports attention, learning, mood regulation, and physical recovery.",
+      "correct_zone": "sleep"
+    },
+    {
+      "question": "Which section focuses on regular movement supports brain health, mood, sleep, and stress regulation.",
+      "correct_zone": "exercise"
+    },
+    {
+      "question": "Which section focuses on alcohol can impair judgment, coordination, memory, and reaction time.",
+      "correct_zone": "alcohol"
+    },
+    {
+      "question": "Which section focuses on nicotine is addictive and can affect attention, learning, mood, and impulse control.",
+      "correct_zone": "nicotine"
+    },
+    {
+      "question": "Which section focuses on cannabis can affect attention, memory, coordination, and judgment.",
+      "correct_zone": "cannabis"
+    },
+    {
+      "question": "Which section focuses on using medication differently than directed or using someone else’s medicine can cause serious harm.",
+      "correct_zone": "medication-misuse"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "title": "Layered Sexual Health Prevention",
+  "image": "layered-sexual-health-prevention.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343"
+  ],
+  "zones": [
+    {
+      "id": "consent-and-communication",
+      "label": "Consent and Communication",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 19.75,
+      "y2": 99.7,
+      "summary": "Clear consent, boundaries, testing conversations, and shared decisions are foundational.",
+      "facts": [
+        "Consent is ongoing and reversible.",
+        "Communication cannot eliminate every health risk."
+      ]
+    },
+    {
+      "id": "barrier-methods",
+      "label": "Barrier Methods",
+      "color": "#5D953B",
+      "x1": 20.25,
+      "y1": 0.3,
+      "x2": 39.75,
+      "y2": 99.7,
+      "summary": "Barrier methods can reduce some STI and pregnancy risks when used correctly and consistently.",
+      "facts": [
+        "Different methods cover different risks.",
+        "A clinician can explain use and fit."
+      ]
+    },
+    {
+      "id": "contraception",
+      "label": "Contraception",
+      "color": "#D39B1C",
+      "x1": 40.25,
+      "y1": 0.3,
+      "x2": 59.75,
+      "y2": 99.7,
+      "summary": "Contraceptive methods differ in effectiveness, duration, side effects, access, and user control.",
+      "facts": [
+        "Many do not prevent STIs.",
+        "Choice should be informed and voluntary."
+      ]
+    },
+    {
+      "id": "testing-and-vaccination",
+      "label": "Testing and Vaccination",
+      "color": "#7453A1",
+      "x1": 60.25,
+      "y1": 0.3,
+      "x2": 79.75,
+      "y2": 99.7,
+      "summary": "Testing can detect infections without symptoms, and vaccination prevents selected infections.",
+      "facts": [
+        "Timing and recommendations vary.",
+        "Use current local clinical guidance."
+      ]
+    },
+    {
+      "id": "care-and-follow-up",
+      "label": "Care and Follow-Up",
+      "color": "#C95343",
+      "x1": 80.25,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Treatment, partner notification support, repeat testing, and ongoing care reduce harm.",
+      "facts": [
+        "Avoid blame and stigma.",
+        "Privacy and access rules vary by location."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on clear consent, boundaries, testing conversations, and shared decisions are foundational.",
+      "correct_zone": "consent-and-communication"
+    },
+    {
+      "question": "Which section focuses on barrier methods can reduce some STI and pregnancy risks when used correctly and consistently.",
+      "correct_zone": "barrier-methods"
+    },
+    {
+      "question": "Which section focuses on contraceptive methods differ in effectiveness, duration, side effects, access, and user control.",
+      "correct_zone": "contraception"
+    },
+    {
+      "question": "Which section focuses on testing can detect infections without symptoms, and vaccination prevents selected infections.",
+      "correct_zone": "testing-and-vaccination"
+    },
+    {
+      "question": "Which section focuses on treatment, partner notification support, repeat testing, and ongoing care reduce harm.",
+      "correct_zone": "care-and-follow-up"
+    }
+  ]
+}

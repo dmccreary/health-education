@@ -1,0 +1,126 @@
+{
+  "title": "Emotional Regulation Control Panel",
+  "image": "emotional-regulation-control-panel.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343",
+    "#087A8A"
+  ],
+  "zones": [
+    {
+      "id": "name-it",
+      "label": "Name It",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 16.42,
+      "y2": 99.7,
+      "summary": "Naming an emotion can make the experience easier to understand.",
+      "facts": [
+        "More than one feeling can be present.",
+        "Use language that fits the person."
+      ]
+    },
+    {
+      "id": "body-signals",
+      "label": "Body Signals",
+      "color": "#5D953B",
+      "x1": 16.92,
+      "y1": 0.3,
+      "x2": 33.08,
+      "y2": 99.7,
+      "summary": "Notice breathing, tension, energy, temperature, stomach, and movement cues.",
+      "facts": [
+        "Body signals are information.",
+        "Persistent symptoms may need health assessment."
+      ]
+    },
+    {
+      "id": "pause",
+      "label": "Pause",
+      "color": "#D39B1C",
+      "x1": 33.58,
+      "y1": 0.3,
+      "x2": 49.75,
+      "y2": 99.7,
+      "summary": "Create a small gap before acting when it is safe.",
+      "facts": [
+        "A pause may be one breath, a step back, or more time.",
+        "Urgent danger calls for immediate safety action."
+      ]
+    },
+    {
+      "id": "choose-a-tool",
+      "label": "Choose a Tool",
+      "color": "#7453A1",
+      "x1": 50.25,
+      "y1": 0.3,
+      "x2": 66.42,
+      "y2": 99.7,
+      "summary": "Select from breathing, movement, art, music, nature, grounding, or rest.",
+      "facts": [
+        "No tool works for everyone.",
+        "Match the strategy to the situation and culture."
+      ]
+    },
+    {
+      "id": "connect",
+      "label": "Connect",
+      "color": "#C95343",
+      "x1": 66.92,
+      "y1": 0.3,
+      "x2": 83.08,
+      "y2": 99.7,
+      "summary": "Co-regulation and support can help when feelings are intense.",
+      "facts": [
+        "Ask a trusted person to listen or stay nearby.",
+        "Professional help is appropriate when distress disrupts life or safety."
+      ]
+    },
+    {
+      "id": "reflect",
+      "label": "Reflect",
+      "color": "#087A8A",
+      "x1": 83.58,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Review what triggered the feeling and what helped afterward.",
+      "facts": [
+        "Reflect without judging yourself.",
+        "Use learning to adjust the plan."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on naming an emotion can make the experience easier to understand.",
+      "correct_zone": "name-it"
+    },
+    {
+      "question": "Which section focuses on notice breathing, tension, energy, temperature, stomach, and movement cues.",
+      "correct_zone": "body-signals"
+    },
+    {
+      "question": "Which section focuses on create a small gap before acting when it is safe.",
+      "correct_zone": "pause"
+    },
+    {
+      "question": "Which section focuses on select from breathing, movement, art, music, nature, grounding, or rest.",
+      "correct_zone": "choose-a-tool"
+    },
+    {
+      "question": "Which section focuses on co-regulation and support can help when feelings are intense.",
+      "correct_zone": "connect"
+    },
+    {
+      "question": "Which section focuses on review what triggered the feeling and what helped afterward.",
+      "correct_zone": "reflect"
+    }
+  ]
+}

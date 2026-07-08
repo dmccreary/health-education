@@ -1,0 +1,126 @@
+{
+  "title": "Chain of Infection",
+  "image": "chain-of-infection.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343",
+    "#087A8A"
+  ],
+  "zones": [
+    {
+      "id": "pathogen",
+      "label": "Pathogen",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 16.42,
+      "y2": 99.7,
+      "summary": "A pathogen is a microorganism or agent capable of causing disease.",
+      "facts": [
+        "Different pathogens behave differently.",
+        "Identification guides prevention and treatment."
+      ]
+    },
+    {
+      "id": "reservoir",
+      "label": "Reservoir",
+      "color": "#5D953B",
+      "x1": 16.92,
+      "y1": 0.3,
+      "x2": 33.08,
+      "y2": 99.7,
+      "summary": "A reservoir is where the pathogen normally lives or multiplies, such as people, animals, or environments.",
+      "facts": [
+        "Reservoir does not mean blame.",
+        "Sanitation, treatment, and environmental controls can interrupt this link."
+      ]
+    },
+    {
+      "id": "exit",
+      "label": "Exit",
+      "color": "#D39B1C",
+      "x1": 33.58,
+      "y1": 0.3,
+      "x2": 49.75,
+      "y2": 99.7,
+      "summary": "A portal of exit is how a pathogen leaves its reservoir.",
+      "facts": [
+        "Examples include respiratory secretions, blood, or other body fluids.",
+        "Covering coughs and safe handling can reduce spread."
+      ]
+    },
+    {
+      "id": "transmission",
+      "label": "Transmission",
+      "color": "#7453A1",
+      "x1": 50.25,
+      "y1": 0.3,
+      "x2": 66.42,
+      "y2": 99.7,
+      "summary": "Transmission may be direct, airborne, droplet, surface, food, water, blood, or vector-borne.",
+      "facts": [
+        "The route determines useful controls.",
+        "Layered prevention is often strongest."
+      ]
+    },
+    {
+      "id": "entry",
+      "label": "Entry",
+      "color": "#C95343",
+      "x1": 66.92,
+      "y1": 0.3,
+      "x2": 83.08,
+      "y2": 99.7,
+      "summary": "A portal of entry is how the pathogen reaches a new host.",
+      "facts": [
+        "Skin, respiratory, digestive, and mucous-membrane routes differ.",
+        "Barriers, hygiene, ventilation, and safer practices can help."
+      ]
+    },
+    {
+      "id": "susceptible-host",
+      "label": "Susceptible Host",
+      "color": "#087A8A",
+      "x1": 83.58,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Susceptibility reflects immunity, exposure, health, age, vaccination, and social conditions.",
+      "facts": [
+        "Susceptibility is not a moral trait.",
+        "Vaccination and equitable access can reduce risk."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on a pathogen is a microorganism or agent capable of causing disease.",
+      "correct_zone": "pathogen"
+    },
+    {
+      "question": "Which section focuses on a reservoir is where the pathogen normally lives or multiplies, such as people, animals, or environments.",
+      "correct_zone": "reservoir"
+    },
+    {
+      "question": "Which section focuses on a portal of exit is how a pathogen leaves its reservoir.",
+      "correct_zone": "exit"
+    },
+    {
+      "question": "Which section focuses on transmission may be direct, airborne, droplet, surface, food, water, blood, or vector-borne.",
+      "correct_zone": "transmission"
+    },
+    {
+      "question": "Which section focuses on a portal of entry is how the pathogen reaches a new host.",
+      "correct_zone": "entry"
+    },
+    {
+      "question": "Which section focuses on susceptibility reflects immunity, exposure, health, age, vaccination, and social conditions.",
+      "correct_zone": "susceptible-host"
+    }
+  ]
+}

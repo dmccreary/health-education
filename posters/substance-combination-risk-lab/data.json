@@ -1,0 +1,107 @@
+{
+  "title": "Substance Combination Risk Lab",
+  "image": "substance-combination-risk-lab.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343"
+  ],
+  "zones": [
+    {
+      "id": "unknown-strength",
+      "label": "Unknown Strength",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 19.75,
+      "y2": 99.7,
+      "summary": "Unregulated products may contain unexpected ingredients or strength.",
+      "facts": [
+        "Appearance cannot confirm contents.",
+        "Uncertainty increases risk."
+      ]
+    },
+    {
+      "id": "mixed-effects",
+      "label": "Mixed Effects",
+      "color": "#5D953B",
+      "x1": 20.25,
+      "y1": 0.3,
+      "x2": 39.75,
+      "y2": 99.7,
+      "summary": "Combining substances can amplify, mask, or change effects.",
+      "facts": [
+        "Feeling less impaired does not mean the body is safer.",
+        "Effects vary by person and timing."
+      ]
+    },
+    {
+      "id": "medication-interactions",
+      "label": "Medication Interactions",
+      "color": "#D39B1C",
+      "x1": 40.25,
+      "y1": 0.3,
+      "x2": 59.75,
+      "y2": 99.7,
+      "summary": "Alcohol, drugs, supplements, and medicines can interact.",
+      "facts": [
+        "Prescription use and misuse are different.",
+        "Ask a pharmacist or clinician about interactions."
+      ]
+    },
+    {
+      "id": "overdose-warning",
+      "label": "Overdose Warning",
+      "color": "#7453A1",
+      "x1": 60.25,
+      "y1": 0.3,
+      "x2": 79.75,
+      "y2": 99.7,
+      "summary": "Unresponsiveness, slow or stopped breathing, blue or gray skin, seizure, or severe confusion require emergency action.",
+      "facts": [
+        "Do not leave the person alone.",
+        "Follow local emergency guidance."
+      ]
+    },
+    {
+      "id": "get-help",
+      "label": "Get Help",
+      "color": "#C95343",
+      "x1": 80.25,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Call emergency services and involve a trusted adult immediately.",
+      "facts": [
+        "Share what may have been taken without fear of judgment.",
+        "Use naloxone when opioid overdose is possible and training or local guidance supports it."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on unregulated products may contain unexpected ingredients or strength.",
+      "correct_zone": "unknown-strength"
+    },
+    {
+      "question": "Which section focuses on combining substances can amplify, mask, or change effects.",
+      "correct_zone": "mixed-effects"
+    },
+    {
+      "question": "Which section focuses on alcohol, drugs, supplements, and medicines can interact.",
+      "correct_zone": "medication-interactions"
+    },
+    {
+      "question": "Which section focuses on unresponsiveness, slow or stopped breathing, blue or gray skin, seizure, or severe confusion require emergency action.",
+      "correct_zone": "overdose-warning"
+    },
+    {
+      "question": "Which section focuses on call emergency services and involve a trusted adult immediately.",
+      "correct_zone": "get-help"
+    }
+  ]
+}

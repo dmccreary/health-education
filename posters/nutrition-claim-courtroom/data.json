@@ -1,0 +1,107 @@
+{
+  "title": "Nutrition Claim Courtroom",
+  "image": "nutrition-claim-courtroom.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343"
+  ],
+  "zones": [
+    {
+      "id": "the-claim",
+      "label": "The Claim",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 19.75,
+      "y2": 99.7,
+      "summary": "State exactly what the product or message promises.",
+      "facts": [
+        "Separate measurable claims from vague language.",
+        "Notice emotional hooks and implied guarantees."
+      ]
+    },
+    {
+      "id": "the-source",
+      "label": "The Source",
+      "color": "#5D953B",
+      "x1": 20.25,
+      "y1": 0.3,
+      "x2": 39.75,
+      "y2": 99.7,
+      "summary": "Identify who created and paid for the message.",
+      "facts": [
+        "Expertise and accountability matter.",
+        "A conflict of interest is a clue to examine, not automatic proof of falsehood."
+      ]
+    },
+    {
+      "id": "the-evidence",
+      "label": "The Evidence",
+      "color": "#D39B1C",
+      "x1": 40.25,
+      "y1": 0.3,
+      "x2": 59.75,
+      "y2": 99.7,
+      "summary": "Look for relevant, transparent, and reproducible evidence.",
+      "facts": [
+        "One study rarely settles a broad claim.",
+        "Compare the claim with credible consensus."
+      ]
+    },
+    {
+      "id": "what-is-missing",
+      "label": "What Is Missing",
+      "color": "#7453A1",
+      "x1": 60.25,
+      "y1": 0.3,
+      "x2": 79.75,
+      "y2": 99.7,
+      "summary": "Ask about dose, population, alternatives, risks, and context.",
+      "facts": [
+        "Missing information can change the conclusion.",
+        "Personal needs and access also matter."
+      ]
+    },
+    {
+      "id": "the-verdict",
+      "label": "The Verdict",
+      "color": "#C95343",
+      "x1": 80.25,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Reach a cautious conclusion that matches the strength of evidence.",
+      "facts": [
+        "Possible verdicts include supported, uncertain, exaggerated, or unsupported.",
+        "Revise when better evidence appears."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on state exactly what the product or message promises.",
+      "correct_zone": "the-claim"
+    },
+    {
+      "question": "Which section focuses on identify who created and paid for the message.",
+      "correct_zone": "the-source"
+    },
+    {
+      "question": "Which section focuses on look for relevant, transparent, and reproducible evidence.",
+      "correct_zone": "the-evidence"
+    },
+    {
+      "question": "Which section focuses on ask about dose, population, alternatives, risks, and context.",
+      "correct_zone": "what-is-missing"
+    },
+    {
+      "question": "Which section focuses on reach a cautious conclusion that matches the strength of evidence.",
+      "correct_zone": "the-verdict"
+    }
+  ]
+}

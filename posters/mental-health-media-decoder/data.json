@@ -1,0 +1,107 @@
+{
+  "title": "Mental Health Media Decoder",
+  "image": "mental-health-media-decoder.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343"
+  ],
+  "zones": [
+    {
+      "id": "representation",
+      "label": "Representation",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 19.75,
+      "y2": 99.7,
+      "summary": "Ask who is shown, who is missing, and whether the portrayal is complex or stereotyped.",
+      "facts": [
+        "One character cannot represent every experience.",
+        "Consider identity, disability, culture, and context."
+      ]
+    },
+    {
+      "id": "language",
+      "label": "Language",
+      "color": "#5D953B",
+      "x1": 20.25,
+      "y1": 0.3,
+      "x2": 39.75,
+      "y2": 99.7,
+      "summary": "Notice labels, jokes, fear framing, person-first or identity-first preferences, and tone.",
+      "facts": [
+        "Respect the language people use for themselves.",
+        "Avoid using diagnoses as insults or shorthand for behavior."
+      ]
+    },
+    {
+      "id": "evidence",
+      "label": "Evidence",
+      "color": "#D39B1C",
+      "x1": 40.25,
+      "y1": 0.3,
+      "x2": 59.75,
+      "y2": 99.7,
+      "summary": "Separate dramatic storytelling, opinion, promotion, and verified health information.",
+      "facts": [
+        "Check credible sources and expert consensus.",
+        "A personal story is meaningful but may not generalize."
+      ]
+    },
+    {
+      "id": "impact",
+      "label": "Impact",
+      "color": "#7453A1",
+      "x1": 60.25,
+      "y1": 0.3,
+      "x2": 79.75,
+      "y2": 99.7,
+      "summary": "Consider how the message may affect stigma, hope, help-seeking, fear, or misunderstanding.",
+      "facts": [
+        "Different audiences may respond differently.",
+        "Include the voices of people most affected."
+      ]
+    },
+    {
+      "id": "better-message",
+      "label": "Better Message",
+      "color": "#C95343",
+      "x1": 80.25,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Redesign the message to be accurate, humane, inclusive, and actionable.",
+      "facts": [
+        "Add realistic support pathways.",
+        "Avoid oversimplified cure or tragedy narratives."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on ask who is shown, who is missing, and whether the portrayal is complex or stereotyped.",
+      "correct_zone": "representation"
+    },
+    {
+      "question": "Which section focuses on notice labels, jokes, fear framing, person-first or identity-first preferences, and tone.",
+      "correct_zone": "language"
+    },
+    {
+      "question": "Which section focuses on separate dramatic storytelling, opinion, promotion, and verified health information.",
+      "correct_zone": "evidence"
+    },
+    {
+      "question": "Which section focuses on consider how the message may affect stigma, hope, help-seeking, fear, or misunderstanding.",
+      "correct_zone": "impact"
+    },
+    {
+      "question": "Which section focuses on redesign the message to be accurate, humane, inclusive, and actionable.",
+      "correct_zone": "better-message"
+    }
+  ]
+}

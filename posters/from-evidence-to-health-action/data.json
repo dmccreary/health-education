@@ -1,0 +1,126 @@
+{
+  "title": "From Evidence to Health Action",
+  "image": "from-evidence-to-health-action.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343",
+    "#087A8A"
+  ],
+  "zones": [
+    {
+      "id": "verify-information",
+      "label": "Verify Information",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 16.42,
+      "y2": 99.7,
+      "summary": "Check authorship, evidence, methods, date, conflicts, and agreement across credible sources.",
+      "facts": [
+        "A polished claim is not automatically reliable.",
+        "Update conclusions when stronger evidence appears."
+      ]
+    },
+    {
+      "id": "map-influences",
+      "label": "Map Influences",
+      "color": "#5D953B",
+      "x1": 16.92,
+      "y1": 0.3,
+      "x2": 33.08,
+      "y2": 99.7,
+      "summary": "Health behavior is shaped by individual, relationship, community, system, and policy influences.",
+      "facts": [
+        "Map barriers and supports at several levels.",
+        "Avoid blaming people for conditions they do not control."
+      ]
+    },
+    {
+      "id": "compare-options",
+      "label": "Compare Options",
+      "color": "#D39B1C",
+      "x1": 33.58,
+      "y1": 0.3,
+      "x2": 49.75,
+      "y2": 99.7,
+      "summary": "Compare likely benefits, harms, feasibility, equity, cost, and unintended effects.",
+      "facts": [
+        "Include community knowledge.",
+        "No option is risk-free."
+      ]
+    },
+    {
+      "id": "set-a-goal",
+      "label": "Set a Goal",
+      "color": "#7453A1",
+      "x1": 50.25,
+      "y1": 0.3,
+      "x2": 66.42,
+      "y2": 99.7,
+      "summary": "Define a specific, meaningful, measurable, and realistic result.",
+      "facts": [
+        "Distinguish activities from outcomes.",
+        "Set a time for review."
+      ]
+    },
+    {
+      "id": "tailor-the-message",
+      "label": "Tailor the Message",
+      "color": "#C95343",
+      "x1": 66.92,
+      "y1": 0.3,
+      "x2": 83.08,
+      "y2": 99.7,
+      "summary": "Match language, channel, imagery, and call to action to the audience.",
+      "facts": [
+        "Use respect rather than fear or stigma.",
+        "Test comprehension before launch."
+      ]
+    },
+    {
+      "id": "evaluate-results",
+      "label": "Evaluate Results",
+      "color": "#087A8A",
+      "x1": 83.58,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Measure reach, quality, outcomes, equity, and unintended effects.",
+      "facts": [
+        "Look for who benefited and who was missed.",
+        "Use findings to revise the action."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on check authorship, evidence, methods, date, conflicts, and agreement across credible sources.",
+      "correct_zone": "verify-information"
+    },
+    {
+      "question": "Which section focuses on health behavior is shaped by individual, relationship, community, system, and policy influences.",
+      "correct_zone": "map-influences"
+    },
+    {
+      "question": "Which section focuses on compare likely benefits, harms, feasibility, equity, cost, and unintended effects.",
+      "correct_zone": "compare-options"
+    },
+    {
+      "question": "Which section focuses on define a specific, meaningful, measurable, and realistic result.",
+      "correct_zone": "set-a-goal"
+    },
+    {
+      "question": "Which section focuses on match language, channel, imagery, and call to action to the audience.",
+      "correct_zone": "tailor-the-message"
+    },
+    {
+      "question": "Which section focuses on measure reach, quality, outcomes, equity, and unintended effects.",
+      "correct_zone": "evaluate-results"
+    }
+  ]
+}

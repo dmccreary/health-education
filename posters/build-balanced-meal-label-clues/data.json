@@ -36,7 +36,7 @@
       "y": 72,
       "radius": 4,
       "color": "#087A8A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The large crate of varied vegetables across the left foreground.",
       "description": "Fruits and vegetables can contribute fiber, vitamins, minerals, color, and texture.",
       "ap_tip": "Cultural and seasonal choices can fill this role in many ways."
@@ -96,7 +96,7 @@
       "y": 53,
       "radius": 4,
       "color": "#D68A08",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The brown bowl of cooked grains behind the water pitcher.",
       "description": "Rice, oats, corn, breads, noodles, and other grains can be part of a balanced meal.",
       "ap_tip": "A balanced meal does not need to match one culture or one picture."
@@ -132,7 +132,7 @@
       "y": 84,
       "radius": 4,
       "color": "#2D8A4E",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The small square dessert at the far lower-right edge.",
       "description": "A treat can be part of eating without becoming the foundation of the meal.",
       "ap_tip": "Health education should support flexible choices rather than guilt."
@@ -144,7 +144,7 @@
       "y": 39,
       "radius": 4,
       "color": "#E07B39",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The child and trusted adult comparing two packages in the center.",
       "description": "Labels are evidence tools, and a trusted adult can help interpret unfamiliar ingredients or claims.",
       "ap_tip": "Use evidence together with family needs, culture, access, allergies, and preferences."

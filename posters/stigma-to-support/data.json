@@ -1,0 +1,107 @@
+{
+  "title": "Stigma to Support",
+  "image": "stigma-to-support.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343"
+  ],
+  "zones": [
+    {
+      "id": "notice-stigma",
+      "label": "Notice Stigma",
+      "color": "#2468A2",
+      "x1": 0.25,
+      "y1": 0.3,
+      "x2": 19.75,
+      "y2": 99.7,
+      "summary": "Stigma appears in jokes, labels, exclusion, blame, or assumptions about mental health.",
+      "facts": [
+        "Notice the impact, not only the speaker’s intent.",
+        "Silence can allow harm to continue."
+      ]
+    },
+    {
+      "id": "check-the-assumption",
+      "label": "Check the Assumption",
+      "color": "#5D953B",
+      "x1": 20.25,
+      "y1": 0.3,
+      "x2": 39.75,
+      "y2": 99.7,
+      "summary": "Ask what evidence supports the belief and whose experience is missing.",
+      "facts": [
+        "Mental-health conditions are not personality flaws.",
+        "People with the same diagnosis can have very different lives."
+      ]
+    },
+    {
+      "id": "use-respectful-language",
+      "label": "Use Respectful Language",
+      "color": "#D39B1C",
+      "x1": 40.25,
+      "y1": 0.3,
+      "x2": 59.75,
+      "y2": 99.7,
+      "summary": "Use the words a person prefers and avoid turning a condition into an insult.",
+      "facts": [
+        "Speak about people as whole human beings.",
+        "Correct misinformation without sharing someone’s private story."
+      ]
+    },
+    {
+      "id": "connect-to-help",
+      "label": "Connect to Help",
+      "color": "#7453A1",
+      "x1": 60.25,
+      "y1": 0.3,
+      "x2": 79.75,
+      "y2": 99.7,
+      "summary": "Offer practical connection to a trusted adult, counselor, clinician, or crisis resource.",
+      "facts": [
+        "Ask what support would feel useful.",
+        "Urgent safety concerns require immediate adult help."
+      ]
+    },
+    {
+      "id": "build-belonging",
+      "label": "Build Belonging",
+      "color": "#C95343",
+      "x1": 80.25,
+      "y1": 0.3,
+      "x2": 99.75,
+      "y2": 99.7,
+      "summary": "Inclusive routines, activities, and relationships reduce isolation.",
+      "facts": [
+        "Belonging includes access and participation.",
+        "A supportive community benefits everyone."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which section focuses on stigma appears in jokes, labels, exclusion, blame, or assumptions about mental health.",
+      "correct_zone": "notice-stigma"
+    },
+    {
+      "question": "Which section focuses on ask what evidence supports the belief and whose experience is missing.",
+      "correct_zone": "check-the-assumption"
+    },
+    {
+      "question": "Which section focuses on use the words a person prefers and avoid turning a condition into an insult.",
+      "correct_zone": "use-respectful-language"
+    },
+    {
+      "question": "Which section focuses on offer practical connection to a trusted adult, counselor, clinician, or crisis resource.",
+      "correct_zone": "connect-to-help"
+    },
+    {
+      "question": "Which section focuses on inclusive routines, activities, and relationships reduce isolation.",
+      "correct_zone": "build-belonging"
+    }
+  ]
+}

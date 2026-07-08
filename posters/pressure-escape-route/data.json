@@ -12,7 +12,7 @@
       "y": 60,
       "radius": 4,
       "color": "#C94A36",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The student at far left pausing with one hand near the chest.",
       "description": "A nervous stomach, tight muscles, or a strong urge to leave can be useful information.",
       "ap_tip": "A student never needs perfect proof before moving toward safety."
@@ -24,7 +24,7 @@
       "y": 51,
       "radius": 4,
       "color": "#D68A08",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The small peer group talking on the left-side path.",
       "description": "Peer pressure can be direct or as subtle as “everyone else is doing it.”",
       "ap_tip": "Ask whether the choice is safe, kind, and consistent with your values."
@@ -48,7 +48,7 @@
       "y": 46,
       "radius": 4,
       "color": "#60439A",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The broad, open path through the center of the scene.",
       "description": "Notice exits and well-used public routes before you need them.",
       "ap_tip": "Situational awareness is a calm scanning habit, not constant fear."
@@ -60,7 +60,7 @@
       "y": 69,
       "radius": 4,
       "color": "#2D8A4E",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The student in purple using a calm stop-hand gesture.",
       "description": "A short, clear refusal can be enough: “No thanks, I’m not doing that.”",
       "ap_tip": "A refusal does not require an apology or debate."
@@ -108,7 +108,7 @@
       "y": 76,
       "radius": 4,
       "color": "#087A8A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The seated adult listening carefully near the home.",
       "description": "Tell a trusted adult even if the situation ended or you are unsure how serious it was.",
       "ap_tip": "“Something felt wrong” is enough to begin."
@@ -120,7 +120,7 @@
       "y": 47,
       "radius": 4,
       "color": "#60439A",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The well-lit home doorway at the far right.",
       "description": "A practiced route ends with safety and support, not with handling everything alone.",
       "ap_tip": "Review what helped so the plan is easier to use next time."

@@ -36,7 +36,7 @@
       "y": 35,
       "radius": 4,
       "color": "#E07B39",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "A shorter student participates confidently with friends.",
       "description": "Other students notice changes later, and that is normal too.",
       "ap_tip": "There is no correct age that fits every body."
@@ -48,7 +48,7 @@
       "y": 68,
       "radius": 4,
       "color": "#6A3FB5",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "A trusted adult helps a child choose simple skin and hygiene supplies.",
       "description": "Growing bodies may sweat more or need adjusted skin and hygiene routines.",
       "ap_tip": "A trusted adult can help find a routine that fits the student and family."
@@ -60,7 +60,7 @@
       "y": 30,
       "radius": 4,
       "color": "#C7164E",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "A child breathes with hands on chest and stomach.",
       "description": "Puberty can bring stronger, mixed, or more sudden emotions.",
       "ap_tip": "All feelings are allowed; safe coping and support help."
@@ -72,7 +72,7 @@
       "y": 68,
       "radius": 4,
       "color": "#168A7A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Friends of varied heights and abilities enjoy one activity together.",
       "description": "Bodies can be at different stages while students share the same interests and belonging.",
       "ap_tip": "Do not tease or compare someone’s body."
@@ -84,7 +84,7 @@
       "y": 30,
       "radius": 4,
       "color": "#D19319",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "A child asks a parent or guardian a question in a calm room.",
       "description": "Parents, guardians, and trusted family members can answer questions and listen.",
       "ap_tip": "There are no silly questions about growing."
@@ -96,7 +96,7 @@
       "y": 68,
       "radius": 4,
       "color": "#3A66A7",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "A school nurse and counselor sit in a welcoming office.",
       "description": "School nurses, teachers, and counselors can help with questions or feelings during the school day.",
       "ap_tip": "Students can ask for a private conversation."
@@ -108,7 +108,7 @@
       "y": 30,
       "radius": 4,
       "color": "#A64D79",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "A clinician talks with a child and caregiver.",
       "description": "Doctors and other health professionals can explain body changes and check concerns.",
       "ap_tip": "A student deserves clear, respectful answers."
@@ -120,7 +120,7 @@
       "y": 68,
       "radius": 4,
       "color": "#4F6B38",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Students move forward on several equally bright parallel paths.",
       "description": "Puberty unfolds gradually and at different times for different people.",
       "ap_tip": "Every timeline deserves privacy and respect."

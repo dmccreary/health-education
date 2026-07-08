@@ -12,7 +12,7 @@
       "y": 43,
       "radius": 4,
       "color": "#2D8A4E",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Children climb a low castle wall above safety mats.",
       "description": "Climbing builds muscles, grip, coordination, and confidence.",
       "ap_tip": "Choose a route that matches your body and use safe equipment."
@@ -48,7 +48,7 @@
       "y": 74,
       "radius": 4,
       "color": "#6A3FB5",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Children stretch in animal-like poses in a meadow.",
       "description": "Stretching gently practices flexibility, balance, focus, and calm breathing.",
       "ap_tip": "A stretch should feel gentle, not painful."
@@ -60,7 +60,7 @@
       "y": 37,
       "radius": 4,
       "color": "#C7164E",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Children pass a blue ball around a circle.",
       "description": "Cooperative ball play builds coordination, attention, and teamwork.",
       "ap_tip": "Success means helping the whole group keep the ball moving."
@@ -72,7 +72,7 @@
       "y": 70,
       "radius": 4,
       "color": "#168A7A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Children jump across bright round stones.",
       "description": "Jumping develops leg strength, balance, and body control.",
       "ap_tip": "Look where you plan to land."
@@ -84,7 +84,7 @@
       "y": 43,
       "radius": 4,
       "color": "#D19319",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "A child balances along a low log while friends watch.",
       "description": "Balancing trains core muscles, focus, and steady movement.",
       "ap_tip": "Move at your own pace and step down when needed."
@@ -96,7 +96,7 @@
       "y": 72,
       "radius": 4,
       "color": "#3A66A7",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Children ride scooters along a looping path wearing helmets.",
       "description": "Scooting develops leg strength, coordination, and endurance.",
       "ap_tip": "Helmets and a clear path protect riders and others."
@@ -108,7 +108,7 @@
       "y": 39,
       "radius": 4,
       "color": "#A64D79",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Children rest in shade and drink water.",
       "description": "Rest and hydration help the body recover after active play.",
       "ap_tip": "Active time and recovery time both belong in a healthy day."

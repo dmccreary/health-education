@@ -1,0 +1,153 @@
+{
+  "title": "School Safety Systems Map",
+  "orientation": "landscape",
+  "image": "school-safety-systems-map.png",
+  "layout": "top-bottom",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Welcoming Climate",
+      "x": 10,
+      "y": 18,
+      "radius": 3.7,
+      "color": "#2468A2",
+      "panel": "top",
+      "hint": "Find the scene that best represents welcoming climate.",
+      "description": "Belonging, respect, and predictable routines support prevention and reporting.",
+      "ap_tip": "Climate is built through daily behavior and fair systems. Students should not have to earn dignity."
+    },
+    {
+      "id": 2,
+      "label": "Trusted Reporting",
+      "x": 30,
+      "y": 16,
+      "radius": 3.7,
+      "color": "#5D953B",
+      "panel": "top",
+      "hint": "Find the scene that best represents trusted reporting.",
+      "description": "Students need clear, accessible ways to report concerns without retaliation.",
+      "ap_tip": "Take every report seriously. Protect privacy as far as safety permits."
+    },
+    {
+      "id": 3,
+      "label": "Mental Health Support",
+      "x": 51,
+      "y": 16,
+      "radius": 3.7,
+      "color": "#D39B1C",
+      "panel": "top",
+      "hint": "Find the scene that best represents mental health support.",
+      "description": "Counselors and referral pathways support early help and crisis response.",
+      "ap_tip": "Care should be culturally safe and accessible. Peers are connectors, not sole responders."
+    },
+    {
+      "id": 4,
+      "label": "Accessible Design",
+      "x": 72,
+      "y": 17,
+      "radius": 3.7,
+      "color": "#7453A1",
+      "panel": "top",
+      "hint": "Find the scene that best represents accessible design.",
+      "description": "Entrances, routes, alarms, information, and procedures must include people with varied disabilities.",
+      "ap_tip": "Plan access before an emergency. Include users in design."
+    },
+    {
+      "id": 5,
+      "label": "Emergency Communication",
+      "x": 91,
+      "y": 21,
+      "radius": 3.7,
+      "color": "#C95343",
+      "panel": "top",
+      "hint": "Find the scene that best represents emergency communication.",
+      "description": "Clear, redundant communication helps people act during changing conditions.",
+      "ap_tip": "Use visual, auditory, and accessible channels. Rumor control matters."
+    },
+    {
+      "id": 6,
+      "label": "Trained Staff",
+      "x": 17,
+      "y": 45,
+      "radius": 3.7,
+      "color": "#087A8A",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents trained staff.",
+      "description": "Staff need role-specific practice for prevention, first aid, evacuation, shelter, and reunification.",
+      "ap_tip": "Training should be realistic without traumatizing students. Review after drills and events."
+    },
+    {
+      "id": 7,
+      "label": "First Aid and AED",
+      "x": 39,
+      "y": 43,
+      "radius": 3.7,
+      "color": "#2468A2",
+      "panel": "top",
+      "hint": "Find the scene that best represents first aid and aed.",
+      "description": "Accessible supplies and trained responders improve emergency readiness.",
+      "ap_tip": "Maintain equipment and clear access. Follow current certified guidance."
+    },
+    {
+      "id": 8,
+      "label": "Evacuation",
+      "x": 62,
+      "y": 44,
+      "radius": 3.7,
+      "color": "#5D953B",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents evacuation.",
+      "description": "Evacuation plans use safe routes, accountability, accessibility, and alternate options.",
+      "ap_tip": "Do not block responder access. Conditions determine whether evacuation is appropriate."
+    },
+    {
+      "id": 9,
+      "label": "Shelter Procedures",
+      "x": 84,
+      "y": 47,
+      "radius": 3.7,
+      "color": "#D39B1C",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents shelter procedures.",
+      "description": "Some hazards require sheltering rather than leaving.",
+      "ap_tip": "Procedures differ by hazard. Follow official instructions and support access needs."
+    },
+    {
+      "id": 10,
+      "label": "Reunification",
+      "x": 15,
+      "y": 76,
+      "radius": 3.7,
+      "color": "#7453A1",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents reunification.",
+      "description": "A reunification plan connects students with authorized caregivers safely and accurately.",
+      "ap_tip": "Communication reduces confusion. Plan for language and disability access."
+    },
+    {
+      "id": 11,
+      "label": "Digital Safety",
+      "x": 48,
+      "y": 78,
+      "radius": 3.7,
+      "color": "#C95343",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents digital safety.",
+      "description": "Secure systems, privacy practices, reporting, and media literacy reduce digital harm.",
+      "ap_tip": "Preserve evidence when safe. Coordinate technology and human support."
+    },
+    {
+      "id": 12,
+      "label": "Student Voice",
+      "x": 82,
+      "y": 76,
+      "radius": 3.7,
+      "color": "#087A8A",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents student voice.",
+      "description": "Students notice barriers and can improve plans, climate, and communication.",
+      "ap_tip": "Participation should be meaningful, not symbolic. Share decisions and feedback."
+    }
+  ]
+}

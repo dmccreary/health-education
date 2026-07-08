@@ -12,7 +12,7 @@
       "y": 42,
       "radius": 4,
       "color": "#2D8A4E",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Two children pause with open hands inside overlapping pink space bubbles.",
       "description": "Permission helps a person choose whether a hug, touch, or close game feels welcome.",
       "ap_tip": "Ask first and wait for a clear answer."
@@ -24,7 +24,7 @@
       "y": 69,
       "radius": 4,
       "color": "#1389A6",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "One child steps back while a friend notices the larger blue bubble.",
       "description": "Stepping back, turning away, or becoming quiet can signal a need for more space.",
       "ap_tip": "Respect the signal even before someone finds words."
@@ -36,7 +36,7 @@
       "y": 35,
       "radius": 4,
       "color": "#E07B39",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Two friends chase each other with matching smiles in one green orbit.",
       "description": "Playful interaction is shared fun when everyone is participating willingly.",
       "ap_tip": "Keep checking faces and body language as the game changes."
@@ -48,7 +48,7 @@
       "y": 66,
       "radius": 4,
       "color": "#6A3FB5",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "A child uses a stop hand while a friend holding a ball pauses.",
       "description": "A game that began as fun should stop when someone looks uncomfortable or says stop.",
       "ap_tip": "Consent can change at any moment."
@@ -60,7 +60,7 @@
       "y": 35,
       "radius": 4,
       "color": "#C7164E",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Two peers talk comfortably inside a large blue bubble.",
       "description": "People prefer different distances depending on the person, place, activity, and day.",
       "ap_tip": "There is no single perfect bubble size."
@@ -72,7 +72,7 @@
       "y": 65,
       "radius": 4,
       "color": "#168A7A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Friends move planet props so a wheelchair user can turn freely.",
       "description": "Respectful space includes room for bodies, mobility devices, and safe movement.",
       "ap_tip": "Ask what adjustment would help instead of assuming."
@@ -84,7 +84,7 @@
       "y": 35,
       "radius": 4,
       "color": "#D19319",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "A peer calmly intervenes as another child looks hurt.",
       "description": "Teasing is not playful when it embarrasses, excludes, or continues after discomfort.",
       "ap_tip": "A bystander can interrupt, include, or get adult help."
@@ -96,7 +96,7 @@
       "y": 68,
       "radius": 4,
       "color": "#3A66A7",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Two children sit together and check in inside a pink bubble.",
       "description": "After a boundary mistake, listening and changing the behavior are part of repair.",
       "ap_tip": "An apology matters most when the action changes."
@@ -108,7 +108,7 @@
       "y": 42,
       "radius": 4,
       "color": "#A64D79",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "A trusted adult kneels and listens to two children.",
       "description": "Adult help is appropriate when teasing continues, safety is involved, or words feel hard.",
       "ap_tip": "Keep telling until someone helps."

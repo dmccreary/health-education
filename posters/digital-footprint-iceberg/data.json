@@ -1,0 +1,129 @@
+{
+  "title": "Digital Footprint Iceberg",
+  "orientation": "landscape",
+  "image": "digital-footprint-iceberg.png",
+  "layout": "top-bottom",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Post",
+      "x": 14,
+      "y": 18,
+      "radius": 3.7,
+      "color": "#2468A2",
+      "panel": "top",
+      "hint": "Find the scene that best represents post.",
+      "description": "A post can be copied, interpreted, and seen beyond its intended moment.",
+      "ap_tip": "Pause before sharing. Remove private details and get permission for other people\u2019s images."
+    },
+    {
+      "id": 2,
+      "label": "Comment",
+      "x": 38,
+      "y": 16,
+      "radius": 3.7,
+      "color": "#5D953B",
+      "panel": "top",
+      "hint": "Find the scene that best represents comment.",
+      "description": "Comments contribute to a lasting social and data trail.",
+      "ap_tip": "Tone can be misread. Repair harm rather than piling on."
+    },
+    {
+      "id": 3,
+      "label": "Like and React",
+      "x": 67,
+      "y": 18,
+      "radius": 3.7,
+      "color": "#D39B1C",
+      "panel": "top",
+      "hint": "Find the scene that best represents like and react.",
+      "description": "Reactions can signal approval and shape what systems show next.",
+      "ap_tip": "A quick tap still communicates. Avoid rewarding harmful content."
+    },
+    {
+      "id": 4,
+      "label": "Location Clues",
+      "x": 87,
+      "y": 24,
+      "radius": 3.7,
+      "color": "#7453A1",
+      "panel": "top",
+      "hint": "Find the scene that best represents location clues.",
+      "description": "Photos and settings can reveal routines or location even without a location tag.",
+      "ap_tip": "Check backgrounds and metadata. Share plans only with appropriate people."
+    },
+    {
+      "id": 5,
+      "label": "Copied Screenshots",
+      "x": 25,
+      "y": 43,
+      "radius": 3.7,
+      "color": "#C95343",
+      "panel": "top",
+      "hint": "Find the scene that best represents copied screenshots.",
+      "description": "Deleted content may survive as screenshots or downloads.",
+      "ap_tip": "Do not rely on deletion as the only safety plan. Preserve evidence without resharing harmful content."
+    },
+    {
+      "id": 6,
+      "label": "Expanded Audience",
+      "x": 51,
+      "y": 44,
+      "radius": 3.7,
+      "color": "#087A8A",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents expanded audience.",
+      "description": "Friends can forward content to audiences you did not choose.",
+      "ap_tip": "Privacy settings reduce but do not eliminate risk. Assume the audience may grow."
+    },
+    {
+      "id": 7,
+      "label": "Data and Algorithms",
+      "x": 76,
+      "y": 45,
+      "radius": 3.7,
+      "color": "#2468A2",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents data and algorithms.",
+      "description": "Platforms may use behavior to predict interests and shape recommendations.",
+      "ap_tip": "Algorithms have goals and blind spots. Attention is part of the exchange."
+    },
+    {
+      "id": 8,
+      "label": "Future Context",
+      "x": 16,
+      "y": 75,
+      "radius": 3.7,
+      "color": "#5D953B",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents future context.",
+      "description": "A post may be interpreted differently later or by a new audience.",
+      "ap_tip": "Context can disappear. A digital mistake does not define a person forever."
+    },
+    {
+      "id": 9,
+      "label": "Privacy and Reporting",
+      "x": 49,
+      "y": 78,
+      "radius": 3.7,
+      "color": "#D39B1C",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents privacy and reporting.",
+      "description": "Use privacy, blocking, and reporting controls intentionally.",
+      "ap_tip": "Review settings after updates. Platform tools may need adult or school follow-up."
+    },
+    {
+      "id": 10,
+      "label": "Trusted Support",
+      "x": 82,
+      "y": 76,
+      "radius": 3.7,
+      "color": "#7453A1",
+      "panel": "bottom",
+      "hint": "Find the scene that best represents trusted support.",
+      "description": "Tell a trusted adult when contact, threats, exploitation, or content feels unsafe.",
+      "ap_tip": "Keep evidence when safe. Urgent threats require immediate help."
+    }
+  ]
+}
