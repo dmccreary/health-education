@@ -1,0 +1,129 @@
+{
+  "title": "Friendship Garden",
+  "orientation": "landscape",
+  "image": "friendship-garden.png",
+  "layout": "top-bottom",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Share Tools",
+      "x": 10,
+      "y": 56,
+      "radius": 4,
+      "color": "#2D8A4E",
+      "panel": "bottom",
+      "hint": "Two children holding one watering can together.",
+      "description": "Healthy friends share materials and make sure both people can participate.",
+      "ap_tip": "Ask before taking and return tools when finished."
+    },
+    {
+      "id": 2,
+      "label": "Listen with Attention",
+      "x": 11,
+      "y": 28,
+      "radius": 4,
+      "color": "#1389A6",
+      "panel": "top",
+      "hint": "One child speaks while the other faces them and listens.",
+      "description": "Listening shows that a friend’s ideas and feelings matter.",
+      "ap_tip": "Eyes, body position, and patient waiting can all show listening."
+    },
+    {
+      "id": 3,
+      "label": "Welcome Someone New",
+      "x": 30,
+      "y": 30,
+      "radius": 4,
+      "color": "#E07B39",
+      "panel": "bottom",
+      "hint": "A child holds the garden gate open and greets a newcomer.",
+      "description": "A friendly welcome helps a new person feel that they belong.",
+      "ap_tip": "Offer information without assuming the new person needs everything explained."
+    },
+    {
+      "id": 4,
+      "label": "Value Different Ideas",
+      "x": 30,
+      "y": 65,
+      "radius": 4,
+      "color": "#6A3FB5",
+      "panel": "top",
+      "hint": "Two children compare different seedlings with equal interest.",
+      "description": "Friends can like different plants, games, foods, and ideas and still care for each other.",
+      "ap_tip": "Difference is part of every healthy group."
+    },
+    {
+      "id": 5,
+      "label": "Ask for Space",
+      "x": 47,
+      "y": 27,
+      "radius": 4,
+      "color": "#C7164E",
+      "panel": "bottom",
+      "hint": "A child uses a calm open-hand gesture while a friend pauses.",
+      "description": "Healthy boundaries let people say when they need more room or quiet.",
+      "ap_tip": "A respectful friend listens and adjusts."
+    },
+    {
+      "id": 6,
+      "label": "Take Turns",
+      "x": 48,
+      "y": 69,
+      "radius": 4,
+      "color": "#168A7A",
+      "panel": "top",
+      "hint": "Two children exchange a garden trowel beside a raised bed.",
+      "description": "Taking turns gives each person a fair chance to contribute.",
+      "ap_tip": "Waiting can be part of cooperation."
+    },
+    {
+      "id": 7,
+      "label": "Repair a Mistake",
+      "x": 64,
+      "y": 45,
+      "radius": 4,
+      "color": "#D19319",
+      "panel": "bottom",
+      "hint": "Two children lift a spilled seed tray together.",
+      "description": "Everyone makes mistakes. Healthy friends notice harm, apologize, and help repair it.",
+      "ap_tip": "Focus on what can be fixed next."
+    },
+    {
+      "id": 8,
+      "label": "Adapt So Everyone Joins",
+      "x": 72,
+      "y": 69,
+      "radius": 4,
+      "color": "#3A66A7",
+      "panel": "top",
+      "hint": "Friends work at an accessible raised bed beside a wheelchair.",
+      "description": "Belonging means changing the activity so every person has a meaningful way to join.",
+      "ap_tip": "Follow the person’s lead instead of assuming what help they want."
+    },
+    {
+      "id": 9,
+      "label": "Celebrate a Friend",
+      "x": 85,
+      "y": 30,
+      "radius": 4,
+      "color": "#A64D79",
+      "panel": "bottom",
+      "hint": "Children smile and applaud a friend holding flowers.",
+      "description": "Healthy friends can feel happy about another person’s effort and success.",
+      "ap_tip": "Celebration does not need a winner."
+    },
+    {
+      "id": 10,
+      "label": "Check In and Comfort",
+      "x": 91,
+      "y": 69,
+      "radius": 4,
+      "color": "#4F6B38",
+      "panel": "top",
+      "hint": "A child sits beside a discouraged friend and offers support.",
+      "description": "Checking in can sound like “Are you okay?” or “Would you like company?”",
+      "ap_tip": "Listen to the answer and seek adult help when needed."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "title": "Feelings Weather Station",
+  "orientation": "landscape",
+  "image": "feelings-weather-station.png",
+  "layout": "top-bottom",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Happy",
+      "x": 7,
+      "y": 51,
+      "radius": 4,
+      "color": "#2D8A4E",
+      "panel": "bottom",
+      "hint": "A child smiling with open arms in warm sunshine.",
+      "description": "Happy can feel light, warm, energetic, or smiley. Naming it helps us share joy.",
+      "ap_tip": "Tell someone what made you happy."
+    },
+    {
+      "id": 2,
+      "label": "Sad",
+      "x": 19,
+      "y": 55,
+      "radius": 4,
+      "color": "#1389A6",
+      "panel": "top",
+      "hint": "A child sitting quietly beneath a small raincloud while an adult listens.",
+      "description": "Sad may come with tears, low energy, or wanting comfort. A trusted adult can listen and help.",
+      "ap_tip": "If sadness stays a long time, always tell a trusted adult."
+    },
+    {
+      "id": 3,
+      "label": "Angry or Frustrated",
+      "x": 33,
+      "y": 53,
+      "radius": 4,
+      "color": "#E07B39",
+      "panel": "bottom",
+      "hint": "A child with a tight face and wind-blown leaves nearby.",
+      "description": "Anger and frustration are strong feelings. Safe choices include pausing, breathing, and using words.",
+      "ap_tip": "Feelings are okay; hurting people or things is not."
+    },
+    {
+      "id": 4,
+      "label": "Worried",
+      "x": 44,
+      "y": 52,
+      "radius": 4,
+      "color": "#6A3FB5",
+      "panel": "top",
+      "hint": "A child holding their tummy as swirly wind moves nearby.",
+      "description": "Worry can make a tummy feel jumpy or thoughts race. Naming the worry can make help easier to find.",
+      "ap_tip": "Try: “I feel worried. Can you help me?”"
+    },
+    {
+      "id": 5,
+      "label": "Excited",
+      "x": 58,
+      "y": 49,
+      "radius": 4,
+      "color": "#C7164E",
+      "panel": "bottom",
+      "hint": "A child running happily beneath a bright flying kite.",
+      "description": "Excitement can bring fast energy, big smiles, and lots of movement.",
+      "ap_tip": "Use that energy in a safe space."
+    },
+    {
+      "id": 6,
+      "label": "Scared",
+      "x": 68,
+      "y": 53,
+      "radius": 4,
+      "color": "#168A7A",
+      "panel": "top",
+      "hint": "A child reaching for a calm adult beneath distant storm clouds.",
+      "description": "Fear can warn us to seek safety. Moving near and telling a trusted adult is a strong choice.",
+      "ap_tip": "You never have to handle a scary feeling alone."
+    },
+    {
+      "id": 7,
+      "label": "Calm",
+      "x": 76,
+      "y": 71,
+      "radius": 4,
+      "color": "#D19319",
+      "panel": "bottom",
+      "hint": "A child breathing slowly beside still water.",
+      "description": "Calm may feel steady, relaxed, and ready to think. Slow breathing can help the body settle.",
+      "ap_tip": "Notice your shoulders and breathing when you feel calm."
+    },
+    {
+      "id": 8,
+      "label": "Lonely or Left Out",
+      "x": 89,
+      "y": 63,
+      "radius": 4,
+      "color": "#3A66A7",
+      "panel": "top",
+      "hint": "A child sitting apart while a caring teacher approaches.",
+      "description": "Feeling left out can hurt. A trusted adult can listen and help make room for belonging.",
+      "ap_tip": "It is brave to ask for help joining in."
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "title": "My Body's Daily Helpers",
+  "image": "my-bodys-daily-helpers.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#168CC8",
+    "#E1A51C",
+    "#13A2A1",
+    "#5A9E24",
+    "#7B4EAD"
+  ],
+  "zones": [
+    {
+      "id": "drink-water",
+      "label": "Drink Water",
+      "color": "#168CC8",
+      "x1": 0.3,
+      "y1": 14.6,
+      "x2": 19.8,
+      "y2": 99.4,
+      "summary": "Water helps the body cool down, move, and think clearly.",
+      "facts": [
+        "Drink regularly, especially after active play.",
+        "A reusable bottle can make water easy to reach.",
+        "Thirst is one body signal that it is time to drink."
+      ]
+    },
+    {
+      "id": "eat-many-foods",
+      "label": "Eat Many Foods",
+      "color": "#E1A51C",
+      "x1": 20.2,
+      "y1": 14.6,
+      "x2": 39.9,
+      "y2": 99.4,
+      "summary": "A variety of foods gives the body different kinds of help.",
+      "facts": [
+        "Fruits, vegetables, grains, protein foods, and dairy or alternatives all contribute.",
+        "Families enjoy healthy foods in many cultural traditions.",
+        "Hunger signals can tell us it is time to eat."
+      ]
+    },
+    {
+      "id": "wash-and-care",
+      "label": "Wash & Care",
+      "color": "#13A2A1",
+      "x1": 40.3,
+      "y1": 14.6,
+      "x2": 59.9,
+      "y2": 99.4,
+      "summary": "Personal-care habits help bodies stay clean and comfortable.",
+      "facts": [
+        "Soap and water remove germs from hands.",
+        "Brushing teeth protects teeth and gums.",
+        "Daily routines become easier with practice."
+      ]
+    },
+    {
+      "id": "move-and-play",
+      "label": "Move & Play",
+      "color": "#5A9E24",
+      "x1": 60.2,
+      "y1": 14.6,
+      "x2": 79.8,
+      "y2": 99.4,
+      "summary": "Movement helps muscles, bones, brains, and feelings.",
+      "facts": [
+        "Active play can include running, dancing, climbing, or wheeling.",
+        "Every body can find enjoyable ways to move.",
+        "Moving each day can improve energy and mood."
+      ]
+    },
+    {
+      "id": "balance-tech",
+      "label": "Balance Tech",
+      "color": "#7B4EAD",
+      "x1": 80.1,
+      "y1": 14.6,
+      "x2": 99.7,
+      "y2": 99.4,
+      "summary": "Healthy technology use leaves room for sleep, family, learning, and play.",
+      "facts": [
+        "A trusted adult can help choose safe activities.",
+        "Screens are one part of a balanced day.",
+        "Taking breaks gives eyes and bodies time to move."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which helper is especially important after running or playing outside?",
+      "correct_zone": "drink-water"
+    },
+    {
+      "question": "Which helper includes fruits, vegetables, grains, and protein foods?",
+      "correct_zone": "eat-many-foods"
+    },
+    {
+      "question": "Which helper includes soap, toothbrushing, and clean towels?",
+      "correct_zone": "wash-and-care"
+    },
+    {
+      "question": "Which helper can build strength and lift your mood?",
+      "correct_zone": "move-and-play"
+    },
+    {
+      "question": "Which helper reminds us to make room for family time and active play?",
+      "correct_zone": "balance-tech"
+    }
+  ]
+}
