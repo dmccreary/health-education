@@ -15,7 +15,7 @@
       "panel": "bottom",
       "hint": "The student at far left pausing with one hand near the chest.",
       "description": "A nervous stomach, tight muscles, or a strong urge to leave can be useful information.",
-      "ap_tip": "A student never needs perfect proof before moving toward safety."
+      "tip": "A student never needs perfect proof before moving toward safety."
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
       "panel": "top",
       "hint": "The small peer group talking on the left-side path.",
       "description": "Peer pressure can be direct or as subtle as “everyone else is doing it.”",
-      "ap_tip": "Ask whether the choice is safe, kind, and consistent with your values."
+      "tip": "Ask whether the choice is safe, kind, and consistent with your values."
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "panel": "top",
       "hint": "The open school office where an adult is listening.",
       "description": "Knowing where trusted people are is part of calm situational awareness.",
-      "ap_tip": "A teacher, counselor, coach, family member, or other established trusted adult can help."
+      "tip": "A teacher, counselor, coach, family member, or other established trusted adult can help."
     },
     {
       "id": 4,
@@ -51,7 +51,7 @@
       "panel": "top",
       "hint": "The broad, open path through the center of the scene.",
       "description": "Notice exits and well-used public routes before you need them.",
-      "ap_tip": "Situational awareness is a calm scanning habit, not constant fear."
+      "tip": "Situational awareness is a calm scanning habit, not constant fear."
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "panel": "bottom",
       "hint": "The student in purple using a calm stop-hand gesture.",
       "description": "A short, clear refusal can be enough: “No thanks, I’m not doing that.”",
-      "ap_tip": "A refusal does not require an apology or debate."
+      "tip": "A refusal does not require an apology or debate."
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "panel": "bottom",
       "hint": "The student in green offering another idea with open hands.",
       "description": "An alternative can redirect a group toward a safe or kind activity.",
-      "ap_tip": "If pressure continues, stop negotiating and leave."
+      "tip": "If pressure continues, stop negotiating and leave."
     },
     {
       "id": 7,
@@ -87,7 +87,7 @@
       "panel": "top",
       "hint": "The bright community-center entrance in the upper right.",
       "description": "Choose a public place with safe people rather than becoming isolated.",
-      "ap_tip": "Getting distance is more important than winning an argument."
+      "tip": "Getting distance is more important than winning an argument."
     },
     {
       "id": 8,
@@ -99,7 +99,7 @@
       "panel": "bottom",
       "hint": "The student using a phone on the right-side path.",
       "description": "Call or message an established trusted adult and explain where you are.",
-      "ap_tip": "If it is an emergency, get immediate help through the appropriate local emergency service."
+      "tip": "If it is an emergency, get immediate help through the appropriate local emergency service."
     },
     {
       "id": 9,
@@ -111,7 +111,7 @@
       "panel": "bottom",
       "hint": "The seated adult listening carefully near the home.",
       "description": "Tell a trusted adult even if the situation ended or you are unsure how serious it was.",
-      "ap_tip": "“Something felt wrong” is enough to begin."
+      "tip": "“Something felt wrong” is enough to begin."
     },
     {
       "id": 10,
@@ -123,7 +123,7 @@
       "panel": "top",
       "hint": "The well-lit home doorway at the far right.",
       "description": "A practiced route ends with safety and support, not with handling everything alone.",
-      "ap_tip": "Review what helped so the plan is easier to use next time."
+      "tip": "Review what helped so the plan is easier to use next time."
     }
   ]
 }

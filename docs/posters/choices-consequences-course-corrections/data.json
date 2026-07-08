@@ -15,7 +15,7 @@
       "panel": "top",
       "hint": "The cyclist beginning beside the compass mosaic at far left.",
       "description": "A clear goal gives decisions a direction.",
-      "ap_tip": "Goals can change as a person learns more."
+      "tip": "Goals can change as a person learns more."
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
       "panel": "top",
       "hint": "The family, peers, media, and mentor thought bubbles across the upper-left ridge.",
       "description": "Family, peers, culture, media, emotions, and access can shape a choice.",
-      "ap_tip": "Influence is information, not automatic control."
+      "tip": "Influence is information, not automatic control."
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "panel": "top",
       "hint": "The cluster of riders choosing among several paths.",
       "description": "List more than one realistic option before deciding.",
-      "ap_tip": "A strong option should fit safety, values, resources, and the goal."
+      "tip": "A strong option should fit safety, values, resources, and the goal."
     },
     {
       "id": 4,
@@ -51,7 +51,7 @@
       "panel": "top",
       "hint": "The nearby fork where riders meet immediate terrain changes.",
       "description": "Short-term consequences happen soon after a choice.",
-      "ap_tip": "Convenience, feelings, cost, and immediate safety can all matter."
+      "tip": "Convenience, feelings, cost, and immediate safety can all matter."
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "panel": "top",
       "hint": "The rider pausing at the wide valley overlook.",
       "description": "Long-term consequences may affect future health, relationships, habits, or opportunities.",
-      "ap_tip": "Uncertainty should be acknowledged rather than hidden."
+      "tip": "Uncertainty should be acknowledged rather than hidden."
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "panel": "bottom",
       "hint": "The accessible rest shelter with peers in the center.",
       "description": "Trusted people and resources can improve a decision.",
-      "ap_tip": "Seeking support is part of ownership, not surrendering it."
+      "tip": "Seeking support is part of ownership, not surrendering it."
     },
     {
       "id": 7,
@@ -87,7 +87,7 @@
       "panel": "bottom",
       "hint": "The cyclist beside the reflective pond at lower left.",
       "description": "Reflection asks what happened, what helped, and what needs adjustment.",
-      "ap_tip": "The purpose is learning, not shame."
+      "tip": "The purpose is learning, not shame."
     },
     {
       "id": 8,
@@ -99,7 +99,7 @@
       "panel": "bottom",
       "hint": "The rider using the central switchback trail.",
       "description": "A new route can be chosen when evidence or circumstances change.",
-      "ap_tip": "Course correction is a health skill, not failure."
+      "tip": "Course correction is a health skill, not failure."
     },
     {
       "id": 9,
@@ -111,7 +111,7 @@
       "panel": "bottom",
       "hint": "The inclusive group celebrating near the lower-right compass.",
       "description": "Ownership means choosing the next realistic action and tracking it.",
-      "ap_tip": "Celebrate progress while remaining flexible."
+      "tip": "Celebrate progress while remaining flexible."
     }
   ]
 }

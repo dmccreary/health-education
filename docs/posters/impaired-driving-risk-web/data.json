@@ -15,7 +15,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents substance impairment.",
       "description": "Alcohol, cannabis, some medicines, and other drugs can impair driving.",
-      "ap_tip": "Feeling okay does not prove safe driving ability. Mixing substances increases uncertainty."
+      "tip": "Feeling okay does not prove safe driving ability. Mixing substances increases uncertainty."
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents attention.",
       "description": "Impairment can narrow, divide, or disrupt attention.",
-      "ap_tip": "Driving requires monitoring several things at once. Distraction and impairment can compound risk."
+      "tip": "Driving requires monitoring several things at once. Distraction and impairment can compound risk."
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents reaction time.",
       "description": "Impairment can slow the time between noticing a hazard and responding.",
-      "ap_tip": "Road conditions leave little margin for delay. No trick instantly restores safe reaction time."
+      "tip": "Road conditions leave little margin for delay. No trick instantly restores safe reaction time."
     },
     {
       "id": 4,
@@ -51,7 +51,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents judgment.",
       "description": "Impairment can increase confidence while reducing accurate risk assessment.",
-      "ap_tip": "Plans made before substance use are more reliable. Do not negotiate with an impaired driver."
+      "tip": "Plans made before substance use are more reliable. Do not negotiate with an impaired driver."
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents passenger influence.",
       "description": "Passengers can increase pressure or help stop an unsafe trip.",
-      "ap_tip": "Speak up early and recruit others. Do not get into a vehicle with an impaired driver."
+      "tip": "Speak up early and recruit others. Do not get into a vehicle with an impaired driver."
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents seatbelts.",
       "description": "Every occupant should use a seatbelt on every trip.",
-      "ap_tip": "Seatbelts reduce injury risk but do not make impaired driving safe. Choose the correct restraint for the rider."
+      "tip": "Seatbelts reduce injury risk but do not make impaired driving safe. Choose the correct restraint for the rider."
     },
     {
       "id": 7,
@@ -87,7 +87,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents alternate ride.",
       "description": "Use a sober driver, caregiver, taxi or rideshare, transit, or a safe place to stay.",
-      "ap_tip": "Plan options and payment before an event. A temporary inconvenience is safer than an impaired trip."
+      "tip": "Plan options and payment before an event. A temporary inconvenience is safer than an impaired trip."
     },
     {
       "id": 8,
@@ -99,7 +99,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents hold the keys safely.",
       "description": "A sober friend or adult may help prevent access to a vehicle when it can be done safely.",
-      "ap_tip": "Avoid physical confrontation. Get adult or emergency help if the person may drive anyway."
+      "tip": "Avoid physical confrontation. Get adult or emergency help if the person may drive anyway."
     },
     {
       "id": 9,
@@ -111,7 +111,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents community and legal consequences.",
       "description": "Impaired driving can harm people and bring school, family, financial, and legal consequences.",
-      "ap_tip": "Laws vary by jurisdiction. Prevention focuses on safety, not shame."
+      "tip": "Laws vary by jurisdiction. Prevention focuses on safety, not shame."
     },
     {
       "id": 10,
@@ -123,7 +123,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents emergency response.",
       "description": "Call emergency services for a crash, unresponsive person, breathing danger, or immediate threat on the road.",
-      "ap_tip": "Give location and vehicle information when safe. Do not follow or confront dangerously."
+      "tip": "Give location and vehicle information when safe. Do not follow or confront dangerously."
     }
   ]
 }

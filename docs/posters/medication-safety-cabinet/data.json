@@ -15,7 +15,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents read the label.",
       "description": "Read the medicine label and directions with a trusted adult when appropriate.",
-      "ap_tip": "Check warnings and active ingredients. Ask a pharmacist about anything unclear."
+      "tip": "Check warnings and active ingredients. Ask a pharmacist about anything unclear."
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents correct person.",
       "description": "Use only medicine intended for the named person.",
-      "ap_tip": "Bodies and conditions differ. Never use someone else’s prescription."
+      "tip": "Bodies and conditions differ. Never use someone else’s prescription."
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents correct timing.",
       "description": "Follow the prescribed or labeled schedule.",
-      "ap_tip": "Do not double a missed dose unless a professional directs it. Use a safe reminder system."
+      "tip": "Do not double a missed dose unless a professional directs it. Use a safe reminder system."
     },
     {
       "id": 4,
@@ -51,7 +51,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents check allergies and interactions.",
       "description": "Medicines can interact with allergies, other drugs, supplements, alcohol, or health conditions.",
-      "ap_tip": "Share an accurate list with the pharmacist or clinician. Seek help for unexpected reactions."
+      "tip": "Share an accurate list with the pharmacist or clinician. Seek help for unexpected reactions."
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents ask a professional.",
       "description": "Pharmacists and clinicians can explain purpose, use, storage, and side effects.",
-      "ap_tip": "Bring questions before starting or stopping medicine. Do not change a prescription on your own."
+      "tip": "Bring questions before starting or stopping medicine. Do not change a prescription on your own."
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents secure storage.",
       "description": "Store medicine away from children, pets, and people for whom it was not prescribed.",
-      "ap_tip": "Use locked storage when risk requires it. Follow temperature and moisture directions."
+      "tip": "Use locked storage when risk requires it. Follow temperature and moisture directions."
     },
     {
       "id": 7,
@@ -87,7 +87,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents original container.",
       "description": "Keep medicine in its original labeled container unless a professional-approved organizer is used.",
-      "ap_tip": "The label helps identify the medicine and instructions. Avoid loose, unidentified pills."
+      "tip": "The label helps identify the medicine and instructions. Avoid loose, unidentified pills."
     },
     {
       "id": 8,
@@ -99,7 +99,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents do not share.",
       "description": "Do not offer or accept prescription medicine.",
-      "ap_tip": "Sharing can cause harm and may be illegal. Support a friend by connecting them with care."
+      "tip": "Sharing can cause harm and may be illegal. Support a friend by connecting them with care."
     },
     {
       "id": 9,
@@ -111,7 +111,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents safe disposal.",
       "description": "Use a take-back location or local disposal guidance for unused medicine.",
-      "ap_tip": "Do not flush medicine unless official instructions specifically say to. Remove personal information from discarded packaging."
+      "tip": "Do not flush medicine unless official instructions specifically say to. Remove personal information from discarded packaging."
     },
     {
       "id": 10,
@@ -123,7 +123,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents poison or emergency help.",
       "description": "Call poison control or emergency services for a suspected overdose, severe reaction, or dangerous mistake.",
-      "ap_tip": "Do not wait for symptoms when advised to call. Bring the container or label information when safe."
+      "tip": "Do not wait for symptoms when advised to call. Bring the container or label information when safe."
     }
   ]
 }

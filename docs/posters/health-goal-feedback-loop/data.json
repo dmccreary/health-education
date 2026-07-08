@@ -15,7 +15,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents assess.",
       "description": "Notice the current situation, strengths, needs, resources, and constraints.",
-      "ap_tip": "Use observations and credible information. Assessment is a snapshot, not a judgment."
+      "tip": "Use observations and credible information. Assessment is a snapshot, not a judgment."
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents clarify values.",
       "description": "Connect the goal to what matters personally.",
-      "ap_tip": "Meaning supports motivation better than outside pressure alone. Different people can choose different priorities."
+      "tip": "Meaning supports motivation better than outside pressure alone. Different people can choose different priorities."
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents set the goal.",
       "description": "Define a specific, meaningful, realistic result and review point.",
-      "ap_tip": "Focus on behavior or function rather than worth. Keep the goal within the person’s influence."
+      "tip": "Focus on behavior or function rather than worth. Keep the goal within the person’s influence."
     },
     {
       "id": 4,
@@ -51,7 +51,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents choose small actions.",
       "description": "Break the goal into practical next steps.",
-      "ap_tip": "Shape the environment to make actions easier. Start small enough to repeat."
+      "tip": "Shape the environment to make actions easier. Start small enough to repeat."
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents build support.",
       "description": "Identify people, services, tools, and settings that can help.",
-      "ap_tip": "Ask for specific support. A plan should not depend on willpower alone."
+      "tip": "Ask for specific support. A plan should not depend on willpower alone."
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents track observations.",
       "description": "Record useful signals such as completion, energy, barriers, mood, function, or context.",
-      "ap_tip": "Track only what helps learning. Protect privacy and avoid obsessive monitoring."
+      "tip": "Track only what helps learning. Protect privacy and avoid obsessive monitoring."
     },
     {
       "id": 7,
@@ -87,7 +87,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents reflect.",
       "description": "Review what worked, what did not, and why.",
-      "ap_tip": "Separate the result from self-worth. Look for patterns rather than one difficult day."
+      "tip": "Separate the result from self-worth. Look for patterns rather than one difficult day."
     },
     {
       "id": 8,
@@ -99,7 +99,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents adapt around barriers.",
       "description": "Change timing, steps, supports, environment, or the goal when barriers appear.",
-      "ap_tip": "Some barriers require system-level solutions. Adaptation is a skill."
+      "tip": "Some barriers require system-level solutions. Adaptation is a skill."
     },
     {
       "id": 9,
@@ -111,7 +111,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents revise or continue.",
       "description": "Continue, expand, pause, or choose a new goal based on evidence and values.",
-      "ap_tip": "Celebrate learning and meaningful progress. The loop can begin again."
+      "tip": "Celebrate learning and meaningful progress. The loop can begin again."
     }
   ]
 }

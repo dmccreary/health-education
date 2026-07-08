@@ -15,7 +15,7 @@
       "panel": "top",
       "hint": "A child smiling with open arms in warm sunshine.",
       "description": "Happy can feel light, warm, energetic, or smiley. Naming it helps us share joy.",
-      "ap_tip": "Tell someone what made you happy."
+      "tip": "Tell someone what made you happy."
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
       "panel": "bottom",
       "hint": "A child sitting quietly beneath a small raincloud while an adult listens.",
       "description": "Sad may come with tears, low energy, or wanting comfort. A trusted adult can listen and help.",
-      "ap_tip": "If sadness stays a long time, always tell a trusted adult."
+      "tip": "If sadness stays a long time, always tell a trusted adult."
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "panel": "top",
       "hint": "A child with a tight face and wind-blown leaves nearby.",
       "description": "Anger and frustration are strong feelings. Safe choices include pausing, breathing, and using words.",
-      "ap_tip": "Feelings are okay; hurting people or things is not."
+      "tip": "Feelings are okay; hurting people or things is not."
     },
     {
       "id": 4,
@@ -51,7 +51,7 @@
       "panel": "top",
       "hint": "A child holding their tummy as swirly wind moves nearby.",
       "description": "Worry can make a tummy feel jumpy or thoughts race. Naming the worry can make help easier to find.",
-      "ap_tip": "Try: “I feel worried. Can you help me?”"
+      "tip": "Try: “I feel worried. Can you help me?”"
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "panel": "top",
       "hint": "A child running happily beneath a bright flying kite.",
       "description": "Excitement can bring fast energy, big smiles, and lots of movement.",
-      "ap_tip": "Use that energy in a safe space."
+      "tip": "Use that energy in a safe space."
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "panel": "bottom",
       "hint": "A child reaching for a calm adult beneath distant storm clouds.",
       "description": "Fear can warn us to seek safety. Moving near and telling a trusted adult is a strong choice.",
-      "ap_tip": "You never have to handle a scary feeling alone."
+      "tip": "You never have to handle a scary feeling alone."
     },
     {
       "id": 7,
@@ -87,7 +87,7 @@
       "panel": "bottom",
       "hint": "A child breathing slowly beside still water.",
       "description": "Calm may feel steady, relaxed, and ready to think. Slow breathing can help the body settle.",
-      "ap_tip": "Notice your shoulders and breathing when you feel calm."
+      "tip": "Notice your shoulders and breathing when you feel calm."
     },
     {
       "id": 8,
@@ -99,7 +99,7 @@
       "panel": "bottom",
       "hint": "A child sitting apart while a caring teacher approaches.",
       "description": "Feeling left out can hurt. A trusted adult can listen and help make room for belonging.",
-      "ap_tip": "It is brave to ask for help joining in."
+      "tip": "It is brave to ask for help joining in."
     }
   ]
 }

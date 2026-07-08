@@ -15,7 +15,7 @@
       "panel": "top",
       "hint": "Hands lather with soap under running water at the left sink.",
       "description": "Clean hands keep germs from moving onto ingredients and tools.",
-      "ap_tip": "Wash before touching food and again after handling raw foods."
+      "tip": "Wash before touching food and again after handling raw foods."
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
       "panel": "bottom",
       "hint": "Fresh fruits and vegetables rinse in clean running water.",
       "description": "Rinsing removes soil and some germs before food is cut or eaten.",
-      "ap_tip": "Use clean water and keep produce away from raw meat."
+      "tip": "Use clean water and keep produce away from raw meat."
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "panel": "top",
       "hint": "Raw poultry stays on its own red cutting board.",
       "description": "Raw meat can carry germs that should not reach ready-to-eat food.",
-      "ap_tip": "Use a dedicated board and clean it carefully afterward."
+      "tip": "Use a dedicated board and clean it carefully afterward."
     },
     {
       "id": 4,
@@ -51,7 +51,7 @@
       "panel": "bottom",
       "hint": "Vegetables are cut on a different green board with a separate knife.",
       "description": "Separate tools help prevent cross-contamination.",
-      "ap_tip": "Never reuse a raw-meat plate for cooked food."
+      "tip": "Never reuse a raw-meat plate for cooked food."
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "panel": "top",
       "hint": "An adult cooks food fully in a steaming pan.",
       "description": "Thorough cooking destroys many harmful germs.",
-      "ap_tip": "A trusted adult handles hot pans and checks doneness."
+      "tip": "A trusted adult handles hot pans and checks doneness."
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "panel": "bottom",
       "hint": "Cooked food rests on a clean white plate.",
       "description": "Cooked food stays safer when it never returns to a raw-food plate.",
-      "ap_tip": "Clean utensils matter too."
+      "tip": "Clean utensils matter too."
     },
     {
       "id": 7,
@@ -87,7 +87,7 @@
       "panel": "top",
       "hint": "Cooked leftovers sit in several shallow covered containers.",
       "description": "Shallow containers help leftovers cool more evenly before refrigerator storage.",
-      "ap_tip": "Put leftovers away promptly with adult help."
+      "tip": "Put leftovers away promptly with adult help."
     },
     {
       "id": 8,
@@ -99,7 +99,7 @@
       "panel": "top",
       "hint": "A refrigerator keeps sealed raw foods low and ready-to-eat foods above.",
       "description": "Cold storage slows germ growth, and sealed lower-shelf raw foods reduce drips.",
-      "ap_tip": "Keep the refrigerator door closed."
+      "tip": "Keep the refrigerator door closed."
     },
     {
       "id": 9,
@@ -111,7 +111,7 @@
       "panel": "bottom",
       "hint": "An insulated lunchbox holds chilled food beside a blue ice pack.",
       "description": "Cold foods need to stay cold on the way to lunch.",
-      "ap_tip": "An insulated bag and ice pack help maintain a safer temperature."
+      "tip": "An insulated bag and ice pack help maintain a safer temperature."
     },
     {
       "id": 10,
@@ -123,7 +123,7 @@
       "panel": "bottom",
       "hint": "A clean bottle and utensil case wait beside the lunchbox.",
       "description": "Clean reusable items prevent yesterday’s food and germs from returning.",
-      "ap_tip": "Wash and dry reusable containers between uses."
+      "tip": "Wash and dry reusable containers between uses."
     },
     {
       "id": 11,
@@ -135,7 +135,7 @@
       "panel": "top",
       "hint": "A child washes hands at a second sink before lunch.",
       "description": "Clean hands protect the food at the final step before eating.",
-      "ap_tip": "Use soap even when hands look clean."
+      "tip": "Use soap even when hands look clean."
     },
     {
       "id": 12,
@@ -147,7 +147,7 @@
       "panel": "bottom",
       "hint": "A child eats from a clean lunch container while an adult is nearby to help.",
       "description": "Food that smells strange, looks spoiled, or was stored unsafely should not be tasted.",
-      "ap_tip": "Keep it closed and ask a trusted adult."
+      "tip": "Keep it closed and ask a trusted adult."
     }
   ]
 }

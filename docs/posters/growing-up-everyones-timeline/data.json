@@ -15,7 +15,7 @@
       "panel": "bottom",
       "hint": "A child ties shoes beside a pair that has become too small.",
       "description": "Growth happens throughout childhood, and outgrown clothes or shoes can be ordinary signs.",
-      "ap_tip": "Puberty is one later stage in the long process of growing."
+      "tip": "Puberty is one later stage in the long process of growing."
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
       "panel": "top",
       "hint": "One student stands taller among peers in a calm school scene.",
       "description": "Some students notice growth changes earlier than classmates.",
-      "ap_tip": "Earlier does not mean better, worse, or more mature."
+      "tip": "Earlier does not mean better, worse, or more mature."
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "panel": "top",
       "hint": "A shorter student participates confidently with friends.",
       "description": "Other students notice changes later, and that is normal too.",
-      "ap_tip": "There is no correct age that fits every body."
+      "tip": "There is no correct age that fits every body."
     },
     {
       "id": 4,
@@ -51,7 +51,7 @@
       "panel": "bottom",
       "hint": "A trusted adult helps a child choose simple skin and hygiene supplies.",
       "description": "Growing bodies may sweat more or need adjusted skin and hygiene routines.",
-      "ap_tip": "A trusted adult can help find a routine that fits the student and family."
+      "tip": "A trusted adult can help find a routine that fits the student and family."
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "panel": "top",
       "hint": "A child breathes with hands on chest and stomach.",
       "description": "Puberty can bring stronger, mixed, or more sudden emotions.",
-      "ap_tip": "All feelings are allowed; safe coping and support help."
+      "tip": "All feelings are allowed; safe coping and support help."
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "panel": "bottom",
       "hint": "Friends of varied heights and abilities enjoy one activity together.",
       "description": "Bodies can be at different stages while students share the same interests and belonging.",
-      "ap_tip": "Do not tease or compare someone’s body."
+      "tip": "Do not tease or compare someone’s body."
     },
     {
       "id": 7,
@@ -87,7 +87,7 @@
       "panel": "top",
       "hint": "A child asks a parent or guardian a question in a calm room.",
       "description": "Parents, guardians, and trusted family members can answer questions and listen.",
-      "ap_tip": "There are no silly questions about growing."
+      "tip": "There are no silly questions about growing."
     },
     {
       "id": 8,
@@ -99,7 +99,7 @@
       "panel": "bottom",
       "hint": "A school nurse and counselor sit in a welcoming office.",
       "description": "School nurses, teachers, and counselors can help with questions or feelings during the school day.",
-      "ap_tip": "Students can ask for a private conversation."
+      "tip": "Students can ask for a private conversation."
     },
     {
       "id": 9,
@@ -111,7 +111,7 @@
       "panel": "top",
       "hint": "A clinician talks with a child and caregiver.",
       "description": "Doctors and other health professionals can explain body changes and check concerns.",
-      "ap_tip": "A student deserves clear, respectful answers."
+      "tip": "A student deserves clear, respectful answers."
     },
     {
       "id": 10,
@@ -123,7 +123,7 @@
       "panel": "bottom",
       "hint": "Students move forward on several equally bright parallel paths.",
       "description": "Puberty unfolds gradually and at different times for different people.",
-      "ap_tip": "Every timeline deserves privacy and respect."
+      "tip": "Every timeline deserves privacy and respect."
     }
   ]
 }

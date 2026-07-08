@@ -15,7 +15,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents food access.",
       "description": "Distance, price, quality, hours, and transportation shape food access.",
-      "ap_tip": "Choice depends on available options. Local stores and markets can be community assets."
+      "tip": "Choice depends on available options. Local stores and markets can be community assets."
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents recreation space.",
       "description": "Safe, welcoming places make movement and connection easier.",
-      "ap_tip": "Quality and accessibility matter, not just presence. Programming can expand who feels included."
+      "tip": "Quality and accessibility matter, not just presence. Programming can expand who feels included."
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents transportation.",
       "description": "Reliable transit connects people with school, work, food, care, and community.",
-      "ap_tip": "Time and cost are health factors. Routes should work for varied mobility needs."
+      "tip": "Time and cost are health factors. Routes should work for varied mobility needs."
     },
     {
       "id": 4,
@@ -51,7 +51,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents healthcare.",
       "description": "Nearby care is useful only when it is affordable, respectful, accessible, and available.",
-      "ap_tip": "Trust and language access matter. School and community services can reduce gaps."
+      "tip": "Trust and language access matter. School and community services can reduce gaps."
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents air quality.",
       "description": "Traffic and industry can concentrate air pollution in some neighborhoods.",
-      "ap_tip": "Exposure is shaped by policy and land use. Monitoring and clean-air action can reduce risk."
+      "tip": "Exposure is shaped by policy and land use. Monitoring and clean-air action can reduce risk."
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents traffic safety.",
       "description": "Road design affects walking, wheeling, cycling, and injury risk.",
-      "ap_tip": "Crossings, lighting, speed, and sidewalks matter. Safe design benefits everyone."
+      "tip": "Crossings, lighting, speed, and sidewalks matter. Safe design benefits everyone."
     },
     {
       "id": 7,
@@ -87,7 +87,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents housing quality.",
       "description": "Stable, safe housing supports sleep, study, stress regulation, and health.",
-      "ap_tip": "Mold, heat, crowding, and displacement can cause harm. Housing conditions are public-health issues."
+      "tip": "Mold, heat, crowding, and displacement can cause harm. Housing conditions are public-health issues."
     },
     {
       "id": 8,
@@ -99,7 +99,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents affordability.",
       "description": "Costs for housing, food, care, and transportation compete within a budget.",
-      "ap_tip": "Financial strain can affect stress and choices. Policy and community supports change what is possible."
+      "tip": "Financial strain can affect stress and choices. Policy and community supports change what is possible."
     },
     {
       "id": 9,
@@ -111,7 +111,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents disability access.",
       "description": "Ramps, curb cuts, surfaces, signage, and inclusive design affect participation.",
-      "ap_tip": "Access should be designed in, not added as a favor. Universal design helps many users."
+      "tip": "Access should be designed in, not added as a favor. Universal design helps many users."
     },
     {
       "id": 10,
@@ -123,7 +123,7 @@
       "panel": "top",
       "hint": "Find the scene that best represents schools.",
       "description": "Schools can connect students with learning, meals, activity, care, and belonging.",
-      "ap_tip": "Resources vary across communities. Student voice can improve school health."
+      "tip": "Resources vary across communities. Student voice can improve school health."
     },
     {
       "id": 11,
@@ -135,7 +135,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents work and time.",
       "description": "Work schedules and travel time affect sleep, meals, caregiving, and healthcare.",
-      "ap_tip": "Time is a resource. Flexible policies can improve wellbeing."
+      "tip": "Time is a resource. Flexible policies can improve wellbeing."
     },
     {
       "id": 12,
@@ -147,7 +147,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents community garden.",
       "description": "Gardens can support food, knowledge, culture, nature, and connection.",
-      "ap_tip": "They do not replace systemic food access. Community ownership matters."
+      "tip": "They do not replace systemic food access. Community ownership matters."
     },
     {
       "id": 13,
@@ -159,7 +159,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents green space.",
       "description": "Trees and nature can support cooling, cleaner air, movement, and restoration.",
-      "ap_tip": "Maintenance and safety affect use. Green investment should avoid displacing residents."
+      "tip": "Maintenance and safety affect use. Green investment should avoid displacing residents."
     },
     {
       "id": 14,
@@ -171,7 +171,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents community organization.",
       "description": "Residents hold knowledge and organize solutions that fit local needs.",
-      "ap_tip": "Participation requires time, access, and power. Partnerships should share decisions."
+      "tip": "Participation requires time, access, and power. Partnerships should share decisions."
     },
     {
       "id": 15,
@@ -183,7 +183,7 @@
       "panel": "bottom",
       "hint": "Find the scene that best represents civic decisions.",
       "description": "Budgets, zoning, transportation, and environmental rules shape health opportunity.",
-      "ap_tip": "Disparities are not accidents of individual behavior. Civic action can change conditions."
+      "tip": "Disparities are not accidents of individual behavior. Civic action can change conditions."
     }
   ]
 }

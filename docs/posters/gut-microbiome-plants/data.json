@@ -14,7 +14,7 @@
       "color": "#E74C3C",
       "hint": "The pink epithelial cell lining forming the wall of the colon.",
       "description": "The single layer of epithelial cells lining the colon, protected by a dense mucus layer. It forms a crucial barrier that keeps pathogens out while absorbing water and vital nutrients.",
-      "ap_tip": "Short-chain fatty acids (SCFAs), especially butyrate, serve as the primary energy source for these colonocytes (epithelial cells) and help strengthen tight junctions, preventing the translocation of harmful compounds."
+      "tip": "Short-chain fatty acids (SCFAs), especially butyrate, serve as the primary energy source for these colonocytes (epithelial cells) and help strengthen tight junctions, preventing the translocation of harmful compounds."
     },
     {
       "id": 2,
@@ -25,7 +25,7 @@
       "color": "#8E44AD",
       "hint": "The large circular zoom-in lens containing various colored bacteria.",
       "description": "The American Gut Project showed that individuals who eat 30+ different plants per week have a significantly more diverse gut microbiome compared to those who eat fewer than 10. A diverse microbiome is linked to robust metabolic health.",
-      "ap_tip": "High species richness (diversity) makes the gut ecosystem more resilient to disturbances like antibiotic treatments or dietary changes, as different species can perform redundant functional roles."
+      "tip": "High species richness (diversity) makes the gut ecosystem more resilient to disturbances like antibiotic treatments or dietary changes, as different species can perform redundant functional roles."
     },
     {
       "id": 3,
@@ -36,7 +36,7 @@
       "color": "#2ECC71",
       "hint": "The green and yellow fibrous strands entering the top of the colon.",
       "description": "Complex carbohydrates and prebiotic fibers from plant foods that human digestive enzymes cannot break down. They travel intact to the large intestine, serving as the primary source of nutrition for beneficial gut microbes.",
-      "ap_tip": "Different plant families provide distinct prebiotic fibers (such as inulin, pectin, and beta-glucan) which select for and feed different beneficial bacterial groups."
+      "tip": "Different plant families provide distinct prebiotic fibers (such as inulin, pectin, and beta-glucan) which select for and feed different beneficial bacterial groups."
     },
     {
       "id": 4,
@@ -47,7 +47,7 @@
       "color": "#3498DB",
       "hint": "Small glowing blue and gold spheres floating near the bacteria in the cutout.",
       "description": "Fermentation of plant fiber by gut bacteria produces short-chain fatty acids (SCFAs) like butyrate, acetate, and propionate. These metabolites are crucial for fueling gut cells, reducing inflammation, and regulating metabolism.",
-      "ap_tip": "SCFAs enter systemic circulation and bind to G-protein coupled receptors on immune cells, acting as chemical messengers that suppress systemic inflammation and support regulatory T-cell differentiation."
+      "tip": "SCFAs enter systemic circulation and bind to G-protein coupled receptors on immune cells, acting as chemical messengers that suppress systemic inflammation and support regulatory T-cell differentiation."
     },
     {
       "id": 5,
@@ -58,7 +58,7 @@
       "color": "#E67E22",
       "hint": "The DNA double helices or glowing plasmids inside some bacteria in the cutout.",
       "description": "The American Gut Project found that individuals eating a wider variety of plants (30+ per week) had fewer antibiotic-resistant genes in their gut microbiomes compared to those who ate fewer than 10 plants.",
-      "ap_tip": "A highly diverse microbiome creates intense competition for resources, limiting the survival of opportunistic pathobionts that carry antibiotic-resistance plasmids (the resistome)."
+      "tip": "A highly diverse microbiome creates intense competition for resources, limiting the survival of opportunistic pathobionts that carry antibiotic-resistance plasmids (the resistome)."
     },
     {
       "id": 6,
@@ -69,7 +69,7 @@
       "color": "#F39C12",
       "hint": "The cascading cluster of clean plant icons (broccoli, orange slice, seeds) at the top right.",
       "description": "The goal of consuming 30+ different plant varieties weekly. Variety is key because different plants contain unique combinations of prebiotic fibers and antioxidant polyphenols, fostering a more diverse bacterial community.",
-      "ap_tip": "Plant categories that count toward this target include vegetables, fruits, whole grains, nuts, seeds, legumes, herbs, and spices, showing that diet diversity is highly achievable."
+      "tip": "Plant categories that count toward this target include vegetables, fruits, whole grains, nuts, seeds, legumes, herbs, and spices, showing that diet diversity is highly achievable."
     }
   ]
 }
