@@ -1,0 +1,129 @@
+{
+  "title": "Sleep: The Overnight Repair Shop",
+  "orientation": "landscape",
+  "image": "sleep-overnight-repair-shop.png",
+  "layout": "top-bottom",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Wind-Down Signals",
+      "x": 8,
+      "y": 30,
+      "radius": 4,
+      "color": "#326A8B",
+      "panel": "top",
+      "hint": "The quiet bedroom at upper left with dim light and a settled child.",
+      "description": "A predictable wind-down helps the brain and body shift toward sleep.",
+      "ap_tip": "Gentle routines work best when they fit the family and child."
+    },
+    {
+      "id": 2,
+      "label": "Consistent Timing",
+      "x": 19,
+      "y": 30,
+      "radius": 4,
+      "color": "#D68A08",
+      "panel": "bottom",
+      "hint": "The large moon-faced clock with hands and no numerals.",
+      "description": "Similar sleep and wake timing helps the body organize its daily rhythm.",
+      "ap_tip": "Perfection is not required; patterns can be adjusted gradually."
+    },
+    {
+      "id": 3,
+      "label": "Memory Sorting",
+      "x": 35,
+      "y": 28,
+      "radius": 4,
+      "color": "#60439A",
+      "panel": "top",
+      "hint": "The glowing brain library filled with picture cards.",
+      "description": "During sleep, the brain organizes and strengthens learning and memories.",
+      "ap_tip": "Sleep supports practice; it does not replace studying or experience."
+    },
+    {
+      "id": 4,
+      "label": "Emotion Reset",
+      "x": 48,
+      "y": 30,
+      "radius": 4,
+      "color": "#C94A36",
+      "panel": "bottom",
+      "hint": "The control room between storm clouds and clearing sky.",
+      "description": "Sleep helps emotion systems recover and improves the ability to pause before reacting.",
+      "ap_tip": "Poor sleep can make ordinary challenges feel harder."
+    },
+    {
+      "id": 5,
+      "label": "Growth and Repair",
+      "x": 66,
+      "y": 28,
+      "radius": 4,
+      "color": "#2D8A4E",
+      "panel": "top",
+      "hint": "The golden growing figure under careful workshop lights.",
+      "description": "Sleep supports growth signals and tissue repair in a growing body.",
+      "ap_tip": "Growth happens across time, not in one single night."
+    },
+    {
+      "id": 6,
+      "label": "Immune Support",
+      "x": 13,
+      "y": 67,
+      "radius": 4,
+      "color": "#087A8A",
+      "panel": "bottom",
+      "hint": "The bright shield workshop in the lower-left room.",
+      "description": "Sleep supports immune defenses that help the body respond to illness.",
+      "ap_tip": "Sleep is one support, alongside hygiene, food, movement, and healthcare."
+    },
+    {
+      "id": 7,
+      "label": "Energy Recharge",
+      "x": 36,
+      "y": 68,
+      "radius": 4,
+      "color": "#326A8B",
+      "panel": "top",
+      "hint": "The glowing blue energy chamber in the lower middle-left.",
+      "description": "Rest restores alertness and physical energy for the next day.",
+      "ap_tip": "Morning fatigue can be a useful clue to review sleep routines."
+    },
+    {
+      "id": 8,
+      "label": "Temperature Rhythm",
+      "x": 53,
+      "y": 66,
+      "radius": 4,
+      "color": "#D68A08",
+      "panel": "bottom",
+      "hint": "The cool blue chamber with a snowflake-like symbol.",
+      "description": "Body temperature naturally shifts as part of the sleep-wake rhythm.",
+      "ap_tip": "A comfortable environment can make sleep easier."
+    },
+    {
+      "id": 9,
+      "label": "Morning Attention",
+      "x": 71,
+      "y": 67,
+      "radius": 4,
+      "color": "#60439A",
+      "panel": "top",
+      "hint": "The operator restoring bright stars in the lower middle-right.",
+      "description": "Adequate sleep supports attention, decision-making, and learning.",
+      "ap_tip": "Sleepy brains may miss details or react more slowly."
+    },
+    {
+      "id": 10,
+      "label": "Sleep Environment",
+      "x": 89,
+      "y": 66,
+      "radius": 4,
+      "color": "#C94A36",
+      "panel": "bottom",
+      "hint": "The calm sunrise bedroom at lower right.",
+      "description": "A safe, quiet, comfortable sleep space supports rest.",
+      "ap_tip": "Families can reduce light, noise, or device interruptions in ways that fit their home."
+    }
+  ]
+}

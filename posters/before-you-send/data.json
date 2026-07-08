@@ -1,0 +1,92 @@
+{
+  "title": "Before You Send",
+  "image": "before-you-send.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#168CC8",
+    "#087A8A",
+    "#D68A08",
+    "#60439A"
+  ],
+  "zones": [
+    {
+      "id": "pause",
+      "label": "Pause",
+      "color": "#168CC8",
+      "x1": 0.3,
+      "y1": 0.3,
+      "x2": 24.7,
+      "y2": 99.5,
+      "summary": "Stop long enough for your thinking brain to catch up with your tapping finger.",
+      "facts": [
+        "Strong feelings can make a quick send tempting.",
+        "A pause creates time to reread the message or image.",
+        "Nothing needs to be posted immediately."
+      ]
+    },
+    {
+      "id": "privacy",
+      "label": "Check Privacy",
+      "color": "#087A8A",
+      "x1": 25.3,
+      "y1": 0.3,
+      "x2": 49.7,
+      "y2": 99.5,
+      "summary": "Look for personal information and get permission from anyone shown.",
+      "facts": [
+        "Home address, passwords, school details, and daily schedules stay private.",
+        "Images can reveal location clues in backgrounds or uniforms.",
+        "Ask before sharing another person’s photo or story."
+      ]
+    },
+    {
+      "id": "impact",
+      "label": "Consider Impact",
+      "color": "#D68A08",
+      "x1": 50.3,
+      "y1": 0.3,
+      "x2": 74.7,
+      "y2": 99.5,
+      "summary": "Think about how the message could affect everyone who may see it.",
+      "facts": [
+        "Tone is easy to misunderstand online.",
+        "A message can be copied, saved, or forwarded.",
+        "Kind intent does not erase harm if someone asked for privacy."
+      ]
+    },
+    {
+      "id": "choose",
+      "label": "Choose",
+      "color": "#60439A",
+      "x1": 75.3,
+      "y1": 0.3,
+      "x2": 99.7,
+      "y2": 99.5,
+      "summary": "Send, revise, save, delete, or ask a trusted adult—there is more than one smart choice.",
+      "facts": [
+        "Choose the audience carefully.",
+        "Change words that sound harsh or unclear.",
+        "If anything feels uncomfortable, do not send it; show a trusted adult."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Where do you create time to reread before acting?",
+      "correct_zone": "pause"
+    },
+    {
+      "question": "Where do you look for location clues and ask permission?",
+      "correct_zone": "privacy"
+    },
+    {
+      "question": "Where do you think about tone and who could be affected?",
+      "correct_zone": "impact"
+    },
+    {
+      "question": "Where can you revise, save, delete, or get adult help?",
+      "correct_zone": "choose"
+    }
+  ]
+}

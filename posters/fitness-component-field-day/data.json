@@ -1,0 +1,92 @@
+{
+  "title": "The Fitness Component Field Day",
+  "image": "fitness-component-field-day.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#60439A",
+    "#4F8A48",
+    "#168CC8",
+    "#D86624"
+  ],
+  "zones": [
+    {
+      "id": "endurance",
+      "label": "Endurance",
+      "color": "#60439A",
+      "x1": 0.3,
+      "y1": 0.3,
+      "x2": 24.7,
+      "y2": 99.5,
+      "summary": "Endurance helps the heart and lungs support activity over time.",
+      "facts": [
+        "Running, brisk walking, wheeling, swimming, cycling, and dance can build endurance.",
+        "An activity can be adapted for different bodies and access needs.",
+        "Pacing and gradual practice matter more than comparing performance."
+      ]
+    },
+    {
+      "id": "strength",
+      "label": "Strength",
+      "color": "#4F8A48",
+      "x1": 25.3,
+      "y1": 0.3,
+      "x2": 49.7,
+      "y2": 99.5,
+      "summary": "Muscular strength is the ability of muscles to produce force.",
+      "facts": [
+        "Climbing, resistance bands, lifting, pushing, and body-weight movements can build strength.",
+        "Good form and appropriate resistance support safety.",
+        "Strength looks different across bodies and activities."
+      ]
+    },
+    {
+      "id": "flexibility",
+      "label": "Flexibility",
+      "color": "#168CC8",
+      "x1": 50.3,
+      "y1": 0.3,
+      "x2": 74.7,
+      "y2": 99.5,
+      "summary": "Flexibility is the comfortable range of motion around joints.",
+      "facts": [
+        "Stretching and mobility activities can support movement.",
+        "Stretch gently rather than forcing pain.",
+        "Warm muscles generally move more comfortably than cold muscles."
+      ]
+    },
+    {
+      "id": "balance-coordination",
+      "label": "Balance and Coordination",
+      "color": "#D86624",
+      "x1": 75.3,
+      "y1": 0.3,
+      "x2": 99.7,
+      "y2": 99.5,
+      "summary": "Balance controls body position; coordination organizes movements together.",
+      "facts": [
+        "Obstacle courses, ball skills, adaptive balance tasks, and rhythmic movement can practice both.",
+        "Vision, inner-ear signals, muscles, and practice all contribute.",
+        "Activities can be modified without changing the component being practiced."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which station builds the ability of the heart and lungs to support activity over time?",
+      "correct_zone": "endurance"
+    },
+    {
+      "question": "Which station practices muscles producing force?",
+      "correct_zone": "strength"
+    },
+    {
+      "question": "Which station practices comfortable range of motion around joints?",
+      "correct_zone": "flexibility"
+    },
+    {
+      "question": "Which station practices body position and organizing movements together?",
+      "correct_zone": "balance-coordination"
+    }
+  ]
+}

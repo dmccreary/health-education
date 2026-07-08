@@ -1,0 +1,112 @@
+{
+  "title": "Health Information Detective Desk",
+  "image": "health-information-detective-desk.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#557A2C",
+    "#326A8B",
+    "#087A8A",
+    "#D86624",
+    "#60439A"
+  ],
+  "zones": [
+    {
+      "id": "trusted-adult",
+      "label": "Trusted Adult",
+      "color": "#557A2C",
+      "x1": 0.3,
+      "y1": 0.3,
+      "x2": 19.7,
+      "y2": 99.5,
+      "summary": "A trusted adult knows the child and can help decide what deserves another check.",
+      "facts": [
+        "They can listen, add family context, and help find an expert.",
+        "Trust comes from an established safe relationship, not simply being older.",
+        "A trusted adult may refer a medical question to a health professional."
+      ]
+    },
+    {
+      "id": "health-professional",
+      "label": "Health Professional",
+      "color": "#326A8B",
+      "x1": 20.3,
+      "y1": 0.3,
+      "x2": 39.7,
+      "y2": 99.5,
+      "summary": "Training and professional accountability make clinicians strong sources within their expertise.",
+      "facts": [
+        "Ask whether the question fits the person’s training.",
+        "Professionals explain evidence and limits rather than promising miracles.",
+        "Personal medical decisions should be discussed with an appropriate professional."
+      ]
+    },
+    {
+      "id": "public-health",
+      "label": "Public Health Source",
+      "color": "#087A8A",
+      "x1": 40.3,
+      "y1": 0.3,
+      "x2": 59.7,
+      "y2": 99.5,
+      "summary": "Official public-health sources review evidence for guidance that serves communities.",
+      "facts": [
+        "Look for a named agency or organization.",
+        "Check the publication or update date.",
+        "Compare guidance when the topic changes over time."
+      ]
+    },
+    {
+      "id": "ad-influencer",
+      "label": "Ad or Influencer",
+      "color": "#D86624",
+      "x1": 60.3,
+      "y1": 0.3,
+      "x2": 79.7,
+      "y2": 99.5,
+      "summary": "Attention and sales motives mean the claim needs independent checking.",
+      "facts": [
+        "Popularity is not the same as expertise.",
+        "A testimonial is one person’s story, not a scientific study.",
+        "Ask who benefits if you believe or buy."
+      ]
+    },
+    {
+      "id": "anonymous-post",
+      "label": "Anonymous Post",
+      "color": "#60439A",
+      "x1": 80.3,
+      "y1": 0.3,
+      "x2": 99.7,
+      "y2": 99.5,
+      "summary": "Missing authorship and evidence make an anonymous health post hard to verify.",
+      "facts": [
+        "No name means no expertise or accountability to check.",
+        "Screenshots can leave out date and context.",
+        "Use the claim as a question, then check reliable sources."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which folder can add family context and help locate an expert?",
+      "correct_zone": "trusted-adult"
+    },
+    {
+      "question": "Which folder is strongest for a question inside a trained clinician’s expertise?",
+      "correct_zone": "health-professional"
+    },
+    {
+      "question": "Which folder represents accountable community guidance based on reviewed evidence?",
+      "correct_zone": "public-health"
+    },
+    {
+      "question": "Which folder needs extra checking because attention or sales may shape the message?",
+      "correct_zone": "ad-influencer"
+    },
+    {
+      "question": "Which folder is hardest to verify because author and evidence are missing?",
+      "correct_zone": "anonymous-post"
+    }
+  ]
+}

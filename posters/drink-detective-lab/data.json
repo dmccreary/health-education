@@ -1,0 +1,92 @@
+{
+  "title": "Drink Detective Lab",
+  "image": "drink-detective-lab.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#168CC8",
+    "#62A52A",
+    "#E87520",
+    "#7046A3"
+  ],
+  "zones": [
+    {
+      "id": "water",
+      "label": "Water",
+      "color": "#168CC8",
+      "x1": 0.3,
+      "y1": 15.3,
+      "x2": 24.5,
+      "y2": 99.5,
+      "summary": "Water is the best everyday choice for replacing fluid.",
+      "facts": [
+        "Water has no added sugar or caffeine.",
+        "Bodies need water before, during, and after active play.",
+        "Thirst is one clue, but drinking regularly helps before thirst grows strong."
+      ]
+    },
+    {
+      "id": "nourishing-drinks",
+      "label": "Nourishing Drinks",
+      "color": "#62A52A",
+      "x1": 24.9,
+      "y1": 15.3,
+      "x2": 49.4,
+      "y2": 99.5,
+      "summary": "Plain milk and culturally familiar unsweetened alternatives can add nutrients as well as fluid.",
+      "facts": [
+        "Plain milk contains natural sugar rather than added sweetener.",
+        "Nourishing alternatives vary by family and culture.",
+        "A trusted adult can help compare an unfamiliar drink."
+      ]
+    },
+    {
+      "id": "sugary-drinks",
+      "label": "Sugary Drinks",
+      "color": "#E87520",
+      "x1": 49.9,
+      "y1": 15.3,
+      "x2": 74.3,
+      "y2": 99.5,
+      "summary": "Some drinks contain a large amount of added sugar even when they look fruity or sporty.",
+      "facts": [
+        "Added sugar can contribute to tooth decay.",
+        "A sweet drink may give quick energy followed by a tired feeling.",
+        "These drinks are not needed for ordinary everyday hydration."
+      ]
+    },
+    {
+      "id": "caffeinated-drinks",
+      "label": "Caffeinated Drinks",
+      "color": "#7046A3",
+      "x1": 74.8,
+      "y1": 15.3,
+      "x2": 99.7,
+      "y2": 99.5,
+      "summary": "Caffeine can affect a child’s sleep, heart rate, and calm focus.",
+      "facts": [
+        "Caffeine may be found in energy drinks, some sodas, and some teas.",
+        "Children are more sensitive to caffeine than adults.",
+        "Ask a trusted adult to help read an unfamiliar label."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which station has no added sugar or caffeine?",
+      "correct_zone": "water"
+    },
+    {
+      "question": "Which station can add nutrients as well as fluid?",
+      "correct_zone": "nourishing-drinks"
+    },
+    {
+      "question": "Which station uses sugar-cube clues to show added sweetness?",
+      "correct_zone": "sugary-drinks"
+    },
+    {
+      "question": "Which station shows clues about wakefulness and a racing feeling?",
+      "correct_zone": "caffeinated-drinks"
+    }
+  ]
+}

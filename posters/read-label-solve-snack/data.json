@@ -1,0 +1,129 @@
+{
+  "title": "Read the Label, Solve the Snack",
+  "orientation": "landscape",
+  "image": "read-label-solve-snack.png",
+  "layout": "top-bottom",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Serving Information",
+      "x": 10,
+      "y": 25,
+      "radius": 4,
+      "color": "#2D8A4E",
+      "panel": "bottom",
+      "hint": "Plate and portion icons sit in the top-left label band.",
+      "description": "Serving information tells what amount the rest of a label describes.",
+      "ap_tip": "Always start here before comparing nutrient amounts."
+    },
+    {
+      "id": 2,
+      "label": "Servings in the Container",
+      "x": 39,
+      "y": 25,
+      "radius": 4,
+      "color": "#1389A6",
+      "panel": "top",
+      "hint": "Two package icons appear in the top-right band.",
+      "description": "A package can contain more than one serving.",
+      "ap_tip": "The entire package and one serving may not represent the same amount."
+    },
+    {
+      "id": 3,
+      "label": "Food Energy",
+      "x": 11,
+      "y": 43,
+      "radius": 4,
+      "color": "#E07B39",
+      "panel": "bottom",
+      "hint": "A lightning-bolt icon anchors the second band.",
+      "description": "Food energy supports movement, growth, thinking, and body work.",
+      "ap_tip": "Energy is not a moral score."
+    },
+    {
+      "id": 4,
+      "label": "Fats",
+      "x": 39,
+      "y": 43,
+      "radius": 4,
+      "color": "#6A3FB5",
+      "panel": "top",
+      "hint": "Avocado and nut icons anchor the fats region.",
+      "description": "The fats line reports the amount in one serving.",
+      "ap_tip": "Fats provide longer-lasting energy and help absorb vitamins."
+    },
+    {
+      "id": 5,
+      "label": "Carbohydrates",
+      "x": 11,
+      "y": 61,
+      "radius": 4,
+      "color": "#C7164E",
+      "panel": "bottom",
+      "hint": "Grain and fruit icons anchor the carbohydrate region.",
+      "description": "The carbohydrate line reports the amount in one serving.",
+      "ap_tip": "Carbohydrates are a main source of ready energy."
+    },
+    {
+      "id": 6,
+      "label": "Added-Sugar Clue",
+      "x": 39,
+      "y": 61,
+      "radius": 4,
+      "color": "#168A7A",
+      "panel": "top",
+      "hint": "Sugar cubes create a distinctive comparison target.",
+      "description": "Sugar information helps compare sweetened foods and drinks.",
+      "ap_tip": "One clue should be considered with serving information and the whole context."
+    },
+    {
+      "id": 7,
+      "label": "Protein",
+      "x": 11,
+      "y": 79,
+      "radius": 4,
+      "color": "#D19319",
+      "panel": "bottom",
+      "hint": "Bean and egg icons anchor the protein region.",
+      "description": "The protein line reports the amount in one serving.",
+      "ap_tip": "Protein supports growth and repair."
+    },
+    {
+      "id": 8,
+      "label": "Caffeine Clue",
+      "x": 39,
+      "y": 79,
+      "radius": 4,
+      "color": "#3A66A7",
+      "panel": "top",
+      "hint": "Moon and alert shapes mark a caffeine investigation area.",
+      "description": "Caffeine may interfere with sleep, heart rate, and calm focus in children.",
+      "ap_tip": "Ask an adult to help check unfamiliar drinks and snacks."
+    },
+    {
+      "id": 9,
+      "label": "School-Day Snack Context",
+      "x": 73,
+      "y": 22,
+      "radius": 4,
+      "color": "#A64D79",
+      "panel": "bottom",
+      "hint": "Fruit, crackers, and water sit beside school supplies.",
+      "description": "A useful school snack fits the time available, storage conditions, and the student’s needs.",
+      "ap_tip": "Labels provide evidence; fresh foods may not carry a label."
+    },
+    {
+      "id": 10,
+      "label": "Active Afternoon or Long Outing",
+      "x": 73,
+      "y": 66,
+      "radius": 4,
+      "color": "#4F6B38",
+      "panel": "top",
+      "hint": "Water, sandwich, trail mix, and a packaged snack sit beside outdoor gear.",
+      "description": "Longer activity or time away may change hydration, storage, and energy needs.",
+      "ap_tip": "Choose based on the situation rather than a universal “best” snack."
+    }
+  ]
+}

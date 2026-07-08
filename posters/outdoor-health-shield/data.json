@@ -1,0 +1,112 @@
+{
+  "title": "Outdoor Health Shield",
+  "image": "outdoor-health-shield.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#E65A17",
+    "#7650A6",
+    "#39A835",
+    "#1789B8",
+    "#C92864"
+  ],
+  "zones": [
+    {
+      "id": "sun",
+      "label": "Sun",
+      "color": "#E65A17",
+      "x1": 2.1,
+      "y1": 22.2,
+      "x2": 22.1,
+      "y2": 97.2,
+      "summary": "Sun protection reduces skin and heat risks during outdoor time.",
+      "facts": [
+        "Use shade, hats, protective clothing, and sunscreen with adult guidance.",
+        "Drink water and take cooling breaks.",
+        "Protection matters even when the air feels cool."
+      ]
+    },
+    {
+      "id": "loud-sound",
+      "label": "Loud Sound",
+      "color": "#7650A6",
+      "x1": 22.5,
+      "y1": 22.2,
+      "x2": 41,
+      "y2": 97.2,
+      "summary": "Very loud sound can hurt hearing even when it is temporary.",
+      "facts": [
+        "Move farther from loud speakers or equipment.",
+        "Use well-fitted hearing protection.",
+        "Tell an adult if ears ring or sound feels painful."
+      ]
+    },
+    {
+      "id": "chemicals",
+      "label": "Chemicals",
+      "color": "#39A835",
+      "x1": 41.4,
+      "y1": 22.2,
+      "x2": 60.6,
+      "y2": 97.2,
+      "summary": "Household and garden chemicals require adult control and secure storage.",
+      "facts": [
+        "Do not touch or taste an unknown substance.",
+        "Keep containers closed, high, or locked.",
+        "Tell an adult about leaks or spills."
+      ]
+    },
+    {
+      "id": "water",
+      "label": "Water",
+      "color": "#1789B8",
+      "x1": 61,
+      "y1": 22.2,
+      "x2": 79,
+      "y2": 97.2,
+      "summary": "Clear-looking natural water is not automatically safe to drink.",
+      "facts": [
+        "Use a known safe refill source.",
+        "Ask a trusted adult before drinking unknown water.",
+        "Water safety also includes supervision near creeks and pools."
+      ]
+    },
+    {
+      "id": "germs",
+      "label": "Germs",
+      "color": "#C92864",
+      "x1": 79.4,
+      "y1": 22.2,
+      "x2": 97.8,
+      "y2": 97.2,
+      "summary": "Shared outdoor equipment and coughs can move germs between people.",
+      "facts": [
+        "Cover coughs with an elbow.",
+        "Wash hands before eating and after dirty play.",
+        "Community cleaning and safe water support everyone."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which shield section includes shade, hats, and sunscreen?",
+      "correct_zone": "sun"
+    },
+    {
+      "question": "Which section recommends distance and hearing protection?",
+      "correct_zone": "loud-sound"
+    },
+    {
+      "question": "Which section keeps unknown containers closed and adult-controlled?",
+      "correct_zone": "chemicals"
+    },
+    {
+      "question": "Which section warns that clear-looking creek water may not be safe to drink?",
+      "correct_zone": "water"
+    },
+    {
+      "question": "Which section includes elbow covers and handwashing?",
+      "correct_zone": "germs"
+    }
+  ]
+}

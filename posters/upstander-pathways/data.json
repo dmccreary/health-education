@@ -1,0 +1,129 @@
+{
+  "title": "Upstander Pathways",
+  "orientation": "landscape",
+  "image": "upstander-pathways.png",
+  "layout": "top-bottom",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Notice Who Is Left Out",
+      "x": 8,
+      "y": 24,
+      "radius": 4,
+      "color": "#326A8B",
+      "panel": "top",
+      "hint": "The student at far left observing two classmates sitting apart.",
+      "description": "Upstander action begins by noticing exclusion, bullying, or rising tension.",
+      "ap_tip": "Observe enough to choose a safe response; do not assume every conflict is bullying."
+    },
+    {
+      "id": 2,
+      "label": "Invite and Include",
+      "x": 20,
+      "y": 50,
+      "radius": 4,
+      "color": "#D68A08",
+      "panel": "bottom",
+      "hint": "The students opening a basketball game to another player.",
+      "description": "A direct invitation can reduce exclusion and create belonging.",
+      "ap_tip": "Invite without forcing someone to participate."
+    },
+    {
+      "id": 3,
+      "label": "Interrupt Calmly",
+      "x": 31,
+      "y": 24,
+      "radius": 4,
+      "color": "#60439A",
+      "panel": "top",
+      "hint": "The pair near the entrance using a calm open-hand gesture.",
+      "description": "When it is safe, a brief statement can name the problem and interrupt it.",
+      "ap_tip": "Students are never required to confront someone who may become violent."
+    },
+    {
+      "id": 4,
+      "label": "Distract or Redirect",
+      "x": 40,
+      "y": 49,
+      "radius": 4,
+      "color": "#C94A36",
+      "panel": "bottom",
+      "hint": "The group shifting attention toward a different activity.",
+      "description": "A distraction can break a harmful moment without escalating it.",
+      "ap_tip": "Redirection is useful when direct confrontation would not be safe."
+    },
+    {
+      "id": 5,
+      "label": "Move Toward Safety",
+      "x": 50,
+      "y": 70,
+      "radius": 4,
+      "color": "#2D8A4E",
+      "panel": "top",
+      "hint": "The student walking toward a visible safe group and open hallway.",
+      "description": "Help the targeted person reach a safer place or group.",
+      "ap_tip": "Distance and support matter more than winning an argument."
+    },
+    {
+      "id": 6,
+      "label": "Get a Trusted Adult",
+      "x": 64,
+      "y": 51,
+      "radius": 4,
+      "color": "#087A8A",
+      "panel": "bottom",
+      "hint": "The student speaking with school staff beside the building.",
+      "description": "Adults have responsibility and authority to respond to bullying and possible violence.",
+      "ap_tip": "Keep telling trusted adults until the concern is addressed."
+    },
+    {
+      "id": 7,
+      "label": "Document Safely",
+      "x": 14,
+      "y": 78,
+      "radius": 4,
+      "color": "#326A8B",
+      "panel": "top",
+      "hint": "The student holding a device near the lockers in the lower-left inset.",
+      "description": "Documentation may help only when school policy allows and it does not increase risk.",
+      "ap_tip": "Never share harmful footage for attention."
+    },
+    {
+      "id": 8,
+      "label": "Support Afterward",
+      "x": 47,
+      "y": 82,
+      "radius": 4,
+      "color": "#D68A08",
+      "panel": "bottom",
+      "hint": "The peer sitting beside and comforting another student in the garden inset.",
+      "description": "Private support after an incident can reduce isolation.",
+      "ap_tip": "Listen, believe the person, and offer to go with them for help."
+    },
+    {
+      "id": 9,
+      "label": "Report Possible Fighting",
+      "x": 77,
+      "y": 52,
+      "radius": 4,
+      "color": "#60439A",
+      "panel": "top",
+      "hint": "The student approaching an adult before tension grows.",
+      "description": "Warning signs of a possible fight should be reported before anyone is hurt.",
+      "ap_tip": "Do not step between people who may fight."
+    },
+    {
+      "id": 10,
+      "label": "Follow Up and Restore Belonging",
+      "x": 88,
+      "y": 80,
+      "radius": 4,
+      "color": "#C94A36",
+      "panel": "bottom",
+      "hint": "The calm counselor-office conversation in the lower-right inset.",
+      "description": "Check in later and help rebuild a welcoming environment.",
+      "ap_tip": "Upstander work includes prevention and follow-through, not only the immediate moment."
+    }
+  ]
+}

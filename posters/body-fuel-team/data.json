@@ -1,0 +1,92 @@
+{
+  "title": "The Body Fuel Team",
+  "image": "body-fuel-team.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#C93720",
+    "#176CAF",
+    "#E7A414",
+    "#159394"
+  ],
+  "zones": [
+    {
+      "id": "carbohydrates",
+      "label": "Carbohydrates",
+      "color": "#C93720",
+      "x1": 0.2,
+      "y1": 11.8,
+      "x2": 25.1,
+      "y2": 99.5,
+      "summary": "Carbohydrates are the body’s main source of quick, ready energy.",
+      "facts": [
+        "Grains, fruit, vegetables, and many other foods contain carbohydrates.",
+        "The brain and moving muscles regularly use this energy.",
+        "Carbohydrates are teammates, not foods to fear."
+      ]
+    },
+    {
+      "id": "protein",
+      "label": "Protein",
+      "color": "#176CAF",
+      "x1": 25.5,
+      "y1": 11.8,
+      "x2": 49.7,
+      "y2": 99.5,
+      "summary": "Protein supplies building material for growth and repair.",
+      "facts": [
+        "Beans, eggs, fish, dairy, tofu, nuts, and other foods can contribute protein.",
+        "Growing bodies repair muscle and other tissue every day.",
+        "Families meet protein needs through many food traditions."
+      ]
+    },
+    {
+      "id": "fats",
+      "label": "Fats",
+      "color": "#E7A414",
+      "x1": 50.1,
+      "y1": 11.8,
+      "x2": 74.3,
+      "y2": 99.5,
+      "summary": "Fats provide longer-lasting energy and help the body absorb certain vitamins.",
+      "facts": [
+        "Nuts, seeds, avocado, and oils are familiar sources.",
+        "The body needs fats in a balanced pattern.",
+        "Fats are not the enemy; they have distinct jobs."
+      ]
+    },
+    {
+      "id": "hydration",
+      "label": "Hydration",
+      "color": "#159394",
+      "x1": 74.7,
+      "y1": 11.8,
+      "x2": 99.7,
+      "y2": 99.5,
+      "summary": "Water supports temperature control, circulation, thinking, and movement.",
+      "facts": [
+        "Drink before, during, and after activity.",
+        "Needs change with heat, duration, and intensity.",
+        "Most ordinary activity does not require a sugary or caffeinated drink."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which teammate supplies quick, ready energy?",
+      "correct_zone": "carbohydrates"
+    },
+    {
+      "question": "Which teammate helps build and repair body tissues?",
+      "correct_zone": "protein"
+    },
+    {
+      "question": "Which teammate offers longer-lasting energy and helps absorb vitamins?",
+      "correct_zone": "fats"
+    },
+    {
+      "question": "Which teammate supports cooling and fluid balance during activity?",
+      "correct_zone": "hydration"
+    }
+  ]
+}

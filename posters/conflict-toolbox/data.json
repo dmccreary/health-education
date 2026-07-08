@@ -1,0 +1,112 @@
+{
+  "title": "The Conflict Toolbox",
+  "image": "conflict-toolbox.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#2468A2",
+    "#5D953B",
+    "#D39B1C",
+    "#7453A1",
+    "#C95343"
+  ],
+  "zones": [
+    {
+      "id": "calm-first",
+      "label": "Calm First",
+      "color": "#2468A2",
+      "x1": 0.3,
+      "y1": 19.4,
+      "x2": 20.4,
+      "y2": 99.5,
+      "summary": "Pause and settle the body before trying to solve the problem.",
+      "facts": [
+        "Take slow breaths or count.",
+        "Step away briefly when safe.",
+        "Calming is not ignoring the feeling; it prepares the brain to talk."
+      ]
+    },
+    {
+      "id": "i-statement",
+      "label": "I-Statement",
+      "color": "#5D953B",
+      "x1": 20.8,
+      "y1": 19.4,
+      "x2": 40.3,
+      "y2": 99.5,
+      "summary": "Describe your feeling and the event without attacking the other person.",
+      "facts": [
+        "Try: “I feel frustrated when we both grab the ball.”",
+        "Speak about the action, not the person’s character.",
+        "Add what you need or hope will happen next."
+      ]
+    },
+    {
+      "id": "listen",
+      "label": "Listen",
+      "color": "#D39B1C",
+      "x1": 40.7,
+      "y1": 19.4,
+      "x2": 60,
+      "y2": 99.5,
+      "summary": "Active listening helps each person feel heard.",
+      "facts": [
+        "Face the speaker when comfortable.",
+        "Wait without interrupting.",
+        "Repeat the main idea to check understanding."
+      ]
+    },
+    {
+      "id": "solutions",
+      "label": "Solutions",
+      "color": "#7453A1",
+      "x1": 60.4,
+      "y1": 19.4,
+      "x2": 79.7,
+      "y2": 99.5,
+      "summary": "Generate options that protect everyone’s needs and safety.",
+      "facts": [
+        "Take turns, share, combine ideas, or compromise.",
+        "Ask an adult when the problem feels too big.",
+        "Think about likely outcomes before choosing."
+      ]
+    },
+    {
+      "id": "repair",
+      "label": "Repair",
+      "color": "#C95343",
+      "x1": 80.1,
+      "y1": 19.4,
+      "x2": 99.7,
+      "y2": 99.5,
+      "summary": "A repair action helps the relationship and problem recover.",
+      "facts": [
+        "Offer a sincere apology when your action caused harm.",
+        "Rebuild, replace, or clean up when possible.",
+        "Check whether the other person needs more support."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which drawer should be opened before trying to solve the disagreement?",
+      "correct_zone": "calm-first"
+    },
+    {
+      "question": "Which drawer helps you explain your own feeling without blame?",
+      "correct_zone": "i-statement"
+    },
+    {
+      "question": "Which drawer asks you to hear the other person’s side?",
+      "correct_zone": "listen"
+    },
+    {
+      "question": "Which drawer contains taking turns and compromise?",
+      "correct_zone": "solutions"
+    },
+    {
+      "question": "Which drawer includes apologizing and rebuilding?",
+      "correct_zone": "repair"
+    }
+  ]
+}

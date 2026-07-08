@@ -1,0 +1,112 @@
+{
+  "title": "Consent Communication: Clear, Ongoing, Reversible",
+  "image": "consent-communication-clear-ongoing-reversible.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#3F6F3F",
+    "#326A8B",
+    "#735C9D",
+    "#D86624",
+    "#C63E3E"
+  ],
+  "zones": [
+    {
+      "id": "agreement",
+      "label": "Clear Agreement",
+      "color": "#3F6F3F",
+      "x1": 0.3,
+      "y1": 0.3,
+      "x2": 19.7,
+      "y2": 99.5,
+      "summary": "Clear consent is voluntary, specific, and comfortable.",
+      "facts": [
+        "A genuine yes is free from pressure.",
+        "Agreement to one activity is not automatic agreement to another.",
+        "Body language and words should both indicate comfort."
+      ]
+    },
+    {
+      "id": "check-in",
+      "label": "Checking In",
+      "color": "#326A8B",
+      "x1": 20.3,
+      "y1": 0.3,
+      "x2": 39.7,
+      "y2": 99.5,
+      "summary": "Consent is ongoing, so respectful people check in as circumstances change.",
+      "facts": [
+        "Pause when an activity changes.",
+        "Ask a clear question and leave room for any answer.",
+        "A check-in is meaningful only when no is safe to say."
+      ]
+    },
+    {
+      "id": "uncertainty",
+      "label": "Uncertainty",
+      "color": "#735C9D",
+      "x1": 40.3,
+      "y1": 0.3,
+      "x2": 59.7,
+      "y2": 99.5,
+      "summary": "Unclear, hesitant, frozen, or mixed responses mean stop.",
+      "facts": [
+        "Do not guess or treat silence as yes.",
+        "Make space, reduce pressure, and ask once respectfully.",
+        "If clarity does not come, the activity does not continue."
+      ]
+    },
+    {
+      "id": "withdrawal",
+      "label": "Withdrawal",
+      "color": "#D86624",
+      "x1": 60.3,
+      "y1": 0.3,
+      "x2": 79.7,
+      "y2": 99.5,
+      "summary": "A person can change their mind and withdraw consent at any time.",
+      "facts": [
+        "Stop immediately without arguing.",
+        "Changing one’s mind is not wrongdoing.",
+        "Respectful response protects safety and trust."
+      ]
+    },
+    {
+      "id": "coercion",
+      "label": "Coercion",
+      "color": "#C63E3E",
+      "x1": 80.3,
+      "y1": 0.3,
+      "x2": 99.7,
+      "y2": 99.5,
+      "summary": "Threats, guilt, persistence, secrecy, or power pressure invalidate consent.",
+      "facts": [
+        "Coercion can be verbal, social, digital, or connected to authority.",
+        "Move toward safety and support.",
+        "A person experiencing coercion is not to blame."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which scenario shows a voluntary, specific, and comfortable agreement?",
+      "correct_zone": "agreement"
+    },
+    {
+      "question": "Which scenario shows pausing to ask again when circumstances change?",
+      "correct_zone": "check-in"
+    },
+    {
+      "question": "Which scenario shows that hesitation or mixed signals mean stop?",
+      "correct_zone": "uncertainty"
+    },
+    {
+      "question": "Which scenario shows someone changing their mind and the activity stopping?",
+      "correct_zone": "withdrawal"
+    },
+    {
+      "question": "Which scenario shows threats, guilt, persistence, secrecy, or a power imbalance?",
+      "correct_zone": "coercion"
+    }
+  ]
+}

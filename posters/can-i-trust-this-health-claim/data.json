@@ -1,0 +1,112 @@
+{
+  "title": "Can I Trust This Health Claim?",
+  "image": "can-i-trust-this-health-claim.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#168CC8",
+    "#1F9B78",
+    "#D68A08",
+    "#C13C93",
+    "#5D9D32"
+  ],
+  "zones": [
+    {
+      "id": "evidence",
+      "label": "Evidence",
+      "color": "#168CC8",
+      "x1": 0.3,
+      "y1": 0.3,
+      "x2": 19.7,
+      "y2": 99.5,
+      "summary": "Ask whether the claim is supported by checkable research or only a dramatic story.",
+      "facts": [
+        "Testimonials are experiences, not proof that a product works for everyone.",
+        "Specific, verifiable evidence is stronger than vague science-sounding language.",
+        "Compare the basic fact across more than one reliable source."
+      ]
+    },
+    {
+      "id": "expertise",
+      "label": "Expertise",
+      "color": "#1F9B78",
+      "x1": 20.3,
+      "y1": 0.3,
+      "x2": 39.7,
+      "y2": 99.5,
+      "summary": "Check whether the source has relevant training and can be held accountable.",
+      "facts": [
+        "A title matters only when it matches the health topic.",
+        "Anonymous authors and unnamed experts are difficult to verify.",
+        "Reliable organizations explain who reviewed the information."
+      ]
+    },
+    {
+      "id": "sales-motive",
+      "label": "Sales Motive",
+      "color": "#D68A08",
+      "x1": 40.3,
+      "y1": 0.3,
+      "x2": 59.7,
+      "y2": 99.5,
+      "summary": "Notice who benefits if you believe the claim or buy the product.",
+      "facts": [
+        "Advertising is a sales message, not neutral evidence.",
+        "Urgency, fear, and miracle promises are warning signs.",
+        "Independent evidence matters when the source profits from the conclusion."
+      ]
+    },
+    {
+      "id": "recency",
+      "label": "Recency",
+      "color": "#C13C93",
+      "x1": 60.3,
+      "y1": 0.3,
+      "x2": 79.7,
+      "y2": 99.5,
+      "summary": "Check when information was published or updated and whether guidance may have changed.",
+      "facts": [
+        "Old information is not automatically false, but some health guidance changes.",
+        "A screenshot may hide its original date and context.",
+        "Current official guidance is useful for changing topics."
+      ]
+    },
+    {
+      "id": "personal-fit",
+      "label": "Personal Fit",
+      "color": "#5D9D32",
+      "x1": 80.3,
+      "y1": 0.3,
+      "x2": 99.7,
+      "y2": 99.5,
+      "summary": "Ask whether the advice fits the person, family, culture, condition, and situation.",
+      "facts": [
+        "General information cannot diagnose an individual.",
+        "A trusted adult or appropriate professional can help apply evidence safely.",
+        "A choice can be evidence-based and still need adaptation."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which bay separates research from testimonials?",
+      "correct_zone": "evidence"
+    },
+    {
+      "question": "Which bay checks training and accountability?",
+      "correct_zone": "expertise"
+    },
+    {
+      "question": "Which bay asks who profits if you believe the claim?",
+      "correct_zone": "sales-motive"
+    },
+    {
+      "question": "Which bay checks publication and update dates?",
+      "correct_zone": "recency"
+    },
+    {
+      "question": "Which bay asks whether general advice suits a particular person and context?",
+      "correct_zone": "personal-fit"
+    }
+  ]
+}

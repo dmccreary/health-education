@@ -1,0 +1,112 @@
+{
+  "title": "Digital Relationship Control Room",
+  "image": "digital-relationship-control-room.png",
+  "layout": "grid",
+  "showLabels": false,
+  "palette": [
+    "#168CC8",
+    "#D68A08",
+    "#60439A",
+    "#087A8A",
+    "#326A8B"
+  ],
+  "zones": [
+    {
+      "id": "privacy",
+      "label": "Privacy",
+      "color": "#168CC8",
+      "x1": 0.3,
+      "y1": 0.3,
+      "x2": 19.7,
+      "y2": 99.5,
+      "summary": "Protect passwords, location, personal details, and image-sharing permission.",
+      "facts": [
+        "Use privacy settings and strong unique passwords.",
+        "Ask before posting another person’s image or story.",
+        "Backgrounds and metadata can reveal more than intended."
+      ]
+    },
+    {
+      "id": "pressure",
+      "label": "Pressure",
+      "color": "#D68A08",
+      "x1": 20.3,
+      "y1": 0.3,
+      "x2": 39.7,
+      "y2": 99.5,
+      "summary": "Repeated demands, secrecy, and urgency can signal unhealthy control.",
+      "facts": [
+        "Healthy relationships allow time and independent choices.",
+        "No one is entitled to passwords or constant replies.",
+        "Pressure that continues after a boundary needs support."
+      ]
+    },
+    {
+      "id": "harm",
+      "label": "Harm",
+      "color": "#60439A",
+      "x1": 40.3,
+      "y1": 0.3,
+      "x2": 59.7,
+      "y2": 99.5,
+      "summary": "Online harm can include exclusion, rumors, impersonation, threats, or unwanted sharing.",
+      "facts": [
+        "Do not forward harmful content.",
+        "The target is not responsible for another person’s harmful choice.",
+        "Move toward safety and trusted support."
+      ]
+    },
+    {
+      "id": "report",
+      "label": "Report",
+      "color": "#087A8A",
+      "x1": 60.3,
+      "y1": 0.3,
+      "x2": 79.7,
+      "y2": 99.5,
+      "summary": "Reporting can connect evidence with adults, schools, platforms, or emergency help.",
+      "facts": [
+        "Save relevant evidence only when it is safe and appropriate.",
+        "Tell a trusted adult even if you are uncertain.",
+        "Use emergency services for immediate danger."
+      ]
+    },
+    {
+      "id": "exit",
+      "label": "Exit and Support",
+      "color": "#326A8B",
+      "x1": 80.3,
+      "y1": 0.3,
+      "x2": 99.7,
+      "y2": 99.5,
+      "summary": "Block, mute, leave, adjust settings, and connect with supportive people.",
+      "facts": [
+        "Safety matters more than finishing an argument.",
+        "A trusted adult can help plan next steps.",
+        "Keep seeking help if the harm continues."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which bay protects passwords, location, personal details, and image permission?",
+      "correct_zone": "privacy"
+    },
+    {
+      "question": "Which bay identifies repeated demands, secrecy, and unhealthy urgency?",
+      "correct_zone": "pressure"
+    },
+    {
+      "question": "Which bay covers rumors, impersonation, threats, exclusion, or unwanted sharing?",
+      "correct_zone": "harm"
+    },
+    {
+      "question": "Which bay connects evidence with trusted adults, schools, platforms, or emergency help?",
+      "correct_zone": "report"
+    },
+    {
+      "question": "Which bay covers blocking, leaving, settings changes, and supportive people?",
+      "correct_zone": "exit"
+    }
+  ]
+}
