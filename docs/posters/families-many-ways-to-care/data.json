@@ -8,7 +8,7 @@
     {
       "id": 1,
       "label": "Making a Place Together",
-      "panel": "top",
+      "panel": "bottom",
       "x": 9.0,
       "y": 65.0,
       "radius": 4,
@@ -19,7 +19,7 @@
     {
       "id": 2,
       "label": "Sharing Food and Traditions",
-      "panel": "top",
+      "panel": "bottom",
       "x": 22.0,
       "y": 54.0,
       "radius": 4,
@@ -41,7 +41,7 @@
     {
       "id": 4,
       "label": "Sun Safety Together",
-      "panel": "top",
+      "panel": "bottom",
       "x": 35.0,
       "y": 72.0,
       "radius": 4,
@@ -52,7 +52,7 @@
     {
       "id": 5,
       "label": "Comfort and Listening",
-      "panel": "bottom",
+      "panel": "top",
       "x": 55.5,
       "y": 43.0,
       "radius": 4,
@@ -74,7 +74,7 @@
     {
       "id": 7,
       "label": "Offering Water",
-      "panel": "bottom",
+      "panel": "top",
       "x": 79.0,
       "y": 52.0,
       "radius": 4,
@@ -85,7 +85,7 @@
     {
       "id": 8,
       "label": "A Warm Welcome",
-      "panel": "bottom",
+      "panel": "top",
       "x": 87.0,
       "y": 32.0,
       "radius": 4,

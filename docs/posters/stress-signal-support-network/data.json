@@ -72,7 +72,7 @@
       "y": 45,
       "radius": 3.7,
       "color": "#087A8A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents mood changes.",
       "description": "Irritability, sadness, or feeling numb may be stress signals.",
       "ap_tip": "Feelings are information, not character flaws. Sudden or lasting changes merit support."
@@ -84,7 +84,7 @@
       "y": 43,
       "radius": 3.7,
       "color": "#2468A2",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents restorative practice.",
       "description": "Movement, rest, art, breathing, or time outdoors can support regulation.",
       "ap_tip": "No single practice works for everyone. Choose safe practices that fit the person and culture."

@@ -24,7 +24,7 @@
       "y": 73,
       "radius": 4,
       "color": "#1389A6",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The child prepares a water bottle and walking shoes beside the stream.",
       "description": "Small repeatable actions make a goal easier to begin.",
       "ap_tip": "A first step should be possible today or this week."
@@ -48,7 +48,7 @@
       "y": 69,
       "radius": 4,
       "color": "#6A3FB5",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "A fallen log blocks one route while another safe path remains open.",
       "description": "Obstacles are information, not proof that a goal failed.",
       "ap_tip": "Change the plan while keeping the purpose."
@@ -60,7 +60,7 @@
       "y": 29,
       "radius": 4,
       "color": "#C7164E",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The child reviews an icon-only check-in board at an overlook.",
       "description": "A check-in asks what happened, what helped, and what needs adjustment.",
       "ap_tip": "Progress can be uneven and still be real."
@@ -84,7 +84,7 @@
       "y": 30,
       "radius": 4,
       "color": "#D19319",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "A trusted adult demonstrates and encourages without taking over.",
       "description": "Positive models show what a healthy action can look like.",
       "ap_tip": "A model supports choice; they do not control the goal."

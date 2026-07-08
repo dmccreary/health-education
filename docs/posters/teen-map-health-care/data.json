@@ -72,7 +72,7 @@
       "y": 53,
       "radius": 4,
       "color": "#087A8A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The colorful welcoming clinic at middle left.",
       "description": "Youth-friendly clinics may offer development, relationship, STI, pregnancy-prevention, and reproductive-health services.",
       "ap_tip": "Available services and consent or confidentiality rules vary by location."
@@ -84,7 +84,7 @@
       "y": 50,
       "radius": 4,
       "color": "#326A8B",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The counselor meeting in the quiet central-right room.",
       "description": "Mental-health professionals support stress, mood, relationships, trauma, and safety concerns.",
       "ap_tip": "Immediate danger or suicide risk requires urgent help."

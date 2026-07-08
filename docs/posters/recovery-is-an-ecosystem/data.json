@@ -72,7 +72,7 @@
       "y": 45,
       "radius": 3.7,
       "color": "#087A8A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents school and work.",
       "description": "Flexible, supportive school or work settings can restore routine and purpose.",
       "ap_tip": "Accommodations may reduce barriers. Recovery is compatible with learning and contribution."
@@ -84,7 +84,7 @@
       "y": 43,
       "radius": 3.7,
       "color": "#2468A2",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents healthy coping.",
       "description": "Sleep, movement, creativity, connection, and other coping skills support wellbeing.",
       "ap_tip": "Skills are practiced, not perfected. A plan can include several options."

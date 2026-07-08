@@ -72,7 +72,7 @@
       "y": 45,
       "radius": 3.7,
       "color": "#087A8A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents trained staff.",
       "description": "Staff need role-specific practice for prevention, first aid, evacuation, shelter, and reunification.",
       "ap_tip": "Training should be realistic without traumatizing students. Review after drills and events."
@@ -84,7 +84,7 @@
       "y": 43,
       "radius": 3.7,
       "color": "#2468A2",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents first aid and aed.",
       "description": "Accessible supplies and trained responders improve emergency readiness.",
       "ap_tip": "Maintain equipment and clear access. Follow current certified guidance."

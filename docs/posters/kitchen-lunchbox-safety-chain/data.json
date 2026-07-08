@@ -24,7 +24,7 @@
       "y": 67,
       "radius": 4,
       "color": "#1389A6",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Fresh fruits and vegetables rinse in clean running water.",
       "description": "Rinsing removes soil and some germs before food is cut or eaten.",
       "ap_tip": "Use clean water and keep produce away from raw meat."
@@ -48,7 +48,7 @@
       "y": 72,
       "radius": 4,
       "color": "#6A3FB5",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Vegetables are cut on a different green board with a separate knife.",
       "description": "Separate tools help prevent cross-contamination.",
       "ap_tip": "Never reuse a raw-meat plate for cooked food."
@@ -72,7 +72,7 @@
       "y": 69,
       "radius": 4,
       "color": "#168A7A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Cooked food rests on a clean white plate.",
       "description": "Cooked food stays safer when it never returns to a raw-food plate.",
       "ap_tip": "Clean utensils matter too."
@@ -84,7 +84,7 @@
       "y": 58,
       "radius": 4,
       "color": "#D19319",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Cooked leftovers sit in several shallow covered containers.",
       "description": "Shallow containers help leftovers cool more evenly before refrigerator storage.",
       "ap_tip": "Put leftovers away promptly with adult help."
@@ -96,7 +96,7 @@
       "y": 38,
       "radius": 4,
       "color": "#3A66A7",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "A refrigerator keeps sealed raw foods low and ready-to-eat foods above.",
       "description": "Cold storage slows germ growth, and sealed lower-shelf raw foods reduce drips.",
       "ap_tip": "Keep the refrigerator door closed."
@@ -132,7 +132,7 @@
       "y": 43,
       "radius": 4,
       "color": "#A33B2F",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "A child washes hands at a second sink before lunch.",
       "description": "Clean hands protect the food at the final step before eating.",
       "ap_tip": "Use soap even when hands look clean."

@@ -36,7 +36,7 @@
       "y": 50,
       "radius": 4,
       "color": "#E07B39",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "A child using a sports wheelchair moves through colorful obstacles.",
       "description": "Wheeling quickly can build endurance, steering skill, and confidence.",
       "ap_tip": "Inclusive play gives every child a meaningful challenge."
@@ -48,7 +48,7 @@
       "y": 74,
       "radius": 4,
       "color": "#6A3FB5",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Children stretch in animal-like poses in a meadow.",
       "description": "Stretching gently practices flexibility, balance, focus, and calm breathing.",
       "ap_tip": "A stretch should feel gentle, not painful."
@@ -84,7 +84,7 @@
       "y": 43,
       "radius": 4,
       "color": "#D19319",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "A child balances along a low log while friends watch.",
       "description": "Balancing trains core muscles, focus, and steady movement.",
       "ap_tip": "Move at your own pace and step down when needed."
@@ -108,7 +108,7 @@
       "y": 39,
       "radius": 4,
       "color": "#A64D79",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Children rest in shade and drink water.",
       "description": "Rest and hydration help the body recover after active play.",
       "ap_tip": "Active time and recovery time both belong in a healthy day."

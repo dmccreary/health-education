@@ -6,15 +6,16 @@ Background
 Some posters in ``docs/posters/*/data.json`` use ``"layout": "top-bottom"``,
 which places callout labels along the top and bottom edges of the image. The
 generator skill assigned panels by *parity* (even ids on top, odd ids on the
-bottom, or vice-versa), so the labels zig-zag between the two edges. The images
-themselves were composed with the *low-ranked* callouts on top and the
-*high-ranked* callouts on the bottom.
+bottom, or vice-versa), so a label often landed on whichever strip had nothing
+to do with where its marker actually sits.
 
-This script rewrites the ``panel`` field of every callout so that the lower
-half of the ranks (by ``id``) sit on ``"top"`` and the upper half sit on
-``"bottom"``. For N callouts the split point is ceil(N/2): with 8 callouts,
-ids 1-4 go on top and 5-8 go on the bottom; with 10, ids 1-5 on top and 6-10
-on the bottom.
+This script rewrites the ``panel`` field of every callout by *vertical
+proximity*: the markers in the upper half of the image (smallest ``y``) go on
+``"top"`` and the lower half go on ``"bottom"``, so each label sits on the strip
+closest to its marker and the leader line stays short. The split is at the
+median -- ceil(N/2) markers on top -- so the two strips stay balanced. This is
+the same rule the interactive-infographic-overlay skill now documents for
+generating new posters.
 
 Only the *value* of each ``panel`` field is changed, via a targeted text
 substitution -- ``x``, ``y``, colors, prose, and even the exact byte encoding
@@ -49,18 +50,20 @@ PANEL_RE = re.compile(r'(\n[ \t]*"panel":[ \t]*")(top|bottom)(")')
 
 
 def compute_panels(callouts):
-    """Return {id: panel} with the low-ranked half on top, high-ranked on bottom.
+    """Return {id: panel} placing each label on the strip nearest its marker.
 
-    Ranking is by the callout ``id`` (ascending). The lower ceil(N/2) ids are
-    assigned ``"top"``; the remainder are assigned ``"bottom"``. Ranking by id
-    -- rather than array position -- keeps the result stable no matter what
-    order the callouts happen to appear in the file.
+    Assignment is by vertical position ``y`` (0 = top of image). The callouts
+    with the smallest ``y`` -- the upper ceil(N/2) markers -- are assigned
+    ``"top"``; the rest are assigned ``"bottom"``. Splitting at the median keeps
+    the two strips balanced while still placing every label on its closer edge,
+    which minimizes the leader-line length. Ties are broken by ``x`` then ``id``
+    so the result is deterministic regardless of the callouts' order in the file.
     """
-    ids_sorted = sorted(c["id"] for c in callouts)
-    n = len(ids_sorted)
-    cut = (n + 1) // 2  # ceil(N/2): low half (incl. the extra one for odd N) on top
-    top_ids = set(ids_sorted[:cut])
-    return {cid: ("top" if cid in top_ids else "bottom") for cid in ids_sorted}
+    ordered = sorted(callouts, key=lambda c: (c["y"], c["x"], c["id"]))
+    n = len(ordered)
+    cut = (n + 1) // 2  # ceil(N/2): upper half (incl. the extra one for odd N) on top
+    top_ids = {c["id"] for c in ordered[:cut]}
+    return {c["id"]: ("top" if c["id"] in top_ids else "bottom") for c in callouts}
 
 
 def fix_file(path, dry_run):

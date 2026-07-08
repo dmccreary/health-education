@@ -72,7 +72,7 @@
       "y": 45,
       "radius": 3.7,
       "color": "#087A8A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents meaningful goals.",
       "description": "Purpose and realistic goals can organize effort and hope.",
       "ap_tip": "Goals may change after setbacks. Small steps count."
@@ -84,7 +84,7 @@
       "y": 43,
       "radius": 3.7,
       "color": "#2468A2",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents healthcare.",
       "description": "Accessible respectful healthcare supports prevention, treatment, and recovery.",
       "ap_tip": "A good care fit matters. Systems should reduce cost, language, and access barriers."

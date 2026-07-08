@@ -24,7 +24,7 @@
       "y": 55,
       "radius": 4,
       "color": "#1389A6",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "A child sitting quietly beneath a small raincloud while an adult listens.",
       "description": "Sad may come with tears, low energy, or wanting comfort. A trusted adult can listen and help.",
       "ap_tip": "If sadness stays a long time, always tell a trusted adult."
@@ -60,7 +60,7 @@
       "y": 49,
       "radius": 4,
       "color": "#C7164E",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "A child running happily beneath a bright flying kite.",
       "description": "Excitement can bring fast energy, big smiles, and lots of movement.",
       "ap_tip": "Use that energy in a safe space."

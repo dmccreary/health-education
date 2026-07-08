@@ -72,7 +72,7 @@
       "y": 45,
       "radius": 3.7,
       "color": "#087A8A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents chest compressions.",
       "description": "High-quality compressions help circulate blood until advanced care arrives.",
       "ap_tip": "Follow current dispatcher or certified-training guidance for rate and depth. Allow full recoil and minimize interruptions."
@@ -84,7 +84,7 @@
       "y": 43,
       "radius": 3.7,
       "color": "#2468A2",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents open the aed.",
       "description": "Turn on or open the AED and follow its spoken and visual prompts.",
       "ap_tip": "Expose and prepare the chest as directed while preserving dignity. Do not improvise beyond training and device prompts."

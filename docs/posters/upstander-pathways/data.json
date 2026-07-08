@@ -60,7 +60,7 @@
       "y": 70,
       "radius": 4,
       "color": "#2D8A4E",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The student walking toward a visible safe group and open hallway.",
       "description": "Help the targeted person reach a safer place or group.",
       "ap_tip": "Distance and support matter more than winning an argument."
@@ -72,7 +72,7 @@
       "y": 51,
       "radius": 4,
       "color": "#087A8A",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The student speaking with school staff beside the building.",
       "description": "Adults have responsibility and authority to respond to bullying and possible violence.",
       "ap_tip": "Keep telling trusted adults until the concern is addressed."

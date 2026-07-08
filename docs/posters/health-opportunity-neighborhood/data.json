@@ -84,7 +84,7 @@
       "y": 42,
       "radius": 3.7,
       "color": "#2468A2",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents housing quality.",
       "description": "Stable, safe housing supports sleep, study, stress regulation, and health.",
       "ap_tip": "Mold, heat, crowding, and displacement can cause harm. Housing conditions are public-health issues."
@@ -120,7 +120,7 @@
       "y": 40,
       "radius": 3.7,
       "color": "#7453A1",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents schools.",
       "description": "Schools can connect students with learning, meals, activity, care, and belonging.",
       "ap_tip": "Resources vary across communities. Student voice can improve school health."

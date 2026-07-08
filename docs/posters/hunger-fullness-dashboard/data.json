@@ -12,7 +12,7 @@
       "y": 58,
       "radius": 4,
       "color": "#2D8A4E",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The child notices a softly rumbling stomach before eating.",
       "description": "A growling or empty-feeling stomach can be one hunger signal.",
       "ap_tip": "No single signal appears the same way for everyone."
@@ -108,7 +108,7 @@
       "y": 55,
       "radius": 4,
       "color": "#A64D79",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The child notices steady energy and comfort after the meal.",
       "description": "Reflection can help connect choices with wellbeing over time.",
       "ap_tip": "The goal is curiosity, not judging the amount eaten."

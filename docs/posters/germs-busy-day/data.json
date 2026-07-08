@@ -41,7 +41,7 @@
     {
       "id": 4,
       "label": "Shared Blocks",
-      "panel": "top",
+      "panel": "bottom",
       "x": 34.5,
       "y": 76.0,
       "radius": 4,
@@ -52,7 +52,7 @@
     {
       "id": 5,
       "label": "Germs on Hands",
-      "panel": "top",
+      "panel": "bottom",
       "x": 42.5,
       "y": 68.0,
       "radius": 4,
@@ -63,7 +63,7 @@
     {
       "id": 6,
       "label": "Touching the Face",
-      "panel": "bottom",
+      "panel": "top",
       "x": 61.0,
       "y": 28.0,
       "radius": 4,
@@ -74,7 +74,7 @@
     {
       "id": 7,
       "label": "Cough Into an Elbow",
-      "panel": "bottom",
+      "panel": "top",
       "x": 77.0,
       "y": 25.5,
       "radius": 4,

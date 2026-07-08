@@ -12,7 +12,7 @@
       "y": 60,
       "radius": 4,
       "color": "#C94A36",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The student at far left pausing with one hand near the chest.",
       "description": "A nervous stomach, tight muscles, or a strong urge to leave can be useful information.",
       "ap_tip": "A student never needs perfect proof before moving toward safety."
@@ -60,7 +60,7 @@
       "y": 69,
       "radius": 4,
       "color": "#2D8A4E",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The student in purple using a calm stop-hand gesture.",
       "description": "A short, clear refusal can be enough: “No thanks, I’m not doing that.”",
       "ap_tip": "A refusal does not require an apology or debate."
@@ -84,7 +84,7 @@
       "y": 23,
       "radius": 4,
       "color": "#C94A36",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The bright community-center entrance in the upper right.",
       "description": "Choose a public place with safe people rather than becoming isolated.",
       "ap_tip": "Getting distance is more important than winning an argument."
@@ -120,7 +120,7 @@
       "y": 47,
       "radius": 4,
       "color": "#60439A",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The well-lit home doorway at the far right.",
       "description": "A practiced route ends with safety and support, not with handling everything alone.",
       "ap_tip": "Review what helped so the plan is easier to use next time."

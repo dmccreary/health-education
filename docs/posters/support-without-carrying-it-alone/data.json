@@ -72,7 +72,7 @@
       "y": 45,
       "radius": 3.7,
       "color": "#087A8A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents connect a trusted adult.",
       "description": "Bring in a safe adult who can help assess and act.",
       "ap_tip": "Do not promise secrecy about serious safety concerns. Keep reaching out until someone responds."
@@ -84,7 +84,7 @@
       "y": 43,
       "radius": 3.7,
       "color": "#2468A2",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents connect professional help.",
       "description": "Counselors, clinicians, and crisis professionals can assess risk and provide care.",
       "ap_tip": "Offer to help make contact. Treatment may involve several kinds of support."

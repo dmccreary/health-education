@@ -12,7 +12,7 @@
       "y": 56,
       "radius": 4,
       "color": "#2D8A4E",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Two children holding one watering can together.",
       "description": "Healthy friends share materials and make sure both people can participate.",
       "ap_tip": "Ask before taking and return tools when finished."
@@ -48,7 +48,7 @@
       "y": 65,
       "radius": 4,
       "color": "#6A3FB5",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Two children compare different seedlings with equal interest.",
       "description": "Friends can like different plants, games, foods, and ideas and still care for each other.",
       "ap_tip": "Difference is part of every healthy group."
@@ -84,7 +84,7 @@
       "y": 45,
       "radius": 4,
       "color": "#D19319",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Two children lift a spilled seed tray together.",
       "description": "Everyone makes mistakes. Healthy friends notice harm, apologize, and help repair it.",
       "ap_tip": "Focus on what can be fixed next."
@@ -108,7 +108,7 @@
       "y": 30,
       "radius": 4,
       "color": "#A64D79",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Children smile and applaud a friend holding flowers.",
       "description": "Healthy friends can feel happy about another person’s effort and success.",
       "ap_tip": "Celebration does not need a winner."
