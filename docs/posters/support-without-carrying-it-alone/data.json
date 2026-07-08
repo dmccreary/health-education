@@ -24,7 +24,7 @@
       "y": 16,
       "radius": 3.7,
       "color": "#5D953B",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents choose time and place.",
       "description": "A private, calm moment can make conversation easier.",
       "ap_tip": "Do not wait for a perfect script. Safety takes priority over privacy."
@@ -48,7 +48,7 @@
       "y": 17,
       "radius": 3.7,
       "color": "#7453A1",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents ask directly about safety.",
       "description": "If you are worried about suicide or self-harm, ask clearly and calmly.",
       "ap_tip": "Asking does not plant the idea. A yes, maybe, or unclear answer needs adult and professional help."
@@ -72,7 +72,7 @@
       "y": 45,
       "radius": 3.7,
       "color": "#087A8A",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents connect a trusted adult.",
       "description": "Bring in a safe adult who can help assess and act.",
       "ap_tip": "Do not promise secrecy about serious safety concerns. Keep reaching out until someone responds."
@@ -84,7 +84,7 @@
       "y": 43,
       "radius": 3.7,
       "color": "#2468A2",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents connect professional help.",
       "description": "Counselors, clinicians, and crisis professionals can assess risk and provide care.",
       "ap_tip": "Offer to help make contact. Treatment may involve several kinds of support."
@@ -108,7 +108,7 @@
       "y": 47,
       "radius": 3.7,
       "color": "#D39B1C",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents keep boundaries.",
       "description": "A caring friend is not a therapist or sole safety plan.",
       "ap_tip": "Share responsibility with adults and professionals. It is okay to rest and say what you can do."
@@ -132,7 +132,7 @@
       "y": 78,
       "radius": 3.7,
       "color": "#C95343",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents care for yourself.",
       "description": "Supporting someone can be emotionally demanding.",
       "ap_tip": "Talk with a trusted adult or counselor. Your wellbeing matters too."

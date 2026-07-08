@@ -24,7 +24,7 @@
       "y": 50,
       "radius": 4,
       "color": "#D68A08",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The students opening a basketball game to another player.",
       "description": "A direct invitation can reduce exclusion and create belonging.",
       "ap_tip": "Invite without forcing someone to participate."
@@ -48,7 +48,7 @@
       "y": 49,
       "radius": 4,
       "color": "#C94A36",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The group shifting attention toward a different activity.",
       "description": "A distraction can break a harmful moment without escalating it.",
       "ap_tip": "Redirection is useful when direct confrontation would not be safe."
@@ -84,7 +84,7 @@
       "y": 78,
       "radius": 4,
       "color": "#326A8B",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The student holding a device near the lockers in the lower-left inset.",
       "description": "Documentation may help only when school policy allows and it does not increase risk.",
       "ap_tip": "Never share harmful footage for attention."
@@ -108,7 +108,7 @@
       "y": 52,
       "radius": 4,
       "color": "#60439A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The student approaching an adult before tension grows.",
       "description": "Warning signs of a possible fight should be reported before anyone is hurt.",
       "ap_tip": "Do not step between people who may fight."

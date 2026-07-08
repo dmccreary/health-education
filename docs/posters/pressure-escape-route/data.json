@@ -24,7 +24,7 @@
       "y": 51,
       "radius": 4,
       "color": "#D68A08",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The small peer group talking on the left-side path.",
       "description": "Peer pressure can be direct or as subtle as “everyone else is doing it.”",
       "ap_tip": "Ask whether the choice is safe, kind, and consistent with your values."
@@ -48,7 +48,7 @@
       "y": 46,
       "radius": 4,
       "color": "#60439A",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The broad, open path through the center of the scene.",
       "description": "Notice exits and well-used public routes before you need them.",
       "ap_tip": "Situational awareness is a calm scanning habit, not constant fear."
@@ -84,7 +84,7 @@
       "y": 23,
       "radius": 4,
       "color": "#C94A36",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The bright community-center entrance in the upper right.",
       "description": "Choose a public place with safe people rather than becoming isolated.",
       "ap_tip": "Getting distance is more important than winning an argument."
@@ -108,7 +108,7 @@
       "y": 76,
       "radius": 4,
       "color": "#087A8A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The seated adult listening carefully near the home.",
       "description": "Tell a trusted adult even if the situation ended or you are unsure how serious it was.",
       "ap_tip": "“Something felt wrong” is enough to begin."

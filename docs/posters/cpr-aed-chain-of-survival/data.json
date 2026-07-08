@@ -24,7 +24,7 @@
       "y": 16,
       "radius": 3.7,
       "color": "#5D953B",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents check responsiveness.",
       "description": "Tap and shout as taught to see whether the person responds.",
       "ap_tip": "Look for normal breathing. Gasping is not normal breathing."
@@ -48,7 +48,7 @@
       "y": 17,
       "radius": 3.7,
       "color": "#7453A1",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents retrieve the aed.",
       "description": "Send someone to get an AED while help is activated.",
       "ap_tip": "AEDs are designed to guide users. Start care promptly rather than waiting beside the device location."
@@ -72,7 +72,7 @@
       "y": 45,
       "radius": 3.7,
       "color": "#087A8A",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents chest compressions.",
       "description": "High-quality compressions help circulate blood until advanced care arrives.",
       "ap_tip": "Follow current dispatcher or certified-training guidance for rate and depth. Allow full recoil and minimize interruptions."
@@ -84,7 +84,7 @@
       "y": 43,
       "radius": 3.7,
       "color": "#2468A2",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents open the aed.",
       "description": "Turn on or open the AED and follow its spoken and visual prompts.",
       "ap_tip": "Expose and prepare the chest as directed while preserving dignity. Do not improvise beyond training and device prompts."
@@ -108,7 +108,7 @@
       "y": 47,
       "radius": 3.7,
       "color": "#D39B1C",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents clear for analysis.",
       "description": "Make sure no one touches the person while the AED analyzes.",
       "ap_tip": "Say and visually check that everyone is clear. Motion can interfere with analysis."
@@ -132,7 +132,7 @@
       "y": 78,
       "radius": 3.7,
       "color": "#C95343",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents resume cpr.",
       "description": "Resume compressions promptly after analysis or a shock as directed.",
       "ap_tip": "Continue following AED and dispatcher prompts. Switch compressors when trained help is available and fatigue affects quality."

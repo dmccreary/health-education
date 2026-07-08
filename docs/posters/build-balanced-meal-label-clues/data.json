@@ -24,7 +24,7 @@
       "y": 84,
       "radius": 4,
       "color": "#D68A08",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The large seeded loaf in the front-left foreground.",
       "description": "Whole-grain foods can provide carbohydrates for energy along with fiber.",
       "ap_tip": "Balance is about a mix of jobs, not one perfect food."
@@ -48,7 +48,7 @@
       "y": 82,
       "radius": 4,
       "color": "#60439A",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The small bowl of multicolored beans near the front center.",
       "description": "Beans and lentils can contribute protein, carbohydrate, fiber, vitamins, and minerals.",
       "ap_tip": "One food can support more than one nutrient job."
@@ -72,7 +72,7 @@
       "y": 69,
       "radius": 4,
       "color": "#E07B39",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The walnuts and avocado on the wooden board in the center.",
       "description": "Nuts, seeds, avocado, and oils provide fats that support energy storage, protection, and vitamin absorption.",
       "ap_tip": "The body needs fats; the goal is variety and balance."
@@ -84,7 +84,7 @@
       "y": 50,
       "radius": 4,
       "color": "#C94A36",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The clear water pitcher near the center-right.",
       "description": "Water supports temperature control, transport, joints, and waste removal.",
       "ap_tip": "It is a useful everyday beverage before, during, and after activity."
@@ -108,7 +108,7 @@
       "y": 58,
       "radius": 4,
       "color": "#087A8A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The fish and tofu plate on the right side of the table.",
       "description": "Fish, tofu, eggs, beans, lentils, meat, nuts, dairy, and alternatives can contribute protein.",
       "ap_tip": "Different families build protein choices in different ways."
@@ -132,7 +132,7 @@
       "y": 84,
       "radius": 4,
       "color": "#2D8A4E",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The small square dessert at the far lower-right edge.",
       "description": "A treat can be part of eating without becoming the foundation of the meal.",
       "ap_tip": "Health education should support flexible choices rather than guilt."

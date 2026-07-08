@@ -1,13 +1,15 @@
 ---
-title: Interactive Posters
+title: Interactive Infographic Posters
 description: Wide-landscape visual guides and interactive infographic overlays for the Health Education textbook.
+hide:
+    toc
 ---
 
-# Interactive Posters
+# Interactive Infographic Posters
 
 These wide-landscape posters turn key health concepts into visual, classroom-ready learning experiences.
 
-## Interactive infographic
+
 
 [![Sleep: The Overnight Repair Shop](./sleep-overnight-repair-shop/sleep-overnight-repair-shop.png)](./sleep-overnight-repair-shop/index.md)
 

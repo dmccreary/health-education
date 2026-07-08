@@ -12,7 +12,7 @@
       "y": 58,
       "radius": 4,
       "color": "#2D8A4E",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The child notices a softly rumbling stomach before eating.",
       "description": "A growling or empty-feeling stomach can be one hunger signal.",
       "ap_tip": "No single signal appears the same way for everyone."
@@ -36,7 +36,7 @@
       "y": 53,
       "radius": 4,
       "color": "#E07B39",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Icon-only thoughts show water, rest, feelings, play, and food.",
       "description": "A pause can distinguish hunger from thirst, tiredness, boredom, or emotion.",
       "ap_tip": "Different needs can happen at the same time."
@@ -60,7 +60,7 @@
       "y": 56,
       "radius": 4,
       "color": "#C7164E",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The utensil rests while the child checks comfort.",
       "description": "A midway pause is information, not a rule to stop.",
       "ap_tip": "Ask: Has hunger changed? Does eating still feel comfortable?"
@@ -72,7 +72,7 @@
       "y": 56,
       "radius": 4,
       "color": "#168A7A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "A downward gauge and relaxed expression show hunger becoming gentler.",
       "description": "Hunger usually shifts gradually as food is eaten.",
       "ap_tip": "Signals can change before the plate is empty."
@@ -96,7 +96,7 @@
       "y": 56,
       "radius": 4,
       "color": "#3A66A7",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "A screen, package, or peer offer appears beside the child.",
       "description": "Large packages, screens, schedules, and social cues can influence eating even when body signals differ.",
       "ap_tip": "Notice the prompt without blaming yourself."

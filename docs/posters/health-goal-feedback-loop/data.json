@@ -24,7 +24,7 @@
       "y": 16,
       "radius": 3.7,
       "color": "#5D953B",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents clarify values.",
       "description": "Connect the goal to what matters personally.",
       "ap_tip": "Meaning supports motivation better than outside pressure alone. Different people can choose different priorities."
@@ -48,7 +48,7 @@
       "y": 25,
       "radius": 3.7,
       "color": "#7453A1",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents choose small actions.",
       "description": "Break the goal into practical next steps.",
       "ap_tip": "Shape the environment to make actions easier. Start small enough to repeat."
@@ -84,7 +84,7 @@
       "y": 87,
       "radius": 3.7,
       "color": "#2468A2",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents reflect.",
       "description": "Review what worked, what did not, and why.",
       "ap_tip": "Separate the result from self-worth. Look for patterns rather than one difficult day."
@@ -108,7 +108,7 @@
       "y": 61,
       "radius": 3.7,
       "color": "#D39B1C",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents revise or continue.",
       "description": "Continue, expand, pause, or choose a new goal based on evidence and values.",
       "ap_tip": "Celebrate learning and meaningful progress. The loop can begin again."

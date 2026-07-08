@@ -24,7 +24,7 @@
       "y": 16,
       "radius": 3.7,
       "color": "#5D953B",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents peers.",
       "description": "Peers can model norms, provide belonging, share information, or apply pressure.",
       "ap_tip": "Peer influence can be protective or harmful. Supportive groups make healthy choices more possible."
@@ -48,7 +48,7 @@
       "y": 17,
       "radius": 3.7,
       "color": "#7453A1",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents media.",
       "description": "Media shape attention, norms, emotion, identity, and perceived choices.",
       "ap_tip": "Algorithms and advertising have goals. Media literacy creates a pause for evaluation."
@@ -72,7 +72,7 @@
       "y": 45,
       "radius": 3.7,
       "color": "#087A8A",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents neighborhood.",
       "description": "Design, safety, housing, recreation, and social connection affect daily opportunity.",
       "ap_tip": "Place reflects investment and policy. Residents hold expertise about local needs."
@@ -84,7 +84,7 @@
       "y": 43,
       "radius": 3.7,
       "color": "#2468A2",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents transportation.",
       "description": "Transportation determines which opportunities are reachable and at what cost in time and money.",
       "ap_tip": "Safe options support independence. Accessibility should include varied mobility."
@@ -108,7 +108,7 @@
       "y": 47,
       "radius": 3.7,
       "color": "#D39B1C",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents policy.",
       "description": "Rules and budgets shape products, environments, care, education, work, and safety.",
       "ap_tip": "Policy effects can differ across groups. Evidence and community voice should inform decisions."
@@ -132,7 +132,7 @@
       "y": 78,
       "radius": 3.7,
       "color": "#C95343",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents natural environment.",
       "description": "Air, water, heat, climate, green space, and hazards affect health.",
       "ap_tip": "Exposure is not evenly distributed. Prevention can require collective action."

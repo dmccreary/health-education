@@ -24,7 +24,7 @@
       "y": 16,
       "radius": 3.7,
       "color": "#5D953B",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents comment.",
       "description": "Comments contribute to a lasting social and data trail.",
       "ap_tip": "Tone can be misread. Repair harm rather than piling on."
@@ -48,7 +48,7 @@
       "y": 24,
       "radius": 3.7,
       "color": "#7453A1",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents location clues.",
       "description": "Photos and settings can reveal routines or location even without a location tag.",
       "ap_tip": "Check backgrounds and metadata. Share plans only with appropriate people."
@@ -84,7 +84,7 @@
       "y": 45,
       "radius": 3.7,
       "color": "#2468A2",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents data and algorithms.",
       "description": "Platforms may use behavior to predict interests and shape recommendations.",
       "ap_tip": "Algorithms have goals and blind spots. Attention is part of the exchange."
@@ -108,7 +108,7 @@
       "y": 78,
       "radius": 3.7,
       "color": "#D39B1C",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents privacy and reporting.",
       "description": "Use privacy, blocking, and reporting controls intentionally.",
       "ap_tip": "Review settings after updates. Platform tools may need adult or school follow-up."

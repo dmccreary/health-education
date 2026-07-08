@@ -12,7 +12,7 @@
       "y": 37,
       "radius": 4,
       "color": "#2D8A4E",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "A child studies several icon-only trail choices at the starting point.",
       "description": "A useful personal goal is specific, realistic, and connected to something the student values.",
       "ap_tip": "Choose one focus instead of changing everything at once."
@@ -36,7 +36,7 @@
       "y": 30,
       "radius": 4,
       "color": "#E07B39",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "A supportive family member joins the trail.",
       "description": "Trusted adults, family, and friends can remind, model, listen, or make time.",
       "ap_tip": "Ask for the kind of support you actually want."
@@ -72,7 +72,7 @@
       "y": 68,
       "radius": 4,
       "color": "#168A7A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The child pauses among symbols of frustration, pride, and renewed calm.",
       "description": "Goals can bring mixed feelings. Naming them helps students respond rather than quit automatically.",
       "ap_tip": "Share strong or lasting feelings with a trusted adult."
@@ -96,7 +96,7 @@
       "y": 68,
       "radius": 4,
       "color": "#3A66A7",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The child celebrates effort beside several icon stones for what comes next.",
       "description": "Celebration recognizes effort, learning, and support—not just a perfect finish.",
       "ap_tip": "Reflect, then keep, revise, or replace the next action."

@@ -24,7 +24,7 @@
       "y": 16,
       "radius": 3.7,
       "color": "#5D953B",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents charge the phone.",
       "description": "A charged phone supports contact, navigation, and emergency calls.",
       "ap_tip": "Bring a safe power option. Know important contacts beyond the device."
@@ -48,7 +48,7 @@
       "y": 24,
       "radius": 3.7,
       "color": "#7453A1",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents know the exits.",
       "description": "Notice safe exits, adult hosts, and calmer spaces.",
       "ap_tip": "Leave early if the situation changes. Do not enter isolated or unsafe areas."
@@ -84,7 +84,7 @@
       "y": 45,
       "radius": 3.7,
       "color": "#2468A2",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents choose a sober ride.",
       "description": "Never ride with an impaired driver.",
       "ap_tip": "Use a trusted adult, sober driver, transit, or safe place to stay. Plan more than one option."
@@ -108,7 +108,7 @@
       "y": 78,
       "radius": 3.7,
       "color": "#D39B1C",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents call emergency help.",
       "description": "Unresponsiveness, breathing trouble, seizure, serious injury, or immediate danger require emergency services.",
       "ap_tip": "Give the location and known facts. Do not delay because of fear of trouble."

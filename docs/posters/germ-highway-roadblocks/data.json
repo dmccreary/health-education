@@ -12,7 +12,7 @@
       "y": 65,
       "radius": 4,
       "color": "#2D8A4E",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "A child coughs into open air at the lower left.",
       "description": "Droplets from an uncovered cough can carry germs through the air and onto nearby surfaces.",
       "ap_tip": "Turn away and cover with an elbow or tissue."
@@ -36,7 +36,7 @@
       "y": 57,
       "radius": 4,
       "color": "#E07B39",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Several children pass and build with the same blocks.",
       "description": "Shared items can pick up germs from one hand and carry them to another.",
       "ap_tip": "Handwashing before food and after nose care helps."
@@ -60,7 +60,7 @@
       "y": 61,
       "radius": 4,
       "color": "#C7164E",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Children share crayons across a table.",
       "description": "Hands, desks, and shared supplies can form a chain that moves germs.",
       "ap_tip": "Cleaning and handwashing create breaks in the chain."
@@ -72,7 +72,7 @@
       "y": 25,
       "radius": 4,
       "color": "#168A7A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "A child handles a snack near a lunchbox.",
       "description": "Germs on hands can reach food and then the mouth.",
       "ap_tip": "Wash hands before eating."
@@ -96,7 +96,7 @@
       "y": 23,
       "radius": 4,
       "color": "#3A66A7",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "A child coughs into the inside of an elbow.",
       "description": "An elbow cover blocks many droplets and keeps them off the hands.",
       "ap_tip": "Use your elbow when a tissue is not ready."
@@ -120,7 +120,7 @@
       "y": 27,
       "radius": 4,
       "color": "#4F6B38",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "An adult cleans a commonly touched table.",
       "description": "Cleaning shared surfaces is a community health practice that reduces germ routes.",
       "ap_tip": "Healthy classrooms use several roadblocks together."

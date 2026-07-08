@@ -24,7 +24,7 @@
       "y": 30,
       "radius": 4,
       "color": "#D68A08",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The large moon-faced clock with hands and no numerals.",
       "description": "Similar sleep and wake timing helps the body organize its daily rhythm.",
       "ap_tip": "Perfection is not required; patterns can be adjusted gradually."
@@ -48,7 +48,7 @@
       "y": 30,
       "radius": 4,
       "color": "#C94A36",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "The control room between storm clouds and clearing sky.",
       "description": "Sleep helps emotion systems recover and improves the ability to pause before reacting.",
       "ap_tip": "Poor sleep can make ordinary challenges feel harder."
@@ -84,7 +84,7 @@
       "y": 68,
       "radius": 4,
       "color": "#326A8B",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The glowing blue energy chamber in the lower middle-left.",
       "description": "Rest restores alertness and physical energy for the next day.",
       "ap_tip": "Morning fatigue can be a useful clue to review sleep routines."
@@ -108,7 +108,7 @@
       "y": 67,
       "radius": 4,
       "color": "#60439A",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "The operator restoring bright stars in the lower middle-right.",
       "description": "Adequate sleep supports attention, decision-making, and learning.",
       "ap_tip": "Sleepy brains may miss details or react more slowly."

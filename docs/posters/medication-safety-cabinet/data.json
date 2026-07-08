@@ -24,7 +24,7 @@
       "y": 17,
       "radius": 3.7,
       "color": "#5D953B",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents correct person.",
       "description": "Use only medicine intended for the named person.",
       "ap_tip": "Bodies and conditions differ. Never use someone else’s prescription."
@@ -48,7 +48,7 @@
       "y": 24,
       "radius": 3.7,
       "color": "#7453A1",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents check allergies and interactions.",
       "description": "Medicines can interact with allergies, other drugs, supplements, alcohol, or health conditions.",
       "ap_tip": "Share an accurate list with the pharmacist or clinician. Seek help for unexpected reactions."
@@ -84,7 +84,7 @@
       "y": 46,
       "radius": 3.7,
       "color": "#2468A2",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents original container.",
       "description": "Keep medicine in its original labeled container unless a professional-approved organizer is used.",
       "ap_tip": "The label helps identify the medicine and instructions. Avoid loose, unidentified pills."
@@ -108,7 +108,7 @@
       "y": 79,
       "radius": 3.7,
       "color": "#D39B1C",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents safe disposal.",
       "description": "Use a take-back location or local disposal guidance for unused medicine.",
       "ap_tip": "Do not flush medicine unless official instructions specifically say to. Remove personal information from discarded packaging."

@@ -24,7 +24,7 @@
       "y": 16,
       "radius": 3.7,
       "color": "#5D953B",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents counseling.",
       "description": "Counseling can build coping, insight, skills, and a plan for difficult moments.",
       "ap_tip": "Different approaches fit different people. Trust and cultural safety matter."
@@ -48,7 +48,7 @@
       "y": 17,
       "radius": 3.7,
       "color": "#7453A1",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents family and chosen family.",
       "description": "Supportive relationships can provide stability, encouragement, and accountability.",
       "ap_tip": "Families may need education and support too. Chosen family can be an important source of care."
@@ -72,7 +72,7 @@
       "y": 45,
       "radius": 3.7,
       "color": "#087A8A",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents school and work.",
       "description": "Flexible, supportive school or work settings can restore routine and purpose.",
       "ap_tip": "Accommodations may reduce barriers. Recovery is compatible with learning and contribution."
@@ -84,7 +84,7 @@
       "y": 43,
       "radius": 3.7,
       "color": "#2468A2",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents healthy coping.",
       "description": "Sleep, movement, creativity, connection, and other coping skills support wellbeing.",
       "ap_tip": "Skills are practiced, not perfected. A plan can include several options."
@@ -108,7 +108,7 @@
       "y": 47,
       "radius": 3.7,
       "color": "#D39B1C",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents supportive policy.",
       "description": "Policies affect access, stigma, treatment, housing, school, and employment.",
       "ap_tip": "Recovery is shaped by systems as well as individual choices. Community action can change those systems."
@@ -132,7 +132,7 @@
       "y": 78,
       "radius": 3.7,
       "color": "#C95343",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents renewed goals.",
       "description": "Recovery can reconnect a person with relationships, learning, creativity, and purpose.",
       "ap_tip": "Goals can be small and flexible. The person defines what progress means."

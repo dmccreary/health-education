@@ -24,7 +24,7 @@
       "y": 13,
       "radius": 3.7,
       "color": "#5D953B",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents recreation space.",
       "description": "Safe, welcoming places make movement and connection easier.",
       "ap_tip": "Quality and accessibility matter, not just presence. Programming can expand who feels included."
@@ -48,7 +48,7 @@
       "y": 13,
       "radius": 3.7,
       "color": "#7453A1",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents healthcare.",
       "description": "Nearby care is useful only when it is affordable, respectful, accessible, and available.",
       "ap_tip": "Trust and language access matter. School and community services can reduce gaps."
@@ -72,7 +72,7 @@
       "y": 22,
       "radius": 3.7,
       "color": "#087A8A",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents traffic safety.",
       "description": "Road design affects walking, wheeling, cycling, and injury risk.",
       "ap_tip": "Crossings, lighting, speed, and sidewalks matter. Safe design benefits everyone."
@@ -96,7 +96,7 @@
       "y": 39,
       "radius": 3.7,
       "color": "#5D953B",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents affordability.",
       "description": "Costs for housing, food, care, and transportation compete within a budget.",
       "ap_tip": "Financial strain can affect stress and choices. Policy and community supports change what is possible."
@@ -108,7 +108,7 @@
       "y": 41,
       "radius": 3.7,
       "color": "#D39B1C",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents disability access.",
       "description": "Ramps, curb cuts, surfaces, signage, and inclusive design affect participation.",
       "ap_tip": "Access should be designed in, not added as a favor. Universal design helps many users."
@@ -132,7 +132,7 @@
       "y": 50,
       "radius": 3.7,
       "color": "#C95343",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents work and time.",
       "description": "Work schedules and travel time affect sleep, meals, caregiving, and healthcare.",
       "ap_tip": "Time is a resource. Flexible policies can improve wellbeing."
@@ -156,7 +156,7 @@
       "y": 78,
       "radius": 3.7,
       "color": "#2468A2",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents green space.",
       "description": "Trees and nature can support cooling, cleaner air, movement, and restoration.",
       "ap_tip": "Maintenance and safety affect use. Green investment should avoid displacing residents."
@@ -180,7 +180,7 @@
       "y": 78,
       "radius": 3.7,
       "color": "#D39B1C",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents civic decisions.",
       "description": "Budgets, zoning, transportation, and environmental rules shape health opportunity.",
       "ap_tip": "Disparities are not accidents of individual behavior. Civic action can change conditions."

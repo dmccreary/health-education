@@ -24,7 +24,7 @@
       "y": 17,
       "radius": 3.7,
       "color": "#5D953B",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents attention.",
       "description": "Impairment can narrow, divide, or disrupt attention.",
       "ap_tip": "Driving requires monitoring several things at once. Distraction and impairment can compound risk."
@@ -48,7 +48,7 @@
       "y": 24,
       "radius": 3.7,
       "color": "#7453A1",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents judgment.",
       "description": "Impairment can increase confidence while reducing accurate risk assessment.",
       "ap_tip": "Plans made before substance use are more reliable. Do not negotiate with an impaired driver."
@@ -84,7 +84,7 @@
       "y": 46,
       "radius": 3.7,
       "color": "#2468A2",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents alternate ride.",
       "description": "Use a sober driver, caregiver, taxi or rideshare, transit, or a safe place to stay.",
       "ap_tip": "Plan options and payment before an event. A temporary inconvenience is safer than an impaired trip."
@@ -108,7 +108,7 @@
       "y": 79,
       "radius": 3.7,
       "color": "#D39B1C",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents community and legal consequences.",
       "description": "Impaired driving can harm people and bring school, family, financial, and legal consequences.",
       "ap_tip": "Laws vary by jurisdiction. Prevention focuses on safety, not shame."

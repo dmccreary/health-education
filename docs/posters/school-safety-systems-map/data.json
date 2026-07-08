@@ -24,7 +24,7 @@
       "y": 16,
       "radius": 3.7,
       "color": "#5D953B",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents trusted reporting.",
       "description": "Students need clear, accessible ways to report concerns without retaliation.",
       "ap_tip": "Take every report seriously. Protect privacy as far as safety permits."
@@ -48,7 +48,7 @@
       "y": 17,
       "radius": 3.7,
       "color": "#7453A1",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents accessible design.",
       "description": "Entrances, routes, alarms, information, and procedures must include people with varied disabilities.",
       "ap_tip": "Plan access before an emergency. Include users in design."
@@ -72,7 +72,7 @@
       "y": 45,
       "radius": 3.7,
       "color": "#087A8A",
-      "panel": "bottom",
+      "panel": "top",
       "hint": "Find the scene that best represents trained staff.",
       "description": "Staff need role-specific practice for prevention, first aid, evacuation, shelter, and reunification.",
       "ap_tip": "Training should be realistic without traumatizing students. Review after drills and events."
@@ -84,7 +84,7 @@
       "y": 43,
       "radius": 3.7,
       "color": "#2468A2",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents first aid and aed.",
       "description": "Accessible supplies and trained responders improve emergency readiness.",
       "ap_tip": "Maintain equipment and clear access. Follow current certified guidance."
@@ -108,7 +108,7 @@
       "y": 47,
       "radius": 3.7,
       "color": "#D39B1C",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents shelter procedures.",
       "description": "Some hazards require sheltering rather than leaving.",
       "ap_tip": "Procedures differ by hazard. Follow official instructions and support access needs."
@@ -132,7 +132,7 @@
       "y": 78,
       "radius": 3.7,
       "color": "#C95343",
-      "panel": "top",
+      "panel": "bottom",
       "hint": "Find the scene that best represents digital safety.",
       "description": "Secure systems, privacy practices, reporting, and media literacy reduce digital harm.",
       "ap_tip": "Preserve evidence when safe. Coordinate technology and human support."
