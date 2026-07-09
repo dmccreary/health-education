@@ -1,113 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Types Of Concerning Behavior Explorer</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 620 -->
+<title>Types Of Concerning Behavior Explorer</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 18px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 460px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 9px; font-size: 11px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 13px; height: 13px; margin-right: 6px; vertical-align: middle; border: 1px solid #555; }
+  .legend .circle { border-radius: 50%; }
+  .legend .diamond { transform: rotate(45deg); }
+  .legend .line { display:inline-block; width: 18px; height: 0; margin-right:6px; vertical-align: middle; border: 0; }
+  .legend .dotblue { border-top: 3px dotted #2f6fd0; }
+  .legend .solidgreen { border-top: 3px solid #2e8b57; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid #b71c1c; border-radius: 4px; padding: 9px 11px; font-size: 13px; color: #334155; line-height: 1.5; min-height: 84px; }
+  .infobox strong { color: #8a1414; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Types Of Concerning Behavior Explorer</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> types-of-concerning-behavior-explorer</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students explain the major categories of concerning behavior worth reporting and classify realistic examples under the correct category. No node describes attack methods, tactics, weapons details, or planning specifics — only the category of behavior and why it warrants reporting.</p>
-        </div>
+<main>
+  <h3>Types Of Concerning Behavior Explorer</h3>
+  <div class="subtitle">Hover a node for its name. Click any node to learn why it matters — and see where every path leads: telling a trusted adult.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k circle" style="background:#b71c1c;"></span>The big idea<br>
+      <span class="k" style="background:#e8873a;"></span>Category of warning sign<br>
+      <span class="k circle" style="background:#8bb8e8;"></span>Example<br>
+      <span class="k diamond" style="background:#2e8b57;"></span>What to do: Report<br>
+      <span class="line dotblue"></span>Example of<br>
+      <span class="line solidgreen"></span>Should be reported to
     </div>
+  </div>
+  <div class="infobox" id="infobox">Some behaviors are warning signs that a caring adult should know about. Noticing them isn't about getting anyone in trouble — it's about keeping everyone safe. Explore each category and example, then see where they all lead.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+const INTRO = 'Some behaviors are warning signs that a caring adult should know about. Noticing them isn\'t about getting anyone in trouble — it\'s about keeping everyone safe. Explore each category and example, then see where they all lead.';
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// Central "big idea" node
+const CENTER = { id:'core', label:'Concerning\nBehavior Worth\nReporting',
+  full:'These are categories of behavior worth reporting. Noticing them isn\'t about getting anyone in trouble — it\'s about keeping everyone safe. When in doubt, tell a trusted adult.' };
 
-    Type: graph-model
-    **sim-id:** types-of-concerning-behavior-explorer<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain, classify, exemplify
-    
-    Learning objective: Students explain the major categories of concerning behavior worth reporting and classify realistic examples under the correct category. No node describes attack methods, tactics, weapons details, or planning specifics — only the category of behavior and why it warrants reporting.
-    
-    Node types: Central node "Concerning Behavior Worth Reporting" (dark red circle). Category nodes (orange squares): Statements Of Intent To Harm, Specific Planning Language, Escalating Fascination With Violence, Sudden Major Behavior Changes, Direct Threats. Example nodes (light blue circles) linked to each category with brief, non-graphic descriptions (e.g., "Posting online about wanting to hurt themselves or others," "Talking about a plan or timeline beyond normal venting," "Marked increase in focus on weapons or past violent events," "Giving away possessions or sudden extreme withdrawal," "Naming a specific person or the school as a target"). Action node (green diamond) "Report To A Trusted Adult Or Staff Member" linked from every category node.
-    
-    Edge types: "Example Of" (dotted blue arrows from category nodes to example nodes). "Should Be Reported To" (solid green arrows from every category node to the action node).
-    
-    Layout: Central node in the middle, five category nodes arranged around it in a ring, example nodes branching outward, and the shared action node positioned prominently below.
-    
-    Interactive features: Hover any node to see its label; click a category node to open an infobox explaining why that category matters and reinforcing that reporting is always the right choice; click an example node to open an infobox with a one-sentence explanation of why it counts as a warning sign; click the action node to open an infobox listing reporting options (trusted adult, staff member, anonymous tip line); zoom with mouse wheel, pan by dragging background.
-    
-    Legend: Color/shape key distinguishing the central node, categories, examples, and the shared reporting action.
-    
-    Implementation: vis-network JavaScript library; canvas responsive, default 800x500px. Content review note: no node may include weapon types, tactics, timing methods, or any operational detail — only the category label and the reporting message.
-    -->
+// Five categories, each with one non-graphic example. Order sets the ring position.
+const cats = [
+  { id:'c_intent', label:'Statements of\nIntent to Harm',
+    full:'Statements of Intent to Harm — When someone says they want to hurt themselves or other people, that is always worth reporting. You are not overreacting, and telling an adult is the right thing to do.',
+    ex:{ id:'e_intent', label:'Posting online about wanting to hurt themselves or others',
+         full:'Posting online about wanting to hurt themselves or others is a warning sign because it shares a harmful intention that a caring adult should know about.' } },
+  { id:'c_plan', label:'Specific\nPlanning Language',
+    full:'Specific Planning Language — Talking about a plan or a timeline for harm is very different from everyday venting. If it sounds like a real plan, tell a trusted adult right away.',
+    ex:{ id:'e_plan', label:'Talking about a plan or timeline beyond normal venting',
+         full:'Talking about a plan or timeline goes beyond normal venting, so it is a sign to tell a trusted adult right away.' } },
+  { id:'c_fasc', label:'Escalating\nFascination\nwith Violence',
+    full:'Escalating Fascination with Violence — A growing, intense focus on violence can be a warning sign. Reporting it lets caring adults check in and help.',
+    ex:{ id:'e_fasc', label:'Marked increase in focus on weapons or past violent events',
+         full:'A marked increase in focus on weapons or past violent events can be a warning sign worth reporting.' } },
+  { id:'c_change', label:'Sudden Major\nBehavior Changes',
+    full:'Sudden Major Behavior Changes — Big, sudden changes, like giving away belongings or pulling away from everyone, can signal someone is struggling. It is kind and right to tell an adult.',
+    ex:{ id:'e_change', label:'Giving away possessions or sudden extreme withdrawal',
+         full:'Giving away possessions or suddenly withdrawing from everyone can be a sign someone needs help — reporting it lets adults check in.' } },
+  { id:'c_threat', label:'Direct\nThreats',
+    full:'Direct Threats — A direct threat against a specific person or place is serious. Report it immediately; reporting is always the right choice.',
+    ex:{ id:'e_threat', label:'Naming a specific person or the school as a target',
+         full:'Naming a specific person or the school as a target is a direct warning sign that must be reported immediately.' } }
+];
+
+const ACTION = { id:'act', label:'Report to a\nTrusted Adult or\nStaff Member',
+  full:'Report to a Trusted Adult or Staff Member. You can tell a parent, teacher, counselor, or any staff member, and many schools also have an anonymous tip line. You never have to be certain — reporting is always the right choice, and trained adults take it from there.' };
+
+const nodes = [], edges = [];
+const info = {}, hoverInfo = {};
+
+// Center
+nodes.push({ id:CENTER.id, label:CENTER.label, shape:'circle', x:0, y:0, fixed:{ x:true, y:true },
+  color:{ background:'#b71c1c', border:'#7a0f0f', highlight:{ background:'#cf2a2a', border:'#7a0f0f' } },
+  font:{ size:13, color:'white', face:'Arial' }, borderWidth:3, widthConstraint:{ minimum:70, maximum:110 } });
+info[CENTER.id] = { title:'Concerning Behavior Worth Reporting', full:CENTER.full };
+hoverInfo[CENTER.id] = 'The big idea: these are behaviors worth reporting. Click to learn more.';
+
+// Category ring (radius R1) and example ring (radius R2). START offset keeps spokes off horizontal.
+const R1 = 180, R2 = 340, N = cats.length, START = -82;
+cats.forEach((c, i) => {
+  const ang = (START + i * (360 / N)) * Math.PI / 180;
+  const cx = Math.round(R1 * Math.cos(ang)), cy = Math.round(R1 * Math.sin(ang));
+  const ex = Math.round(R2 * Math.cos(ang)), ey = Math.round(R2 * Math.sin(ang));
+
+  nodes.push({ id:c.id, label:c.label, shape:'box', x:cx, y:cy, fixed:{ x:true, y:true },
+    color:{ background:'#e8873a', border:'#a85c15', highlight:{ background:'#f19a55', border:'#a85c15' } },
+    font:{ size:12, color:'#3a2200', face:'Arial' }, borderWidth:2, margin:8 });
+  info[c.id] = { title:c.label.replace(/\n/g,' '), full:c.full };
+  hoverInfo[c.id] = c.label.replace(/\n/g,' ') + ' — a category of warning sign. Click to learn why it matters.';
+
+  nodes.push({ id:c.ex.id, label:c.ex.label, shape:'ellipse', x:ex, y:ey, fixed:{ x:true, y:true },
+    color:{ background:'#8bb8e8', border:'#4a76a8', highlight:{ background:'#a6cbf0', border:'#4a76a8' } },
+    font:{ size:11, color:'#12314f', face:'Arial' }, borderWidth:2, widthConstraint:{ maximum:150 } });
+  info[c.ex.id] = { title:'Example', full:c.ex.full };
+  hoverInfo[c.ex.id] = 'An example. Click to see why it counts as a warning sign.';
+
+  // central -> category (structural connector; keeps the hub connected)
+  edges.push({ id:'ce_'+c.id, from:CENTER.id, to:c.id,
+    color:{ color:'#b0b8c4', highlight:'#8a94a3' }, width:1.5,
+    arrows:{ to:{ enabled:true, scaleFactor:0.4 } }, smooth:{ type:'continuous' } });
+  // category -> example ("Example Of", dotted blue)
+  edges.push({ id:'ex_'+c.id, from:c.id, to:c.ex.id, label:'Example Of', dashes:[2,4],
+    color:{ color:'#2f6fd0', highlight:'#1a4fa0' }, width:2,
+    font:{ size:9, color:'#2f6fd0', strokeWidth:4, strokeColor:'aliceblue' },
+    arrows:{ to:{ enabled:true, scaleFactor:0.4 } }, smooth:{ type:'continuous' } });
+  // category -> action ("Should Be Reported To", solid green)
+  edges.push({ id:'rp_'+c.id, from:c.id, to:ACTION.id, label:'Should Be\nReported To',
+    color:{ color:'#2e8b57', highlight:'#1f6b40' }, width:2.5,
+    font:{ size:9, color:'#1f6b40', strokeWidth:4, strokeColor:'aliceblue' },
+    arrows:{ to:{ enabled:true, scaleFactor:0.5 } }, smooth:{ type:'curvedCW', roundness:0.1 } });
+});
+
+// Action node, prominently below
+nodes.push({ id:ACTION.id, label:ACTION.label, shape:'diamond', size:34, x:0, y:390, fixed:{ x:true, y:true },
+  color:{ background:'#2e8b57', border:'#1f6b40', highlight:{ background:'#3aa869', border:'#1f6b40' } },
+  font:{ size:13, color:'white', face:'Arial' }, borderWidth:3 });
+info[ACTION.id] = { title:'Report to a Trusted Adult or Staff Member', full:ACTION.full };
+hoverInfo[ACTION.id] = 'What to do: report it. Click for who you can tell.';
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  layout: { improvedLayout:false },
+  physics: false,
+  interaction: { hover:true, dragView:true, zoomView:true, navigationButtons:true, tooltipDelay:100000 },
+  edges: { arrows:{ to:{ enabled:true, scaleFactor:0.5 } } },
+  nodes: { shadow:true }
+};
+const network = new vis.Network(container, data, options);
+network.fit();
+
+function showInfo(id){
+  const d = info[id];
+  if (!d) return;
+  box.innerHTML = '<strong>' + d.title + '</strong><br>' + d.full;
+}
+
+network.on('hoverNode', p => { const h = hoverInfo[p.node]; if (h) box.innerHTML = h; });
+network.on('click', p => {
+  if (p.nodes.length) showInfo(p.nodes[0]);
+  else box.innerHTML = INTRO;
+});
+</script>
 </body>
 </html>

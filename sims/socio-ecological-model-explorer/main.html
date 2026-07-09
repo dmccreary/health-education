@@ -1,133 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Socio-Ecological Model Explorer</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 620 -->
+<title>Socio-Ecological Model Explorer</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 18px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .controls { text-align: center; font-size: 12px; color: #334155; margin-bottom: 6px; }
+  .controls select { font-size: 12px; padding: 2px 4px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 460px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 9px; font-size: 11px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 13px; height: 13px; margin-right: 6px; vertical-align: middle; border: 1px solid #555; border-radius: 50%; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 9px 11px; font-size: 13px; color: #334155; line-height: 1.5; min-height: 88px; }
+  .infobox strong { color: navy; }
+  .infobox .reflect { display: block; margin-top: 5px; color: seagreen; font-style: italic; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Socio-Ecological Model Explorer</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> socio-ecological-model-explorer</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Analyze<br/></p>
-            <p><strong>Learning Objective:</strong> Analyze how individual, interpersonal, community,</p>
-        </div>
+<main>
+  <h3>Socio-Ecological Model Explorer</h3>
+  <div class="subtitle">Five levels shape a health behavior, from the individual at the center out to policy. Click any node to light up its causal chain toward the center.</div>
+  <div class="controls">
+    Health behavior:
+    <select id="behavior">
+      <option value="vaping">Vaping</option>
+      <option value="nutrition">Nutrition</option>
+      <option value="activity">Physical activity</option>
+      <option value="mental">Mental-health help-seeking</option>
+    </select>
+  </div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k" style="background:#f6c445;border-color:#8a6d0b;"></span>Individual (center)<br>
+      <span class="k" style="background:#7fb3e0;"></span>Interpersonal<br>
+      <span class="k" style="background:#2fa4a0;"></span>Community<br>
+      <span class="k" style="background:#3b6fb5;"></span>Societal / Environmental<br>
+      <span class="k" style="background:#1f3a68;"></span>Policy (outer)
     </div>
+  </div>
+  <div class="infobox" id="infobox">The socio-ecological model shows that a health behavior is shaped at five levels at once. Outer levels <strong>shape</strong> inner ones: policy shapes society, society shapes community, community shapes the people around you, and they all shape the individual. Pick a behavior above, then click a node to trace its chain to the center.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+const INTRO = 'The socio-ecological model shows that a health behavior is shaped at five levels at once. Outer levels <strong>shape</strong> inner ones: policy shapes society, society shapes community, community shapes the people around you, and they all shape the individual. Pick a behavior above, then click a node to trace its chain to the center.';
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// Rings from center (individual) outward to policy. r = radius, k = ring index.
+const RINGS = [
+  { key:'individual',   name:'Individual',                color:'#f6c445', border:'#8a6d0b', r:62,  def:'Individual: your own knowledge, beliefs, skills, and confidence.' },
+  { key:'interpersonal',name:'Interpersonal',             color:'#7fb3e0', border:'#3f6f96', r:138, def:'Interpersonal: the people close to you — friends, family, and peers — who shape your choices.' },
+  { key:'community',    name:'Community',                 color:'#2fa4a0', border:'#1c6360', r:214, def:'Community: the schools, organizations, and local settings you move through every day.' },
+  { key:'societal',     name:'Societal / Environmental',  color:'#3b6fb5', border:'#274b7d', r:290, def:'Societal / Environmental: the wider culture, media, and surroundings shared by everyone.' },
+  { key:'policy',       name:'Policy',                    color:'#1f3a68', border:'#0e1c36', r:366, def:'Policy: the laws, rules, and funding decisions that set the conditions for everyone’s health.' }
+];
 
-    Type: diagram
-    
-    **sim-id:** socio-ecological-model-explorer<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Analyze<br/>
-    Bloom Taxonomy Verb: examine, differentiate
-    
-    Learning objective: Analyze how individual, interpersonal, community,
-    societal/environmental, and policy-level factors interact to influence a
-    health practice, and distinguish which level a given real-world example
-    belongs to.
-    
-    Components to show: Five concentric rings (nodes grouped by ring), labeled
-    from center outward — Individual, Interpersonal, Community, Societal/
-    Environmental, Policy. Inside each ring, place 2-3 example nodes relevant to
-    teen health (e.g., Individual: "personal beliefs about vaping," "self-
-    efficacy"; Interpersonal: "peer group," "family guidance"; Community:
-    "school wellness policy," "neighborhood recreation access"; Societal/
-    Environmental: "food advertising," "outlet density"; Policy: "state tobacco
-    tax," "public health law").
-    
-    Connections: Draw directed edges from outer rings toward inner rings showing
-    "shapes" relationships (e.g., Policy node "state tobacco tax" → edge labeled
-    "shapes" → Societal/Environmental node "retail availability" → Community
-    node "school norms" → Interpersonal node "peer group" → Individual node
-    "personal belief").
-    
-    Interactive features: Clicking any node highlights its full causal chain
-    toward the center and opens an infobox with a definition of that level and
-    a one-sentence real-world example. Learner can drag nodes; layout re-settles
-    with physics. A dropdown lets the learner pick a starting health behavior
-    (vaping, nutrition, physical activity, mental health help-seeking) and the
-    diagram repopulates each ring with behavior-specific examples.
-    
-    Visual style: Concentric hierarchical layout, Individual at center in gold,
-    rings shading outward through blue to policy in dark navy.
-    
-    Color scheme: Gold (individual) → light blue (interpersonal) → teal
-    (community) → blue (societal/environmental) → navy (policy).
-    -->
+// Behavior-specific examples: 2 per ring. Index 0 = upper chain, 1 = lower chain.
+const BEHAVIORS = {
+  vaping: {
+    individual:  [ {label:'Beliefs about\nvaping', ex:'A teen’s own view of whether vaping is risky or cool guides their choice.'}, {label:'Confidence to\nsay no', ex:'Believing you can refuse an offer (self-efficacy) makes saying no easier.'} ],
+    interpersonal:[ {label:'Friends who\nvape', ex:'Close friends who vape can make it feel normal and expected.'}, {label:'Family talks\nabout tobacco', ex:'Honest family conversations about tobacco shape a teen’s decisions.'} ],
+    community:   [ {label:'School vaping\npolicy', ex:'A school’s rules and support around vaping shape what happens on campus.'}, {label:'Vape shop\nnear campus', ex:'Having a vape shop near school makes products easy to get.'} ],
+    societal:    [ {label:'Flavored-vape\nadvertising', ex:'Ads for flavored vapes target young people and normalize use.'}, {label:'Social-media\nvaping trends', ex:'Viral videos can make vaping look popular and harmless.'} ],
+    policy:      [ {label:'State\ntobacco tax', ex:'Higher taxes raise the price and lower youth vaping rates.'}, {label:'Age-of-sale\nlaws', ex:'Laws setting a minimum purchase age limit youth access.'} ]
+  },
+  nutrition: {
+    individual:  [ {label:'Personal food\npreferences', ex:'What a person likes to eat shapes their daily choices.'}, {label:'Skills to cook\na simple meal', ex:'Knowing how to cook makes healthy eating more possible.'} ],
+    interpersonal:[ {label:'Family meal\nhabits', ex:'Shared family meals shape what and how teens eat.'}, {label:'Friends’ snack\nchoices', ex:'What friends eat together influences everyday snacking.'} ],
+    community:   [ {label:'School lunch\nquality', ex:'The food a school serves shapes what students eat each day.'}, {label:'Grocery access\nnearby', ex:'A nearby grocery makes fresh food easier to buy.'} ],
+    societal:    [ {label:'Fast-food\nadvertising', ex:'Heavy advertising makes fast food feel appealing and normal.'}, {label:'Price of fresh\nproduce', ex:'When produce costs more, budgets steer toward cheaper processed food.'} ],
+    policy:      [ {label:'School nutrition\nstandards', ex:'National standards set what counts as a healthy school meal.'}, {label:'Farm subsidy\nprograms', ex:'Subsidies change which foods are cheap and widely available.'} ]
+  },
+  activity: {
+    individual:  [ {label:'Enjoyment of\nmovement', ex:'Liking to move makes a person more likely to stay active.'}, {label:'Confidence in\nsports skills', ex:'Feeling capable at sports encourages joining in.'} ],
+    interpersonal:[ {label:'Active\nfriends', ex:'Friends who like to move invite you to be active too.'}, {label:'Family\nencouragement', ex:'Family support for play and sports builds active habits.'} ],
+    community:   [ {label:'Safe parks\nand trails', ex:'Safe, close places to play make daily activity easy.'}, {label:'After-school\nsports', ex:'Available teams and clubs give teens ways to be active.'} ],
+    societal:    [ {label:'Screen-time\nentertainment', ex:'Endless screen entertainment competes with active time.'}, {label:'Walkable\nneighborhood', ex:'Neighborhood design decides how easy it is to walk or bike.'} ],
+    policy:      [ {label:'PE class\nrequirements', ex:'Rules requiring PE guarantee some activity during the school day.'}, {label:'Funding for\nrecreation', ex:'Public funding builds the parks, courts, and pools people use.'} ]
+  },
+  mental: {
+    individual:  [ {label:'Beliefs about\nasking for help', ex:'Seeing help-seeking as strong, not weak, makes reaching out easier.'}, {label:'Naming your\nfeelings', ex:'Being able to name feelings helps a person know when to ask for help.'} ],
+    interpersonal:[ {label:'Trusted\nfriends', ex:'A friend you can confide in is often the first step to getting help.'}, {label:'Family\nopenness', ex:'Families that talk openly about feelings make help-seeking normal.'} ],
+    community:   [ {label:'School counselor\naccess', ex:'Available counselors give students a clear place to turn.'}, {label:'Peer support\nprograms', ex:'Peer programs connect students to support from people who understand.'} ],
+    societal:    [ {label:'Media messages\non mental health', ex:'How media portrays mental health shapes whether asking for help feels okay.'}, {label:'Stigma in\npopular culture', ex:'Cultural stigma can make people hide struggles instead of seeking help.'} ],
+    policy:      [ {label:'Counselor\nfunding', ex:'Funding decides how many counselors a school can actually hire.'}, {label:'Insurance for\ntherapy', ex:'Insurance coverage decides who can afford ongoing care.'} ]
+  }
+};
+
+// Node positions: upper chain (j=0) fans up-left, lower chain (j=1) fans down-right.
+// Angles stay near vertical so no "shapes" edge is ever perfectly horizontal
+// (which vis-network would mislabel).
+const homes = {};
+const ringOf = {};
+const nodes = [];
+RINGS.forEach((ring, k) => {
+  [0,1].forEach(j => {
+    const id = ring.key + '_' + j;
+    const angDeg = (j === 0) ? (-90 - k*7) : (90 - k*7);
+    const rad = angDeg * Math.PI / 180;
+    const x = Math.round(ring.r * Math.cos(rad));
+    const y = Math.round(ring.r * Math.sin(rad));
+    homes[id] = { x, y };
+    ringOf[id] = ring.key;
+    nodes.push({ id, shape:'dot', size:17,
+      color:{ background:ring.color, border:ring.border, highlight:{ background:ring.color, border:'#111' } },
+      font:{ size:12, color:'#1f2937', face:'Arial', strokeWidth:3, strokeColor:'#eef5fb' },
+      borderWidth:2, x, y });
+  });
+});
+
+// "shapes" edges: outer ring node -> next inner ring node, along each chain (toward center).
+const edges = [];
+const adj = {}; // undirected adjacency for chain highlighting
+function link(a,b){ (adj[a]=adj[a]||[]).push(b); (adj[b]=adj[b]||[]).push(a); }
+[0,1].forEach(j => {
+  for (let k = RINGS.length - 1; k > 0; k--) {
+    const from = RINGS[k].key + '_' + j;      // outer
+    const to   = RINGS[k-1].key + '_' + j;    // inner
+    edges.push({ id:'e_'+from+'_'+to, from, to, label:'shapes',
+      color:{ color:'#94a3b8', highlight:'#f6c445' }, width:2,
+      font:{ size:9, color:'#5a5a5a', strokeWidth:3, strokeColor:'aliceblue' }, smooth:{ type:'continuous' } });
+    link(from, to);
+  }
+});
+
+const RINGBY = {};
+RINGS.forEach(r => RINGBY[r.key] = r);
+const info = {};      // id -> { ringName, def, ex }
+const hoverInfo = {}; // id -> def
+
+function applyBehavior(key){
+  const data = BEHAVIORS[key];
+  const updates = [];
+  RINGS.forEach(ring => {
+    [0,1].forEach(j => {
+      const id = ring.key + '_' + j;
+      const d = data[ring.key][j];
+      updates.push({ id, label:d.label });
+      info[id] = { ringName:ring.name, def:ring.def, ex:d.ex };
+      hoverInfo[id] = ring.def;
+    });
+  });
+  dataset.nodes.update(updates);
+  clearHighlight();
+  box.innerHTML = INTRO;
+}
+
+const container = document.getElementById('network');
+const dataset = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  physics: false,
+  interaction: { hover:true, dragView:true, zoomView:true, navigationButtons:true, tooltipDelay:100000 },
+  edges: { arrows:{ to:{ enabled:true, scaleFactor:0.5 } } },
+  nodes: { shadow:true }
+};
+const network = new vis.Network(container, dataset, options);
+network.once('afterDrawing', () => network.fit());
+
+function clearHighlight(){
+  dataset.nodes.update(nodes.map(n => ({ id:n.id, opacity:1 })));
+  dataset.edges.update(dataset.edges.get().map(e => ({ id:e.id, hidden:false })));
+}
+
+// Light up the full causal chain the clicked node sits on (undirected walk toward the center).
+function highlightChain(startId){
+  const keep = new Set(); const stack = [startId];
+  while (stack.length){
+    const n = stack.pop();
+    if (keep.has(n)) continue;
+    keep.add(n);
+    (adj[n] || []).forEach(nb => { if (!keep.has(nb)) stack.push(nb); });
+  }
+  dataset.nodes.update(nodes.map(n => ({ id:n.id, opacity: keep.has(n.id) ? 1 : 0.18 })));
+  dataset.edges.update(dataset.edges.get().map(e => ({ id:e.id, hidden: !(keep.has(e.from) && keep.has(e.to)) })));
+}
+
+function showInfo(id){
+  const d = info[id];
+  if (!d) return;
+  box.innerHTML = '<strong>' + d.ringName + ' level</strong><br>' + d.def +
+    '<span class="reflect">Example: ' + d.ex + '</span>';
+}
+
+network.on('hoverNode', p => { const h = hoverInfo[p.node]; if (h) box.innerHTML = h; });
+network.on('click', p => {
+  if (p.nodes.length) { showInfo(p.nodes[0]); highlightChain(p.nodes[0]); }
+  else { clearHighlight(); box.innerHTML = INTRO; }
+});
+
+// Children can rearrange nodes; they snap gently back into the tidy concentric layout.
+network.on('dragEnd', p => {
+  if (!p.nodes.length) return;
+  setTimeout(() => { p.nodes.forEach(id => { const h = homes[id]; if (h) dataset.nodes.update({ id, x:h.x, y:h.y }); }); }, 700);
+});
+
+document.getElementById('behavior').addEventListener('change', e => applyBehavior(e.target.value));
+applyBehavior('vaping');
+</script>
 </body>
 </html>

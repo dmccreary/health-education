@@ -3,128 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Why Breakfast? Cause and Effect</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Why Breakfast? Cause and Effect MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="why-breakfast-matters.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Why Breakfast? Cause and Effect</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> why-breakfast-matters</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students explain why eating breakfast is important by comparing two versions of the same student's morning — one with breakfast and one without.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** why-breakfast-matters<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain, summarize, infer
-    
-    Learning objective: Students explain why eating breakfast is important by comparing two versions of the same student's morning — one with breakfast and one without.
-    
-    Canvas layout:
-    - Left area (350px): "With Breakfast" morning scene (student playing energetically, focused in class)
-    - Right area (350px): "Without Breakfast" morning scene (student looking tired, distracted)
-    - Bottom strip (100px): Toggle button and explanation caption
-    
-    Visual elements:
-    - Two side-by-side illustrated scenes of the same cartoon student's morning
-    - Small energy-meter icon above each scene (full vs. low)
-    
-    Interactive controls:
-    - Button: "Toggle Scene" (switches focus between the two scenes)
-    - Hover or click each scene: reveals a caption explaining what is happening and why
-    
-    Default parameters:
-    - Both scenes visible at start; "With Breakfast" scene highlighted first
-    
-    Data Visibility Requirements:
-      Stage 1: Show both scenes side by side with energy meters
-      Stage 2: Click "With Breakfast" scene — caption explains the fuel/energy connection
-      Stage 3: Click "Without Breakfast" scene — caption explains why the student feels tired and unfocused
-      Stage 4: Summary caption ties both scenes together: "Breakfast fuels your body and brain for the whole morning."
-    
-    Behavior:
-    - Clicking either scene highlights it and reveals its caption; the energy meter animates filling or draining once, then stays still (no continuous animation)
-    
-    Instructional Rationale: This is an Understand-level (explain/summarize) objective, so the MicroSim uses a side-by-side comparison with revealed captions rather than continuous animation, letting students infer the cause-and-effect relationship between breakfast and energy/focus at their own pace.
-    
-    Implementation notes: Use p5.js. Keep both scenes calm and simple; avoid making the "without breakfast" student look unwell, just tired and less focused. Teacher reads captions aloud.
-    -->
+    <main></main>
 </body>
 </html>

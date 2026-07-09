@@ -1,127 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Six Big Ideas Concept Map</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 560 -->
+<title>Six Big Ideas Concept Map</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 18px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 380px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 9px; font-size: 11px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 13px; height: 13px; margin-right: 6px; vertical-align: middle; border: 1px solid #555; border-radius: 50%; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 9px 11px; font-size: 13px; color: #334155; line-height: 1.5; min-height: 84px; }
+  .infobox strong { color: navy; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Six Big Ideas Concept Map</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> six-big-ideas-map</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Remember (L1)</p>
-            <p><strong>Learning Objective:</strong> Students identify each of the six root words for this chapter (Health, Trusted Adult, Permission, Safe Behavior, Influence, Communication) and recognize that Health is the central idea connecting the other five.</p>
-        </div>
+<main>
+  <h3>Six Big Ideas Concept Map</h3>
+  <div class="subtitle">Health is the center that connects the other five big ideas. Hover a circle to hear its meaning; click an outer idea to light up its link to Health.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k" style="background:#f5d020;border-color:#8a6d0b;"></span>Health (the big idea)<br>
+      <span class="k" style="background:#3b6fb5;"></span>Trusted Adult<br>
+      <span class="k" style="background:#2e8b57;"></span>Permission<br>
+      <span class="k" style="background:#e08a2f;"></span>Safe Behavior<br>
+      <span class="k" style="background:#8e5bb5;"></span>Influence<br>
+      <span class="k" style="background:#2fa4a0;"></span>Communication
     </div>
+  </div>
+  <div class="infobox" id="infobox">These are the six big ideas of this chapter. <strong>Health</strong> sits in the center because it connects to all the others: a trusted adult, permission, safe behavior, influence, and communication each help you stay healthy. Hover or click a circle to learn what it means.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+const INTRO = 'These are the six big ideas of this chapter. <strong>Health</strong> sits in the center because it connects to all the others: a trusted adult, permission, safe behavior, influence, and communication each help you stay healthy. Hover or click a circle to learn what it means.';
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// Center + five outer ideas placed evenly around Health like a flower.
+// Angles start at the top (-90 deg) with 72 deg spacing; none is horizontal (closest is 18 deg off),
+// which avoids the vis-network perfectly-horizontal edge-label rendering bug.
+const R = 210;
+const ideas = [
+  { id:'trusted', label:'🤝\nTrusted\nAdult', color:'#3b6fb5', fc:'black', ang:-90,
+    def:'Trusted Adult: a grown-up who listens, keeps you safe, and helps you when you have a problem.' },
+  { id:'permission', label:'✋\nPermission', color:'#2e8b57', fc:'black', ang:-18,
+    def:'Permission: getting a clear "yes" before you do something that involves someone else’s body, feelings, or things.' },
+  { id:'safe', label:'🛡️\nSafe\nBehavior', color:'#e08a2f', fc:'black', ang:54,
+    def:'Safe Behavior: choices that protect your body and mind from harm.' },
+  { id:'influence', label:'➡️\nInfluence', color:'#8e5bb5', fc:'black', ang:126,
+    def:'Influence: the way the people and things around you can change what you think, feel, or do.' },
+  { id:'communication', label:'💬\nCommunication', color:'#2fa4a0', fc:'black', ang:198,
+    def:'Communication: sharing your thoughts and feelings clearly, and listening carefully to others.' }
+];
 
-    Type: graph-model
-    **sim-id:** six-big-ideas-map<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Remember (L1)
-    Bloom Taxonomy Verb: identify, name, recognize
-    
-    Learning objective: Students identify each of the six root words for this chapter (Health, Trusted Adult, Permission, Safe Behavior, Influence, Communication) and recognize that Health is the central idea connecting the other five.
-    
-    Purpose: Show Health as a hub node connected to the five supporting ideas, so students see the chapter's whole shape before studying each part.
-    
-    Node types:
-    1. Health (center, large yellow circle)
-       - Property: "The big idea — how well your body and mind are working and feeling"
-    2. Trusted Adult, Permission, Safe Behavior, Influence, Communication (five smaller circles around Health, each a different color: blue, green, orange, purple, teal)
-       - Property: one child-friendly definition sentence per node (matching the table above)
-    
-    Edge types:
-    1. CONNECTS_TO (thick gray lines from Health to each of the five outer nodes)
-       - No arrowheads needed; represents "is part of," not direction
-    
-    Layout: Hierarchical/radial with Health in the center and the five ideas arranged evenly around it like a flower.
-    
-    Interactive features:
-    - Hover any node: node glows and a caption appears below the graph with that word's one-sentence meaning, read aloud by the teacher
-    - Click any outer node: the connecting edge to Health highlights in yellow, reinforcing "this idea is part of being healthy"
-    - Drag nodes: children can rearrange the circles; they snap gently back into a tidy layout after a few seconds
-    - Zoom: mouse wheel or pinch; Pan: click-and-drag background
-    
-    Visual styling: Large circular nodes (at least 80px) with big friendly icons (a heart for Health, a handshake for Trusted Adult, a raised hand for Permission, a shield for Safe Behavior, an arrow for Influence, two speech bubbles for Communication). Simple sans-serif labels in large text.
-    
-    Legend: A small key below the canvas listing each color and its word.
-    
-    Implementation: vis-network with a fixed hierarchical/radial layout option (not free-floating physics) so the shape stays readable for young students; canvas size approximately 700x450px, responsive to container width.
-    -->
+const HEALTH_DEF = 'Health: the big idea — how well your body and mind are working and feeling.';
+
+const nodes = [], edges = [];
+const info = {};
+const homes = {}; // id -> {x,y} for gentle snap-back after a drag
+
+// Center Health node (large yellow circle)
+nodes.push({ id:'health', label:'❤️\nHealth', shape:'dot', size:46,
+  color:{ background:'#f5d020', border:'#8a6d0b', highlight:{ background:'#ffe250', border:'#8a6d0b' } },
+  font:{ size:36, color:'black', face:'Arial', multi:false }, borderWidth:3, x:0, y:0 });
+info['health'] = { def:HEALTH_DEF, full:HEALTH_DEF };
+homes['health'] = { x:0, y:0 };
+
+ideas.forEach(o => {
+  const rad = o.ang * Math.PI / 180;
+  const x = Math.round(R * Math.cos(rad));
+  const y = Math.round(R * Math.sin(rad));
+  nodes.push({ id:o.id, label:o.label, shape:'dot', size:34,
+    color:{ background:o.color, border:'#333', highlight:{ background:o.color, border:'#111' } },
+    font:{ size:24, color:o.fc, face:'Arial' }, borderWidth:2, x, y });
+  edges.push({ id:'e_'+o.id, from:'health', to:o.id, width:5,
+    color:{ color:'#9aa5b1', highlight:'#f5d020' }, smooth:{ type:'continuous' } });
+  info[o.id] = { def:o.def, full:o.def };
+  homes[o.id] = { x, y };
+});
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  physics: false,
+  interaction: { hover:true, dragView:true, zoomView:true, navigationButtons:true, tooltipDelay:100000 },
+  edges: { arrows:{ to:{ enabled:false } } },
+  nodes: { shadow:true }
+};
+const network = new vis.Network(container, data, options);
+network.once('afterDrawing', () => network.fit());
+
+function resetEdges(){
+  data.edges.update(edges.map(e => ({ id:e.id, color:{ color:'#9aa5b1', highlight:'#f5d020' }, width:5 })));
+}
+function highlightEdge(id){
+  resetEdges();
+  data.edges.update({ id:'e_'+id, color:{ color:'#f5d020', highlight:'#f5d020' }, width:8 });
+}
+
+network.on('hoverNode', p => { const d = info[p.node]; if (d) box.innerHTML = d.def; });
+network.on('click', p => {
+  if (p.nodes.length) {
+    const id = p.nodes[0];
+    box.innerHTML = '<strong>' + (id === 'health' ? 'Health' : info[id].def.split(':')[0]) + '</strong><br>' + info[id].full;
+    if (id !== 'health') highlightEdge(id); else resetEdges();
+  } else {
+    resetEdges();
+    box.innerHTML = INTRO;
+  }
+});
+
+// Children can rearrange the circles; they snap gently back into a tidy layout.
+network.on('dragEnd', p => {
+  if (!p.nodes.length) return;
+  setTimeout(() => {
+    p.nodes.forEach(id => { const h = homes[id]; if (h) data.nodes.update({ id, x:h.x, y:h.y }); });
+  }, 700);
+});
+</script>
 </body>
 </html>

@@ -1,140 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Helping Without Losing Yourself Decision Tool</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 628 -->
+<title>Helping Without Losing Yourself Decision Tool</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis', subGraphTitleMargin: { top: 10, bottom: 14 } } });
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+  main { display: flex; height: 100%; }
+  .diagram { flex: 2; background: aliceblue; display: flex; justify-content: center; align-items: center; overflow: hidden; padding: 8px; }
+  .diagram .mermaid { width: 100%; text-align: center; }
+  .diagram svg { max-width: 100%; height: auto; }
+  .info { flex: 1; background: #f8fafc; border-left: 1px solid #e2e8f0; padding: 10px; overflow: hidden; }
+  .info h3 { font-size: 14px; color: #1a3a6c; margin-bottom: 8px; }
+  #panel { font-size: 13px; color: #334155; line-height: 1.4; }
+  .node { cursor: pointer; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Helping Without Losing Yourself Decision Tool</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> helping-without-losing-yourself-tool</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students distinguish healthy peer-support boundaries</p>
-        </div>
-    </div>
+<main>
+  <div class="diagram"><div class="mermaid">
+flowchart TD
+    Support("You Are Supporting a<br/>Friend's Ongoing Mental<br/>Health Challenge"):::startNode
+    SecretDecision{"Are You Asked to Keep<br/>a Safety Risk Secret?"}:::decisionNode
+    TellAdult["Tell a Trusted Adult,<br/>Regardless of<br/>the Promise"]:::mildNode
+    SelfDecision{"Is This Affecting Your<br/>Own Sleep, Mood,<br/>or Schoolwork?"}:::decisionNode
+    SetLimits["Tell Your Own Trusted<br/>Adult and Set Limits"]:::mildNode
+    ContinueSupport["Continue Supportive<br/>Listening and Encourage<br/>Professional Help"]:::mildNode
+    Connected("Friend Is Connected to<br/>Support, and You<br/>Remain Well"):::goodNode
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    Support --> SecretDecision
+    SecretDecision -->|Yes| TellAdult
+    SecretDecision -->|No| SelfDecision
+    SelfDecision -->|Yes| SetLimits
+    SelfDecision -->|No| ContinueSupport
+    TellAdult --> Connected
+    SetLimits --> Connected
+    ContinueSupport --> Connected
 
-    Type: workflow
-    
-    **sim-id:** helping-without-losing-yourself-tool<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy Level: Analyze (L4)
-    Bloom Verb: distinguish, examine, differentiate
-    
-    Learning objective: Students distinguish healthy peer-support boundaries
-    from unsustainable or inappropriate ones, and examine when a helper should
-    involve additional adult or professional support for their own sake as
-    well as their friend's.
-    
-    Visual style: Mermaid flowchart, top-to-bottom, click handlers on every
-    node
-    
-    Nodes (all clickable):
-    1. "You Are Supporting a Friend's Ongoing Mental Health Challenge" — click
-       text: "This applies to ongoing support, distinct from an acute safety
-       crisis, which always requires immediate adult or 988 involvement"
-    2. "Are You Being Asked to Keep a Safety Risk Secret?" (decision diamond) —
-       click text: "This boundary is never optional — a safety secret is
-       always shared with a trusted adult"
-    3a. "Yes" → "Tell a Trusted Adult, Regardless of the Promise" — click
-       text: "This protects your friend's safety and your own wellbeing"
-    3b. "No" → "Is This Affecting Your Own Sleep, Mood, or Schoolwork?" — click
-       text: "Noticing this in yourself is not a sign you are a bad friend —
-       it is a sign you need support too"
-    4a. From 3b, "Yes" → "Tell Your Own Trusted Adult and Set Limits" — click
-       text: "Setting a limit on your own availability does not mean you have
-       abandoned your friend"
-    4b. From 3b, "No" → "Continue Supportive Listening and Encourage
-       Professional Help" — click text: "Ongoing encouragement toward
-       professional care remains the goal even when things feel manageable"
-    5. Shared end node "Friend Is Connected to Appropriate Support, and You
-       Remain Well" — click text: "A sustainable support role protects both
-       people, not just one"
-    
-    Connections: 1→2, 2→3a, 2→3b, 3b→4a, 3b→4b, 3a→5, 4a→5, 4b→5
-    
-    Color coding: gold for decision diamonds, blue for process steps, green
-    for the shared end node
-    
-    Interactive features: click any node for its infobox
-    
-    Implementation: Mermaid.js flowchart with JavaScript click bindings to a
-    custom showInfo() function
-    -->
+    classDef startNode fill:#5b9bd5,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef processNode fill:#7e57c2,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#ffd54f,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef emergNode fill:#e57373,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef mildNode fill:#64b5f6,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef goodNode fill:#66bb6a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef endNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef cautionNode fill:#ff9800,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    linkStyle default stroke:#999,stroke-width:2px,font-size:14px
+  </div></div>
+  <div class="info"><h3>Helping Without Losing Yourself</h3><div id="panel">Hover or tap any step for details.</div></div>
+</main>
+<script>
+const nodeInfo = {
+  "Support": "This applies to ongoing support, distinct from an acute safety crisis, which always requires immediate adult or 988 involvement.",
+  "SecretDecision": "This boundary is never optional — a safety secret is always shared with a trusted adult.",
+  "TellAdult": "This protects your friend's safety and your own wellbeing.",
+  "SelfDecision": "Noticing this in yourself is not a sign you are a bad friend — it is a sign you need support too.",
+  "SetLimits": "Setting a limit on your own availability does not mean you have abandoned your friend.",
+  "ContinueSupport": "Ongoing encouragement toward professional care remains the goal even when things feel manageable.",
+  "Connected": "A sustainable support role protects both people, not just one."
+};
+const panel = document.getElementById('panel');
+function setup() {
+  document.querySelectorAll('.node').forEach(n => {
+    const id = n.id.replace('flowchart-', '').split('-')[0];
+    if (nodeInfo[id]) {
+      n.addEventListener('mouseenter', () => { panel.textContent = nodeInfo[id]; });
+      n.addEventListener('click', () => { panel.textContent = nodeInfo[id]; });
+    }
+  });
+}
+function wait() {
+  const m = document.querySelector('.mermaid');
+  if (m && m.querySelector('svg') && document.querySelectorAll('.node').length) setup();
+  else setTimeout(wait, 100);
+}
+setTimeout(wait, 150);
+</script>
 </body>
 </html>

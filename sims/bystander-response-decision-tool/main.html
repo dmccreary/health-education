@@ -1,140 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Bystander Response Decision Tool</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 628 -->
+<title>Bystander Response Decision Tool</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis', subGraphTitleMargin: { top: 10, bottom: 14 } } });
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+  main { display: flex; height: 100%; }
+  .diagram { flex: 2; background: aliceblue; display: flex; justify-content: center; align-items: center; overflow: hidden; padding: 8px; }
+  .diagram .mermaid { width: 100%; text-align: center; }
+  .diagram svg { max-width: 100%; height: auto; }
+  .info { flex: 1; background: #f8fafc; border-left: 1px solid #e2e8f0; padding: 10px; overflow: hidden; }
+  .info h3 { font-size: 14px; color: #1a3a6c; margin-bottom: 8px; }
+  #panel { font-size: 13px; color: #334155; line-height: 1.4; }
+  .node { cursor: pointer; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Bystander Response Decision Tool</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> bystander-response-decision-tool</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students examine a bullying or exclusion scenario and</p>
-        </div>
-    </div>
+<main>
+  <div class="diagram"><div class="mermaid">
+flowchart TD
+    Witness("You Witness Exclusion<br/>or Bullying"):::startNode
+    SafeNow{"Is It Safe for You<br/>to Intervene Directly<br/>Right Now?"}:::decisionNode
+    Direct["Use Direct Intervention<br/>or Distraction"]:::mildNode
+    Ongoing{"Is the Situation<br/>Ongoing or Serious?"}:::decisionNode
+    Report["Report to an Adult<br/>With Authority to<br/>Act Immediately"]:::mildNode
+    CheckLater["Check In With the<br/>Person Afterward"]:::mildNode
+    Support("Support the Person<br/>Who Was Targeted"):::goodNode
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    Witness --> SafeNow
+    SafeNow -->|Yes| Direct
+    SafeNow -->|No| Ongoing
+    Ongoing -->|Yes| Report
+    Ongoing -->|No| CheckLater
+    Direct --> Support
+    Report --> Support
+    CheckLater --> Support
 
-    Type: workflow
-    
-    **sim-id:** bystander-response-decision-tool<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy Level: Analyze (L4)
-    Bloom Verb: examine, differentiate, organize
-    
-    Learning objective: Students examine a bullying or exclusion scenario and
-    differentiate which bystander strategy (direct intervention, distraction,
-    delayed support, or reporting) fits the specific situation and safety
-    considerations involved.
-    
-    Visual style: Mermaid flowchart, top-to-bottom, decision-driven, click
-    handlers on every node
-    
-    Nodes (all clickable, `click NodeId call showInfo("term")`):
-    1. "You Witness Exclusion or Bullying" — click text: "This applies to
-       in-person and digital/cyberbullying situations alike"
-    2. "Is It Safe for You to Intervene Directly Right Now?" (decision
-       diamond) — click text: "Your own safety is a legitimate factor in
-       choosing a response"
-    3a. "Yes" → "Use Direct Intervention or Distraction" — click text: "Direct
-       intervention means calmly telling the behavior to stop; distraction
-       means redirecting attention without confrontation"
-    3b. "No" → "Is the Situation Ongoing or Serious?" (decision diamond) —
-       click text: "Repeated behavior or any safety risk raises the priority
-       of adult involvement"
-    4a. From 3b, "Yes" → "Report to an Adult With Authority to Act
-       Immediately" — click text: "A teacher, coach, or administrator can
-       intervene with authority a peer does not have"
-    4b. From 3b, "No" → "Check In With the Person Afterward" — click text:
-       "Delayed support still communicates that what happened was seen and
-       mattered"
-    5. Shared end node "Support the Person Who Was Targeted" — click text:
-       "Every path leads back to making sure the person targeted is supported,
-       not just the incident being 'handled'"
-    
-    Connections: 1→2, 2→3a, 2→3b, 3b→4a, 3b→4b, 3a→5, 4a→5, 4b→5
-    
-    Color coding: gold for decision diamonds, blue for response actions, green
-    for the shared end node
-    
-    Interactive features: click any node for its infobox
-    
-    Implementation: Mermaid.js flowchart with JavaScript click bindings to a
-    custom showInfo() function
-    -->
+    classDef startNode fill:#5b9bd5,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef processNode fill:#7e57c2,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#ffd54f,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef emergNode fill:#e57373,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef mildNode fill:#64b5f6,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef goodNode fill:#66bb6a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef endNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    linkStyle default stroke:#999,stroke-width:2px,font-size:14px
+  </div></div>
+  <div class="info"><h3>Bystander Response Decision Tool</h3><div id="panel">Hover or tap any step for details.</div></div>
+</main>
+<script>
+const nodeInfo = {
+  "Witness": "This applies to in-person and digital/cyberbullying situations alike.",
+  "SafeNow": "Your own safety is a legitimate factor in choosing a response.",
+  "Direct": "Direct intervention means calmly telling the behavior to stop; distraction means redirecting attention without confrontation.",
+  "Ongoing": "Repeated behavior or any safety risk raises the priority of adult involvement.",
+  "Report": "A teacher, coach, or administrator can intervene with authority a peer does not have.",
+  "CheckLater": "Delayed support still communicates that what happened was seen and mattered.",
+  "Support": "Every path leads back to making sure the person targeted is supported, not just the incident being 'handled'."
+};
+const panel = document.getElementById('panel');
+function setup() {
+  document.querySelectorAll('.node').forEach(n => {
+    const id = n.id.replace('flowchart-', '').split('-')[0];
+    if (nodeInfo[id]) {
+      n.addEventListener('mouseenter', () => { panel.textContent = nodeInfo[id]; });
+      n.addEventListener('click', () => { panel.textContent = nodeInfo[id]; });
+    }
+  });
+}
+function wait() {
+  const m = document.querySelector('.mermaid');
+  if (m && m.querySelector('svg') && document.querySelectorAll('.node').length) setup();
+  else setTimeout(wait, 100);
+}
+setTimeout(wait, 150);
+</script>
 </body>
 </html>

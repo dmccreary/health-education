@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 512 -->
+<title>Comparing Documented Physiological Risk Areas by Substance</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 16px; margin: 4px 0 2px; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .chart-box { background: aliceblue; border: 1px solid silver; border-radius: 6px; padding: 8px; }
+  .chart-container { position: relative; width: 100%; height: 320px; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid #b23b3b; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 66px; }
+  .infobox strong { color: navy; }
+  .hint { font-style: italic; color: #64748b; }
+  .source { text-align: center; color: gray; font-size: 11px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <h3>Comparing Documented Physiological Risk Areas by Substance</h3>
+  <div class="subtitle">Relative, research-informed risk ratings by body system. Hover a bar for detail; click a substance in the legend to isolate it.</div>
+  <div class="chart-box">
+    <div class="chart-container"><canvas id="chart"></canvas></div>
+  </div>
+  <div class="infobox" id="infobox">
+    Each bar shows a documented level of physiological risk — <strong>Low, Moderate, High, or Severe</strong> — for a body
+    system, compared across four substance categories. <span class="hint">These are relative, qualitative ratings for comparison, not exact clinical statistics.</span>
+  </div>
+  <div class="source">Illustrative, research-informed qualitative ratings for learning — not precise clinical measurements. Any substance use carries risk; risk rises when substances are combined.</div>
+</main>
+<script>
+// Body systems (y-axis categories) and substance categories (grouped datasets).
+const systems = ['Respiratory', 'Cardiovascular', 'Liver / Metabolic', 'Immune / Reproductive'];
+const RATING = ['', 'Low', 'Moderate', 'High', 'Severe'];   // 1..4
+
+// Risk ratings 1=Low, 2=Moderate, 3=High, 4=Severe, ordered by `systems`.
+const substances = [
+  { name: 'Nicotine / Vaping', color: '#d9822b', data: [3, 2, 1, 2] },
+  { name: 'Cannabis',          color: '#4a9d5b', data: [2, 2, 1, 2] },
+  { name: 'Alcohol',           color: '#4472c4', data: [1, 2, 3, 2] },
+  { name: 'Other Drugs (incl. opioids/stimulants)', color: '#b23b3b', data: [3, 3, 3, 4] }
+];
+
+// Factual, chapter-grounded notes keyed by "substanceIndex-systemIndex".
+const notes = {
+  '0-0': 'Inhaling heated aerosols irritates and inflames airway tissue, a well-documented respiratory risk.',
+  '0-1': 'Nicotine raises heart rate and blood pressure, adding cardiovascular strain over time.',
+  '0-2': 'Direct liver/metabolic effects are comparatively lower for nicotine than for alcohol.',
+  '0-3': 'Nicotine can affect immune response and reproductive/developmental health.',
+  '1-0': 'Smoked cannabis exposes the lungs to combustion byproducts, a moderate respiratory risk.',
+  '1-1': 'Cannabis can temporarily raise heart rate, a moderate cardiovascular effect.',
+  '1-2': 'Documented direct liver/metabolic risk is comparatively lower.',
+  '1-3': 'Cannabis can affect immune and reproductive/developmental processes.',
+  '2-0': 'Alcohol has comparatively lower direct respiratory risk than inhaled substances.',
+  '2-1': 'Alcohol affects heart rhythm and blood pressure, a moderate cardiovascular risk.',
+  '2-2': 'The liver processes alcohol, so heavy use carries a high liver/metabolic risk.',
+  '2-3': 'Alcohol can weaken immune response and affect reproductive/developmental health.',
+  '3-0': 'Opioids can slow or suppress breathing; stimulants strain the lungs — a high respiratory risk.',
+  '3-1': 'Stimulants sharply raise heart rate and blood pressure, a high cardiovascular risk.',
+  '3-2': 'These substances place high demands on the liver and metabolism.',
+  '3-3': 'This category carries severe, wide-ranging effects across immune and reproductive systems.'
+};
+
+const box = document.getElementById('infobox');
+const ctx = document.getElementById('chart').getContext('2d');
+const chart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: systems,
+    datasets: substances.map(s => ({
+      label: s.name, data: s.data,
+      backgroundColor: s.color, borderColor: '#334155', borderWidth: 1,
+      borderRadius: 3, categoryPercentage: 0.8, barPercentage: 0.9
+    }))
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true, maintainAspectRatio: false,
+    onClick: (e, els) => { if (els.length) showNote(els[0].datasetIndex, els[0].index); },
+    scales: {
+      x: {
+        beginAtZero: true, min: 0, max: 4,
+        ticks: { stepSize: 1, callback: v => RATING[v] || '', font: { size: 11 } },
+        title: { display: true, text: 'Relative Documented Risk' }
+      },
+      y: { ticks: { font: { size: 11 } } }
+    },
+    plugins: {
+      legend: {
+        position: 'top', align: 'end', labels: { font: { size: 11 }, boxWidth: 14 },
+        // Click a substance in the legend to isolate it; click the isolated one again to show all.
+        onClick: (e, item, legend) => {
+          const ci = legend.chart, idx = item.datasetIndex;
+          const visible = ci.data.datasets.filter((d, i) => ci.isDatasetVisible(i)).length;
+          const onlyThis = ci.isDatasetVisible(idx) && visible === 1;
+          ci.data.datasets.forEach((d, i) => ci.setDatasetVisibility(i, onlyThis ? true : i === idx));
+          ci.update();
+        }
+      },
+      tooltip: {
+        callbacks: {
+          title: items => items[0].dataset.label,
+          label: c => systems[c.dataIndex] + ': ' + (RATING[c.parsed.x] || ''),
+          afterLabel: c => notes[c.datasetIndex + '-' + c.dataIndex] || ''
+        },
+        bodyFont: { size: 11 }, boxPadding: 4
+      }
+    }
+  }
+});
+
+function showNote(sIdx, sysIdx) {
+  const s = substances[sIdx];
+  box.innerHTML = '<strong>' + s.name + ' &mdash; ' + systems[sysIdx] + ':</strong> '
+    + RATING[s.data[sysIdx]] + ' risk. ' + (notes[sIdx + '-' + sysIdx] || '');
+}
+</script>
+</body>
+</html>

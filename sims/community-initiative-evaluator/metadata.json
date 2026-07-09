@@ -1,0 +1,38 @@
+{
+  "title": "Community Nutrition Initiative Evaluator",
+  "description": "Students assess five community nutrition initiatives against a rubric of reach, sustainability, and cultural fit, then compare their scores to a reasoned model evaluation.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-09",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "community-initiative-evaluator",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "assess, prioritize, recommend",
+  "completion_status": "complete",
+  "chapter_number": 1,
+  "chapter_title": "Food and Nutrition",
+  "chapter_dir": "01-food-and-nutrition",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/01-food-and-nutrition",
+  "educational": {
+    "gradeLevel": "Grade 9-12",
+    "subjectArea": "Health Education",
+    "topic": "Community Nutrition Initiatives",
+    "learningObjectives": [
+      "Students assess five community nutrition initiatives against a rubric of reach, sustainability, and cultural fit, then compare their scores to a reasoned model evaluation."
+    ],
+    "bloomLevel": "Evaluate (L5)",
+    "duration": "10-20 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "assess, prioritize, recommend",
+    "interactionPattern": "interactive-microsim",
+    "instructionalRationale": "Supports an Evaluate-level objective by having students rate program models against an explicit rubric and reconcile their judgment with a reasoned model evaluation."
+  }
+}

@@ -1,139 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Social Conditions to Health Outcomes Pathway Map</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 620 -->
+<title>Social Conditions to Health Outcomes Pathway Map</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 18px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 460px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 9px; font-size: 11px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 13px; height: 13px; margin-right: 6px; vertical-align: middle; border: 1px solid #555; }
+  .legend .circle { border-radius: 50%; }
+  .legend .diamond { transform: rotate(45deg); width: 11px; height: 11px; }
+  .legend .line { display:inline-block; width: 18px; height: 0; margin-right:6px; vertical-align: middle; border: 0; border-top: 3px solid #222; }
+  .legend .line.dashed { border-top: 3px dashed #8a94a3; }
+  .legend .line.thin { border-top: 2px solid #b0b7c0; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 9px 11px; font-size: 13px; color: #334155; line-height: 1.5; min-height: 92px; }
+  .infobox strong { color: navy; }
+  .infobox .reflect { display: block; margin-top: 5px; color: seagreen; font-style: italic; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Social Conditions to Health Outcomes Pathway Map</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> social-conditions-health-pathway-map</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students examine how five social-condition categories
-(economic stability, neighborhood environment, food access, health care</p>
-        </div>
+<main>
+  <h3>Social Conditions to Health Outcomes Pathway Map</h3>
+  <div class="subtitle">Hover for a quick definition. Click a blue condition to see what it compounds with; click an orange pathway for a real example. These are systemic pathways, not verdicts about any person.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k circle" style="background:#333a45;"></span>Health outcome<br>
+      <span class="k" style="background:#3b6fb5;"></span>Social-condition category<br>
+      <span class="k diamond" style="background:#e08a2f;"></span>&nbsp;Real-world pathway<br>
+      <span class="line thin"></span>Shapes<br>
+      <span class="line"></span>Contributes To<br>
+      <span class="line dashed"></span>Compounds With
     </div>
+  </div>
+  <div class="infobox" id="infobox">Health is shaped by the conditions people live in. Follow the arrows from a social-condition category, through a real-world pathway, to a health outcome. Notice how many conditions <strong>compound</strong> with each other. These are systemic causes, not individual choices.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+const INTRO = 'Health is shaped by the conditions people live in. Follow the arrows from a social-condition category, through a real-world pathway, to a health outcome. Notice how many conditions <strong>compound</strong> with each other. These are systemic causes, not individual choices.';
+const SYSTEMIC = 'Remember: this is a systemic pathway, not a verdict about any individual.';
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// Outcome nodes anchored center-right (dark circles)
+const outcomes = [
+  { id:'chronic', label:'Chronic\nDisease Risk', x:440, y:-175,
+    def:'Chronic disease risk: the long-term likelihood of conditions like heart disease, diabetes, or asthma.',
+    full:'Chronic disease risk is the long-term chance of conditions such as heart disease, diabetes, and asthma. Notice how many arrows point here from social conditions, not from single choices.' },
+  { id:'lifeexp', label:'Life\nExpectancy Gap', x:470, y:0,
+    def:'Life expectancy gap: the difference in average lifespan between neighborhoods or groups.',
+    full:'The life-expectancy gap is the difference in average lifespan between neighborhoods or groups, sometimes many years across a single city. It grows from stacked conditions, not from any one person.' },
+  { id:'mental', label:'Mental\nHealth Burden', x:440, y:175,
+    def:'Mental health burden: the weight of stress, anxiety, and depression carried by a community.',
+    full:'Mental health burden is the community-wide weight of stress, anxiety, and depression. Chronic stress and thin support systems, both shaped by conditions, feed it.' }
+];
 
-    Type: graph-model
-    
-    **sim-id:** social-conditions-health-pathway-map<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy Level: Analyze (L4)
-    Bloom Verb: examine, differentiate, organize
-    
-    Learning objective: Students examine how five social-condition categories
-    (economic stability, neighborhood environment, food access, health care
-    access, education/social context) connect to and compound each other on
-    the way to a health outcome, distinguishing systemic causes from individual
-    behavior.
-    
-    Node types:
-    1. Central outcome nodes (dark circles): "Chronic Disease Risk," "Life
-       Expectancy Gap," "Mental Health Burden"
-    2. Category nodes (blue squares): Economic Stability, Neighborhood/Physical
-       Environment, Food Access, Health Care Access, Education/Social Context
-    3. Mechanism nodes (orange diamonds), 2 per category, naming a concrete
-       real-world pathway (e.g., under Food Access: "Grocery store closes,
-       replaced by convenience stores" and "Fresh produce costs more per
-       calorie than processed food")
-    
-    Edge types:
-    - "Compounds With" (dashed gray, category to category, showing overlap)
-    - "Contributes To" (solid black, mechanism to outcome node)
-    - "Shapes" (category to its mechanism nodes)
-    
-    Layout: Force-directed network, outcome nodes anchored center-right,
-    category nodes surrounding, mechanisms as outer leaves
-    
-    Interactive features:
-    - Hover any node: one-sentence plain-language description
-    - Click a category node: side panel explains that category and highlights
-      every category it compounds with, using the "Compounds With" edges
-    - Click a mechanism node: side panel gives a concrete, real-world example
-    - Drag, zoom, and pan enabled
-    
-    Legend: color/shape key for outcomes, categories, mechanisms; edge style
-    key distinguishing "compounds with," "contributes to," and "shapes"
-    
-    Implementation: vis-network, force-directed layout, click-triggered panel
-    content stored in a JSON lookup keyed by node id; emphasize in all panel
-    text that these are systemic pathways, not verdicts about individuals
-    -->
+// Category nodes (blue squares) each with 2 mechanism pathways (orange diamonds)
+const categories = [
+  { id:'econ', label:'Economic\nStability', compounds:['food','care','edu'],
+    def:'Economic stability: whether families have steady income, work, and enough money for basics like housing and food.',
+    full:'Economic stability is whether families have steady income and enough for basics like housing and food. It shapes almost everything else: whether a sick day means lost pay, and whether medicine fits the budget.',
+    mechs:[
+      { id:'econ_m1', label:'Low wages:\nrent vs. medicine', to:'chronic',
+        full:'When a paycheck must cover rent OR medicine but not both, people skip prescriptions and check-ups. Over time, untreated conditions become chronic disease. The pressure is systemic, not a personal failing.' },
+      { id:'econ_m2', label:'Unstable work:\nno paid sick leave', to:'lifeexp',
+        full:'Hourly and gig jobs often have no paid sick leave, so seeing a doctor means losing pay. Care gets delayed and small problems grow. The barrier is the job structure, not the worker.' }
+    ] },
+  { id:'neigh', label:'Neighborhood /\nEnvironment', compounds:['food','care'],
+    def:'Neighborhood and physical environment: the safety, housing, air, and spaces where people live and play.',
+    full:'Neighborhood and physical environment is the safety, housing, air, and space where people live. A place can make healthy living easy or hard before anyone makes a single choice.',
+    mechs:[
+      { id:'neigh_m1', label:'Few safe parks\nor sidewalks', to:'chronic',
+        full:'Without safe sidewalks, parks, or lighting, daily activity becomes hard, raising the risk of heart disease and diabetes. The design of a neighborhood shapes how easily anyone can move.' },
+      { id:'neigh_m2', label:'Older housing:\nmold, pests, lead', to:'lifeexp',
+        full:'Aging housing can hold mold, pests, and lead paint that trigger asthma and slow child development. These exposures come from housing conditions, not household choices.' }
+    ] },
+  { id:'food', label:'Food\nAccess', compounds:['econ','neigh'],
+    def:'Food access: how easily people can reach affordable, healthy food near where they live.',
+    full:'Food access is how easily people reach affordable, healthy food. When stores and prices change, so do diets, no matter how much someone wants to eat well.',
+    mechs:[
+      { id:'food_m1', label:'Grocery closes;\nonly convenience\nstores left', to:'chronic',
+        full:'When the neighborhood grocery closes and only convenience stores remain, fresh food gets far away while chips and soda stay close. Diets shift toward processed food, raising chronic-disease risk. The map of stores changed, not people’s willpower.' },
+      { id:'food_m2', label:'Fresh produce\ncosts more\nper calorie', to:'chronic',
+        full:'Calorie for calorie, fresh produce often costs more than processed food, so tight budgets buy the cheaper calories. Pricing shapes the plate long before anyone makes a choice.' }
+    ] },
+  { id:'care', label:'Health Care\nAccess', compounds:['econ','neigh'],
+    def:'Health care access: whether people can reach and afford clinics, doctors, and medicine when needed.',
+    full:'Health care access is whether people can reach and afford care. Distance, cost, and coverage decide who gets early treatment and who does not.',
+    mechs:[
+      { id:'care_m1', label:'No nearby clinic;\nlong trips for care', to:'lifeexp',
+        full:'When the closest clinic is far away, a routine visit can take a whole day and a long ride. Distance turns small needs into skipped care, widening the life-expectancy gap.' },
+      { id:'care_m2', label:'No insurance:\nskip check-ups', to:'lifeexp',
+        full:'Uninsured families often skip check-ups and screenings that catch disease early, so problems are found later and are harder to treat. The gap is in coverage, not in caring about health.' }
+    ] },
+  { id:'edu', label:'Education /\nSocial Context', compounds:['econ'],
+    def:'Education and social context: schooling, information, belonging, and the stress of unfair treatment.',
+    full:'Education and social context covers schooling, information, belonging, and the stress of unfair treatment. It shapes both what people know and how much stress their bodies carry.',
+    mechs:[
+      { id:'edu_m1', label:'Under-funded\nschools', to:'mental',
+        full:'Under-funded schools may lack health classes, counselors, and safe spaces, leaving students with fewer tools and options. Opportunity is shaped by school funding, which students do not control.' },
+      { id:'edu_m2', label:'Ongoing stress from\ndiscrimination', to:'mental',
+        full:'Facing discrimination day after day keeps the body’s stress response switched on, which harms mental health and, over years, physical health too. The source is unfair treatment, not the person enduring it.' }
+    ] }
+];
+
+const nodes = [], edges = [];
+const info = {};       // id -> { title, full }
+const hoverInfo = {};  // id -> short line
+const kind = {};       // id -> 'outcome' | 'category' | 'mech'
+const compoundsMap = {};
+const compoundEdgeIds = {}; // "a|b" -> edge id
+
+// Outcome nodes (dark circles, fixed center-right)
+outcomes.forEach(o => {
+  nodes.push({ id:o.id, label:o.label, shape:'dot', size:26,
+    color:{ background:'#333a45', border:'#12161c', highlight:{ background:'#4a5361', border:'#12161c' } },
+    font:{ size:12, color:'white', face:'Arial' }, borderWidth:2, x:o.x, y:o.y, fixed:{ x:true, y:true } });
+  info[o.id] = { title:o.label.replace(/\n/g,' '), full:o.full };
+  hoverInfo[o.id] = o.def;
+  kind[o.id] = 'outcome';
+});
+
+// Category (blue squares) + mechanism (orange diamonds) + Shapes / Contributes To edges
+categories.forEach(c => {
+  nodes.push({ id:c.id, label:c.label, shape:'box', margin:8,
+    color:{ background:'#3b6fb5', border:'#274b7d', highlight:{ background:'#4d80c6', border:'#274b7d' } },
+    font:{ size:12, color:'white', face:'Arial' }, borderWidth:2 });
+  info[c.id] = { title:c.label.replace(/\n/g,' '), full:c.full };
+  hoverInfo[c.id] = c.def;
+  kind[c.id] = 'category';
+  compoundsMap[c.id] = c.compounds;
+
+  c.mechs.forEach(m => {
+    nodes.push({ id:m.id, label:m.label, shape:'diamond', size:15,
+      color:{ background:'#e08a2f', border:'#a85f14', highlight:{ background:'#f0a24f', border:'#a85f14' } },
+      font:{ size:11, color:'#3a2600', face:'Arial' }, borderWidth:2 });
+    info[m.id] = { title:m.label.replace(/\n/g,' '), full:m.full };
+    hoverInfo[m.id] = 'A real-world pathway: ' + m.label.replace(/\n/g,' ') + '.';
+    kind[m.id] = 'mech';
+    // Shapes: category -> mechanism (thin gray)
+    edges.push({ id:'s_'+m.id, from:c.id, to:m.id, color:{ color:'#b0b7c0', highlight:'#7f8896' }, width:1.5, smooth:{ type:'continuous' } });
+    // Contributes To: mechanism -> outcome (solid black)
+    edges.push({ id:'ct_'+m.id, from:m.id, to:m.to, label:'contributes to',
+      color:{ color:'#222', highlight:'#000' }, width:2,
+      font:{ size:9, color:'#333', strokeWidth:3, strokeColor:'aliceblue' }, smooth:{ type:'continuous' } });
+  });
+});
+
+// Compounds With: category <-> category (dashed gray, no arrowheads). De-duplicate pairs.
+const seenPair = new Set();
+categories.forEach(c => {
+  c.compounds.forEach(other => {
+    const key = [c.id, other].sort().join('|');
+    if (seenPair.has(key)) return;
+    seenPair.add(key);
+    const eid = 'cw_' + key.replace('|','_');
+    edges.push({ id:eid, from:c.id, to:other, label:'compounds with', dashes:true,
+      color:{ color:'#8a94a3', highlight:'#e08a2f' }, width:2,
+      font:{ size:9, color:'#5a5a5a', strokeWidth:3, strokeColor:'aliceblue' },
+      arrows:{ to:{ enabled:false } }, smooth:{ type:'curvedCW', roundness:0.2 } });
+    compoundEdgeIds[key] = eid;
+  });
+});
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  physics: { solver:'forceAtlas2Based', forceAtlas2Based:{ gravitationalConstant:-70, springLength:130, avoidOverlap:1 }, stabilization:{ iterations:420 } },
+  interaction: { hover:true, dragView:true, zoomView:true, navigationButtons:true, tooltipDelay:100000 },
+  edges: { arrows:{ to:{ enabled:true, scaleFactor:0.5 } } },
+  nodes: { shadow:true }
+};
+const network = new vis.Network(container, data, options);
+network.once('stabilizationIterationsDone', () => { network.setOptions({ physics:false }); network.fit(); });
+
+function clearHighlight(){
+  data.nodes.update(nodes.map(n => ({ id:n.id, opacity:1 })));
+  data.edges.update(data.edges.get().map(e => ({ id:e.id, hidden:false })));
+}
+
+// Click a category: keep it + the categories it compounds with, light up the Compounds With edges.
+function highlightCompounds(catId){
+  const partners = compoundsMap[catId] || [];
+  const keep = new Set([catId, ...partners]);
+  data.nodes.update(nodes.map(n => ({ id:n.id, opacity: keep.has(n.id) ? 1 : 0.2 })));
+  data.edges.update(data.edges.get().map(e => {
+    const isCompound = e.id.indexOf('cw_') === 0;
+    const linksKept = keep.has(e.from) && keep.has(e.to);
+    return { id:e.id, hidden: !(isCompound && linksKept) };
+  }));
+}
+
+function showInfo(id){
+  const d = info[id];
+  if (!d) return;
+  let html = '<strong>' + d.title + '</strong><br>' + d.full;
+  if (kind[id] === 'category') {
+    const partners = (compoundsMap[id] || []).map(p => info[p].title).join(', ');
+    html += '<span class="reflect">Highlighted links show the conditions this one compounds with: ' + partners + '.</span>';
+  } else {
+    html += '<span class="reflect">' + SYSTEMIC + '</span>';
+  }
+  box.innerHTML = html;
+}
+
+network.on('hoverNode', p => { const h = hoverInfo[p.node]; if (h) box.innerHTML = h; });
+network.on('click', p => {
+  if (p.nodes.length) {
+    const id = p.nodes[0];
+    showInfo(id);
+    if (kind[id] === 'category') highlightCompounds(id); else clearHighlight();
+  } else {
+    clearHighlight();
+    box.innerHTML = INTRO;
+  }
+});
+</script>
 </body>
 </html>

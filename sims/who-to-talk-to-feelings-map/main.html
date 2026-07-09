@@ -1,115 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Who Can I Talk To About My Feelings?</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 540 -->
+<title>Who Can I Talk To About My Feelings?</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 18px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 380px; border: 1px solid silver; border-radius: 6px; background: #fffdf5; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 9px; font-size: 11px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 13px; height: 13px; margin-right: 6px; vertical-align: middle; border: 1px solid #555; border-radius: 50%; }
+  .legend .line { display:inline-block; width: 18px; height: 0; margin-right:6px; vertical-align: middle; border: 0; border-top: 3px solid #c9a94f; }
+  .infobox { margin-top: 8px; background: #fffbea; border-left: 4px solid #e0b93a; border-radius: 4px; padding: 9px 11px; font-size: 13px; color: #4a3f1e; line-height: 1.5; min-height: 84px; }
+  .infobox strong { color: #7a5c00; }
+  .infobox .say { display: block; margin-top: 5px; color: #2f7d5b; font-style: italic; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Who Can I Talk To About My Feelings?</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> who-to-talk-to-feelings-map</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Remember (L1)</p>
-            <p><strong>Learning Objective:</strong> Students identify trusted people they can talk to about hard feelings by exploring a support-network map centered on themselves.</p>
-        </div>
+<main>
+  <h3>Who Can I Talk To About My Feelings?</h3>
+  <div class="subtitle">When feelings get heavy, you have people who will listen. Click a circle for an example of what to say.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k" style="background:#ffd966;"></span>Me<br>
+      <span class="k" style="background:#8bb8e8;"></span>Someone I can talk to<br>
+      <span class="line"></span>How they help
     </div>
+  </div>
+  <div class="infobox" id="infobox">When feelings get heavy, you have people who will listen. Each line shows how that person can help. Click a circle for an example of what to say, or click "Me" for a reminder.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+const INTRO = 'When feelings get heavy, you have people who will listen. Each line shows how that person can help. Click a circle for an example of what to say, or click "Me" for a reminder.';
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// Trusted people you can talk to about feelings. Each edge is labeled with the kind of help offered.
+const people = [
+  { id:'parent',   label:'Parent /\nGuardian',       help:'Helps me think it through',
+    hover:'Parent or guardian — helps you think it through.',
+    full:'A parent or guardian who cares about you.', say:'"I\'ve been feeling ___ and I wanted to talk to you about it."' },
+  { id:'teacher',  label:'Teacher',                   help:'Notices and checks in',
+    hover:'Teacher — notices and checks in on you.',
+    full:'A teacher you see every day.', say:'"Can I talk to you for a minute? I\'ve been having a hard time."' },
+  { id:'counselor',label:'School\nCounselor',         help:'Knows calming strategies',
+    hover:'School counselor — knows calming strategies.',
+    full:'A school counselor who helps students with feelings.', say:'"I\'ve been feeling worried and I\'d like some help."' },
+  { id:'nurse',    label:'School\nNurse',             help:'Helps when it affects my body',
+    hover:'School nurse — helps when feelings affect your body.',
+    full:'The school nurse, who can help when feelings show up in your body.', say:'"I don\'t feel right, and I think it might be about how I\'m feeling."' },
+  { id:'family',   label:'Trusted\nFamily Member',    help:'Listens without judging',
+    hover:'A trusted family member — listens without judging.',
+    full:'Another trusted family member, like a grandparent, aunt, uncle, or older cousin.', say:'"Can I tell you something that\'s been on my mind?"' },
+  { id:'friend',   label:'Close\nFriend',             help:'Reminds me I\'m not alone',
+    hover:'A close friend — reminds you that you\'re not alone.',
+    full:'A close friend you trust.', say:'"I\'ve been feeling down. Can we talk?"' }
+];
 
-    Type: graph-model
-    **sim-id:** who-to-talk-to-feelings-map<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Remember (L1)
-    Bloom Taxonomy Verb: identify, recall, recognize
-    
-    Learning objective: Students identify trusted people they can talk to about hard feelings by exploring a support-network map centered on themselves.
-    
-    Purpose: Reinforce that help for emotional struggles is close by, using the same hub-and-spoke pattern as the trusted-adult map from Chapter 2, now applied specifically to feelings.
-    
-    Node types: Center node "Me" (soft yellow circle); trusted-person nodes (soft blue circles) connected to "Me" — Parent/Guardian, Teacher, School Counselor, School Nurse, Another Trusted Family Member, Close Friend.
-    
-    Edge types: A line connecting "Me" to each trusted person, labeled with the kind of help offered (e.g., "Helps me think it through," "Knows calming strategies," "Listens without judging").
-    
-    Layout: Radial/hub layout with "Me" in the center.
-    
-    Interactive features: Click any trusted-person node to reveal an infobox naming who they are and an example thing to say to them. Click the center "Me" node to reveal: "You can talk to more than one person, more than once." Drag, zoom, and pan supported.
-    
-    Visual styling: Warm palette, simple circle shapes, no realistic depictions of people.
-    
-    Implementation: vis-network with click-to-reveal infobox panels.
-    -->
+const nodes = [], edges = [];
+const info = {}, hoverInfo = {};
+
+// Center "Me" node (soft yellow)
+nodes.push({ id:'me', label:'Me', shape:'dot', size:30, x:0, y:0, fixed:{ x:true, y:true },
+  color:{ background:'#ffd966', border:'#c9a227', highlight:{ background:'#ffe08a', border:'#c9a227' } },
+  font:{ size:15, color:'#5a4700', face:'Arial' }, borderWidth:3 });
+info['me'] = { title:'Me', full:'You can talk to more than one person, more than once. If the first person is busy, or if you still feel heavy afterward, you can always reach out again.' };
+hoverInfo['me'] = 'This is you. You can talk to more than one person, more than once.';
+
+// Ring layout. START = -84 with a 60-degree step guarantees no spoke is perfectly horizontal,
+// so vis-network renders every edge label correctly on first load.
+const R = 235, N = people.length, START = -84;
+people.forEach((p, i) => {
+  const ang = (START + i * (360 / N)) * Math.PI / 180;
+  nodes.push({
+    id:p.id, label:p.label, shape:'dot', size:22,
+    x: Math.round(R * Math.cos(ang)), y: Math.round(R * Math.sin(ang)), fixed:{ x:true, y:true },
+    color:{ background:'#8bb8e8', border:'#4a76a8', highlight:{ background:'#a6cbf0', border:'#4a76a8' } },
+    font:{ size:12, color:'#12314f', face:'Arial' }, borderWidth:2
+  });
+  edges.push({ id:'e_'+p.id, from:'me', to:p.id, label:p.help,
+    color:{ color:'#c9a94f', highlight:'#a9852f' }, width:2,
+    font:{ size:10, color:'#6b5a2a', strokeWidth:4, strokeColor:'#fffdf5', align:'middle' },
+    arrows:{ to:{ enabled:true, scaleFactor:0.4 } }, smooth:{ type:'continuous' } });
+  info[p.id] = { title:p.label.replace(/\n/g,' '), full:p.full, say:p.say };
+  hoverInfo[p.id] = p.hover;
+});
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  layout: { improvedLayout:false },
+  physics: false,
+  interaction: { hover:true, dragNodes:true, dragView:true, zoomView:true, navigationButtons:true, tooltipDelay:100000 },
+  edges: { arrows:{ to:{ enabled:true, scaleFactor:0.4 } } },
+  nodes: { shadow:true }
+};
+const network = new vis.Network(container, data, options);
+network.fit();
+
+function showInfo(id){
+  const d = info[id];
+  if (!d) return;
+  let html = '<strong>' + d.title + '</strong><br>' + d.full;
+  if (d.say) html += '<span class="say">You might say: ' + d.say + '</span>';
+  box.innerHTML = html;
+}
+
+network.on('hoverNode', p => { const h = hoverInfo[p.node]; if (h) box.innerHTML = h; });
+network.on('click', p => {
+  if (p.nodes.length) showInfo(p.nodes[0]);
+  else box.innerHTML = INTRO;
+});
+</script>
 </body>
 </html>

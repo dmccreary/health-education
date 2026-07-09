@@ -3,131 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Where Does This Idea Come From?</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Where Does This Idea Come From? MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="where-does-this-idea-come-from-sorter.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Where Does This Idea Come From?</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> where-does-this-idea-come-from-sorter</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Remember (L1)</p>
-            <p><strong>Learning Objective:</strong> Students identify everyday examples as being influenced mainly by family, school, or media/technology.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** where-does-this-idea-come-from-sorter<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Remember (L1)
-    Bloom Taxonomy Verb: identify, recognize, sort
-    
-    Learning objective: Students identify everyday examples as being influenced mainly by family, school, or media/technology.
-    
-    Canvas layout:
-    - Top area (100px): A card showing one short example phrase, such as "Dad makes sure everyone eats vegetables at dinner"
-    - Middle area (250px): Three labeled drop zones or buttons side by side: "Family," "School," "Media/Technology"
-    - Bottom area (150px): Infobox with feedback text
-    
-    Visual elements:
-    - Eight preset example cards: "Dad makes sure everyone eats vegetables at dinner," "The school has a rule about washing hands before lunch," "A video ad shows a toy that promises to make you happy," "Grandma teaches a family recipe that is passed down every year," "The gym teacher explains why stretching matters," "A cartoon character says a snack brand is 'the best,'" "A big sibling models wearing a helmet while biking," "An app sends a reminder to drink water"
-    - Simple flat icons for each zone: a house (Family), a school building (School), a screen/megaphone (Media/Technology)
-    
-    Interactive controls:
-    - Click a card, then click the matching zone
-    - Button: "Next Example"
-    - Button: "Reset"
-    
-    Default parameters:
-    - Example 1: "Dad makes sure everyone eats vegetables at dinner" (correct answer: Family)
-    - No zone selected yet
-    
-    Data Visibility Requirements:
-      Stage 1: Show example 1 text only
-      Stage 2: Student clicks "Family" -- infobox shows "Yes! Family members often shape the foods we eat and the habits we practice at home."
-      Stage 3: Student advances to the ad example and clicks "Media/Technology" -- infobox shows "Right. Ads and shows try to influence what we want, even when they don't say so directly."
-      Stage 4: If a student picks the wrong zone, infobox gently explains which source fits best and why
-    
-    Behavior:
-    - Each example has one best-fit answer; correct clicks highlight the zone and show a short explanation
-    - Incorrect clicks show a calm correction that names the correct source
-    
-    Instructional Rationale: This is a Remember-level objective focused on recognizing categories of influence, so a simple three-bin sorting task with immediate feedback is appropriate; no multi-step simulation is needed.
-    
-    Implementation notes: Use p5.js. Keep icons simple and flat, matching the mascot's visual style. Rotate through all eight examples before repeating.
-    -->
+    <main></main>
 </body>
 </html>

@@ -1,144 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Substance Use Ripple Effect Mapper</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 472 -->
+<title>Substance Use Ripple Effect Mapper</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis', subGraphTitleMargin: { top: 10, bottom: 14 } } });
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+  main { display: flex; height: 100%; }
+  .diagram { flex: 2; background: aliceblue; display: flex; justify-content: center; align-items: center; overflow: hidden; padding: 8px; }
+  .diagram .mermaid { width: 100%; text-align: center; }
+  .diagram svg { max-width: 100%; height: auto; }
+  .info { flex: 1; background: #f8fafc; border-left: 1px solid #e2e8f0; padding: 10px; overflow: hidden; }
+  .info h3 { font-size: 14px; color: #1a3a6c; margin-bottom: 8px; }
+  #panel { font-size: 13px; color: #334155; line-height: 1.4; }
+  .node { cursor: pointer; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Substance Use Ripple Effect Mapper</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> substance-use-ripple-effect-mapper</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students examine how a single substance-use pattern</p>
-        </div>
-    </div>
+<main>
+  <div class="diagram"><div class="mermaid">
+flowchart TD
+    Start("Ongoing Substance Use<br/>such as regular vaping<br/>or drinking"):::grayNode
+    Disrupted["Disrupted Sleep<br/>and Concentration"]:::grayNode
+    RelStrain["Relationship<br/>Trust Strain"]:::orangeNode
+    SchoolPerf["Declining School<br/>Performance"]:::orangeNode
+    WorkRisk["Workplace Risk"]:::orangeNode
+    Stress["Increased Stress"]:::emergNode
+    Cycle("Cycle Can Reinforce Further<br/>Substance Use —<br/>Unless Interrupted"):::emergNode
+    Support["Support Breaks<br/>This Cycle"]:::goodNode
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    Start --> Disrupted
+    Disrupted --> RelStrain
+    Disrupted --> SchoolPerf
+    Disrupted --> WorkRisk
+    RelStrain --> Stress
+    SchoolPerf --> Stress
+    WorkRisk --> Stress
+    Stress --> Cycle
+    Cycle -.->|Without intervention| Start
+    Cycle --> Support
 
-    Type: workflow
-    
-    **sim-id:** substance-use-ripple-effect-mapper<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy Level: Analyze (L4)
-    Bloom Verb: examine, distinguish, organize
-    
-    Learning objective: Students examine how a single substance-use pattern
-    can create compounding effects across relationships, school, and work
-    domains, distinguishing direct effects from cascading secondary effects.
-    
-    Visual style: Mermaid flowchart with a central starting node branching
-    into three domain chains, all nodes clickable via `click NodeId call
-    showInfo("term")`
-    
-    Nodes:
-    1. Start: "Ongoing Substance Use (e.g., regular vaping or drinking)" —
-       click reveals: "This node represents any pattern of regular substance
-       use, not a specific product or method."
-    2. "Disrupted Sleep and Concentration" — click reveals: "Nicotine,
-       cannabis, and alcohol all measurably disrupt sleep quality and
-       next-day concentration."
-    3a. "Relationship Trust Strain" — click reveals: "Mood changes and
-       impaired judgment are linked to increased conflict and reduced honest
-       communication."
-    3b. "Declining School Performance" — click reveals: "Reduced
-       concentration and attendance are linked to lower grades and more
-       disciplinary consequences."
-    3c. "Workplace Risk" — click reveals: "Impaired performance and safety
-       violations are linked to job loss and, in roles involving machinery or
-       driving, physical danger to self and others."
-    4. "Increased Stress" — click reveals: "Strained relationships, school
-       struggles, and job instability all increase overall stress levels."
-    5. End (highlighted): "Cycle Can Reinforce Further Substance Use — Unless
-       Interrupted" — click reveals: "Reaching out for support at any point in
-       this chain is what breaks the cycle; earlier is easier, but any point
-       is a valid time to seek help."
-    
-    Connections: Start → 2 → (3a, 3b, 3c, each shown as parallel branches) →
-    4 → 5, with a dashed feedback arrow from 5 back to Start labeled "Without
-    intervention"
-    
-    Color coding: gray for the start/mechanism nodes, orange for the three
-    domain-effect branches, red for the stress/cycle nodes, green highlight on
-    a small "Support Breaks This Cycle" callout node connected to node 5
-    
-    Implementation: Mermaid flowchart with click bindings to a showInfo()
-    function; infobox text in a JS lookup object; content restriction: no node
-    depicts a specific product, brand, or method of use — only documented
-    effect categories and relationship pathways.
-    -->
+    classDef startNode fill:#5b9bd5,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef processNode fill:#7e57c2,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#ffd54f,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef emergNode fill:#e57373,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef mildNode fill:#64b5f6,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef goodNode fill:#66bb6a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef orangeNode fill:#ffb74d,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef grayNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef endNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    linkStyle default stroke:#999,stroke-width:2px,font-size:14px
+  </div></div>
+  <div class="info"><h3>Substance Use Ripple Effect</h3><div id="panel">Hover or tap any step for details.</div></div>
+</main>
+<script>
+const nodeInfo = {
+  "Start": "This node represents any pattern of regular substance use, not a specific product or method.",
+  "Disrupted": "Nicotine, cannabis, and alcohol all measurably disrupt sleep quality and next-day concentration.",
+  "RelStrain": "Mood changes and impaired judgment are linked to increased conflict and reduced honest communication.",
+  "SchoolPerf": "Reduced concentration and attendance are linked to lower grades and more disciplinary consequences.",
+  "WorkRisk": "Impaired performance and safety violations are linked to job loss and, in roles involving machinery or driving, physical danger to self and others.",
+  "Stress": "Strained relationships, school struggles, and job instability all increase overall stress levels.",
+  "Cycle": "Reaching out for support at any point in this chain is what breaks the cycle; earlier is easier, but any point is a valid time to seek help.",
+  "Support": "Asking for help from a trusted adult, counselor, or support line interrupts the cycle at any stage. Reaching out is a sign of strength, not failure."
+};
+const panel = document.getElementById('panel');
+function setup() {
+  document.querySelectorAll('.node').forEach(n => {
+    const id = n.id.replace('flowchart-', '').split('-')[0];
+    if (nodeInfo[id]) {
+      n.addEventListener('mouseenter', () => { panel.textContent = nodeInfo[id]; });
+      n.addEventListener('click', () => { panel.textContent = nodeInfo[id]; });
+    }
+  });
+}
+function wait() {
+  const m = document.querySelector('.mermaid');
+  if (m && m.querySelector('svg') && document.querySelectorAll('.node').length) setup();
+  else setTimeout(wait, 100);
+}
+setTimeout(wait, 150);
+</script>
 </body>
 </html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 540 -->
+<title>Comparing Sugar and Caffeine in Common Drinks</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 4px 0 2px; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .controls { display: flex; justify-content: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+  .controls button {
+    font-family: inherit; font-size: 12px; padding: 5px 12px; border-radius: 14px;
+    border: 1px solid silver; background: #f1f5f9; color: #334155; cursor: pointer;
+  }
+  .controls button:hover { background: #e2e8f0; }
+  .controls button.active { background: navy; color: white; border-color: navy; }
+  .chart-box { background: aliceblue; border: 1px solid silver; border-radius: 6px; padding: 8px; }
+  .chart-container { position: relative; width: 100%; height: 300px; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid goldenrod; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 64px; }
+  .infobox strong { color: navy; }
+  .frame { font-style: italic; color: seagreen; }
+  .source { text-align: center; color: gray; font-size: 11px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <h3>Comparing Sugar and Caffeine in Common Drinks</h3>
+  <div class="subtitle">The bars show how much sugar and caffeine each drink has, from 0 to 5. Tap a drink name to learn more.</div>
+  <div class="controls">
+    <button id="btnBoth" class="active">Show Both</button>
+    <button id="btnSugar">Show Sugar Only</button>
+    <button id="btnCaffeine">Show Caffeine Only</button>
+  </div>
+  <div class="chart-box">
+    <div class="chart-container"><canvas id="chart"></canvas></div>
+  </div>
+  <div class="infobox" id="infobox">
+    Some drinks have a lot of <strong>sugar</strong>, and some also have <strong>caffeine</strong>.
+    The best everyday drinks stay low on both. Tap a drink to see if it is a
+    <span class="frame">good everyday choice</span>.
+  </div>
+  <div class="source">Levels are a simple 0–5 learning scale, not exact amounts. Milk's sugar is natural, not added sugar.</div>
+</main>
+<script>
+const drinks = ['Water', 'Plain Milk', 'Fruit Juice', 'Soda', 'Sports Drink', 'Sweetened Iced Tea'];
+const sugar    = [0, 1, 4, 5, 4, 4];   // 0-5 sweetness scale
+const caffeine = [0, 0, 0, 3, 0, 3];   // 0-5 caffeine scale
+
+// Simple, Grade-2-friendly caption for each drink shown on click.
+const caption = {
+  0: ['good', 'Water is a <strong>good everyday choice</strong> because it has no sugar and no caffeine.'],
+  1: ['good', 'Plain milk is a <strong>good everyday choice</strong>. Its sugar is natural, and it has no caffeine.'],
+  2: ['not', 'Fruit juice is <strong>not a good everyday choice</strong> because it has a lot of sugar.'],
+  3: ['not', 'Soda is <strong>not a good everyday choice</strong> because it has the most sugar and also caffeine.'],
+  4: ['not', 'A sports drink is <strong>not a good everyday choice</strong> because it has a lot of sugar.'],
+  5: ['not', 'Sweetened iced tea is <strong>not a good everyday choice</strong> because it has a lot of sugar and caffeine.']
+};
+const hoverNote = {
+  0: 'Water has zero sugar and zero caffeine.',
+  1: 'Milk has only a little natural sugar and no caffeine.',
+  2: 'Fruit juice can have a lot of sugar, even though it comes from fruit.',
+  3: 'Soda has the highest sugar level and often has caffeine too.',
+  4: 'Sports drinks have a lot of sugar and are made for hard exercise.',
+  5: 'Sweetened iced tea has a lot of sugar and often caffeine.'
+};
+
+const GOLD = 'goldenrod', GOLD_HI = 'gold';
+const BLUE = 'steelblue', BLUE_HI = 'deepskyblue';
+let selected = -1;
+const box = document.getElementById('infobox');
+
+function sugarColors(){ return drinks.map((d, i) => i === selected ? GOLD_HI : GOLD); }
+function caffColors(){ return drinks.map((d, i) => i === selected ? BLUE_HI : BLUE); }
+
+function showDrink(i){
+  selected = i;
+  chart.data.datasets[0].backgroundColor = sugarColors();
+  chart.data.datasets[1].backgroundColor = caffColors();
+  chart.update();
+  box.innerHTML = '<strong>' + drinks[i] + '</strong> &mdash; ' + caption[i][1]
+    + ' <span class="frame">Sugar: ' + sugar[i] + ' / 5 &nbsp;|&nbsp; Caffeine: ' + caffeine[i] + ' / 5.</span>';
+}
+
+const ctx = document.getElementById('chart').getContext('2d');
+const chart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: drinks,
+    datasets: [
+      { label: 'Sugar Level', data: sugar, backgroundColor: sugarColors(), borderColor: 'darkgoldenrod', borderWidth: 1 },
+      { label: 'Caffeine Level', data: caffeine, backgroundColor: caffColors(), borderColor: 'navy', borderWidth: 1 }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    onClick: (e, els) => { if (els.length) showDrink(els[0].index); },
+    interaction: { mode: 'index', intersect: false },
+    scales: {
+      x: { ticks: { font: { size: 10 } }, grid: { display: false } },
+      y: {
+        beginAtZero: true, max: 5,
+        ticks: { stepSize: 1, font: { size: 11 } },
+        title: { display: true, text: 'Level (0 = none, 5 = a lot)' }
+      }
+    },
+    plugins: {
+      legend: { position: 'top', align: 'end', labels: { font: { size: 11 }, boxWidth: 14 } },
+      tooltip: {
+        callbacks: {
+          label: c => c.dataset.label + ': ' + c.parsed.y + ' / 5',
+          afterBody: items => hoverNote[items[0].dataIndex]
+        },
+        bodyFont: { size: 11 }, boxPadding: 4
+      }
+    }
+  },
+  plugins: [{
+    // Dashed "Best Everyday Zone" reference line at level 1
+    id: 'everydayZone',
+    afterDatasetsDraw(c) {
+      const g = c.ctx, y = c.scales.y.getPixelForValue(1);
+      const left = c.chartArea.left, right = c.chartArea.right;
+      g.save();
+      g.strokeStyle = 'seagreen'; g.lineWidth = 1.5; g.setLineDash([6, 4]);
+      g.beginPath(); g.moveTo(left, y); g.lineTo(right, y); g.stroke();
+      g.setLineDash([]);
+      g.fillStyle = 'seagreen'; g.font = 'bold 11px Arial'; g.textAlign = 'left';
+      g.fillText('Best Everyday Zone (at or below 1)', left + 4, y - 5);
+      g.restore();
+    }
+  }]
+});
+
+// Toggle which series show
+const btnBoth = document.getElementById('btnBoth');
+const btnSugar = document.getElementById('btnSugar');
+const btnCaffeine = document.getElementById('btnCaffeine');
+function setActive(btn){ [btnBoth, btnSugar, btnCaffeine].forEach(b => b.classList.remove('active')); btn.classList.add('active'); }
+function setVisible(showSugar, showCaff){ chart.setDatasetVisibility(0, showSugar); chart.setDatasetVisibility(1, showCaff); chart.update(); }
+btnBoth.onclick     = () => { setActive(btnBoth);     setVisible(true, true); };
+btnSugar.onclick    = () => { setActive(btnSugar);    setVisible(true, false); };
+btnCaffeine.onclick = () => { setActive(btnCaffeine); setVisible(false, true); };
+</script>
+</body>
+</html>

@@ -1,142 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Health Ad Claim Checker</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 840 -->
+<title>Health Ad Claim Checker</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis', subGraphTitleMargin: { top: 10, bottom: 14 } } });
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+  main { display: flex; height: 100%; }
+  .diagram { flex: 2; background: aliceblue; display: flex; justify-content: center; align-items: flex-start; overflow: hidden; padding: 10px; }
+  .diagram .mermaid { width: 100%; text-align: center; }
+  .diagram svg { max-width: 100%; height: auto; }
+  .info { flex: 1; background: #f8fafc; border-left: 1px solid #e2e8f0; padding: 10px; overflow: hidden; }
+  .info h3 { font-size: 14px; color: #1a3a6c; margin-bottom: 8px; }
+  #panel { font-size: 13px; color: #334155; line-height: 1.4; }
+  .node { cursor: pointer; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Health Ad Claim Checker</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> health-ad-claim-checker</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students examine a health product advertisement claim step by step and distinguish trustworthy claims from manipulative sales tactics using a decision path.</p>
-        </div>
-    </div>
+<main>
+  <div class="diagram"><div class="mermaid">
+flowchart TD
+    Start("You see a health<br/>product ad"):::startNode
+    Dec1{"Does it promise instant<br/>or miracle results?"}:::decisionNode
+    Warn1["Warning sign &ndash;<br/>be skeptical"]:::emergNode
+    Dec2{"Is the evidence a real<br/>study, or just<br/>testimonials?"}:::decisionNode
+    Warn2["Warning sign &ndash;<br/>ask for real evidence"]:::emergNode
+    Dec3{"Is there pressure to<br/>decide immediately?"}:::decisionNode
+    Warn3["Warning sign &ndash;<br/>slow down"]:::emergNode
+    AskAdult["Ask a trusted adult<br/>before deciding"]:::mildNode
+    Decided("Informed<br/>decision made"):::goodNode
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    Start --> Dec1
+    Dec1 -->|Yes| Warn1
+    Dec1 -->|No| Dec2
+    Dec2 -->|Testimonials| Warn2
+    Dec2 -->|Real study| Dec3
+    Dec3 -->|Pressure| Warn3
+    Dec3 -->|No pressure| AskAdult
+    AskAdult --> Decided
 
-    Type: workflow
-    **sim-id:** health-ad-claim-checker<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: examine, distinguish, differentiate
-    
-    Learning objective: Students examine a health product advertisement claim step by step and distinguish trustworthy claims from manipulative sales tactics using a decision path.
-    
-    Purpose: Walk students through a repeatable question sequence for judging any health product or service claim
-    
-    Visual style: Top-down flowchart with decision diamonds
-    
-    Steps:
-    1. Start: "You see a health product ad"
-       Hover text: "This could be a supplement, gadget, app, or service promising a health benefit"
-    
-    2. Decision: "Does it promise instant or miracle results?"
-       Hover text: "Real health changes usually take consistent effort, not one product"
-    
-    3a. If Yes: "Warning sign — be skeptical"
-       Hover text: "Miracle claims are a major red flag for an unreliable product"
-    
-    3b. If No: Continue to next question: "Is the evidence a real study, or just testimonials?"
-       Hover text: "Testimonials are personal stories, not scientific proof"
-    
-    4a. If Testimonials only: "Warning sign — ask for real evidence"
-       Hover text: "A believable story is not the same as data from a study"
-    
-    4b. If Real study cited: Continue to next question: "Is there pressure to decide immediately?"
-       Hover text: "High-pressure tactics try to stop you from thinking it through"
-    
-    5a. If Yes pressure: "Warning sign — slow down"
-       Hover text: "Trustworthy products don't need to rush your decision"
-    
-    5b. If No pressure: "Ask a trusted adult before deciding"
-       Hover text: "Even claims that pass every check deserve a second opinion from an adult before money is spent"
-    
-    End: "Informed decision made"
-       Hover text: "You've used evidence, not pressure, to make the choice"
-    
-    Color coding:
-    - Yellow diamonds: decision points
-    - Red boxes: warning sign outcomes
-    - Green box: final informed-decision outcome
-    
-    Interactive features: Every node has a click directive opening an infobox with the hover text description shown above; nodes are colored to reinforce warning versus safe paths.
-    
-    Implementation: Mermaid flowchart with click bindings for every node routed to a JavaScript function that displays the node's explanation in a side panel.
-    -->
+    classDef startNode fill:#5b9bd5,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef processNode fill:#7e57c2,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#ffd54f,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef emergNode fill:#e57373,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef mildNode fill:#64b5f6,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef goodNode fill:#66bb6a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef endNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    linkStyle default stroke:#999,stroke-width:2px,font-size:14px
+  </div></div>
+  <div class="info"><h3>Health Ad Claim Checker</h3><div id="panel">Hover or tap any step for details.</div></div>
+</main>
+<script>
+const nodeInfo = {
+  "Start": "This could be a supplement, gadget, app, or service promising a health benefit.",
+  "Dec1": "Real health changes usually take consistent effort, not one product.",
+  "Warn1": "Miracle claims are a major red flag for an unreliable product.",
+  "Dec2": "Testimonials are personal stories, not scientific proof.",
+  "Warn2": "A believable story is not the same as data from a study.",
+  "Dec3": "High-pressure tactics try to stop you from thinking it through.",
+  "Warn3": "Trustworthy products don't need to rush your decision.",
+  "AskAdult": "Even claims that pass every check deserve a second opinion from an adult before money is spent.",
+  "Decided": "You've used evidence, not pressure, to make the choice."
+};
+const panel = document.getElementById('panel');
+function setup() {
+  document.querySelectorAll('.node').forEach(n => {
+    const id = n.id.replace('flowchart-', '').split('-')[0];
+    if (nodeInfo[id]) {
+      n.addEventListener('mouseenter', () => { panel.textContent = nodeInfo[id]; });
+      n.addEventListener('click', () => { panel.textContent = nodeInfo[id]; });
+    }
+  });
+}
+function wait() {
+  const m = document.querySelector('.mermaid');
+  if (m && m.querySelector('svg') && document.querySelectorAll('.node').length) setup();
+  else setTimeout(wait, 100);
+}
+setTimeout(wait, 150);
+</script>
 </body>
 </html>

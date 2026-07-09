@@ -3,124 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Vitamin and Mineral Matcher</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Vitamin and Mineral Matcher MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
+        body { margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif; }
     </style>
+    <script src="vitamin-mineral-matcher.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Vitamin and Mineral Matcher</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> vitamin-mineral-matcher</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Remember (L1)</p>
-            <p><strong>Learning Objective:</strong> Students recall and match common vitamins and minerals to the body function each one supports.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** vitamin-mineral-matcher<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Remember (L1)
-    Bloom Taxonomy Verb: recall, identify, match
-    
-    Learning objective: Students recall and match common vitamins and minerals to the body function each one supports.
-    
-    Canvas layout:
-    - Left column (250px): Six cards labeled Vitamin C, Vitamin D, Vitamin A, Calcium, Iron, Fiber
-    - Right column (250px): Six shuffled function cards ("Helps heal cuts and fight illness," "Builds strong bones," "Supports healthy eyes and skin," "Builds strong bones and teeth," "Helps blood carry oxygen," "Helps digestion")
-    - Bottom strip (100px): Feedback caption and "Check Matches" / "Reset" buttons
-    
-    Visual elements:
-    - Simple flat icons next to each nutrient name (orange slice for Vitamin C, sun for Vitamin D, carrot for Vitamin A, milk glass for Calcium, drop for Iron, grain stalk for Fiber)
-    
-    Interactive controls:
-    - Click a nutrient card, then click the function card you think matches it — a line connects the pair
-    - Button: "Check Matches" reveals which pairs are correct
-    - Button: "Reset" clears all connections and starts over
-    
-    Default parameters:
-    - All six pairs unmatched at start; cards presented in shuffled, non-corresponding order
-    
-    Behavior:
-    - Correct pair: green line and checkmark
-    - Incorrect pair: red line with a gentle prompt to try again
-    - After checking, a summary caption states how many were matched correctly out of six
-    
-    Instructional Rationale: This is a Remember-level objective (recall and match facts), so a straightforward matching-pairs pattern is appropriate rather than a complex simulation — the goal is confident recall of nutrient-function pairs, not exploration of a dynamic system.
-    
-    Implementation notes: Use p5.js. Keep function text short enough to read at a glance. Store nutrient-function pairs as an array of objects for easy reshuffling.
-    -->
+    <main></main>
 </body>
 </html>

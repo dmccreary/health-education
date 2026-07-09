@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 480 -->
+<title>Indigenous Food Sovereignty Milestones</title>
+<script src="https://unpkg.com/vis-timeline@7.7.3/standalone/umd/vis-timeline-graph2d.min.js"></script>
+<link href="https://unpkg.com/vis-timeline@7.7.3/styles/vis-timeline-graph2d.min.css" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 4px; }
+
+  /* Color coding (from the chapter spec):
+     green  = land/water restoration (wild rice, bison)
+     blue   = organizational / policy milestones
+     gold   = seed-saving efforts */
+  .vis-item.restoration { background-color: #bfe3c0; border-color: seagreen;  color: #12401a; }
+  .vis-item.policy      { background-color: #bcd8f5; border-color: steelblue; color: #10314f; }
+  .vis-item.seed        { background-color: #f3e3a8; border-color: goldenrod; color: #5a4410; }
+  .vis-item { font-size: 12px; font-weight: bold; }
+  .vis-item.vis-box { border-width: 2px; border-radius: 5px; }
+  .vis-item.vis-dot { border-width: 8px; }
+  .vis-time-axis .vis-text { color: #334155; font-size: 11px; }
+
+  #timeline { border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+
+  .legend { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin: 4px 0 6px; font-size: 12px; color: #334155; }
+  .legend .chip { display: inline-flex; align-items: center; gap: 5px; }
+  .legend .sw { width: 13px; height: 13px; border-radius: 3px; border: 1.5px solid; display: inline-block; }
+  .legend .sw.restoration { background: #bfe3c0; border-color: seagreen; }
+  .legend .sw.policy      { background: #bcd8f5; border-color: steelblue; }
+  .legend .sw.seed        { background: #f3e3a8; border-color: goldenrod; }
+
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid seagreen; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 116px; }
+  .infobox strong { color: navy; }
+  .infobox .lbl { color: navy; font-weight: bold; }
+
+  .source { margin-top: 6px; font-size: 11px; color: gray; text-align: center; line-height: 1.35; }
+</style>
+</head>
+<body>
+<main>
+  <h3>Indigenous Food Sovereignty Milestones</h3>
+  <div class="subtitle">From the 1990s to today, Native nations have worked to reclaim control over their own food systems. Hover for a preview, or click any event to learn more.</div>
+  <div class="legend">
+    <span class="chip"><span class="sw restoration"></span> Land &amp; water restoration</span>
+    <span class="chip"><span class="sw policy"></span> Organizations &amp; policy</span>
+    <span class="chip"><span class="sw seed"></span> Seed-saving</span>
+  </div>
+  <div id="timeline"></div>
+  <div class="infobox" id="infobox">Native nations across North America have worked to reclaim control over their own food systems. Click any event above to read the milestone, the nation(s) involved, and how it reflects <strong>food sovereignty</strong> &mdash; control over your own food system, not just access to food.</div>
+  <div class="source">Source note: events are placed at representative years; the labels 1990s, 2010s, and 2020s mark efforts that unfold across several years. This timeline is a simplified, illustrative overview for classroom learning.</div>
+</main>
+<script>
+// Real calendar-year dates. Decade-spanning efforts use a representative year (noted in the source line).
+const items = new vis.DataSet([
+  { id: 'seed',    content: 'Seed-saving programs',      start: new Date(1994, 0, 1), type: 'box', className: 'seed',        title: '1990s: Tribal seed-saving and heirloom crop programs gain organized support.' },
+  { id: 'gather',  content: 'Regional food gatherings',  start: new Date(2003, 0, 1), type: 'box', className: 'policy',      title: '2003: Regional Indigenous food gatherings lay the groundwork for a national alliance.' },
+  { id: 'rice',    content: 'Wild rice (manoomin)',      start: new Date(2007, 0, 1), type: 'box', className: 'restoration', title: '2007: White Earth Nation strengthens protection of wild rice (manoomin).' },
+  { id: 'bison',   content: 'Buffalo (bison) restoration', start: new Date(2014, 0, 1), type: 'box', className: 'restoration', title: '2010s: Great Plains nations expand buffalo (bison) restoration on tribal lands.' },
+  { id: 'nafsa',   content: 'NAFSA founded',             start: new Date(2016, 0, 1), type: 'box', className: 'policy',      title: '2016: The Native American Food Sovereignty Alliance is formally established.' },
+  { id: 'compact', content: 'Food-assistance compacts',  start: new Date(2022, 0, 1), type: 'box', className: 'policy',      title: '2020s: Tribal self-governance compacts increase tribal control over federal food assistance.' }
+]);
+
+const options = {
+  min: new Date(1991, 0, 1),
+  max: new Date(2026, 0, 1),
+  start: new Date(1991, 0, 1),
+  end: new Date(2026, 0, 1),
+  height: '220px',
+  zoomable: false,
+  moveable: false,
+  showCurrentTime: false,
+  selectable: true,
+  stack: true,
+  margin: { item: 10, axis: 14 },
+  timeAxis: { scale: 'year', step: 5 },
+  tooltip: { followMouse: true, overflowMethod: 'flip' },
+  format: { minorLabels: { year: 'YYYY' }, majorLabels: { year: '' } }
+};
+
+const tl = new vis.Timeline(document.getElementById('timeline'), items, options);
+
+// Expanded infobox content: milestone, nation(s) involved, and how it reflects food sovereignty.
+const INFO = {
+  seed: {
+    accent: 'goldenrod',
+    html: '<strong>1990s &mdash; Tribal seed-saving and heirloom crops</strong><br>' +
+          'Through the 1990s, tribal seed-saving and heirloom crop-preservation programs gained organized support, protecting corn, bean, squash, and other seeds adapted over many generations.<br>' +
+          '<span class="lbl">Nations:</span> many Native nations and community seed keepers across North America.<br>' +
+          '<span class="lbl">Food sovereignty:</span> keeping and replanting your own seeds lets a community decide what it grows and eats, instead of depending on outside seed companies &mdash; control over the food system, not just access to food.'
+  },
+  gather: {
+    accent: 'steelblue',
+    html: '<strong>2003 &mdash; Regional Indigenous food gatherings</strong><br>' +
+          'Regional food gatherings brought growers, cooks, and community leaders together to share knowledge and set shared goals. These meetings helped lay the groundwork for a future national alliance.<br>' +
+          '<span class="lbl">Nations:</span> many nations and communities meeting across regions of the United States.<br>' +
+          '<span class="lbl">Food sovereignty:</span> organizing together let communities define their own food goals &mdash; a step toward self-determination rather than outside control.'
+  },
+  rice: {
+    accent: 'seagreen',
+    html: '<strong>2007 &mdash; White Earth Nation and wild rice (manoomin)</strong><br>' +
+          'The White Earth Nation strengthened protections for wild rice, called manoomin in the Ojibwe language, connecting clean water and healthy lakes to the right to harvest and care for this traditional food.<br>' +
+          '<span class="lbl">Nations:</span> White Earth Nation (Anishinaabe / Ojibwe), in what is now northern Minnesota.<br>' +
+          '<span class="lbl">Food sovereignty:</span> protecting the waters where manoomin grows means the nation stewards a food central to its culture &mdash; governing the food source itself, not just receiving food.'
+  },
+  bison: {
+    accent: 'seagreen',
+    html: '<strong>2010s &mdash; Great Plains buffalo (bison) restoration</strong><br>' +
+          'Across the 2010s, Great Plains nations expanded buffalo restoration, returning herds to tribal lands. Leaders framed the work explicitly around food sovereignty, and several nations signed a shared buffalo treaty in 2014.<br>' +
+          '<span class="lbl">Nations:</span> many Great Plains nations working together, such as members of the InterTribal Buffalo Council.<br>' +
+          '<span class="lbl">Food sovereignty:</span> bringing back the buffalo reconnects communities to a traditional food and to the land, restoring a food system the communities manage themselves.'
+  },
+  nafsa: {
+    accent: 'steelblue',
+    html: '<strong>2016 &mdash; Native American Food Sovereignty Alliance (NAFSA)</strong><br>' +
+          'The Native American Food Sovereignty Alliance was formally established as a national organization supporting Indigenous food and agriculture, including seed keeping, traditional foods, and policy work.<br>' +
+          '<span class="lbl">Nations:</span> a national alliance representing many nations and community organizations.<br>' +
+          '<span class="lbl">Food sovereignty:</span> a shared national organization gives communities a stronger, united voice to define their own food and farming systems.'
+  },
+  compact: {
+    accent: 'steelblue',
+    html: '<strong>2020s &mdash; Tribal self-governance food compacts</strong><br>' +
+          'Tribal self-governance compacts increased tribal control over federal food-assistance programs, letting more nations buy and offer traditional and locally sourced foods.<br>' +
+          '<span class="lbl">Nations:</span> many tribal nations partnering with federal food programs.<br>' +
+          '<span class="lbl">Food sovereignty:</span> when a nation runs its own food-assistance program, it decides which foods are offered &mdash; shifting from simply receiving food to governing its own food system.'
+  }
+};
+
+const box = document.getElementById('infobox');
+function reveal(id) {
+  const m = INFO[id];
+  if (!m) return;
+  box.innerHTML = m.html;
+  box.style.borderLeftColor = m.accent;
+}
+tl.on('select', (p) => { if (p.items.length) reveal(p.items[0]); });
+tl.on('click',  (p) => { if (p.item) reveal(p.item); });
+</script>
+</body>
+</html>

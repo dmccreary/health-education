@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 540 -->
+<title>Where Does the Cost of Substance Use Land?</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 4px 0 2px; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .controls { display: flex; justify-content: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+  .controls button {
+    font-family: inherit; font-size: 12px; padding: 5px 12px; border-radius: 14px;
+    border: 1px solid silver; background: #f1f5f9; color: #334155; cursor: pointer;
+  }
+  .controls button:hover { background: #e2e8f0; }
+  .controls button.active { background: navy; color: white; border-color: navy; }
+  .chart-box { background: aliceblue; border: 1px solid silver; border-radius: 6px; padding: 8px; }
+  .chart-container { position: relative; width: 100%; height: 300px; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid #475569; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 72px; }
+  .infobox strong { color: navy; }
+  .source { text-align: center; color: gray; font-size: 11px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <h3>Where Does the Cost of Substance Use Land?</h3>
+  <div class="subtitle">Estimated annual U.S. costs of alcohol and tobacco use, split into four cost categories. Compare which costs are largest and who bears them.</div>
+  <div class="controls">
+    <button id="btnDollars" class="active">Total Dollars</button>
+    <button id="btnPercent">Percent of Total</button>
+  </div>
+  <div class="chart-box">
+    <div class="chart-container"><canvas id="chart"></canvas></div>
+  </div>
+  <div class="infobox" id="infobox">
+    Each bar stacks four cost categories for a substance. Hover any segment for its illustrative dollar value and who bears that cost. Click a category in the legend to hide or show it, or switch to <strong>Percent of Total</strong> to compare proportions instead of raw scale.
+  </div>
+  <div class="source">Illustrative, rounded figures drawn from public-health economic estimates of annual U.S. costs of alcohol and tobacco use. Shown for instructional comparison, not as precise accounting.</div>
+</main>
+<script>
+// X-axis: the two substance categories
+const substances = ['Alcohol', 'Tobacco / Nicotine'];
+const shortName = ['alcohol', 'tobacco/nicotine'];
+
+// Stacked cost-category series. Colors per spec: blue / orange / gray / green.
+// Dollar values are illustrative, rounded annual U.S. estimates (billions).
+const categories = [
+  { label: 'Healthcare',         color: '#2563eb', dollars: [35, 170],
+    bearer: 'Borne by individuals, insurers, and taxpayer-funded programs.' },
+  { label: 'Lost Productivity',  color: '#f97316', dollars: [90, 150],
+    bearer: 'Borne by employers, the broader economy, and families.' },
+  { label: 'Criminal Justice',   color: '#6b7280', dollars: [60, 5],
+    bearer: 'Borne by local and state governments — that is, taxpayers.' },
+  { label: 'Family & Community', color: '#16a34a', dollars: [45, 10],
+    bearer: 'Borne by families, neighborhoods, and social service systems.' }
+];
+
+// Column totals, then percent of each substance's total cost (one decimal).
+const totals = substances.map((_, s) =>
+  categories.reduce((sum, cat) => sum + cat.dollars[s], 0)
+);
+categories.forEach(cat => {
+  cat.percent = cat.dollars.map((v, s) => Math.round(v / totals[s] * 1000) / 10);
+});
+
+let mode = 'dollars';   // 'dollars' or 'percent'
+const box = document.getElementById('infobox');
+
+function currentData(cat) {
+  return (mode === 'dollars' ? cat.dollars : cat.percent).slice();
+}
+
+function buildDatasets() {
+  return categories.map(cat => ({
+    label: cat.label,
+    data: currentData(cat),
+    backgroundColor: cat.color,
+    borderColor: 'white',
+    borderWidth: 1
+  }));
+}
+
+// Update the infobox when a segment is hovered.
+function showSegment(di, si) {
+  const cat = categories[di];
+  box.innerHTML = '<strong>' + cat.label + '</strong> &mdash; ' + substances[si] + ': '
+    + '<strong>$' + cat.dollars[si] + 'B</strong>, about ' + cat.percent[si]
+    + '% of the ' + shortName[si] + ' total. ' + cat.bearer;
+}
+
+const ctx = document.getElementById('chart').getContext('2d');
+const chart = new Chart(ctx, {
+  type: 'bar',
+  data: { labels: substances, datasets: buildDatasets() },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    onHover: (e, els) => { if (els.length) showSegment(els[0].datasetIndex, els[0].index); },
+    scales: {
+      x: { stacked: true, grid: { display: false }, ticks: { font: { size: 12 } } },
+      y: {
+        stacked: true, beginAtZero: true, suggestedMax: 360,
+        title: { display: true, text: 'Estimated Annual Cost (billions of dollars, illustrative)' },
+        ticks: { font: { size: 11 }, callback: v => '$' + v + 'B' }
+      }
+    },
+    plugins: {
+      legend: {
+        position: 'top', align: 'end',
+        labels: { font: { size: 11 }, boxWidth: 14, usePointStyle: true }
+      },
+      tooltip: {
+        callbacks: {
+          title: items => substances[items[0].dataIndex],
+          label: c => {
+            const cat = categories[c.datasetIndex];
+            const d = cat.dollars[c.dataIndex];
+            if (mode === 'dollars') return cat.label + ': $' + d + 'B';
+            return cat.label + ': ' + cat.percent[c.dataIndex] + '%  ($' + d + 'B)';
+          },
+          afterLabel: c => categories[c.datasetIndex].bearer
+        },
+        bodyFont: { size: 11 }, boxPadding: 4
+      }
+    }
+  }
+});
+
+// ---- View toggle: Total Dollars vs Percent of Total ----
+const btnDollars = document.getElementById('btnDollars');
+const btnPercent = document.getElementById('btnPercent');
+
+function applyMode(newMode) {
+  mode = newMode;
+  categories.forEach((cat, i) => { chart.data.datasets[i].data = currentData(cat); });
+  const y = chart.options.scales.y;
+  if (mode === 'dollars') {
+    y.title.text = 'Estimated Annual Cost (billions of dollars, illustrative)';
+    y.max = undefined; y.suggestedMax = 360;
+    y.ticks.callback = v => '$' + v + 'B';
+  } else {
+    y.title.text = "Percent of Each Substance's Total Cost";
+    y.suggestedMax = undefined; y.max = 100;
+    y.ticks.callback = v => v + '%';
+  }
+  chart.update();
+  btnDollars.classList.toggle('active', mode === 'dollars');
+  btnPercent.classList.toggle('active', mode === 'percent');
+}
+
+btnDollars.onclick = () => applyMode('dollars');
+btnPercent.onclick = () => applyMode('percent');
+</script>
+</body>
+</html>

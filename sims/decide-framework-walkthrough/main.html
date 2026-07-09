@@ -1,135 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>The DECIDE Framework Walkthrough</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 780 -->
+<title>The DECIDE Framework Walkthrough</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis', subGraphTitleMargin: { top: 10, bottom: 14 } } });
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+  main { display: flex; height: 100%; }
+  .diagram { flex: 2; background: aliceblue; display: flex; justify-content: center; align-items: flex-start; overflow: hidden; padding: 10px; }
+  .diagram .mermaid { width: 100%; text-align: center; }
+  .diagram svg { max-width: 100%; height: auto; }
+  .info { flex: 1; background: #f8fafc; border-left: 1px solid #e2e8f0; padding: 10px; overflow: hidden; }
+  .info h3 { font-size: 14px; color: #1a3a6c; margin-bottom: 8px; }
+  #panel { font-size: 13px; color: #334155; line-height: 1.4; }
+  .node { cursor: pointer; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>The DECIDE Framework Walkthrough</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> decide-framework-walkthrough</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Apply<br/></p>
-            <p><strong>Learning Objective:</strong> Apply the six-step DECIDE decision-making model
-(Define, Explore, Consider, Identify, Decide, Evaluate) to a realistic</p>
-        </div>
-    </div>
+<main>
+  <div class="diagram"><div class="mermaid">
+flowchart TD
+    Define("Define<br/>the decision"):::startNode
+    Explore("Explore<br/>the options"):::tealNode
+    Consider("Consider<br/>consequences"):::decisionNode
+    Identify("Identify<br/>your values"):::orangeNode
+    Decide("Decide<br/>and act"):::emergNode
+    Evaluate("Evaluate<br/>the outcome"):::processNode
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    Define --> Explore
+    Explore --> Consider
+    Consider --> Identify
+    Identify --> Decide
+    Decide --> Evaluate
+    Evaluate -->|Next decision| Define
 
-    Type: workflow
-    
-    **sim-id:** decide-framework-walkthrough<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Apply<br/>
-    Bloom Taxonomy Verb: use, demonstrate
-    
-    Learning objective: Apply the six-step DECIDE decision-making model
-    (Define, Explore, Consider, Identify, Decide, Evaluate) to a realistic
-    health scenario, tracing how each step builds on the last.
-    
-    Purpose: Give learners a persistent visual anchor for the model referenced
-    throughout the chapter, using Maya's ride-home scenario as the worked
-    example at every step.
-    
-    Visual style: Mermaid flowchart, six sequential nodes in a loop shape (the
-    final "Evaluate" node loops back to "Define," showing decisions feed future
-    decisions); every node has a click handler.
-    
-    Steps:
-    1. "Define" — click: "Maya defines the real decision: how do I get home
-       safely tonight, given that my planned ride has been drinking?"
-    2. "Explore" — click: "Maya lists real options: ride with her friend, call
-       a parent, use a rideshare app, ask another sober friend, stay over."
-    3. "Consider" — click: "For each option, Maya considers consequences —
-       physical safety, relationships, cost, curfew, honesty with parents."
-    4. "Identify" — click: "Maya compares consequences against her values and
-       identifies which option best protects health and safety."
-    5. "Decide" — click: "Maya acts: she calls her mother for a ride and texts
-       her friend that she is not getting in the car."
-    6. "Evaluate" — click: "Afterward, Maya reflects: did this decision keep
-       me safe? What would I do differently next time?" Loops back to Define
-       for the next decision.
-    
-    Color coding: Each step a distinct color (blue, teal, gold, orange, red,
-    purple) in a circular flow to emphasize decision-making as a repeating
-    cycle, not a one-time event.
-    
-    Implementation: Mermaid flowchart with `click` directives opening an
-    infobox reusing the text above for each node.
-    -->
+    classDef startNode fill:#5b9bd5,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef processNode fill:#7e57c2,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#ffd54f,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef emergNode fill:#e57373,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef mildNode fill:#64b5f6,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef goodNode fill:#66bb6a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef endNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef tealNode fill:#26a69a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef orangeNode fill:#ff9800,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    linkStyle default stroke:#999,stroke-width:2px,font-size:14px
+  </div></div>
+  <div class="info"><h3>The DECIDE Framework</h3><div id="panel">Hover or tap any step for details.</div></div>
+</main>
+<script>
+const nodeInfo = {
+  "Define": "Maya defines the real decision: how do I get home safely tonight, given that my planned ride has been drinking?",
+  "Explore": "Maya lists real options: ride with her friend, call a parent, use a rideshare app, ask another sober friend, or stay over.",
+  "Consider": "For each option, Maya considers consequences — physical safety, relationships, cost, curfew, and honesty with parents.",
+  "Identify": "Maya compares the consequences against her values and identifies which option best protects her health and safety.",
+  "Decide": "Maya acts: she calls her mother for a ride and texts her friend that she is not getting in the car.",
+  "Evaluate": "Afterward, Maya reflects: did this decision keep me safe? What would I do differently next time? This loops back to Define for the next decision."
+};
+const panel = document.getElementById('panel');
+function setup() {
+  document.querySelectorAll('.node').forEach(n => {
+    const id = n.id.replace('flowchart-', '').split('-')[0];
+    if (nodeInfo[id]) {
+      n.addEventListener('mouseenter', () => { panel.textContent = nodeInfo[id]; });
+      n.addEventListener('click', () => { panel.textContent = nodeInfo[id]; });
+    }
+  });
+}
+function wait() {
+  const m = document.querySelector('.mermaid');
+  if (m && m.querySelector('svg') && document.querySelectorAll('.node').length) setup();
+  else setTimeout(wait, 100);
+}
+setTimeout(wait, 150);
+</script>
 </body>
 </html>

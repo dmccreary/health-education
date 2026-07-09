@@ -3,126 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Who Can I Tell?</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Who Can I Tell? MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="who-can-i-tell.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Who Can I Tell?</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> who-can-i-tell</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students practice the action of Asking For Help by choosing a trusted adult to tell about a strong feeling shown in a simple picture scenario.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** who-can-i-tell<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: practice, demonstrate
-    
-    Learning objective: Students practice the action of Asking For Help by choosing a trusted adult to tell about a strong feeling shown in a simple picture scenario.
-    
-    Canvas layout:
-    - Top area (200px): A simple illustrated scene showing a child experiencing a strong feeling (e.g., a child looking scared during a thunderstorm, or a child looking sad after being left out at recess), with a read-aloud caption below it
-    - Middle area (200px): Three large pictures of trusted adults the child could tell (e.g., teacher, parent, school nurse), each in its own button-like frame
-    - Bottom strip (100px): A large "Tell Them!" confirmation button and a Reset button
-    
-    Visual elements:
-    - 6 simple scenario illustrations cycling one at a time, each paired with one clear caption read aloud by the teacher, such as "This child feels scared. Who can they tell?"
-    - Trusted adult pictures reused from the Chapter 2 trusted-adult set for visual consistency
-    
-    Interactive controls:
-    - Click: child selects one trusted adult picture in response to the scenario
-    - Button: "Tell Them!" confirms the choice
-    - Button: "Reset" to try a new scenario
-    
-    Default parameters:
-    - First scenario: a child feeling scared during a loud thunderstorm
-    - Any of the three trusted adult choices is accepted as correct for every scenario, reinforcing that more than one trusted adult can always help
-    
-    Behavior:
-    - After the child clicks a trusted adult and presses "Tell Them!", a short warm animation shows the trusted adult kneeling down to listen, and a caption appears: "Great choice! Telling a trusted adult about a strong feeling always helps."
-    - No answer is ever marked wrong — the sim always affirms the choice, because the learning goal is practicing the act of telling, not picking one "correct" person
-    - After all 6 scenarios are complete, show a celebration message: "You know just what to do with a big feeling — tell someone you trust!"
-    
-    Instructional Rationale: This is an Apply-level objective (practicing a real behavior in a scenario), so a scenario-based choice pattern is appropriate. Because the true goal is building the habit of asking for help — not testing which specific adult is "right" — the sim intentionally accepts every reasonable choice rather than scoring correctness.
-    
-    Implementation notes: Use p5.js. Store scenarios as objects containing an illustration reference and a caption string. Keep interactions extremely simple (single click, single confirm) for pre-reader independence during play, while the teacher reads captions aloud.
-    -->
+    <main></main>
 </body>
 </html>

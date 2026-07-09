@@ -1,125 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Bystander Action Decision Path</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 954 -->
+<title>Bystander Action Decision Path</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis', subGraphTitleMargin: { top: 10, bottom: 14 } } });
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+  main { display: flex; height: 100%; }
+  .diagram { flex: 2; background: aliceblue; display: flex; justify-content: center; align-items: center; overflow: hidden; padding: 8px; }
+  .diagram .mermaid { width: 100%; text-align: center; }
+  .diagram svg { max-width: 100%; height: auto; }
+  .info { flex: 1; background: #f8fafc; border-left: 1px solid #e2e8f0; padding: 10px; overflow: hidden; }
+  .info h3 { font-size: 14px; color: #1a3a6c; margin-bottom: 8px; }
+  #panel { font-size: 13px; color: #334155; line-height: 1.4; }
+  .node { cursor: pointer; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Bystander Action Decision Path</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> bystander-action-decision-path</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students apply a concrete, safety-first decision path for responding as a bystander when they witness bullying.</p>
-        </div>
-    </div>
+<main>
+  <div class="diagram"><div class="mermaid">
+flowchart TD
+    Start("You see someone<br/>being bullied"):::startNode
+    NoLaugh["Don't laugh, film,<br/>or share"]:::mildNode
+    CanSay{"Can you safely say<br/>something supportive<br/>right now?"}:::decisionNode
+    Support["Support the<br/>targeted student"]:::mildNode
+    GetAdultDirect["Get a trusted<br/>adult safely"]:::goodNode
+    GetAdultAfter["Get a trusted<br/>adult safely"]:::goodNode
+    CheckIn("Check in<br/>again later"):::endNode
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    Start --> NoLaugh
+    NoLaugh --> CanSay
+    CanSay -->|Yes| Support
+    CanSay -->|No| GetAdultDirect
+    Support --> GetAdultAfter
+    GetAdultDirect --> CheckIn
+    GetAdultAfter --> CheckIn
 
-    Type: workflow
-    **sim-id:** bystander-action-decision-path<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: demonstrate, use, practice
-    
-    Learning objective: Students apply a concrete, safety-first decision path for responding as a bystander when they witness bullying.
-    
-    Purpose: Show a clear, repeatable sequence of safe bystander actions when witnessing bullying, emphasizing safety first and concrete steps over vague advice.
-    
-    Visual style: Flowchart with process rectangles and one decision diamond, every node clickable
-    
-    Steps:
-    1. Start: "You see someone being bullied"
-       Click text: "Notice what's happening. You don't have to do everything at once — even one safe action helps."
-    2. Process: "Don't laugh, film, or share"
-       Click text: "Bullying often continues because it gets an audience. Refusing to laugh or record removes that reward."
-    3. Decision: "Can you safely say something supportive right now?"
-       Click text: "Only do this if it feels safe. If not, skip straight to getting an adult."
-    4a. Process (if yes): "Support the targeted student"
-        Click text: "A short, caring statement like 'That wasn't okay, are you alright?' helps a lot."
-    4b. Process (if no): "Get a trusted adult safely"
-        Click text: "Telling an adult is one of the most effective actions a bystander can take. It is never tattling."
-    5. Process: "Get a trusted adult safely"
-       Click text: "Even after supporting the student directly, still tell a trusted adult what happened."
-    6. End: "Check in again later"
-       Click text: "Following up afterward shows the targeted student that someone noticed and cares."
-    
-    Color coding: Blue for immediate safe actions, yellow for the decision diamond, green for the adult-reporting step, gray for the follow-up ending
-    
-    Implementation: Mermaid flowchart with a `click` directive on every node calling a JavaScript function that opens an infobox with that node's explanation text. Tone of all infobox text must remain calm, sincere, and non-judgmental — no humor, no mascot puns.
-    -->
+    classDef startNode fill:#5b9bd5,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef processNode fill:#7e57c2,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#ffd54f,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef emergNode fill:#e57373,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef mildNode fill:#64b5f6,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef goodNode fill:#66bb6a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef endNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    linkStyle default stroke:#999,stroke-width:2px,font-size:14px
+  </div></div>
+  <div class="info"><h3>Bystander Action Decision Path</h3><div id="panel">Hover or tap any step for details.</div></div>
+</main>
+<script>
+const nodeInfo = {
+  "Start": "Notice what's happening. You don't have to do everything at once — even one safe action helps.",
+  "NoLaugh": "Bullying often continues because it gets an audience. Refusing to laugh or record removes that reward.",
+  "CanSay": "Only do this if it feels safe. If not, skip straight to getting an adult.",
+  "Support": "A short, caring statement like 'That wasn't okay, are you alright?' helps a lot.",
+  "GetAdultDirect": "Telling an adult is one of the most effective actions a bystander can take. It is never tattling.",
+  "GetAdultAfter": "Even after supporting the student directly, still tell a trusted adult what happened.",
+  "CheckIn": "Following up afterward shows the targeted student that someone noticed and cares."
+};
+const panel = document.getElementById('panel');
+function setup() {
+  document.querySelectorAll('.node').forEach(n => {
+    const id = n.id.replace('flowchart-', '').split('-')[0];
+    if (nodeInfo[id]) {
+      n.addEventListener('mouseenter', () => { panel.textContent = nodeInfo[id]; });
+      n.addEventListener('click', () => { panel.textContent = nodeInfo[id]; });
+    }
+  });
+}
+function wait() {
+  const m = document.querySelector('.mermaid');
+  if (m && m.querySelector('svg') && document.querySelectorAll('.node').length) setup();
+  else setTimeout(wait, 100);
+}
+setTimeout(wait, 150);
+</script>
 </body>
 </html>

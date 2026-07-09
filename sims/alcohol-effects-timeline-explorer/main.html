@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 560 -->
+<title>Alcohol Effects: From Hours to Years</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 4px 0 2px; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .controls { display: flex; justify-content: center; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+  .controls button {
+    font-family: inherit; font-size: 12px; padding: 5px 12px; border-radius: 14px;
+    border: 1px solid silver; background: #f1f5f9; color: #334155; cursor: pointer;
+  }
+  .controls button:hover { background: #e2e8f0; }
+  .controls button.active { background: navy; color: white; border-color: navy; }
+  .chart-box { background: aliceblue; border: 1px solid silver; border-radius: 6px; padding: 8px; }
+  .chart-container { position: relative; width: 100%; height: 300px; }
+  .hidden { display: none; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid #d35400; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 70px; }
+  .infobox strong { color: navy; }
+  .infobox .emergency { color: #c0392b; font-weight: bold; }
+  .source { text-align: center; color: gray; font-size: 11px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <h3>Alcohol Effects: From Hours to Years</h3>
+  <div class="subtitle">Two views of documented alcohol effects: how impairment escalates within hours, and how harm accumulates over years.</div>
+  <div class="controls">
+    <button id="btnShort" class="active">Short-Term (Hours)</button>
+    <button id="btnLong">Long-Term (Years)</button>
+  </div>
+  <div class="chart-box">
+    <div class="chart-container" id="shortContainer"><canvas id="shortChart"></canvas></div>
+    <div class="chart-container hidden" id="longContainer"><canvas id="longChart"></canvas></div>
+  </div>
+  <div class="infobox" id="infobox">
+    In the <strong>Short-Term</strong> view, hover any bar to read the documented effect at that level of blood alcohol
+    concentration. Switch to the <strong>Long-Term</strong> view to see how repeated heavy use affects the body and life over years.
+  </div>
+  <div class="source">Illustrative summary for learning: the impairment scale and long-term ratings represent documented effects, not measured values, and effects vary by individual. See the Overdose Emergency Response section for what to do in an emergency.</div>
+</main>
+<script>
+// ---------- Data ----------
+// View 1: Short-Term — effects escalate as blood alcohol concentration (BAC) rises.
+const stLabels = ['Low', 'Moderate', 'High', 'Severe'];
+const stLevel  = [1, 2, 3, 4];                 // relative ordinal impairment (illustrative)
+const stEffect = [
+  'Relaxed inhibition and impaired judgment.',
+  'Slowed reaction time, slurred speech, and unsteady coordination.',
+  'Memory blackouts, vomiting, and sharply impaired coordination.',
+  'Slowed breathing and loss of consciousness — a medical emergency.'
+];
+const stFill   = ['#f6c343', '#f0932b', '#d35400', '#c0392b'];   // Severe = emergency red (reserved)
+const stStroke = ['#c99a1e', '#c8781f', '#a8430a', '#7c1f16'];
+const stBorder = [1, 1, 1, 2.5];
+
+// View 2: Long-Term — documented consequences of repeated heavy use over years.
+const ltLabels = ['Liver', 'Cardiovascular', 'Brain / Memory', 'Cancer Risk', 'Relationships / Roles'];
+const ltRating = [2, 2, 2, 1, 1];              // 2 = High, 1 = Moderate (illustrative)
+const ltEffect = [
+  'Liver disease ranging from fatty liver to cirrhosis, since the liver processes nearly all alcohol.',
+  'Elevated blood pressure and, over years, increased risk of heart disease.',
+  'Measurable shrinkage in brain regions tied to memory and decision-making with sustained heavy use.',
+  'Documented by major health agencies as a contributing factor for several types of cancer.',
+  'Strained family relationships and missed school or work obligations that can displace other priorities.'
+];
+const AMBER = '#f0932b', DARKORANGE = '#d35400';
+const ltFill   = ltRating.map(r => r === 2 ? DARKORANGE : AMBER);
+const ltStroke = ltRating.map(r => r === 2 ? '#a8430a' : '#c8781f');
+
+const box = document.getElementById('infobox');
+function ratingWord(r) { return r === 2 ? 'High' : 'Moderate'; }
+
+// Word-wrap a string into an array of short lines for multi-line tooltips.
+function wrapText(str, max) {
+  max = max || 42;
+  const words = str.split(' ');
+  const lines = [];
+  let line = '';
+  for (const w of words) {
+    if ((line + ' ' + w).trim().length > max) { lines.push(line.trim()); line = w; }
+    else { line = (line + ' ' + w).trim(); }
+  }
+  if (line) lines.push(line.trim());
+  return lines;
+}
+
+// Custom two-swatch legend (bars are colored per-category, so build labels by hand).
+function legendPlugin(swatches) {
+  return {
+    display: true, position: 'top', align: 'end',
+    onClick: () => {},                                  // non-interactive: never hide the single dataset
+    labels: {
+      font: { size: 11 }, boxWidth: 14, padding: 12,
+      generateLabels: () => swatches.map((s, i) => ({
+        text: s.text, fillStyle: s.color, strokeStyle: s.color, lineWidth: 0, hidden: false, index: i
+      }))
+    }
+  };
+}
+
+// ---------- View 1: Short-Term ----------
+const shortCtx = document.getElementById('shortChart').getContext('2d');
+const shortChart = new Chart(shortCtx, {
+  type: 'bar',
+  data: {
+    labels: stLabels,
+    datasets: [{
+      label: 'Impairment', data: stLevel,
+      backgroundColor: stFill, borderColor: stStroke, borderWidth: stBorder
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    layout: { padding: { top: 22 } },
+    onHover: (e, els) => { if (els.length) showInfo('st', els[0].index); },
+    onClick: (e, els) => { if (els.length) showInfo('st', els[0].index); },
+    scales: {
+      x: {
+        title: { display: true, text: 'Rising Blood Alcohol Concentration →' },
+        grid: { display: false }, ticks: { font: { size: 11 } }
+      },
+      y: {
+        beginAtZero: true, max: 4.8,
+        title: { display: true, text: 'Relative Impairment Level' },
+        ticks: { stepSize: 1, font: { size: 11 } }
+      }
+    },
+    plugins: {
+      legend: legendPlugin([
+        { text: 'Rising impairment', color: '#d35400' },
+        { text: 'Medical emergency', color: '#c0392b' }
+      ]),
+      tooltip: {
+        callbacks: {
+          title: items => 'Blood Alcohol Concentration: ' + stLabels[items[0].dataIndex],
+          label: c => wrapText(stEffect[c.dataIndex]),
+          footer: items => items[0].dataIndex === 3
+            ? 'Medical emergency — call 911 (see Overdose Emergency Response).' : ''
+        },
+        bodyFont: { size: 11 }, boxPadding: 4,
+        footerColor: '#ffd0cb', footerFont: { size: 11, weight: 'bold' }
+      }
+    }
+  },
+  plugins: [{
+    // Flag the "Severe" bar with a medical-emergency label above it.
+    id: 'emergencyFlag',
+    afterDatasetsDraw(c) {
+      const bar = c.getDatasetMeta(0).data[3];
+      if (!bar) return;
+      const g = c.ctx;
+      g.save();
+      g.fillStyle = '#c0392b'; g.font = 'bold 11px Arial'; g.textAlign = 'center';
+      g.fillText('⚠ MEDICAL EMERGENCY', bar.x, bar.y - 8);
+      g.restore();
+    }
+  }]
+});
+
+// ---------- View 2: Long-Term ----------
+const longCtx = document.getElementById('longChart').getContext('2d');
+const longChart = new Chart(longCtx, {
+  type: 'bar',
+  data: {
+    labels: ltLabels,
+    datasets: [{
+      label: 'Long-Term Risk', data: ltRating,
+      backgroundColor: ltFill, borderColor: ltStroke, borderWidth: 1
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    layout: { padding: { top: 12 } },
+    onHover: (e, els) => { if (els.length) showInfo('lt', els[0].index); },
+    onClick: (e, els) => { if (els.length) showInfo('lt', els[0].index); },
+    scales: {
+      x: {
+        title: { display: true, text: 'Body System / Life Area' },
+        grid: { display: false }, ticks: { font: { size: 10 }, autoSkip: false }
+      },
+      y: {
+        beginAtZero: true, max: 2.4,
+        title: { display: true, text: 'Long-Term Risk Rating' },
+        ticks: { stepSize: 1, font: { size: 11 }, callback: v => ({ 1: 'Moderate', 2: 'High' }[v] || '') }
+      }
+    },
+    plugins: {
+      legend: legendPlugin([
+        { text: 'Moderate risk', color: AMBER },
+        { text: 'High risk', color: DARKORANGE }
+      ]),
+      tooltip: {
+        callbacks: {
+          title: items => ltLabels[items[0].dataIndex] + ' — ' + ratingWord(ltRating[items[0].dataIndex]) + ' long-term risk',
+          label: c => wrapText(ltEffect[c.dataIndex])
+        },
+        bodyFont: { size: 11 }, boxPadding: 4
+      }
+    }
+  }
+});
+
+// ---------- Infobox ----------
+function showInfo(view, i) {
+  if (view === 'st') {
+    const note = i === 3
+      ? ' <span class="emergency">This is a medical emergency — follow the Overdose Emergency Response sequence and call 911 first.</span>'
+      : '';
+    box.innerHTML = '<strong>Blood alcohol concentration: ' + stLabels[i] + '.</strong> ' + stEffect[i] + note;
+  } else {
+    box.innerHTML = '<strong>' + ltLabels[i] + ' — ' + ratingWord(ltRating[i]) + ' long-term risk.</strong> ' + ltEffect[i];
+  }
+}
+
+// ---------- View toggle ----------
+const btnShort = document.getElementById('btnShort');
+const btnLong = document.getElementById('btnLong');
+const shortContainer = document.getElementById('shortContainer');
+const longContainer = document.getElementById('longContainer');
+
+function showShort() {
+  btnShort.classList.add('active'); btnLong.classList.remove('active');
+  shortContainer.classList.remove('hidden'); longContainer.classList.add('hidden');
+  shortChart.resize();
+}
+function showLong() {
+  btnLong.classList.add('active'); btnShort.classList.remove('active');
+  longContainer.classList.remove('hidden'); shortContainer.classList.add('hidden');
+  longChart.resize();
+}
+btnShort.onclick = showShort;
+btnLong.onclick = showLong;
+</script>
+</body>
+</html>

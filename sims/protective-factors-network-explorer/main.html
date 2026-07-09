@@ -1,113 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Protective Factors Network Explorer</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 560 -->
+<title>Protective Factors Network Explorer</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 18px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 400px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 9px; font-size: 11px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 13px; height: 13px; margin-right: 6px; vertical-align: middle; border: 1px solid #555; }
+  .legend .circle { border-radius: 50%; }
+  .legend .line { width: 18px; height: 0; border: 0; border-top: 3px solid seagreen; }
+  .legend .gline { width: 18px; height: 0; border: 0; border-top: 3px solid goldenrod; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 9px 11px; font-size: 13px; color: #334155; line-height: 1.5; min-height: 96px; }
+  .infobox strong { color: navy; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Protective Factors Network Explorer</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> protective-factors-network-explorer</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students examine how multiple cultural and community protective factors connect to and reinforce a young person's resilience against substance use, organizing the relationships between distinct protective factors and outcomes.</p>
-        </div>
+<main>
+  <h3>Protective Factors Network Explorer</h3>
+  <div class="subtitle">Hover a node for its label. Click a blue protective factor, the green person, or the gold outcome to learn more. Scroll to zoom, drag to pan.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k circle" style="background:#2e8b57;"></span>A young person<br>
+      <span class="k" style="background:steelblue;"></span>Protective factor<br>
+      <span class="k circle" style="background:goldenrod;border-color:#8a6d0b;"></span>Shared outcome<br>
+      <span class="k line"></span>&nbsp;Supports<br>
+      <span class="k gline"></span>&nbsp;Contributes to
     </div>
+  </div>
+  <div class="infobox" id="infobox">Protective factors are the strengths in a young person's life that build resilience. Explore how six cultural and community protective factors support a young person, and how together they contribute to a lower likelihood of substance use problems. Hover any node for a quick label, or click a node to learn more.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+const INTRO = "Protective factors are the strengths in a young person's life that build resilience. Explore how six cultural and community protective factors support a young person, and how together they contribute to a lower likelihood of substance use problems. Hover any node for a quick label, or click a node to learn more.";
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+const C = { center:{ bg:'#2e8b57', bd:'#1e5e3a' }, box:{ bg:'steelblue', bd:'#2f5a7a' }, gold:{ bg:'goldenrod', bd:'#8a6d0b' } };
+const EDGE = { supports:'seagreen', contributes:'#b8860b' };
 
-    Type: graph-model
-    **sim-id:** protective-factors-network-explorer<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: examine, organize, distinguish
-    
-    Learning objective: Students examine how multiple cultural and community protective factors connect to and reinforce a young person's resilience against substance use, organizing the relationships between distinct protective factors and outcomes.
-    
-    Node types: Central node "A Young Person" (green circle). Protective factor nodes (blue squares): Cultural Connectedness, Traditional/Ceremonial Practices, Family And Community Expectations, Cultural Identity And Pride, Connection To Elders And Knowledge Keepers, Connection To Nature And Land-Based Practices. Outcome node (gold circle): "Lower Likelihood Of Substance Use Problems," connected from every protective factor node.
-    
-    Edge types: "Supports" (solid green arrows from each protective factor node to the central "A Young Person" node). "Contributes To" (solid gold arrows from the central node to the outcome node).
-    
-    Layout: Central "A Young Person" node in the middle, six protective factor nodes arranged around it in a ring, shared outcome node positioned prominently below or beside the ring.
-    
-    Interactive features: Hover any node to see its label; click a protective factor node to open an infobox with two to three sentences describing the practice and citing that research (e.g., Indigenous youth health research) links it to lower substance-use rates; click the central node to open an infobox summarizing that these factors work together rather than in isolation; click the outcome node to open an infobox explaining that protective factors reduce risk but this is about community support and healthy connection, not any specific individual guarantee; zoom with mouse wheel, pan by dragging background.
-    
-    Legend: Color/shape key distinguishing the central node, protective factors, and the shared outcome.
-    
-    Implementation: vis-network JavaScript library; canvas responsive, default 800x500px. Content note: all protective-factor descriptions are affirming and specific, avoiding generic or token references to culture.
-    -->
+// Central node (green circle)
+const center = {
+  id:'center', title:'A Young Person',
+  hover:'A young person supported by cultural and community strengths.',
+  full:`A Young Person: These protective factors do not work one at a time — they work together. Cultural connection, family, elders, the land, and a strong identity weave a web of support around a young person that strengthens their resilience. The more of these connections are present, the stronger that web becomes.`
+};
+
+// Protective factor nodes (blue squares)
+const factors = [
+  { id:'f_conn', title:'Cultural Connectedness', label:'Cultural\nConnectedness',
+    hover:'Feeling rooted in one\'s culture, language, and community.',
+    full:`Cultural Connectedness: Feeling genuinely rooted in one's culture, language, and community gives young people a strong sense of belonging and purpose. Research on Indigenous youth health consistently links stronger cultural connectedness with lower rates of substance use. Knowing who you are and where you come from is protective.` },
+  { id:'f_cere', title:'Traditional and Ceremonial Practices', label:'Traditional /\nCeremonial\nPractices',
+    hover:'Taking part in ceremonies and traditional practices.',
+    full:`Traditional and Ceremonial Practices: Taking part in ceremonies, seasonal gatherings, and traditional practices connects young people to meaning, structure, and community. Studies of Indigenous youth link active participation in ceremonial life with reduced substance use. These practices offer belonging and a healthy way to mark life's important moments.` },
+  { id:'f_expect', title:'Family and Community Expectations', label:'Family and\nCommunity\nExpectations',
+    hover:'Clear, caring expectations from family and community.',
+    full:`Family and Community Expectations: When family and community hold clear, caring expectations, young people feel valued and accountable to people who love them. Research shows that supportive family and community norms are among the strongest protective factors against youth substance use. Feeling that your choices matter to others helps guide healthy decisions.` },
+  { id:'f_pride', title:'Cultural Identity and Pride', label:'Cultural\nIdentity\nand Pride',
+    hover:'A strong, positive sense of cultural identity.',
+    full:`Cultural Identity and Pride: A strong, positive sense of cultural identity gives young people confidence and resilience in the face of stress or discrimination. Indigenous youth health research associates pride in one's heritage with a lower likelihood of substance use problems. Pride in who you are is a real source of strength.` },
+  { id:'f_elders', title:'Connection to Elders and Knowledge Keepers', label:'Connection to\nElders &\nKnowledge Keepers',
+    hover:'Learning from elders and knowledge keepers.',
+    full:`Connection to Elders and Knowledge Keepers: Relationships with elders and knowledge keepers give young people mentorship, guidance, and a living link to their heritage. Research finds that intergenerational connection is protective, helping to lower substance use among youth. Elders offer wisdom, belonging, and someone steady to turn to.` },
+  { id:'f_land', title:'Connection to Nature and Land-Based Practices', label:'Connection to\nNature &\nLand-Based Practices',
+    hover:'Time on the land and land-based activities.',
+    full:`Connection to Nature and Land-Based Practices: Spending time on the land — hunting, fishing, gathering, or simply being outdoors in traditional ways — supports mental health and cultural connection. Land-based programs for Indigenous youth are linked with reduced substance use and stronger wellbeing. The land itself can be a source of healing and identity.` }
+];
+
+// Outcome node (gold circle)
+const outcome = {
+  id:'outcome', title:'Lower Likelihood of Substance Use Problems',
+  hover:'The shared result: reduced risk of substance use problems.',
+  full:`Lower Likelihood of Substance Use Problems: When protective factors work together, they reduce the risk of substance use problems across a community's young people. This is about community support and healthy connection strengthening resilience — it describes a lower likelihood for a group, not a guarantee for any one person. Building these connections helps young people thrive.`
+};
+
+const nodes = [], edges = [];
+const info = {}, hoverInfo = {};
+
+// Center (floats near origin so physics settles and the graph auto-fits)
+nodes.push({ id:center.id, label:'A Young\nPerson', shape:'circle', x:0, y:0,
+  color:{ background:C.center.bg, border:C.center.bd, highlight:{ background:'#3fa76a', border:C.center.bd } },
+  font:{ size:15, color:'white', face:'Arial' }, borderWidth:2, widthConstraint:{ maximum:90 } });
+info[center.id] = { title:center.title, full:center.full };
+hoverInfo[center.id] = center.hover;
+
+// Ring of protective factors (fixed positions, no node on the horizontal axis)
+const N = factors.length, R = 210, START = 12;
+factors.forEach((f, i) => {
+  const a = (START + i * 360 / N) * Math.PI / 180;
+  nodes.push({ id:f.id, label:f.label, shape:'box', margin:8, widthConstraint:{ maximum:130 },
+    color:{ background:C.box.bg, border:C.box.bd, highlight:{ background:'#5c9dc9', border:C.box.bd } },
+    font:{ size:12, color:'white', face:'Arial' }, borderWidth:2,
+    x:Math.round(R * Math.cos(a)), y:Math.round(R * Math.sin(a)), fixed:{ x:true, y:true } });
+  info[f.id] = { title:f.title, full:f.full };
+  hoverInfo[f.id] = f.hover;
+  edges.push({ from:f.id, to:center.id, label:'Supports',
+    color:{ color:EDGE.supports, highlight:EDGE.supports },
+    font:{ size:9, color:'#3a6b4f', strokeWidth:3, strokeColor:'aliceblue' },
+    arrows:{ to:{ enabled:true, scaleFactor:0.5 } }, smooth:{ enabled:false } });
+});
+
+// Outcome node (fixed below the ring)
+nodes.push({ id:outcome.id, label:'Lower Likelihood of\nSubstance Use\nProblems', shape:'circle',
+  x:0, y:360, fixed:{ x:true, y:true },
+  color:{ background:C.gold.bg, border:C.gold.bd, highlight:{ background:'#e8bf3a', border:C.gold.bd } },
+  font:{ size:12, color:'#3a2e00', face:'Arial' }, borderWidth:2, widthConstraint:{ maximum:130 } });
+info[outcome.id] = { title:outcome.title, full:outcome.full };
+hoverInfo[outcome.id] = outcome.hover;
+
+edges.push({ from:center.id, to:outcome.id, label:'Contributes To', width:2,
+  color:{ color:EDGE.contributes, highlight:EDGE.contributes },
+  font:{ size:10, color:'#7a5a00', strokeWidth:3, strokeColor:'aliceblue' },
+  arrows:{ to:{ enabled:true, scaleFactor:0.6 } }, smooth:{ enabled:false } });
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  physics: { solver:'forceAtlas2Based', forceAtlas2Based:{ gravitationalConstant:-40, springLength:150, avoidOverlap:0.6 }, stabilization:{ iterations:300 } },
+  interaction: { hover:true, dragView:true, zoomView:true, navigationButtons:true, tooltipDelay:100000 },
+  edges: { arrows:{ to:{ enabled:true, scaleFactor:0.5 } } },
+  nodes: { shadow:true }
+};
+const network = new vis.Network(container, data, options);
+network.once('stabilizationIterationsDone', () => { network.setOptions({ physics:false }); network.fit(); });
+
+function showInfo(id){
+  const d = info[id];
+  if (!d) return;
+  box.innerHTML = '<strong>' + d.title + '</strong><br>' + d.full;
+}
+
+network.on('hoverNode', p => { const h = hoverInfo[p.node]; if (h) box.innerHTML = h; });
+network.on('click', p => {
+  if (p.nodes.length) showInfo(p.nodes[0]);
+  else box.innerHTML = INTRO;
+});
+</script>
 </body>
 </html>

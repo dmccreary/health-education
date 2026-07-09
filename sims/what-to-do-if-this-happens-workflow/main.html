@@ -1,111 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>What To Do If This Happens Workflow</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 758 -->
+<title>What To Do If This Happens Workflow</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis', subGraphTitleMargin: { top: 10, bottom: 14 } } });
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+  main { display: flex; height: 100%; }
+  .diagram { flex: 2; background: aliceblue; display: flex; justify-content: center; align-items: center; overflow: hidden; padding: 8px; }
+  .diagram .mermaid { width: 100%; text-align: center; }
+  .diagram svg { max-width: 100%; height: auto; }
+  .info { flex: 1; background: #f8fafc; border-left: 1px solid #e2e8f0; padding: 10px; overflow: hidden; }
+  .info h3 { font-size: 14px; color: #1a3a6c; margin-bottom: 8px; }
+  #panel { font-size: 13px; color: #334155; line-height: 1.4; }
+  .node { cursor: pointer; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>What To Do If This Happens Workflow</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> what-to-do-if-this-happens-workflow</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students apply the correct sequence of response steps if they or someone they know is pressured to share or is blackmailed over explicit content, reinforcing that the person pressured is a victim, not someone in trouble.</p>
-        </div>
-    </div>
+<main>
+  <div class="diagram"><div class="mermaid">
+flowchart TD
+    Pressure("Someone is pressuring me to share,<br/>or threatening to share, an image"):::emergNode
+    StopResponding["Stop Responding<br/>To That Person"]:::mildNode
+    SaveEvidence["Save the Evidence"]:::mildNode
+    TellAdult["Tell a Trusted<br/>Adult Right Away"]:::mildNode
+    ReportIt["Report It"]:::mildNode
+    GetHelp("You get help, and<br/>the pressure stops"):::goodNode
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    Pressure --> StopResponding
+    StopResponding --> SaveEvidence
+    SaveEvidence --> TellAdult
+    TellAdult --> ReportIt
+    ReportIt --> GetHelp
 
-    Type: workflow
-    **sim-id:** what-to-do-if-this-happens-workflow<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: demonstrate, apply, execute
-    
-    Learning objective: Students apply the correct sequence of response steps if they or someone they know is pressured to share or is blackmailed over explicit content, reinforcing that the person pressured is a victim, not someone in trouble.
-    
-    Visual style: Mermaid flowchart with a start node, four sequential process nodes, and an end node. No node depicts or describes explicit content itself — every node addresses only the response process.
-    
-    Steps: (1) Start node "Someone Is Pressuring Me To Share, Or Is Threatening To Share, An Image," click reveals: "This is exploitation, whether from a peer or a stranger — and it is not your fault."; (2) process "Stop Responding To That Person," click reveals: "Do not send anything else and do not pay or comply with new demands — compliance often increases pressure rather than ending it."; (3) process "Save The Evidence," click reveals: "Screenshot the messages, usernames, and any threats before blocking the person."; (4) process "Tell A Trusted Adult Right Away," click reveals: "A parent, school counselor, or teacher can help — you will not be treated as the person at fault."; (5) process "Report It," click reveals: "The NCMEC CyberTipline at report.cybertip.org is built for this exact situation, and a school counselor can also connect you with more support."; end node "You Get Help, And The Pressure Stops," click reveals: "Reporting quickly is what stops the situation from continuing or escalating."
-    
-    Every node must have a Mermaid `click` directive calling an infobox function.
-    
-    Color coding: Red for the start node (the problem), blue for the four process/action nodes, green for the end node (resolution).
-    
-    Implementation: Mermaid flowchart syntax with `click NodeId call showInfo("key")` for every node; infobox text in a JS lookup object. No explicit content is described, depicted, or referenced beyond "an image" or "content."
-    -->
+    classDef startNode fill:#5b9bd5,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef processNode fill:#7e57c2,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#ffd54f,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef emergNode fill:#e57373,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef mildNode fill:#64b5f6,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef goodNode fill:#66bb6a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef endNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    linkStyle default stroke:#999,stroke-width:2px,font-size:14px
+  </div></div>
+  <div class="info"><h3>What To Do If This Happens</h3><div id="panel">Hover or tap any step for details.</div></div>
+</main>
+<script>
+const nodeInfo = {
+  "Pressure": "This is exploitation, whether from a peer or a stranger — and it is not your fault.",
+  "StopResponding": "Do not send anything else and do not pay or comply with new demands — compliance often increases pressure rather than ending it.",
+  "SaveEvidence": "Screenshot the messages, usernames, and any threats before blocking the person.",
+  "TellAdult": "A parent, school counselor, or teacher can help — you will not be treated as the person at fault.",
+  "ReportIt": "The NCMEC CyberTipline at report.cybertip.org is built for this exact situation, and a school counselor can also connect you with more support.",
+  "GetHelp": "Reporting quickly is what stops the situation from continuing or escalating."
+};
+const panel = document.getElementById('panel');
+function setup() {
+  document.querySelectorAll('.node').forEach(n => {
+    const id = n.id.replace('flowchart-', '').split('-')[0];
+    if (nodeInfo[id]) {
+      n.addEventListener('mouseenter', () => { panel.textContent = nodeInfo[id]; });
+      n.addEventListener('click', () => { panel.textContent = nodeInfo[id]; });
+    }
+  });
+}
+function wait() {
+  const m = document.querySelector('.mermaid');
+  if (m && m.querySelector('svg') && document.querySelectorAll('.node').length) setup();
+  else setTimeout(wait, 100);
+}
+setTimeout(wait, 150);
+</script>
 </body>
 </html>

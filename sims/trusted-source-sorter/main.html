@@ -3,129 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Trusted Source or Not?</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Trusted Source or Not? MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
+        body { margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif; }
     </style>
+    <script src="trusted-source-sorter.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Trusted Source or Not?</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> trusted-source-sorter</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
-            <p><strong>Learning Objective:</strong> Students determine the validity and reliability of a simple health claim by evaluating its source and comparing it against what a trusted adult, doctor, or book would say.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** trusted-source-sorter<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Evaluate (L5)
-    Bloom Taxonomy Verb: judge, assess, validate
-    
-    Learning objective: Students determine the validity and reliability of a simple health claim by evaluating its source and comparing it against what a trusted adult, doctor, or book would say.
-    
-    Canvas layout:
-    - Top area (150px): One health claim card shown at a time, with its source labeled (e.g., "School nurse says: wash your hands before eating," "Online ad says: this candy makes you run faster," "A book from the library says: sleep helps your brain grow")
-    - Middle area (250px): Two labeled bins — "Trustworthy Source" and "Needs Checking"
-    - Bottom strip (100px): Explanation caption and "Next Claim" button
-    
-    Visual elements:
-    - 8 claim cards cycling one at a time, mixing clearly trustworthy sources (doctor, school nurse, reliable book, parent) with clearly untrustworthy or unclear ones (online ad, unclear rumor, stranger's post, exaggerated commercial)
-    
-    Interactive controls:
-    - Click or drag the claim card into the matching bin
-    - Button: "Next Claim"
-    - Button: "Reset"
-    
-    Default parameters:
-    - First claim: "School nurse says: wash your hands before eating" (clear trustworthy example, to build confidence)
-    
-    Data Visibility Requirements:
-      Stage 1: Show the claim card with its stated source, no judgment yet
-      Stage 2: After the student picks a bin, reveal whether the choice matches experts' view and a one-sentence reason ("A school nurse is trained to give health advice, so this is a trustworthy source.")
-      Stage 3: Show a short reminder question: "Who said it, why did they say it, and does it match what trusted adults say?"
-    
-    Behavior:
-    - Correct placement: bin glows, gentle chime, reason caption appears
-    - Incorrect placement: calm prompt, "Look again — who is giving this health claim, and why?"
-    - After all claims, a summary caption reminds students that checking the source is the first step before believing or sharing a health claim
-    
-    Instructional Rationale: Determining the validity and reliability of health information is Grade 3's first genuine Evaluate-level benchmark, so the pattern uses a judgment sorter with a revealed reason rather than passive viewing. Students must actively assess each source and compare it against a simple trusted standard, which matches the Evaluate-level demand of judging and validating.
-    
-    Implementation notes: Use p5.js. Keep claim cards short and readable aloud. Avoid frightening or shaming language — the goal is confident, curious checking, not fear of every message.
-    -->
+    <main></main>
 </body>
 </html>

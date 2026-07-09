@@ -3,123 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Where Does This Food Go?</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Where Does This Food Go? MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="where-does-food-go.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Where Does This Food Go?</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> where-does-food-go</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Remember (L1)</p>
-            <p><strong>Learning Objective:</strong> Students recall safe practices for storing food by matching foods to the correct storage spot (refrigerator or cupboard).</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** where-does-food-go<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Remember (L1)
-    Bloom Taxonomy Verb: recall, identify, locate
-    
-    Learning objective: Students recall safe practices for storing food by matching foods to the correct storage spot (refrigerator or cupboard).
-    
-    Canvas layout:
-    - Left area (450px): Two large storage areas side by side: a refrigerator illustration and a cupboard illustration
-    - Right area (150px): A stack of 10 food picture cards to click through
-    
-    Visual elements:
-    - Refrigerator and cupboard illustrations with open doors showing empty shelves
-    - 10 food cards: milk, eggs, leftovers, grapes, bread, crackers, canned beans, cheese, cereal, yogurt
-    
-    Interactive controls:
-    - Drag-and-drop or click-to-place: place each food card into the refrigerator or cupboard
-    - Button: "Next Food"
-    - Button: "Reset"
-    
-    Default parameters:
-    - First card: milk (clearly a refrigerator item, to build confidence)
-    
-    Behavior:
-    - Correct placement: shelf glows, gentle chime, one-sentence reason appears ("Milk needs to stay cold so it doesn't spoil.")
-    - Incorrect placement: gentle prompt, "Look again — does this food need to stay cold?"
-    
-    Instructional Rationale: This is a Remember-level (recall/identify) objective, so a simple matching pattern with an immediate explanation is appropriate — students are learning to locate the correct storage spot, not yet reasoning about spoilage science.
-    
-    Implementation notes: Use p5.js. Keep illustrations simple and friendly. Teacher reads each food name and reason aloud.
-    -->
+    <main></main>
 </body>
 </html>

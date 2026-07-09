@@ -1,138 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Integrating Traditional And Conventional Medicine Decision Tool</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 678 -->
+<title>Integrating Traditional And Conventional Medicine Decision Tool</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis', subGraphTitleMargin: { top: 10, bottom: 14 } } });
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+  main { display: flex; height: 100%; }
+  .diagram { flex: 2; background: aliceblue; display: flex; justify-content: center; align-items: center; overflow: hidden; padding: 8px; }
+  .diagram .mermaid { width: 100%; text-align: center; }
+  .diagram svg { max-width: 100%; height: auto; }
+  .info { flex: 1; background: #f8fafc; border-left: 1px solid #e2e8f0; padding: 10px; overflow: hidden; }
+  .info h3 { font-size: 14px; color: #1a3a6c; margin-bottom: 8px; }
+  #panel { font-size: 13px; color: #334155; line-height: 1.4; }
+  .node { cursor: pointer; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Integrating Traditional And Conventional Medicine Decision Tool</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> integrating-traditional-conventional-medicine-tool</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students apply the correct sequence of actions for</p>
-        </div>
-    </div>
+<main>
+  <div class="diagram"><div class="mermaid">
+flowchart TD
+    Start("Using or Considering a<br/>Traditional or Plant-Based<br/>Remedy Alongside<br/>Conventional Care"):::endNode
+    TellProviders["Tell Every<br/>Healthcare Provider"]:::mildNode
+    CheckInteractions["Provider Checks for<br/>Known Interactions"]:::mildNode
+    Coordinated["Both Practices Are<br/>Coordinated Respectfully"]:::goodNode
+    SaferCare("Safer, More<br/>Complete Care"):::goodNode
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    Start --> TellProviders
+    TellProviders --> CheckInteractions
+    CheckInteractions --> Coordinated
+    Coordinated --> SaferCare
 
-    Type: workflow
-    
-    **sim-id:** integrating-traditional-conventional-medicine-tool<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy Level: Apply (L3)
-    Bloom Verb: apply, demonstrate, execute
-    
-    Learning objective: Students apply the correct sequence of actions for
-    safely integrating a traditional or plant-based remedy with conventional
-    medical care, reinforcing open communication with providers as the central
-    safety habit.
-    
-    Visual style: Mermaid flowchart with a start node, three sequential
-    process nodes, and an end node, all clickable via `click NodeId call
-    showInfo("term")`
-    
-    Nodes:
-    1. Start: "I Am Using or Considering a Traditional/Plant-Based Remedy
-       Alongside Conventional Care" — click reveals: "This applies to
-       ceremonial medicine, herbal remedies, or other traditional practices
-       used alongside a doctor's care."
-    2. "Tell Every Healthcare Provider" — click reveals: "Disclose the
-       remedy the same way you would an over-the-counter supplement, so the
-       provider can check for interaction risk."
-    3. "Provider Checks for Known Interactions" — click reveals: "A
-       culturally safe provider works with you to check whether the remedy
-       and any prescribed medication interact, without dismissing the
-       traditional practice."
-    4. "Both Practices Are Coordinated Respectfully" — click reveals: "Many
-       healthcare systems today support integrating traditional and
-       conventional care when both are disclosed and coordinated."
-    End: "Safer, More Complete Care" — click reveals: "Open communication,
-    not choosing one system over the other, is what makes combining
-    traditional and conventional medicine safe."
-    
-    Connections: Start → 2 → 3 → 4 → End
-    
-    Color coding: gray for the start node, blue for the communication and
-    provider-check nodes, green for the coordinated-care and outcome nodes
-    
-    Implementation: Mermaid flowchart with click bindings to a showInfo()
-    function; infobox text in a JS lookup object; content restriction: no node
-    names a specific plant, dosage, or preparation method — only the
-    communication and coordination process.
-    -->
+    classDef startNode fill:#5b9bd5,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef processNode fill:#7e57c2,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#ffd54f,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef emergNode fill:#e57373,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef mildNode fill:#64b5f6,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef goodNode fill:#66bb6a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef endNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    linkStyle default stroke:#999,stroke-width:2px,font-size:14px
+  </div></div>
+  <div class="info"><h3>Integrating Traditional and Conventional Care</h3><div id="panel">Hover or tap any step for details.</div></div>
+</main>
+<script>
+const nodeInfo = {
+  "Start": "This applies to ceremonial medicine, herbal remedies, or other traditional practices used alongside a doctor's care.",
+  "TellProviders": "Disclose the remedy the same way you would an over-the-counter supplement, so the provider can check for interaction risk.",
+  "CheckInteractions": "A culturally safe provider works with you to check whether the remedy and any prescribed medication interact, without dismissing the traditional practice.",
+  "Coordinated": "Many healthcare systems today support integrating traditional and conventional care when both are disclosed and coordinated.",
+  "SaferCare": "Open communication, not choosing one system over the other, is what makes combining traditional and conventional medicine safe."
+};
+const panel = document.getElementById('panel');
+function setup() {
+  document.querySelectorAll('.node').forEach(n => {
+    const id = n.id.replace('flowchart-', '').split('-')[0];
+    if (nodeInfo[id]) {
+      n.addEventListener('mouseenter', () => { panel.textContent = nodeInfo[id]; });
+      n.addEventListener('click', () => { panel.textContent = nodeInfo[id]; });
+    }
+  });
+}
+function wait() {
+  const m = document.querySelector('.mermaid');
+  if (m && m.querySelector('svg') && document.querySelectorAll('.node').length) setup();
+  else setTimeout(wait, 100);
+}
+setTimeout(wait, 150);
+</script>
 </body>
 </html>

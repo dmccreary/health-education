@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 330 -->
+<title>From Store to Plate &mdash; Keeping Food Safe</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis' } });
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; overflow: hidden; }
+  main { display: flex; flex-direction: column; height: 100%; padding: 6px 10px 8px; }
+  .header { flex-shrink: 0; text-align: center; }
+  .header h3 { color: navy; font-size: 17px; }
+  .header .subtitle { color: dimgray; font-size: 12px; margin-top: 2px; }
+  .diagram { flex: 1; min-height: 0; background: aliceblue; border: 1px solid silver; border-radius: 6px; display: flex; justify-content: center; align-items: center; overflow: hidden; padding: 8px; margin: 6px 0; }
+  .diagram .mermaid { width: 100%; text-align: center; }
+  .diagram svg { max-width: 100%; height: auto; }
+  .info { flex-shrink: 0; min-height: 64px; background: #f8fafc; border-left: 4px solid #1a3a6c; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; }
+  .source { flex-shrink: 0; text-align: center; color: gray; font-size: 10px; margin-top: 6px; }
+  .node { cursor: pointer; }
+</style>
+</head>
+<body>
+<main>
+  <div class="header">
+    <h3>From Store to Plate &mdash; Keeping Food Safe</h3>
+    <div class="subtitle">Tap or hover each step to see how to keep food safe at that stage.</div>
+  </div>
+  <div class="diagram"><div class="mermaid">
+flowchart LR
+    Arrive["Food Arrives<br/>Home"]:::storageNode
+    Prep["Food Gets<br/>Prepared"]:::prepNode
+    Handle["Food Is<br/>Handled"]:::handleNode
+    Enjoy["Food Is Enjoyed<br/>Safely"]:::outcomeNode
+
+    Arrive --> Prep --> Handle --> Enjoy
+
+    classDef storageNode fill:#5b9bd5,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef prepNode fill:#66bb6a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef handleNode fill:#ef7d00,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef outcomeNode fill:#f4c430,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    linkStyle default stroke:#999,stroke-width:2px,font-size:14px
+  </div></div>
+  <div class="info" id="panel">Tap or hover any step to see how to keep food safe at that stage.</div>
+  <div class="source">For learning and classroom discussion. Always ask a trusted adult for help with food safety.</div>
+</main>
+<script>
+const nodeInfo = {
+  "Arrive": { text: "Food Storage Safety: Put cold foods like milk and meat in the refrigerator right away so they don't spoil.", color: "#5b9bd5" },
+  "Prep":   { text: "Food Preparation Safety: Wash fruits and vegetables, cook meat fully, and use separate cutting boards for meat and produce.", color: "#66bb6a" },
+  "Handle": { text: "Food Handling Safety: Wash your hands before eating and use clean plates and utensils.", color: "#ef7d00" },
+  "Enjoy":  { text: "When all three safety steps are followed, food is much less likely to make someone sick!", color: "#f4c430" }
+};
+const panel = document.getElementById('panel');
+function show(id) {
+  const info = nodeInfo[id];
+  if (!info) return;
+  panel.textContent = info.text;
+  panel.style.borderLeftColor = info.color;
+}
+function setup() {
+  document.querySelectorAll('.node').forEach(n => {
+    const id = n.id.replace('flowchart-', '').split('-')[0];
+    if (nodeInfo[id]) {
+      n.addEventListener('mouseenter', () => show(id));
+      n.addEventListener('click', () => show(id));
+    }
+  });
+}
+function wait() {
+  const m = document.querySelector('.mermaid');
+  if (m && m.querySelector('svg') && document.querySelectorAll('.node').length) setup();
+  else setTimeout(wait, 100);
+}
+setTimeout(wait, 150);
+</script>
+</body>
+</html>
