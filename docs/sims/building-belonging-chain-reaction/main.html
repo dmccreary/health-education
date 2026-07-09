@@ -1,123 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Building Belonging Chain Reaction</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 720 -->
+<title>Building Belonging Chain Reaction</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis', subGraphTitleMargin: { top: 10, bottom: 14 } } });
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+  main { display: flex; height: 100%; }
+  .diagram { flex: 2; background: aliceblue; display: flex; justify-content: center; align-items: center; overflow: hidden; padding: 8px; }
+  .diagram .mermaid { width: 100%; text-align: center; }
+  .diagram svg { max-width: 100%; height: auto; }
+  .info { flex: 1; background: #f8fafc; border-left: 1px solid #e2e8f0; padding: 10px; overflow: hidden; }
+  .info h3 { font-size: 14px; color: #1a3a6c; margin-bottom: 8px; }
+  #panel { font-size: 13px; color: #334155; line-height: 1.4; }
+  .node { cursor: pointer; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Building Belonging Chain Reaction</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> building-belonging-chain-reaction</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students explain how healthy peer traits, kindness, and valuing uniqueness work together, through caring relationships, to build a classroom where everyone belongs.</p>
-        </div>
-    </div>
+<main>
+  <div class="diagram"><div class="mermaid">
+flowchart TD
+    Traits("Healthy Peer<br/>Traits"):::startNode
+    Kindness["Kindness"]:::goodNode
+    Unique["Valuing<br/>Uniqueness"]:::processNode
+    Caring["Caring<br/>Relationships"]:::warnNode
+    Belong("Everyone<br/>Belongs"):::rootNode
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    Traits --> Kindness
+    Kindness --> Unique
+    Unique --> Caring
+    Caring --> Belong
 
-    Type: workflow
-    **sim-id:** building-belonging-chain-reaction<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain, summarize, infer
-    
-    Learning objective: Students explain how healthy peer traits, kindness, and valuing uniqueness work together, through caring relationships, to build a classroom where everyone belongs.
-    
-    Purpose: Show a simple, positive chain from individual kind actions to a whole classroom feeling of belonging
-    
-    Visual style: Simple vertical flowchart with rounded boxes and an arrow chain, warm colors, ending in a bright "Everyone Belongs" node
-    
-    Steps:
-    1. Start: "Healthy Peer Traits" — hover text: "Listening, sharing, taking turns, and telling the truth with a peer."
-    2. Process: "Kindness" — hover text: "Choosing words and actions that help someone else feel good, safe, or included."
-    3. Process: "Valuing Uniqueness" — hover text: "Appreciating what makes each classmate different instead of expecting everyone to be the same."
-    4. Process: "Caring Relationships" — hover text: "Ongoing connections built on trust, respect, and support between classmates and with trusted adults."
-    5. End: "Everyone Belongs" — hover text: "A classroom where every person feels welcomed, valued, and safe being themselves."
-    
-    Every node includes a click handler opening an infobox with the hover text described above (Mermaid `click` directive on each node).
-    
-    Color coding:
-    - Soft blue: Healthy Peer Traits
-    - Soft green: Kindness
-    - Soft purple: Valuing Uniqueness
-    - Soft orange: Caring Relationships
-    - Gold: Everyone Belongs (end state)
-    
-    Implementation: Mermaid flowchart with `click NodeId call showInfo("text")` directives on all five nodes, each opening an infobox with the corresponding hover text
-    -->
+    classDef startNode fill:#5b9bd5,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef processNode fill:#7e57c2,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#ffd54f,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef emergNode fill:#e57373,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef mildNode fill:#64b5f6,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef goodNode fill:#66bb6a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef endNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef warnNode fill:#ffb74d,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef rootNode fill:#f4c430,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    linkStyle default stroke:#999,stroke-width:2px,font-size:14px
+  </div></div>
+  <div class="info"><h3>Building Belonging Chain Reaction</h3><div id="panel">Hover or tap any step for details.</div></div>
+</main>
+<script>
+const nodeInfo = {
+  "Traits": "Listening, sharing, taking turns, and telling the truth with a peer.",
+  "Kindness": "Choosing words and actions that help someone else feel good, safe, or included.",
+  "Unique": "Appreciating what makes each classmate different instead of expecting everyone to be the same.",
+  "Caring": "Ongoing connections built on trust, respect, and support between classmates and with trusted adults.",
+  "Belong": "A classroom where every person feels welcomed, valued, and safe being themselves."
+};
+const panel = document.getElementById('panel');
+function setup() {
+  document.querySelectorAll('.node').forEach(n => {
+    const id = n.id.replace('flowchart-', '').split('-')[0];
+    if (nodeInfo[id]) {
+      n.addEventListener('mouseenter', () => { panel.textContent = nodeInfo[id]; });
+      n.addEventListener('click', () => { panel.textContent = nodeInfo[id]; });
+    }
+  });
+}
+function wait() {
+  const m = document.querySelector('.mermaid');
+  if (m && m.querySelector('svg') && document.querySelectorAll('.node').length) setup();
+  else setTimeout(wait, 100);
+}
+setTimeout(wait, 150);
+</script>
 </body>
 </html>

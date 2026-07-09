@@ -1,141 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Infectious Disease Transmission Chain Interrupter</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 720 -->
+<title>Infectious Disease Transmission Chain Interrupter</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis', subGraphTitleMargin: { top: 10, bottom: 14 } } });
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+  main { display: flex; height: 100%; }
+  .diagram { flex: 2; background: aliceblue; display: flex; justify-content: center; align-items: center; overflow: hidden; padding: 8px; }
+  .diagram .mermaid { width: 100%; text-align: center; }
+  .diagram svg { max-width: 100%; height: auto; }
+  .info { flex: 1; background: #f8fafc; border-left: 1px solid #e2e8f0; padding: 10px; overflow: hidden; }
+  .info h3 { font-size: 14px; color: #1a3a6c; margin-bottom: 8px; }
+  #panel { font-size: 13px; color: #334155; line-height: 1.4; }
+  .node { cursor: pointer; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Infectious Disease Transmission Chain Interrupter</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> transmission-chain-interrupter</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
-            <p><strong>Learning Objective:</strong> Students evaluate which prevention strategy correctly</p>
-        </div>
-    </div>
+<main>
+  <div class="diagram"><div class="mermaid">
+flowchart TD
+    Source("Infectious<br/>Source"):::sourceNode
+    Environment["Environment /<br/>Surfaces"]:::mildNode
+    PersonSpread["Person-to-Person<br/>Spread"]:::orangeNode
+    ImmuneDefense["New Host's<br/>Immune Defense"]:::goodNode
+    CommunityImmunity("Community<br/>Immunity"):::goodNode
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    Source --> Environment
+    Environment --> PersonSpread
+    PersonSpread --> ImmuneDefense
+    ImmuneDefense --> CommunityImmunity
+    CommunityImmunity -->|Fewer active sources when<br/>spread is interrupted| Source
 
-    Type: workflow
-    
-    **sim-id:** transmission-chain-interrupter<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy Level: Evaluate (L5)
-    Bloom Verb: assess, justify, recommend
-    
-    Learning objective: Students evaluate which prevention strategy correctly
-    interrupts a given point in the infection transmission chain, and justify
-    why that intervention point is effective for a specific scenario (e.g., a
-    foodborne outbreak vs. a respiratory virus outbreak).
-    
-    Visual style: Mermaid flowchart depicting a transmission chain
-    (Source → Environment/Surface → Person-to-Person Spread → New Host), with
-    click handlers on every node revealing the matching prevention strategy
-    
-    Nodes (all clickable, `click NodeId call showInfo("term")`):
-    1. "Infectious Source" — click text: "The person or contaminated item
-       currently carrying the pathogen"
-    2. "Environment/Surfaces" — click text: "Sanitation and safe food/water
-       handling interrupt spread here — e.g., handwashing, safe food storage"
-    3. "Person-to-Person Spread" — click text: "Physical distancing and
-       ventilation interrupt spread here during outbreaks of respiratory
-       illness"
-    4. "New Host's Immune Defense" — click text: "Vaccination prepares the
-       immune system here, before exposure even happens"
-    5. "Community Immunity" (outcome node) — click text: "When enough of a
-       community is vaccinated, transmission chains break down even for people
-       who cannot be vaccinated"
-    
-    Connections: 1→2, 2→3, 3→4, 4→5, with a feedback arrow from 5 back to 1
-    labeled "Fewer active sources when spread is interrupted"
-    
-    Scenario mode: two scenario buttons ("Foodborne Outbreak" and "Respiratory
-    Virus Outbreak") that, when clicked, highlight the single most effective
-    interruption point for that scenario and reveal a justification panel
-    
-    Color coding: gray for source, blue for environment/surfaces, orange for
-    person-to-person spread, green for immune defense and community immunity
-    
-    Interactive features: click any node for its infobox; click either
-    scenario button to see the highlighted best-intervention point with
-    justification text
-    
-    Implementation: Mermaid.js flowchart with JavaScript click bindings to a
-    custom showInfo() function and a scenario-highlight function driven by a
-    small lookup table
-    -->
+    classDef startNode fill:#5b9bd5,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef processNode fill:#7e57c2,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#ffd54f,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef emergNode fill:#e57373,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef mildNode fill:#64b5f6,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef goodNode fill:#66bb6a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef endNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef sourceNode fill:#9e9e9e,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef orangeNode fill:#ffb74d,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    linkStyle default stroke:#999,stroke-width:2px,font-size:14px
+  </div></div>
+  <div class="info"><h3>Transmission Chain Interrupter</h3><div id="panel">Hover or tap any step for details.</div></div>
+</main>
+<script>
+const nodeInfo = {
+  "Source": "The person or contaminated item currently carrying the pathogen.",
+  "Environment": "Sanitation and safe food/water handling interrupt spread here — e.g., handwashing and safe food storage.",
+  "PersonSpread": "Physical distancing and ventilation interrupt spread here during outbreaks of respiratory illness.",
+  "ImmuneDefense": "Vaccination prepares the immune system here, before exposure even happens.",
+  "CommunityImmunity": "When enough of a community is vaccinated, transmission chains break down even for people who cannot be vaccinated."
+};
+const panel = document.getElementById('panel');
+function setup() {
+  document.querySelectorAll('.node').forEach(n => {
+    const id = n.id.replace('flowchart-', '').split('-')[0];
+    if (nodeInfo[id]) {
+      n.addEventListener('mouseenter', () => { panel.textContent = nodeInfo[id]; });
+      n.addEventListener('click', () => { panel.textContent = nodeInfo[id]; });
+    }
+  });
+}
+function wait() {
+  const m = document.querySelector('.mermaid');
+  if (m && m.querySelector('svg') && document.querySelectorAll('.node').length) setup();
+  else setTimeout(wait, 100);
+}
+setTimeout(wait, 150);
+</script>
 </body>
 </html>

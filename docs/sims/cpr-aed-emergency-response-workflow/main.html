@@ -1,146 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>CPR and AED Emergency Response Workflow</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 1000 -->
+<title>CPR and AED Emergency Response Workflow</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis', subGraphTitleMargin: { top: 10, bottom: 14 } } });
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+  main { display: flex; height: 100%; }
+  .diagram { flex: 2; background: aliceblue; display: flex; justify-content: center; align-items: center; overflow: hidden; padding: 8px; }
+  .diagram .mermaid { width: 100%; text-align: center; }
+  .diagram svg { max-width: 100%; height: auto; }
+  .info { flex: 1; background: #f8fafc; border-left: 1px solid #e2e8f0; padding: 10px; overflow: hidden; }
+  .info h3 { font-size: 14px; color: #1a3a6c; margin-bottom: 8px; }
+  #panel { font-size: 13px; color: #334155; line-height: 1.4; }
+  .node { cursor: pointer; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>CPR and AED Emergency Response Workflow</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> cpr-aed-emergency-response-workflow</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students apply the correct combined CPR and AED</p>
-        </div>
-    </div>
+<main>
+  <div class="diagram"><div class="mermaid">
+flowchart TD
+    CheckScene("Check Scene Safety<br/>and Responsiveness"):::startNode
+    Call911["Call 911 and Send<br/>Someone for an AED"]:::mildNode
+    CheckBreathing["Check for Normal Breathing<br/>(Up to 10 Seconds)"]:::mildNode
+    Compressions["Begin Chest Compressions<br/>(100-120/min, at least<br/>2 inches deep)"]:::mildNode
+    AttachPads["AED Arrives: Turn On<br/>and Attach Pads"]:::mildNode
+    Analyze{"AED Analyzes Rhythm<br/>Shock Advised?"}:::decisionNode
+    DeliverShock["Clear Everyone,<br/>Deliver Shock"]:::goodNode
+    ResumeNoShock["Resume CPR<br/>Immediately"]:::goodNode
+    ResumeAfterShock["Resume CPR<br/>After Shock"]:::goodNode
+    ContinueCycle["Continue Cycle Until EMS<br/>Arrives or Person Shows<br/>Signs of Life"]:::emergNode
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    CheckScene --> Call911
+    Call911 --> CheckBreathing
+    CheckBreathing --> Compressions
+    Compressions --> AttachPads
+    AttachPads --> Analyze
+    Analyze -->|Yes| DeliverShock
+    Analyze -->|No| ResumeNoShock
+    DeliverShock --> ResumeAfterShock
+    ResumeNoShock --> ContinueCycle
+    ResumeAfterShock --> ContinueCycle
+    ContinueCycle -->|AED Re-Analyzes Periodically| Analyze
 
-    Type: workflow
-    
-    **sim-id:** cpr-aed-emergency-response-workflow<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy Level: Apply (L3)
-    Bloom Verb: apply, execute, demonstrate
-    
-    Learning objective: Students apply the correct combined CPR and AED
-    response sequence to a cardiac emergency scenario, from recognizing
-    unresponsiveness through continued care until help arrives.
-    
-    Visual style: Mermaid flowchart, top-to-bottom, sequential with one
-    decision diamond and one repeating loop, click handlers on every node
-    
-    Nodes (all clickable, `click NodeId call showInfo("term")`):
-    1. "Check Scene Safety and Responsiveness" — click text: "Confirm the
-       scene is safe, then tap and shout to check for a response"
-    2. "Call 911 and Send Someone for an AED" — click text: "Assign a
-       specific person to call, rather than a general call for help, and send
-       another person to find an AED if one is available"
-    3. "Check for Normal Breathing (Up to 10 Seconds)" — click text: "Gasping
-       is not normal breathing and still requires CPR"
-    4. "Begin Chest Compressions (100-120/min, at least 2 inches deep)" —
-       click text: "Push hard and fast in the center of the chest, allowing
-       full chest recoil between compressions"
-    5. "AED Arrives: Turn On and Attach Pads" — click text: "Follow the
-       picture guide on the pads for correct placement on the bare chest"
-    6. "AED Analyzes Rhythm" (decision diamond: "Shock Advised?") — click
-       text: "No one should touch the person while the AED is analyzing"
-    7a. "Yes" → "Clear Everyone, Deliver Shock" — click text: "The AED will
-       only allow a shock when its own analysis indicates one is needed"
-    7b. "No" → "Resume CPR Immediately" — click text: "If no shock is
-       advised, chest compressions restart right away"
-    8. "Resume CPR After Shock" — click text: "CPR restarts immediately after
-       every shock, without checking for a pulse first"
-    9. Shared end node "Continue Cycle Until EMS Arrives or Person Shows Signs of Life" —
-       click text: "The AED will periodically re-analyze the rhythm and
-       prompt the next step throughout"
-    
-    Connections: 1→2, 2→3, 3→4, 4→5, 5→6, 6→7a, 6→7b, 7a→8, 7b→9, 8→9, and a
-    loop from 9 back to 6 labeled "AED Re-Analyzes Periodically"
-    
-    Color coding: blue for process/action steps, gold for the AED analysis
-    decision diamond, green for the shock and resume-CPR outcomes, red for
-    the shared "continue until help arrives" end node
-    
-    Interactive features: click any node for its infobox describing that
-    step's purpose
-    
-    Implementation: Mermaid.js flowchart with JavaScript click bindings to a
-    custom showInfo() function; infobox text includes a persistent reminder
-    that this is educational awareness, not certified training
-    -->
+    classDef startNode fill:#5b9bd5,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef processNode fill:#7e57c2,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#ffd54f,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef emergNode fill:#e57373,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef mildNode fill:#64b5f6,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef goodNode fill:#66bb6a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef endNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    linkStyle default stroke:#999,stroke-width:2px,font-size:14px
+  </div></div>
+  <div class="info"><h3>CPR and AED Emergency Response Workflow</h3><div id="panel">Hover or tap any step for details. This MicroSim is educational awareness, not certified training.</div></div>
+</main>
+<script>
+const nodeInfo = {
+  "CheckScene": "Confirm the scene is safe, then tap and shout to check for a response. Remember, this is educational awareness, not certified training.",
+  "Call911": "Assign a specific person to call, rather than a general call for help, and send another person to find an AED if one is available.",
+  "CheckBreathing": "Gasping is not normal breathing and still requires CPR.",
+  "Compressions": "Push hard and fast in the center of the chest, allowing full chest recoil between compressions.",
+  "AttachPads": "Follow the picture guide on the pads for correct placement on the bare chest.",
+  "Analyze": "No one should touch the person while the AED is analyzing.",
+  "DeliverShock": "The AED will only allow a shock when its own analysis indicates one is needed.",
+  "ResumeNoShock": "If no shock is advised, chest compressions restart right away.",
+  "ResumeAfterShock": "CPR restarts immediately after every shock, without checking for a pulse first.",
+  "ContinueCycle": "The AED will periodically re-analyze the rhythm and prompt the next step throughout. This is educational awareness, not a substitute for certified CPR/AED training."
+};
+const panel = document.getElementById('panel');
+function setup() {
+  document.querySelectorAll('.node').forEach(n => {
+    const id = n.id.replace('flowchart-', '').split('-')[0];
+    if (nodeInfo[id]) {
+      n.addEventListener('mouseenter', () => { panel.textContent = nodeInfo[id]; });
+      n.addEventListener('click', () => { panel.textContent = nodeInfo[id]; });
+    }
+  });
+}
+function wait() {
+  const m = document.querySelector('.mermaid');
+  if (m && m.querySelector('svg') && document.querySelectorAll('.node').length) setup();
+  else setTimeout(wait, 100);
+}
+setTimeout(wait, 150);
+</script>
 </body>
 </html>

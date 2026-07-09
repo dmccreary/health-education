@@ -1,134 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Mapping Your Relationship Structures</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 560 -->
+<title>Mapping Your Relationship Structures</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 18px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 400px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 9px; font-size: 11px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 13px; height: 13px; margin-right: 6px; vertical-align: middle; border: 1px solid #555; }
+  .legend .circle { border-radius: 50%; }
+  .legend .line { display:inline-block; width: 18px; height: 0; margin-right:6px; vertical-align: middle; border: 0; border-top: 3px solid #667; }
+  .legend .line.dashed { border-top: 3px dashed #667; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 9px 11px; font-size: 13px; color: #334155; line-height: 1.5; min-height: 84px; }
+  .infobox strong { color: navy; }
+  .infobox .reflect { display: block; margin-top: 5px; color: seagreen; font-style: italic; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Mapping Your Relationship Structures</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> relationship-structure-mapper</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students classify a set of example people into</p>
-        </div>
+<main>
+  <h3>Mapping Your Relationship Structures</h3>
+  <div class="subtitle">Hover a node for its relationship type. Click a node to read why it is a real, legitimate relationship. Drag, zoom, and pan to explore.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k circle" style="background:#f3c34e;border-color:#8a6d0b;"></span>You<br>
+      <span class="k circle" style="background:#3b6fb5;"></span>Friendship<br>
+      <span class="k circle" style="background:#2e8b57;"></span>Family (birth, adoption, blended, kin)<br>
+      <span class="k circle" style="background:#8e5bb5;"></span>Romantic / dating<br>
+      <span class="k circle" style="background:#e08a2f;"></span>Chosen family / mentor<br>
+      <span class="line"></span>Active relationship<br>
+      <span class="line dashed"></span>Distant / infrequent (still real)
     </div>
+  </div>
+  <div class="infobox" id="infobox">You sit at the center of your own web of relationships. One person can belong to many kinds of relationships at once &mdash; friendship, family, romantic, and chosen family &mdash; and every one of them is real. Hover a node to see its type, or click it to learn more.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+const INTRO = 'You sit at the center of your own web of relationships. One person can belong to many kinds of relationships at once &mdash; friendship, family, romantic, and chosen family &mdash; and every one of them is real. Hover a node to see its type, or click it to learn more.';
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// Category color + short (hover) definition
+const CATS = {
+  friendship: { color:'#3b6fb5', border:'#274b7d', def:'Friendship: a bond of mutual liking, trust, and support that you choose.' },
+  family:     { color:'#2e8b57', border:'#1f5f3c', def:'Family: people connected by birth, adoption, marriage, or caregiving.' },
+  romantic:   { color:'#8e5bb5', border:'#5f3a7d', def:'Romantic relationship: a partnership built on romantic or dating feelings.' },
+  chosen:     { color:'#e08a2f', border:'#a85f14', def:'Chosen family / mentor: someone you treat as family or who guides you, even without blood ties.' }
+};
 
-    Type: graph-model
-    
-    **sim-id:** relationship-structure-mapper<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy Level: Understand (L2)
-    Bloom Verb: classify, exemplify
-    
-    Learning objective: Students classify a set of example people into
-    relationship-structure categories (friendship, chosen family, biological
-    family, blended family, dating, committed partnership) and see how one
-    person can sit inside several structures at once.
-    
-    Node types:
-    1. Central "You" node (gold circle, fixed position)
-    2. Relationship nodes (colored by category: blue = friendship, green =
-       family, purple = romantic, orange = chosen family/mentor)
-    
-    Edge types:
-    - Solid edge: currently active relationship
-    - Dashed edge: distant or infrequent-contact relationship, still real
-    
-    Sample data: 10 example relationship nodes (a best friend, a sibling, a
-    step-parent, a grandparent raising the student, a dating partner, a
-    same-sex partner example, a coach acting as mentor, an online friend, a
-    cousin, a family friend treated as "chosen family")
-    
-    Layout: Force-directed, "You" node fixed at center
-    
-    Interactive features:
-    - Hover a node: shows a short definition of that relationship category
-    - Click a node: opens a side panel with a one-paragraph description of
-      that structure and why it counts as a legitimate relationship
-    - Drag: nodes can be repositioned; layout re-settles
-    - Zoom/pan enabled
-    
-    Legend: color key for the four category colors, line-style key for
-    active vs. distant relationships
-    
-    Implementation: vis-network with a fixed center node and physics-enabled
-    child nodes
-    -->
+// Central node + 10 relationship nodes. active:false => dashed (distant) edge.
+const you = { id:'you', label:'You', full:'This is you. Everyone sits at the center of their own web of relationships. One person can belong to many kinds of relationships at once, and each one is real and important.',
+  hover:'You sit at the center of your own relationships, and you can belong to many kinds at once.' };
+
+const people = [
+  { id:'bestfriend', label:'Best\nFriend', cat:'friendship', active:true,
+    full:'A best friend is a close friendship you choose. Friendships are real, important relationships: they teach trust, loyalty, and how to care for someone outside your family.' },
+  { id:'sibling', label:'Sibling', cat:'family', active:true,
+    full:'A sibling is part of your biological or adoptive family. Brothers and sisters share your everyday life and are one of the longest relationships many people ever have.' },
+  { id:'stepparent', label:'Step-\nParent', cat:'family', active:true,
+    full:'A step-parent joins your family through marriage or partnership, forming a blended family. Blended families are a common, legitimate family structure: care, not just biology, is what makes a parent.' },
+  { id:'grandparent', label:'Grandparent\n(raising me)', cat:'family', active:true,
+    full:'A grandparent raising a grandchild forms a kinship family. When a relative steps in as the main caregiver, that is a full and valid family, not a lesser one.' },
+  { id:'dating', label:'Dating\nPartner', cat:'romantic', active:true,
+    full:'A dating partner is a romantic relationship you are exploring. Dating is how people learn about attraction, communication, and consent within a relationship.' },
+  { id:'partner', label:'Same-Gender\nPartner', cat:'romantic', active:true,
+    full:'A same-gender partner is a romantic relationship between two people of the same gender. Same-gender relationships are just as real and valid as any other romantic partnership.' },
+  { id:'coach', label:'Coach /\nMentor', cat:'chosen', active:true,
+    full:'A coach or mentor guides and supports you, often like chosen family. Trusted mentors can be some of the steadiest, most positive adults in a young person’s life.' },
+  { id:'online', label:'Online\nFriend', cat:'friendship', active:false,
+    full:'An online friend is a friendship built through the internet or games. Even without meeting in person, online friendships can offer real support, while it is still smart to stay safe about who you trust.' },
+  { id:'cousin', label:'Cousin', cat:'family', active:false,
+    full:'A cousin is part of your extended family. Even if you do not see them often, extended family are still relatives you can belong to and lean on.' },
+  { id:'familyfriend', label:'Family Friend\n("chosen family")', cat:'chosen', active:true,
+    full:'A family friend you treat as "chosen family" is someone you claim as family through love, not blood. Chosen family is a real, valued structure, especially when it offers belonging and support.' }
+];
+
+const nodes = [], edges = [];
+const info = {};      // id -> { title, full }
+const hoverInfo = {}; // id -> short line
+
+// Central "You" node (gold, fixed at center)
+nodes.push({ id:'you', label:'You', shape:'dot', size:30,
+  color:{ background:'#f3c34e', border:'#8a6d0b', highlight:{ background:'#ffd76b', border:'#8a6d0b' } },
+  font:{ size:15, color:'#3a2c00', face:'Arial' }, borderWidth:3,
+  x:0, y:0, fixed:{ x:true, y:true } });
+info['you'] = { title:'You', full:you.full };
+hoverInfo['you'] = you.hover;
+
+people.forEach((p) => {
+  const c = CATS[p.cat];
+  nodes.push({ id:p.id, label:p.label, shape:'dot', size:22,
+    color:{ background:c.color, border:c.border, highlight:{ background:c.color, border:c.border } },
+    font:{ size:12, color:'white', face:'Arial' }, borderWidth:2 });
+  edges.push({ from:'you', to:p.id, dashes:!p.active,
+    color:{ color:'#8896a8', highlight:'#f3c34e' }, width: p.active ? 2.5 : 2,
+    smooth:{ type:'continuous' } });
+  info[p.id] = { title:p.label.replace(/\n/g,' '), full:p.full };
+  hoverInfo[p.id] = c.def;
+});
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  physics: { solver:'forceAtlas2Based', forceAtlas2Based:{ gravitationalConstant:-60, springLength:150, avoidOverlap:0.9 }, stabilization:{ iterations:320 } },
+  interaction: { hover:true, dragView:true, zoomView:true, navigationButtons:true, tooltipDelay:100000 },
+  edges: { arrows:{ to:{ enabled:true, scaleFactor:0.5 } } },
+  nodes: { shadow:true }
+};
+const network = new vis.Network(container, data, options);
+network.once('stabilizationIterationsDone', () => { network.setOptions({ physics:false }); network.fit(); });
+
+function showInfo(id){
+  const d = info[id];
+  if (!d) return;
+  let html = '<strong>' + d.title + '</strong><br>' + d.full;
+  if (id !== 'you') html += '<span class="reflect">One person can sit inside several of these structures at the same time.</span>';
+  box.innerHTML = html;
+}
+
+network.on('hoverNode', p => { const h = hoverInfo[p.node]; if (h) box.innerHTML = h; });
+network.on('click', p => {
+  if (p.nodes.length) { showInfo(p.nodes[0]); }
+  else { box.innerHTML = INTRO; }
+});
+</script>
 </body>
 </html>

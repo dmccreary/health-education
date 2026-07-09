@@ -1,137 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Find Your Trusted Adults</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 540 -->
+<title>Find Your Trusted Adults</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 18px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 380px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 9px; font-size: 11px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 13px; height: 13px; margin-right: 6px; vertical-align: middle; border: 1px solid #555; }
+  .legend .circle { border-radius: 50%; }
+  .legend .line { width: 18px; height: 0; border: 0; border-top: 3px solid gray; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 9px 11px; font-size: 13px; color: #334155; line-height: 1.5; min-height: 84px; }
+  .infobox strong { color: navy; }
+  .infobox .say { display: block; margin-top: 5px; color: seagreen; font-style: italic; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Find Your Trusted Adults</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> trusted-adult-network</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Remember (L1) / Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students identify trusted adults across different settings (home, school, community) and describe what makes each one a good person to ask for help in a difficult or unsafe situation.</p>
-        </div>
+<main>
+  <h3>Find Your Trusted Adults</h3>
+  <div class="subtitle">Hover a circle to meet a trusted adult. Click one to see what you might say.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k circle" style="background:#2b6cb0;"></span>You<br>
+      <span class="k circle" style="background:#43a047;"></span>Home<br>
+      <span class="k circle" style="background:#8e44ad;"></span>School<br>
+      <span class="k circle" style="background:#e67e22;"></span>Community<br>
+      <span class="k line"></span>&nbsp;Can ask for help
     </div>
+  </div>
+  <div class="infobox" id="infobox">You are never limited to just one person. This map shows trusted adults at home, at school, and in your community. Hover a circle to learn about one, then click it to see an example of what to say.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+const INTRO = 'You are never limited to just one person. This map shows trusted adults at home, at school, and in your community. Hover a circle to learn about one, then click it to see an example of what to say.';
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// Trusted-adult nodes, grouped by setting. Order around the ring keeps each group together.
+const adults = [
+  { id:'parent',      label:'Parent /\nGuardian',   group:'home',
+    hover:'Home: A parent or guardian cares for you every day and is a great first person to ask.',
+    full:'A parent or guardian knows you well and can help with almost anything.', say:'"I need help because..." or "Something happened and I want to tell you about it."' },
+  { id:'grandparent', label:'Grandparent',          group:'home',
+    hover:'Home: A grandparent is a caring family member who has known you a long time.',
+    full:'A grandparent or close relative is family who cares about you and will listen.', say:'"Can I talk to you about something?" or "I need help because..."' },
+  { id:'teacher',     label:'Teacher',              group:'school',
+    hover:'School: A teacher sees you every day and can help or find someone who can.',
+    full:'A teacher is a trusted adult at school who sees you every day.', say:'"Can I talk to you for a minute?" or "I need help because..."' },
+  { id:'counselor',   label:'School\nCounselor',    group:'school',
+    hover:'School: A school counselor is trained to help with feelings, friendships, and safety.',
+    full:'A school counselor is trained to help with feelings, friendships, and staying safe, and talking with them is private.', say:'"I have something on my mind and I need help because..."' },
+  { id:'nurse',       label:'School\nNurse',        group:'school',
+    hover:'School: A school nurse helps with body concerns and health questions.',
+    full:'A school nurse helps with how your body feels and with health questions.', say:'"I don\'t feel well and I need help because..."' },
+  { id:'coach',       label:'Coach',                group:'community',
+    hover:'Community: A coach leads your team or activity and can be a trusted adult.',
+    full:'A coach leads a team or activity and can be a trusted adult when something is wrong.', say:'"Coach, can I talk to you? I need help because..."' },
+  { id:'police',      label:'Police\nOfficer',      group:'community',
+    hover:'Community: A police officer helps in an emergency when someone is in danger.',
+    full:'A police officer helps in an emergency when someone could be hurt. If you are in danger right now, call 911.', say:'"I need help right now because..."' },
+  { id:'faith',       label:'Faith\nLeader',        group:'community',
+    hover:'Community: A faith leader is a caring adult from your place of worship or community group.',
+    full:'A faith leader is a caring adult from a place of worship or community group.', say:'"Can I talk to you about something? I need help because..."' }
+];
 
-    Type: graph-model
-    **sim-id:** trusted-adult-network<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Remember (L1) / Understand (L2)
-    Bloom Taxonomy Verb: identify, describe
-    
-    Learning objective: Students identify trusted adults across different settings (home, school, community) and describe what makes each one a good person to ask for help in a difficult or unsafe situation.
-    
-    Purpose: Help students build a concrete mental map of multiple trusted adults, rather than relying on only one, so they always have someone to ask.
-    
-    Node types:
-    1. Student (center node, blue circle) — the student themselves
-    2. Home trusted adults (green circles) — Example: "Parent/Guardian," "Grandparent"
-    3. School trusted adults (purple circles) — Example: "Teacher," "School Counselor," "School Nurse"
-    4. Community trusted adults (orange circles) — Example: "Coach," "Police Officer," "Faith Leader"
-    
-    Edge types:
-    1. "CAN ASK FOR HELP" (solid gray line) connecting the student to every trusted adult node
-    
-    Sample data:
-    - Student → Parent/Guardian
-    - Student → Teacher
-    - Student → School Counselor
-    - Student → Coach
-    - Student → Police Officer (emergency situations)
-    
-    Layout: Radial/force-directed, with the student node in the center and trusted adults arranged in a ring
-    
-    Interactive features:
-    - Hover a trusted adult node: shows a short description of that role and one example situation to bring to them
-    - Click a trusted adult node: highlights the connection back to the student and opens a side panel with "What to say" sentence starters, like "I need help because..."
-    - Drag nodes to rearrange; zoom and pan supported
-    - A "My Own Map" mode lets students (with a teacher's help) relabel generic nodes with the actual names of their own trusted adults
-    
-    Visual styling:
-    - Student node larger and centered
-    - Node color grouped by setting (home, school, community) as described above
-    - Edge thickness uniform, since every trusted adult is equally reachable
-    
-    Legend: Color key explaining home/school/community groupings and what the connecting line means
-    
-    Implementation: vis-network JavaScript library, force-directed layout, click and hover event handlers wired to an infobox panel
-    Canvas size: responsive, default 700x450px
-    -->
+const groupColor = {
+  home:      { background:'#43a047', border:'#2e7031' },
+  school:    { background:'#8e44ad', border:'#5e2d73' },
+  community: { background:'#e67e22', border:'#a85700' }
+};
+
+const nodes = [], edges = [];
+const info = {}, hoverInfo = {};
+
+// Center "Me" node
+nodes.push({ id:'me', label:'Me', shape:'dot', size:34, x:0, y:0, fixed:{ x:true, y:true },
+  color:{ background:'#2b6cb0', border:'navy', highlight:{ background:'#3b82c4', border:'navy' } },
+  font:{ size:15, color:'white', face:'Arial' }, borderWidth:3 });
+info['me'] = { title:'Me', full:'This is you. Notice how many trusted adults you can reach — at home, at school, and in your community. If one person can\'t help right away, you can always ask another.' };
+hoverInfo['me'] = 'This is you. You have many trusted adults you can turn to.';
+
+// Place adults evenly around a ring; the small start-angle offset keeps spokes off perfectly horizontal.
+const R = 235, N = adults.length, START = -85;
+adults.forEach((a, i) => {
+  const ang = (START + i * (360 / N)) * Math.PI / 180;
+  const c = groupColor[a.group];
+  nodes.push({
+    id:a.id, label:a.label, shape:'dot', size:22,
+    x: Math.round(R * Math.cos(ang)), y: Math.round(R * Math.sin(ang)), fixed:{ x:true, y:true },
+    color:{ background:c.background, border:c.border, highlight:{ background:c.background, border:c.border } },
+    font:{ size:12, color:'white', face:'Arial' }, borderWidth:2
+  });
+  edges.push({ id:'e_'+a.id, from:'me', to:a.id,
+    color:{ color:'gray', highlight:'#333' }, width:2,
+    arrows:{ to:{ enabled:true, scaleFactor:0.4 } }, smooth:{ type:'continuous' } });
+  info[a.id] = { title:a.label.replace(/\n/g,' '), full:a.full, say:a.say };
+  hoverInfo[a.id] = a.hover;
+});
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  layout: { improvedLayout:false },
+  physics: false,
+  interaction: { hover:true, dragView:true, zoomView:true, navigationButtons:true, tooltipDelay:100000 },
+  edges: { arrows:{ to:{ enabled:true, scaleFactor:0.4 } } },
+  nodes: { shadow:true }
+};
+const network = new vis.Network(container, data, options);
+network.fit();
+
+function showInfo(id){
+  const d = info[id];
+  if (!d) return;
+  let html = '<strong>' + d.title + '</strong><br>' + d.full;
+  if (d.say) html += '<span class="say">What to say: ' + d.say + '</span>';
+  box.innerHTML = html;
+}
+
+function highlight(id){
+  const keep = new Set(['me', id]);
+  data.nodes.update(nodes.map(n => ({ id:n.id, opacity: keep.has(n.id) ? 1 : 0.25 })));
+  data.edges.update(data.edges.get().map(e => ({ id:e.id, hidden: e.to !== id })));
+}
+function clearHighlight(){
+  data.nodes.update(nodes.map(n => ({ id:n.id, opacity:1 })));
+  data.edges.update(data.edges.get().map(e => ({ id:e.id, hidden:false })));
+}
+
+network.on('hoverNode', p => { const h = hoverInfo[p.node]; if (h) box.innerHTML = h; });
+network.on('click', p => {
+  if (p.nodes.length) {
+    const id = p.nodes[0];
+    showInfo(id);
+    if (id === 'me') clearHighlight(); else highlight(id);
+  } else {
+    clearHighlight();
+    box.innerHTML = INTRO;
+  }
+});
+</script>
 </body>
 </html>

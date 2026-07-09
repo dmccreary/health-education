@@ -1,133 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Nonviolent Resolution Process Workflow</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 960 -->
+<title>Nonviolent Resolution Process Workflow</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis', subGraphTitleMargin: { top: 10, bottom: 14 } } });
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+  main { display: flex; height: 100%; }
+  .diagram { flex: 2; background: aliceblue; display: flex; justify-content: center; align-items: center; overflow: hidden; padding: 8px; }
+  .diagram .mermaid { width: 100%; text-align: center; }
+  .diagram svg { max-width: 100%; height: auto; }
+  .info { flex: 1; background: #f8fafc; border-left: 1px solid #e2e8f0; padding: 10px; overflow: hidden; }
+  .info h3 { font-size: 14px; color: #1a3a6c; margin-bottom: 8px; }
+  #panel { font-size: 13px; color: #334155; line-height: 1.4; }
+  .node { cursor: pointer; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Nonviolent Resolution Process Workflow</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> nonviolent-resolution-process-workflow</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students apply the five-step nonviolent conflict</p>
-        </div>
-    </div>
+<main>
+  <div class="diagram"><div class="mermaid">
+flowchart TD
+    Separate["Separate People<br/>From the Problem"]:::mildNode
+    Needs["Identify<br/>Underlying Needs"]:::mildNode
+    Solutions["Generate Multiple<br/>Solutions"]:::mildNode
+    Evaluate["Evaluate Against Both<br/>People's Needs"]:::mildNode
+    Agree["Agree and<br/>Check Back Later"]:::mildNode
+    CheckWork{"Did It Actually<br/>Work?"}:::decisionNode
+    Resolved("Resolved,<br/>Needs Are Met"):::goodNode
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    Separate --> Needs
+    Needs --> Solutions
+    Solutions --> Evaluate
+    Evaluate --> Agree
+    Agree --> CheckWork
+    CheckWork -->|Not working, revisit needs| Needs
+    CheckWork -->|Resolved| Resolved
 
-    Type: workflow
-    
-    **sim-id:** nonviolent-resolution-process-workflow<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy Level: Apply (L3)
-    Bloom Verb: apply, demonstrate, use
-    
-    Learning objective: Students apply the five-step nonviolent conflict
-    resolution process to a realistic scenario, distinguishing stated
-    positions from underlying needs at each step.
-    
-    Visual style: Mermaid flowchart, top-to-bottom, five sequential nodes plus
-    one feedback loop, click handlers on every node
-    
-    Nodes (all clickable, `click NodeId call showInfo("term")`):
-    1. "Separate People From the Problem" — click text: "Reframe the
-       disagreement as a shared problem, not a contest to win"
-    2. "Identify Underlying Needs" — click text: "Ask what each position is
-       actually trying to protect or achieve"
-    3. "Generate Multiple Solutions" — click text: "List several possible
-       solutions before judging any of them"
-    4. "Evaluate Against Both People's Needs" — click text: "Choose the option
-       that satisfies the most real needs on both sides"
-    5. "Agree and Check Back Later" (decision diamond: "Did it actually
-       work?") — click text: "Resolution is confirmed by follow-up, not
-       assumed at the moment of agreement"
-    
-    Connections: 1→2, 2→3, 3→4, 4→5, and a feedback loop from 5 back to 2
-    labeled "Not Working — Revisit Needs" if the check-back reveals the
-    solution failed
-    
-    Color coding: blue for process steps, gold for the check-back decision
-    diamond, green for the loop-closing "resolved" path
-    
-    Interactive features: click any node for its infobox describing that
-    step's purpose and a one-sentence example
-    
-    Implementation: Mermaid.js flowchart with JavaScript click bindings to a
-    custom showInfo() function
-    -->
+    classDef startNode fill:#5b9bd5,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef processNode fill:#7e57c2,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#ffd54f,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef emergNode fill:#e57373,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef mildNode fill:#64b5f6,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef goodNode fill:#66bb6a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef endNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    linkStyle default stroke:#999,stroke-width:2px,font-size:14px
+  </div></div>
+  <div class="info"><h3>Nonviolent Resolution</h3><div id="panel">Hover or tap any step for details.</div></div>
+</main>
+<script>
+const nodeInfo = {
+  "Separate": "Reframe the disagreement as a shared problem, not a contest to win. Example: 'We both want this group project to go well.'",
+  "Needs": "Ask what each position is actually trying to protect or achieve. Example: one person needs quiet, the other needs company.",
+  "Solutions": "List several possible solutions before judging any of them, so good ideas are not cut off early.",
+  "Evaluate": "Choose the option that satisfies the most real needs on both sides, not just the loudest demand.",
+  "Agree": "Resolution is confirmed by follow-up, not assumed at the moment of agreement.",
+  "CheckWork": "Checking back later is how you learn whether the agreement truly solved the problem for both people.",
+  "Resolved": "If the solution is working for both sides, the conflict is genuinely resolved, not just paused."
+};
+const panel = document.getElementById('panel');
+function setup() {
+  document.querySelectorAll('.node').forEach(n => {
+    const id = n.id.replace('flowchart-', '').split('-')[0];
+    if (nodeInfo[id]) {
+      n.addEventListener('mouseenter', () => { panel.textContent = nodeInfo[id]; });
+      n.addEventListener('click', () => { panel.textContent = nodeInfo[id]; });
+    }
+  });
+}
+function wait() {
+  const m = document.querySelector('.mermaid');
+  if (m && m.querySelector('svg') && document.querySelectorAll('.node').length) setup();
+  else setTimeout(wait, 100);
+}
+setTimeout(wait, 150);
+</script>
 </body>
 </html>

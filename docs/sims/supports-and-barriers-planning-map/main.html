@@ -1,134 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Supports and Barriers Planning Map</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 560 -->
+<title>Supports and Barriers Planning Map</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 18px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 400px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 9px; font-size: 11px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 13px; height: 13px; margin-right: 6px; vertical-align: middle; border: 1px solid #555; }
+  .legend .circle { border-radius: 50%; }
+  .legend .line { width: 18px; height: 0; border: 0; border-top: 3px solid seagreen; background: none; }
+  .legend .dash { border-top-style: dashed; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 9px 11px; font-size: 13px; color: #334155; line-height: 1.5; min-height: 84px; }
+  .infobox strong { color: navy; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Supports and Barriers Planning Map</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> supports-and-barriers-planning-map</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students organize example supports and barriers around a sample health goal, distinguishing which category each item belongs to and connecting each barrier to a planned response.</p>
-        </div>
+<main>
+  <h3>Supports and Barriers Planning Map</h3>
+  <div class="subtitle">Hover any node for details. Click a red barrier to see its planned response; click the goal to reset.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k" style="background:#95a5a6;"></span>Goal<br>
+      <span class="k circle" style="background:#27ae60;"></span>Support<br>
+      <span class="k circle" style="background:#e74c3c;"></span>Barrier<br>
+      <span class="k circle" style="background:#2e86de;"></span>Planned response<br>
+      <span class="k line" style="border-top-color:#27ae60;"></span>&nbsp;Helps reach&nbsp;
+      <span class="k line" style="border-top-color:#e74c3c;"></span>&nbsp;Threatens&nbsp;
+      <span class="k line dash" style="border-top-color:#2e86de;"></span>&nbsp;Planned response
     </div>
+  </div>
+  <div class="infobox" id="infobox">Every health goal has supports that help and barriers that get in the way &mdash; and every barrier can have a plan. Click a red barrier to spotlight its planned response.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+const INTRO = 'Every health goal has supports that help and barriers that get in the way &mdash; and every barrier can have a plan. Click a red barrier to spotlight its planned response.';
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+const nodeDefs = [
+  { id:'goal', label:'Walk to school\n3 days this week', shape:'box', x:0, y:0, fixed:true, size:30, margin:12, borderWidth:3,
+    color:{ background:'#95a5a6', border:'#6f7d7e' }, font:{ color:'#1c2526', size:14 } },
+  // supports (green)
+  { id:'buddy', label:'Walking buddy',            shape:'dot', size:20, color:{ background:'#27ae60', border:'#1e8449' }, font:{ color:'#fff', size:11 } },
+  { id:'shoes', label:'Comfortable shoes',        shape:'dot', size:20, color:{ background:'#27ae60', border:'#1e8449' }, font:{ color:'#fff', size:11 } },
+  { id:'route', label:"Parent's approved route",  shape:'dot', size:20, color:{ background:'#27ae60', border:'#1e8449' }, font:{ color:'#fff', size:11 } },
+  { id:'chart', label:'Morning reminder chart',   shape:'dot', size:20, color:{ background:'#27ae60', border:'#1e8449' }, font:{ color:'#fff', size:11 } },
+  // barriers (red)
+  { id:'rain',   label:'Rainy weather',                 shape:'dot', size:20, color:{ background:'#e74c3c', border:'#a93226' }, font:{ color:'#fff', size:11 } },
+  { id:'forget', label:'Forgetting in\nweek one',       shape:'dot', size:20, color:{ background:'#e74c3c', border:'#a93226' }, font:{ color:'#fff', size:11 } },
+  { id:'nobuddy',label:'No walking buddy\navailable that day', shape:'dot', size:20, color:{ background:'#e74c3c', border:'#a93226' }, font:{ color:'#fff', size:11 } },
+  // responses (blue) - connected only to their matching barrier
+  { id:'r_rain',   label:'Do a 10-minute\nindoor movement video', shape:'dot', size:18, color:{ background:'#2e86de', border:'#1b4f8a' }, font:{ color:'#fff', size:11 } },
+  { id:'r_forget', label:'Set a phone reminder\nthe night before', shape:'dot', size:18, color:{ background:'#2e86de', border:'#1b4f8a' }, font:{ color:'#fff', size:11 } },
+  { id:'r_nobuddy',label:'Walk with a different\nneighbor or sibling', shape:'dot', size:18, color:{ background:'#2e86de', border:'#1b4f8a' }, font:{ color:'#fff', size:11 } }
+];
+nodeDefs.forEach(n => { n.borderWidth = n.borderWidth || 2; });
 
-    Type: graph-model
-    **sim-id:** supports-and-barriers-planning-map<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: organize, examine, distinguish
-    
-    Learning objective: Students organize example supports and barriers around a sample health goal, distinguishing which category each item belongs to and connecting each barrier to a planned response.
-    
-    Purpose: Show a sample health goal surrounded by its supports, barriers, and barrier-response plans as a connected network students can explore
-    
-    Node types:
-    1. Central node: the sample goal, "Walk to school 3 days this week" (large box)
-    2. Support nodes (green circles): "Walking buddy," "Comfortable shoes," "Parent's approved route," "Morning reminder chart"
-    3. Barrier nodes (red circles): "Rainy weather," "Forgetting in week one," "No walking buddy available that day"
-    4. Response nodes (blue circles, connected only to their matching barrier): "Do a 10-minute indoor movement video," "Set a phone reminder the night before," "Walk with a different neighbor or sibling instead"
-    
-    Edge types:
-    - "Helps reach" edges (solid green) connecting support nodes to the central goal
-    - "Threatens" edges (solid red) connecting barrier nodes to the central goal
-    - "Planned response" edges (dashed blue) connecting each barrier node to its specific response node
-    
-    Layout: Force-directed with the goal node fixed at the center
-    
-    Interactive features:
-    - Hover any node to see its full description
-    - Click a barrier node to highlight its connected response node and dim unrelated nodes
-    - Click the central goal node to reset the full view
-    - Drag nodes to rearrange; zoom with mouse wheel; pan by dragging background
-    
-    Visual styling:
-    - Central node: neutral gray box, larger than other nodes
-    - Support nodes: green, sized equally
-    - Barrier nodes: red, sized equally
-    - Response nodes: blue, connected only via dashed lines to their barrier
-    
-    Legend: Small panel explaining node colors (Goal, Support, Barrier, Planned Response)
-    
-    Responsive behavior: Graph auto-fits to container width on load and window resize
-    
-    Implementation: vis-network library with force-directed physics enabled and a click event listener that adjusts node/edge opacity to spotlight a selected barrier-response pair.
-    -->
+const SUPPORTS = ['buddy','shoes','route','chart'];
+const BARRIERS = ['rain','forget','nobuddy'];
+const responseOf = { rain:'r_rain', forget:'r_forget', nobuddy:'r_nobuddy' };
+
+const edgeDefs = [];
+// Helps reach (green solid): support -> goal
+SUPPORTS.forEach(s => edgeDefs.push({ id:'he_'+s, from:s, to:'goal', label:'Helps reach', color:{ color:'#27ae60', highlight:'#27ae60' }, width:2,
+  font:{ size:9, color:'#5a5a5a', strokeWidth:3, strokeColor:'white' } }));
+// Threatens (red solid): barrier -> goal
+BARRIERS.forEach(b => edgeDefs.push({ id:'th_'+b, from:b, to:'goal', label:'Threatens', color:{ color:'#e74c3c', highlight:'#e74c3c' }, width:2,
+  font:{ size:9, color:'#5a5a5a', strokeWidth:3, strokeColor:'white' } }));
+// Planned response (blue dashed): barrier -> response
+BARRIERS.forEach(b => edgeDefs.push({ id:'pr_'+b, from:b, to:responseOf[b], label:'Planned response', dashes:true, color:{ color:'#2e86de', highlight:'#2e86de' }, width:2,
+  font:{ size:9, color:'#5a5a5a', strokeWidth:3, strokeColor:'white' } }));
+
+const info = {
+  goal:   { title:'Walk to school 3 days this week', full:'This is our sample health goal. A good goal is small, specific, and realistic. Around it you can see the <strong>supports</strong> that help you reach it and the <strong>barriers</strong> that could get in the way &mdash; each barrier paired with a planned response.' },
+  buddy:  { title:'Walking buddy', full:'A friend, sibling, or neighbor who walks with you makes the walk more fun and helps you stick with the plan. Supports like this make reaching your goal easier.' },
+  shoes:  { title:'Comfortable shoes', full:'Comfortable shoes mean your feet feel good the whole way, so nothing about the walk holds you back. Small physical supports like this add up.' },
+  route:  { title:"Parent's approved route", full:'A safe, agreed-upon path to school. Knowing the way is safe removes worry and helps both you and your caregiver feel good about the plan.' },
+  chart:  { title:'Morning reminder chart', full:'A chart on the fridge or wall shows which days are walking days, so it is easy to remember and check off. Visual supports keep the goal front of mind.' },
+  rain:   { title:'Rainy weather', full:'A barrier you cannot control &mdash; some mornings it will simply be too wet to walk. <em>Click to spotlight the planned response that keeps you moving anyway.</em>' },
+  forget: { title:'Forgetting in week one', full:'Very common &mdash; a brand-new habit has not stuck yet, so it slips your mind. <em>Click to spotlight the planned response that helps you remember.</em>' },
+  nobuddy:{ title:'No walking buddy available that day', full:'Some days your usual walking buddy will be sick, busy, or away. <em>Click to spotlight the planned response so one missing partner does not end the plan.</em>' },
+  r_rain:   { title:'Do a 10-minute indoor movement video', full:'Planned response to <strong>rainy weather</strong>: a short indoor movement video keeps your body active and your streak going even when you cannot walk outside.' },
+  r_forget: { title:'Set a phone reminder the night before', full:'Planned response to <strong>forgetting</strong>: a little nudge at the right moment turns a good intention into an actual walk.' },
+  r_nobuddy:{ title:'Walk with a different neighbor or sibling', full:'Planned response to a <strong>missing buddy</strong>: having a backup person means one absence does not stop you.' }
+};
+const hoverInfo = {
+  goal:'A small, specific, realistic health goal to practice planning around.',
+  buddy:'A friend or sibling who walks with you.',
+  shoes:'Shoes that make walking easy and pain-free.',
+  route:'A safe path your caregiver has okayed.',
+  chart:'A chart that reminds you it is a walking day.',
+  rain:'Rain could make walking unpleasant or unsafe.',
+  forget:'New habits are easy to forget at first.',
+  nobuddy:'Your usual walking partner cannot make it.',
+  r_rain:'A rainy-day backup that still counts.',
+  r_forget:'A reminder so you do not forget.',
+  r_nobuddy:'A backup walking partner.'
+};
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodeDefs), edges: new vis.DataSet(edgeDefs) };
+const options = {
+  physics: { solver:'forceAtlas2Based', forceAtlas2Based:{ gravitationalConstant:-65, springLength:120, avoidOverlap:0.8 }, stabilization:{ iterations:320 } },
+  interaction: { hover:true, dragView:true, zoomView:true, navigationButtons:true, tooltipDelay:100000 },
+  edges: { arrows:{ to:{ enabled:true, scaleFactor:0.5 } }, smooth:{ type:'dynamic' } },
+  nodes: { shadow:true }
+};
+const network = new vis.Network(container, data, options);
+network.once('stabilizationIterationsDone', () => { network.setOptions({ physics:false }); network.fit(); });
+window.addEventListener('resize', () => network.fit());
+
+function showInfo(id){
+  const d = info[id];
+  if (!d) return;
+  box.innerHTML = '<strong>' + d.title + '</strong><br>' + d.full;
+}
+// Click a barrier -> highlight its response (+ the pair), dim everything else
+function highlightBarrier(b){
+  const resp = responseOf[b];
+  const keep = new Set([b, resp]);
+  data.nodes.update(nodeDefs.map(n => ({ id:n.id, opacity: keep.has(n.id) ? 1 : 0.22 })));
+  data.edges.update(edgeDefs.map(e => ({ id:e.id, hidden: e.id !== ('pr_' + b) })));
+}
+function clearHighlight(){
+  data.nodes.update(nodeDefs.map(n => ({ id:n.id, opacity:1 })));
+  data.edges.update(edgeDefs.map(e => ({ id:e.id, hidden:false })));
+}
+
+network.on('hoverNode', p => { const h = hoverInfo[p.node]; if (h) box.innerHTML = h; });
+network.on('click', p => {
+  if (p.nodes.length){
+    const id = p.nodes[0];
+    showInfo(id);
+    if (BARRIERS.includes(id)) highlightBarrier(id); else clearHighlight();
+  } else {
+    clearHighlight();
+    box.innerHTML = INTRO;
+  }
+});
+</script>
 </body>
 </html>

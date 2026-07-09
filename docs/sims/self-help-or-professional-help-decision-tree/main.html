@@ -1,118 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Self-Help Or Professional Help Decision Tree</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 720 -->
+<title>Self-Help Or Professional Help Decision Tree</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis', subGraphTitleMargin: { top: 10, bottom: 14 } } });
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+  main { display: flex; height: 100%; }
+  .diagram { flex: 2; background: aliceblue; display: flex; justify-content: center; align-items: center; overflow: hidden; padding: 8px; }
+  .diagram .mermaid { width: 100%; text-align: center; }
+  .diagram svg { max-width: 100%; height: auto; }
+  .info { flex: 1; background: #f8fafc; border-left: 1px solid #e2e8f0; padding: 10px; overflow: hidden; }
+  .info h3 { font-size: 14px; color: #1a3a6c; margin-bottom: 8px; }
+  #panel { font-size: 13px; color: #334155; line-height: 1.4; }
+  .node { cursor: pointer; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Self-Help Or Professional Help Decision Tree</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> self-help-or-professional-help-decision-tree</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
-            <p><strong>Learning Objective:</strong> Students assess a realistic health situation against decision criteria to justify whether self-directed research, a trusted adult, or immediate professional support is the appropriate response, prioritizing safety-critical situations.</p>
-        </div>
-    </div>
+<main>
+  <div class="diagram"><div class="mermaid">
+flowchart TD
+    Start("I Have a<br/>Health Concern"):::startNode
+    SafetyRisk{"Any safety risk to self or<br/>others, or a severe or<br/>sudden symptom?"}:::decisionNode
+    GetHelpNow["Get Professional Help<br/>Immediately"]:::emergNode
+    Ongoing{"Has this been ongoing or<br/>affecting daily life?"}:::decisionNode
+    ScheduleSupport["Schedule<br/>Professional Support"]:::warnNode
+    EvaluateSources{"Can I evaluate this<br/>with valid sources?"}:::decisionNode
+    Research["Research With Valid<br/>Sources, Then Reassess"]:::goodNode
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    Start --> SafetyRisk
+    SafetyRisk -->|Yes| GetHelpNow
+    SafetyRisk -->|No| Ongoing
+    Ongoing -->|Yes| ScheduleSupport
+    Ongoing -->|No| EvaluateSources
+    EvaluateSources --> Research
 
-    Type: workflow
-    **sim-id:** self-help-or-professional-help-decision-tree<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Evaluate (L5)
-    Bloom Taxonomy Verb: assess, justify, prioritize
-    
-    Learning objective: Students assess a realistic health situation against decision criteria to justify whether self-directed research, a trusted adult, or immediate professional support is the appropriate response, prioritizing safety-critical situations.
-    
-    Purpose: Guide students through recognizing which situations call for a healthcare provider, counselor, or other professional rather than self-research or peer advice.
-    
-    Visual style: Mermaid decision-tree flowchart starting from "I Have A Health Concern" branching through severity and safety questions to one of three end states.
-    
-    Steps (all nodes clickable):
-    1. Start: "I Have A Health Concern" — click reveals: "Every concern starts here — the next questions help sort out the right response."
-    2. Decision: "Is There Any Safety Risk (To Self Or Others) Or A Severe/Sudden Symptom?" — click reveals: "Warning signs of suicide, self-harm, harming others, or a severe symptom always mean immediate professional help."
-    3. Branch "Yes" → End state: "Get Professional Help Immediately" — click reveals: "Contact a trusted adult and a healthcare provider, counselor, or emergency service right away."
-    4. Branch "No" → Decision: "Has This Been Ongoing Or Affecting Daily Life?" — click reveals: "A struggle lasting weeks or affecting school, sleep, or relationships needs professional support, even without an emergency."
-    5. Branch "Yes" → End state: "Schedule Professional Support" — click reveals: "Talk to a trusted adult about seeing a counselor or healthcare provider soon."
-    6. Branch "No" → Decision: "Can I Evaluate This With Valid Sources?" — click reveals: "Apply the five-question rubric from the previous section to a valid source."
-    7. End state: "Research With Valid Sources, Then Reassess" — click reveals: "If evaluation leaves real uncertainty, that uncertainty itself is a reason to ask a professional."
-    
-    Color coding: Red for the immediate-help path, yellow for the schedule-support path, green for the research-and-reassess path.
-    
-    Implementation: Mermaid flowchart with click handlers mapped to a JavaScript infobox callback for every node.
-    -->
+    classDef startNode fill:#5b9bd5,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef processNode fill:#7e57c2,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#ffd54f,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef emergNode fill:#e57373,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef mildNode fill:#64b5f6,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef goodNode fill:#66bb6a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef warnNode fill:#ffb300,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef endNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    linkStyle default stroke:#999,stroke-width:2px,font-size:14px
+  </div></div>
+  <div class="info"><h3>Self-Help or Professional Help</h3><div id="panel">Hover or tap any step for details.</div></div>
+</main>
+<script>
+const nodeInfo = {
+  "Start": "Every concern starts here. The next questions help sort out the right response.",
+  "SafetyRisk": "Warning signs of suicide, self-harm, harming others, or a severe symptom always mean immediate professional help.",
+  "GetHelpNow": "Contact a trusted adult and a healthcare provider, counselor, or emergency service right away.",
+  "Ongoing": "A struggle lasting weeks or affecting school, sleep, or relationships needs professional support, even without an emergency.",
+  "ScheduleSupport": "Talk to a trusted adult about seeing a counselor or healthcare provider soon.",
+  "EvaluateSources": "Apply the five-question rubric from the previous section to a valid source.",
+  "Research": "If evaluation leaves real uncertainty, that uncertainty itself is a reason to ask a professional."
+};
+const panel = document.getElementById('panel');
+function setup() {
+  document.querySelectorAll('.node').forEach(n => {
+    const id = n.id.replace('flowchart-', '').split('-')[0];
+    if (nodeInfo[id]) {
+      n.addEventListener('mouseenter', () => { panel.textContent = nodeInfo[id]; });
+      n.addEventListener('click', () => { panel.textContent = nodeInfo[id]; });
+    }
+  });
+}
+function wait() {
+  const m = document.querySelector('.mermaid');
+  if (m && m.querySelector('svg') && document.querySelectorAll('.node').length) setup();
+  else setTimeout(wait, 100);
+}
+setTimeout(wait, 150);
+</script>
 </body>
 </html>

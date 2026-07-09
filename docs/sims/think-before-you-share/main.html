@@ -3,130 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Think Before You Share</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Think Before You Share MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
+        body { margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif; }
     </style>
+    <script src="think-before-you-share.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Think Before You Share</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> think-before-you-share</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students explain how sharing a message, image, or video could affect themselves or others by classifying short scenarios as "safe to share," "ask first," or "don't share."</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** think-before-you-share<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain, classify, exemplify
-    
-    Learning objective: Students explain how sharing a message, image, or video could affect themselves or others by classifying short scenarios as "safe to share," "ask first," or "don't share."
-    
-    Canvas layout:
-    - Top area (150px): One scenario card at a time (e.g., "You want to share a funny video of your friend tripping," "You want to send a birthday message to your grandma," "You want to post your home address in a game chat so a friend can visit")
-    - Middle area (250px): Three labeled bins — "Safe to Share," "Ask First," "Don't Share"
-    - Bottom strip (100px): Explanation caption and "Next Scenario" button
-    
-    Visual elements:
-    - 8 scenario cards mixing clearly safe examples (a kind birthday message), ask-first examples (a photo that includes a friend), and don't-share examples (personal information or an embarrassing video)
-    - Bins shown as simple labeled boxes with friendly icons (heart, question mark, stop sign)
-    
-    Interactive controls:
-    - Click or drag the scenario card into the matching bin
-    - Button: "Next Scenario"
-    - Button: "Reset"
-    
-    Default parameters:
-    - First scenario: kind birthday message (clear "Safe to Share" example, to build confidence)
-    
-    Data Visibility Requirements:
-      Stage 1: Show the scenario card with no judgment yet
-      Stage 2: After the student picks a bin, reveal whether the choice matches the recommended answer and a one-sentence reason ("This includes a friend's face, so it's kind to ask them first.")
-      Stage 3: Show a reminder question: "Would the person in it be okay, and would a trusted adult be okay with this?"
-    
-    Behavior:
-    - Correct placement: bin glows softly, calm chime, reason caption appears
-    - Incorrect placement: gentle prompt, "Look again — think about who could see this and how they'd feel."
-    - After all scenarios, a summary caption reminds students to pause and think before sharing
-    
-    Instructional Rationale: This is an Understand-level objective (explain, classify), so the pattern uses a classification sorter with a revealed reason rather than a scored quiz. Students need to see concrete scenarios and compare their choice against a clear explanation, which builds the judgment habit needed later for the Evaluate-level safety benchmark in this same chapter.
-    
-    Implementation notes: Use p5.js. Keep scenario text short and readable aloud. Avoid naming specific apps; keep language general so it applies to any device or platform.
-    -->
+    <main></main>
 </body>
 </html>

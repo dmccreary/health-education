@@ -1,116 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Conflict Resolution Role-Play Branching Scenario</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 720 -->
+<title>Conflict Resolution Role-Play Branching Scenario</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis', subGraphTitleMargin: { top: 10, bottom: 14 } } });
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+  main { display: flex; height: 100%; }
+  .diagram { flex: 2; background: aliceblue; display: flex; justify-content: center; align-items: center; overflow: hidden; padding: 8px; }
+  .diagram .mermaid { width: 100%; text-align: center; }
+  .diagram svg { max-width: 100%; height: auto; }
+  .info { flex: 1; background: #f8fafc; border-left: 1px solid #e2e8f0; padding: 10px; overflow: hidden; }
+  .info h3 { font-size: 14px; color: #1a3a6c; margin-bottom: 8px; }
+  #panel { font-size: 13px; color: #334155; line-height: 1.4; }
+  .node { cursor: pointer; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Conflict Resolution Role-Play Branching Scenario</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> conflict-resolution-branching-scenario</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students apply the five conflict-resolution strategies by navigating a branching scenario, demonstrating which response choice best applies "I" statements, active listening, and a mutually acceptable solution at each decision point.</p>
-        </div>
-    </div>
+<main>
+  <div class="diagram"><div class="mermaid">
+flowchart TD
+    ConflictPrompt("Conflict Prompt"):::startNode
+    ChoiceYou["Respond With a<br/>'You' Statement"]:::emergNode
+    ChoiceI["Respond With an 'I' Statement<br/>and Active Listening"]:::goodNode
+    Escalates["Conflict Escalates"]:::emergNode
+    Deepens["Conflict Resolution<br/>Deepens"]:::goodNode
+    InsistPlan["Insist on Your<br/>Original Plan"]:::emergNode
+    LookForSolution["Look for a Solution<br/>Both People Can Accept"]:::goodNode
+    Strained("Relationship Strained"):::emergNode
+    Intact("Problem Addressed,<br/>Relationship Intact"):::goodNode
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    ConflictPrompt --> ChoiceYou
+    ConflictPrompt --> ChoiceI
+    ChoiceYou --> Escalates
+    ChoiceI --> Deepens
+    Escalates --> Strained
+    Deepens --> InsistPlan
+    Deepens --> LookForSolution
+    InsistPlan --> Strained
+    LookForSolution --> Intact
 
-    Type: workflow
-    **sim-id:** conflict-resolution-branching-scenario<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: demonstrate, practice, use
-    
-    Learning objective: Students apply the five conflict-resolution strategies by navigating a branching scenario, demonstrating which response choice best applies "I" statements, active listening, and a mutually acceptable solution at each decision point.
-    
-    Purpose: Let students practice choosing constructive conflict-resolution responses in a realistic peer disagreement and see the likely outcome of each choice.
-    
-    Visual style: Mermaid flowchart branching scenario starting from a realistic conflict prompt (two friends disagree about a group project after one person changed the plan without telling the other).
-    
-    Steps (all nodes clickable, each branch choice is a distinct clickable node):
-    1. Start: "Conflict Prompt" — click reveals the full scenario text.
-    2. Choice node A: "Respond With A 'You' Statement" — click reveals: "This response often increases defensiveness rather than resolving the issue," then routes to a "Conflict Escalates" node.
-    3. Choice node B: "Respond With An 'I' Statement And Active Listening" — click reveals: "This response names your own experience and shows you are listening, which keeps the conversation constructive," then routes to a "Conflict Resolution Deepens" node.
-    4. From "Conflict Resolution Deepens," a further choice: "Insist On Your Original Plan" vs. "Look For A Solution Both People Can Accept" — clicking each reveals the likely outcome of that choice.
-    5. End states: "Relationship Strained" (red) vs. "Problem Addressed, Relationship Intact" (green), each with a reflective infobox summarizing which strategies led to that outcome.
-    
-    Color coding: Red nodes for responses that escalate conflict, green nodes for responses that apply the five strategies effectively.
-    
-    Implementation: Mermaid flowchart with click handlers mapped to a JavaScript infobox callback for every node, structured as a branching role-play rather than a single linear path.
-    -->
+    classDef startNode fill:#5b9bd5,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef processNode fill:#7e57c2,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#ffd54f,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef emergNode fill:#e57373,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef mildNode fill:#64b5f6,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef goodNode fill:#66bb6a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef endNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    linkStyle default stroke:#999,stroke-width:2px,font-size:14px
+  </div></div>
+  <div class="info"><h3>Conflict Resolution Branching Scenario</h3><div id="panel">Hover or tap any step for details.</div></div>
+</main>
+<script>
+const nodeInfo = {
+  "ConflictPrompt": "Two friends are working on a group project. One person changed the plan without telling the other, and now they disagree about what to do. How will you respond?",
+  "ChoiceYou": "This response often increases defensiveness rather than resolving the issue.",
+  "ChoiceI": "This response names your own experience and shows you are listening, which keeps the conversation constructive.",
+  "Escalates": "Blaming language puts the other person on the defensive, so the disagreement grows instead of settling.",
+  "Deepens": "Because both people feel heard, they can keep working toward a real solution together.",
+  "InsistPlan": "Insisting on getting your own way ignores the other person's needs, so the problem stays unsolved.",
+  "LookForSolution": "Working toward a solution both people can accept applies the five strategies and reaches a fair outcome.",
+  "Strained": "Relationship Strained: 'you' statements and refusing to compromise left the problem unsolved and the friendship tense.",
+  "Intact": "Problem Addressed, Relationship Intact: 'I' statements, active listening, and a mutually acceptable solution resolved the conflict."
+};
+const panel = document.getElementById('panel');
+function setup() {
+  document.querySelectorAll('.node').forEach(n => {
+    const id = n.id.replace('flowchart-', '').split('-')[0];
+    if (nodeInfo[id]) {
+      n.addEventListener('mouseenter', () => { panel.textContent = nodeInfo[id]; });
+      n.addEventListener('click', () => { panel.textContent = nodeInfo[id]; });
+    }
+  });
+}
+function wait() {
+  const m = document.querySelector('.mermaid');
+  if (m && m.querySelector('svg') && document.querySelectorAll('.node').length) setup();
+  else setTimeout(wait, 100);
+}
+setTimeout(wait, 150);
+</script>
 </body>
 </html>

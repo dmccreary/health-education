@@ -1,113 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Stigma Reduction Action Network</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 620 -->
+<title>Stigma Reduction Action Network</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 18px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 460px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 9px; font-size: 11px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 13px; height: 13px; margin-right: 6px; vertical-align: middle; border: 1px solid #555; }
+  .legend .circle { border-radius: 50%; }
+  .legend .diamond { transform: rotate(45deg); }
+  .legend .line { width: 18px; height: 0; border: 0; border-top: 3px solid seagreen; background: none; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 9px 11px; font-size: 13px; color: #334155; line-height: 1.5; min-height: 84px; }
+  .infobox strong { color: navy; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Stigma Reduction Action Network</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> stigma-reduction-action-network</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students explain how specific individual and community actions connect to reducing mental health stigma, and classify each action by the barrier it addresses.</p>
-        </div>
+<main>
+  <h3>Stigma Reduction Action Network</h3>
+  <div class="subtitle">Each helpful action addresses one barrier and supports the shared goal. Hover for labels; click any node to learn more.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k circle" style="background:#16a085;"></span>Shared goal<br>
+      <span class="k" style="background:#5dade2;"></span>Helpful action<br>
+      <span class="k diamond" style="background:#7f8c8d;"></span>Barrier<br>
+      <span class="k line" style="border-top-color:#1e8449;"></span>&nbsp;Addresses&nbsp;
+      <span class="k line" style="border-top-color:#16a085;border-top-style:solid;"></span>&nbsp;Supports
     </div>
+  </div>
+  <div class="infobox" id="infobox">Stigma has no single fix. Explore how five everyday actions each address a specific barrier and together support one shared goal: making it safe to talk about mental health.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+const INTRO = 'Stigma has no single fix. Explore how five everyday actions each address a specific barrier and together support one shared goal: making it safe to talk about mental health.';
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// action -> barrier it addresses
+const rows = [
+  { act:'lang',    aLabel:'Accurate,\nRespectful Language', bar:'careless', bLabel:'Careless\nLanguage' },
+  { act:'media',   aLabel:'Positive,\nAccurate Media',      bar:'stereo',   bLabel:'Harmful\nStereotypes' },
+  { act:'stories', aLabel:'Sharing\nPersonal Stories',      bar:'shame',    bLabel:'Sense of\nShame' },
+  { act:'normal',  aLabel:'Normalizing\nHelp-Seeking',      bar:'weak',     bLabel:'Fear of\nWeakness' },
+  { act:'myths',   aLabel:'Correcting\nMyths Kindly',       bar:'misinfo',  bLabel:'Misinformation' }
+];
 
-    Type: graph-model
-    **sim-id:** stigma-reduction-action-network<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain, classify, summarize
-    
-    Learning objective: Students explain how specific individual and community actions connect to reducing mental health stigma, and classify each action by the barrier it addresses.
-    
-    Node types: Central node "Reducing Mental Health Stigma" (teal circle). Action nodes (light blue squares): Accurate Respectful Language, Positive Accurate Media, Sharing Personal Stories, Normalizing Help-Seeking, Correcting Myths Kindly. Barrier nodes (gray diamonds): Careless Language, Harmful Stereotypes, Sense of Shame, Fear of Weakness, Misinformation.
-    
-    Edge types: "Addresses" (solid green arrows from each action node to its matching barrier node). "Supports" (solid teal lines from each action node to the central node).
-    
-    Layout: Central node in the middle, action nodes arranged in an inner ring, corresponding barrier nodes arranged in an outer ring aligned with their matching action.
-    
-    Interactive features: Hover any node to see its label; click an action node to open an infobox explaining that action in one or two supportive sentences; click a barrier node to open an infobox explaining why that barrier makes seeking help harder; click the central node to reveal a summary statement that stigma reduction works through many small, combined actions rather than one single fix; zoom with mouse wheel, pan by dragging background.
-    
-    Legend: Color/shape key distinguishing action nodes, barrier nodes, and the central goal node.
-    
-    Implementation: vis-network JavaScript library; canvas responsive, default 800x500px.
-    -->
+const nodeDefs = [
+  { id:'goal', label:'Reducing\nMental Health\nStigma', shape:'dot', size:30, x:0, y:0, fixed:true, borderWidth:2,
+    color:{ background:'#16a085', border:'#0e6b58' }, font:{ color:'#fff', size:13 } }
+];
+const edgeDefs = [];
+const R1 = 165, R2 = 320;
+// rotate ring so no spoke is perfectly horizontal (vis mislabels horizontal edges)
+rows.forEach((r, i) => {
+  const ang = (-90 + i * 72) * Math.PI / 180;
+  const ax = Math.round(R1 * Math.cos(ang)), ay = Math.round(R1 * Math.sin(ang));
+  const bx = Math.round(R2 * Math.cos(ang)), by = Math.round(R2 * Math.sin(ang));
+  nodeDefs.push({ id:r.act, label:r.aLabel, shape:'box', x:ax, y:ay, fixed:true, borderWidth:2,
+    color:{ background:'#5dade2', border:'#2e86c1' }, font:{ color:'#0a2a3d', size:11 } });
+  nodeDefs.push({ id:r.bar, label:r.bLabel, shape:'diamond', size:22, x:bx, y:by, fixed:true, borderWidth:2,
+    color:{ background:'#7f8c8d', border:'#5d6a6b' }, font:{ color:'#fff', size:11 } });
+  // Supports: action -> goal (teal)
+  edgeDefs.push({ from:r.act, to:'goal', label:'Supports', color:{ color:'#16a085', highlight:'#16a085' }, width:2, smooth:false,
+    font:{ size:9, color:'#5a5a5a', strokeWidth:3, strokeColor:'white' } });
+  // Addresses: action -> barrier (green)
+  edgeDefs.push({ from:r.act, to:r.bar, label:'Addresses', color:{ color:'#1e8449', highlight:'#1e8449' }, width:2, smooth:false,
+    font:{ size:9, color:'#5a5a5a', strokeWidth:3, strokeColor:'white' } });
+});
+
+const info = {
+  goal:    { title:'Reducing Mental Health Stigma', full:'This is the shared goal at the center. Notice that no single action reaches it alone &mdash; stigma goes down when many small, everyday actions combine. Each caring word, honest story, and gently corrected myth adds up to a community where it is safe to talk about mental health.' },
+  lang:    { title:'Accurate, Respectful Language', full:'Choosing words that put people first and avoid labels or insults. When you say &ldquo;a person living with depression&rdquo; instead of a hurtful nickname, you help everyone feel seen and respected.' },
+  media:   { title:'Positive, Accurate Media', full:'Sharing shows, posts, and articles that portray mental health honestly and hopefully. Seeing realistic, respectful examples helps replace scary or silly stereotypes with the truth.' },
+  stories: { title:'Sharing Personal Stories', full:'People bravely choosing to talk about their own mental health journeys. Hearing &ldquo;me too&rdquo; reminds others they are not alone and that recovery is real &mdash; which chips away at shame.' },
+  normal:  { title:'Normalizing Help-Seeking', full:'Treating a visit to a counselor like a visit to any other kind of doctor &mdash; a normal, smart thing to do. When help-seeking looks ordinary, fewer people fear it means they are &ldquo;weak.&rdquo;' },
+  myths:   { title:'Correcting Myths Kindly', full:'Gently offering the facts when someone repeats a false idea about mental health &mdash; without shaming them. Patient, friendly correction helps accurate information spread.' },
+  careless:{ title:'Careless Language', full:'Jokes, slurs, or throwaway labels that signal mental health is something to mock. This makes people afraid to speak up or ask for help &mdash; which is why <strong>Accurate, Respectful Language</strong> is the action that addresses it.' },
+  stereo:  { title:'Harmful Stereotypes', full:'False, oversimplified ideas that paint everyone with a condition the same way. They make people feel judged before they even speak &mdash; which is why <strong>Positive, Accurate Media</strong> is the action that addresses them.' },
+  shame:   { title:'Sense of Shame', full:'The private feeling that struggling makes you broken or embarrassing. Shame keeps worries hidden &mdash; which is why hearing others&rsquo; <strong>Personal Stories</strong> is the action that addresses it.' },
+  weak:    { title:'Fear of Weakness', full:'The belief that asking for help means you have failed or are weak. This fear stops people from reaching out &mdash; which is why <strong>Normalizing Help-Seeking</strong> is the action that addresses it.' },
+  misinfo: { title:'Misinformation', full:'Incorrect or outdated information &mdash; myths about what conditions are or how they work. Wrong facts lead to fear and poor choices &mdash; which is why <strong>Correcting Myths Kindly</strong> is the action that addresses it.' }
+};
+const hoverInfo = {
+  goal:'The shared goal: making it easier and safer for everyone to talk about mental health.',
+  lang:'Choosing words that describe people fairly and kindly.',
+  media:'Sharing stories and posts that show mental health truthfully.',
+  stories:'People bravely sharing their own experiences.',
+  normal:'Treating asking for help as a normal, healthy thing.',
+  myths:'Gently replacing false ideas with accurate facts.',
+  careless:'Hurtful or thoughtless words that push people away.',
+  stereo:'False, one-size-fits-all ideas about a whole group.',
+  shame:'Feeling embarrassed or &ldquo;not normal&rdquo; for struggling.',
+  weak:'Believing that needing help means you are weak.',
+  misinfo:'Wrong or outdated facts about mental health.'
+};
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodeDefs), edges: new vis.DataSet(edgeDefs) };
+const options = {
+  physics: false,
+  interaction: { hover:true, dragView:true, zoomView:true, navigationButtons:true, tooltipDelay:100000 },
+  edges: { arrows:{ to:{ enabled:true, scaleFactor:0.5 } } },
+  nodes: { shadow:true }
+};
+const network = new vis.Network(container, data, options);
+network.once('afterDrawing', () => network.fit());
+window.addEventListener('resize', () => network.fit());
+
+function showInfo(id){
+  const d = info[id];
+  if (!d) return;
+  box.innerHTML = '<strong>' + d.title + '</strong><br>' + d.full;
+}
+network.on('hoverNode', p => { const h = hoverInfo[p.node]; if (h) box.innerHTML = h; });
+network.on('click', p => {
+  if (p.nodes.length) showInfo(p.nodes[0]);
+  else box.innerHTML = INTRO;
+});
+</script>
 </body>
 </html>

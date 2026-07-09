@@ -3,111 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Unsafe Situation Signal Explorer</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Unsafe Situation Signal Explorer MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
+        body { margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif; }
     </style>
+    <script src="unsafe-situation-signal-explorer.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Unsafe Situation Signal Explorer</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> unsafe-situation-signal-explorer</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students examine situations across relationships, technology, and physical safety, and distinguish which signals indicate an unsafe situation worth reporting.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: infographic
-    **sim-id:** unsafe-situation-signal-explorer<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: examine, distinguish, organize
-    
-    Learning objective: Students examine situations across relationships, technology, and physical safety, and distinguish which signals indicate an unsafe situation worth reporting.
-    
-    Canvas layout: Full width (650px) grid of 9 clickable icons in three columns (Relationships, Technology, Physical Safety); bottom strip (120px) infobox.
-    
-    Visual elements: Three icon cards per column (Relationships: isolation, repeated pressure, ignored "no"; Technology: stranger contact, photo shared without permission, secretive message; Physical Safety: unfamiliar adult on campus, uneasy feeling, mismatched emergency routine).
-    
-    Interactive controls: Click any icon to reveal a description and why it's worth acting on; "Show All Signals" and "Reset" buttons.
-    
-    Behavior: Clicking "repeated pressure" shows "Someone continuing to ask after you've said no is coercion." Clicking "uneasy feeling" shows "Trust this feeling — tell a trusted adult."
-    
-    Instructional Rationale: Analyze-level objective requiring students to organize and distinguish signals across domains via a categorized click-to-reveal grid.
-    
-    Implementation notes: p5.js; icon objects grouped by column with label, description, and reasoning string.
-    -->
+    <main></main>
 </body>
 </html>

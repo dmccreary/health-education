@@ -1,113 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Recovery Supports Network Map</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 560 -->
+<title>Recovery Supports Network Map</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 18px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 400px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 9px; font-size: 11px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 13px; height: 13px; margin-right: 6px; vertical-align: middle; border: 1px solid #555; }
+  .legend .circle { border-radius: 50%; }
+  .legend .line { width: 18px; height: 0; border: 0; border-top: 3px solid seagreen; }
+  .legend .gline { width: 18px; height: 0; border: 0; border-top: 3px solid goldenrod; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 9px 11px; font-size: 13px; color: #334155; line-height: 1.5; min-height: 96px; }
+  .infobox strong { color: navy; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Recovery Supports Network Map</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> recovery-supports-network-map</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students examine how clinical treatment and community/cultural recovery supports connect and reinforce each other, organizing the relationship between distinct support types and a shared recovery outcome.</p>
-        </div>
+<main>
+  <h3>Recovery Supports Network Map</h3>
+  <div class="subtitle">Hover a node for its label. Click a blue support, the green person, or the gold outcome to learn more. Scroll to zoom, drag to pan.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k circle" style="background:#2e8b57;"></span>A person in recovery<br>
+      <span class="k" style="background:steelblue;"></span>Recovery support<br>
+      <span class="k circle" style="background:goldenrod;border-color:#8a6d0b;"></span>Shared outcome<br>
+      <span class="k line"></span>&nbsp;Supports<br>
+      <span class="k gline"></span>&nbsp;Contributes to
     </div>
+  </div>
+  <div class="infobox" id="infobox">Recovery grows stronger when different kinds of support connect and reinforce each other. Explore how five clinical, community, and cultural supports help a person in recovery, and how together they contribute to a stronger, lasting recovery. Hover any node for its label, or click a node to learn more.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+const INTRO = "Recovery grows stronger when different kinds of support connect and reinforce each other. Explore how five clinical, community, and cultural supports help a person in recovery, and how together they contribute to a stronger, lasting recovery. Hover any node for its label, or click a node to learn more.";
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+const C = { center:{ bg:'#2e8b57', bd:'#1e5e3a' }, box:{ bg:'steelblue', bd:'#2f5a7a' }, gold:{ bg:'goldenrod', bd:'#8a6d0b' } };
+const EDGE = { supports:'seagreen', contributes:'#b8860b' };
 
-    Type: graph-model
-    **sim-id:** recovery-supports-network-map<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: organize, examine, distinguish
-    
-    Learning objective: Students examine how clinical treatment and community/cultural recovery supports connect and reinforce each other, organizing the relationship between distinct support types and a shared recovery outcome.
-    
-    Node types: Central node "A Person In Recovery" (green circle). Support nodes (blue squares): Peer Support Groups, Indigenous And Cultural Healing Practices, Family-Based Support, Faith And Community Organizations, Clinical Treatment (linking back to the Treatment Pathway Explorer content). Outcome node (gold circle): "Stronger, Lasting Recovery."
-    
-    Edge types: "Supports" (solid green arrows from each support node to the central "A Person In Recovery" node). "Contributes To" (solid gold arrows from the central node to the outcome node).
-    
-    Layout: Central node in the middle, five support nodes arranged around it in a ring, shared outcome node positioned prominently below.
-    
-    Interactive features: Hover any node for its label; click a support node to open an infobox with two to three factual, hopeful sentences describing that support type and its documented role in recovery; click the central node for an infobox noting that most people combine more than one support type; click the outcome node for an infobox affirming that recovery is a realistic, achievable outcome; zoom with mouse wheel, pan by dragging background.
-    
-    Legend: Color/shape key distinguishing the central node, support types, and the outcome node.
-    
-    Implementation: vis-network JavaScript library; canvas responsive, default 800x500px. Content note: every support-type description is specific and affirming, avoiding generic or token references to culture or faith.
-    -->
+// Central node (green circle)
+const center = {
+  id:'center', title:'A Person in Recovery',
+  hover:'Someone working toward lasting recovery, supported by many connections.',
+  full:`A Person in Recovery: Recovery is rarely built on one support alone. Most people combine several of these supports — clinical care, peers, family, culture, and community — because together they are far stronger than any one by itself. This person sits at the center of a whole network of help.`
+};
+
+// Support nodes (blue squares)
+const supports = [
+  { id:'s_peer', title:'Peer Support Groups', label:'Peer\nSupport\nGroups',
+    hover:'Groups of people supporting each other in recovery.',
+    full:`Peer Support Groups: Peer support groups bring together people with shared experience who understand recovery from the inside. Decades of evidence show that regular participation in peer support is associated with better long-term recovery outcomes. Being understood by people who have been there reduces isolation and builds hope.` },
+  { id:'s_cult', title:'Indigenous and Cultural Healing Practices', label:'Indigenous &\nCultural Healing\nPractices',
+    hover:'Culturally grounded healing and traditional practices.',
+    full:`Indigenous and Cultural Healing Practices: Culturally grounded healing — ceremony, connection to community, and traditional practices — treats the whole person, not just the substance use. For many Indigenous people, culturally based programs are documented to support stronger, more lasting recovery than clinical care alone. Culture can be medicine.` },
+  { id:'s_fam', title:'Family-Based Support', label:'Family-Based\nSupport',
+    hover:'Support from family and loved ones.',
+    full:`Family-Based Support: When family and loved ones are involved, recovery is often stronger and more durable. Research on family-based approaches shows they improve outcomes by rebuilding trust, communication, and a stable base of support. Healing relationships help heal the whole person.` },
+  { id:'s_faith', title:'Faith and Community Organizations', label:'Faith &\nCommunity\nOrganizations',
+    hover:'Support from faith and community groups.',
+    full:`Faith and Community Organizations: Faith communities and local community organizations offer belonging, structure, and practical help during recovery. For many people these connections provide meaning, accountability, and a network of caring relationships that support staying well. Community is a documented source of strength in recovery.` },
+  { id:'s_clin', title:'Clinical Treatment', label:'Clinical\nTreatment',
+    hover:'Medical and therapeutic treatment (see the Treatment Pathway Explorer).',
+    full:`Clinical Treatment: Clinical treatment — including medically supervised care, medication-assisted treatment, and counseling — provides evidence-based tools for recovery. (Explore these approaches in the Treatment Pathway Explorer.) For many people, clinical care works best when it is combined with peer, family, and community supports.` }
+];
+
+// Outcome node (gold circle)
+const outcome = {
+  id:'outcome', title:'Stronger, Lasting Recovery',
+  hover:'The shared goal: recovery that lasts.',
+  full:`Stronger, Lasting Recovery: Recovery is a realistic, achievable outcome — and it is the documented reality for millions of people. When several supports work together, recovery tends to be stronger and to last longer. With the right combination of help, people build full, healthy lives.`
+};
+
+const nodes = [], edges = [];
+const info = {}, hoverInfo = {};
+
+// Center (floats near origin so physics settles and the graph auto-fits)
+nodes.push({ id:center.id, label:'A Person in\nRecovery', shape:'circle', x:0, y:0,
+  color:{ background:C.center.bg, border:C.center.bd, highlight:{ background:'#3fa76a', border:C.center.bd } },
+  font:{ size:14, color:'white', face:'Arial' }, borderWidth:2, widthConstraint:{ maximum:100 } });
+info[center.id] = { title:center.title, full:center.full };
+hoverInfo[center.id] = center.hover;
+
+// Ring of supports (fixed positions, clear bottom for the outcome, none on the horizontal axis)
+const N = supports.length, R = 210, START = -90;
+supports.forEach((s, i) => {
+  const a = (START + i * 360 / N) * Math.PI / 180;
+  nodes.push({ id:s.id, label:s.label, shape:'box', margin:8, widthConstraint:{ maximum:130 },
+    color:{ background:C.box.bg, border:C.box.bd, highlight:{ background:'#5c9dc9', border:C.box.bd } },
+    font:{ size:12, color:'white', face:'Arial' }, borderWidth:2,
+    x:Math.round(R * Math.cos(a)), y:Math.round(R * Math.sin(a)), fixed:{ x:true, y:true } });
+  info[s.id] = { title:s.title, full:s.full };
+  hoverInfo[s.id] = s.hover;
+  edges.push({ from:s.id, to:center.id, label:'Supports',
+    color:{ color:EDGE.supports, highlight:EDGE.supports },
+    font:{ size:9, color:'#3a6b4f', strokeWidth:3, strokeColor:'aliceblue' },
+    arrows:{ to:{ enabled:true, scaleFactor:0.5 } }, smooth:{ enabled:false } });
+});
+
+// Outcome node (fixed below the ring)
+nodes.push({ id:outcome.id, label:'Stronger,\nLasting\nRecovery', shape:'circle',
+  x:0, y:360, fixed:{ x:true, y:true },
+  color:{ background:C.gold.bg, border:C.gold.bd, highlight:{ background:'#e8bf3a', border:C.gold.bd } },
+  font:{ size:13, color:'#3a2e00', face:'Arial' }, borderWidth:2, widthConstraint:{ maximum:120 } });
+info[outcome.id] = { title:outcome.title, full:outcome.full };
+hoverInfo[outcome.id] = outcome.hover;
+
+edges.push({ from:center.id, to:outcome.id, label:'Contributes To', width:2,
+  color:{ color:EDGE.contributes, highlight:EDGE.contributes },
+  font:{ size:10, color:'#7a5a00', strokeWidth:3, strokeColor:'aliceblue' },
+  arrows:{ to:{ enabled:true, scaleFactor:0.6 } }, smooth:{ enabled:false } });
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  physics: { solver:'forceAtlas2Based', forceAtlas2Based:{ gravitationalConstant:-40, springLength:150, avoidOverlap:0.6 }, stabilization:{ iterations:300 } },
+  interaction: { hover:true, dragView:true, zoomView:true, navigationButtons:true, tooltipDelay:100000 },
+  edges: { arrows:{ to:{ enabled:true, scaleFactor:0.5 } } },
+  nodes: { shadow:true }
+};
+const network = new vis.Network(container, data, options);
+network.once('stabilizationIterationsDone', () => { network.setOptions({ physics:false }); network.fit(); });
+
+function showInfo(id){
+  const d = info[id];
+  if (!d) return;
+  box.innerHTML = '<strong>' + d.title + '</strong><br>' + d.full;
+}
+
+network.on('hoverNode', p => { const h = hoverInfo[p.node]; if (h) box.innerHTML = h; });
+network.on('click', p => {
+  if (p.nodes.length) showInfo(p.nodes[0]);
+  else box.innerHTML = INTRO;
+});
+</script>
 </body>
 </html>

@@ -1,126 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Recovery Pathway Network</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 560 -->
+<title>Recovery Pathway Network</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 18px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 400px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 9px; font-size: 11px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 13px; height: 13px; margin-right: 6px; vertical-align: middle; border: 1px solid #555; }
+  .legend .circle { border-radius: 50%; }
+  .legend .line { width: 18px; height: 0; border: 0; border-top: 3px solid seagreen; }
+  .legend .gdash { width: 18px; height: 0; border: 0; border-top: 3px dashed goldenrod; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 9px 11px; font-size: 13px; color: #334155; line-height: 1.5; min-height: 96px; }
+  .infobox strong { color: navy; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Recovery Pathway Network</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> recovery-pathway-network-hs</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Examine how the five treatment and recovery approaches</p>
-        </div>
+<main>
+  <h3>Recovery Pathway Network</h3>
+  <div class="subtitle">Hover a node for a quick description. Click a blue approach or a gold reminder to learn more. Scroll to zoom, drag to pan.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k circle" style="background:#2e8b57;"></span>Sustained recovery<br>
+      <span class="k" style="background:steelblue;"></span>Treatment / recovery approach<br>
+      <span class="k circle" style="background:goldenrod;border-color:#8a6d0b;"></span>Important reminder<br>
+      <span class="k line"></span>&nbsp;Supports<br>
+      <span class="k gdash"></span>&nbsp;Reinforces
     </div>
+  </div>
+  <div class="infobox" id="infobox">Recovery is a realistic, documented outcome that people reach through many paths. Explore five treatment and recovery approaches that support sustained recovery, plus two important truths that reinforce it. Hover any node for a quick description, or click a node to learn more.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+const INTRO = "Recovery is a realistic, documented outcome that people reach through many paths. Explore five treatment and recovery approaches that support sustained recovery, plus two important truths that reinforce it. Hover any node for a quick description, or click a node to learn more.";
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+const C = { center:{ bg:'#2e8b57', bd:'#1e5e3a' }, box:{ bg:'steelblue', bd:'#2f5a7a' }, gold:{ bg:'goldenrod', bd:'#8a6d0b' } };
+const EDGE = { supports:'seagreen', reinforces:'#b8860b' };
 
-    Type: graph-model
-    
-    **sim-id:** recovery-pathway-network-hs<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy Level: Analyze (L4)
-    Bloom Verb: examine, organize, distinguish
-    
-    Learning objective: Examine how the five treatment and recovery approaches
-    connect to and reinforce a shared recovery outcome, distinguishing when
-    each is typically used.
-    
-    Node types: Central node (green circle) "Sustained Recovery"; five
-    approach nodes (blue rectangles) — Medically Supervised Withdrawal
-    Management, Medication-Assisted Treatment, Counseling And Behavioral
-    Therapy, Support Groups And Peer Recovery, Inpatient Or Outpatient
-    Programs; two context nodes (gold circles) — "Relapse Is Common — Not
-    Failure" and "Recovery Is a Realistic, Documented Outcome."
-    
-    Edge types: "Supports" (solid green, approach nodes to center);
-    "Reinforces" (dashed gold, context nodes to center).
-    
-    Layout: Force-directed, central node in the middle, approach nodes evenly
-    distributed around it.
-    
-    Interactive features: Hover any node for a one-sentence description;
-    click an approach node for a two-to-three sentence infobox on what it
-    involves and when it is used; click a context node to reinforce the
-    relapse/recovery framing; drag, zoom, and pan enabled.
-    
-    Implementation: vis-network force-directed layout; node/edge data in a
-    structured lookup object. No node names a specific medication, dosage, or
-    clinical protocol — only documented treatment categories.
-    -->
+// Central node (green circle) -- the shared recovery outcome
+const center = {
+  id:'center', title:'Sustained Recovery',
+  hover:'Recovery that lasts, reached through many different paths.',
+  full:`Sustained Recovery: Sustained recovery means living a healthy life over the long term. It is a realistic, documented outcome that people reach through many different paths. The approaches around this node often work together — few people rely on just one.`
+};
+
+// Approach nodes (blue rectangles) -> "Supports" (solid green)
+const approaches = [
+  { id:'a_withdraw', title:'Medically Supervised Withdrawal Management', label:'Medically Supervised\nWithdrawal Management',
+    hover:'Safe, supervised care during withdrawal.',
+    full:`Medically Supervised Withdrawal Management: This is safe, professionally supervised care that helps a person get through the withdrawal stage as comfortably and safely as possible. It is usually a first step, not a complete treatment on its own. Medical supervision manages symptoms and keeps people safe at a vulnerable time.` },
+  { id:'a_mat', title:'Medication-Assisted Treatment', label:'Medication-Assisted\nTreatment',
+    hover:'Approved medications combined with counseling.',
+    full:`Medication-Assisted Treatment: This approach combines approved medications with counseling and support to treat substance use disorders. It is one of the most evidence-based treatment categories available and is often used over the longer term. It helps reduce cravings so a person can focus on rebuilding their life.` },
+  { id:'a_counsel', title:'Counseling and Behavioral Therapy', label:'Counseling &\nBehavioral Therapy',
+    hover:'Talk-based therapy to change patterns and build coping skills.',
+    full:`Counseling and Behavioral Therapy: Counseling and behavioral therapies help people understand their substance use, change patterns of thinking and behavior, and build coping skills. They can be one-on-one or in groups and are used at every stage of recovery. This is often the core ongoing work of getting and staying well.` },
+  { id:'a_peer', title:'Support Groups and Peer Recovery', label:'Support Groups &\nPeer Recovery',
+    hover:'Shared-experience groups and peer support.',
+    full:`Support Groups and Peer Recovery: Support groups and peer recovery connect people with others who share the experience of recovery. They provide belonging, accountability, and hope, and are typically used alongside other approaches for the long term. Knowing you are not alone is a powerful support.` },
+  { id:'a_program', title:'Inpatient or Outpatient Programs', label:'Inpatient or\nOutpatient Programs',
+    hover:'Structured programs, living onsite or from home.',
+    full:`Inpatient or Outpatient Programs: These structured programs deliver treatment either while living onsite (inpatient) or while living at home (outpatient). Inpatient programs offer intensive, round-the-clock support; outpatient programs let people keep up daily life while getting help. The right level of care depends on a person's needs.` }
+];
+
+// Context nodes (gold circles) -> "Reinforces" (dashed gold)
+const contexts = [
+  { id:'c_relapse', title:'Relapse Is Common — Not Failure', label:'Relapse Is Common\n— Not Failure',
+    hover:'Relapse can be part of recovery, not the end of it.',
+    full:`Relapse Is Common — Not Failure: For many people, relapse is part of the recovery process, not a sign of failure. Substance use disorders are chronic conditions, and setbacks can happen on the way to lasting recovery. What matters is getting support and continuing forward — recovery is still very much possible after a relapse.` },
+  { id:'c_realistic', title:'Recovery Is a Realistic, Documented Outcome', label:'Recovery Is a\nRealistic, Documented\nOutcome',
+    hover:'Recovery is real and achievable for millions of people.',
+    full:`Recovery Is a Realistic, Documented Outcome: Recovery is not just possible — it is the documented reality for millions of people. Research and lived experience show that people do recover and go on to live full, healthy lives. Whichever path someone takes, lasting recovery is a genuine, hopeful outcome.` }
+];
+
+const nodes = [], edges = [];
+const info = {}, hoverInfo = {};
+
+// Center fixed at origin; approaches and contexts float so force-directed layout
+// distributes them evenly around the hub.
+nodes.push({ id:center.id, label:'Sustained\nRecovery', shape:'circle', x:0, y:0, fixed:{ x:true, y:true }, mass:3,
+  color:{ background:C.center.bg, border:C.center.bd, highlight:{ background:'#3fa76a', border:C.center.bd } },
+  font:{ size:15, color:'white', face:'Arial' }, borderWidth:2, widthConstraint:{ maximum:95 } });
+info[center.id] = { title:center.title, full:center.full };
+hoverInfo[center.id] = center.hover;
+
+approaches.forEach(a => {
+  nodes.push({ id:a.id, label:a.label, shape:'box', margin:8, widthConstraint:{ maximum:150 },
+    color:{ background:C.box.bg, border:C.box.bd, highlight:{ background:'#5c9dc9', border:C.box.bd } },
+    font:{ size:12, color:'white', face:'Arial' }, borderWidth:2 });
+  info[a.id] = { title:a.title, full:a.full };
+  hoverInfo[a.id] = a.hover;
+  edges.push({ from:a.id, to:center.id, label:'Supports',
+    color:{ color:EDGE.supports, highlight:EDGE.supports },
+    font:{ size:9, color:'#3a6b4f', strokeWidth:3, strokeColor:'aliceblue' },
+    arrows:{ to:{ enabled:true, scaleFactor:0.5 } } });
+});
+
+contexts.forEach(c => {
+  nodes.push({ id:c.id, label:c.label, shape:'circle', widthConstraint:{ maximum:120 },
+    color:{ background:C.gold.bg, border:C.gold.bd, highlight:{ background:'#e8bf3a', border:C.gold.bd } },
+    font:{ size:12, color:'#3a2e00', face:'Arial' }, borderWidth:2 });
+  info[c.id] = { title:c.title, full:c.full };
+  hoverInfo[c.id] = c.hover;
+  edges.push({ from:c.id, to:center.id, label:'Reinforces', dashes:true,
+    color:{ color:EDGE.reinforces, highlight:EDGE.reinforces },
+    font:{ size:9, color:'#7a5a00', strokeWidth:3, strokeColor:'aliceblue' },
+    arrows:{ to:{ enabled:true, scaleFactor:0.5 } } });
+});
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  physics: { solver:'forceAtlas2Based', forceAtlas2Based:{ gravitationalConstant:-70, centralGravity:0.008, springLength:170, springConstant:0.08, avoidOverlap:0.7 }, stabilization:{ iterations:300 } },
+  interaction: { hover:true, dragView:true, zoomView:true, navigationButtons:true, tooltipDelay:100000 },
+  edges: { arrows:{ to:{ enabled:true, scaleFactor:0.5 } }, smooth:{ type:'continuous' } },
+  nodes: { shadow:true }
+};
+const network = new vis.Network(container, data, options);
+network.once('stabilizationIterationsDone', () => { network.setOptions({ physics:false }); network.fit(); });
+
+function showInfo(id){
+  const d = info[id];
+  if (!d) return;
+  box.innerHTML = '<strong>' + d.title + '</strong><br>' + d.full;
+}
+
+network.on('hoverNode', p => { const h = hoverInfo[p.node]; if (h) box.innerHTML = h; });
+network.on('click', p => {
+  if (p.nodes.length) showInfo(p.nodes[0]);
+  else box.innerHTML = INTRO;
+});
+</script>
 </body>
 </html>

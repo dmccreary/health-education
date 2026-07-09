@@ -1,140 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Conflict or Pressure? A Decision Guide</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 720 -->
+<title>Conflict or Pressure? A Decision Guide</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis', subGraphTitleMargin: { top: 10, bottom: 14 } } });
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+  main { display: flex; height: 100%; }
+  .diagram { flex: 2; background: aliceblue; display: flex; justify-content: center; align-items: center; overflow: hidden; padding: 8px; }
+  .diagram .mermaid { width: 100%; text-align: center; }
+  .diagram svg { max-width: 100%; height: auto; }
+  .info { flex: 1; background: #f8fafc; border-left: 1px solid #e2e8f0; padding: 10px; overflow: hidden; }
+  .info h3 { font-size: 14px; color: #1a3a6c; margin-bottom: 8px; }
+  #panel { font-size: 13px; color: #334155; line-height: 1.4; }
+  .node { cursor: pointer; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Conflict or Pressure? A Decision Guide</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> conflict-pressure-decision-guide</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students analyze a described relationship situation</p>
-        </div>
-    </div>
+<main>
+  <div class="diagram"><div class="mermaid">
+flowchart TD
+    Start("A disagreement or<br/>request has happened"):::startNode
+    BoundaryStated{"Has a boundary already<br/>been clearly stated?"}:::decisionNode
+    OrdinaryConflict["Ordinary Conflict"]:::goodNode
+    RepeatedAnyway{"Is the request being<br/>repeated anyway?"}:::decisionNode
+    BoundaryRespected["Boundary Respected"]:::goodNode
+    GuiltThreats{"Does it include guilt,<br/>threats, or isolation<br/>from others?"}:::decisionNode
+    CoercivePressure["Coercive Pressure"]:::emergNode
+    Persistent["Persistent but Non-Coercive<br/>Still Address Directly"]:::goodNode
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    Start --> BoundaryStated
+    BoundaryStated -->|No| OrdinaryConflict
+    BoundaryStated -->|Yes| RepeatedAnyway
+    RepeatedAnyway -->|No, respected| BoundaryRespected
+    RepeatedAnyway -->|Yes| GuiltThreats
+    GuiltThreats -->|Yes| CoercivePressure
+    GuiltThreats -->|No| Persistent
 
-    Type: workflow
-    
-    **sim-id:** conflict-pressure-decision-guide<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy Level: Analyze (L4)
-    Bloom Verb: differentiate, distinguish
-    
-    Learning objective: Students analyze a described relationship situation
-    and distinguish ordinary, healthy conflict from coercive pressure by
-    tracing a decision path, with every node clickable for an explanation.
-    
-    Visual style: Mermaid flowchart, top-to-bottom, decision-diamond
-    structure, click handlers on every node
-    
-    Nodes (all require `click NodeId call showInfo("term")` handlers):
-    1. Start: "A disagreement or request has happened"
-    2. Decision: "Has a boundary already been clearly stated?" — click text:
-       "Check whether one person has already said no or set a limit"
-    3. Branch (No): "Ordinary Conflict" — click text: "Normal disagreement;
-       use direct communication and active listening to resolve it"
-    4. Branch (Yes): Decision: "Is the request being repeated anyway?" —
-       click text: "Repetition after a clear boundary is the key warning
-       sign of pressure"
-    5. Branch (No, respected): "Boundary Respected" — click text: "A healthy
-       response to a stated boundary; no further action needed"
-    6. Branch (Yes, repeated): Decision: "Does it include guilt, threats, or
-       isolation from others?" — click text: "These tactics escalate simple
-       persistence into coercive pressure"
-    7. Branch (Yes): "Coercive Pressure" — click text: "Seek outside support
-       from a trusted adult; this pattern is a signal to protect yourself,
-       not a communication gap to close alone"
-    8. Branch (No): "Persistent but Non-Coercive — Still Address Directly" —
-       click text: "Restate the boundary plainly; repeated non-threatening
-       requests still deserve a firm, direct response"
-    
-    Connections: 1→2, 2→3 (No), 2→4 (Yes), 4→5 (No), 4→6 (Yes), 6→7 (Yes),
-    6→8 (No)
-    
-    Color coding: green for healthy-resolution end states, red for the
-    coercive-pressure end state, yellow for decision diamonds
-    
-    Interactive features: click any node for its infobox; the path taken
-    during an example walkthrough highlights in gold
-    
-    Implementation: Mermaid.js flowchart with JavaScript click bindings to a
-    custom showInfo() function rendering a side panel
-    -->
+    classDef startNode fill:#5b9bd5,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef processNode fill:#7e57c2,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#ffd54f,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef emergNode fill:#e57373,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef mildNode fill:#64b5f6,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef goodNode fill:#66bb6a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef endNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    linkStyle default stroke:#999,stroke-width:2px,font-size:14px
+  </div></div>
+  <div class="info"><h3>Conflict or Pressure? A Decision Guide</h3><div id="panel">Hover or tap any step for details.</div></div>
+</main>
+<script>
+const nodeInfo = {
+  "Start": "A request or disagreement on its own is normal. What matters is what happens next.",
+  "BoundaryStated": "Check whether one person has already said no or set a limit.",
+  "OrdinaryConflict": "Normal disagreement; use direct communication and active listening to resolve it.",
+  "RepeatedAnyway": "Repetition after a clear boundary is the key warning sign of pressure.",
+  "BoundaryRespected": "A healthy response to a stated boundary; no further action needed.",
+  "GuiltThreats": "These tactics escalate simple persistence into coercive pressure.",
+  "CoercivePressure": "Seek outside support from a trusted adult; this pattern is a signal to protect yourself, not a communication gap to close alone.",
+  "Persistent": "Restate the boundary plainly; repeated non-threatening requests still deserve a firm, direct response."
+};
+const panel = document.getElementById('panel');
+function setup() {
+  document.querySelectorAll('.node').forEach(n => {
+    const id = n.id.replace('flowchart-', '').split('-')[0];
+    if (nodeInfo[id]) {
+      n.addEventListener('mouseenter', () => { panel.textContent = nodeInfo[id]; });
+      n.addEventListener('click', () => { panel.textContent = nodeInfo[id]; });
+    }
+  });
+}
+function wait() {
+  const m = document.querySelector('.mermaid');
+  if (m && m.querySelector('svg') && document.querySelectorAll('.node').length) setup();
+  else setTimeout(wait, 100);
+}
+setTimeout(wait, 150);
+</script>
 </body>
 </html>

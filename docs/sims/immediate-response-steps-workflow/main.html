@@ -1,143 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Immediate Response Steps Workflow</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 840 -->
+<title>Immediate Response Steps Workflow</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis', subGraphTitleMargin: { top: 10, bottom: 14 } } });
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+  main { display: flex; height: 100%; }
+  .diagram { flex: 2; background: aliceblue; display: flex; justify-content: center; align-items: center; overflow: hidden; padding: 8px; }
+  .diagram .mermaid { width: 100%; text-align: center; }
+  .diagram svg { max-width: 100%; height: auto; }
+  .info { flex: 1; background: #f8fafc; border-left: 1px solid #e2e8f0; padding: 10px; overflow: hidden; }
+  .info h3 { font-size: 14px; color: #1a3a6c; margin-bottom: 8px; }
+  #panel { font-size: 13px; color: #334155; line-height: 1.4; }
+  .node { cursor: pointer; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Immediate Response Steps Workflow</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> immediate-response-steps-workflow</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students apply the correct sequence of response steps</p>
-        </div>
-    </div>
+<main>
+  <div class="diagram"><div class="mermaid">
+flowchart TD
+    WarningSign("Warning Sign Noticed<br/>in Yourself or a Friend"):::startNode
+    TakeSeriously["Take It Seriously<br/>Immediately"]:::mildNode
+    NoSecrecy["Do Not Promise<br/>Secrecy"]:::mildNode
+    ReachAdult{"Can You Reach a<br/>Trusted Adult<br/>Right Now?"}:::endNode
+    TellAdult["Tell the Trusted<br/>Adult Immediately"]:::goodNode
+    Call988["Call or Text 988<br/>Right Now"]:::goodNode
+    HelpInvolved("Help Is Now<br/>Involved"):::goodNode
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    WarningSign --> TakeSeriously
+    TakeSeriously --> NoSecrecy
+    NoSecrecy --> ReachAdult
+    ReachAdult -->|Yes| TellAdult
+    ReachAdult -->|Not Yet| Call988
+    TellAdult --> HelpInvolved
+    Call988 --> HelpInvolved
 
-    Type: workflow
-    
-    **sim-id:** immediate-response-steps-workflow<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy Level: Apply (L3)
-    Bloom Verb: demonstrate, apply, use
-    
-    Learning objective: Students apply the correct sequence of response steps
-    when they recognize a suicide or self-harm warning sign in themselves or
-    someone else, with every path ending in a trusted adult or 988 becoming
-    involved.
-    
-    Visual style: Mermaid flowchart, linear with one branch point, deliberately
-    calm and text-only — no imagery or wording depicting a suicide attempt,
-    self-harm act, or method
-    
-    Nodes (all clickable, `click NodeId call showInfo("term")`):
-    1. "Warning Sign Noticed (In Yourself or a Friend)" — click text: "This
-       applies whether someone says it directly or shows strong behavioral,
-       verbal, or emotional signs"
-    2. "Take It Seriously Immediately" — click text: "Do not wait to see if
-       the feeling passes on its own"
-    3. "Do Not Promise Secrecy" — click text: "Use the direct script: 'I care
-       about you too much to keep this a secret. I need to get help.'"
-    4. "Can You Reach a Trusted Adult Right Now?" (decision diamond) — click
-       text: "Both paths from here lead to the same outcome: getting help
-       involved without delay"
-    5a. "Yes" branch to "Tell the Trusted Adult Immediately" — click text:
-       "This happens even if the person at risk asks you not to tell anyone"
-    5b. "Not Yet" branch to "Call or Text 988 Right Now" — click text: "988 is
-       available 24/7, free and confidential, while you also work on reaching
-       a trusted adult"
-    6. Shared end node "Help Is Now Involved" — click text: "Staying engaged
-       until a trusted adult or crisis counselor has taken over matters as
-       much as the first response"
-    
-    Connections: 1→2, 2→3, 3→4, 4→5a, 4→5b, 5a→6, 5b→6
-    
-    Color coding: blue for response steps, gray for the decision diamond,
-    green for both branches and the shared end node (both paths are equally
-    valid, immediate responses)
-    
-    Interactive features: click any node for its infobox; no depiction of a
-    crisis event, only response actions
-    
-    Implementation: Mermaid.js flowchart with JavaScript click bindings to a
-    custom showInfo() function; content strictly limited to listening,
-    disclosure response, and connecting to help — no method-related content
-    anywhere in the specification
-    -->
+    classDef startNode fill:#5b9bd5,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef processNode fill:#7e57c2,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#ffd54f,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef emergNode fill:#e57373,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef mildNode fill:#64b5f6,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef goodNode fill:#66bb6a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef endNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    linkStyle default stroke:#999,stroke-width:2px,font-size:14px
+  </div></div>
+  <div class="info"><h3>Immediate Response Steps</h3><div id="panel">Hover or tap any step for details.</div></div>
+</main>
+<script>
+const nodeInfo = {
+  "WarningSign": "This applies whether someone says it directly or shows strong behavioral, verbal, or emotional signs.",
+  "TakeSeriously": "Do not wait to see if the feeling passes on its own.",
+  "NoSecrecy": "Use the direct script: 'I care about you too much to keep this a secret. I need to get help.'",
+  "ReachAdult": "Both paths from here lead to the same outcome: getting help involved without delay.",
+  "TellAdult": "This happens even if the person at risk asks you not to tell anyone.",
+  "Call988": "988 is available 24/7, free and confidential, while you also work on reaching a trusted adult.",
+  "HelpInvolved": "Staying engaged until a trusted adult or crisis counselor has taken over matters as much as the first response."
+};
+const panel = document.getElementById('panel');
+function setup() {
+  document.querySelectorAll('.node').forEach(n => {
+    const id = n.id.replace('flowchart-', '').split('-')[0];
+    if (nodeInfo[id]) {
+      n.addEventListener('mouseenter', () => { panel.textContent = nodeInfo[id]; });
+      n.addEventListener('click', () => { panel.textContent = nodeInfo[id]; });
+    }
+  });
+}
+function wait() {
+  const m = document.querySelector('.mermaid');
+  if (m && m.querySelector('svg') && document.querySelectorAll('.node').length) setup();
+  else setTimeout(wait, 100);
+}
+setTimeout(wait, 150);
+</script>
 </body>
 </html>

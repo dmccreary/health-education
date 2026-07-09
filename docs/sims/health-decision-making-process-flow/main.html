@@ -1,117 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Health Decision-Making Process Flow</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 840 -->
+<title>Health Decision-Making Process Flow</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis', subGraphTitleMargin: { top: 10, bottom: 14 } } });
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+  main { display: flex; height: 100%; }
+  .diagram { flex: 2; background: aliceblue; display: flex; justify-content: center; align-items: center; overflow: hidden; padding: 8px; }
+  .diagram .mermaid { width: 100%; text-align: center; }
+  .diagram svg { max-width: 100%; height: auto; }
+  .info { flex: 1; background: #f8fafc; border-left: 1px solid #e2e8f0; padding: 10px; overflow: hidden; }
+  .info h3 { font-size: 14px; color: #1a3a6c; margin-bottom: 8px; }
+  #panel { font-size: 13px; color: #334155; line-height: 1.4; }
+  .node { cursor: pointer; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Health Decision-Making Process Flow</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> health-decision-making-process-flow</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students explain and interpret each of the six steps of a thoughtful health decision-making process by exploring a worked example scenario at each step.</p>
-        </div>
-    </div>
+<main>
+  <div class="diagram"><div class="mermaid">
+flowchart TD
+    Identify["Identify<br/>the Decision"]:::decisionNode
+    Gather["Gather Valid<br/>Information"]:::mildNode
+    Options["List Realistic<br/>Options"]:::mildNode
+    Weigh["Weigh Likely<br/>Consequences"]:::mildNode
+    ChooseAct["Choose<br/>and Act"]:::decisionNode
+    Reflect["Reflect<br/>Afterward"]:::goodNode
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    Identify --> Gather
+    Gather --> Options
+    Options --> Weigh
+    Weigh --> ChooseAct
+    ChooseAct --> Reflect
+    Reflect -->|Informs future decisions| Identify
 
-    Type: workflow
-    **sim-id:** health-decision-making-process-flow<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain, summarize, interpret
-    
-    Learning objective: Students explain and interpret each of the six steps of a thoughtful health decision-making process by exploring a worked example scenario at each step.
-    
-    Purpose: Show the six-step decision-making process applied to one consistent, realistic scenario (deciding how to respond when a ride home involves a driver who has been drinking).
-    
-    Visual style: Mermaid flowchart, six sequential nodes plus a final loop-back arrow from "Reflect" to "Identify The Decision" showing that reflection feeds future decisions.
-    
-    Steps (all nodes clickable):
-    1. "Identify The Decision" — click reveals the specific decision in the scenario: "Do I get in this car, find another way home, or say something first?"
-    2. "Gather Valid Information" — click reveals: "What do I actually know about how impaired the driver is, and what other options exist right now?"
-    3. "List Realistic Options" — click reveals three concrete options generated for the scenario (call a trusted adult, use a rideshare/taxi, ask a sober friend to drive).
-    4. "Weigh Likely Consequences" — click reveals a short comparison of what could happen with each option.
-    5. "Choose And Act" — click reveals the chosen option and the concrete action taken.
-    6. "Reflect Afterward" — click reveals a short reflection on whether the choice worked out and what was learned, with an arrow back to step 1.
-    
-    Color coding: Blue for information-gathering steps, gold for the decision-point steps, green for the reflection step.
-    
-    Implementation: Mermaid flowchart with click handlers mapped to a JavaScript infobox callback for every node.
-    -->
+    classDef startNode fill:#5b9bd5,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef processNode fill:#7e57c2,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#ffd54f,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef emergNode fill:#e57373,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef mildNode fill:#64b5f6,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef goodNode fill:#66bb6a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef endNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef cautionNode fill:#ff9800,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    linkStyle default stroke:#999,stroke-width:2px,font-size:14px
+  </div></div>
+  <div class="info"><h3>Health Decision-Making Process</h3><div id="panel">Hover or tap any step for details.</div></div>
+</main>
+<script>
+const nodeInfo = {
+  "Identify": "The decision in this scenario: Do I get in this car, find another way home, or say something first?",
+  "Gather": "What do I actually know about how impaired the driver is, and what other options exist right now?",
+  "Options": "Three realistic options: call a trusted adult, use a rideshare or taxi, or ask a sober friend to drive.",
+  "Weigh": "Riding with an impaired driver risks a crash; calling an adult may feel awkward but is safe; a rideshare costs money but gets you home safely.",
+  "ChooseAct": "The choice: text a trusted adult for a ride, and wait somewhere safe until they arrive.",
+  "Reflect": "The ride home was safe and the adult was glad to help. Next time, planning a safe ride in advance would make the choice even easier — reflection feeds future decisions."
+};
+const panel = document.getElementById('panel');
+function setup() {
+  document.querySelectorAll('.node').forEach(n => {
+    const id = n.id.replace('flowchart-', '').split('-')[0];
+    if (nodeInfo[id]) {
+      n.addEventListener('mouseenter', () => { panel.textContent = nodeInfo[id]; });
+      n.addEventListener('click', () => { panel.textContent = nodeInfo[id]; });
+    }
+  });
+}
+function wait() {
+  const m = document.querySelector('.mermaid');
+  if (m && m.querySelector('svg') && document.querySelectorAll('.node').length) setup();
+  else setTimeout(wait, 100);
+}
+setTimeout(wait, 150);
+</script>
 </body>
 </html>

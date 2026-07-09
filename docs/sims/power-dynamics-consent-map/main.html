@@ -1,137 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Mapping Power Imbalances in Relationships</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 560 -->
+<title>Mapping Power Imbalances in Relationships</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 18px; margin: 2px 0; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .wrap { position: relative; }
+  #network { width: 100%; height: 400px; border: 1px solid silver; border-radius: 6px; background: aliceblue; }
+  .legend { position: absolute; top: 8px; left: 8px; background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 9px; font-size: 11px; line-height: 1.7; }
+  .legend .k { display: inline-block; width: 13px; height: 13px; margin-right: 6px; vertical-align: middle; border: 1px solid #555; }
+  .legend .circle { border-radius: 50%; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid steelblue; border-radius: 4px; padding: 9px 11px; font-size: 13px; color: #334155; line-height: 1.5; min-height: 104px; }
+  .infobox strong { color: navy; }
+  .infobox .reflect { display: block; margin-top: 5px; color: #8a2820; font-style: italic; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Mapping Power Imbalances in Relationships</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> power-dynamics-consent-map</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students examine a set of relationship-pair examples</p>
-        </div>
+<main>
+  <h3>Mapping Power Imbalances in Relationships</h3>
+  <div class="subtitle">Hover a colored power source to see why it blocks free choice. Click a gray relationship to see which imbalance applies and why it is not a relationship of equals.</div>
+  <div class="wrap">
+    <div id="network"></div>
+    <div class="legend">
+      <span class="k circle" style="background:#8e44ad;"></span>Age Gap<br>
+      <span class="k circle" style="background:#2980b9;"></span>Authority<br>
+      <span class="k circle" style="background:#c0392b;"></span>Incapacitation<br>
+      <span class="k circle" style="background:#16a085;"></span>Dependence<br>
+      <span class="k" style="background:#6c757d;"></span>Relationship pair
     </div>
+  </div>
+  <div class="infobox" id="infobox">Genuine consent requires two people who meet as equals. These six relationships each carry a power imbalance that makes free, equal agreement impossible. Hover a colored power source to see what it means, then click a gray relationship to see which imbalance applies and why the law and ethics treat it differently from a relationship between peers.</div>
+</main>
+<script>
+const box = document.getElementById('infobox');
+const INTRO = "Genuine consent requires two people who meet as equals. These six relationships each carry a power imbalance that makes free, equal agreement impossible. Hover a colored power source to see what it means, then click a gray relationship to see which imbalance applies and why the law and ethics treat it differently from a relationship between peers.";
+const REFLECT = "Which power source is at work here — age gap, authority, incapacitation, or dependence?";
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+// Power-source category nodes (colored circles), one color each, fixed across the top
+const CAT = {
+  age:      { color:'#8e44ad', border:'#5e2d74' },
+  auth:     { color:'#2980b9', border:'#1c5a82' },
+  incap:    { color:'#c0392b', border:'#8a2820' },
+  depend:   { color:'#16a085', border:'#0e6f5c' }
+};
 
-    Type: graph-model
-    
-    **sim-id:** power-dynamics-consent-map<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy Level: Analyze (L4)
-    Bloom Verb: examine, distinguish, attribute
-    
-    Learning objective: Students examine a set of relationship-pair examples
-    and attribute the type of power imbalance present (age gap, authority,
-    incapacitation, dependence), analyzing why each undermines the
-    possibility of genuine consent.
-    
-    Node types:
-    1. Relationship-pair nodes (e.g., "Teacher / Student," "Coach / Athlete,"
-       "Employer / Employee," "Adult / Much Younger Teen," "Sober Person /
-       Intoxicated Person," "Landlord-Dependent Tenant") — gray rounded
-       rectangles
-    2. Power-source category nodes (four fixed nodes: "Age Gap," "Authority,"
-       "Incapacitation," "Dependence") — colored circles, one color each
-    
-    Edge types:
-    - Edge connects each relationship-pair node to the power-source
-      category(ies) that apply to it (some pairs connect to more than one
-      category)
-    
-    Sample data: 6 relationship-pair nodes as listed above, each linked to
-    one or two of the four category nodes
-    
-    Layout: Hierarchical, four category nodes fixed at top, relationship-pair
-    nodes below, connecting up
-    
-    Interactive features:
-    - Hover a category node: shows its definition and why it undermines free
-      choice
-    - Click a relationship-pair node: opens a side panel explaining
-      specifically why that pairing creates a power imbalance and why the law
-      or ethical framework treats it differently from a peer relationship
-    - Drag and zoom/pan enabled
-    
-    Legend: color key for the four power-source categories
-    
-    Implementation: vis-network, hierarchical layout, click-triggered side
-    panel content stored in a JSON lookup keyed by node id
-    -->
+const categories = [
+  { id:'age', label:'Age\nGap', title:'Age Gap', x:-330,
+    hover:'Age Gap: a large difference in age means unequal experience and power.',
+    full:`Age Gap: A large difference in age brings a big difference in experience, maturity, and social power. The younger person cannot meet the older one as an equal, so free, fully informed agreement is not really possible.` },
+  { id:'auth', label:'Authority', title:'Authority', x:-110,
+    hover:'Authority: one person can reward, punish, grade, or control the other.',
+    full:`Authority: One person can reward, punish, grade, or otherwise control the other. Fear of consequences — or hope for favors — makes a truly free "yes" impossible.` },
+  { id:'incap', label:'Incapacitation', title:'Incapacitation', x:110,
+    hover:'Incapacitation: someone impaired or unconscious cannot freely agree.',
+    full:`Incapacitation: When someone is drunk, high, asleep, or unconscious, they cannot understand or freely agree to anything. Consent requires a clear, awake mind.` },
+  { id:'depend', label:'Dependence', title:'Dependence', x:330,
+    hover:'Dependence: one person relies on the other for basic needs.',
+    full:`Dependence: One person relies on the other for housing, money, grades, or other basic needs. Saying "no" could cost them something they cannot afford to lose, so agreement is not truly free.` }
+];
+
+// Relationship-pair nodes (gray rounded rectangles), fixed across the bottom.
+// cats = which power-source category(ies) apply.
+const pairs = [
+  { id:'teacher', label:'Teacher /\nStudent', title:'Teacher / Student', x:-360, cats:['auth'],
+    hover:'Authority: a teacher controls grades and school life.',
+    full:`Teacher / Student: A teacher holds authority over grades, recommendations, and a student's daily life at school. Because the teacher can reward or punish, a student is never free to agree as an equal. This is why schools and the law forbid romantic or sexual relationships between teachers and students, even when a student is over the age of consent.` },
+  { id:'coach', label:'Coach /\nAthlete', title:'Coach / Athlete', x:-216, cats:['auth'],
+    hover:'Authority: a coach controls playing time and opportunities.',
+    full:`Coach / Athlete: A coach controls playing time, team standing, and an athlete's future opportunities. That control creates pressure that makes genuine, free consent impossible. Ethics codes and many laws treat coach–athlete relationships as off-limits for this reason.` },
+  { id:'employer', label:'Employer /\nEmployee', title:'Employer / Employee', x:-72, cats:['auth','depend'],
+    hover:'Authority + Dependence: an employer controls pay and the job.',
+    full:`Employer / Employee: An employer decides pay, hours, and whether someone keeps their job. An employee may feel they cannot say "no" without risking their income, so consent is undermined by both authority and dependence. This is why workplace harassment laws exist and treat these relationships differently from those between equals.` },
+  { id:'adultteen', label:'Adult / Much\nYounger Teen', title:'Adult / Much Younger Teen', x:72, cats:['age'],
+    hover:'Age Gap: very different experience, power, and maturity.',
+    full:`Adult / Much Younger Teen: A wide age gap means very different levels of experience, power, and brain development. The law sets an age of consent precisely because a much younger teen cannot freely and equally agree to a relationship with an adult. This is categorically different from a relationship between two peers of similar age.` },
+  { id:'sober', label:'Sober /\nIntoxicated Person', title:'Sober Person / Intoxicated Person', x:216, cats:['incap'],
+    hover:'Incapacitation: an intoxicated person cannot freely agree.',
+    full:`Sober Person / Intoxicated Person: A person who is drunk or high cannot clearly understand or freely agree to sexual activity. The law is clear that someone who is incapacitated cannot give consent, so a sober person who proceeds is committing assault — not sharing a mutual choice.` },
+  { id:'landlord', label:'Landlord /\nDependent Tenant', title:'Landlord / Dependent Tenant', x:360, cats:['depend'],
+    hover:'Dependence: the tenant relies on the landlord for housing.',
+    full:`Landlord / Dependent Tenant: A landlord controls whether a tenant has a place to live. If a tenant fears eviction, they cannot freely refuse, so any "agreement" is shaped by dependence rather than free choice. This power imbalance is treated as coercion, not consent.` }
+];
+
+const nodes = [], edges = [];
+const info = {}, hoverInfo = {};
+const isPair = {};
+
+// Category circles pinned along the top
+categories.forEach(c => {
+  nodes.push({ id:c.id, label:c.label, shape:'circle', x:c.x, y:-150, fixed:{ x:true, y:true },
+    color:{ background:CAT[c.id].color, border:CAT[c.id].border, highlight:{ background:CAT[c.id].color, border:CAT[c.id].border } },
+    font:{ size:13, color:'white', face:'Arial' }, borderWidth:2, widthConstraint:{ maximum:100 } });
+  info[c.id] = { title:c.title, full:c.full };
+  hoverInfo[c.id] = c.hover;
+});
+
+// Relationship-pair gray boxes pinned along the bottom, each linked up to its category(ies)
+pairs.forEach(p => {
+  nodes.push({ id:p.id, label:p.label, shape:'box', margin:9, x:p.x, y:150, fixed:{ x:true, y:true },
+    color:{ background:'#6c757d', border:'#495057', highlight:{ background:'#868e96', border:'#495057' } },
+    font:{ size:12, color:'white', face:'Arial' }, borderWidth:2, widthConstraint:{ maximum:130 } });
+  info[p.id] = { title:p.title, full:p.full };
+  hoverInfo[p.id] = p.hover;
+  isPair[p.id] = true;
+  p.cats.forEach(cat => {
+    edges.push({ id:p.id + '_' + cat, from:p.id, to:cat, width:2,
+      color:{ color:CAT[cat].color, highlight:CAT[cat].color },
+      arrows:{ to:{ enabled:true, scaleFactor:0.5 } }, smooth:{ enabled:false } });
+  });
+});
+
+const container = document.getElementById('network');
+const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+const options = {
+  physics: { solver:'forceAtlas2Based', forceAtlas2Based:{ gravitationalConstant:-45, springLength:130, avoidOverlap:0.8 }, stabilization:{ iterations:300 } },
+  interaction: { hover:true, dragView:true, zoomView:true, navigationButtons:true, tooltipDelay:100000 },
+  edges: { arrows:{ to:{ enabled:true, scaleFactor:0.5 } } },
+  nodes: { shadow:true }
+};
+const network = new vis.Network(container, data, options);
+network.once('stabilizationIterationsDone', () => { network.setOptions({ physics:false }); network.fit(); });
+
+// Neighbor lookup for click-to-highlight
+const neighbors = {};
+edges.forEach(e => {
+  (neighbors[e.from] = neighbors[e.from] || []).push(e.to);
+  (neighbors[e.to] = neighbors[e.to] || []).push(e.from);
+});
+
+function showInfo(id){
+  const d = info[id];
+  if (!d) return;
+  let html = '<strong>' + d.title + '</strong><br>' + d.full;
+  if (isPair[id]) html += '<span class="reflect">' + REFLECT + '</span>';
+  box.innerHTML = html;
+}
+
+function highlight(id){
+  const keep = new Set([id, ...(neighbors[id] || [])]);
+  data.nodes.update(nodes.map(n => ({ id:n.id, opacity: keep.has(n.id) ? 1 : 0.2 })));
+  data.edges.update(data.edges.get().map(e => ({
+    id:e.id, hidden: !(keep.has(e.from) && keep.has(e.to) && (e.from === id || e.to === id))
+  })));
+}
+
+function clearHighlight(){
+  data.nodes.update(nodes.map(n => ({ id:n.id, opacity:1 })));
+  data.edges.update(data.edges.get().map(e => ({ id:e.id, hidden:false })));
+}
+
+network.on('hoverNode', p => { const h = hoverInfo[p.node]; if (h) box.innerHTML = h; });
+network.on('click', p => {
+  if (p.nodes.length) {
+    const id = p.nodes[0];
+    showInfo(id);
+    highlight(id);
+  } else {
+    clearHighlight();
+    box.innerHTML = INTRO;
+  }
+});
+</script>
 </body>
 </html>

@@ -1,111 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Steps to Take If You're Worried About a Friend</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 840 -->
+<title>Steps to Take If You're Worried About a Friend</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis', subGraphTitleMargin: { top: 10, bottom: 14 } } });
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+  main { display: flex; height: 100%; }
+  .diagram { flex: 2; background: aliceblue; display: flex; justify-content: center; align-items: center; overflow: hidden; padding: 8px; }
+  .diagram .mermaid { width: 100%; text-align: center; }
+  .diagram svg { max-width: 100%; height: auto; }
+  .info { flex: 1; background: #f8fafc; border-left: 1px solid #e2e8f0; padding: 10px; overflow: hidden; }
+  .info h3 { font-size: 14px; color: #1a3a6c; margin-bottom: 8px; }
+  #panel { font-size: 13px; color: #334155; line-height: 1.4; }
+  .node { cursor: pointer; }
+</style>
 </head>
 <body>
-    <div id="container">
-        <h1>Steps to Take If You're Worried About a Friend</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> steps-to-take-worried-about-friend</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students apply the correct sequence of response steps when a friend discloses thoughts of suicide or self-harm, ending every path at getting a trusted adult or the 988 Lifeline involved.</p>
-        </div>
-    </div>
+<main>
+  <div class="diagram"><div class="mermaid">
+flowchart TD
+    Start("A Friend Tells You<br/>They're Thinking About<br/>Suicide or Self-Harm"):::startNode
+    Listen["Listen Without<br/>Judgment"]:::mildNode
+    TakeSeriously["Take It Seriously —<br/>Do Not Promise Secrecy"]:::mildNode
+    CanReach{"Can You Reach a Trusted<br/>Adult Right Now?"}:::grayNode
+    TellAdult["Tell the Trusted<br/>Adult Immediately"]:::goodNode
+    Call988["Call or Text<br/>988 Together"]:::goodNode
+    GetsHelp("Your Friend<br/>Gets Help"):::goodNode
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    Start --> Listen
+    Listen --> TakeSeriously
+    TakeSeriously --> CanReach
+    CanReach -->|Yes| TellAdult
+    CanReach -->|Not Yet| Call988
+    TellAdult --> GetsHelp
+    Call988 --> GetsHelp
 
-    Type: workflow
-    **sim-id:** steps-to-take-worried-about-friend<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: demonstrate, apply, use
-    
-    Learning objective: Students apply the correct sequence of response steps when a friend discloses thoughts of suicide or self-harm, ending every path at getting a trusted adult or the 988 Lifeline involved.
-    
-    Visual style: Mermaid flowchart, linear with one branch point, deliberately simple and calm — no imagery or text depicting a crisis event itself.
-    
-    Steps: (1) Start node "A Friend Tells You They're Thinking About Suicide or Self-Harm," click reveals this applies whether the friend says it directly or you notice strong warning signs; (2) process node "Listen Without Judgment," click reveals what listening without judgment looks like in practice; (3) process node "Take It Seriously — Do Not Promise Secrecy," click reveals the exact supportive script from the chapter text; (4) decision diamond "Can You Reach a Trusted Adult Right Now?" click reveals that both branches lead to the same outcome; (5a) branch "Yes" leads to "Tell the Trusted Adult Immediately," click reveals this should happen even if the friend asks you not to; (5b) branch "Not Yet" leads to "Call or Text 988 Together," click reveals 988 is available 24/7 and can help right away while you also work on reaching a trusted adult; (6) shared end node "Your Friend Gets Help," click reveals that follow-through — making sure an adult is actually involved — matters as much as the first response.
-    
-    Every node must have a Mermaid `click` directive calling an infobox function.
-    
-    Color coding: Blue for listening/response steps, gray neutral for the decision diamond, green for both paths and the shared end node (both paths are equally valid and both are "success," not a choice between a right and wrong path).
-    
-    Implementation: Mermaid flowchart syntax with `click NodeId call showInfo("key")` for every node; infobox text in a JS lookup object. Contains no depiction of a suicide attempt, self-harm act, or method — content is limited to listening, disclosure response, and connecting to help.
-    -->
+    classDef startNode fill:#5b9bd5,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef processNode fill:#7e57c2,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#ffd54f,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef emergNode fill:#e57373,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef mildNode fill:#64b5f6,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef goodNode fill:#66bb6a,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef grayNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef endNode fill:#b0bec5,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    linkStyle default stroke:#999,stroke-width:2px,font-size:14px
+  </div></div>
+  <div class="info"><h3>Worried About a Friend</h3><div id="panel">Hover or tap any step for details.</div></div>
+</main>
+<script>
+const nodeInfo = {
+  "Start": "This applies whether your friend says it directly or you notice strong warning signs. Either way, it is important to act.",
+  "Listen": "Give them your full attention, stay calm, and let them talk without interrupting or judging. You do not need to have all the answers.",
+  "TakeSeriously": "Take every mention seriously. You can say, 'I care about you, and I'm not going to keep this a secret because I want you to be safe.' Never promise to keep it private.",
+  "CanReach": "Both answers lead to the same good outcome: getting your friend connected to help. There is no wrong path here.",
+  "TellAdult": "Tell a trusted adult right away, even if your friend asks you not to. Keeping them safe matters more than keeping a secret.",
+  "Call988": "The 988 Suicide and Crisis Lifeline is free and available 24/7 by call or text. You can reach out together while you also work on finding a trusted adult.",
+  "GetsHelp": "Following through, and making sure an adult is actually involved, matters as much as the first response."
+};
+const panel = document.getElementById('panel');
+function setup() {
+  document.querySelectorAll('.node').forEach(n => {
+    const id = n.id.replace('flowchart-', '').split('-')[0];
+    if (nodeInfo[id]) {
+      n.addEventListener('mouseenter', () => { panel.textContent = nodeInfo[id]; });
+      n.addEventListener('click', () => { panel.textContent = nodeInfo[id]; });
+    }
+  });
+}
+function wait() {
+  const m = document.querySelector('.mermaid');
+  if (m && m.querySelector('svg') && document.querySelectorAll('.node').length) setup();
+  else setTimeout(wait, 100);
+}
+setTimeout(wait, 150);
+</script>
 </body>
 </html>
