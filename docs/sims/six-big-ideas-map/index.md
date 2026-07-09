@@ -10,7 +10,7 @@ bloom_level: Remember (L1)
 
 
 
-<iframe src="main.html" width="100%" height="542px"></iframe>
+<iframe src="main.html" width="100%" height="562px"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

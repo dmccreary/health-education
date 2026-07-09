@@ -74,7 +74,7 @@ The following table previews the six root ideas in this chapter, in the order th
 | Communication | Sharing your thoughts, feelings, wants, and needs with someone else |
 
 #### Diagram: Six Big Ideas Concept Map
-<iframe src="../../../../sims/six-big-ideas-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/six-big-ideas-map/main.html" width="100%" height="560px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Six Big Ideas Concept Map</summary>
 Type: graph-model

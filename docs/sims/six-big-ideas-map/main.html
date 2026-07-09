@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
-<!-- CANVAS_HEIGHT: 540 -->
+<!-- CANVAS_HEIGHT: 560 -->
 <title>Six Big Ideas Concept Map</title>
 <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 <style>
@@ -47,15 +47,15 @@ const INTRO = 'These are the six big ideas of this chapter. <strong>Health</stro
 // which avoids the vis-network perfectly-horizontal edge-label rendering bug.
 const R = 210;
 const ideas = [
-  { id:'trusted', label:'🤝\nTrusted\nAdult', color:'#3b6fb5', fc:'white', ang:-90,
+  { id:'trusted', label:'🤝\nTrusted\nAdult', color:'#3b6fb5', fc:'black', ang:-90,
     def:'Trusted Adult: a grown-up who listens, keeps you safe, and helps you when you have a problem.' },
-  { id:'permission', label:'✋\nPermission', color:'#2e8b57', fc:'white', ang:-18,
+  { id:'permission', label:'✋\nPermission', color:'#2e8b57', fc:'black', ang:-18,
     def:'Permission: getting a clear "yes" before you do something that involves someone else’s body, feelings, or things.' },
-  { id:'safe', label:'🛡️\nSafe\nBehavior', color:'#e08a2f', fc:'white', ang:54,
+  { id:'safe', label:'🛡️\nSafe\nBehavior', color:'#e08a2f', fc:'black', ang:54,
     def:'Safe Behavior: choices that protect your body and mind from harm.' },
-  { id:'influence', label:'➡️\nInfluence', color:'#8e5bb5', fc:'white', ang:126,
+  { id:'influence', label:'➡️\nInfluence', color:'#8e5bb5', fc:'black', ang:126,
     def:'Influence: the way the people and things around you can change what you think, feel, or do.' },
-  { id:'communication', label:'💬\nCommunication', color:'#2fa4a0', fc:'white', ang:198,
+  { id:'communication', label:'💬\nCommunication', color:'#2fa4a0', fc:'black', ang:198,
     def:'Communication: sharing your thoughts and feelings clearly, and listening carefully to others.' }
 ];
 
@@ -68,7 +68,7 @@ const homes = {}; // id -> {x,y} for gentle snap-back after a drag
 // Center Health node (large yellow circle)
 nodes.push({ id:'health', label:'❤️\nHealth', shape:'dot', size:46,
   color:{ background:'#f5d020', border:'#8a6d0b', highlight:{ background:'#ffe250', border:'#8a6d0b' } },
-  font:{ size:18, color:'#3a2c00', face:'Arial', multi:false }, borderWidth:3, x:0, y:0 });
+  font:{ size:36, color:'black', face:'Arial', multi:false }, borderWidth:3, x:0, y:0 });
 info['health'] = { def:HEALTH_DEF, full:HEALTH_DEF };
 homes['health'] = { x:0, y:0 };
 
@@ -78,7 +78,7 @@ ideas.forEach(o => {
   const y = Math.round(R * Math.sin(rad));
   nodes.push({ id:o.id, label:o.label, shape:'dot', size:34,
     color:{ background:o.color, border:'#333', highlight:{ background:o.color, border:'#111' } },
-    font:{ size:13, color:o.fc, face:'Arial' }, borderWidth:2, x, y });
+    font:{ size:24, color:o.fc, face:'Arial' }, borderWidth:2, x, y });
   edges.push({ id:'e_'+o.id, from:'health', to:o.id, width:5,
     color:{ color:'#9aa5b1', highlight:'#f5d020' }, smooth:{ type:'continuous' } });
   info[o.id] = { def:o.def, full:o.def };
