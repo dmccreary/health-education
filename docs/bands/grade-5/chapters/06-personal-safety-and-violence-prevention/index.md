@@ -119,7 +119,7 @@ You never have to sort out online harm by yourself. Telling a trusted adult isn'
 
 #### Diagram: Reporting Online Harm Workflow
 
-<iframe src="../../../../sims/reporting-online-harm-workflow/main.html" width="100%" height="1002px" scrolling="no"></iframe>
+<iframe src="../../../../sims/reporting-online-harm-workflow/main.html" width="100%" height="1122px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Reporting Online Harm Workflow</summary>
 Type: workflow
@@ -497,7 +497,7 @@ Reporting isn't the same as tattling or causing trouble. A trusted adult would a
 
 #### Diagram: Recognize and Report Decision Path
 
-<iframe src="../../../../sims/recognize-and-report-decision-path/main.html" width="100%" height="842px" scrolling="no"></iframe>
+<iframe src="../../../../sims/recognize-and-report-decision-path/main.html" width="100%" height="938px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Recognize and Report Decision Path</summary>
 Type: workflow

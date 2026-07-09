@@ -319,7 +319,7 @@ Comparing these four paths side by side helps show that each one calls for a dif
 
 #### Diagram: Follow the Germ's Path
 
-<iframe src="../../../../sims/how-germs-spread-paths/main.html" width="100%" height="482px" scrolling="no"></iframe>
+<iframe src="../../../../sims/how-germs-spread-paths/main.html" width="100%" height="236px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Follow the Germ's Path MicroSim</summary>
 Type: workflow

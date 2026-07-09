@@ -309,7 +309,7 @@ sharing:
 
 #### Diagram: Online Harm Response Pathway
 
-<iframe src="../../../../sims/online-harm-response-pathway/main.html" width="100%" height="842px" scrolling="no"></iframe>
+<iframe src="../../../../sims/online-harm-response-pathway/main.html" width="100%" height="578px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Online Harm Response Pathway</summary>
 Type: workflow
@@ -672,7 +672,7 @@ you — it slows the entire group's response.
 
 #### Diagram: Warning Sign to Response Workflow
 
-<iframe src="../../../../sims/warning-sign-to-response-workflow/main.html" width="100%" height="722px" scrolling="no"></iframe>
+<iframe src="../../../../sims/warning-sign-to-response-workflow/main.html" width="100%" height="632px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Warning Sign to Response Workflow</summary>
 Type: workflow

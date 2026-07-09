@@ -510,7 +510,7 @@ rather than relying on this chapter for exact figures.
 
 #### Diagram: How Consent Law Maps to Ethical Principles
 
-<iframe src="../../../../sims/consent-law-principle-map/main.html" width="100%" height="482px" scrolling="no"></iframe>
+<iframe src="../../../../sims/consent-law-principle-map/main.html" width="100%" height="230px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>How Consent Law Maps to Ethical Principles</summary>
 Type: workflow

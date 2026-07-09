@@ -254,7 +254,7 @@ The single most important rule in any allergic reaction, mild or severe, is this
 
 #### Diagram: Allergic Reaction Response Workflow
 
-<iframe src="../../../../sims/allergic-reaction-response-workflow/main.html" width="100%" height="988px" scrolling="no"></iframe>
+<iframe src="../../../../sims/allergic-reaction-response-workflow/main.html" width="100%" height="836px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Allergic Reaction Response Workflow</summary>
 Type: workflow

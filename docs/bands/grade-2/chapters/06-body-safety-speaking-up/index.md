@@ -133,7 +133,7 @@ That fourth step matters just as much as the first three. Occasionally a child's
 
 #### Diagram: Steps for Saying No and Getting Help
 
-<iframe src="../../../../sims/saying-no-getting-help-workflow/main.html" width="100%" height="602px" scrolling="no"></iframe>
+<iframe src="../../../../sims/saying-no-getting-help-workflow/main.html" width="100%" height="504px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Steps for Saying No and Getting Help MicroSim</summary>
 Type: workflow

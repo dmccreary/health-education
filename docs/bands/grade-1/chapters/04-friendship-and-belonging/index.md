@@ -348,7 +348,7 @@ Use **Explore** mode to select a numbered marker and learn more. Use **Quiz** mo
 
 #### Diagram: Building Belonging Chain Reaction
 
-<iframe src="../../../../sims/building-belonging-chain-reaction/main.html" width="100%" height="722px" scrolling="no"></iframe>
+<iframe src="../../../../sims/building-belonging-chain-reaction/main.html" width="100%" height="606px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Building Belonging Chain Reaction Workflow</summary>
 Type: workflow

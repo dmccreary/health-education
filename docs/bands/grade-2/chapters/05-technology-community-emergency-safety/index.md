@@ -135,7 +135,7 @@ Following the same four steps every time — instead of a different plan for eve
 
 #### Diagram: Steps for Getting Help With a Tech Situation
 
-<iframe src="../../../../sims/tech-help-steps-workflow/main.html" width="100%" height="602px" scrolling="no"></iframe>
+<iframe src="../../../../sims/tech-help-steps-workflow/main.html" width="100%" height="480px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Steps for Getting Help With a Tech Situation MicroSim</summary>
 Type: workflow

@@ -334,7 +334,7 @@ Consider this before-and-after scenario. Before we walk through it, remember the
 
 #### Diagram: Health Concern Reporting Decision Path
 
-<iframe src="../../../../sims/health-concern-reporting-decision-path/main.html" width="100%" height="962px" scrolling="no"></iframe>
+<iframe src="../../../../sims/health-concern-reporting-decision-path/main.html" width="100%" height="1144px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Health Concern Reporting Decision Path Workflow</summary>
 Type: workflow

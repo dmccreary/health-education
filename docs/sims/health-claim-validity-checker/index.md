@@ -10,7 +10,7 @@ bloom_level: Evaluate<br/>
 
 
 
-<iframe src="main.html" width="100%" height="842px"></iframe>
+<iframe src="main.html" width="100%" height="1306px"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

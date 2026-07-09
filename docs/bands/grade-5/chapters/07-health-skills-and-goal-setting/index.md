@@ -344,7 +344,7 @@ That last step matters as much as the delivery itself — examining the outcome 
 
 #### Diagram: Health Message Planning Workflow
 
-<iframe src="../../../../sims/health-message-planning-workflow/main.html" width="100%" height="842px" scrolling="no"></iframe>
+<iframe src="../../../../sims/health-message-planning-workflow/main.html" width="100%" height="760px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Health Message Planning Workflow</summary>
 Type: workflow

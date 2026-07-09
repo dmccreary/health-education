@@ -142,7 +142,7 @@ This process applies at any scale, from responding to a friend's risky invitatio
 
 #### Diagram: Health Decision-Making Process Flow
 
-<iframe src="../../../../sims/health-decision-making-process-flow/main.html" width="100%" height="842px" scrolling="no"></iframe>
+<iframe src="../../../../sims/health-decision-making-process-flow/main.html" width="100%" height="782px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Health Decision-Making Process Flow</summary>
 Type: workflow

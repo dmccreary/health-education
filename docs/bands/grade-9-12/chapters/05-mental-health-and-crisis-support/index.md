@@ -472,7 +472,7 @@ method.
 
 #### Diagram: Immediate Response Steps Workflow
 
-<iframe src="../../../../sims/immediate-response-steps-workflow/main.html" width="100%" height="842px" scrolling="no"></iframe>
+<iframe src="../../../../sims/immediate-response-steps-workflow/main.html" width="100%" height="922px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Immediate Response Steps Workflow</summary>
 Type: workflow
@@ -723,7 +723,7 @@ actually need. Clear boundaries prevent this outcome for both people.
 
 #### Diagram: Helping Without Losing Yourself Decision Tool
 
-<iframe src="../../../../sims/helping-without-losing-yourself-tool/main.html" width="100%" height="722px" scrolling="no"></iframe>
+<iframe src="../../../../sims/helping-without-losing-yourself-tool/main.html" width="100%" height="630px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Helping Without Losing Yourself Decision Tool</summary>
 Type: workflow

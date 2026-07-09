@@ -253,7 +253,7 @@ Understanding *why* these practices work helps students see that hygiene customs
 
 #### Diagram: Blocking the Path of Germs
 
-<iframe src="../../../../sims/germ-path-blocker-workflow/main.html" width="100%" height="522px" scrolling="no"></iframe>
+<iframe src="../../../../sims/germ-path-blocker-workflow/main.html" width="100%" height="334px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Blocking the Path of Germs Workflow</summary>
 Type: workflow

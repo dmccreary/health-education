@@ -74,7 +74,7 @@ work end to end: **Maya, a junior, was just offered a ride home from a party
 by a friend who has been drinking.**
 
 #### Diagram: The DECIDE Framework Walkthrough
-<iframe src="../../../../sims/decide-framework-walkthrough/main.html" width="100%" height="842px" scrolling="no"></iframe>
+<iframe src="../../../../sims/decide-framework-walkthrough/main.html" width="100%" height="782px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>The DECIDE Framework Walkthrough</summary>
 Type: workflow

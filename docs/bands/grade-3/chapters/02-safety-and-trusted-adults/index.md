@@ -238,7 +238,7 @@ This is a key idea for Grade 3: practicing safety procedures **prepares** studen
 
 #### Diagram: From Drill to Real Emergency
 
-<iframe src="../../../../sims/drill-to-emergency-workflow/main.html" width="100%" height="842px" scrolling="no"></iframe>
+<iframe src="../../../../sims/drill-to-emergency-workflow/main.html" width="100%" height="718px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>From Drill to Real Emergency Workflow</summary>
 Type: workflow

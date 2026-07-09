@@ -205,7 +205,7 @@ Conflict itself isn't the problem — unmanaged conflict is. Two friends can dis
 
 #### Diagram: Friendship Conflict Navigator
 
-<iframe src="../../../../sims/friendship-conflict-navigator/main.html" width="100%" height="842px" scrolling="no"></iframe>
+<iframe src="../../../../sims/friendship-conflict-navigator/main.html" width="100%" height="928px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Friendship Conflict Navigator Workflow</summary>
 Type: workflow

@@ -562,7 +562,7 @@ avoid blaming individuals for outcomes substantially shaped by the system
 around them.
 
 #### Diagram: Food System to Chronic Disease Pathway
-<iframe src="../../../../sims/food-system-disease-pathway/main.html" width="100%" height="962px" scrolling="no"></iframe>
+<iframe src="../../../../sims/food-system-disease-pathway/main.html" width="100%" height="934px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Food System to Chronic Disease Pathway</summary>
 Type: workflow

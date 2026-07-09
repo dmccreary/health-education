@@ -169,7 +169,7 @@ This is exactly why routine testing matters as its own, separate practice — no
 
 #### Diagram: Symptom Visibility and Testing Decision Path
 
-<iframe src="../../../../sims/symptom-visibility-testing-decision-path/main.html" width="100%" height="602px" scrolling="no"></iframe>
+<iframe src="../../../../sims/symptom-visibility-testing-decision-path/main.html" width="100%" height="578px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Symptom Visibility and Testing Decision Path Workflow</summary>
 Type: workflow
@@ -376,7 +376,7 @@ Reducing barriers is a shared responsibility — individual strategies help, and
 
 #### Diagram: Healthcare Access Barrier-Reduction Workflow
 
-<iframe src="../../../../sims/healthcare-barrier-reduction-workflow/main.html" width="100%" height="602px" scrolling="no"></iframe>
+<iframe src="../../../../sims/healthcare-barrier-reduction-workflow/main.html" width="100%" height="506px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Healthcare Access Barrier-Reduction Workflow</summary>
 Type: workflow

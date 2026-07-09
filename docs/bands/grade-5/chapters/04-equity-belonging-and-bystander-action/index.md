@@ -339,7 +339,7 @@ Before we look at the decision path below, remember these four terms: **not laug
 
 #### Diagram: Bystander Action Decision Path
 
-<iframe src="../../../../sims/bystander-action-decision-path/main.html" width="100%" height="842px" scrolling="no"></iframe>
+<iframe src="../../../../sims/bystander-action-decision-path/main.html" width="100%" height="956px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Bystander Action Decision Path Workflow</summary>
 Type: workflow

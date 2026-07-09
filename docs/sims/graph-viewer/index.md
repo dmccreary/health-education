@@ -1,5 +1,9 @@
 # Learning Graph Viewer
 
+[Open Learning Graph Viewer](./main.html){ .md-button .md-button--primary }
+
+<iframe src="./main.html" width="100%" height="600px" frameborder="0"></iframe>
+
 This interactive viewer lets you explore the learning graph for any of the
 8 grade bands in *Health Education* — Kindergarten through Grade 9-12 —
 each with its own concept list, dependency graph, and taxonomy, since this
@@ -47,8 +51,4 @@ book is a collection of band-scoped resources rather than a single course
 - **Advanced Concepts** (right side): Topics that build on multiple prerequisites
 - **Edges**: Arrows point from a concept to its prerequisites
 
-## Launch the Viewer
 
-[Open Learning Graph Viewer](./main.html){ .md-button .md-button--primary }
-
-<iframe src="./main.html" width="100%" height="600px" frameborder="0"></iframe>

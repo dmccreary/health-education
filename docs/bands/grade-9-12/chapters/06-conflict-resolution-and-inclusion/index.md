@@ -704,7 +704,7 @@ handle the situation alone.
 
 #### Diagram: Bystander Response Decision Tool
 
-<iframe src="../../../../sims/bystander-response-decision-tool/main.html" width="100%" height="722px" scrolling="no"></iframe>
+<iframe src="../../../../sims/bystander-response-decision-tool/main.html" width="100%" height="630px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Bystander Response Decision Tool</summary>
 Type: workflow

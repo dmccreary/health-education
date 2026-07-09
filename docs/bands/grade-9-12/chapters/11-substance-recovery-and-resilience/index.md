@@ -766,7 +766,7 @@ in that community.
 
 #### Diagram: Community-Integrated Recovery Systems Map
 
-<iframe src="../../../../sims/community-integrated-recovery-systems-map/main.html" width="100%" height="482px" scrolling="no"></iframe>
+<iframe src="../../../../sims/community-integrated-recovery-systems-map/main.html" width="100%" height="180px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Community-Integrated Recovery Systems Map</summary>
 Type: workflow

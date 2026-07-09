@@ -448,7 +448,7 @@ its original evidence, not just judging the tone of whoever repeated it.
     flags no matter how confident the tone.
 
 #### Diagram: Health Claim Validity Checker Workflow
-<iframe src="../../../../sims/health-claim-validity-checker/main.html" width="100%" height="842px" scrolling="no"></iframe>
+<iframe src="../../../../sims/health-claim-validity-checker/main.html" width="100%" height="1306px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Health Claim Validity Checker Workflow</summary>
 Type: workflow

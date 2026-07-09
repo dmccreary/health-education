@@ -442,7 +442,7 @@ Food that sits out too long — especially meat, eggs, or dairy — can grow ger
 
 #### Diagram: Kitchen Safety Checklist
 
-<iframe src="../../../../sims/kitchen-safety-workflow/main.html" width="100%" height="842px" scrolling="no"></iframe>
+<iframe src="../../../../sims/kitchen-safety-workflow/main.html" width="100%" height="760px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Kitchen Safety Checklist Workflow</summary>
 Type: workflow

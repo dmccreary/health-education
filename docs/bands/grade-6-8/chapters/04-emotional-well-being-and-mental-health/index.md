@@ -349,7 +349,7 @@ This applies exactly the same way if the concern is about yourself. If you are h
 
 #### Diagram: Steps to Take If You're Worried About a Friend
 
-<iframe src="../../../../sims/steps-to-take-worried-about-friend/main.html" width="100%" height="842px" scrolling="no"></iframe>
+<iframe src="../../../../sims/steps-to-take-worried-about-friend/main.html" width="100%" height="978px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Steps to Take If You're Worried About a Friend Workflow</summary>
 Type: workflow

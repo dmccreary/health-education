@@ -244,7 +244,7 @@ not just a general friendly demeanor:
 
 #### Diagram: Youth-Friendly Provider Visit Workflow
 
-<iframe src="../../../../sims/youth-friendly-provider-workflow/main.html" width="100%" height="962px" scrolling="no"></iframe>
+<iframe src="../../../../sims/youth-friendly-provider-workflow/main.html" width="100%" height="864px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Youth-Friendly Provider Visit Workflow</summary>
 Type: workflow

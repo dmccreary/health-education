@@ -437,7 +437,7 @@ include:
 
 #### Diagram: Conflict or Pressure? A Decision Guide
 
-<iframe src="../../../../sims/conflict-pressure-decision-guide/main.html" width="100%" height="722px" scrolling="no"></iframe>
+<iframe src="../../../../sims/conflict-pressure-decision-guide/main.html" width="100%" height="692px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Conflict or Pressure? A Decision Guide</summary>
 Type: workflow

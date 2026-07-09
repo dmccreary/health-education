@@ -204,7 +204,7 @@ Applying these strategies consistently is what turns "I don't know why I do this
 
 #### Diagram: Influence Detective Case File Builder
 
-<iframe src="../../../../sims/influence-detective-case-file-builder/main.html" width="100%" height="842px" scrolling="no"></iframe>
+<iframe src="../../../../sims/influence-detective-case-file-builder/main.html" width="100%" height="784px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Influence Detective Case File Builder</summary>
 Type: workflow
@@ -373,7 +373,7 @@ Knowing valid sources and evaluation strategies is genuinely useful — but this
 
 #### Diagram: Self-Help Or Professional Help Decision Tree
 
-<iframe src="../../../../sims/self-help-or-professional-help-decision-tree/main.html" width="100%" height="722px" scrolling="no"></iframe>
+<iframe src="../../../../sims/self-help-or-professional-help-decision-tree/main.html" width="100%" height="814px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Self-Help Or Professional Help Decision Tree</summary>
 Type: workflow
@@ -465,7 +465,7 @@ These strategies connect every concept from this chapter: recognizing the influe
 
 #### Diagram: Conflict Resolution Role-Play Branching Scenario
 
-<iframe src="../../../../sims/conflict-resolution-branching-scenario/main.html" width="100%" height="722px" scrolling="no"></iframe>
+<iframe src="../../../../sims/conflict-resolution-branching-scenario/main.html" width="100%" height="412px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Conflict Resolution Role-Play Branching Scenario</summary>
 Type: workflow

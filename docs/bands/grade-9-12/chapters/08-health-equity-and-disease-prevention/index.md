@@ -632,7 +632,7 @@ worldwide.
 
 #### Diagram: Infectious Disease Transmission Chain Interrupter
 
-<iframe src="../../../../sims/transmission-chain-interrupter/main.html" width="100%" height="722px" scrolling="no"></iframe>
+<iframe src="../../../../sims/transmission-chain-interrupter/main.html" width="100%" height="632px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Infectious Disease Transmission Chain Interrupter</summary>
 Type: workflow

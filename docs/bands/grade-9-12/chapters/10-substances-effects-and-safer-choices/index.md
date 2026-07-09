@@ -386,7 +386,7 @@ after it has been reinforced for months or years.
 
 #### Diagram: Substance Use Ripple Effect Mapper
 
-<iframe src="../../../../sims/substance-use-ripple-effect-mapper/main.html" width="100%" height="842px" scrolling="no"></iframe>
+<iframe src="../../../../sims/substance-use-ripple-effect-mapper/main.html" width="100%" height="474px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Substance Use Ripple Effect Mapper</summary>
 Type: workflow
@@ -976,7 +976,7 @@ involved in your care.
 
 #### Diagram: Integrating Traditional And Conventional Medicine Decision Tool
 
-<iframe src="../../../../sims/integrating-traditional-conventional-medicine-tool/main.html" width="100%" height="722px" scrolling="no"></iframe>
+<iframe src="../../../../sims/integrating-traditional-conventional-medicine-tool/main.html" width="100%" height="680px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Integrating Traditional And Conventional Medicine Decision Tool</summary>
 Type: workflow

@@ -165,7 +165,7 @@ If this happens to you or a friend, the recommended steps are:
 
 #### Diagram: What To Do If This Happens Workflow
 
-<iframe src="../../../../sims/what-to-do-if-this-happens-workflow/main.html" width="100%" height="842px" scrolling="no"></iframe>
+<iframe src="../../../../sims/what-to-do-if-this-happens-workflow/main.html" width="100%" height="760px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>What To Do If This Happens Workflow</summary>
 Type: workflow
