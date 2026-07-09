@@ -1,11 +1,11 @@
 // Dietary Guidelines Comparison Explorer - MicroSim (tabbed cross-culture comparison)
-// CANVAS_HEIGHT: 482
+// CANVAS_HEIGHT: 368
 // Grades 6-8, Analyze (L4): students compare three dietary-guideline systems to
 // differentiate shared nutritional principles from culturally specific presentation.
 
 let containerWidth;
 let canvasWidth = 400;
-let drawHeight = 430;
+let drawHeight = 316;
 let controlHeight = 52;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 16;
@@ -112,18 +112,35 @@ function draw() {
   }
   cursor(overAny() ? HAND : ARROW);
 
-  // panel
-  let py = 250, ph = drawHeight - py - 10;
-  fill('white'); stroke('silver'); strokeWeight(1); rect(margin, py, canvasWidth - margin * 2, ph, 8);
-  noStroke(); textAlign(LEFT, TOP); textSize(12);
-  if (showShared) {
-    fill('seagreen'); text('Shared Principles: ', margin + 10, py + 8);
-    fill('black'); text(shared, margin + 10, py + 26, canvasWidth - margin * 2 - 20, ph - 36);
-  } else if (selGroup >= 0) {
-    fill('darkorange'); text(gs[selGroup].g + ' (What\'s Different Here):', margin + 10, py + 8);
-    fill('black'); text(gs[selGroup].r, margin + 10, py + 28, canvasWidth - margin * 2 - 20, ph - 40);
+  // panel (infobox) — fixed height sized to the longest text at the embed width;
+  // the body font auto-shrinks so nothing clips when the text reflows on narrow screens.
+  let py = 194, ph = 112;
+  let boxW = canvasWidth - margin * 2, innerW = boxW - 20;
+  let header = null, body, headColor;
+  if (showShared) { header = 'Shared Principles:'; body = shared; headColor = 'seagreen'; }
+  else if (selGroup >= 0) { header = gs[selGroup].g + ' (What\'s Different Here):'; body = gs[selGroup].r; headColor = 'darkorange'; }
+  else { body = 'Click a food group for its cultural/geographic reason, or Show Shared Principles.'; headColor = 'dimgray'; }
+
+  // largest font (<= 18, which is 50% larger than the original 12) whose wrapped text fits the box
+  let topPad = 8, hgap = 6, botPad = 10, fs = 18, lh = 22;
+  for (let f = 18; f >= 10; f--) {
+    textSize(f);
+    let l = Math.round(f * 1.2);
+    let hn = header ? countLines(header, innerW) : 0;
+    let need = topPad + (header ? hn * l + hgap : 0) + countLines(body, innerW) * l + botPad;
+    if (need <= ph || f === 10) { fs = f; lh = l; break; }
+  }
+
+  fill('white'); stroke('silver'); strokeWeight(1); rect(margin, py, boxW, ph, 8);
+  noStroke(); textAlign(LEFT, TOP); textSize(fs); textLeading(lh);
+  let tx = margin + 10, ty = py + topPad;
+  if (header) {
+    let hn = countLines(header, innerW);
+    fill(headColor); text(header, tx, ty, innerW, hn * lh + 2);
+    let by = ty + hn * lh + hgap;
+    fill('black'); text(body, tx, by, innerW, py + ph - botPad - by + 4);
   } else {
-    fill('dimgray'); text('Click a food group for its cultural/geographic reason, or Show Shared Principles.', margin + 10, py + 10, canvasWidth - margin * 2 - 20, 50);
+    fill('dimgray'); text(body, tx, ty, innerW, ph - topPad - botPad + 4);
   }
 }
 
@@ -133,6 +150,17 @@ function overAny() {
   return false;
 }
 function pointInRect(px, py, r) { return px >= r.x && px <= r.x + r.w && py >= r.y && py <= r.y + r.h; }
+
+// Count how many lines a string wraps to at the current textSize within a given width
+// (matches p5's word-wrap in the text() box form, used to size/fit the infobox).
+function countLines(str, w) {
+  let words = str.split(' '), n = 1, cur = '';
+  for (let i = 0; i < words.length; i++) {
+    let t = cur ? cur + ' ' + words[i] : words[i];
+    if (textWidth(t) > w && cur) { n++; cur = words[i]; } else cur = t;
+  }
+  return n;
+}
 
 function mousePressed() {
   for (let t of tabRects) if (pointInRect(mouseX, mouseY, t)) { tab = t.i; selGroup = -1; showShared = false; return; }

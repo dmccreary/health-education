@@ -8,10 +8,10 @@
       "port": 8205
     },
     {
-      "name": "heg-verify",
+      "name": "verify500",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8299"],
-      "port": 8299
+      "runtimeArgs": ["-m", "http.server", "8777", "--directory", "/Users/dan/tmp/claude/claude-501/-Users-dan-Documents-ws-health-education/f8aadd0f-1562-43c1-bc50-6135f1baab20/scratchpad/verify500"],
+      "port": 8777
     }
   ]
 }

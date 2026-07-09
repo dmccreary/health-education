@@ -13,14 +13,14 @@ grade_band: Grades 6-8
 
 # Dietary Guidelines Comparison Explorer
 
-<iframe src="main.html" width="100%" height="484px" scrolling="no"></iframe>
+<iframe src="main.html" width="100%" height="370px" scrolling="no"></iframe>
 
 [Run the Dietary Guidelines Comparison Explorer MicroSim Fullscreen](main.html){ .md-button .md-button--primary }
 
 You can embed this MicroSim in your own course website with this iframe:
 
 ```html
-<iframe src="./main.html" width="100%" height="484px" scrolling="no"></iframe>
+<iframe src="./main.html" width="100%" height="370px" scrolling="no"></iframe>
 ```
 
 ## About this MicroSim

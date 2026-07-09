@@ -74,7 +74,7 @@ This matters practically: a guideline built around a dairy circle may not serve 
 
 #### Diagram: Dietary Guidelines Comparison Explorer
 
-<iframe src="../../../../sims/dietary-guidelines-comparison-explorer/main.html" width="100%" height="484px" scrolling="no"></iframe>
+<iframe src="../../../../sims/dietary-guidelines-comparison-explorer/main.html" width="100%" height="370px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Dietary Guidelines Comparison Explorer MicroSim</summary>
 Type: microsim
