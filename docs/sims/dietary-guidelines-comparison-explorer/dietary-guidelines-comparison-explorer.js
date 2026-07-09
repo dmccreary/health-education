@@ -79,13 +79,18 @@ function draw() {
   // tabs
   tabRects = [];
   let tw = (canvasWidth - margin * 2) / 3;
+  // Tab labels: 70% larger than the original (17px), auto-shrunk to fit narrow widths
+  textSize(17);
+  let maxLabelW = 0;
+  for (let i = 0; i < 3; i++) maxLabelW = Math.max(maxLabelW, textWidth(systems[i].name));
+  let tabFont = maxLabelW > tw - 8 ? Math.max(10, 17 * (tw - 8) / maxLabelW) : 17;
   for (let i = 0; i < 3; i++) {
     let x = margin + i * tw;
     tabRects.push({ x: x, y: 30, w: tw, h: 26, i: i });
     let on = tab === i;
     noStroke(); fill(on ? 'seagreen' : 'gainsboro'); rect(x + 1, 30, tw - 2, 26, 4);
-    fill(on ? 'white' : 'dimgray'); textAlign(CENTER, CENTER); textSize(10);
-    text(systems[i].name, x + 2, 43, tw - 4, 26);
+    fill(on ? 'white' : 'dimgray'); textAlign(CENTER, CENTER); textSize(tabFont);
+    text(systems[i].name, x + tw / 2, 43);
   }
 
   // food-group chips (model)

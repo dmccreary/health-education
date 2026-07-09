@@ -80,7 +80,7 @@ failure pattern — a conflict where both people talk past each other.
 
 #### Diagram: Escalating vs. De-escalating Language Comparator
 
-<iframe src="../../../../sims/escalating-vs-deescalating-comparator/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/escalating-vs-deescalating-comparator/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Escalating vs. De-escalating Language Comparator</summary>
 Type: chart
@@ -176,7 +176,7 @@ rather than followed.
 
 #### Diagram: Nonviolent Resolution Process Workflow
 
-<iframe src="../../../../sims/nonviolent-resolution-process-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/nonviolent-resolution-process-workflow/main.html" width="100%" height="962px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Nonviolent Resolution Process Workflow</summary>
 Type: workflow
@@ -290,7 +290,7 @@ and resentment.
 
 #### Diagram: Punitive vs. Restorative Justice Framework Comparison
 
-<iframe src="../../../../sims/punitive-vs-restorative-framework/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/punitive-vs-restorative-framework/main.html" width="100%" height="594px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Punitive vs. Restorative Justice Framework Comparison</summary>
 Type: infographic
@@ -395,7 +395,7 @@ that makes the other skills accessible in the moment they are needed.
 
 #### Diagram: Emotion Regulation Strategy Selector
 
-<iframe src="../../../../sims/emotion-regulation-strategy-selector/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/emotion-regulation-strategy-selector/main.html" width="100%" height="486px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Emotion Regulation Strategy Selector</summary>
 Type: microsim
@@ -495,7 +495,7 @@ a genuine resource for wellbeing, worth drawing on deliberately.
 
 #### Diagram: Cultural Wellbeing Practices Concept Map
 
-<iframe src="../../../../sims/cultural-wellbeing-practices-map/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/cultural-wellbeing-practices-map/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Cultural Wellbeing Practices Concept Map</summary>
 Type: graph-model
@@ -586,7 +586,7 @@ depend on constant vigilance to keep working.
 
 #### Diagram: Inclusive Environment Design Studio
 
-<iframe src="../../../../sims/inclusive-environment-design-studio/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/inclusive-environment-design-studio/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Inclusive Environment Design Studio</summary>
 Type: microsim
@@ -704,7 +704,7 @@ handle the situation alone.
 
 #### Diagram: Bystander Response Decision Tool
 
-<iframe src="../../../../sims/bystander-response-decision-tool/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/bystander-response-decision-tool/main.html" width="100%" height="722px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Bystander Response Decision Tool</summary>
 Type: workflow
@@ -829,7 +829,7 @@ Effective responses operate at both levels simultaneously:
 
 #### Diagram: Stereotype-to-Discrimination Pathway Map
 
-<iframe src="../../../../sims/stereotype-discrimination-pathway-map/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/stereotype-discrimination-pathway-map/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Stereotype-to-Discrimination Pathway Map</summary>
 Type: graph-model

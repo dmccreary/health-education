@@ -54,7 +54,7 @@ Not every disagreement needs an adult, but some do — especially if someone fee
 
 #### Diagram: Conflict Resolution Path Explorer
 
-<iframe src="../../../../sims/conflict-resolution-path-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/conflict-resolution-path-explorer/main.html" width="100%" height="502px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Conflict Resolution Path Explorer MicroSim</summary>
 Type: microsim
@@ -111,7 +111,7 @@ Before you look at the map below, it helps to know that different cultures and c
 
 #### Diagram: World Map of Conflict Resolution Traditions
 
-<iframe src="../../../../sims/world-map-conflict-resolution-traditions/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/world-map-conflict-resolution-traditions/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>World Map of Conflict Resolution Traditions</summary>
 Type: map
@@ -169,7 +169,7 @@ Before you explore the timeline below, it helps to know what a "life stage" mean
 
 #### Diagram: Life Stages Timeline
 
-<iframe src="../../../../sims/life-stages-timeline/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/life-stages-timeline/main.html" width="100%" height="482px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Life Stages Timeline</summary>
 Type: timeline
@@ -233,7 +233,7 @@ Now that you have seen this range of examples in a table, the interactive timeli
 
 #### Diagram: Coming-of-Age Traditions Around the World
 
-<iframe src="../../../../sims/coming-of-age-traditions-timeline/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/coming-of-age-traditions-timeline/main.html" width="100%" height="412px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Coming-of-Age Traditions Around the World</summary>
 Type: timeline

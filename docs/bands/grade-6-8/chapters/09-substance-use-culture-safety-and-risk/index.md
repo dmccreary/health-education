@@ -66,7 +66,7 @@ Public health organizations, including many Indigenous-led health programs, deli
 
 #### Diagram: Commercial Tobacco Vs. Traditional Tobacco Comparison
 
-<iframe src="../../../../sims/commercial-vs-traditional-tobacco/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/commercial-vs-traditional-tobacco/main.html" width="100%" height="492px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Commercial Tobacco Vs. Traditional Tobacco Comparison MicroSim</summary>
 Type: infographic
@@ -119,7 +119,7 @@ A medication label is not simply a formality — it contains several categories 
 
 #### Diagram: Medication Label Reading Challenge
 
-<iframe src="../../../../sims/medication-label-reading-challenge/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/medication-label-reading-challenge/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Medication Label Reading Challenge MicroSim</summary>
 Type: microsim
@@ -186,7 +186,7 @@ These benefits are concrete and measurable, not just a list of things avoided:
 
 #### Diagram: Substance-Free Benefits Explorer
 
-<iframe src="../../../../sims/substance-free-benefits-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/substance-free-benefits-explorer/main.html" width="100%" height="482px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Substance-Free Benefits Explorer MicroSim</summary>
 Type: infographic
@@ -228,7 +228,7 @@ Effective, accessible strategies include:
 
 #### Diagram: Stress Management Toolkit Builder
 
-<iframe src="../../../../sims/stress-management-toolkit-builder/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/stress-management-toolkit-builder/main.html" width="100%" height="532px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Stress Management Toolkit Builder MicroSim</summary>
 Type: microsim
@@ -307,7 +307,7 @@ Understanding this connection is protective, not shaming. It reinforces why the 
 
 #### Diagram: Substance Use Risk Connections Network
 
-<iframe src="../../../../sims/substance-use-risk-connections-network/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/substance-use-risk-connections-network/main.html" width="100%" height="582px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Substance Use Risk Connections Network MicroSim</summary>
 Type: graph-model

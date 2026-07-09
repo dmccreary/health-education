@@ -54,7 +54,7 @@ Notice that each tradition reaches the same nutritional goals — enough protein
 
 #### Diagram: World Traditions, Same Nutrients
 
-<iframe src="../../../../sims/world-traditions-same-nutrients/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/world-traditions-same-nutrients/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>World Traditions, Same Nutrients Interactive Map</summary>
 Type: map
@@ -126,7 +126,7 @@ Comparing straight down the columns: Cereal A has less than one-seventh the adde
 
 #### Diagram: Nutrition Label Face-Off
 
-<iframe src="../../../../sims/nutrition-label-face-off/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/nutrition-label-face-off/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Nutrition Label Face-Off MicroSim</summary>
 Type: microsim
@@ -267,7 +267,7 @@ A simple planning routine looks like this:
 
 #### Diagram: Build-A-Meal Planner
 
-<iframe src="../../../../sims/build-a-meal-planner/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/build-a-meal-planner/main.html" width="100%" height="507px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Build-A-Meal Planner MicroSim</summary>
 Type: microsim
@@ -343,7 +343,7 @@ The most common unsafe practices fall into a few clear categories:
 
 #### Diagram: Kitchen Safety Hotspot Explorer
 
-<iframe src="../../../../sims/kitchen-safety-hotspot-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/kitchen-safety-hotspot-explorer/main.html" width="100%" height="492px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Kitchen Safety Hotspot Explorer Interactive Infographic</summary>
 Type: infographic

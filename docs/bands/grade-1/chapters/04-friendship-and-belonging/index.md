@@ -72,7 +72,7 @@ Here are traits of a healthy peer relationship:
 
 #### Diagram: Healthy Friend Traits Sorter
 
-<iframe src="../../../../sims/healthy-friend-traits-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/healthy-friend-traits-sorter/main.html" width="100%" height="454px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Healthy Friend Traits Sorter MicroSim</summary>
 Type: microsim
@@ -151,7 +151,7 @@ Common examples of unkindness, and a kinder choice instead:
 
 #### Diagram: Kindness or Unkindness? Story Cards
 
-<iframe src="../../../../sims/kindness-or-unkindness-story-cards/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/kindness-or-unkindness-story-cards/main.html" width="100%" height="454px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Kindness or Unkindness? Story Cards MicroSim</summary>
 Type: microsim
@@ -220,7 +220,7 @@ Examples of the many kinds of uniqueness in any classroom:
 
 #### Diagram: One-of-a-Kind Classroom Gallery
 
-<iframe src="../../../../sims/one-of-a-kind-classroom-gallery/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/one-of-a-kind-classroom-gallery/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>One-of-a-Kind Classroom Gallery Infographic</summary>
 Type: infographic
@@ -278,7 +278,7 @@ Signs that someone feels a sense of belonging:
 
 #### Diagram: Belonging Classroom Map
 
-<iframe src="../../../../sims/belonging-classroom-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/belonging-classroom-map/main.html" width="100%" height="494px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Belonging Classroom Map MicroSim</summary>
 Type: microsim
@@ -348,7 +348,7 @@ Use **Explore** mode to select a numbered marker and learn more. Use **Quiz** mo
 
 #### Diagram: Building Belonging Chain Reaction
 
-<iframe src="../../../../sims/building-belonging-chain-reaction/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/building-belonging-chain-reaction/main.html" width="100%" height="722px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Building Belonging Chain Reaction Workflow</summary>
 Type: workflow

@@ -50,7 +50,7 @@ Here are a few examples of traditional health knowledge from around the world:
 
 #### Diagram: Traditional Health Knowledge Around the World
 
-<iframe src="../../../../sims/traditional-health-knowledge-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/traditional-health-knowledge-map/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Traditional Health Knowledge Around the World Map</summary>
 Type: map
@@ -105,7 +105,7 @@ Physical activity supports health in several connected ways:
 
 #### Diagram: How Moving Your Body Helps You
 
-<iframe src="../../../../sims/activity-benefits-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/activity-benefits-explorer/main.html" width="100%" height="477px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>How Moving Your Body Helps You MicroSim</summary>
 Type: microsim
@@ -174,7 +174,7 @@ A useful habit for choosing what to wear is the **layering idea**: instead of on
 
 #### Diagram: Dress for the Weather
 
-<iframe src="../../../../sims/dress-for-weather-game/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/dress-for-weather-game/main.html" width="100%" height="504px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Dress for the Weather MicroSim</summary>
 Type: microsim
@@ -253,7 +253,7 @@ Understanding *why* these practices work helps students see that hygiene customs
 
 #### Diagram: Blocking the Path of Germs
 
-<iframe src="../../../../sims/germ-path-blocker-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/germ-path-blocker-workflow/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Blocking the Path of Germs Workflow</summary>
 Type: workflow

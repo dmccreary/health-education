@@ -71,7 +71,7 @@ Before we look at the diagram below, notice that these four steps always happen 
 
 #### Diagram: Four Steps to Solve a Conflict
 
-<iframe src="../../../../sims/conflict-resolution-steps/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/conflict-resolution-steps/main.html" width="100%" height="492px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Four Steps to Solve a Conflict MicroSim</summary>
 Type: microsim
@@ -155,7 +155,7 @@ Managing a strong emotion is different from ignoring it. Ignoring a feeling mean
 
 #### Diagram: Cooling Down a Big Feeling
 
-<iframe src="../../../../sims/managing-strong-emotions-cooldown/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/managing-strong-emotions-cooldown/main.html" width="100%" height="454px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Cooling Down a Big Feeling MicroSim</summary>
 Type: microsim
@@ -280,7 +280,7 @@ These effects do not stay only with one person. When teasing happens in a classr
 
 #### Diagram: How Teasing Can Ripple Through a Group
 
-<iframe src="../../../../sims/effects-of-teasing-ripple/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/effects-of-teasing-ripple/main.html" width="100%" height="492px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>How Teasing Can Ripple Through a Group MicroSim</summary>
 Type: microsim

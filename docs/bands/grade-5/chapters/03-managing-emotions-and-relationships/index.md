@@ -52,7 +52,7 @@ None of these strategies work like a magic switch that turns a big feeling off i
 
 #### Diagram: Calm-Down Strategy Matcher
 
-<iframe src="../../../../sims/calm-down-strategy-matcher/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/calm-down-strategy-matcher/main.html" width="100%" height="486px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Calm-Down Strategy Matcher MicroSim</summary>
 Type: microsim
@@ -149,7 +149,7 @@ And how you feel doesn't stay locked inside — emotions influence behavior. Som
 
 #### Diagram: Emotion Weather Map
 
-<iframe src="../../../../sims/emotion-weather-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/emotion-weather-map/main.html" width="100%" height="444px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Emotion Weather Map MicroSim</summary>
 Type: microsim
@@ -205,7 +205,7 @@ Conflict itself isn't the problem — unmanaged conflict is. Two friends can dis
 
 #### Diagram: Friendship Conflict Navigator
 
-<iframe src="../../../../sims/friendship-conflict-navigator/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/friendship-conflict-navigator/main.html" width="100%" height="842px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Friendship Conflict Navigator Workflow</summary>
 Type: workflow
@@ -302,7 +302,7 @@ The scenario below walks through all three of these ideas together.
 
 #### Diagram: Supportive Friend Decision Path
 
-<iframe src="../../../../sims/supportive-friend-decision-path/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/supportive-friend-decision-path/main.html" width="100%" height="534px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Supportive Friend Decision Path MicroSim</summary>
 Type: microsim

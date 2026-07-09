@@ -47,7 +47,7 @@ A person does not have to *intend* to treat someone unfairly for the treatment t
 
 #### Diagram: Forms of Unfair Treatment Explorer
 
-<iframe src="../../../../sims/forms-of-unfair-treatment-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/forms-of-unfair-treatment-explorer/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Forms of Unfair Treatment Explorer MicroSim</summary>
 Type: microsim
@@ -108,7 +108,7 @@ The following table summarizes how bias-driven exclusion differs from an ordinar
 
 #### Diagram: The Social Pain of Exclusion
 
-<iframe src="../../../../sims/social-pain-of-exclusion/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/social-pain-of-exclusion/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>The Social Pain of Exclusion MicroSim</summary>
 Type: microsim
@@ -151,7 +151,7 @@ Repeated bullying has documented effects on mental health that can last well bey
 
 #### Diagram: Bullying vs. Conflict Decision Guide
 
-<iframe src="../../../../sims/bullying-vs-conflict-decision-guide/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/bullying-vs-conflict-decision-guide/main.html" width="100%" height="602px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Bullying vs. Conflict Decision Guide Workflow</summary>
 Type: workflow
@@ -190,7 +190,7 @@ Because so much of what students learn about mental health comes from media rath
 
 #### Diagram: Comparing Media Portrayals of Mental Health
 
-<iframe src="../../../../sims/comparing-media-portrayals-mental-health/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/comparing-media-portrayals-mental-health/main.html" width="100%" height="504px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Comparing Media Portrayals of Mental Health MicroSim</summary>
 Type: microsim
@@ -240,7 +240,7 @@ Before comparing these actions side by side, it's useful to see how each one con
 
 #### Diagram: Stigma Reduction Action Network
 
-<iframe src="../../../../sims/stigma-reduction-action-network/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/stigma-reduction-action-network/main.html" width="100%" height="622px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Stigma Reduction Action Network</summary>
 Type: graph-model
@@ -301,7 +301,7 @@ These habits connect directly to earlier chapters: the nutrition guidelines, sle
 
 #### Diagram: Build a Brain-Healthy Week
 
-<iframe src="../../../../sims/build-a-brain-healthy-week/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/build-a-brain-healthy-week/main.html" width="100%" height="509px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Build a Brain-Healthy Week MicroSim</summary>
 Type: microsim
@@ -382,7 +382,7 @@ Understanding this relationship connects back to the brain-healthy habits covere
 
 #### Diagram: Dementia and Its Causes Concept Map
 
-<iframe src="../../../../sims/dementia-and-its-causes-concept-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/dementia-and-its-causes-concept-map/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Dementia and Its Causes Concept Map</summary>
 Type: graph-model

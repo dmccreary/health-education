@@ -90,7 +90,7 @@ rates, life expectancy, and mental health outcomes between communities.
 
 #### Diagram: Social Conditions to Health Outcomes Pathway Map
 
-<iframe src="../../../../sims/social-conditions-health-pathway-map/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/social-conditions-health-pathway-map/main.html" width="100%" height="622px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Social Conditions to Health Outcomes Pathway Map</summary>
 Type: graph-model
@@ -223,7 +223,7 @@ built environment supports that choice.
 
 #### Diagram: Neighborhood Physical Activity Resource Comparator
 
-<iframe src="../../../../sims/neighborhood-activity-resource-comparator/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/neighborhood-activity-resource-comparator/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Neighborhood Physical Activity Resource Comparator</summary>
 Type: chart
@@ -340,7 +340,7 @@ conditions:
 
 #### Diagram: Safe Activity Scenario Planner
 
-<iframe src="../../../../sims/safe-activity-scenario-planner/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/safe-activity-scenario-planner/main.html" width="100%" height="534px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Safe Activity Scenario Planner</summary>
 Type: microsim
@@ -437,7 +437,7 @@ rather than treating disease as purely a matter of individual choice.
 
 #### Diagram: Disease Risk Factor Sorter
 
-<iframe src="../../../../sims/disease-risk-factor-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/disease-risk-factor-sorter/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Disease Risk Factor Sorter</summary>
 Type: microsim
@@ -529,7 +529,7 @@ rather than in isolation.
 
 #### Diagram: Chronic Disease Risk Reduction Calculator
 
-<iframe src="../../../../sims/chronic-disease-risk-reduction-calculator/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/chronic-disease-risk-reduction-calculator/main.html" width="100%" height="457px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Chronic Disease Risk Reduction Calculator</summary>
 Type: microsim
@@ -632,7 +632,7 @@ worldwide.
 
 #### Diagram: Infectious Disease Transmission Chain Interrupter
 
-<iframe src="../../../../sims/transmission-chain-interrupter/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/transmission-chain-interrupter/main.html" width="100%" height="722px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Infectious Disease Transmission Chain Interrupter</summary>
 Type: workflow

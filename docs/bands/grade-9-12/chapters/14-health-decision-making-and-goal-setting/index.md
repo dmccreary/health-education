@@ -74,7 +74,7 @@ work end to end: **Maya, a junior, was just offered a ride home from a party
 by a friend who has been drinking.**
 
 #### Diagram: The DECIDE Framework Walkthrough
-<iframe src="../../../../sims/decide-framework-walkthrough/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/decide-framework-walkthrough/main.html" width="100%" height="842px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>The DECIDE Framework Walkthrough</summary>
 Type: workflow
@@ -194,7 +194,7 @@ dangerous from another (a parent's safety concerns) — and in health
 decisions, safety concerns generally outweigh social comfort.
 
 #### Diagram: Multiple Perspectives Stakeholder Map
-<iframe src="../../../../sims/multiple-perspectives-stakeholder-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/multiple-perspectives-stakeholder-map/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Multiple Perspectives Stakeholder Map</summary>
 Type: diagram
@@ -415,7 +415,7 @@ use, and how to judge progress — each of which can use the same DECIDE
 logic you just practiced.
 
 #### Diagram: Decision-Making to Goal-Setting Bridge
-<iframe src="../../../../sims/decision-to-goal-bridge/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/decision-to-goal-bridge/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Decision-Making to Goal-Setting Bridge</summary>
 Type: graph-model
@@ -481,7 +481,7 @@ enough to point toward action: not "sleep," but "I fall asleep past
 midnight most weeknights and it's affecting my mood and grades."
 
 #### Diagram: Health Goal Focus Area Self-Assessment
-<iframe src="../../../../sims/health-goal-focus-area-assessment/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/health-goal-focus-area-assessment/main.html" width="100%" height="722px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Health Goal Focus Area Self-Assessment</summary>
 Type: infographic
@@ -674,7 +674,7 @@ Evaluation — exactly the same cyclical structure you saw in Maya's
 decision, now operating on a longer timescale.
 
 #### Diagram: Goal Strategy Outcome Evaluation Rubric
-<iframe src="../../../../sims/goal-strategy-outcome-rubric/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/goal-strategy-outcome-rubric/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Goal Strategy Outcome Evaluation Rubric</summary>
 Type: infographic

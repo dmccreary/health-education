@@ -80,7 +80,7 @@ Reliable sources share three traits: expertise (the author actually knows the su
 
 #### Diagram: Source Reliability Sorter
 
-<iframe src="../../../../sims/source-reliability-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/source-reliability-sorter/main.html" width="100%" height="524px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Source Reliability Sorter MicroSim</summary>
 Type: microsim
@@ -146,7 +146,7 @@ A trustworthy health product or service, by contrast, is willing to explain exac
 
 #### Diagram: Health Ad Claim Checker
 
-<iframe src="../../../../sims/health-ad-claim-checker/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/health-ad-claim-checker/main.html" width="100%" height="842px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Health Ad Claim Checker Workflow</summary>
 Type: workflow
@@ -254,7 +254,7 @@ A position without evidence is just an opinion. A position without reasoning is 
 
 #### Diagram: Health Position Builder
 
-<iframe src="../../../../sims/health-position-builder/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/health-position-builder/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Health Position Builder MicroSim</summary>
 Type: microsim
@@ -353,7 +353,7 @@ The key move is planning a specific response to each barrier *before* it happens
 
 #### Diagram: Supports and Barriers Planning Map
 
-<iframe src="../../../../sims/supports-and-barriers-planning-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/supports-and-barriers-planning-map/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Supports and Barriers Planning Map</summary>
 Type: graph-model
@@ -417,7 +417,7 @@ Tracking isn't about perfection — it's about honest information. If you check 
 
 #### Diagram: Two-Week Habit Tracker Chart
 
-<iframe src="../../../../sims/two-week-habit-tracker-chart/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/two-week-habit-tracker-chart/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Two-Week Habit Tracker Chart</summary>
 Type: chart

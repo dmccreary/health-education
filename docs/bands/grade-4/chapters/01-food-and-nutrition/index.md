@@ -77,7 +77,7 @@ Each macronutrient has a distinct job:
 
 #### Diagram: Macronutrient Explorer
 
-<iframe src="../../../../sims/macronutrient-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/macronutrient-explorer/main.html" width="100%" height="474px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Macronutrient Explorer Interactive Infographic</summary>
 Type: infographic
@@ -154,7 +154,7 @@ You get vitamins and minerals mainly from fruits, vegetables, dairy, and whole g
 
 #### Diagram: Vitamin and Mineral Matcher
 
-<iframe src="../../../../sims/vitamin-mineral-matcher/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/vitamin-mineral-matcher/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Vitamin and Mineral Matcher MicroSim</summary>
 Type: microsim
@@ -213,7 +213,7 @@ A nutrition label typically includes, from top to bottom:
 
 #### Diagram: Nutrition Label Detective
 
-<iframe src="../../../../sims/nutrition-label-detective/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/nutrition-label-detective/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Nutrition Label Detective MicroSim</summary>
 Type: microsim
@@ -267,7 +267,7 @@ A simple way to picture a balanced plate: about half filled with fruits and vege
 
 #### Diagram: Build a Balanced Plate
 
-<iframe src="../../../../sims/build-a-balanced-plate/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/build-a-balanced-plate/main.html" width="100%" height="524px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Build a Balanced Plate MicroSim</summary>
 Type: microsim
@@ -350,7 +350,7 @@ Because sodium hides in many packaged and restaurant foods that don't necessaril
 
 #### Diagram: Sugar and Salt Detective Chart
 
-<iframe src="../../../../sims/sugar-salt-detective-chart/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/sugar-salt-detective-chart/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Sugar and Salt Detective Chart</summary>
 Type: chart
@@ -407,7 +407,7 @@ Simple food temperature safety habits include:
 
 #### Diagram: Danger Zone Temperature Timeline
 
-<iframe src="../../../../sims/danger-zone-temperature-timeline/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/danger-zone-temperature-timeline/main.html" width="100%" height="302px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Danger Zone Temperature Timeline</summary>
 Type: timeline

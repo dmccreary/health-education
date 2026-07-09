@@ -80,7 +80,7 @@ The following table lists each food group with example foods a Kindergartner wil
 | Dairy Group | Helps build strong bones | Milk, cheese, yogurt |
 
 #### Diagram: Food Group Sorting Game
-<iframe src="../../../../sims/food-group-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/food-group-sorter/main.html" width="100%" height="454px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Food Group Sorting Game</summary>
 Type: microsim
@@ -137,7 +137,7 @@ Discussion points for the classroom:
 - Connect this to the course-wide value that health looks different in every family and community.
 
 #### Diagram: Foods Around the World
-<iframe src="../../../../sims/foods-around-the-world/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/foods-around-the-world/main.html" width="100%" height="492px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Foods Around the World Interactive Infographic</summary>
 Type: infographic
@@ -195,7 +195,7 @@ A **hunger signal** is a feeling the body sends to say it needs food, such as a 
     Noticing your body's signals can feel new and tricky at first — and that's okay! If your tummy growls or you feel grumpy, it's always okay to tell a trusted grown-up, "I think I'm hungry."
 
 #### Diagram: My Body's Signals
-<iframe src="../../../../sims/body-signals-check/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/body-signals-check/main.html" width="100%" height="449px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>My Body's Signals MicroSim</summary>
 Type: microsim
@@ -251,7 +251,7 @@ Signs that food may be unsafe, to review aloud with the class:
 4. A trusted adult says it has been out too long.
 
 #### Diagram: Safe to Eat or Not?
-<iframe src="../../../../sims/safe-food-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/safe-food-sorter/main.html" width="100%" height="487px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Safe to Eat or Not? MicroSim</summary>
 Type: microsim

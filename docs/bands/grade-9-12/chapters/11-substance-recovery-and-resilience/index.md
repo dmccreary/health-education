@@ -224,7 +224,7 @@ With regular, sustained use, research documents additional effects:
 
 #### Diagram: Cannabis Effects By Timescale Sorter
 
-<iframe src="../../../../sims/cannabis-effects-timescale-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/cannabis-effects-timescale-sorter/main.html" width="100%" height="524px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Cannabis Effects By Timescale Sorter</summary>
 Type: infographic
@@ -335,7 +335,7 @@ real downside; failing to act on a real overdose can cost a life.
 
 #### Diagram: Overdose Signs Recognition Trainer
 
-<iframe src="../../../../sims/overdose-signs-recognition-trainer/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/overdose-signs-recognition-trainer/main.html" width="100%" height="610px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Overdose Signs Recognition Trainer</summary>
 Type: microsim
@@ -440,7 +440,7 @@ in most states is itself a piece of life-saving information.
 
 #### Diagram: Overdose Response Sequence Simulator
 
-<iframe src="../../../../sims/overdose-response-sequence-simulator/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/overdose-response-sequence-simulator/main.html" width="100%" height="724px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Overdose Response Sequence Simulator</summary>
 Type: microsim
@@ -560,7 +560,7 @@ Effective, documented approaches include:
 
 #### Diagram: Supportive Vs. Unhelpful Response Comparison Tool
 
-<iframe src="../../../../sims/supportive-vs-unhelpful-response-tool/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/supportive-vs-unhelpful-response-tool/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Supportive Vs. Unhelpful Response Comparison Tool</summary>
 Type: infographic
@@ -634,7 +634,7 @@ not abandoning it.
 
 #### Diagram: Recovery Pathway Network
 
-<iframe src="../../../../sims/recovery-pathway-network-hs/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/recovery-pathway-network-hs/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Recovery Pathway Network</summary>
 Type: graph-model
@@ -766,7 +766,7 @@ in that community.
 
 #### Diagram: Community-Integrated Recovery Systems Map
 
-<iframe src="../../../../sims/community-integrated-recovery-systems-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/community-integrated-recovery-systems-map/main.html" width="100%" height="482px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Community-Integrated Recovery Systems Map</summary>
 Type: workflow

@@ -58,7 +58,7 @@ Recognizing these signs in yourself is not something to be ashamed of. Just as n
 
 #### Diagram: Recognizing The Signs Interactive Checklist
 
-<iframe src="../../../../sims/recognizing-the-signs-checklist/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/recognizing-the-signs-checklist/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Recognizing The Signs Interactive Checklist</summary>
 Type: infographic
@@ -101,7 +101,7 @@ Two ideas from Chapter 8 matter directly here. First, treatment works — recove
 
 #### Diagram: Treatment Pathway Explorer
 
-<iframe src="../../../../sims/treatment-pathway-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/treatment-pathway-explorer/main.html" width="100%" height="482px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Treatment Pathway Explorer MicroSim</summary>
 Type: infographic
@@ -140,7 +140,7 @@ Each of these pathways is a valid, real option — not a lesser substitute for "
 
 #### Diagram: Recovery Supports Network Map
 
-<iframe src="../../../../sims/recovery-supports-network-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/recovery-supports-network-map/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Recovery Supports Network Map</summary>
 Type: graph-model
@@ -210,7 +210,7 @@ This is a genuine risk-analysis exercise, not just a warning. Consider the follo
 
 #### Diagram: Impaired Reaction Time Simulator
 
-<iframe src="../../../../sims/impaired-reaction-time-simulator/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/impaired-reaction-time-simulator/main.html" width="100%" height="449px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Impaired Reaction Time Simulator</summary>
 Type: microsim
@@ -266,7 +266,7 @@ Understanding these laws is a genuine analyze-and-evaluate exercise: the laws ex
 
 #### Diagram: Impaired Driving Laws Interactive Map
 
-<iframe src="../../../../sims/impaired-driving-laws-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/impaired-driving-laws-map/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Impaired Driving Laws Interactive Map</summary>
 Type: map
@@ -309,7 +309,7 @@ Recognizing these patterns is not about assuming every advertisement is part of 
 
 #### Diagram: Advertising Techniques Analyzer
 
-<iframe src="../../../../sims/advertising-techniques-analyzer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/advertising-techniques-analyzer/main.html" width="100%" height="489px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Advertising Techniques Analyzer MicroSim</summary>
 Type: microsim
@@ -349,7 +349,7 @@ The following chart connects the advertising patterns described above to documen
 
 #### Diagram: Advertising Targeting And Health Outcome Disparities Chart
 
-<iframe src="../../../../sims/advertising-and-health-disparities-chart/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/advertising-and-health-disparities-chart/main.html" width="100%" height="502px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Advertising Targeting And Health Outcome Disparities Chart</summary>
 Type: chart

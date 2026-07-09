@@ -67,7 +67,7 @@ Before the diagram below, let's define one more term: to **distinguish** means t
 
 #### Diagram: Positive or Negative? Influence Sorter
 
-<iframe src="../../../../sims/positive-or-negative-influence-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/positive-or-negative-influence-sorter/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Positive or Negative? Influence Sorter MicroSim</summary>
 Type: microsim
@@ -143,7 +143,7 @@ Here is how feelings and needs work together, using a few common Grade 1 example
 
 #### Diagram: Feelings and Needs Communication Coach
 
-<iframe src="../../../../sims/feelings-and-needs-communication-coach/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/feelings-and-needs-communication-coach/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Feelings and Needs Communication Coach MicroSim</summary>
 Type: microsim
@@ -215,7 +215,7 @@ Here are common signs that it's time to ask for help:
 
 #### Diagram: Time to Ask? Recognizing the Signs
 
-<iframe src="../../../../sims/time-to-ask-recognizing-the-signs/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/time-to-ask-recognizing-the-signs/main.html" width="100%" height="492px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Time to Ask? Recognizing the Signs Infographic</summary>
 Type: infographic
@@ -252,7 +252,7 @@ Let's connect this to something students already know: a positive influence made
 
 #### Diagram: Making a Healthy Choice Decision Path
 
-<iframe src="../../../../sims/making-a-healthy-choice-decision-path/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/making-a-healthy-choice-decision-path/main.html" width="100%" height="454px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Making a Healthy Choice Decision Path MicroSim</summary>
 Type: microsim
@@ -316,7 +316,7 @@ Here are simple ways a Grade 1 student can track health behaviors:
 
 #### Diagram: My Healthy Habits Tracker
 
-<iframe src="../../../../sims/my-healthy-habits-tracker/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/my-healthy-habits-tracker/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>My Healthy Habits Tracker MicroSim</summary>
 Type: microsim
@@ -379,7 +379,7 @@ Here are simple phrases a Grade 1 student can use to ask for help with a choice:
 
 #### Diagram: Ask for Help With a Choice — Practice Scenarios
 
-<iframe src="../../../../sims/ask-for-help-with-a-choice-practice-scenarios/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/ask-for-help-with-a-choice-practice-scenarios/main.html" width="100%" height="439px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Ask for Help With a Choice — Practice Scenarios MicroSim</summary>
 Type: microsim

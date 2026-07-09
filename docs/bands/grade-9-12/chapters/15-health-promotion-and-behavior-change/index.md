@@ -63,7 +63,7 @@ a sophomore, wants to walk or bike to school most days instead of getting a
 ride, both for physical activity and to cut down on morning stress.**
 
 #### Diagram: The Behavior-Change Cycle
-<iframe src="../../../../sims/behavior-change-cycle/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/behavior-change-cycle/main.html" width="100%" height="525px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>The Behavior-Change Cycle</summary>
 Type: workflow
@@ -257,7 +257,7 @@ information — it means the next cycle should adjust the plan further, not
 abandon the goal.
 
 #### Diagram: Impact Evaluation Dashboard
-<iframe src="../../../../sims/impact-evaluation-dashboard/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/impact-evaluation-dashboard/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Impact Evaluation Dashboard</summary>
 Type: chart
@@ -334,7 +334,7 @@ policy (policy) — all aimed at the same underlying goal of reducing
 student stress. No single level usually solves a health problem alone.
 
 #### Diagram: Health Promotion Levers Across Levels
-<iframe src="../../../../sims/health-promotion-levers-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/health-promotion-levers-map/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Health Promotion Levers Across Levels</summary>
 Type: graph-model
@@ -554,7 +554,7 @@ means choosing which true, well-supported facts and which delivery format
 will actually land with a specific audience's concerns and reading level.
 
 #### Diagram: Audience Tailoring Comparison Tool
-<iframe src="../../../../sims/audience-tailoring-comparison/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/audience-tailoring-comparison/main.html" width="100%" height="472px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Audience Tailoring Comparison Tool</summary>
 Type: infographic

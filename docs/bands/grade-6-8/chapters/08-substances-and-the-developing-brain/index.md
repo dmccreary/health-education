@@ -47,7 +47,7 @@ This mismatch matters directly for this chapter's topic. Scientific research fro
 
 #### Diagram: Brain Development Timeline Explorer
 
-<iframe src="../../../../sims/brain-development-timeline-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/brain-development-timeline-explorer/main.html" width="100%" height="472px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Brain Development Timeline Explorer</summary>
 Type: timeline
@@ -129,7 +129,7 @@ The clearest, simplest safety rule covers nearly every situation: always follow 
 
 #### Diagram: Medication Safety Rule Sorter
 
-<iframe src="../../../../sims/medication-safety-rule-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/medication-safety-rule-sorter/main.html" width="100%" height="530px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Medication Safety Rule Sorter MicroSim</summary>
 Type: microsim
@@ -182,7 +182,7 @@ Riding in a car with a driver who has been drinking is one of the clearest, most
 
 #### Diagram: Alcohol's Path Through The Body Interactive Diagram
 
-<iframe src="../../../../sims/alcohols-path-through-the-body/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/alcohols-path-through-the-body/main.html" width="100%" height="492px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Alcohol's Path Through The Body Interactive Diagram</summary>
 Type: infographic
@@ -237,7 +237,7 @@ Nicotine reaches the brain within seconds of use and binds to receptors involved
 
 #### Diagram: Nicotine And The Reward System MicroSim
 
-<iframe src="../../../../sims/nicotine-and-the-reward-system/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/nicotine-and-the-reward-system/main.html" width="100%" height="497px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Nicotine And The Reward System MicroSim</summary>
 Type: microsim
@@ -300,7 +300,7 @@ Consequences extend beyond physical health:
 
 #### Diagram: Substance Risk Comparison Chart
 
-<iframe src="../../../../sims/substance-risk-comparison-chart/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/substance-risk-comparison-chart/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Substance Risk Comparison Chart</summary>
 Type: chart
@@ -374,7 +374,7 @@ These protective factors are not abstract ideas — they are real, evidence-supp
 
 #### Diagram: Protective Factors Network Explorer
 
-<iframe src="../../../../sims/protective-factors-network-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/protective-factors-network-explorer/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Protective Factors Network Explorer</summary>
 Type: graph-model

@@ -63,7 +63,7 @@ The following table previews the five food groups students will meet in this cha
 | Dairy | Milk, cheese, yogurt | Building strong bones |
 
 #### Diagram: Food Group Explorer
-<iframe src="../../../../sims/food-group-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/food-group-explorer/main.html" width="100%" height="464px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Food Group Explorer MicroSim</summary>
 Type: microsim
@@ -122,7 +122,7 @@ Reasons variety matters, in simple terms:
 4. Variety also makes meals more interesting and fun to eat!
 
 #### Diagram: Build a Balanced Plate
-<iframe src="../../../../sims/build-a-balanced-plate/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/build-a-balanced-plate/main.html" width="100%" height="524px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Build a Balanced Plate MicroSim</summary>
 Type: microsim
@@ -180,7 +180,7 @@ A quick comparison of common drink types:
     Sodas and sports drinks can look fun, but they often have a lot of added sugar. That doesn't mean they're forbidden forever — it means water is the smarter everyday choice.
 
 #### Diagram: Drink Type Sorter
-<iframe src="../../../../sims/drink-type-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/drink-type-sorter/main.html" width="100%" height="454px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Drink Type Sorter MicroSim</summary>
 Type: microsim
@@ -252,7 +252,7 @@ Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to
 </details>
 
 #### Diagram: Why Breakfast? Cause and Effect
-<iframe src="../../../../sims/why-breakfast-matters/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/why-breakfast-matters/main.html" width="100%" height="492px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Why Breakfast? Cause and Effect MicroSim</summary>
 Type: microsim
@@ -309,7 +309,7 @@ Other simple food safety habits include:
 4. Always asking a trusted adult before tasting or trying a new food, especially anything from the stove, oven, or a hot pan.
 
 #### Diagram: Food Safety Habit Checklist
-<iframe src="../../../../sims/food-safety-checklist/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/food-safety-checklist/main.html" width="100%" height="454px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Food Safety Habit Checklist MicroSim</summary>
 Type: microsim
@@ -361,7 +361,7 @@ Foods that usually need to stay cold in the refrigerator:
 - Fresh fruits and vegetables that spoil quickly
 
 #### Diagram: Where Does This Food Go?
-<iframe src="../../../../sims/where-does-food-go/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/where-does-food-go/main.html" width="100%" height="482px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Where Does This Food Go? MicroSim</summary>
 Type: microsim
@@ -417,7 +417,7 @@ Kitchen jobs a Grade 1 student can help with alongside a trusted adult, compared
     Stoves, ovens, and sharp knives are always a grown-up's job. If you want to help cook, ask a trusted adult what job is safe for you to do together.
 
 #### Diagram: Kitchen Helper Sorting Game
-<iframe src="../../../../sims/kitchen-helper-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/kitchen-helper-sorter/main.html" width="100%" height="454px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Kitchen Helper Sorting Game MicroSim</summary>
 Type: microsim

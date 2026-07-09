@@ -60,7 +60,7 @@ Common feelings a Grade 1 student might notice in a single day:
 
 #### Diagram: Feelings Face Matcher
 
-<iframe src="../../../../sims/feelings-face-matcher/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/feelings-face-matcher/main.html" width="100%" height="474px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Feelings Face Matcher MicroSim</summary>
 Type: microsim
@@ -137,7 +137,7 @@ Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to
 
 #### Diagram: Feeling Sentence Builder
 
-<iframe src="../../../../sims/feeling-sentence-builder/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/feeling-sentence-builder/main.html" width="100%" height="484px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Feeling Sentence Builder MicroSim</summary>
 Type: microsim
@@ -195,7 +195,7 @@ Here are some common situations and the feelings they often bring up:
 
 #### Diagram: A Day of Changing Feelings Timeline
 
-<iframe src="../../../../sims/day-of-changing-feelings/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/day-of-changing-feelings/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>A Day of Changing Feelings Timeline</summary>
 Type: timeline
@@ -261,7 +261,7 @@ Examples of cultural and family support practices from around the world and acro
 
 #### Diagram: Comfort Traditions Around the World
 
-<iframe src="../../../../sims/comfort-traditions-around-world/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/comfort-traditions-around-world/main.html" width="100%" height="492px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Comfort Traditions Around the World Infographic</summary>
 Type: infographic
@@ -317,7 +317,7 @@ If a Grade 1 student notices these signs in themselves or in someone else, the m
 
 #### Diagram: When to Tell a Trusted Adult
 
-<iframe src="../../../../sims/when-to-tell-trusted-adult/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/when-to-tell-trusted-adult/main.html" width="100%" height="528px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>When to Tell a Trusted Adult Workflow</summary>
 Type: workflow

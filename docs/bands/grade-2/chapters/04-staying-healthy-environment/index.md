@@ -75,7 +75,7 @@ Before trying the diagram below, think about this: sun protection and noise prot
 
 #### Diagram: Match the Protection to the Risk
 
-<iframe src="../../../../sims/sun-noise-protection-match/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/sun-noise-protection-match/main.html" width="100%" height="488px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Match the Protection to the Risk MicroSim</summary>
 Type: microsim
@@ -184,7 +184,7 @@ Physical activity does not have to mean a formal sport. Climbing on playground e
 
 #### Diagram: How Physical Activity Helps the Body
 
-<iframe src="../../../../sims/physical-activity-body-benefits/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/physical-activity-body-benefits/main.html" width="100%" height="492px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>How Physical Activity Helps the Body MicroSim</summary>
 Type: infographic
@@ -246,7 +246,7 @@ No single tradition here is more "normal" than another — every culture has its
 
 #### Diagram: Active Games and Dances Around the World
 
-<iframe src="../../../../sims/cultural-physical-activity-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/cultural-physical-activity-map/main.html" width="100%" height="547px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Active Games and Dances Around the World MicroSim</summary>
 Type: map
@@ -319,7 +319,7 @@ Comparing these four paths side by side helps show that each one calls for a dif
 
 #### Diagram: Follow the Germ's Path
 
-<iframe src="../../../../sims/how-germs-spread-paths/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/how-germs-spread-paths/main.html" width="100%" height="482px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Follow the Germ's Path MicroSim</summary>
 Type: workflow

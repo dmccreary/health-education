@@ -84,7 +84,7 @@ The following table gives a few common feeling words a Kindergartner can practic
 
 #### Diagram: Name That Feeling!
 
-<iframe src="../../../../sims/name-that-feeling/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/name-that-feeling/main.html" width="100%" height="514px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Name That Feeling! MicroSim</summary>
@@ -158,7 +158,7 @@ Talking points for read-aloud:
 
 #### Diagram: Who Can I Tell?
 
-<iframe src="../../../../sims/who-can-i-tell/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/who-can-i-tell/main.html" width="100%" height="492px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Who Can I Tell? Interactive Scenario MicroSim</summary>
@@ -231,7 +231,7 @@ Before moving to the next MicroSim, let's define one more term: a **match** in t
 
 #### Diagram: Feelings Word Match
 
-<iframe src="../../../../sims/feelings-word-match/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/feelings-word-match/main.html" width="100%" height="454px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Feelings Word Match MicroSim</summary>
@@ -293,7 +293,7 @@ Before this next activity, let's define one term the sim will use: a **scenario*
 
 #### Diagram: Kind or Unkind?
 
-<iframe src="../../../../sims/kind-or-unkind/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/kind-or-unkind/main.html" width="100%" height="454px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Kind or Unkind? Sorting MicroSim</summary>

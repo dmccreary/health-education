@@ -6,6 +6,12 @@
       "runtimeExecutable": "python3",
       "runtimeArgs": ["-m", "http.server", "8205"],
       "port": 8205
+    },
+    {
+      "name": "heg-verify",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8299"],
+      "port": 8299
     }
   ]
 }

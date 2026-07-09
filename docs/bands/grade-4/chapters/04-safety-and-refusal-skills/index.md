@@ -77,7 +77,7 @@ Here are questions that help you think critically about media and technology inf
 
 #### Diagram: Media Message Detective
 
-<iframe src="../../../../sims/media-message-detective/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/media-message-detective/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Media Message Detective MicroSim</summary>
 Type: microsim
@@ -158,7 +158,7 @@ Building situational awareness includes noticing things like:
 
 #### Diagram: Situational Awareness Scene Explorer
 
-<iframe src="../../../../sims/situational-awareness-scene-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/situational-awareness-scene-explorer/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Situational Awareness Scene Explorer MicroSim</summary>
 Type: microsim
@@ -257,7 +257,7 @@ Setting a boundary sometimes feels uncomfortable at first, especially with a fri
 
 #### Diagram: Personal Boundaries Interactive Map
 
-<iframe src="../../../../sims/personal-boundaries-interactive-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/personal-boundaries-interactive-map/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Personal Boundaries Interactive Map</summary>
 Type: infographic
@@ -322,7 +322,7 @@ Peer pressure can push someone toward a harmless choice, like trying a new food,
 
 #### Diagram: Peer Pressure Situation Sorter
 
-<iframe src="../../../../sims/peer-pressure-situation-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/peer-pressure-situation-sorter/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Peer Pressure Situation Sorter MicroSim</summary>
 Type: microsim
@@ -398,7 +398,7 @@ The following role-play MicroSim lets you branch through a realistic peer-pressu
 
 #### Diagram: Refusal Skills Role-Play Branching Scenario
 
-<iframe src="../../../../sims/refusal-skills-role-play/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/refusal-skills-role-play/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Refusal Skills Role-Play Branching Scenario MicroSim</summary>
 Type: microsim

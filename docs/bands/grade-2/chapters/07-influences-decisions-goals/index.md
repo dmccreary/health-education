@@ -60,7 +60,7 @@ Recognizing an influence is the first step toward deciding whether to follow it.
 
 #### Diagram: Where Does This Idea Come From?
 
-<iframe src="../../../../sims/where-does-this-idea-come-from-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/where-does-this-idea-come-from-sorter/main.html" width="100%" height="492px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Where Does This Idea Come From? MicroSim</summary>
 Type: microsim
@@ -124,7 +124,7 @@ A student does not need to be able to name every advertising technique to build 
 
 #### Diagram: Family, School, and Media Influence Map
 
-<iframe src="../../../../sims/influence-sources-graph/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/influence-sources-graph/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Family, School, and Media Influence Map</summary>
 Type: graph-model
@@ -190,7 +190,7 @@ When a trusted adult explains a health rule, active listening helps a student un
 
 #### Diagram: Are You Listening Actively?
 
-<iframe src="../../../../sims/active-listening-checklist-microsim/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/active-listening-checklist-microsim/main.html" width="100%" height="497px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Are You Listening Actively? MicroSim</summary>
 Type: microsim
@@ -250,7 +250,7 @@ There is rarely only one "correct" option — the skill is learning to *name* th
 
 #### Diagram: Decision Options and Outcomes Explorer
 
-<iframe src="../../../../sims/decision-options-outcomes-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/decision-options-outcomes-explorer/main.html" width="100%" height="504px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Decision Options and Outcomes Explorer MicroSim</summary>
 Type: microsim
@@ -310,7 +310,7 @@ A simple goal has a few parts a Grade 2 student can name:
 
 #### Diagram: Build a Health Goal
 
-<iframe src="../../../../sims/build-a-health-goal-microsim/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/build-a-health-goal-microsim/main.html" width="100%" height="482px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Build a Health Goal MicroSim</summary>
 Type: microsim
@@ -381,7 +381,7 @@ This connects directly to an earlier Grade 2 skill: **recognizing how current pr
 
 #### Diagram: My Goal Progress Tracker
 
-<iframe src="../../../../sims/goal-progress-tracker-chart/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/goal-progress-tracker-chart/main.html" width="100%" height="547px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>My Goal Progress Tracker</summary>
 Type: chart
@@ -454,7 +454,7 @@ A student does not need a title or a special role to model a positive health cho
 
 #### Diagram: Be the Influence
 
-<iframe src="../../../../sims/be-the-influence-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/be-the-influence-workflow/main.html" width="100%" height="549px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Be the Influence MicroSim</summary>
 Type: workflow

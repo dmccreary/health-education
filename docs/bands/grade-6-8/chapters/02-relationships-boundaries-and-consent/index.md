@@ -54,7 +54,7 @@ Here is a table comparing common structures across three relationship types:
 
 #### Diagram: Relationship Structures Explorer
 
-<iframe src="../../../../sims/relationship-structures-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/relationship-structures-explorer/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Relationship Structures Explorer MicroSim</summary>
 Type: microsim
@@ -110,7 +110,7 @@ A single hard moment does not automatically make a relationship unhealthy — ev
 
 #### Diagram: Healthy Versus Unhealthy Pattern Sorter
 
-<iframe src="../../../../sims/healthy-unhealthy-pattern-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/healthy-unhealthy-pattern-sorter/main.html" width="100%" height="474px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Healthy Versus Unhealthy Pattern Sorter MicroSim</summary>
 Type: microsim
@@ -165,7 +165,7 @@ Setting a boundary well has three parts: naming the limit clearly, stating it di
 
 #### Diagram: Boundary-Setting Script Builder
 
-<iframe src="../../../../sims/boundary-setting-script-builder/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/boundary-setting-script-builder/main.html" width="100%" height="516px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Boundary-Setting Script Builder MicroSim</summary>
 Type: microsim
@@ -217,7 +217,7 @@ None of these frameworks conflict with setting a genuine boundary. They are equa
 
 #### Diagram: Cultural Lenses on Respect and Boundaries
 
-<iframe src="../../../../sims/cultural-lenses-respect-boundaries/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/cultural-lenses-respect-boundaries/main.html" width="100%" height="474px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Cultural Lenses on Respect and Boundaries Interactive Infographic</summary>
 Type: infographic
@@ -272,7 +272,7 @@ The common thread: the "agreement" that results is not a free choice, because ge
 
 #### Diagram: Coercion Tactics Identifier
 
-<iframe src="../../../../sims/coercion-tactics-identifier/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/coercion-tactics-identifier/main.html" width="100%" height="494px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Coercion Tactics Identifier MicroSim</summary>
 Type: microsim
@@ -313,7 +313,7 @@ The pattern across every row: consent respects the answer, whatever it is, and s
 
 #### Diagram: Consent Versus Coercion Decision Path
 
-<iframe src="../../../../sims/consent-versus-coercion-decision-path/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/consent-versus-coercion-decision-path/main.html" width="100%" height="602px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Consent Versus Coercion Decision Path Workflow</summary>
 Type: workflow
@@ -356,7 +356,7 @@ This is what makes consent a *relationship skill* rather than a single rule: it 
 
 #### Diagram: Everyday Consent Moments Card Sort
 
-<iframe src="../../../../sims/everyday-consent-moments-card-sort/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/everyday-consent-moments-card-sort/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Everyday Consent Moments Card Sort MicroSim</summary>
 Type: microsim

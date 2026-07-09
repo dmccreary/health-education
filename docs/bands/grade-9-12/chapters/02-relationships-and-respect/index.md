@@ -69,7 +69,7 @@ turns on.
 
 #### Diagram: Mapping Your Relationship Structures
 
-<iframe src="../../../../sims/relationship-structure-mapper/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/relationship-structure-mapper/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Mapping Your Relationship Structures</summary>
 Type: graph-model
@@ -304,7 +304,7 @@ relationship is considered.
 
 #### Diagram: Stereotype vs. Evidence Sorter
 
-<iframe src="../../../../sims/stereotype-evidence-sorter/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/stereotype-evidence-sorter/main.html" width="100%" height="534px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Stereotype vs. Evidence Sorter</summary>
 Type: microsim
@@ -437,7 +437,7 @@ include:
 
 #### Diagram: Conflict or Pressure? A Decision Guide
 
-<iframe src="../../../../sims/conflict-pressure-decision-guide/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/conflict-pressure-decision-guide/main.html" width="100%" height="722px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Conflict or Pressure? A Decision Guide</summary>
 Type: workflow

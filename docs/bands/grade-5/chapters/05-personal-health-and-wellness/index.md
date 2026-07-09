@@ -68,7 +68,7 @@ Notice that sleep connects to nearly every other topic in this chapter — inclu
 
 #### Diagram: Sleep Debt Tracker
 
-<iframe src="../../../../sims/sleep-debt-tracker/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/sleep-debt-tracker/main.html" width="100%" height="524px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Sleep Debt Tracker MicroSim</summary>
 Type: microsim
@@ -141,7 +141,7 @@ Many activities build more than one component at once — swimming builds cardio
 
 #### Diagram: Fitness Component Activity Sorter
 
-<iframe src="../../../../sims/fitness-component-activity-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/fitness-component-activity-sorter/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Fitness Component Activity Sorter MicroSim</summary>
 Type: microsim
@@ -210,7 +210,7 @@ The most urgent warning signs — swelling of the face or throat, real trouble b
 
 #### Diagram: Allergic Reaction Signs Explorer
 
-<iframe src="../../../../sims/allergic-reaction-signs-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/allergic-reaction-signs-explorer/main.html" width="100%" height="492px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Allergic Reaction Signs Explorer Infographic</summary>
 Type: infographic
@@ -254,7 +254,7 @@ The single most important rule in any allergic reaction, mild or severe, is this
 
 #### Diagram: Allergic Reaction Response Workflow
 
-<iframe src="../../../../sims/allergic-reaction-response-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/allergic-reaction-response-workflow/main.html" width="100%" height="988px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Allergic Reaction Response Workflow</summary>
 Type: workflow
@@ -326,7 +326,7 @@ Notice that stomach upset connects back to the foodborne illness concept from ea
 
 #### Diagram: Symptom Timeline: Cold vs. Stomach Bug
 
-<iframe src="../../../../sims/symptom-timeline-cold-vs-stomach-bug/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/symptom-timeline-cold-vs-stomach-bug/main.html" width="100%" height="302px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Symptom Timeline: Cold vs. Stomach Bug</summary>
 Type: timeline
@@ -379,7 +379,7 @@ In every case — mild, serious, or an emergency — the first step is the same:
 
 #### Diagram: When To Seek Help Decision Sorter
 
-<iframe src="../../../../sims/when-to-seek-help-decision-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/when-to-seek-help-decision-sorter/main.html" width="100%" height="502px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>When To Seek Help Decision Sorter MicroSim</summary>
 Type: microsim
@@ -423,7 +423,7 @@ None of these behaviors guarantee perfect health — bodies are complicated, and
 
 #### Diagram: Daily Habits and Long-Term Health Concept Map
 
-<iframe src="../../../../sims/daily-habits-long-term-health-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/daily-habits-long-term-health-map/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Daily Habits and Long-Term Health Concept Map</summary>
 Type: graph-model

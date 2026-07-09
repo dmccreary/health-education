@@ -61,7 +61,7 @@ Fullness signals can include:
 
 #### Diagram: Reading Your Body's Signals
 
-<iframe src="../../../../sims/hunger-fullness-signal-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/hunger-fullness-signal-explorer/main.html" width="100%" height="454px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Reading Your Body's Signals MicroSim</summary>
 Type: microsim
@@ -143,7 +143,7 @@ Carbohydrates, protein, and fats are not "good" or "bad" foods fighting each oth
 
 #### Diagram: Meet the Three Nutrient Teammates
 
-<iframe src="../../../../sims/nutrient-teammates-matcher/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/nutrient-teammates-matcher/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Meet the Three Nutrient Teammates MicroSim</summary>
 Type: microsim
@@ -221,7 +221,7 @@ A simple nutrition label reading routine for Grade 3 students:
 
 #### Diagram: Explore a Nutrition Label
 
-<iframe src="../../../../sims/nutrition-label-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/nutrition-label-explorer/main.html" width="100%" height="424px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Explore a Nutrition Label MicroSim</summary>
 Type: microsim
@@ -309,7 +309,7 @@ Water and milk are two simple, everyday choices that support the body well witho
 
 #### Diagram: Sugar Crash Story
 
-<iframe src="../../../../sims/sugar-crash-line-chart/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/sugar-crash-line-chart/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Sugar Crash Story Chart</summary>
 Type: chart
@@ -382,7 +382,7 @@ For almost all kids' activities, plain water is the champion beverage. Sports dr
 
 #### Diagram: Choose the Right Drink
 
-<iframe src="../../../../sims/activity-beverage-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/activity-beverage-sorter/main.html" width="100%" height="454px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Choose the Right Drink MicroSim</summary>
 Type: microsim
@@ -442,7 +442,7 @@ Food that sits out too long — especially meat, eggs, or dairy — can grow ger
 
 #### Diagram: Kitchen Safety Checklist
 
-<iframe src="../../../../sims/kitchen-safety-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/kitchen-safety-workflow/main.html" width="100%" height="842px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Kitchen Safety Checklist Workflow</summary>
 Type: workflow

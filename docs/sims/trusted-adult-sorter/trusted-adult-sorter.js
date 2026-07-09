@@ -42,6 +42,14 @@ let placedBin = -1;       // which bin it settled into
 let feedback = '';        // caption text
 let feedbackGood = true;
 
+// "Correct!" confirmation modal + end-of-activity celebration
+let okButton;             // DOM OK button inside the modal
+let showModal = false;    // is the Correct modal visible?
+let modalScale = 1;       // quick pop-in animation for the modal card
+let celebrating = false;  // confetti finale after the last correct answer
+let confetti = [];        // confetti particles
+let confettiColors = ['#f4b400', '#3f7cc4', '#4e9a6b', '#e0524f', '#8e5fc4', '#e88b2f'];
+
 // draggable person token (card center)
 let person = { x: 0, y: 0, homeX: 0, homeY: 0, dragging: false, dx: 0, dy: 0, returning: false };
 let binRects = [];
@@ -60,6 +68,20 @@ function setup() {
   nextButton.mousePressed(nextPerson);
   nextButton.parent(document.querySelector('main'));
   nextButton.hide();
+
+  okButton = createButton('OK');
+  okButton.mousePressed(dismissModal);
+  okButton.parent(document.querySelector('main'));
+  okButton.style('font-size', '18px');
+  okButton.style('font-weight', 'bold');
+  okButton.style('padding', '8px 28px');
+  okButton.style('color', 'white');
+  okButton.style('background', '#2e8b57');
+  okButton.style('border', 'none');
+  okButton.style('border-radius', '10px');
+  okButton.style('cursor', 'pointer');
+  okButton.style('z-index', '10');
+  okButton.hide();
 
   positionControls();
   resetPersonHome();
@@ -139,6 +161,15 @@ function draw() {
     text('Drag the person to the bin where you would find them.',
          margin, fy, canvasWidth - 2 * margin, 40);
   }
+
+  // "Correct!" confirmation modal on top of everything
+  if (showModal) {
+    modalScale = lerp(modalScale, 1, 0.35);
+    drawModal();
+  }
+
+  // celebration confetti falls in front for the finale
+  if (celebrating) drawConfetti();
 }
 
 function drawBins() {
@@ -262,7 +293,16 @@ function mouseReleased() {
     feedback = people[idx].why;
     feedbackGood = true;
     playChime();
-    if (sorted < people.length) nextButton.show();
+    // show the "Correct!" confirmation modal; the Next Person button
+    // waits until the child taps OK (see dismissModal)
+    showModal = true;
+    modalScale = 0.85;
+    positionOkButton();
+    okButton.show();
+    if (sorted === people.length) {
+      celebrating = true;
+      startConfetti();
+    }
   } else {
     // gentle slide back; no harsh feedback
     person.returning = true;
@@ -287,6 +327,118 @@ function resetAll() {
   feedback = '';
   resetPersonHome();
   nextButton.hide();
+  showModal = false;
+  okButton.hide();
+  celebrating = false;
+  confetti = [];
+}
+
+// Child tapped OK on the "Correct!" modal
+function dismissModal() {
+  showModal = false;
+  okButton.hide();
+  if (sorted < people.length) nextButton.show();
+}
+
+function positionOkButton() {
+  let cx = canvasWidth / 2;
+  let cy = 210;
+  okButton.position(cx, cy + 58);
+  okButton.style('transform', 'translateX(-50%)');
+}
+
+function drawModal() {
+  push();
+  // soft dim so the modal card clearly has focus
+  noStroke();
+  fill(255, 255, 255, 200);
+  rect(0, 0, canvasWidth, drawHeight);
+
+  let lastOne = sorted === people.length;
+  let cardW = min(320, canvasWidth - 32);
+  let cardH = 200;
+  let cx = canvasWidth / 2;
+  let cy = 210;
+
+  // quick pop-in
+  translate(cx, cy);
+  scale(modalScale);
+  translate(-cx, -cy);
+
+  rectMode(CENTER);
+  fill(0, 0, 0, 28);
+  rect(cx + 2, cy + 5, cardW, cardH, 20);            // shadow
+  fill('white');
+  stroke(lastOne ? '#f4b400' : '#2e8b57');
+  strokeWeight(3);
+  rect(cx, cy, cardW, cardH, 20);                    // card
+  noStroke();
+
+  fill(lastOne ? '#e0872f' : '#2e8b57');
+  textAlign(CENTER, CENTER);
+  textSize(46);
+  text(lastOne ? '🎉' : '✓', cx, cy - 66);            // big icon
+
+  fill('#12506b');
+  textSize(26);
+  text(lastOne ? 'You found them all!' : 'Correct!', cx, cy - 18);
+
+  fill('#3f6b52');
+  textSize(15);
+  rectMode(CORNER);
+  textAlign(CENTER, TOP);
+  text(people[idx].why, cx - (cardW - 44) / 2, cy + 6, cardW - 44, 48);
+  pop();
+}
+
+function startConfetti() {
+  confetti = [];
+  for (let i = 0; i < 160; i++) {
+    // spread from above the canvas down into it so there is an instant burst
+    confetti.push(makeConfetti(random(-drawHeight, drawHeight * 0.6)));
+  }
+}
+
+function makeConfetti(startY) {
+  return {
+    x: random(canvasWidth),
+    y: startY,
+    vy: random(1.6, 4.2),
+    vx: random(-1.1, 1.1),
+    size: random(6, 12),
+    rot: random(TWO_PI),
+    vr: random(-0.2, 0.2),
+    color: random(confettiColors)
+  };
+}
+
+function drawConfetti() {
+  push();
+  rectMode(CENTER);
+  noStroke();
+  for (let i = confetti.length - 1; i >= 0; i--) {
+    let p = confetti[i];
+    p.vy += 0.02;
+    p.x += p.vx;
+    p.y += p.vy;
+    p.rot += p.vr;
+    push();
+    translate(p.x, p.y);
+    rotate(p.rot);
+    fill(p.color);
+    rect(0, 0, p.size, p.size * 0.6, 1);
+    pop();
+    if (p.y > drawHeight + 24) {
+      if (showModal) {
+        // keep the party going while the "You found them all!" modal is up
+        Object.assign(p, makeConfetti(random(-40, -10)));
+      } else {
+        confetti.splice(i, 1);   // finale dismissed: let the last pieces settle, then stop
+      }
+    }
+  }
+  pop();
+  if (confetti.length === 0) celebrating = false;
 }
 
 function playChime() {
@@ -311,6 +463,7 @@ function windowResized() {
   updateCanvasSize();
   resizeCanvas(canvasWidth, canvasHeight);
   positionControls();
+  if (showModal) positionOkButton();
 }
 
 function updateCanvasSize() {

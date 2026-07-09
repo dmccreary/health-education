@@ -50,7 +50,7 @@ Talking points for read-aloud:
 
 #### Diagram: Safety Rules All Around
 
-<iframe src="../../../../sims/safety-rules-all-around/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/safety-rules-all-around/main.html" width="100%" height="502px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Safety Rules All Around Interactive Infographic</summary>
@@ -94,7 +94,7 @@ The following table compares a few common injury prevention actions with what co
 
 #### Diagram: Buckle Up and Gear Up
 
-<iframe src="../../../../sims/buckle-up-and-gear-up/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/buckle-up-and-gear-up/main.html" width="100%" height="504px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Buckle Up and Gear Up MicroSim</summary>
@@ -138,7 +138,7 @@ A **community safety practice** is a safety habit that a whole neighborhood, tow
 
 #### Diagram: Community Helpers Keep Us Safe
 
-<iframe src="../../../../sims/community-helpers-keep-us-safe/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/community-helpers-keep-us-safe/main.html" width="100%" height="464px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Community Helpers Keep Us Safe Interactive Infographic</summary>
@@ -183,7 +183,7 @@ Talking points for read-aloud:
 
 #### Diagram: Healthy Screen Time or Not?
 
-<iframe src="../../../../sims/healthy-screen-time-or-not/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/healthy-screen-time-or-not/main.html" width="100%" height="454px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Healthy Screen Time or Not? Sorting MicroSim</summary>
@@ -238,7 +238,7 @@ The following list names common school emergency drills a Kindergartner may alre
 
 #### Diagram: School Drill Practice
 
-<iframe src="../../../../sims/school-drill-practice/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/school-drill-practice/main.html" width="100%" height="482px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>School Drill Practice MicroSim</summary>
@@ -273,7 +273,7 @@ A **safe place** is a specific spot to go during a particular kind of emergency 
 
 #### Diagram: Find the Safe Place
 
-<iframe src="../../../../sims/find-the-safe-place/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/find-the-safe-place/main.html" width="100%" height="454px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Find the Safe Place Interactive Infographic</summary>
@@ -339,7 +339,7 @@ Talking points for read-aloud:
 
 #### Diagram: Naming Body Parts Correctly
 
-<iframe src="../../../../sims/naming-body-parts-correctly/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/naming-body-parts-correctly/main.html" width="100%" height="522px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Naming Body Parts Correctly Interactive Infographic</summary>

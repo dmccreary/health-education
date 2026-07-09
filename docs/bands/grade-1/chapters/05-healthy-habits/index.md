@@ -69,7 +69,7 @@ Personal care practices work best as a routine, something done at the same times
 
 #### Diagram: My Daily Care Routine Builder
 
-<iframe src="../../../../sims/my-daily-care-routine-builder/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/my-daily-care-routine-builder/main.html" width="100%" height="594px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>My Daily Care Routine Builder MicroSim</summary>
 Type: microsim
@@ -125,7 +125,7 @@ For example, some families take a bath every evening, while others shower in the
 
 #### Diagram: Hygiene Traditions Around the World
 
-<iframe src="../../../../sims/hygiene-traditions-around-the-world/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/hygiene-traditions-around-the-world/main.html" width="100%" height="492px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Hygiene Traditions Around the World Infographic</summary>
 Type: infographic
@@ -185,7 +185,7 @@ Moving your body doesn't just make you stronger — it helps your brain focus an
 
 #### Diagram: How Physical Activity Helps Your Whole Day
 
-<iframe src="../../../../sims/how-physical-activity-helps-your-whole-day/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/how-physical-activity-helps-your-whole-day/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>How Physical Activity Helps Your Whole Day Chart</summary>
 Type: chart
@@ -258,7 +258,7 @@ Use **Explore** mode to select a numbered marker and learn more. Use **Quiz** mo
 
 #### Diagram: Pick Your Active Play Adventure
 
-<iframe src="../../../../sims/pick-your-active-play-adventure/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/pick-your-active-play-adventure/main.html" width="100%" height="527px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Pick Your Active Play Adventure MicroSim</summary>
 Type: microsim
@@ -346,7 +346,7 @@ Use **Explore** mode to select a numbered marker and learn more. Use **Quiz** mo
 
 #### Diagram: How Germs Travel Map
 
-<iframe src="../../../../sims/how-germs-travel-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/how-germs-travel-map/main.html" width="100%" height="492px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>How Germs Travel Map MicroSim</summary>
 Type: microsim
@@ -416,7 +416,7 @@ Here are illness prevention actions a Grade 1 student can practice every day:
 
 #### Diagram: Germ-Stopping Action Sorter
 
-<iframe src="../../../../sims/germ-stopping-action-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/germ-stopping-action-sorter/main.html" width="100%" height="454px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Germ-Stopping Action Sorter MicroSim</summary>
 Type: microsim

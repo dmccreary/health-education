@@ -114,7 +114,7 @@ produces in a given person.
 
 #### Diagram: Depression Symptom and Cause Explorer
 
-<iframe src="../../../../sims/depression-symptom-cause-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/depression-symptom-cause-explorer/main.html" width="100%" height="494px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Depression Symptom and Cause Explorer</summary>
 Type: infographic
@@ -226,7 +226,7 @@ out of through willpower alone.
 
 #### Diagram: Everyday Nervousness vs. Clinical Anxiety Comparison Chart
 
-<iframe src="../../../../sims/nervousness-vs-anxiety-chart/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/nervousness-vs-anxiety-chart/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Everyday Nervousness vs. Clinical Anxiety Comparison Chart</summary>
 Type: chart
@@ -344,7 +344,7 @@ the most common reasons treatment does not reach its full potential.
 
 #### Diagram: Mental Health Treatment Pathway Map
 
-<iframe src="../../../../sims/mental-health-treatment-pathway-map/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/mental-health-treatment-pathway-map/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Mental Health Treatment Pathway Map</summary>
 Type: graph-model
@@ -472,7 +472,7 @@ method.
 
 #### Diagram: Immediate Response Steps Workflow
 
-<iframe src="../../../../sims/immediate-response-steps-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/immediate-response-steps-workflow/main.html" width="100%" height="842px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Immediate Response Steps Workflow</summary>
 Type: workflow
@@ -530,7 +530,7 @@ anywhere in the specification
 
 #### Diagram: Warning Sign Recognition Reference
 
-<iframe src="../../../../sims/warning-sign-recognition-reference/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/warning-sign-recognition-reference/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Warning Sign Recognition Reference</summary>
 Type: infographic
@@ -615,7 +615,7 @@ Effective peer support has a recognizable, learnable shape:
 
 #### Diagram: Peer Support Response Simulator
 
-<iframe src="../../../../sims/peer-support-response-simulator/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/peer-support-response-simulator/main.html" width="100%" height="558px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Peer Support Response Simulator</summary>
 Type: microsim
@@ -723,7 +723,7 @@ actually need. Clear boundaries prevent this outcome for both people.
 
 #### Diagram: Helping Without Losing Yourself Decision Tool
 
-<iframe src="../../../../sims/helping-without-losing-yourself-tool/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/helping-without-losing-yourself-tool/main.html" width="100%" height="722px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Helping Without Losing Yourself Decision Tool</summary>
 Type: workflow
@@ -846,7 +846,7 @@ categories:
 
 #### Diagram: Stigma Mechanism and Reduction Strategy Map
 
-<iframe src="../../../../sims/stigma-mechanism-reduction-map/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/stigma-mechanism-reduction-map/main.html" width="100%" height="622px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Stigma Mechanism and Reduction Strategy Map</summary>
 Type: graph-model
@@ -946,7 +946,7 @@ features:
 
 #### Diagram: Evaluate the Campaign MicroSim
 
-<iframe src="../../../../sims/evaluate-the-campaign-microsim/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/evaluate-the-campaign-microsim/main.html" width="100%" height="504px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Evaluate the Campaign MicroSim</summary>
 Type: microsim

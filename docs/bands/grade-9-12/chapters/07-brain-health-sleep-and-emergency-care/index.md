@@ -80,7 +80,7 @@ rather than years.
 
 #### Diagram: Brain Health Factor Explorer
 
-<iframe src="../../../../sims/brain-health-factor-explorer/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/brain-health-factor-explorer/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Brain Health Factor Explorer</summary>
 Type: graph-model
@@ -175,7 +175,7 @@ without assuming poor sleep is always a simple choice.
 
 #### Diagram: Sleep Deprivation Impact Simulator
 
-<iframe src="../../../../sims/sleep-deprivation-impact-simulator/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/sleep-deprivation-impact-simulator/main.html" width="100%" height="534px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Sleep Deprivation Impact Simulator</summary>
 Type: microsim
@@ -287,7 +287,7 @@ abilities change.
 
 #### Diagram: Dementia Types Comparison Tool
 
-<iframe src="../../../../sims/dementia-types-comparison-tool/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/dementia-types-comparison-tool/main.html" width="100%" height="502px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Dementia Types Comparison Tool</summary>
 Type: infographic
@@ -378,7 +378,7 @@ the quality of care they can sustain.
 
 #### Diagram: Supporting an Elder With Dementia Scenario Simulator
 
-<iframe src="../../../../sims/supporting-elder-dementia-scenario-simulator/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/supporting-elder-dementia-scenario-simulator/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Supporting an Elder With Dementia Scenario Simulator</summary>
 Type: microsim
@@ -502,7 +502,7 @@ order:
 
 #### Diagram: CPR Compression Rate and Depth Trainer
 
-<iframe src="../../../../sims/cpr-compression-rate-depth-trainer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/cpr-compression-rate-depth-trainer/main.html" width="100%" height="499px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>CPR Compression Rate and Depth Trainer</summary>
 Type: microsim
@@ -621,7 +621,7 @@ placed once the AED is in hand.
 
 #### Diagram: CPR and AED Emergency Response Workflow
 
-<iframe src="../../../../sims/cpr-aed-emergency-response-workflow/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/cpr-aed-emergency-response-workflow/main.html" width="100%" height="1002px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>CPR and AED Emergency Response Workflow</summary>
 Type: workflow

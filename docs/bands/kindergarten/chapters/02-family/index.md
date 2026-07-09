@@ -55,7 +55,7 @@ The following table gives examples of trusted adults a Kindergartner might name,
     You don't have to wait for a big problem to talk to a trusted adult. Small questions and small worries matter too!
 
 #### Diagram: Who Is My Trusted Adult?
-<iframe src="../../../../sims/trusted-adult-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/trusted-adult-sorter/main.html" width="100%" height="482px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Who Is My Trusted Adult? MicroSim</summary>
 Type: microsim
@@ -129,7 +129,7 @@ A short list of family structures to review aloud with the class, in a warm and 
     Learning that families come in so many shapes can feel new — and that's okay! There is no single "right" way for a family to look. Yours is exactly right for you.
 
 #### Diagram: Families Come in Many Shapes
-<iframe src="../../../../sims/family-shapes-gallery/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/family-shapes-gallery/main.html" width="100%" height="492px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Families Come in Many Shapes Interactive Infographic</summary>
 Type: infographic

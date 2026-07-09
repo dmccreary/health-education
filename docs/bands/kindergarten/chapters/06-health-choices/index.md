@@ -53,7 +53,7 @@ A negative health influence is not automatically "bad" in a scary way — someti
 
 #### Diagram: Helper or Not? Sorting Health Influences
 
-<iframe src="../../../../sims/helper-or-not-sorting-health-influences/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/helper-or-not-sorting-health-influences/main.html" width="100%" height="454px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Helper or Not? Sorting Health Influences MicroSim</summary>
@@ -108,7 +108,7 @@ The following table shows a few everyday moments and whether they are a health d
 
 #### Diagram: Is This a Health Decision?
 
-<iframe src="../../../../sims/is-this-a-health-decision/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/is-this-a-health-decision/main.html" width="100%" height="454px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Is This a Health Decision? Interactive Infographic</summary>
@@ -163,7 +163,7 @@ Talking points for read-aloud:
 
 #### Diagram: Need It or Want It?
 
-<iframe src="../../../../sims/need-it-or-want-it/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/need-it-or-want-it/main.html" width="100%" height="504px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Need It or Want It? Sorting MicroSim</summary>
@@ -223,7 +223,7 @@ Talking points for read-aloud:
 
 #### Diagram: My Personal Health Goal
 
-<iframe src="../../../../sims/my-personal-health-goal/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/my-personal-health-goal/main.html" width="100%" height="517px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>My Personal Health Goal MicroSim</summary>

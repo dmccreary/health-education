@@ -62,7 +62,7 @@ It is also completely normal to feel a mix of emotions about puberty — some st
 
 #### Diagram: Everyone's Timeline Looks Different
 
-<iframe src="../../../../sims/puberty-timeline-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/puberty-timeline-explorer/main.html" width="100%" height="502px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Everyone's Timeline Looks Different MicroSim</summary>
 Type: timeline
@@ -132,7 +132,7 @@ It's worth repeating an important point from the first section: no two people mo
 
 #### Diagram: Sort the Stage
 
-<iframe src="../../../../sims/puberty-stage-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/puberty-stage-sorter/main.html" width="100%" height="524px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Sort the Stage MicroSim</summary>
 Type: microsim
@@ -199,7 +199,7 @@ The answer to every single one of these questions is: yes, that's normal, and a 
 
 #### Diagram: Who Can I Ask?
 
-<iframe src="../../../../sims/who-can-i-ask-support-network/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/who-can-i-ask-support-network/main.html" width="100%" height="502px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Who Can I Ask? Support Network Diagram</summary>
 Type: graph-model

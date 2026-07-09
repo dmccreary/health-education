@@ -82,7 +82,7 @@ Comparing these types matters: a classmate might not be a close friend yet, and 
 
 #### Diagram: Sort the Peer Relationship
 
-<iframe src="../../../../sims/peer-relationship-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/peer-relationship-sorter/main.html" width="100%" height="524px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Sort the Peer Relationship MicroSim</summary>
 Type: microsim
@@ -158,7 +158,7 @@ Every student's family may practice coping in its own way, and there is no singl
 
 #### Diagram: Coping Strategies Around the World
 
-<iframe src="../../../../sims/coping-strategies-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/coping-strategies-map/main.html" width="100%" height="494px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Coping Strategies Around the World Infographic</summary>
 Type: infographic
@@ -235,7 +235,7 @@ Examples of healthy boundaries a second grader might set:
 
 #### Diagram: My Personal Space Bubble
 
-<iframe src="../../../../sims/personal-space-bubble/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/personal-space-bubble/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>My Personal Space Bubble MicroSim</summary>
 Type: microsim
@@ -296,7 +296,7 @@ I-statements connect every idea in this chapter: they use recognizing personal n
 
 #### Diagram: Build Your Own I-Statement
 
-<iframe src="../../../../sims/i-statement-builder/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/i-statement-builder/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Build Your Own I-Statement MicroSim</summary>
 Type: microsim

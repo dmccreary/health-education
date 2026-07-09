@@ -65,7 +65,7 @@ Long before a person finishes a sentence, their face, posture, and hands are alr
 
 #### Diagram: Match the Body Language
 
-<iframe src="../../../../sims/match-the-body-language/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/match-the-body-language/main.html" width="100%" height="454px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Match the Body Language MicroSim</summary>
 Type: microsim
@@ -117,7 +117,7 @@ Here is a comparison of active listening and its opposite:
 
 #### Diagram: Active Listening Checklist Builder
 
-<iframe src="../../../../sims/active-listening-checklist-builder/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/active-listening-checklist-builder/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Active Listening Checklist Builder MicroSim</summary>
 Type: microsim
@@ -181,7 +181,7 @@ Here is a comparison of blaming statements and I-statements:
 
 #### Diagram: I-Statement Builder
 
-<iframe src="../../../../sims/i-statement-builder/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/i-statement-builder/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>I-Statement Builder MicroSim</summary>
 Type: microsim
@@ -226,7 +226,7 @@ Examples of well-formed personal health goals:
 
 #### Diagram: My Health Goal Planner
 
-<iframe src="../../../../sims/my-health-goal-planner/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/my-health-goal-planner/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>My Health Goal Planner MicroSim</summary>
 Type: microsim
@@ -280,7 +280,7 @@ A single goal is a great start, but it helps to first take a wider look at all t
 
 #### Diagram: Health Practices Self-Check
 
-<iframe src="../../../../sims/health-practices-self-check/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/health-practices-self-check/main.html" width="100%" height="494px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Health Practices Self-Check MicroSim</summary>
 Type: microsim
@@ -318,7 +318,7 @@ Not every health topic feels equally important to every student at every moment 
 
 #### Diagram: What Matters Most to Me Right Now
 
-<iframe src="../../../../sims/what-matters-most-right-now/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/what-matters-most-right-now/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>What Matters Most to Me Right Now MicroSim</summary>
 Type: microsim

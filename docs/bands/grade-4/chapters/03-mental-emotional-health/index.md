@@ -59,7 +59,7 @@ Self-regulation is a skill, and like any skill, it gets stronger with practice. 
 
 #### Diagram: Self-Regulation Strategy Explorer
 
-<iframe src="../../../../sims/self-regulation-strategy-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/self-regulation-strategy-explorer/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Self-Regulation Strategy Explorer MicroSim</summary>
 Type: microsim
@@ -129,7 +129,7 @@ Before you explore the map below, remember that this is only a small sample of t
 
 #### Diagram: World Map of Cultural Self-Regulation Practices
 
-<iframe src="../../../../sims/world-map-self-regulation-practices/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/world-map-self-regulation-practices/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>World Map of Cultural Self-Regulation Practices</summary>
 Type: map
@@ -211,7 +211,7 @@ Recognizing this connection is powerful because it means behavior is not automat
 
 #### Diagram: Emotion-to-Behavior Pathway Map
 
-<iframe src="../../../../sims/emotion-behavior-pathway-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/emotion-behavior-pathway-map/main.html" width="100%" height="557px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Emotion-to-Behavior Pathway Map</summary>
 Type: graph-model
@@ -293,7 +293,7 @@ For example, assuming a new student who speaks a different language at home will
 
 #### Diagram: Recognizing Bias in Everyday Scenarios
 
-<iframe src="../../../../sims/recognizing-bias-scenario-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/recognizing-bias-scenario-sorter/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Recognizing Bias in Everyday Scenarios MicroSim</summary>
 Type: microsim
@@ -366,7 +366,7 @@ This is an important idea to hold onto: struggling with your mental health somet
 
 #### Diagram: Mental Health Over Time — Interactive Timeline
 
-<iframe src="../../../../sims/mental-health-over-time-timeline/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/mental-health-over-time-timeline/main.html" width="100%" height="402px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Mental Health Over Time — Interactive Timeline</summary>
 Type: timeline
@@ -446,7 +446,7 @@ No student is ever responsible for teasing or exclusion aimed at them — the re
 
 #### Diagram: Responding to Teasing and Exclusion — Decision Path
 
-<iframe src="../../../../sims/teasing-exclusion-response-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/teasing-exclusion-response-workflow/main.html" width="100%" height="842px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Responding to Teasing and Exclusion — Decision Path</summary>
 Type: workflow

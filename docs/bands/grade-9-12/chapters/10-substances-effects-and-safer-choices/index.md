@@ -102,7 +102,7 @@ outside chemical interference than a fully matured adult brain.
 
 #### Diagram: Adolescent Brain Vulnerability Explorer
 
-<iframe src="../../../../sims/adolescent-brain-vulnerability-explorer/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/adolescent-brain-vulnerability-explorer/main.html" width="100%" height="502px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Adolescent Brain Vulnerability Explorer</summary>
 Type: microsim
@@ -295,7 +295,7 @@ inaccurate and incomplete picture that this chapter intentionally corrects.
 
 #### Diagram: Holistic Wellness Framework Explorer
 
-<iframe src="../../../../sims/holistic-wellness-framework-explorer/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/holistic-wellness-framework-explorer/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Holistic Wellness Framework Explorer</summary>
 Type: graph-model
@@ -386,7 +386,7 @@ after it has been reinforced for months or years.
 
 #### Diagram: Substance Use Ripple Effect Mapper
 
-<iframe src="../../../../sims/substance-use-ripple-effect-mapper/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/substance-use-ripple-effect-mapper/main.html" width="100%" height="842px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Substance Use Ripple Effect Mapper</summary>
 Type: workflow
@@ -495,7 +495,7 @@ safety once contamination is possible.
 
 #### Diagram: Impairment And Decision Quality Simulator
 
-<iframe src="../../../../sims/impairment-and-decision-quality-simulator/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/impairment-and-decision-quality-simulator/main.html" width="100%" height="474px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Impairment And Decision Quality Simulator</summary>
 Type: microsim
@@ -593,7 +593,7 @@ something you have to discover for the first time under pressure.
 
 #### Diagram: Substance-Free Coping Toolkit Builder
 
-<iframe src="../../../../sims/substance-free-coping-toolkit-builder/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/substance-free-coping-toolkit-builder/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Substance-Free Coping Toolkit Builder</summary>
 Type: microsim
@@ -740,7 +740,7 @@ and Indigenous health programs directly correct.
 
 #### Diagram: Commercial Vs. Traditional Tobacco Comparison Tool
 
-<iframe src="../../../../sims/commercial-vs-traditional-tobacco-comparison-hs/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/commercial-vs-traditional-tobacco-comparison-hs/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Commercial Vs. Traditional Tobacco Comparison Tool</summary>
 Type: infographic
@@ -827,7 +827,7 @@ know specifically:
 
 #### Diagram: Medication Interaction Risk Network
 
-<iframe src="../../../../sims/medication-interaction-risk-network/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/medication-interaction-risk-network/main.html" width="100%" height="547px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Medication Interaction Risk Network</summary>
 Type: graph-model
@@ -976,7 +976,7 @@ involved in your care.
 
 #### Diagram: Integrating Traditional And Conventional Medicine Decision Tool
 
-<iframe src="../../../../sims/integrating-traditional-conventional-medicine-tool/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/integrating-traditional-conventional-medicine-tool/main.html" width="100%" height="722px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Integrating Traditional And Conventional Medicine Decision Tool</summary>
 Type: workflow

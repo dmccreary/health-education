@@ -77,7 +77,7 @@ Many schools have clear allergy plans, such as peanut-free tables in the cafeter
 
 #### Diagram: Allergy Response Decision Guide
 
-<iframe src="../../../../sims/allergy-response-decision-guide/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/allergy-response-decision-guide/main.html" width="100%" height="489px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Allergy Response Decision Guide MicroSim</summary>
 Type: microsim
@@ -142,7 +142,7 @@ These traditions are valid, valuable forms of physical activity — not just "ex
 
 #### Diagram: World Traditions of Movement Map
 
-<iframe src="../../../../sims/world-traditions-of-movement-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/world-traditions-of-movement-map/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>World Traditions of Movement Map</summary>
 Type: map
@@ -198,7 +198,7 @@ Cultural physical activity traditions offer all of these same mood benefits, plu
 
 #### Diagram: Mood Before and After Movement Chart
 
-<iframe src="../../../../sims/mood-before-after-movement-chart/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/mood-before-after-movement-chart/main.html" width="100%" height="502px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Mood Before and After Movement Chart</summary>
 Type: chart
@@ -272,7 +272,7 @@ Understanding the difference between these two categories matters because the pr
 
 #### Diagram: Infectious vs Non-Infectious Sorter
 
-<iframe src="../../../../sims/infectious-vs-noninfectious-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/infectious-vs-noninfectious-sorter/main.html" width="100%" height="474px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Infectious vs Non-Infectious Sorter MicroSim</summary>
 Type: microsim
@@ -346,7 +346,7 @@ Understanding these paths is exactly what makes prevention possible — each pat
 
 #### Diagram: Germ Spread Pathway Explorer
 
-<iframe src="../../../../sims/germ-spread-pathway-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/germ-spread-pathway-explorer/main.html" width="100%" height="492px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Germ Spread Pathway Explorer MicroSim</summary>
 Type: infographic
@@ -412,7 +412,7 @@ Non-infectious diseases are prevented differently, since no germ is involved. St
 
 #### Diagram: Handwashing Habit Timeline Tracker
 
-<iframe src="../../../../sims/handwashing-habit-timeline-tracker/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/handwashing-habit-timeline-tracker/main.html" width="100%" height="502px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Handwashing Habit Timeline Tracker</summary>
 Type: timeline
@@ -470,7 +470,7 @@ Respecting these traditions means understanding that "health" is not defined onl
 
 #### Diagram: Cultural Wellness Practices Concept Map
 
-<iframe src="../../../../sims/cultural-wellness-practices-concept-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/cultural-wellness-practices-concept-map/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Cultural Wellness Practices Concept Map</summary>
 Type: graph-model

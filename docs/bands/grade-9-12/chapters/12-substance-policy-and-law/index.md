@@ -105,7 +105,7 @@ may reflect an older or newer generation of policy thinking.
 
 #### Diagram: Substance Law Category Explorer
 
-<iframe src="../../../../sims/substance-law-category-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/substance-law-category-explorer/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Substance Law Category Explorer</summary>
 Type: diagram
@@ -336,7 +336,7 @@ two different questions worth asking independently.
 
 #### Diagram: Retail Density and Marketing Policy Impact Map
 
-<iframe src="../../../../sims/retail-density-marketing-policy-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/retail-density-marketing-policy-map/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Retail Density and Marketing Policy Impact Map</summary>
 Type: map

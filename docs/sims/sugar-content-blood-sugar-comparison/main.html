@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 560 -->
+<title>How Much Sugar, and What Happens After?</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 4px 0 2px; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .controls { display: flex; justify-content: center; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+  .controls button {
+    font-family: inherit; font-size: 12px; padding: 5px 12px; border-radius: 14px;
+    border: 1px solid silver; background: #f1f5f9; color: #334155; cursor: pointer;
+  }
+  .controls button:hover { background: #e2e8f0; }
+  .controls button.active { background: navy; color: white; border-color: navy; }
+  .controls .reset { border-style: dashed; background: white; }
+  .chart-box { background: aliceblue; border: 1px solid silver; border-radius: 6px; padding: 8px; }
+  .chart-container { position: relative; width: 100%; height: 300px; }
+  .hidden { display: none; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid crimson; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 70px; }
+  .infobox strong { color: navy; }
+  .frame { font-style: italic; color: seagreen; }
+  .source { text-align: center; color: gray; font-size: 11px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <h3>How Much Sugar, and What Happens After?</h3>
+  <div class="subtitle">Compare the added sugar in common drinks, then switch views to see what a sugary drink does to blood sugar over two hours.</div>
+  <div class="controls">
+    <button id="btnBar" class="active">Sugar Content</button>
+    <button id="btnLine">Blood Sugar Response</button>
+    <button id="btnReset" class="reset hidden">Show all drinks</button>
+  </div>
+  <div class="chart-box">
+    <div class="chart-container" id="barContainer"><canvas id="barChart"></canvas></div>
+    <div class="chart-container hidden" id="lineContainer"><canvas id="lineChart"></canvas></div>
+  </div>
+  <div class="infobox" id="infobox">
+    In the <strong>Sugar Content</strong> view, hover any bar for the exact amount and how it compares to the daily limit.
+    Click a drink to see its <strong>blood sugar response</strong> &mdash; the fast rise, then the
+    <span class="frame">crash</span> below where you started.
+  </div>
+  <div class="source">Illustrative per-serving amounts and blood-sugar curves for learning. AHA added-sugar limit for teens: about 25 g (6 tsp) per day.</div>
+</main>
+<script>
+// ---- Beverages (shared across both views, color-coded) ----
+const drinks = ['Water', 'Sports Drink\n(20 oz)', 'Fruit Drink\n(12 oz)', 'Regular Soda\n(12 oz)', 'Energy Drink\n(16 oz)'];
+const shortName = ['Water', 'Sports Drink', 'Fruit Drink', 'Regular Soda', 'Energy Drink'];
+const sugarG = [0, 34, 33, 39, 54];               // grams of added sugar per serving
+const colors = ['#4682b4', '#2e8b57', '#ff8c00', '#dc143c', '#6a0dad'];
+const colorsHi = ['#5f9ecf', '#3cb371', '#ffa733', '#f0426a', '#8e44c4'];
+
+const AHA_LIMIT = 25;   // AHA daily added-sugar limit for adolescents (grams)
+const DV_SUGAR = 50;    // FDA Daily Value for added sugars (grams)
+const BASELINE = 85;    // illustrative fasting blood sugar (mg/dL)
+
+// Blood sugar response (mg/dL) at 0, 15, 30, 45, 60, 90, 120 minutes
+const times = ['0', '15', '30', '45', '60', '90', '120'];
+const response = {
+  0: [85, 85, 85, 85, 85, 85, 85],       // Water: flat
+  1: [85, 104, 120, 116, 104, 86, 85],   // Sports Drink: moderate rise, gentle return
+  2: [85, 106, 122, 114, 100, 84, 85],   // Fruit Drink: moderate rise
+  3: [85, 116, 138, 126, 106, 79, 81],   // Regular Soda: sharp rise, crash below baseline
+  4: [85, 122, 150, 136, 110, 76, 80]    // Energy Drink: biggest rise and crash
+};
+
+const box = document.getElementById('infobox');
+function tsp(g){ return Math.round(g / 4 * 10) / 10; }   // 4 g added sugar ~ 1 teaspoon
+
+// ---- Bar view: added sugar per serving ----
+const barCtx = document.getElementById('barChart').getContext('2d');
+const barChart = new Chart(barCtx, {
+  type: 'bar',
+  data: {
+    labels: drinks,
+    datasets: [{
+      label: 'Added Sugar (g)',
+      data: sugarG,
+      backgroundColor: colors.slice(),
+      borderColor: '#334155', borderWidth: 1
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    layout: { padding: { top: 24 } },
+    onClick: (e, els) => { if (els.length) selectDrink(els[0].index); },
+    scales: {
+      x: { ticks: { font: { size: 10 }, autoSkip: false }, grid: { display: false } },
+      y: {
+        beginAtZero: true, suggestedMax: 60,
+        title: { display: true, text: 'Added Sugar (grams per serving)' },
+        ticks: { font: { size: 11 } }
+      }
+    },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          title: items => shortName[items[0].dataIndex],
+          label: c => {
+            const g = c.parsed.y;
+            if (g === 0) return 'No added sugar — a great everyday choice.';
+            return g + ' g added sugar  (' + tsp(g) + ' tsp, ' + Math.round(g / DV_SUGAR * 100) + '% Daily Value)';
+          },
+          afterLabel: c => c.parsed.y > AHA_LIMIT
+            ? 'That is more than a whole day’s added-sugar limit for teens.'
+            : (c.parsed.y === 0 ? '' : 'Click the bar to see the blood sugar response.')
+        },
+        bodyFont: { size: 11 }, boxPadding: 4
+      }
+    }
+  },
+  plugins: [{
+    // Dotted AHA daily-limit reference line + label
+    id: 'ahaLimit',
+    afterDatasetsDraw(c) {
+      const g = c.ctx, y = c.scales.y.getPixelForValue(AHA_LIMIT);
+      const left = c.chartArea.left, right = c.chartArea.right;
+      g.save();
+      g.strokeStyle = 'crimson'; g.lineWidth = 1.5; g.setLineDash([6, 4]);
+      g.beginPath(); g.moveTo(left, y); g.lineTo(right, y); g.stroke();
+      g.setLineDash([]);
+      g.fillStyle = 'crimson'; g.font = 'bold 11px Arial'; g.textAlign = 'right';
+      g.fillText('AHA teen daily limit (25 g)', right - 4, y - 5);
+      g.restore();
+    }
+  }]
+});
+
+// ---- Line view: blood sugar response over time ----
+function lineDatasets() {
+  return shortName.map((name, i) => ({
+    label: name,
+    data: response[i].slice(),
+    borderColor: colors[i],
+    backgroundColor: colors[i],
+    borderWidth: 3, tension: 0.35,
+    pointRadius: 3, pointHoverRadius: 7
+  }));
+}
+
+const lineCtx = document.getElementById('lineChart').getContext('2d');
+const lineChart = new Chart(lineCtx, {
+  type: 'line',
+  data: { labels: times, datasets: lineDatasets() },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    interaction: { mode: 'nearest', intersect: true },
+    onHover: (e, els) => { if (els.length) showResponse(els[0].datasetIndex); },
+    onClick: (e, els) => { if (els.length) emphasize(els[0].datasetIndex); },
+    scales: {
+      x: { title: { display: true, text: 'Minutes After Drinking' }, ticks: { font: { size: 11 } } },
+      y: {
+        suggestedMin: 70, suggestedMax: 155,
+        title: { display: true, text: 'Blood Sugar (mg/dL)' },
+        ticks: { font: { size: 11 } }
+      }
+    },
+    plugins: {
+      legend: { position: 'top', align: 'end', labels: { font: { size: 11 }, boxWidth: 14, usePointStyle: true } },
+      tooltip: {
+        callbacks: {
+          title: items => items[0].dataset.label + ' — ' + items[0].label + ' min',
+          label: c => c.parsed.y + ' mg/dL' + (c.parsed.y < BASELINE ? '  (below where you started — the crash)' : '')
+        },
+        bodyFont: { size: 11 }, boxPadding: 4
+      }
+    }
+  },
+  plugins: [{
+    // Dotted baseline + "Energy crash" callout in the dip region
+    id: 'baseline',
+    afterDatasetsDraw(c) {
+      const g = c.ctx, y = c.scales.y.getPixelForValue(BASELINE);
+      const left = c.chartArea.left, right = c.chartArea.right;
+      g.save();
+      g.strokeStyle = '#64748b'; g.lineWidth = 1.5; g.setLineDash([5, 4]);
+      g.beginPath(); g.moveTo(left, y); g.lineTo(right, y); g.stroke();
+      g.setLineDash([]);
+      g.fillStyle = '#64748b'; g.font = '11px Arial'; g.textAlign = 'left';
+      g.fillText('Baseline (before drinking)', left + 4, y - 5);
+      // "Energy crash" label near the 90-minute dip (tick index 5 = '90')
+      const xCrash = c.scales.x.getPixelForTick(5);
+      g.fillStyle = 'crimson'; g.font = 'bold 12px Arial'; g.textAlign = 'center';
+      g.fillText('↓ Energy crash', xCrash, y + 34);
+      g.restore();
+    }
+  }]
+});
+
+// ---- Selection / emphasis logic ----
+let selected = -1;
+function setEmphasis() {
+  lineChart.data.datasets.forEach((ds, k) => {
+    const on = (selected === -1 || k === selected);
+    ds.borderColor = on ? colors[k] : 'rgba(148,163,184,0.35)';
+    ds.backgroundColor = on ? colors[k] : 'rgba(148,163,184,0.35)';
+    ds.borderWidth = (k === selected) ? 4 : (on ? 3 : 2);
+    ds.pointRadius = on ? 3 : 0;
+  });
+  lineChart.update();
+  document.getElementById('btnReset').classList.toggle('hidden', selected === -1);
+  if (selected >= 0) showResponse(selected);
+}
+function emphasize(i) {                 // clicking a line toggles it (click again to clear)
+  selected = (i === selected) ? -1 : i;
+  setEmphasis();
+}
+
+function showResponse(i) {
+  const name = shortName[i];
+  if (i === 0) {
+    box.innerHTML = '<strong>' + name + '</strong> keeps blood sugar <span class="frame">flat</span> — '
+      + 'no spike and no crash, so energy stays steady. That is why water is the everyday default.';
+    return;
+  }
+  const r = response[i];
+  const peak = Math.max(...r), low = Math.min(...r);
+  const crash = low < BASELINE ? (' then <span class="frame">crashes to ' + low + ' mg/dL</span> — below where it started, which can leave you tired and cranky.') : ' then settles back near baseline.';
+  box.innerHTML = '<strong>' + name + '</strong> (' + sugarG[i] + ' g added sugar, ' + tsp(sugarG[i]) + ' tsp): '
+    + 'blood sugar spikes to about <strong>' + peak + ' mg/dL</strong> near 30 minutes,' + crash;
+}
+
+// ---- View toggle ----
+const btnBar = document.getElementById('btnBar');
+const btnLine = document.getElementById('btnLine');
+const btnReset = document.getElementById('btnReset');
+const barContainer = document.getElementById('barContainer');
+const lineContainer = document.getElementById('lineContainer');
+
+function showBar() {
+  btnBar.classList.add('active'); btnLine.classList.remove('active');
+  barContainer.classList.remove('hidden'); lineContainer.classList.add('hidden');
+  btnReset.classList.add('hidden');
+  barChart.resize();
+}
+function showLine() {
+  btnLine.classList.add('active'); btnBar.classList.remove('active');
+  lineContainer.classList.remove('hidden'); barContainer.classList.add('hidden');
+  btnReset.classList.toggle('hidden', selected === -1);
+  lineChart.resize();
+}
+function selectDrink(i) {   // from clicking a bar: jump to line view, emphasize that drink
+  showLine();
+  selected = i;
+  setEmphasis();
+}
+
+btnBar.onclick = showBar;
+btnLine.onclick = showLine;
+btnReset.onclick = () => { selected = -1; setEmphasis(); };  // clears emphasis, shows all lines
+</script>
+</body>
+</html>

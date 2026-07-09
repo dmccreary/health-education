@@ -51,7 +51,7 @@ Talking points for read-aloud:
 
 #### Diagram: Where Do Germs Hide?
 
-<iframe src="../../../../sims/where-do-germs-hide/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/where-do-germs-hide/main.html" width="100%" height="522px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Where Do Germs Hide? Interactive Infographic</summary>
@@ -110,7 +110,7 @@ The steps below can be practiced as a group, with the teacher counting out loud:
 
 #### Diagram: 20-Second Scrub Timer
 
-<iframe src="../../../../sims/20-second-scrub-timer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/20-second-scrub-timer/main.html" width="100%" height="482px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>20-Second Scrub Timer MicroSim</summary>
@@ -170,7 +170,7 @@ The following table compares two ways to cough, useful for classroom modeling:
 
 #### Diagram: Elbow or Hands?
 
-<iframe src="../../../../sims/elbow-or-hands/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/elbow-or-hands/main.html" width="100%" height="454px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Elbow or Hands? Sorting MicroSim</summary>
@@ -287,7 +287,7 @@ Explain to the class why daily movement helps the body feel good and stay health
 
 #### Diagram: Let's Move Our Bodies!
 
-<iframe src="../../../../sims/lets-move-our-bodies/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/lets-move-our-bodies/main.html" width="100%" height="504px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Let's Move Our Bodies! MicroSim</summary>

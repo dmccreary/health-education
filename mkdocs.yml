@@ -850,6 +850,9 @@ nav:
 # Theme configuration
 theme:
   name: material
+  custom_dir: overrides
+  static_templates:
+    - 404.html
   # Once a logo is generated, point this at docs/img/logo.png or a mascot pose:
   logo: img/mascot/welcome.png
   favicon: img/favicon.ico

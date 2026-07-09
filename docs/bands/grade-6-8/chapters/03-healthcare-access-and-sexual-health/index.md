@@ -68,7 +68,7 @@ The following table summarizes the components typically included in comprehensiv
 
 #### Diagram: Comprehensive Health Care Concept Map
 
-<iframe src="../../../../sims/comprehensive-health-care-concept-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/comprehensive-health-care-concept-map/main.html" width="100%" height="474px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Comprehensive Health Care Concept Map Infographic</summary>
 Type: infographic
@@ -116,7 +116,7 @@ A few additional facts round out the picture: some STIs, including HIV, can also
 
 #### Diagram: STI Transmission Routes Sorter
 
-<iframe src="../../../../sims/sti-transmission-routes-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/sti-transmission-routes-sorter/main.html" width="100%" height="534px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>STI Transmission Routes Sorter MicroSim</summary>
 Type: microsim
@@ -169,7 +169,7 @@ This is exactly why routine testing matters as its own, separate practice — no
 
 #### Diagram: Symptom Visibility and Testing Decision Path
 
-<iframe src="../../../../sims/symptom-visibility-testing-decision-path/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/symptom-visibility-testing-decision-path/main.html" width="100%" height="602px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Symptom Visibility and Testing Decision Path Workflow</summary>
 Type: workflow
@@ -206,7 +206,7 @@ This distinction matters because it directly shapes what a diagnosis means for s
 
 #### Diagram: Curable Versus Manageable STI Classifier
 
-<iframe src="../../../../sims/curable-versus-manageable-sti-classifier/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/curable-versus-manageable-sti-classifier/main.html" width="100%" height="472px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Curable Versus Manageable STI Classifier MicroSim</summary>
 Type: microsim
@@ -250,7 +250,7 @@ No method except abstinence eliminates risk completely, and each method listed a
 
 #### Diagram: STI Prevention Methods Effectiveness Explorer
 
-<iframe src="../../../../sims/sti-prevention-methods-effectiveness-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/sti-prevention-methods-effectiveness-explorer/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>STI Prevention Methods Effectiveness Explorer MicroSim</summary>
 Type: microsim
@@ -327,7 +327,7 @@ Access to healthcare information and services also varies meaningfully across co
 
 #### Diagram: Healthcare Access Barriers Concept Map
 
-<iframe src="../../../../sims/healthcare-access-barriers-concept-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/healthcare-access-barriers-concept-map/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Healthcare Access Barriers Concept Map</summary>
 Type: graph-model
@@ -376,7 +376,7 @@ Reducing barriers is a shared responsibility — individual strategies help, and
 
 #### Diagram: Healthcare Access Barrier-Reduction Workflow
 
-<iframe src="../../../../sims/healthcare-barrier-reduction-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/healthcare-barrier-reduction-workflow/main.html" width="100%" height="602px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Healthcare Access Barrier-Reduction Workflow</summary>
 Type: workflow

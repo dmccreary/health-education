@@ -74,7 +74,7 @@ The following table previews the six root ideas in this chapter, in the order th
 | Communication | Sharing your thoughts, feelings, wants, and needs with someone else |
 
 #### Diagram: Six Big Ideas Concept Map
-<iframe src="../../../../sims/six-big-ideas-map/main.html" width="100%" height="560px" scrolling="no"></iframe>
+<iframe src="../../../../sims/six-big-ideas-map/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Six Big Ideas Concept Map</summary>
 Type: graph-model
@@ -132,7 +132,7 @@ Every child's list of trusted adults may look different — a parent, a grandpar
     A good trick: think of three grown-ups you could go to if you needed help right now. If you can name three, you already know how to find a trusted adult!
 
 #### Diagram: Who Is a Trusted Adult?
-<iframe src="../../../../sims/trusted-adult-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/trusted-adult-sorter/main.html" width="100%" height="482px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Who Is a Trusted Adult? MicroSim</summary>
 Type: microsim
@@ -190,7 +190,7 @@ Everyday moments where asking permission matters:
 Asking first is never rude — it's respectful. Permission protects you, and it protects other people too.
 
 #### Diagram: Ask First! Permission Scenarios
-<iframe src="../../../../sims/ask-first-permission/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/ask-first-permission/main.html" width="100%" height="444px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Ask First! Permission Scenarios MicroSim</summary>
 Type: microsim
@@ -248,7 +248,7 @@ Examples of safe behavior in three settings:
 | Community | Holding a grown-up's hand near streets, wearing a helmet while biking |
 
 #### Diagram: Safe or Unsafe? School and Community Scenes
-<iframe src="../../../../sims/safe-or-unsafe-scenes/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/safe-or-unsafe-scenes/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Safe or Unsafe? School and Community Scenes MicroSim</summary>
 Type: microsim
@@ -305,7 +305,7 @@ A short list of influences students might notice:
 Not every influence is bad, and not every influence is good — the important part is noticing it, and then deciding for yourself what the healthy choice is.
 
 #### Diagram: Positive or Negative Influence?
-<iframe src="../../../../sims/influence-spotter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/influence-spotter/main.html" width="100%" height="454px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Positive or Negative Influence? MicroSim</summary>
 Type: microsim
@@ -358,7 +358,7 @@ Simple sentence starters that help young students communicate in healthy ways:
 When you're not sure what to say, start with "I feel..." Naming your feeling is the first step to getting the help you need.
 
 #### Diagram: Finish the Sentence — Communication Practice
-<iframe src="../../../../sims/communication-sentence-builder/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/communication-sentence-builder/main.html" width="100%" height="486px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Finish the Sentence — Communication Practice MicroSim</summary>
 Type: microsim

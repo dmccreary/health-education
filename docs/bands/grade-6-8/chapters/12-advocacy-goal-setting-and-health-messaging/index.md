@@ -77,7 +77,7 @@ A refusal doesn't need a long explanation or apology to be respectful. Over-expl
 
 #### Diagram: Refusal Skill Matcher
 
-<iframe src="../../../../sims/refusal-skill-matcher/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/refusal-skill-matcher/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Refusal Skill Matcher</summary>
 Type: microsim
@@ -142,7 +142,7 @@ This process applies at any scale, from responding to a friend's risky invitatio
 
 #### Diagram: Health Decision-Making Process Flow
 
-<iframe src="../../../../sims/health-decision-making-process-flow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/health-decision-making-process-flow/main.html" width="100%" height="842px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Health Decision-Making Process Flow</summary>
 Type: workflow
@@ -211,7 +211,7 @@ Identifying supports and barriers before a difficult decision arrives — rather
 
 #### Diagram: Supports And Barriers Sorting Board
 
-<iframe src="../../../../sims/supports-and-barriers-sorting-board/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/supports-and-barriers-sorting-board/main.html" width="100%" height="512px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Supports And Barriers Sorting Board</summary>
 Type: infographic
@@ -258,7 +258,7 @@ Naming both strengths and growth areas matters — a self-assessment that only l
 
 #### Diagram: Personal Health Behavior Self-Assessment Wheel
 
-<iframe src="../../../../sims/personal-health-behavior-self-assessment-wheel/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/personal-health-behavior-self-assessment-wheel/main.html" width="100%" height="572px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Personal Health Behavior Self-Assessment Wheel</summary>
 Type: infographic
@@ -311,7 +311,7 @@ A strong goal plan includes each of these elements:
 
 #### Diagram: Goal Plan Builder
 
-<iframe src="../../../../sims/goal-plan-builder/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/goal-plan-builder/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Goal Plan Builder</summary>
 Type: microsim
@@ -401,7 +401,7 @@ Continuing the worked example: the student designs a short poster and 60-second 
 
 #### Diagram: Health Message Design Studio
 
-<iframe src="../../../../sims/health-message-design-studio/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/health-message-design-studio/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Health Message Design Studio</summary>
 Type: microsim
@@ -468,7 +468,7 @@ A genuine reflection considers specific evidence, not just a general impression 
 
 #### Diagram: Message Effectiveness Reflection Rubric
 
-<iframe src="../../../../sims/message-effectiveness-reflection-rubric/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/message-effectiveness-reflection-rubric/main.html" width="100%" height="532px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Message Effectiveness Reflection Rubric</summary>
 Type: microsim

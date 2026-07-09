@@ -74,7 +74,7 @@ Some influences push a student toward healthier choices, and some push away from
 
 #### Diagram: Who Shapes My Health Choices?
 
-<iframe src="../../../../sims/health-influence-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/health-influence-explorer/main.html" width="100%" height="492px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Who Shapes My Health Choices? Interactive Infographic</summary>
 Type: infographic
@@ -130,7 +130,7 @@ Third graders can start asking three simple questions about any health claim:
 
 #### Diagram: Trusted Source or Not?
 
-<iframe src="../../../../sims/trusted-source-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/trusted-source-sorter/main.html" width="100%" height="482px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Trusted Source or Not? MicroSim</summary>
 Type: microsim

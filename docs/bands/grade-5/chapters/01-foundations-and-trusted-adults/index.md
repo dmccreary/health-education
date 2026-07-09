@@ -59,7 +59,7 @@ These three parts constantly affect each other. A stressful argument with a frie
 
 #### Diagram: The Three Parts of Health
 
-<iframe src="../../../../sims/three-parts-of-health/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/three-parts-of-health/main.html" width="100%" height="554px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>The Three Parts of Health Interactive Infographic</summary>
 Type: infographic
@@ -125,7 +125,7 @@ Notice that peer influence often works through everyday small moments, not big d
 
 #### Diagram: Family and Peer Influence Sorter
 
-<iframe src="../../../../sims/family-peer-influence-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/family-peer-influence-sorter/main.html" width="100%" height="474px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Family and Peer Influence Sorter MicroSim</summary>
 Type: microsim
@@ -184,7 +184,7 @@ Notice the pattern: the emotion itself is never "bad." Every emotion is a normal
 
 #### Diagram: Emotion-to-Behavior Pathway Explorer
 
-<iframe src="../../../../sims/emotion-behavior-pathway-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/emotion-behavior-pathway-explorer/main.html" width="100%" height="444px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Emotion-to-Behavior Pathway Explorer MicroSim</summary>
 Type: microsim
@@ -242,7 +242,7 @@ It is smart to identify more than one trusted adult, because different situation
 
 #### Diagram: Build Your Trusted Adult Network
 
-<iframe src="../../../../sims/build-your-trusted-adult-network/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/build-your-trusted-adult-network/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Build Your Trusted Adult Network MicroSim</summary>
 Type: microsim
@@ -334,7 +334,7 @@ Consider this before-and-after scenario. Before we walk through it, remember the
 
 #### Diagram: Health Concern Reporting Decision Path
 
-<iframe src="../../../../sims/health-concern-reporting-decision-path/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/health-concern-reporting-decision-path/main.html" width="100%" height="962px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Health Concern Reporting Decision Path Workflow</summary>
 Type: workflow

@@ -51,7 +51,7 @@ None of these stressors are signs of weakness. They are simply the ordinary fric
 
 #### Diagram: Personal Stressor Sorter
 
-<iframe src="../../../../sims/personal-stressor-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/personal-stressor-sorter/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Personal Stressor Sorter MicroSim</summary>
 Type: microsim
@@ -100,7 +100,7 @@ A practice only counts as restorative if it is done regularly, not just once dur
 
 #### Diagram: Stress Response and Recovery Cycle
 
-<iframe src="../../../../sims/stress-response-recovery-cycle/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/stress-response-recovery-cycle/main.html" width="100%" height="487px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Stress Response and Recovery Cycle MicroSim</summary>
 Type: microsim
@@ -177,7 +177,7 @@ These approaches are not alternatives to seeking help for a serious mental healt
 
 #### Diagram: Traditional and Conventional Healing Supports Map
 
-<iframe src="../../../../sims/traditional-conventional-healing-supports-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/traditional-conventional-healing-supports-map/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Traditional and Conventional Healing Supports Map</summary>
 Type: graph-model
@@ -218,7 +218,7 @@ A single bad day does not necessarily indicate emotional distress — everyone h
 
 #### Diagram: Recognizing a Pattern of Change
 
-<iframe src="../../../../sims/recognizing-pattern-of-change/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/recognizing-pattern-of-change/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Recognizing a Pattern of Change MicroSim</summary>
 Type: microsim
@@ -307,7 +307,7 @@ It is important to understand what to do with this information: noticing a warni
 
 #### Diagram: Warning Sign Recognition Guide
 
-<iframe src="../../../../sims/warning-sign-recognition-guide/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/warning-sign-recognition-guide/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Warning Sign Recognition Guide Infographic</summary>
 Type: infographic
@@ -349,7 +349,7 @@ This applies exactly the same way if the concern is about yourself. If you are h
 
 #### Diagram: Steps to Take If You're Worried About a Friend
 
-<iframe src="../../../../sims/steps-to-take-worried-about-friend/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/steps-to-take-worried-about-friend/main.html" width="100%" height="842px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Steps to Take If You're Worried About a Friend Workflow</summary>
 Type: workflow
@@ -375,7 +375,7 @@ Implementation: Mermaid flowchart syntax with `click NodeId call showInfo("key")
 
 #### Diagram: Who Can I Turn To Support Network
 
-<iframe src="../../../../sims/who-can-i-turn-to-support-network/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/who-can-i-turn-to-support-network/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Who Can I Turn To Support Network Map</summary>
 Type: graph-model
@@ -417,7 +417,7 @@ Empathy supports healthy relationships because it builds trust: a person who fee
 
 #### Diagram: Perspective-Taking Scenario Explorer
 
-<iframe src="../../../../sims/perspective-taking-scenario-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/perspective-taking-scenario-explorer/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Perspective-Taking Scenario Explorer MicroSim</summary>
 Type: microsim
@@ -478,7 +478,7 @@ Nonviolent conflict resolution is a skill, which means it improves with practice
 
 #### Diagram: Conflict Resolution Pathway
 
-<iframe src="../../../../sims/conflict-resolution-pathway/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/conflict-resolution-pathway/main.html" width="100%" height="962px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Conflict Resolution Pathway Workflow</summary>
 Type: workflow

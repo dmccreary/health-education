@@ -56,7 +56,7 @@ Recognizing which influences you can adjust — like screen timing — and which
 
 #### Diagram: Sleep Influence Sorter
 
-<iframe src="../../../../sims/sleep-influence-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/sleep-influence-sorter/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Sleep Influence Sorter MicroSim</summary>
 Type: microsim
@@ -127,7 +127,7 @@ The next three sections define the specific activity types a complete plan shoul
 
 #### Diagram: Weekly Workout Plan Builder
 
-<iframe src="../../../../sims/weekly-workout-plan-builder/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/weekly-workout-plan-builder/main.html" width="100%" height="484px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Weekly Workout Plan Builder MicroSim</summary>
 Type: microsim
@@ -183,7 +183,7 @@ Both intensities matter for a balanced plan: guidelines recommend most of your d
 
 #### Diagram: Talk Test Intensity Explorer
 
-<iframe src="../../../../sims/talk-test-intensity-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/talk-test-intensity-explorer/main.html" width="100%" height="472px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Talk Test Intensity Explorer MicroSim</summary>
 Type: microsim
@@ -314,7 +314,7 @@ This description gives you an accurate mental model of the steps, but performing
 
 #### Diagram: Heimlich Maneuver Step Sequencer
 
-<iframe src="../../../../sims/heimlich-maneuver-step-sequencer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/heimlich-maneuver-step-sequencer/main.html" width="100%" height="454px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Heimlich Maneuver Step Sequencer MicroSim</summary>
 Type: microsim
@@ -358,7 +358,7 @@ When any of these signs are present, the correct response is to act immediately 
 
 #### Diagram: Emergency or Not? Scenario Sorter
 
-<iframe src="../../../../sims/emergency-or-not-scenario-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/emergency-or-not-scenario-sorter/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Emergency or Not? Scenario Sorter MicroSim</summary>
 Type: microsim
@@ -412,7 +412,7 @@ When multiple people are involved, priority generally goes to whoever has the mo
 
 #### Diagram: Emergency Response Priority Workflow
 
-<iframe src="../../../../sims/emergency-response-priority-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/emergency-response-priority-workflow/main.html" width="100%" height="962px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Emergency Response Priority Workflow</summary>
 Type: workflow
@@ -466,7 +466,7 @@ Because each route requires a different prevention strategy, the remaining secti
 
 #### Diagram: Infectious Disease Transmission Routes Map
 
-<iframe src="../../../../sims/infectious-disease-transmission-routes-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/infectious-disease-transmission-routes-map/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Infectious Disease Transmission Routes Map</summary>
 Type: graph-model
@@ -505,7 +505,7 @@ Proper handwashing is one of the most effective, low-cost disease prevention too
 
 #### Diagram: Handwashing Effectiveness Simulator
 
-<iframe src="../../../../sims/handwashing-effectiveness-simulator/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/handwashing-effectiveness-simulator/main.html" width="100%" height="474px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Handwashing Effectiveness Simulator MicroSim</summary>
 Type: microsim
@@ -549,7 +549,7 @@ These practices matter everywhere food is prepared — at home, at school, and i
 
 #### Diagram: Food Safety Danger Zone Timeline
 
-<iframe src="../../../../sims/food-safety-danger-zone-timeline/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/food-safety-danger-zone-timeline/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Food Safety Danger Zone Timeline</summary>
 Type: timeline
@@ -603,7 +603,7 @@ PPE works best as one part of a layered prevention approach — combined with hy
 
 #### Diagram: When Is PPE Needed? Scenario Sorter
 
-<iframe src="../../../../sims/when-is-ppe-needed-scenario-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/when-is-ppe-needed-scenario-sorter/main.html" width="100%" height="434px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>When Is PPE Needed? Scenario Sorter MicroSim</summary>
 Type: microsim

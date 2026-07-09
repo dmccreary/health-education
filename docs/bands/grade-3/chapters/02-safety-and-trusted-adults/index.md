@@ -53,7 +53,7 @@ A simple habit helps here: before sharing anything, ask "Would I be okay if a tr
 
 #### Diagram: Think Before You Share
 
-<iframe src="../../../../sims/think-before-you-share/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/think-before-you-share/main.html" width="100%" height="504px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Think Before You Share MicroSim</summary>
 Type: microsim
@@ -167,7 +167,7 @@ Evaluating a safety behavior means asking questions like: What could go wrong he
 
 #### Diagram: Is This Behavior Safe Enough?
 
-<iframe src="../../../../sims/safety-behavior-rater/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/safety-behavior-rater/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Is This Behavior Safe Enough? MicroSim</summary>
 Type: microsim
@@ -238,7 +238,7 @@ This is a key idea for Grade 3: practicing safety procedures **prepares** studen
 
 #### Diagram: From Drill to Real Emergency
 
-<iframe src="../../../../sims/drill-to-emergency-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/drill-to-emergency-workflow/main.html" width="100%" height="842px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>From Drill to Real Emergency Workflow</summary>
 Type: workflow
@@ -304,7 +304,7 @@ A student never needs a perfect explanation to ask for help. "Something feels wr
 
 #### Diagram: Find Your Trusted Adults
 
-<iframe src="../../../../sims/trusted-adult-network/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/trusted-adult-network/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Find Your Trusted Adults Graph Model</summary>
 Type: graph-model

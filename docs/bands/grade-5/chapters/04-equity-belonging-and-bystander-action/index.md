@@ -51,7 +51,7 @@ None of these adjustments give someone an unfair advantage. Each one removes a b
 
 #### Diagram: Equality vs. Equity Fence Explorer
 
-<iframe src="../../../../sims/equality-vs-equity-fence-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/equality-vs-equity-fence-explorer/main.html" width="100%" height="474px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Equality vs. Equity Fence Explorer MicroSim</summary>
 Type: microsim
@@ -135,7 +135,7 @@ The table below organizes the ideas from this section so far.
 
 #### Diagram: Include-a-Classmate Scenario Sorter
 
-<iframe src="../../../../sims/include-a-classmate-scenario-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/include-a-classmate-scenario-sorter/main.html" width="100%" height="474px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Include-a-Classmate Scenario Sorter MicroSim</summary>
 Type: microsim
@@ -198,7 +198,7 @@ A difference in ability is not a problem to solve or a performance to applaud â€
 
 #### Diagram: Ability-Inclusive Classroom Infographic
 
-<iframe src="../../../../sims/ability-inclusive-classroom-infographic/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/ability-inclusive-classroom-infographic/main.html" width="100%" height="492px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Ability-Inclusive Classroom Infographic</summary>
 Type: infographic
@@ -255,7 +255,7 @@ An inclusive environment is what equity, belonging, including and supporting oth
 
 #### Diagram: Building an Inclusive Classroom Concept Map
 
-<iframe src="../../../../sims/inclusive-classroom-concept-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/inclusive-classroom-concept-map/main.html" width="100%" height="502px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Building an Inclusive Classroom Concept Map</summary>
 Type: graph-model
@@ -339,7 +339,7 @@ Before we look at the decision path below, remember these four terms: **not laug
 
 #### Diagram: Bystander Action Decision Path
 
-<iframe src="../../../../sims/bystander-action-decision-path/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/bystander-action-decision-path/main.html" width="100%" height="842px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Bystander Action Decision Path Workflow</summary>
 Type: workflow
@@ -412,7 +412,7 @@ The scenario below brings together bystander action against bullying and fightin
 
 #### Diagram: Safe vs. Unsafe Bystander Response Sorter
 
-<iframe src="../../../../sims/safe-bystander-response-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/safe-bystander-response-sorter/main.html" width="100%" height="550px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Safe vs. Unsafe Bystander Response Sorter MicroSim</summary>
 Type: microsim

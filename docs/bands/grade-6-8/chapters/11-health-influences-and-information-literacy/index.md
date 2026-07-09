@@ -51,7 +51,7 @@ Recognizing a social norm is the first step toward evaluating whether it is actu
 
 #### Diagram: Social Norm Or Personal Choice Sorter
 
-<iframe src="../../../../sims/social-norm-or-personal-choice-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/social-norm-or-personal-choice-sorter/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Social Norm Or Personal Choice Sorter</summary>
 Type: infographic
@@ -99,7 +99,7 @@ The following table compares how a norm and a policy can address the same health
 
 #### Diagram: Norms And Policy Interaction Map
 
-<iframe src="../../../../sims/norms-and-policy-interaction-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/norms-and-policy-interaction-map/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Norms And Policy Interaction Map</summary>
 Type: graph-model
@@ -162,7 +162,7 @@ Both peer and media influence are strongest when they operate quietly, without a
 
 #### Diagram: Influence Spotter Scenario Challenge
 
-<iframe src="../../../../sims/influence-spotter-scenario-challenge/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/influence-spotter-scenario-challenge/main.html" width="100%" height="474px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Influence Spotter Scenario Challenge</summary>
 Type: microsim
@@ -204,7 +204,7 @@ Applying these strategies consistently is what turns "I don't know why I do this
 
 #### Diagram: Influence Detective Case File Builder
 
-<iframe src="../../../../sims/influence-detective-case-file-builder/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/influence-detective-case-file-builder/main.html" width="100%" height="842px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Influence Detective Case File Builder</summary>
 Type: workflow
@@ -254,7 +254,7 @@ Examples of generally valid sources include government public health agencies, h
 
 #### Diagram: Health Source Credibility Checklist
 
-<iframe src="../../../../sims/health-source-credibility-checklist/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/health-source-credibility-checklist/main.html" width="100%" height="494px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Health Source Credibility Checklist</summary>
 Type: infographic
@@ -311,7 +311,7 @@ Working through a comparison like this is exactly the kind of analysis called fo
 
 #### Diagram: Health Claim Evaluator Rubric Rater
 
-<iframe src="../../../../sims/health-claim-evaluator-rubric-rater/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/health-claim-evaluator-rubric-rater/main.html" width="100%" height="484px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Health Claim Evaluator Rubric Rater</summary>
 Type: microsim
@@ -373,7 +373,7 @@ Knowing valid sources and evaluation strategies is genuinely useful — but this
 
 #### Diagram: Self-Help Or Professional Help Decision Tree
 
-<iframe src="../../../../sims/self-help-or-professional-help-decision-tree/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/self-help-or-professional-help-decision-tree/main.html" width="100%" height="722px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Self-Help Or Professional Help Decision Tree</summary>
 Type: workflow
@@ -423,7 +423,7 @@ Different communication situations call for different combinations: a calm, low-
 
 #### Diagram: Verbal-Nonverbal Match Simulator
 
-<iframe src="../../../../sims/verbal-nonverbal-match-simulator/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/verbal-nonverbal-match-simulator/main.html" width="100%" height="462px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Verbal-Nonverbal Match Simulator</summary>
 Type: microsim
@@ -465,7 +465,7 @@ These strategies connect every concept from this chapter: recognizing the influe
 
 #### Diagram: Conflict Resolution Role-Play Branching Scenario
 
-<iframe src="../../../../sims/conflict-resolution-branching-scenario/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/conflict-resolution-branching-scenario/main.html" width="100%" height="722px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Conflict Resolution Role-Play Branching Scenario</summary>
 Type: workflow

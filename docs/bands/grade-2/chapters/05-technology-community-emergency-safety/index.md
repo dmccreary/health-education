@@ -57,7 +57,7 @@ Notice the pattern in that list: every rule involves a trusted adult *before, du
 
 #### Diagram: Technology Safety Rules Checklist
 
-<iframe src="../../../../sims/tech-safety-rules-checklist/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/tech-safety-rules-checklist/main.html" width="100%" height="494px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Technology Safety Rules Checklist MicroSim</summary>
 Type: microsim
@@ -135,7 +135,7 @@ Following the same four steps every time — instead of a different plan for eve
 
 #### Diagram: Steps for Getting Help With a Tech Situation
 
-<iframe src="../../../../sims/tech-help-steps-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/tech-help-steps-workflow/main.html" width="100%" height="602px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Steps for Getting Help With a Tech Situation MicroSim</summary>
 Type: workflow
@@ -216,7 +216,7 @@ Community values give encouraging safe choices its "why." A student who reminds 
 
 #### Diagram: Community Values Around the World
 
-<iframe src="../../../../sims/community-values-safety-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/community-values-safety-map/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Community Values Around the World MicroSim</summary>
 Type: map
@@ -291,7 +291,7 @@ The key idea is that during a safety drill, *any* adult in charge becomes the tr
 
 #### Diagram: Following the Drill Away From Your Classroom
 
-<iframe src="../../../../sims/away-from-classroom-drill-sim/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/away-from-classroom-drill-sim/main.html" width="100%" height="499px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Following the Drill Away From Your Classroom MicroSim</summary>
 Type: microsim
@@ -372,7 +372,7 @@ Some ways students can locate health helpers include:
 
 #### Diagram: Finding Health Helpers at School and in the Community
 
-<iframe src="../../../../sims/finding-health-helpers-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/finding-health-helpers-map/main.html" width="100%" height="492px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Finding Health Helpers at School and in the Community MicroSim</summary>
 Type: infographic

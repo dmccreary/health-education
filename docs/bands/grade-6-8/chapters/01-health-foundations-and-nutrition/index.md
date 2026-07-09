@@ -74,7 +74,7 @@ This matters practically: a guideline built around a dairy circle may not serve 
 
 #### Diagram: Dietary Guidelines Comparison Explorer
 
-<iframe src="../../../../sims/dietary-guidelines-comparison-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/dietary-guidelines-comparison-explorer/main.html" width="100%" height="484px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Dietary Guidelines Comparison Explorer MicroSim</summary>
 Type: microsim
@@ -117,7 +117,7 @@ Reading a label well means combining these parts, not picking just one. A cereal
 
 #### Diagram: Nutrition Facts Label Decoder
 
-<iframe src="../../../../sims/nutrition-facts-label-decoder/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/nutrition-facts-label-decoder/main.html" width="100%" height="524px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Nutrition Facts Label Decoder MicroSim</summary>
 Type: microsim
@@ -158,7 +158,7 @@ The pattern across all four examples: marketing claims are almost always true in
 
 #### Diagram: Marketing Claims Fact-Checker
 
-<iframe src="../../../../sims/marketing-claims-fact-checker/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/marketing-claims-fact-checker/main.html" width="100%" height="474px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Marketing Claims Fact-Checker MicroSim</summary>
 Type: microsim
@@ -197,7 +197,7 @@ None of this means sugary drinks can never be enjoyed — it means understanding
 
 #### Chart: Sugar Content and Blood Sugar Response Comparison
 
-<iframe src="../../../../sims/sugar-content-blood-sugar-comparison/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/sugar-content-blood-sugar-comparison/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Sugar Content and Blood Sugar Response Comparison Chart</summary>
 Type: chart
@@ -244,7 +244,7 @@ The American Academy of Pediatrics recommends that adolescents avoid energy drin
 
 #### Diagram: Caffeine and the Adolescent Body Explorer
 
-<iframe src="../../../../sims/caffeine-adolescent-body-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/caffeine-adolescent-body-explorer/main.html" width="100%" height="437px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Caffeine and the Adolescent Body Explorer Interactive Infographic</summary>
 Type: infographic
@@ -282,7 +282,7 @@ This is exactly why sugary and salty often show up in the same product: a barbec
 
 #### Diagram: Bliss Point Snack Deconstructor
 
-<iframe src="../../../../sims/bliss-point-snack-deconstructor/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/bliss-point-snack-deconstructor/main.html" width="100%" height="489px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Bliss Point Snack Deconstructor MicroSim</summary>
 Type: microsim
@@ -415,7 +415,7 @@ These initiatives connect directly back to food sovereignty when they are design
 
 #### Diagram: Community Food Access Network Map
 
-<iframe src="../../../../sims/community-food-access-network-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/community-food-access-network-map/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Community Food Access Network Map</summary>
 Type: map

@@ -76,7 +76,7 @@ than another; it claims that a full analysis has to check all five before
 concluding why a behavior is common, rare, easy, or hard.
 
 #### Diagram: Socio-Ecological Model Explorer
-<iframe src="../../../../sims/socio-ecological-model-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/socio-ecological-model-explorer/main.html" width="100%" height="622px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Socio-Ecological Model Explorer</summary>
 Type: diagram
@@ -372,7 +372,7 @@ them even while succeeding on the others:
 | Digital access | Does using it require reliable internet or a smartphone? | Telehealth requires broadband the family doesn't have |
 
 #### Diagram: Health Resource Accessibility Checklist
-<iframe src="../../../../sims/health-resource-accessibility-checklist/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/health-resource-accessibility-checklist/main.html" width="100%" height="504px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Health Resource Accessibility Checklist</summary>
 Type: infographic
@@ -448,7 +448,7 @@ its original evidence, not just judging the tone of whoever repeated it.
     flags no matter how confident the tone.
 
 #### Diagram: Health Claim Validity Checker Workflow
-<iframe src="../../../../sims/health-claim-validity-checker/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/health-claim-validity-checker/main.html" width="100%" height="842px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Health Claim Validity Checker Workflow</summary>
 Type: workflow
@@ -531,7 +531,7 @@ responding? Did the resolution actually address the underlying need, or
 just end the argument?
 
 #### Diagram: Conflict-Resolution Skill Rubric Rater
-<iframe src="../../../../sims/conflict-resolution-rubric-rater/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/conflict-resolution-rubric-rater/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Conflict-Resolution Skill Rubric Rater</summary>
 Type: infographic
@@ -690,7 +690,7 @@ whether a given refusal example would actually stop a determined pressure
 attempt, not just whether it sounded reasonable in isolation.
 
 #### Diagram: Refusal Skill Strength Analyzer
-<iframe src="../../../../sims/refusal-skill-strength-analyzer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/refusal-skill-strength-analyzer/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Refusal Skill Strength Analyzer</summary>
 Type: infographic

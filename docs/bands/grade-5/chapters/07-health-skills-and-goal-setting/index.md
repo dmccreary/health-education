@@ -68,7 +68,7 @@ Here are strategies that work across many situations:
 
 #### Diagram: Health Influence Manager
 
-<iframe src="../../../../sims/health-influence-manager/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/health-influence-manager/main.html" width="100%" height="494px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Health Influence Manager MicroSim</summary>
 Type: microsim
@@ -113,7 +113,7 @@ Before we look at how this plays out interactively, notice the pattern in the ta
 
 #### Diagram: Match The Trusted Resource
 
-<iframe src="../../../../sims/match-the-trusted-resource/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/match-the-trusted-resource/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Match The Trusted Resource MicroSim</summary>
 Type: microsim
@@ -161,7 +161,7 @@ Understanding the steps is different from being able to use them in the moment, 
 
 #### Diagram: Conflict Resolution Role-Play Simulator
 
-<iframe src="../../../../sims/conflict-resolution-role-play-simulator/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/conflict-resolution-role-play-simulator/main.html" width="100%" height="499px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Conflict Resolution Role-Play Simulator MicroSim</summary>
 Type: microsim
@@ -223,7 +223,7 @@ Notice that neither option in each row is entirely "good" or "bad" — each come
 
 #### Diagram: Decision Consequence Explorer
 
-<iframe src="../../../../sims/decision-consequence-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/decision-consequence-explorer/main.html" width="100%" height="484px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Decision Consequence Explorer MicroSim</summary>
 Type: microsim
@@ -285,7 +285,7 @@ A trackable health goal usually has three parts: a clear target, a way to measur
 
 #### Diagram: Personal Health Goal Tracker
 
-<iframe src="../../../../sims/personal-health-goal-tracker/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/personal-health-goal-tracker/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Personal Health Goal Tracker MicroSim</summary>
 Type: microsim
@@ -344,7 +344,7 @@ That last step matters as much as the delivery itself — examining the outcome 
 
 #### Diagram: Health Message Planning Workflow
 
-<iframe src="../../../../sims/health-message-planning-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/health-message-planning-workflow/main.html" width="100%" height="842px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Health Message Planning Workflow</summary>
 Type: workflow
@@ -370,7 +370,7 @@ Implementation: Mermaid flowchart with a `click` directive on every node opening
 
 #### Diagram: Audience Fit Matcher
 
-<iframe src="../../../../sims/audience-fit-matcher/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/audience-fit-matcher/main.html" width="100%" height="489px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Audience Fit Matcher MicroSim</summary>
 Type: microsim

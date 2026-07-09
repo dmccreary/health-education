@@ -79,7 +79,7 @@ A student cannot control every event in their life, but small choices, repeated 
 
 #### Diagram: Choice and Wellbeing Explorer
 
-<iframe src="../../../../sims/choice-and-wellbeing-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/choice-and-wellbeing-explorer/main.html" width="100%" height="489px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Choice and Wellbeing Explorer MicroSim</summary>
 Type: microsim
@@ -135,7 +135,7 @@ Some feelings are light enough to handle with a quick coping strategy. Others ar
 
 #### Diagram: Who Can I Talk To About My Feelings?
 
-<iframe src="../../../../sims/who-to-talk-to-feelings-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/who-to-talk-to-feelings-map/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Who Can I Talk To About My Feelings? Diagram</summary>
 Type: graph-model
@@ -230,7 +230,7 @@ Friendships are built and strengthened through many small moments of noticing an
 
 #### Diagram: Spot the Empathetic Response
 
-<iframe src="../../../../sims/spot-the-empathetic-response/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/spot-the-empathetic-response/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Spot the Empathetic Response MicroSim</summary>
 Type: microsim
@@ -281,7 +281,7 @@ Once a student notices a feeling, the next skill is deciding how to share it wit
 
 #### Diagram: Healthy vs. Unhealthy Expression Sorter
 
-<iframe src="../../../../sims/expression-style-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/expression-style-sorter/main.html" width="100%" height="494px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Healthy vs. Unhealthy Expression Sorter MicroSim</summary>
 Type: microsim
@@ -327,7 +327,7 @@ A few ways students can show this kind of respect every day:
 
 #### Diagram: Kindness for Every Ability Explorer
 
-<iframe src="../../../../sims/kindness-for-every-ability-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/kindness-for-every-ability-explorer/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Kindness for Every Ability Explorer Infographic</summary>
 Type: infographic

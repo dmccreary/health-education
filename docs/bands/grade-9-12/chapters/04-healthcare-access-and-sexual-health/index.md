@@ -120,7 +120,7 @@ Concretely, a culturally safe provider does the following:
 
 #### Diagram: What Makes a Provider Culturally Safe?
 
-<iframe src="../../../../sims/culturally-safe-provider-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/culturally-safe-provider-explorer/main.html" width="100%" height="494px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>What Makes a Provider Culturally Safe? Concept Map</summary>
 Type: infographic
@@ -244,7 +244,7 @@ not just a general friendly demeanor:
 
 #### Diagram: Youth-Friendly Provider Visit Workflow
 
-<iframe src="../../../../sims/youth-friendly-provider-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/youth-friendly-provider-workflow/main.html" width="100%" height="962px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Youth-Friendly Provider Visit Workflow</summary>
 Type: workflow
@@ -355,7 +355,7 @@ early.
 
 #### Diagram: How Stigma Blocks Healthcare-Seeking
 
-<iframe src="../../../../sims/stigma-healthcare-access-map/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../../../sims/stigma-healthcare-access-map/main.html" width="100%" height="602px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>How Stigma Blocks Healthcare-Seeking</summary>
 Type: graph-model
@@ -452,7 +452,7 @@ distinction matters for how a diagnosis should be understood:
 
 #### Diagram: STI Prevention Methods Effectiveness Comparison
 
-<iframe src="../../../../sims/sti-prevention-effectiveness-chart/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/sti-prevention-effectiveness-chart/main.html" width="100%" height="502px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>STI Prevention Methods Effectiveness Comparison</summary>
 Type: chart
@@ -581,7 +581,7 @@ in competition:
 
 #### Diagram: Sexual Health Service Types Explorer
 
-<iframe src="../../../../sims/sexual-health-service-types-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/sexual-health-service-types-explorer/main.html" width="100%" height="544px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Sexual Health Service Types Explorer</summary>
 Type: infographic
@@ -665,7 +665,7 @@ the stigma-reduction goal described earlier in this chapter.
 
 #### Diagram: Community-Based Sexual Health Program Types
 
-<iframe src="../../../../sims/community-sexual-health-programs-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/community-sexual-health-programs-map/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Community-Based Sexual Health Program Types</summary>
 Type: graph-model
@@ -756,7 +756,7 @@ does not expire once stated.
 
 #### Diagram: Boundary Conversation Before Sexual Activity
 
-<iframe src="../../../../sims/boundary-conversation-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/boundary-conversation-workflow/main.html" width="100%" height="962px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Boundary Conversation Before Sexual Activity Workflow</summary>
 Type: workflow

@@ -68,7 +68,7 @@ Here is what each major food group does for the body:
 
 #### Diagram: What Each Food Group Does
 
-<iframe src="../../../../sims/food-group-function-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/food-group-function-explorer/main.html" width="100%" height="454px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>What Each Food Group Does MicroSim</summary>
 Type: microsim
@@ -142,7 +142,7 @@ Ever feel grumpy or tired before lunchtime? That's a totally normal signal that 
 
 #### Diagram: Where Does Your Energy Come From?
 
-<iframe src="../../../../sims/food-energy-cause-effect/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/food-energy-cause-effect/main.html" width="100%" height="454px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Where Does Your Energy Come From? MicroSim</summary>
 Type: microsim

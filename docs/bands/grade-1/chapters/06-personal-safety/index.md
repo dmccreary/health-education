@@ -79,7 +79,7 @@ Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to
 
 #### Diagram: Safe or Ask First? Technology Sorter
 
-<iframe src="../../../../sims/safe-or-ask-first-technology-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/safe-or-ask-first-technology-sorter/main.html" width="100%" height="502px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Safe or Ask First? Technology Sorter MicroSim</summary>
 Type: microsim
@@ -146,7 +146,7 @@ Here are examples of safe and unsafe behaviors side by side:
 
 #### Diagram: Safe and Unsafe Behavior Explorer
 
-<iframe src="../../../../sims/safe-and-unsafe-behavior-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/safe-and-unsafe-behavior-explorer/main.html" width="100%" height="522px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Safe and Unsafe Behavior Explorer Infographic</summary>
 Type: infographic
@@ -202,7 +202,7 @@ Before we look at how a safety drill works step by step, let's define the key te
 
 #### Diagram: Fire Drill Steps Walkthrough
 
-<iframe src="../../../../sims/fire-drill-steps-walkthrough/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/fire-drill-steps-walkthrough/main.html" width="100%" height="454px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Fire Drill Steps Walkthrough MicroSim</summary>
 Type: microsim
@@ -276,7 +276,7 @@ A simple way to help students hold onto this idea is the "uh-oh feeling" — the
 
 #### Diagram: Body Safety Rules Interactive Guide
 
-<iframe src="../../../../sims/body-safety-rules-interactive-guide/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/body-safety-rules-interactive-guide/main.html" width="100%" height="487px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Body Safety Rules Interactive Guide</summary>
 Type: infographic
@@ -339,7 +339,7 @@ Use **Explore** mode to select a section and learn more. Use **Quiz Me** mode to
 
 #### Diagram: Practice Saying No Role-Play Simulator
 
-<iframe src="../../../../sims/practice-saying-no-role-play-simulator/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/practice-saying-no-role-play-simulator/main.html" width="100%" height="529px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Practice Saying No Role-Play Simulator</summary>
 Type: microsim
@@ -397,7 +397,7 @@ If the first trusted adult a student tells doesn't help, the student should keep
 
 #### Diagram: Who Are My Trusted Adults? Web Builder
 
-<iframe src="../../../../sims/who-are-my-trusted-adults-web-builder/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/who-are-my-trusted-adults-web-builder/main.html" width="100%" height="562px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Who Are My Trusted Adults? Web Builder MicroSim</summary>
 Type: microsim

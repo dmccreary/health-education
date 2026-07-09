@@ -52,7 +52,7 @@ This chapter connects directly to a concept from an earlier chapter: **coercion*
 
 #### Diagram: Power Dynamics Spotter
 
-<iframe src="../../../../sims/power-dynamics-spotter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/power-dynamics-spotter/main.html" width="100%" height="554px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Power Dynamics Spotter MicroSim</summary>
 Type: microsim
@@ -165,7 +165,7 @@ If this happens to you or a friend, the recommended steps are:
 
 #### Diagram: What To Do If This Happens Workflow
 
-<iframe src="../../../../sims/what-to-do-if-this-happens-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/what-to-do-if-this-happens-workflow/main.html" width="100%" height="842px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>What To Do If This Happens Workflow</summary>
 Type: workflow
@@ -205,7 +205,7 @@ Boundary-setting connects directly back to the coercion concept introduced earli
 
 #### Diagram: Boundary-Setting Response Builder
 
-<iframe src="../../../../sims/boundary-setting-response-builder/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/boundary-setting-response-builder/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Boundary-Setting Response Builder MicroSim</summary>
 Type: microsim
@@ -292,7 +292,7 @@ The key skill is recognizing the pattern and reporting it — not judging alone 
 
 #### Diagram: Types Of Concerning Behavior Explorer
 
-<iframe src="../../../../sims/types-of-concerning-behavior-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/types-of-concerning-behavior-explorer/main.html" width="100%" height="622px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Types Of Concerning Behavior Explorer</summary>
 Type: graph-model
@@ -332,7 +332,7 @@ Reporting is never "tattling" — a student who reports a genuine concern protec
 
 #### Diagram: Safety Concern Reporting Workflow
 
-<iframe src="../../../../sims/safety-concern-reporting-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/safety-concern-reporting-workflow/main.html" width="100%" height="722px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Safety Concern Reporting Workflow</summary>
 Type: workflow
@@ -371,7 +371,7 @@ The single most important behavior in either procedure is the same: **follow the
 
 #### Diagram: Lockdown Vs. Evacuation Procedure Sorter
 
-<iframe src="../../../../sims/lockdown-vs-evacuation-procedure-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/lockdown-vs-evacuation-procedure-sorter/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Lockdown Vs. Evacuation Procedure Sorter MicroSim</summary>
 Type: microsim

@@ -50,7 +50,7 @@ No two families divide these roles in exactly the same way, and that variety is 
 
 #### Diagram: Who Does What in a Family
 
-<iframe src="../../../../sims/family-roles-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/family-roles-sorter/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Who Does What in a Family MicroSim</summary>
 Type: microsim
@@ -136,7 +136,7 @@ By contrast, an unhealthy relationship might involve one person often feeling sc
 
 #### Diagram: Healthy or Needs Help?
 
-<iframe src="../../../../sims/healthy-relationship-scenario-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/healthy-relationship-scenario-explorer/main.html" width="100%" height="474px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Healthy or Needs Help? Scenario Explorer</summary>
 Type: microsim
@@ -202,7 +202,7 @@ It is important for students to know the difference between bullying and an ordi
 
 #### Diagram: What Counts as Bullying?
 
-<iframe src="../../../../sims/bullying-identification-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/bullying-identification-sorter/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>What Counts as Bullying? Identification Sorter</summary>
 Type: microsim
@@ -280,7 +280,7 @@ This is exactly why treating all people — of every ability, background, and wa
 
 #### Diagram: The Ripple Effect
 
-<iframe src="../../../../sims/bullying-ripple-effect-diagram/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/bullying-ripple-effect-diagram/main.html" width="100%" height="492px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>The Ripple Effect of Bullying and Exclusion</summary>
 Type: infographic
@@ -348,7 +348,7 @@ Boundaries matter because they help a person feel safe, respected, and in contro
 
 #### Diagram: Practice Setting a Boundary
 
-<iframe src="../../../../sims/personal-boundary-practice-simulator/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/personal-boundary-practice-simulator/main.html" width="100%" height="534px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Practice Setting a Boundary MicroSim</summary>
 Type: microsim

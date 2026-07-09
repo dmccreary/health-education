@@ -71,7 +71,7 @@ None of these strategies require being unfriendly or paranoid online — they're
 
 #### Diagram: Technology Safety Habit Checker
 
-<iframe src="../../../../sims/technology-safety-habit-checker/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/technology-safety-habit-checker/main.html" width="100%" height="524px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Technology Safety Habit Checker MicroSim</summary>
 Type: microsim
@@ -119,7 +119,7 @@ You never have to sort out online harm by yourself. Telling a trusted adult isn'
 
 #### Diagram: Reporting Online Harm Workflow
 
-<iframe src="../../../../sims/reporting-online-harm-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/reporting-online-harm-workflow/main.html" width="100%" height="1002px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Reporting Online Harm Workflow</summary>
 Type: workflow
@@ -188,7 +188,7 @@ A boundary is not an attack or a punishment — it's information about what you 
 
 #### Diagram: Boundary-Setting Practice Scenarios
 
-<iframe src="../../../../sims/boundary-setting-practice-scenarios/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/boundary-setting-practice-scenarios/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Boundary-Setting Practice Scenarios MicroSim</summary>
 Type: microsim
@@ -259,7 +259,7 @@ A few features make agreement into real consent:
 
 #### Diagram: Consent Signal Sorter
 
-<iframe src="../../../../sims/consent-signal-sorter/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/consent-signal-sorter/main.html" width="100%" height="514px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Consent Signal Sorter MicroSim</summary>
 Type: microsim
@@ -320,7 +320,7 @@ This skill matters far beyond any one situation — it applies to friendships, g
 
 #### Diagram: Consent Versus Coercion Scenario Evaluator
 
-<iframe src="../../../../sims/consent-versus-coercion-scenario-evaluator/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/consent-versus-coercion-scenario-evaluator/main.html" width="100%" height="444px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Consent Versus Coercion Scenario Evaluator MicroSim</summary>
 Type: microsim
@@ -405,7 +405,7 @@ Knowing that staff have specific training and a plan can make following their in
 
 #### Diagram: Emergency Roles Network
 
-<iframe src="../../../../sims/emergency-roles-network/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/emergency-roles-network/main.html" width="100%" height="542px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Emergency Roles Network</summary>
 Type: graph-model
@@ -456,7 +456,7 @@ One of the most useful tools you have is your own gut feeling. If a situation fe
 
 #### Diagram: Unsafe Situation Signal Explorer
 
-<iframe src="../../../../sims/unsafe-situation-signal-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/unsafe-situation-signal-explorer/main.html" width="100%" height="482px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Unsafe Situation Signal Explorer Infographic</summary>
 Type: infographic
@@ -497,7 +497,7 @@ Reporting isn't the same as tattling or causing trouble. A trusted adult would a
 
 #### Diagram: Recognize and Report Decision Path
 
-<iframe src="../../../../sims/recognize-and-report-decision-path/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../../../sims/recognize-and-report-decision-path/main.html" width="100%" height="842px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>Recognize and Report Decision Path</summary>
 Type: workflow
