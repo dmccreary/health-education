@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<!-- CANVAS_HEIGHT: 640 -->
+<title>Evaluating Beverages: What's Actually in the Bottle?</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Arial, Helvetica, sans-serif; background: white; }
+  main { display: block; width: 100%; padding: 8px; }
+  h3 { text-align: center; color: navy; font-size: 17px; margin: 4px 0 2px; }
+  .subtitle { text-align: center; color: dimgray; font-size: 12px; margin-bottom: 6px; }
+  .controls { display: flex; justify-content: center; align-items: center; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+  .ctl-label { font-size: 12px; color: #475569; }
+  .controls button {
+    font-family: inherit; font-size: 12px; padding: 5px 12px; border-radius: 14px;
+    border: 1px solid silver; background: #f1f5f9; color: #334155; cursor: pointer;
+  }
+  .controls button:hover { background: #e2e8f0; }
+  .controls button.metric.active { background: navy; color: white; border-color: navy; }
+  .controls button.rank { border-style: dashed; background: white; color: navy; font-weight: bold; }
+  .controls button.reset { border-style: dashed; background: white; }
+  .chart-box { background: aliceblue; border: 1px solid silver; border-radius: 6px; padding: 8px; }
+  .chart-container { position: relative; width: 100%; height: 340px; }
+  .hidden { display: none; }
+  .infobox { margin-top: 8px; background: #f8fafc; border-left: 4px solid #d97706; border-radius: 4px; padding: 8px 10px; font-size: 13px; color: #334155; line-height: 1.45; min-height: 74px; }
+  .infobox strong { color: navy; }
+  .frame { font-style: italic; color: seagreen; }
+  .source { text-align: center; color: gray; font-size: 11px; margin-top: 8px; line-height: 1.4; }
+
+  /* Ranking panel */
+  .rank-intro { font-size: 13px; color: #334155; margin: 2px 0 8px; line-height: 1.4; }
+  .rank-intro strong { color: navy; }
+  .rank-list { list-style: none; margin: 0; padding: 0; }
+  .rank-row {
+    display: flex; align-items: center; gap: 8px;
+    background: #f8fafc; border: 1px solid #e2e8f0; border-left: 4px solid #94a3b8;
+    border-radius: 5px; padding: 5px 8px; margin-bottom: 4px; cursor: grab; font-size: 13px;
+  }
+  .rank-row.dragging { opacity: 0.5; }
+  .rank-row.checked { cursor: pointer; }
+  .rank-row .rk-num { font-weight: bold; color: navy; width: 18px; text-align: center; }
+  .rank-row .rk-name { flex: 1; }
+  .rank-row .rk-badge { font-size: 11px; color: #475569; min-width: 66px; text-align: right; }
+  .rank-row.rk-exact { border-left-color: #16a34a; background: #f0fdf4; }
+  .rank-row.rk-near  { border-left-color: #d97706; background: #fffbeb; }
+  .rank-row.rk-off   { border-left-color: #94a3b8; }
+  .rk-move { display: flex; flex-direction: column; gap: 2px; }
+  .rk-move button { border: 1px solid silver; background: white; border-radius: 4px; cursor: pointer; font-size: 9px; line-height: 1; padding: 1px 5px; color: #334155; }
+  .rk-move button:hover { background: #e2e8f0; }
+  .rank-actions { display: flex; gap: 8px; justify-content: center; margin-top: 8px; }
+  .rank-actions button {
+    font-family: inherit; font-size: 12px; padding: 5px 14px; border-radius: 14px;
+    border: 1px solid silver; background: #f1f5f9; color: #334155; cursor: pointer;
+  }
+  .rank-actions button.rk-check { background: navy; color: white; border-color: navy; }
+  .rank-actions button:hover { filter: brightness(1.08); }
+  .rank-result { margin-top: 8px; background: #f8fafc; border-left: 4px solid navy; border-radius: 4px; padding: 8px 10px; font-size: 12.5px; color: #334155; line-height: 1.45; max-height: 150px; overflow-y: auto; }
+  .rank-result .rk-score { margin-bottom: 5px; }
+  .rank-result .rk-score strong { color: navy; }
+  .rank-result .rk-just { margin-bottom: 6px; }
+  .rank-result .rk-hint { font-size: 11px; color: #64748b; margin-bottom: 5px; }
+  .rank-result .rk-reason { font-style: italic; color: navy; min-height: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <h3>Evaluating Beverages: What's Actually in the Bottle?</h3>
+  <div class="subtitle">Compare eight common drinks on one evidence dimension at a time, then rank them for everyday hydration and check your reasoning.</div>
+
+  <div class="controls" id="chartControls">
+    <span class="ctl-label">Show metric:</span>
+    <button id="btnSugar" class="metric active">Added Sugar</button>
+    <button id="btnCaffeine" class="metric">Caffeine</button>
+    <button id="btnElectro" class="metric">Electrolytes</button>
+    <button id="btnRank" class="rank">Rank These for Everyday Hydration &rarr;</button>
+  </div>
+
+  <div class="controls hidden" id="rankControls">
+    <button id="btnBack" class="rank">&larr; Back to Chart</button>
+  </div>
+
+  <!-- Chart view -->
+  <div id="chartView">
+    <div class="chart-box">
+      <div class="chart-container"><canvas id="chart"></canvas></div>
+    </div>
+    <div class="infobox" id="infobox"></div>
+  </div>
+
+  <!-- Ranking view -->
+  <div id="rankView" class="hidden">
+    <div class="rank-intro">Drag the drinks (or use the &#9650;&#9660; buttons) to order them from <strong>best (1)</strong> to <strong>worst (8)</strong> for <strong>everyday hydration</strong> &mdash; not for exercise or as a treat. Then check your order against a reasoned expert ranking.</div>
+    <ol id="rankList" class="rank-list"></ol>
+    <div class="rank-actions">
+      <button id="btnCheck" class="rk-check">Check My Ranking</button>
+      <button id="btnResetRank" class="reset">Reset Order</button>
+    </div>
+    <div class="rank-result hidden" id="rankResult"></div>
+  </div>
+
+  <div class="source">Illustrative, rounded per-12 oz values for learning (actual products vary by brand and size). The electrolyte figure is a relative 0&ndash;5 teaching index, not a measured concentration. Added-sugar Daily Value = 50 g; the American Heart Association suggests a stricter daily limit of about 25&ndash;36 g.</div>
+</main>
+<script>
+// ---- Beverage data (per 12 oz) ----
+const fullName = ['Water','Unsweetened Tea','Flavored Sparkling Water','Regular Soda','Diet Soda','Sports Drink','Energy Drink','Whole-Fruit Smoothie'];
+const axisLabels = [['Water'],['Unsweetened','Tea'],['Flavored','Sparkling','Water'],['Regular','Soda'],['Diet','Soda'],['Sports','Drink'],['Energy','Drink'],['Whole-Fruit','Smoothie']];
+
+const sugar       = [0, 0, 0, 39, 0, 21, 27, 18];   // grams added sugar per 12 oz (smoothie = naturally occurring)
+const caffeine    = [0, 30, 0, 34, 34, 0, 114, 0];  // mg caffeine per 12 oz
+const electrolyte = [0, 0, 1, 1, 1, 5, 2, 3];       // relative 0-5 teaching index
+
+const DV_SUGAR = 50;   // FDA Daily Value for added sugars (g)
+
+// ---- Metric configuration ----
+const metrics = {
+  sugar: {
+    key: 'sugar', btn: 'btnSugar', data: sugar, color: '#d97706', border: '#b45309',
+    axis: 'Added Sugar (grams per 12 oz)', unit: ' g', max: 55, refLine: DV_SUGAR,
+    intro: 'Added sugar is sugar put in during processing (not the natural sugar in fruit or milk). The dashed line marks the FDA Daily Value of 50 g; the American Heart Association suggests a stricter daily limit of about 25 g (teens) to 36 g (men). Hover a bar for its amount and evidence.'
+  },
+  caffeine: {
+    key: 'caffeine', btn: 'btnCaffeine', data: caffeine, color: '#7c3aed', border: '#5b21b6',
+    axis: 'Caffeine (mg per 12 oz)', unit: ' mg', max: 125, refLine: null,
+    intro: 'Caffeine affects sleep and anxiety. Its 5–6 hour half-life means a drink at 4 p.m. still has about half its caffeine active at 10 p.m. Hover a bar for its amount and evidence.'
+  },
+  electrolyte: {
+    key: 'electrolyte', btn: 'btnElectro', data: electrolyte, color: '#0d9488', border: '#0f766e',
+    axis: 'Electrolyte Content (relative index, 0–5)', unit: '', max: 5.5, refLine: null,
+    intro: 'Electrolytes such as sodium and potassium are lost in sweat. This relative 0–5 index shows which drinks meaningfully replace them; most everyday drinks do not. Hover a bar for its evidence.'
+  }
+};
+
+// ---- One-sentence evidence notes (per metric, per beverage) ----
+const notes = {
+  sugar: [
+    'Plain water has zero added sugar — the hydration reference every other drink is measured against.',
+    'Unsweetened tea has no added sugar; the sweetened versions can carry as much as soda.',
+    'Flavored sparkling water is carbonation plus flavor, so its added sugar is zero.',
+    '39 g in one 12 oz serving already tops the American Heart Association’s daily added-sugar limit for teens.',
+    'Diet soda swaps sugar for non-nutritive sweeteners, so added sugar is zero — but check the caffeine line.',
+    '21 g of added sugar helps fuel prolonged, intense exercise but is unnecessary for everyday hydration.',
+    '27 g of added sugar rides along with a large caffeine dose — a combination worth scrutinizing.',
+    '18 g here is naturally occurring sugar from whole fruit, packaged with fiber the body handles differently than added sugar.'
+  ],
+  caffeine: [
+    'Water contains no caffeine, so it never interferes with sleep.',
+    'About 30 mg — roughly a third of a cup of coffee — a mild amount for most people.',
+    'Plain flavored sparkling water is caffeine-free unless the label says “energy” or “caffeinated.”',
+    'About 34 mg, similar to tea; with a 5–6 hour half-life, an afternoon can still cost you sleep at night.',
+    'Sugar-free does not mean caffeine-free — diet cola carries about the same 34 mg as regular.',
+    'Standard sports drinks contain no caffeine; their job is fluid and electrolyte replacement.',
+    '114 mg is close to the FDA’s suggested single-dose caffeine limit for adults, and higher per ounce than coffee.',
+    'A fruit-only smoothie has no caffeine unless coffee or tea is blended in.'
+  ],
+  electrolyte: [
+    'Plain water hydrates but adds virtually no electrolytes — usually fine for everyday needs.',
+    'Tea provides negligible electrolytes; it counts toward fluid intake but not replacement.',
+    'Some brands add a pinch of sodium for taste, but the electrolyte contribution stays minor.',
+    'Soda contains a little sodium but is not a meaningful electrolyte source.',
+    'Like regular soda, diet soda offers only trace electrolytes.',
+    'Engineered to replace the sodium and potassium lost in sweat during exercise over about 60 minutes.',
+    'Some sodium is present, but energy drinks are formulated for stimulation, not electrolyte replacement.',
+    'Whole fruit supplies natural potassium, giving smoothies a modest real electrolyte contribution.'
+  ]
+};
+
+let current = 'sugar';
+const box = document.getElementById('infobox');
+
+// ---- Chart ----
+const ctx = document.getElementById('chart').getContext('2d');
+const chart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: axisLabels,
+    datasets: [{
+      label: metrics.sugar.axis,
+      data: metrics.sugar.data.slice(),
+      backgroundColor: metrics.sugar.color,
+      borderColor: metrics.sugar.border,
+      borderWidth: 1
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    layout: { padding: { top: 18 } },
+    onHover: (e, els) => { if (els.length) showBevNote(els[0].index); },
+    onClick: (e, els) => { if (els.length) showBevNote(els[0].index); },
+    scales: {
+      x: { ticks: { font: { size: 10 }, autoSkip: false }, grid: { display: false } },
+      y: {
+        beginAtZero: true, suggestedMax: metrics.sugar.max,
+        title: { display: true, text: metrics.sugar.axis, font: { size: 12 } },
+        ticks: { font: { size: 11 } }
+      }
+    },
+    plugins: {
+      legend: { position: 'top', align: 'end', labels: { font: { size: 11 }, boxWidth: 14 } },
+      tooltip: {
+        callbacks: {
+          title: items => fullName[items[0].dataIndex],
+          label: c => {
+            const m = metrics[current];
+            const v = c.parsed.y;
+            if (m.key === 'electrolyte') return 'Electrolyte index: ' + v + ' of 5';
+            return v + m.unit + (v === 0 ? '  (none)' : '');
+          },
+          afterBody: items => notes[current][items[0].dataIndex]
+        },
+        bodyFont: { size: 11 }, boxPadding: 4
+      }
+    }
+  },
+  plugins: [{
+    // Dashed daily-limit reference line (sugar view only)
+    id: 'dvLimit',
+    afterDatasetsDraw(c) {
+      const m = metrics[current];
+      if (m.refLine == null) return;
+      const g = c.ctx, y = c.scales.y.getPixelForValue(m.refLine);
+      const left = c.chartArea.left, right = c.chartArea.right;
+      g.save();
+      g.strokeStyle = 'crimson'; g.lineWidth = 1.5; g.setLineDash([6, 4]);
+      g.beginPath(); g.moveTo(left, y); g.lineTo(right, y); g.stroke();
+      g.setLineDash([]);
+      g.fillStyle = 'crimson'; g.font = 'bold 11px Arial'; g.textAlign = 'right';
+      g.fillText('Daily Value limit (50 g added sugar)', right - 4, y - 5);
+      g.restore();
+    }
+  }]
+});
+
+function showBevNote(i) {
+  const m = metrics[current];
+  box.innerHTML = '<strong>' + fullName[i] + '</strong> &mdash; '
+    + (m.key === 'electrolyte'
+        ? '<span class="frame">index ' + m.data[i] + ' of 5.</span> '
+        : '<span class="frame">' + m.data[i] + m.unit + '.</span> ')
+    + notes[m.key][i];
+}
+
+// ---- Metric toggle ----
+function setMetric(key) {
+  current = key;
+  const m = metrics[key];
+  ['btnSugar','btnCaffeine','btnElectro'].forEach(id => document.getElementById(id).classList.remove('active'));
+  document.getElementById(m.btn).classList.add('active');
+  chart.data.datasets[0].label = m.axis;
+  chart.data.datasets[0].data = m.data.slice();
+  chart.data.datasets[0].backgroundColor = m.color;
+  chart.data.datasets[0].borderColor = m.border;
+  chart.options.scales.y.suggestedMax = m.max;
+  chart.options.scales.y.title.text = m.axis;
+  chart.update();
+  box.style.borderLeftColor = m.color;
+  box.innerHTML = m.intro;
+}
+
+document.getElementById('btnSugar').onclick    = () => setMetric('sugar');
+document.getElementById('btnCaffeine').onclick = () => setMetric('caffeine');
+document.getElementById('btnElectro').onclick  = () => setMetric('electrolyte');
+
+// ===================================================================
+//  Rank-to-compare panel
+// ===================================================================
+const rankListEl = document.getElementById('rankList');
+const rankResult = document.getElementById('rankResult');
+
+// Expert ranking for EVERYDAY hydration, best -> worst (beverage indices)
+const expertOrder = [0, 2, 1, 4, 7, 5, 3, 6];
+const expertReason = [
+  'the everyday hydration reference: zero added sugar, zero caffeine, zero calories.',                                   // 0 Water
+  'hydrating with no added sugar; only a mild caffeine dose keeps it out of the very top.',                              // 1 Tea
+  'hydrates like water with no sugar and no caffeine — just bubbles and flavor.',                                   // 2 Sparkling Water
+  '39 g of added sugar per serving plus caffeine make it an occasional treat, not hydration.',                          // 3 Regular Soda
+  'no sugar, but caffeine and non-nutritive sweeteners make it a weaker everyday pick than plain drinks.',               // 4 Diet Soda
+  'its sugar and electrolytes pay off only during prolonged, intense exercise, not routine sipping.',                    // 5 Sports Drink
+  'the highest caffeine (114 mg) plus 27 g of added sugar make it the least suited to everyday hydration.',              // 6 Energy Drink
+  'nutritious and hydrating, but its calories and natural sugar make it act more like a snack than an all-day drink.'    // 7 Smoothie
+];
+const justification = 'For everyday hydration the strongest criteria are no added sugar, little or no caffeine, and low calories. Water leads because it meets all three; sparkling water and unsweetened tea sit just behind. Diet soda avoids sugar but adds caffeine and sweeteners, and a whole-fruit smoothie is nourishing but caloric enough to behave like food. Sports drinks earn their sugar only during long, intense exercise, while regular soda and energy drinks rank last on sugar and caffeine load. Reasonable people can defend swapping neighbors, but water first and energy drink last is hard to argue against.';
+
+const initialOrder = [3, 0, 6, 1, 5, 4, 7, 2]; // scrambled starting order
+let checked = false;
+
+function buildRankList() {
+  rankListEl.innerHTML = '';
+  initialOrder.forEach(idx => {
+    const li = document.createElement('li');
+    li.className = 'rank-row';
+    li.draggable = true;
+    li.dataset.idx = idx;
+    li.innerHTML =
+      '<span class="rk-num"></span>' +
+      '<span class="rk-name">' + fullName[idx] + '</span>' +
+      '<span class="rk-badge"></span>' +
+      '<span class="rk-move"><button class="rk-up" title="Move up">&#9650;</button>' +
+      '<button class="rk-down" title="Move down">&#9660;</button></span>';
+    rankListEl.appendChild(li);
+  });
+  bindRows();
+  renumber();
+}
+
+function bindRows() {
+  [...rankListEl.children].forEach(li => {
+    li.addEventListener('dragstart', onDragStart);
+    li.addEventListener('dragend', onDragEnd);
+    li.querySelector('.rk-up').addEventListener('click', ev => { ev.stopPropagation(); moveRow(li, -1); });
+    li.querySelector('.rk-down').addEventListener('click', ev => { ev.stopPropagation(); moveRow(li, 1); });
+    li.addEventListener('click', () => { if (checked) showRowReason(li); });
+  });
+}
+
+let dragEl = null;
+function onDragStart() { dragEl = this; this.classList.add('dragging'); }
+function onDragEnd() { this.classList.remove('dragging'); dragEl = null; clearCheck(); renumber(); }
+rankListEl.addEventListener('dragover', e => {
+  e.preventDefault();
+  if (!dragEl) return;
+  const after = getDragAfter(e.clientY);
+  if (after == null) rankListEl.appendChild(dragEl);
+  else rankListEl.insertBefore(dragEl, after);
+});
+function getDragAfter(y) {
+  const els = [...rankListEl.querySelectorAll('.rank-row:not(.dragging)')];
+  let closest = { offset: -Infinity, element: null };
+  for (const child of els) {
+    const b = child.getBoundingClientRect();
+    const offset = y - b.top - b.height / 2;
+    if (offset < 0 && offset > closest.offset) closest = { offset: offset, element: child };
+  }
+  return closest.element;
+}
+function moveRow(li, dir) {
+  clearCheck();
+  if (dir < 0 && li.previousElementSibling) rankListEl.insertBefore(li, li.previousElementSibling);
+  if (dir > 0 && li.nextElementSibling) rankListEl.insertBefore(li.nextElementSibling, li);
+  renumber();
+}
+function renumber() {
+  [...rankListEl.children].forEach((li, i) => { li.querySelector('.rk-num').textContent = (i + 1); });
+}
+
+function clearCheck() {
+  if (!checked) return;
+  checked = false;
+  rankResult.classList.add('hidden');
+  [...rankListEl.children].forEach(li => {
+    li.classList.remove('rk-exact', 'rk-near', 'rk-off', 'checked');
+    li.querySelector('.rk-badge').textContent = '';
+  });
+}
+
+function checkRanking() {
+  const rows = [...rankListEl.children];
+  const expertPos = {};
+  expertOrder.forEach((idx, p) => { expertPos[idx] = p; });
+  let exact = 0;
+  rows.forEach((li, pos) => {
+    const idx = +li.dataset.idx;
+    const diff = Math.abs(expertPos[idx] - pos);
+    li.classList.remove('rk-exact', 'rk-near', 'rk-off');
+    li.classList.add(diff === 0 ? 'rk-exact' : (diff === 1 ? 'rk-near' : 'rk-off'));
+    li.classList.add('checked');
+    li.querySelector('.rk-badge').textContent = 'Expert #' + (expertPos[idx] + 1);
+    if (diff === 0) exact++;
+  });
+  checked = true;
+  const grade = exact >= 6 ? ' — excellent evidence reading.'
+              : exact >= 3 ? ' — solid reasoning; review the drinks that were off.'
+              : ' — compare your order with the evidence below.';
+  rankResult.innerHTML =
+    '<div class="rk-score"><strong>You placed ' + exact + ' of 8</strong> in the expert’s exact spot' + grade + '</div>' +
+    '<div class="rk-just">' + justification + '</div>' +
+    '<div class="rk-hint">Tap any drink above to see the expert’s reasoning for its rank. Green = exact, amber = off by one, gray = further off.</div>' +
+    '<div class="rk-reason" id="rkReason">Tap a drink above for the reasoning behind its expert rank.</div>';
+  rankResult.classList.remove('hidden');
+}
+
+function showRowReason(li) {
+  const idx = +li.dataset.idx;
+  const rk = expertOrder.indexOf(idx) + 1;
+  const el = document.getElementById('rkReason');
+  if (el) el.innerHTML = '<strong>#' + rk + ' ' + fullName[idx] + ':</strong> ' + expertReason[idx];
+}
+
+// ---- View switching ----
+const chartControls = document.getElementById('chartControls');
+const rankControls = document.getElementById('rankControls');
+const chartView = document.getElementById('chartView');
+const rankView = document.getElementById('rankView');
+
+document.getElementById('btnRank').onclick = () => {
+  chartView.classList.add('hidden'); chartControls.classList.add('hidden');
+  rankView.classList.remove('hidden'); rankControls.classList.remove('hidden');
+};
+document.getElementById('btnBack').onclick = () => {
+  rankView.classList.add('hidden'); rankControls.classList.add('hidden');
+  chartView.classList.remove('hidden'); chartControls.classList.remove('hidden');
+  chart.resize();
+};
+document.getElementById('btnCheck').onclick = checkRanking;
+document.getElementById('btnResetRank').onclick = () => { clearCheck(); buildRankList(); };
+
+// ---- Init ----
+buildRankList();
+setMetric('sugar');
+</script>
+</body>
+</html>

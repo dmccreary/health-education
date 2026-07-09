@@ -1,0 +1,21 @@
+{
+  "title": "Alcohol Effects Timeline Explorer",
+  "description": "A toggleable Chart.js bar chart summarizing documented short-term alcohol effects as blood alcohol concentration rises and long-term effects that accumulate over years.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-09",
+  "subject": ["Health Education"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "alcohol-effects-timeline-explorer",
+  "library": "Chart.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "summarize, classify, explain",
+  "completion_status": "complete",
+  "chapter_number": 11,
+  "chapter_title": "Substance Recovery and Resilience",
+  "chapter_dir": "11-substance-recovery-and-resilience",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/11-substance-recovery-and-resilience"
+}

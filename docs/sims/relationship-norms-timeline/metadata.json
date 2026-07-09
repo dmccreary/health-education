@@ -1,0 +1,23 @@
+{
+  "title": "Shifting Legal and Social Norms in Relationships",
+  "description": "Students examine how legal and social recognition of relationship structures has changed over about a century and distinguish long-standing norms from recently changed ones.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-09",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "relationship-norms-timeline",
+  "library": "vis-timeline",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine, distinguish",
+  "completion_status": "complete",
+  "chapter_number": 2,
+  "chapter_title": "Relationships and Respect",
+  "chapter_dir": "02-relationships-and-respect",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/02-relationships-and-respect"
+}

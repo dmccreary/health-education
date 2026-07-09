@@ -1,0 +1,39 @@
+{
+  "title": "Responding to Coercion Scenario Simulator",
+  "description": "A branching dialogue simulator where students apply a five-strategy framework for responding to coercion across friend, family, and early-dating scenarios and see realistic, non-punitive consequences.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-09",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "responding-to-coercion-scenario-simulator",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate, use, practice, solve",
+  "completion_status": "complete",
+  "chapter_number": 2,
+  "chapter_title": "Relationships, Boundaries, and Consent",
+  "chapter_dir": "02-relationships-boundaries-and-consent",
+  "chapter_rel_dir": "bands/grade-6-8/chapters/02-relationships-boundaries-and-consent",
+  "band": "grade-6-8",
+  "educational": {
+    "gradeLevel": "Grade 6-8",
+    "subjectArea": "Health Education",
+    "topic": "Relationships, Boundaries, and Consent",
+    "learningObjectives": [
+      "Students apply the five-strategy framework for responding to coercion by choosing a response at each stage of an unfolding scenario and seeing a realistic consequence."
+    ],
+    "bloomLevel": "Apply (L3)",
+    "duration": "10-20 minutes"
+  },
+  "pedagogical": {
+    "bloomVerb": "demonstrate, use, practice, solve",
+    "interactionPattern": "branching-dialogue-simulator",
+    "instructionalRationale": "Applying strategies within an unfolding realistic situation is Apply-level, so a branching simulator is used instead of a static list, letting learners rehearse decision-making under social pressure with realistic, non-punitive consequences."
+  }
+}

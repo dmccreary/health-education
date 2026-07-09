@@ -1,0 +1,23 @@
+{
+  "title": "Comparing Documented Physiological Risk Areas by Substance",
+  "description": "Students compare and differentiate documented physiological risk areas (respiratory, cardiovascular, liver/metabolic, immune/reproductive) across four substance categories using relative qualitative ratings.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-09",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "physiological-risk-areas-by-substance",
+  "library": "Chart.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "compare, differentiate, examine",
+  "completion_status": "complete",
+  "chapter_number": 10,
+  "chapter_title": "Substances - Effects and Safer Choices",
+  "chapter_dir": "10-substances-effects-and-safer-choices",
+  "chapter_rel_dir": "bands/grade-9-12/chapters/10-substances-effects-and-safer-choices"
+}

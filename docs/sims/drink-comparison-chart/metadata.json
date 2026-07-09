@@ -1,0 +1,23 @@
+{
+  "title": "Comparing Sugar and Caffeine in Drinks",
+  "description": "Students compare the sugar and caffeine levels of six common drinks on a simple 0-5 scale and analyze which drinks are good everyday choices.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-09",
+  "subject": [
+    "Health Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "drink-comparison-chart",
+  "library": "Chart.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "compare, contrast, differentiate",
+  "completion_status": "complete",
+  "chapter_number": 2,
+  "chapter_title": "Food, Energy, and Safe Eating",
+  "chapter_dir": "02-food-energy-safe-eating",
+  "chapter_rel_dir": "bands/grade-2/chapters/02-food-energy-safe-eating"
+}

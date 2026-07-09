@@ -1,0 +1,22 @@
+{
+  "title": "From Store to Plate — Keeping Food Safe",
+  "description": "A left-to-right food-safety workflow where Grade 2 students tap each stage (storage, preparation, and handling) to reveal its safety rule.",
+  "creator": "Health Education",
+  "author": "Dan McCreary",
+  "date": "2026-07-09",
+  "subject": ["Health Education"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "food-safety-workflow",
+  "library": "Mermaid",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "describe, explain, classify",
+  "completion_status": "complete",
+  "chapter_number": 2,
+  "chapter_title": "Food, Energy, and Safe Eating",
+  "chapter_dir": "02-food-energy-safe-eating",
+  "band": "grade-2",
+  "chapter_rel_dir": "bands/grade-2/chapters/02-food-energy-safe-eating"
+}
